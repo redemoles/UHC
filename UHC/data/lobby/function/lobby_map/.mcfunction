@@ -1,0 +1,51 @@
+
+#> lobby:lobby_map/
+#
+# @within			uhc:pre_game/timer/tick
+#
+#
+# @description		Chargement du lobby
+#
+
+# Message démarrage
+execute if score #loaded lobby.structure.data matches 0 if score #tick lobby.structure.data matches 0 run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Chargement du lobby..."}]
+execute if score #loaded lobby.structure.data matches 0 if score #tick lobby.structure.data matches 0 run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"Lobby loading..."}]
+
+# Lobby 01 - Bingo UHC - Granite
+execute if score #lobby lobby.structure.data matches 01 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/01/1
+execute if score #lobby lobby.structure.data matches 01 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/01/2
+# Lobby 02 - Bingo UHC - Pale Garden
+execute if score #lobby lobby.structure.data matches 02 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/02/1
+execute if score #lobby lobby.structure.data matches 02 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/02/2
+
+# Lobby 10 - Bingo UHC - Lobby Base
+#execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/10/1
+#execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/10/2
+# Lobby 11 - Bingo UHC - Smalls biomes
+execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/11/1
+execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 03 positioned 0 65 0 run function lobby:lobby_map/11/3
+execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 05 positioned 0 65 0 run function lobby:lobby_map/11/5
+execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 07 positioned 0 65 0 run function lobby:lobby_map/11/7
+execute if score #lobby lobby.structure.data matches 11 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/11/11
+# Lobby 12 - Bingo UHC - Viking Era
+execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/12/1
+execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 03 positioned 0 65 0 run function lobby:lobby_map/12/3
+execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 05 positioned 0 65 0 run function lobby:lobby_map/12/5
+execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 07 positioned 0 65 0 run function lobby:lobby_map/12/7
+execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/12/11
+
+# Backroom
+execute if score #tick lobby.structure.data matches 01 positioned 0 62 -640 run function lobby:lobby_map/backroom/
+
+execute positioned 0 65 0 run fill ~-63 ~-3 ~23 ~64 ~-7 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-63 ~-8 ~23 ~64 ~-12 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-63 ~-13 ~23 ~64 ~-17 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+
+execute positioned 0 65 0 run fillbiome ~-63 ~30 ~69 ~64 ~-7 ~-69 minecraft:taiga
+
+# Message fin
+execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Lobby chargé."}]
+execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"Lobby loaded."}]
+scoreboard players add #tick lobby.structure.data 1
+
+scoreboard players operation #former_lobby lobby.structure.data = #lobby lobby.structure.data

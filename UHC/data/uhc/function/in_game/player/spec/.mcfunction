@@ -1,0 +1,44 @@
+
+#> uhc:in_game/player/spec/
+#
+# @within			uhc:in_game/timer/players
+#
+#
+# @description		Donne les effets / gamemode aux specs
+#
+
+execute unless entity @s[scores={uhc.player.online=1}] run function uhc:in_game/player/spec/new_player
+
+attribute @s minecraft:max_health base set 20
+attribute @s minecraft:jump_strength base set 0.42
+attribute @s minecraft:movement_speed base set 0.10000000149011612
+attribute @s minecraft:attack_damage base set 1
+attribute @s minecraft:attack_speed base set 4
+attribute @s minecraft:knockback_resistance base set 0
+attribute @s minecraft:scale base set 1.0
+attribute @s minecraft:fall_damage_multiplier base set 1.0
+attribute @s minecraft:safe_fall_distance base set 3.0
+attribute @s minecraft:submerged_mining_speed base set 0.2
+attribute @s minecraft:attack_knockback base set 0
+
+gamemode spectator @s
+effect give @s minecraft:invisibility infinite 1 true
+
+tag @s add uhc.spec
+tag @s remove uhc.player
+tag @s remove uhc.player.start_in_the_sky
+tag @s[scores={uhc.player.online=1}] add uhc.player.dead
+tag @s remove uhc.ironman
+tag @s remove uhc.scenario.best_pve
+execute if score #sound_paranoia uhc.scenario matches 1 run tag @s add uhc.scenario.sound_paranoia.on
+scoreboard players set @s uhc.player.death 2
+scoreboard players set @s uhc.timer.respawn 0
+scoreboard players set @s uhc.player.online 1
+scoreboard players enable @s uhc.spec.tp
+scoreboard players enable @s uhc.spec_info.all
+scoreboard players enable @s uhc.spec_info.none
+scoreboard players enable @s uhc.spec_info.pve
+scoreboard players enable @s uhc.spec_info.pvp
+execute if score #blood_diamond uhc.scenario matches 1.. run scoreboard players enable @s uhc.spec_info.blood_diamond
+function uhc:in_game/player/spec/spec_info_trigger/all
+execute if score #bhc bhc.scenario matches 91 run tag @s remove uhc.spec_info.pve

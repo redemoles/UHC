@@ -1,0 +1,24 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
+		"lobby.rjg.score.inv": {
+			"min": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#temp"
+				},
+				"score": "lobby.rjg.score.inv"
+			},
+			"max": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#temp"
+				},
+				"score": "lobby.rjg.score.inv"
+			}
+		}
+	}
+}

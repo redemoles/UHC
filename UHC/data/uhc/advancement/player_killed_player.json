@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[\"uhc.player\"]}"
+                }
+            }
+        }
+    },
+    "rewards": 
+    {
+        "function": "uhc:in_game/advancement/player_killed_player/"
+    }
+}

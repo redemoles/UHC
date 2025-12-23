@@ -1,0 +1,25 @@
+
+#> uhc:all_dimension_commands/reset
+#
+# @within			uhc:reset
+#
+#
+# @description		Gamerule pour toutes les dimensions
+#
+
+gamerule sendCommandFeedback true
+gamerule locatorBar false
+gamerule doFireTick false
+gamerule announceAdvancements false
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule doMobSpawning false
+gamerule doImmediateRespawn true
+gamerule spectatorsGenerateChunks true
+gamerule naturalRegeneration false
+gamerule showDeathMessages false
+gamerule keepInventory true
+gamerule doInsomnia false
+gamerule doTraderSpawning false
+gamerule pvp false
+difficulty normal

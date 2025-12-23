@@ -1,0 +1,12 @@
+
+#> nzl:types/move/attack/combat_p2
+#
+# @within			function tag "nzl:advancements/combat_attack_p2.json"
+#
+#
+# @description		Dynamo-poing victime
+#
+
+execute as @p[distance=..0.01] run tag @s add nzl.combat.victim
+scoreboard players add #temp nzl.data 1
+execute unless score #temp nzl.data matches 50.. unless entity @s[tag=nzl.combat.victim] positioned ^ ^ ^0.1 run function nzl:types/move/attack/combat_p2

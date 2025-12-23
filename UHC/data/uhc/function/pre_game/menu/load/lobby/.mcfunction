@@ -1,0 +1,29 @@
+
+#> uhc:pre_game/menu/load/lobby/
+#
+# @within			uhc:pre_game/menu/selection/main/host
+#
+#
+# @description		Menu
+#
+
+clear @s
+tag @s remove uhc.menu.main.host
+tag @s add uhc.menu.lobby
+
+
+
+
+
+
+
+function uhc:pre_game/menu/load/background/
+
+execute unless score #lobby lobby.structure.data matches 11 run item replace entity @s inventory.1 with minecraft:raw_gold_block[minecraft:item_name=[{"text":"BHC - Small biomes","color":"#FF3F3F","italic":false}],minecraft:custom_data={"Tags":"lobby_11"}]
+execute if score #lobby lobby.structure.data matches 11 run item replace entity @s inventory.1 with minecraft:raw_gold_block[minecraft:item_name=[{"text":"BHC - Small biomes","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Sélectionné","color":"#3FE7FF","italic":false}]],minecraft:custom_data={"Tags":"lobby_11"},minecraft:enchantment_glint_override=true]
+
+execute unless score #lobby lobby.structure.data matches 12 run item replace entity @s inventory.2 with minecraft:stripped_spruce_wood[minecraft:item_name=[{"text":"BHC - Viking Era","color":"#FF3F3F","italic":false}],minecraft:custom_data={"Tags":"lobby_12"}]
+execute if score #lobby lobby.structure.data matches 12 run item replace entity @s inventory.2 with minecraft:stripped_spruce_wood[minecraft:item_name=[{"text":"BHC - Viking Era","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Sélectionné","color":"#3FE7FF","italic":false}]],minecraft:custom_data={"Tags":"lobby_12"},minecraft:enchantment_glint_override=true]
+
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

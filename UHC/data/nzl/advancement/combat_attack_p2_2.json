@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                      "is_direct": true
+                        },
+                    "blocked": false,
+                    "source_entity": {
+                    "nbt": "{Tags:[\"nzl.type.02\",\"nzl.poing.2\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nzl:types/move/attack/combat_p2_2"
+    }
+}

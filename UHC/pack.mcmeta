@@ -1,0 +1,31 @@
+{
+	"pack": {
+		"min_format": [88, 0],
+		"max_format": [88, 0],
+		"description": [{"text":"UHC 26.0.0","color":"#FFE73F"},{"text":" - ","color":"#6F6F6F"},{"text":"par ","color":"#9F9F9F"},{"text":"Redemoles","color":"#E73FFF"},{"text":" - ","color":"#6F6F6F"},{"text":"pour ","color":"#9F9F9F"},{"text":"MC 1.21.10","color":"#3FE7FF"}]
+	},
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancement/adventure/"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/end/"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/husbandry/"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/nether/"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/story/"
+      }
+    ]
+  }
+}

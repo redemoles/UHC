@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player":{
+                    "nbt": "{Tags:[\"nzl.type.02\"]}"
+                },
+                "damage": {
+                    "type": {
+                    "is_direct": false
+                        },
+                    "source_entity": {
+                        "nbt": "{Tags:[\"nzl.type.06\"]}"
+                        },
+                    "blocked": false
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                    "is_direct": false
+                    },
+                    "source_entity": {
+                          "nbt": "{Tags:[\"nzl.type.06\",\"nzl.level.2\"]}"
+                        },
+                    "blocked": false
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nzl:types/move/talent/fee_2"
+    }
+}

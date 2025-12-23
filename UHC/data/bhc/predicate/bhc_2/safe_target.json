@@ -1,0 +1,16 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
+		"bhc.target.dead.temp": {
+			"min": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#tick"
+				},
+				"score": "bhc.data.temp"
+			}
+		}
+	}
+}

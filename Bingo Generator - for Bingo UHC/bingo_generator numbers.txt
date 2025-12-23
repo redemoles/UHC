@@ -1,0 +1,7 @@
+bingo_generator_0 → Bingo UHC - Vanilla
+bingo_generator_1 → Bingo UHC - Ruée Vers l'Or
+bingo_generator_2 → /
+-----------------a → Premier Bingo
+-----------------b → Second Bingo
+
+bingo_99 → Bingo UHC Run

@@ -1,0 +1,46 @@
+
+#> uhc:pre_game/menu/load/scenario/blood_diamond/
+#
+# @within			uhc:pre_game/menu/selection/scenario/
+#
+#
+# @description		Menu Blood Diamond
+#
+
+clear @s
+tag @s remove uhc.menu.scenario.1
+execute unless score @s uhc.menu.scenario.blood_diamond matches 1.. run scoreboard players set @s uhc.menu.scenario.blood_diamond 1
+
+
+
+
+
+
+
+function uhc:pre_game/menu/load/background/
+
+execute if score #blood_diamond uhc.scenario matches 0 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Blood Diamond","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Désactivé","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
+$execute if score #blood_diamond uhc.scenario matches 1 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:diamond_ore[minecraft:item_name=[{"text":"Blood Diamond","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Mode Progressif","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Les $(end_tier_1) premiers diamants minés sont normaux.","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FFE73F","italic":false},{"text":"Les $(mined_tier_2) suivants peuvent infliger effets positifs comme négatifs.","color":"#FFEF7F","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Après $(end_tier_2) diamants minés, dégâts progressifs.","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
+execute if score #blood_diamond uhc.scenario matches 2 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:diamond_ore[minecraft:item_name=[{"text":"Blood Diamond","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Mode Traditionnel","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-1 PV par diamant miné.","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
+
+execute if score #blood_diamond uhc.scenario matches 0 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Blood Diamond","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Disabled","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
+$execute if score #blood_diamond uhc.scenario matches 1 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:diamond_ore[minecraft:item_name=[{"text":"Blood Diamond","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Progressive Mode","color":"#FFFFFF","italic":false}],[{"text":"Progressive Mode","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"The first $(end_tier_1) diamonds mined are normal.","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FFE73F","italic":false},{"text":"The following $(mined_tier_2) can inflict positive or negative effects.","color":"#FFEF7F","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"After $(end_tier_2) mined diamonds, damages are progressive.","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
+execute if score #blood_diamond uhc.scenario matches 2 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:diamond_ore[minecraft:item_name=[{"text":"Blood Diamond","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Traditional Mode","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-1 HP per diamond mined.","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_enable"}]
+
+
+function uhc:pre_game/menu/load/scenario/blood_diamond/tier_1/macro_text with storage uhc:temp blood_diamond
+
+
+function uhc:pre_game/menu/load/scenario/blood_diamond/tier_2/macro_text with storage uhc:temp blood_diamond
+
+execute unless score #trade_uhc uhc.scenario matches 1 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.5 with minecraft:sweet_berries[minecraft:item_name=[{"text":"Palier 3","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Diamants minés avant palier suivant : ","color":"#FFFFFF","italic":false},{"text":"∞","color":"#FF3F3F","bold":true,"italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"+1 diamant (100%)","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-x PV, x est le nombre de diamants minés par le joueur à ce palier","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_tier_3"}]
+execute unless score #trade_uhc uhc.scenario matches 1 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.5 with minecraft:sweet_berries[minecraft:item_name=[{"text":"Tier 3","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Diamonds mined before next tier : ","color":"#FFFFFF","italic":false},{"text":"∞","color":"#FF3F3F","bold":true,"italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"+1 diamond (100%)","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-x HP, x is the number of diamonds mined by the player at this tier","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_tier_3"}]
+
+execute if score #trade_uhc uhc.scenario matches 1 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.5 with minecraft:sweet_berries[minecraft:item_name=[{"text":"Palier 3","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Minerais de diamant minés avant palier suivant : ","color":"#FFFFFF","italic":false},{"text":"∞","color":"#FF3F3F","bold":true,"italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"+1 émeraude (100%)","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-x PV, x est le nombre de minerais de diamant minés par le joueur à ce palier","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_tier_3"}]
+execute if score #trade_uhc uhc.scenario matches 1 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.5 with minecraft:sweet_berries[minecraft:item_name=[{"text":"Tier 3","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Diamond ores mined before next tier : ","color":"#FFFFFF","italic":false},{"text":"∞","color":"#FF3F3F","bold":true,"italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"+1 emerald (100%)","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"-x HP, x is the number of diamond ores mined by the player at this tier","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario_blood_diamond_tier_3"}]
+
+execute if score @s uhc.menu.scenario.blood_diamond matches 2.. run item replace entity @s inventory.21 with minecraft:magenta_concrete[minecraft:item_name=[{"text":"-1","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"-1"}]
+execute if score @s uhc.menu.scenario.blood_diamond matches 2.. run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"+1","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"+1"}]
+
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

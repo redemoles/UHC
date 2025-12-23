@@ -1,0 +1,35 @@
+
+#> uhc:pre_game/menu/load/world_check/
+#
+# @within			uhc:pre_game/menu/selection/main/host
+#
+#
+# @description		Menu
+#
+
+clear @s
+tag @s remove uhc.menu.main.host
+tag @s add uhc.menu.world_check
+
+
+
+
+
+
+
+function uhc:pre_game/menu/load/background/
+
+item replace entity @s[tag=!host.check_biomes,scores={uhc.player.lang=061801}] inventory.1 with minecraft:moss_block[minecraft:item_name=[{"text":"Vérification des biomes","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_biomes"}]
+item replace entity @s[tag=host.check_biomes,scores={uhc.player.lang=061801}] inventory.1 with minecraft:moss_block[minecraft:item_name=[{"text":"Vérification des biomes","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_biomes"},minecraft:enchantment_glint_override=true]
+
+item replace entity @s[tag=!host.check_spawns,scores={uhc.player.lang=061801}] inventory.2 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Vérification des points d'apparition","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_spawns"}]
+item replace entity @s[tag=host.check_spawns,scores={uhc.player.lang=061801}] inventory.2 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Vérification des points d'apparition","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_spawns"},minecraft:enchantment_glint_override=true]
+
+item replace entity @s[tag=!host.check_biomes,scores={uhc.player.lang=051407}] inventory.1 with minecraft:moss_block[minecraft:item_name=[{"text":"Biomes check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_biomes"}]
+item replace entity @s[tag=host.check_biomes,scores={uhc.player.lang=051407}] inventory.1 with minecraft:moss_block[minecraft:item_name=[{"text":"Biomes check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_biomes"},minecraft:enchantment_glint_override=true]
+
+item replace entity @s[tag=!host.check_spawns,scores={uhc.player.lang=051407}] inventory.2 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Spawn points check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_spawns"}]
+item replace entity @s[tag=host.check_spawns,scores={uhc.player.lang=051407}] inventory.2 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Spawn points check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_spawns"},minecraft:enchantment_glint_override=true]
+
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

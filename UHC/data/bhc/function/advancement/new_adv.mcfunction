@@ -1,0 +1,28 @@
+
+#> bhc:advancement/new_adv
+#
+# @within			function tag "bhc:advancement/new_adv.json"
+# @executed			as & at the player who completed the advancement
+#
+# @input macro		$(title)		"Title of the advancement"
+# @input macro		$(description)	"Description of the advancement"
+#
+# @description		Executed when the player completes the advancement
+#
+
+## Si l'advancement est validé pendant la vérification des grilles dans le lobby
+execute if score #game_progress uhc.game_progress matches 0 run return fail
+
+## Équipe du joueur
+function uhc:in_game/player/team_join/vanilla
+
+## Recherche du mode de jeu
+$execute if score #bhc bhc.scenario matches 00 run function bhc:scenario/00/advancement/new_adv with storage $(namespace) $(line)_$(column)
+$execute if score #bhc bhc.scenario matches 01 run function bhc:scenario/01/advancement/new_adv with storage $(namespace) $(line)_$(column)
+$execute if score #bhc bhc.scenario matches 02 run function bhc:scenario/02/advancement/new_adv with storage $(namespace) $(line)_$(column)
+$execute if score #bhc bhc.scenario matches 91 run function bhc:scenario/91/advancement/new_adv with storage $(namespace) $(line)_$(column)
+$execute if score #bhc bhc.scenario matches 99 run function bhc:scenario/99/advancement/new_adv with storage $(namespace) $(line)_$(column)
+
+## Couleur du joueur
+execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 as @s[tag=uhc.player] run function uhc:in_game/scenario/biome_paranoia/by_colors
+execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 as @s[tag=uhc.player] run function uhc:in_game/scenario/biome_paranoia/by_nickname

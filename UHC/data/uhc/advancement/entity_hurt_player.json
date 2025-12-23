@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[\"uhc.player\"]}"
+                },
+                "damage": {
+                    "blocked": false
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "uhc:in_game/advancement/entity_hurt_player/"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wolf"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "uhc:in_game/advancement/wolf_killed_player/"
+    }
+}

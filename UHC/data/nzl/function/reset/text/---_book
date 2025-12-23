@@ -1,0 +1,1006 @@
+
+acier_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFBFBF","bold":true},
+{"text":"\n• ","color":"#BFBFBF","bold":true},
+{"text":"15 niveaux","color":"#EFEFEF","bold":false},
+{"text":"\n• ","color":"#BFBFBF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#EFEFEF","bold":false},
+{"text":"\n• ","color":"#BFBFBF","bold":true},
+{"text":"1 bouclier neuf","color":"#EFEFEF","bold":false},
+{"text":"\n• ","color":"#BFBFBF","bold":true},
+{"text":"3 blocs de fer","color":"#EFEFEF","bold":false}],
+
+acier_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFBFBF","bold":true},
+{"text":"\n• ","color":"#BFBFBF","bold":true}, {"text":"STATISTIQUES","color":"#DFDFDF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFEFEF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFEFEF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFEFEF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFEFEF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFEFEF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFEFEF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFEFEF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFEFEF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFEFEF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFEFEF","bold":true}, 
+{"text":" si ","color":"#F7F7F7","bold":false}, {"text":"Y>0","color":"#EFEFEF","bold":true}, 
+{"text":"\n\n• ","color":"#BFBFBF","bold":true}, {"text":"ÉPINE DE FER","color":"#DFDFDF","bold":true},{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"20%","color":"#EFEFEF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7F7F7","bold":false}, {"text":" (+0,2)","color":"#3F9FFF","bold":false}, 
+{"text":"\n\n• ","color":"#BFBFBF","bold":true}, {"text":"MUR DE FER","color":"#DFDFDF","bold":true},
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+1","color":"#EFEFEF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFEFEF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"-1","color":"#EFEFEF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFEFEF","bold":true},
+{"text":"\n\n• ","color":"#BFBFBF","bold":true}, {"text":"PARTICULARITÉS","color":"#DFDFDF","bold":true},
+{"text":"\n+ Immunisé ","color":"#3F9FFF","bold":true}, {"text":"à l\'","color":"#EFEFEF","bold":true}, {"text":"empoisonnement","color":"#9F3F9F","bold":true},
+{"text":"\n- Absorption désactivée","color":"#FF3F3F","bold":true}, {"text":"","color":"#EFEFEF","bold":true}],
+
+
+
+combat_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F3F00","bold":true},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"15 niveaux","color":"#DFCFBF","bold":false},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"1 diamant","color":"#DFCFBF","bold":false},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"1 épée en fer neuf","color":"#DFCFBF","bold":false},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"1 plastron en cuir neuf","color":"#DFCFBF","bold":false}],
+
+tellraw @s [{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F3F00","bold":true},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"15 niveaux","color":"#DFCFBF","bold":false},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"1 diamant","color":"#DFCFBF","bold":false},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"1 épée en fer neuf","color":"#DFCFBF","bold":false},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"1 plastron en cuir neuf","color":"#DFCFBF","bold":false}]
+
+[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F3F00","bold":true},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"15 niveaux","color":"#DFCFBF","bold":false},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"1 pioche en fer neuve","color":"#DFCFBF","bold":false},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"1 bouclier neuf","color":"#DFCFBF","bold":false},
+{"text":"\n• ","color":"#7F3F00","bold":true},
+{"text":"64 lingots de fer","color":"#DFCFBF","bold":false}],
+
+combat_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7F3F00","bold":true},
+{"text":"\n• ","color":"#7F3F00","bold":true}, {"text":"STATISTIQUES","color":"#BF9F7F","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFCFBF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFCFBF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFCFBF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFCFBF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFCFBF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFCFBF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFCFBF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFCFBF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFCFBF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFCFBF","bold":true}, 
+{"text":" si ","color":"#EFE7DF","bold":false}, {"text":"Y>0","color":"#DFCFBF","bold":true}, 
+{"text":"\n\n• ","color":"#7F3F00","bold":true}, {"text":"ÉPINE DE FER","color":"#BF9F7F","bold":true},{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"30%","color":"#DFCFBF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFE7DF","bold":false}, {"text":" (+0,1)","color":"#3F9FFF","bold":false}, 
+{"text":"\n\n• ","color":"#7F3F00","bold":true}, {"text":"MUR DE FER","color":"#BF9F7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFCFBF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFCFBF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFCFBF","bold":true},
+{"text":"\n\n• ","color":"#7F3F00","bold":true}, {"text":"PARTICULARITÉS","color":"#BF9F7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFCFBF","bold":true}], 
+
+
+
+dragon_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F5FDF","bold":true},
+{"text":"\n• ","color":"#7F5FDF","bold":true},
+{"text":"15 niveaux","color":"#DFD7F7","bold":false},
+{"text":"\n• ","color":"#7F5FDF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#DFD7F7","bold":false},
+{"text":"\n• ","color":"#7F5FDF","bold":true},
+{"text":"1 bouclier neuf","color":"#DFD7F7","bold":false},
+{"text":"\n• ","color":"#7F5FDF","bold":true},
+{"text":"64 lingots de fer","color":"#DFD7F7","bold":false}],
+
+dragon_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7F5FDF","bold":true},
+{"text":"\n• ","color":"#7F5FDF","bold":true}, {"text":"STATISTIQUES","color":"#BFAFEF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFD7F7","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFD7F7","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFD7F7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFD7F7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFD7F7","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFD7F7","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFD7F7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFD7F7","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFD7F7","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFD7F7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFD7F7","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFD7F7","bold":true}, 
+{"text":" si ","color":"#EFEBFB","bold":false}, {"text":"Y>0","color":"#DFD7F7","bold":true}, 
+{"text":"\n\n• ","color":"#7F5FDF","bold":true}, {"text":"ÉPINE DE FER","color":"#BFAFEF","bold":true},{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"40%","color":"#DFD7F7","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFEBFB","bold":false}, {"text":" (+0,1)","color":"#3F9FFF","bold":false}, 
+{"text":"\n\n• ","color":"#7F5FDF","bold":true}, {"text":"MUR DE FER","color":"#BFAFEF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFD7F7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFD7F7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFD7F7","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFD7F7","bold":true},
+{"text":"\n\n• ","color":"#7F5FDF","bold":true}, {"text":"PARTICULARITÉS","color":"#BFAFEF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFD7F7","bold":true}],
+
+
+eau_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#3F9FFF","bold":true},
+{"text":"\n• ","color":"#3F9FFF","bold":true},
+{"text":"15 niveaux","color":"#CFE7FF","bold":false},
+{"text":"\n• ","color":"#3F9FFF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#CFE7FF","bold":false},
+{"text":"\n• ","color":"#3F9FFF","bold":true},
+{"text":"1 bouclier neuf","color":"#CFE7FF","bold":false},
+{"text":"\n• ","color":"#3F9FFF","bold":true},
+{"text":"64 lingots de fer","color":"#CFE7FF","bold":false}],
+
+eau_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#3F9FFF","bold":true},
+{"text":"\n• ","color":"#3F9FFF","bold":true}, {"text":"STATISTIQUES","color":"#9FCFFF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#CFE7FF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#CFE7FF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#CFE7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#CFE7FF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#CFE7FF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#CFE7FF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#CFE7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#CFE7FF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#CFE7FF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#CFE7FF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#CFE7FF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#CFE7FF","bold":true}, 
+{"text":" si ","color":"#E7F3FF","bold":false}, {"text":"Y>0","color":"#CFE7FF","bold":true}, 
+{"text":"\n\n• ","color":"#3F9FFF","bold":true}, {"text":"ÉPINE DE FER","color":"#9FCFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#CFE7FF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#E7F3FF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#3F9FFF","bold":true}, {"text":"MUR DE FER","color":"#9FCFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#CFE7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#CFE7FF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#CFE7FF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#CFE7FF","bold":true},
+{"text":"\n\n• ","color":"#3F9FFF","bold":true}, {"text":"PARTICULARITÉS","color":"#9FCFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#CFE7FF","bold":true}],
+
+
+
+electrique_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FFDF00","bold":true},
+{"text":"\n• ","color":"#FFDF00","bold":true},
+{"text":"15 niveaux","color":"#FFF7BF","bold":false},
+{"text":"\n• ","color":"#FFDF00","bold":true},
+{"text":"1 pioche en fer neuve","color":"#FFF7BF","bold":false},
+{"text":"\n• ","color":"#FFDF00","bold":true},
+{"text":"1 bouclier neuf","color":"#FFF7BF","bold":false},
+{"text":"\n• ","color":"#FFDF00","bold":true},
+{"text":"64 lingots de fer","color":"#FFF7BF","bold":false}],
+
+electrique_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FFDF00","bold":true},
+{"text":"\n• ","color":"#FFDF00","bold":true}, {"text":"STATISTIQUES","color":"#FFEF7F","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFF7BF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFF7BF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFF7BF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFF7BF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFF7BF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFF7BF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFF7BF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFF7BF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFF7BF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFF7BF","bold":true}, 
+{"text":" si ","color":"#FFFBDF","bold":false}, {"text":"Y>0","color":"#FFF7BF","bold":true}, 
+{"text":"\n\n• ","color":"#FFDF00","bold":true}, {"text":"ÉPINE DE FER","color":"#FFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFF7BF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFFBDF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#FFDF00","bold":true}, {"text":"MUR DE FER","color":"#FFEF7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFF7BF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFF7BF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFF7BF","bold":true},
+{"text":"\n\n• ","color":"#FFDF00","bold":true}, {"text":"PARTICULARITÉS","color":"#FFEF7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFF7BF","bold":true}],
+
+
+
+fee_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FFBFFF","bold":true},
+{"text":"\n• ","color":"#FFBFFF","bold":true},
+{"text":"15 niveaux","color":"#FFEFFF","bold":false},
+{"text":"\n• ","color":"#FFBFFF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#FFEFFF","bold":false},
+{"text":"\n• ","color":"#FFBFFF","bold":true},
+{"text":"1 bouclier neuf","color":"#FFEFFF","bold":false},
+{"text":"\n• ","color":"#FFBFFF","bold":true},
+{"text":"64 lingots de fer","color":"#FFEFFF","bold":false}],
+
+fee_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FFBFFF","bold":true},
+{"text":"\n• ","color":"#FFBFFF","bold":true}, {"text":"STATISTIQUES","color":"#FFDFFF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFEFFF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFEFFF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFEFFF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFEFFF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFEFFF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFEFFF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFEFFF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFEFFF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFEFFF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFEFFF","bold":true}, 
+{"text":" si ","color":"#FFF7FF","bold":false}, {"text":"Y>0","color":"#FFEFFF","bold":true}, 
+{"text":"\n\n• ","color":"#FFBFFF","bold":true}, {"text":"ÉPINE DE FER","color":"#FFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFEFFF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFF7FF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#FFBFFF","bold":true}, {"text":"MUR DE FER","color":"#FFDFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFEFFF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFEFFF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFEFFF","bold":true},
+{"text":"\n\n• ","color":"#FFBFFF","bold":true}, {"text":"PARTICULARITÉS","color":"#FFDFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFEFFF","bold":true}],
+
+
+
+feu_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FF3F00","bold":true},
+{"text":"\n• ","color":"#FF3F00","bold":true},
+{"text":"15 niveaux","color":"#FFCFBF","bold":false},
+{"text":"\n• ","color":"#FF3F00","bold":true},
+{"text":"1 pioche en fer neuve","color":"#FFCFBF","bold":false},
+{"text":"\n• ","color":"#FF3F00","bold":true},
+{"text":"1 bouclier neuf","color":"#FFCFBF","bold":false},
+{"text":"\n• ","color":"#FF3F00","bold":true},
+{"text":"64 lingots de fer","color":"#FFCFBF","bold":false}],
+
+feu_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FF3F00","bold":true},
+{"text":"\n• ","color":"#FF3F00","bold":true}, {"text":"STATISTIQUES","color":"#FF9F7F","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFCFBF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFCFBF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFCFBF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFCFBF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFCFBF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFCFBF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFCFBF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFCFBF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFCFBF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFCFBF","bold":true}, 
+{"text":" si ","color":"#FFE7DF","bold":false}, {"text":"Y>0","color":"#FFCFBF","bold":true}, 
+{"text":"\n\n• ","color":"#FF3F00","bold":true}, {"text":"ÉPINE DE FER","color":"#FF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFCFBF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFE7DF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#FF3F00","bold":true}, {"text":"MUR DE FER","color":"#FF9F7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFCFBF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFCFBF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFCFBF","bold":true},
+{"text":"\n\n• ","color":"#FF3F00","bold":true}, {"text":"PARTICULARITÉS","color":"#FF9F7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFCFBF","bold":true}],
+
+
+
+glace_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFDFFF","bold":true},
+{"text":"\n• ","color":"#BFDFFF","bold":true},
+{"text":"15 niveaux","color":"#EFF7FF","bold":false},
+{"text":"\n• ","color":"#BFDFFF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#EFF7FF","bold":false},
+{"text":"\n• ","color":"#BFDFFF","bold":true},
+{"text":"1 bouclier neuf","color":"#EFF7FF","bold":false},
+{"text":"\n• ","color":"#BFDFFF","bold":true},
+{"text":"64 lingots de fer","color":"#EFF7FF","bold":false}],
+
+glace_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFDFFF","bold":true},
+{"text":"\n• ","color":"#BFDFFF","bold":true}, {"text":"STATISTIQUES","color":"#DFEFFF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFF7FF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFF7FF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFF7FF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFF7FF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFF7FF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFF7FF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFF7FF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFF7FF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFF7FF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFF7FF","bold":true}, 
+{"text":" si ","color":"#F7FBFF","bold":false}, {"text":"Y>0","color":"#EFF7FF","bold":true}, 
+{"text":"\n\n• ","color":"#BFDFFF","bold":true}, {"text":"ÉPINE DE FER","color":"#DFEFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFF7FF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7FBFF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#BFDFFF","bold":true}, {"text":"MUR DE FER","color":"#DFEFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFF7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFF7FF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFF7FF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFF7FF","bold":true},
+{"text":"\n\n• ","color":"#BFDFFF","bold":true}, {"text":"PARTICULARITÉS","color":"#DFEFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFF7FF","bold":true}],
+
+
+
+insecte_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFDF00","bold":true},
+{"text":"\n• ","color":"#BFDF00","bold":true},
+{"text":"15 niveaux","color":"#EFF7BF","bold":false},
+{"text":"\n• ","color":"#BFDF00","bold":true},
+{"text":"1 pioche en fer neuve","color":"#EFF7BF","bold":false},
+{"text":"\n• ","color":"#BFDF00","bold":true},
+{"text":"1 bouclier neuf","color":"#EFF7BF","bold":false},
+{"text":"\n• ","color":"#BFDF00","bold":true},
+{"text":"64 lingots de fer","color":"#EFF7BF","bold":false}],
+
+insecte_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFDF00","bold":true},
+{"text":"\n• ","color":"#BFDF00","bold":true}, {"text":"STATISTIQUES","color":"#DFEF7F","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFF7BF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFF7BF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFF7BF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFF7BF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFF7BF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFF7BF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFF7BF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFF7BF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFF7BF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFF7BF","bold":true}, 
+{"text":" si ","color":"#F7FBDF","bold":false}, {"text":"Y>0","color":"#EFF7BF","bold":true}, 
+{"text":"\n\n• ","color":"#BFDF00","bold":true}, {"text":"ÉPINE DE FER","color":"#DFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFF7BF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7FBDF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#BFDF00","bold":true}, {"text":"MUR DE FER","color":"#DFEF7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFF7BF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFF7BF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFF7BF","bold":true},
+{"text":"\n\n• ","color":"#BFDF00","bold":true}, {"text":"PARTICULARITÉS","color":"#DFEF7F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFF7BF","bold":true}],
+
+
+
+normal_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#EFEFEF","bold":true},
+{"text":"\n• ","color":"#EFEFEF","bold":true},
+{"text":"15 niveaux","color":"#FBFBFB","bold":false},
+{"text":"\n• ","color":"#EFEFEF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#FBFBFB","bold":false},
+{"text":"\n• ","color":"#EFEFEF","bold":true},
+{"text":"1 bouclier neuf","color":"#FBFBFB","bold":false},
+{"text":"\n• ","color":"#EFEFEF","bold":true},
+{"text":"64 lingots de fer","color":"#FBFBFB","bold":false}],
+
+normal_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#EFEFEF","bold":true},
+{"text":"\n• ","color":"#EFEFEF","bold":true}, {"text":"STATISTIQUES","color":"#F7F7F7","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FBFBFB","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FBFBFB","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FBFBFB","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FBFBFB","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FBFBFB","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FBFBFB","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FBFBFB","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FBFBFB","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FBFBFB","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FBFBFB","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FBFBFB","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FBFBFB","bold":true}, 
+{"text":" si ","color":"#FBFBFB","bold":false}, {"text":"Y>0","color":"#FBFBFB","bold":true}, 
+{"text":"\n\n• ","color":"#EFEFEF","bold":true}, {"text":"ÉPINE DE FER","color":"#F7F7F7","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FBFBFB","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FBFBFB","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#EFEFEF","bold":true}, {"text":"MUR DE FER","color":"#F7F7F7","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FBFBFB","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FBFBFB","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FBFBFB","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FBFBFB","bold":true},
+{"text":"\n\n• ","color":"#EFEFEF","bold":true}, {"text":"PARTICULARITÉS","color":"#F7F7F7","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FBFBFB","bold":true}],
+
+
+
+plante_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7FDF3F","bold":true},
+{"text":"\n• ","color":"#7FDF3F","bold":true},
+{"text":"15 niveaux","color":"#DFF7CF","bold":false},
+{"text":"\n• ","color":"#7FDF3F","bold":true},
+{"text":"1 pioche en fer neuve","color":"#DFF7CF","bold":false},
+{"text":"\n• ","color":"#7FDF3F","bold":true},
+{"text":"1 bouclier neuf","color":"#DFF7CF","bold":false},
+{"text":"\n• ","color":"#7FDF3F","bold":true},
+{"text":"64 lingots de fer","color":"#DFF7CF","bold":false}],
+
+plante_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7FDF3F","bold":true},
+{"text":"\n• ","color":"#7FDF3F","bold":true}, {"text":"STATISTIQUES","color":"#BFEF9F","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFF7CF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFF7CF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFF7CF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFF7CF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFF7CF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFF7CF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFF7CF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFF7CF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFF7CF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFF7CF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFF7CF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFF7CF","bold":true}, 
+{"text":" si ","color":"#EFFBE7","bold":false}, {"text":"Y>0","color":"#DFF7CF","bold":true}, 
+{"text":"\n\n• ","color":"#7FDF3F","bold":true}, {"text":"ÉPINE DE FER","color":"#BFEF9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#DFF7CF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFFBE7","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#7FDF3F","bold":true}, {"text":"MUR DE FER","color":"#BFEF9F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFF7CF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFF7CF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFF7CF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFF7CF","bold":true},
+{"text":"\n\n• ","color":"#7FDF3F","bold":true}, {"text":"PARTICULARITÉS","color":"#BFEF9F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFF7CF","bold":true}],
+
+
+
+poison_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#9F3F9F","bold":true},
+{"text":"\n• ","color":"#9F3F9F","bold":true},
+{"text":"15 niveaux","color":"#E7CFE7","bold":false},
+{"text":"\n• ","color":"#9F3F9F","bold":true},
+{"text":"1 pioche en fer neuve","color":"#E7CFE7","bold":false},
+{"text":"\n• ","color":"#9F3F9F","bold":true},
+{"text":"1 bouclier neuf","color":"#E7CFE7","bold":false},
+{"text":"\n• ","color":"#9F3F9F","bold":true},
+{"text":"64 lingots de fer","color":"#E7CFE7","bold":false}],
+
+poison_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#9F3F9F","bold":true},
+{"text":"\n• ","color":"#9F3F9F","bold":true}, {"text":"STATISTIQUES","color":"#CF9FCF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#E7CFE7","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#E7CFE7","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#E7CFE7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#E7CFE7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#E7CFE7","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#E7CFE7","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#E7CFE7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#E7CFE7","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#E7CFE7","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#E7CFE7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#E7CFE7","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#E7CFE7","bold":true}, 
+{"text":" si ","color":"#F3E7F3","bold":false}, {"text":"Y>0","color":"#E7CFE7","bold":true}, 
+{"text":"\n\n• ","color":"#9F3F9F","bold":true}, {"text":"ÉPINE DE FER","color":"#CF9FCF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#E7CFE7","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F3E7F3","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#9F3F9F","bold":true}, {"text":"MUR DE FER","color":"#CF9FCF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#E7CFE7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#E7CFE7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#E7CFE7","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#E7CFE7","bold":true},
+{"text":"\n\n• ","color":"#9F3F9F","bold":true}, {"text":"PARTICULARITÉS","color":"#CF9FCF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#E7CFE7","bold":true}],
+
+
+
+psy_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FF3F7F","bold":true},
+{"text":"\n• ","color":"#FF3F7F","bold":true},
+{"text":"15 niveaux","color":"#FFCFDF","bold":false},
+{"text":"\n• ","color":"#FF3F7F","bold":true},
+{"text":"1 pioche en fer neuve","color":"#FFCFDF","bold":false},
+{"text":"\n• ","color":"#FF3F7F","bold":true},
+{"text":"1 bouclier neuf","color":"#FFCFDF","bold":false},
+{"text":"\n• ","color":"#FF3F7F","bold":true},
+{"text":"64 lingots de fer","color":"#FFCFDF","bold":false}],
+
+psy_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FF3F7F","bold":true},
+{"text":"\n• ","color":"#FF3F7F","bold":true}, {"text":"STATISTIQUES","color":"#FF9FBF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFCFDF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFCFDF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFCFDF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFCFDF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFCFDF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFCFDF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFCFDF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFCFDF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFCFDF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFCFDF","bold":true}, 
+{"text":" si ","color":"#FFE7EF","bold":false}, {"text":"Y>0","color":"#FFCFDF","bold":true}, 
+{"text":"\n\n• ","color":"#FF3F7F","bold":true}, {"text":"ÉPINE DE FER","color":"#FF9FBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFCFDF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFE7EF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#FF3F7F","bold":true}, {"text":"MUR DE FER","color":"#FF9FBF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFCFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFCFDF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFCFDF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFCFDF","bold":true},
+{"text":"\n\n• ","color":"#FF3F7F","bold":true}, {"text":"PARTICULARITÉS","color":"#FF9FBF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFCFDF","bold":true}],
+
+
+
+roche_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BF9F5F","bold":true},
+{"text":"\n• ","color":"#BF9F5F","bold":true},
+{"text":"15 niveaux","color":"#EFE7D7","bold":false},
+{"text":"\n• ","color":"#BF9F5F","bold":true},
+{"text":"1 pioche en fer neuve","color":"#EFE7D7","bold":false},
+{"text":"\n• ","color":"#BF9F5F","bold":true},
+{"text":"1 bouclier neuf","color":"#EFE7D7","bold":false},
+{"text":"\n• ","color":"#BF9F5F","bold":true},
+{"text":"64 lingots de fer","color":"#EFE7D7","bold":false}],
+
+roche_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BF9F5F","bold":true},
+{"text":"\n• ","color":"#BF9F5F","bold":true}, {"text":"STATISTIQUES","color":"#DFCFAF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFE7D7","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFE7D7","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFE7D7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFE7D7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFE7D7","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFE7D7","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFE7D7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFE7D7","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFE7D7","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFE7D7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFE7D7","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFE7D7","bold":true}, 
+{"text":" si ","color":"#F7F3EB","bold":false}, {"text":"Y>0","color":"#EFE7D7","bold":true}, 
+{"text":"\n\n• ","color":"#BF9F5F","bold":true}, {"text":"ÉPINE DE FER","color":"#DFCFAF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFE7D7","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7F3EB","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#BF9F5F","bold":true}, {"text":"MUR DE FER","color":"#DFCFAF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFE7D7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFE7D7","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFE7D7","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFE7D7","bold":true},
+{"text":"\n\n• ","color":"#BF9F5F","bold":true}, {"text":"PARTICULARITÉS","color":"#DFCFAF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFE7D7","bold":true}],
+
+
+
+sol_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#DFBF7F","bold":true},
+{"text":"\n• ","color":"#DFBF7F","bold":true},
+{"text":"15 niveaux","color":"#F7EFDF","bold":false},
+{"text":"\n• ","color":"#DFBF7F","bold":true},
+{"text":"1 pioche en fer neuve","color":"#F7EFDF","bold":false},
+{"text":"\n• ","color":"#DFBF7F","bold":true},
+{"text":"1 bouclier neuf","color":"#F7EFDF","bold":false},
+{"text":"\n• ","color":"#DFBF7F","bold":true},
+{"text":"64 lingots de fer","color":"#F7EFDF","bold":false}],
+
+sol_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#DFBF7F","bold":true},
+{"text":"\n• ","color":"#DFBF7F","bold":true}, {"text":"STATISTIQUES","color":"#EFDFBF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#F7EFDF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#F7EFDF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#F7EFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#F7EFDF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#F7EFDF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#F7EFDF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#F7EFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#F7EFDF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#F7EFDF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#F7EFDF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#F7EFDF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#F7EFDF","bold":true}, 
+{"text":" si ","color":"#FBF7EF","bold":false}, {"text":"Y>0","color":"#F7EFDF","bold":true}, 
+{"text":"\n\n• ","color":"#DFBF7F","bold":true}, {"text":"ÉPINE DE FER","color":"#EFDFBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#F7EFDF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FBF7EF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#DFBF7F","bold":true}, {"text":"MUR DE FER","color":"#EFDFBF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#F7EFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#F7EFDF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#F7EFDF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#F7EFDF","bold":true},
+{"text":"\n\n• ","color":"#DFBF7F","bold":true}, {"text":"PARTICULARITÉS","color":"#EFDFBF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#F7EFDF","bold":true}],
+
+
+
+spectre_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F7FBF","bold":true},
+{"text":"\n• ","color":"#7F7FBF","bold":true},
+{"text":"15 niveaux","color":"#DFDFEF","bold":false},
+{"text":"\n• ","color":"#7F7FBF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#DFDFEF","bold":false},
+{"text":"\n• ","color":"#7F7FBF","bold":true},
+{"text":"1 bouclier neuf","color":"#DFDFEF","bold":false},
+{"text":"\n• ","color":"#7F7FBF","bold":true},
+{"text":"64 lingots de fer","color":"#DFDFEF","bold":false}],
+
+spectre_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7F7FBF","bold":true},
+{"text":"\n• ","color":"#7F7FBF","bold":true}, {"text":"STATISTIQUES","color":"#BFBFDF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFDFEF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFDFEF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFDFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFDFEF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFDFEF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFDFEF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFDFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFDFEF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFDFEF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFDFEF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFDFEF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFDFEF","bold":true}, 
+{"text":" si ","color":"#EFEFF7","bold":false}, {"text":"Y>0","color":"#DFDFEF","bold":true}, 
+{"text":"\n\n• ","color":"#7F7FBF","bold":true}, {"text":"ÉPINE DE FER","color":"#BFBFDF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#DFDFEF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFEFF7","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#7F7FBF","bold":true}, {"text":"MUR DE FER","color":"#BFBFDF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFDFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFDFEF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFDFEF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFDFEF","bold":true},
+{"text":"\n\n• ","color":"#7F7FBF","bold":true}, {"text":"PARTICULARITÉS","color":"#BFBFDF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFDFEF","bold":true}],
+
+
+
+tenebres_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#5F3F3F","bold":true},
+{"text":"\n• ","color":"#5F3F3F","bold":true},
+{"text":"15 niveaux","color":"#D7CFCF","bold":false},
+{"text":"\n• ","color":"#5F3F3F","bold":true},
+{"text":"1 pioche en fer neuve","color":"#D7CFCF","bold":false},
+{"text":"\n• ","color":"#5F3F3F","bold":true},
+{"text":"1 bouclier neuf","color":"#D7CFCF","bold":false},
+{"text":"\n• ","color":"#5F3F3F","bold":true},
+{"text":"64 lingots de fer","color":"#D7CFCF","bold":false}],
+
+tenebres_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#5F3F3F","bold":true},
+{"text":"\n• ","color":"#5F3F3F","bold":true}, {"text":"STATISTIQUES","color":"#AF9F9F","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#D7CFCF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#D7CFCF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#D7CFCF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#D7CFCF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#D7CFCF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#D7CFCF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#D7CFCF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#D7CFCF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#D7CFCF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#D7CFCF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#D7CFCF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#D7CFCF","bold":true}, 
+{"text":" si ","color":"#EBE7E7","bold":false}, {"text":"Y>0","color":"#D7CFCF","bold":true}, 
+{"text":"\n\n• ","color":"#5F3F3F","bold":true}, {"text":"ÉPINE DE FER","color":"#AF9F9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#D7CFCF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EBE7E7","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#5F3F3F","bold":true}, {"text":"MUR DE FER","color":"#AF9F9F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#D7CFCF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#D7CFCF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#D7CFCF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#D7CFCF","bold":true},
+{"text":"\n\n• ","color":"#5F3F3F","bold":true}, {"text":"PARTICULARITÉS","color":"#AF9F9F","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#D7CFCF","bold":true}],
+
+
+
+vol_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFBFFF","bold":true},
+{"text":"\n• ","color":"#BFBFFF","bold":true},
+{"text":"15 niveaux","color":"#EFEFFF","bold":false},
+{"text":"\n• ","color":"#BFBFFF","bold":true},
+{"text":"1 pioche en fer neuve","color":"#EFEFFF","bold":false},
+{"text":"\n• ","color":"#BFBFFF","bold":true},
+{"text":"1 bouclier neuf","color":"#EFEFFF","bold":false},
+{"text":"\n• ","color":"#BFBFFF","bold":true},
+{"text":"64 lingots de fer","color":"#EFEFFF","bold":false}],
+
+vol_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFBFFF","bold":true},
+{"text":"\n• ","color":"#BFBFFF","bold":true}, {"text":"STATISTIQUES","color":"#DFDFFF","bold":true},
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFEFFF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFEFFF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFEFFF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFEFFF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFEFFF","bold":true}, 
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFEFFF","bold":true}, 
+{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFEFFF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFEFFF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFEFFF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFEFFF","bold":true}, 
+{"text":" si ","color":"#F7F7FF","bold":false}, {"text":"Y>0","color":"#EFEFFF","bold":true}, 
+{"text":"\n\n• ","color":"#BFBFFF","bold":true}, {"text":"ÉPINE DE FER","color":"#DFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFEFFF","bold":true}, 
+{"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7F7FF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, 
+{"text":"\n\n• ","color":"#BFBFFF","bold":true}, {"text":"MUR DE FER","color":"#DFDFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFEFFF","bold":true}, 
+{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFEFFF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFEFFF","bold":true},
+{"text":"\n\n• ","color":"#BFBFFF","bold":true}, {"text":"PARTICULARITÉS","color":"#DFDFFF","bold":true},
+{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFEFFF","bold":true}]
+
+
+
+
+
+
+
+give @s written_book[written_book_content={pages:[
+[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},
+{"text":"\nStade : Base\n\n","color":"#5F8F77"},
+{"text":"[","color":"#8F8F8F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(acier_changement)
+   ]}},
+{"text":"ACIER","color":"#BFBFBF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(acier_changement)
+   ]}},
+{"text":"]\n","color":"#8F8F8F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(acier_changement)
+   ]}},
+{"text":"[","color":"#8F8F8F","hover_event": 
+ {"action": "show_text","value": 
+  [$(acier_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(acier_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}},
+{"text":"]\n\n","color":"#8F8F8F","hover_event": 
+ {"action": "show_text","value": 
+  [$(acier_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}},
+{"text":"[","color":"#5F2F00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(combat_changement)
+   ]}},
+{"text":"COMBAT","color":"#7F3F00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(combat_changement)
+   ]}},
+{"text":"]\n","color":"#5F2F00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(combat_changement)
+   ]}},
+{"text":"[","color":"#5F2F00","hover_event": 
+ {"action": "show_text","value": 
+  [$(combat_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 02"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(combat_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 02"}},
+{"text":"]\n\n","color":"#5F2F00","hover_event": 
+ {"action": "show_text","value": 
+  [$(combat_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 02"}},
+{"text":"[","color":"#5F47A7","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(dragon_changement)
+   ]}},
+{"text":"DRAGON","color":"#7F5FDF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(dragon_changement)
+   ]}},
+{"text":"]\n","color":"#5F47A7","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(dragon_changement)
+   ]}},
+{"text":"[","color":"#5F47A7","hover_event": 
+ {"action": "show_text","value": 
+  [$(dragon_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 03"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(dragon_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 03"}},
+{"text":"]\n\n","color":"#5F47A7","hover_event": 
+ {"action": "show_text","value": 
+  [$(dragon_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 03"}}
+]],
+[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},
+{"text":"\nStade : Base\n\n","color":"#5F8F77"},
+{"text":"[","color":"#2F77BF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(eau_changement)
+   ]}},
+{"text":"EAU","color":"#3F9FFF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(eau_changement)
+   ]}},
+{"text":"]\n","color":"#2F77BF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(eau_changement)
+   ]}},
+{"text":"[","color":"#2F77BF","hover_event": 
+ {"action": "show_text","value": 
+  [$(eau_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 04"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(eau_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 04"}},
+{"text":"]\n\n","color":"#2F77BF","hover_event": 
+ {"action": "show_text","value": 
+  [$(eau_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 04"}},
+{"text":"[","color":"#BFA700","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(electrique_changement)
+   ]}},
+{"text":"ÉLECTRIQUE","color":"#FFDF00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(electrique_changement)
+   ]}},
+{"text":"]\n","color":"#BFA700","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(electrique_changement)
+   ]}},
+{"text":"[","color":"#BFA700","hover_event": 
+ {"action": "show_text","value": 
+  [$(electrique_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 05"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(electrique_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 05"}},
+{"text":"]\n\n","color":"#BFA700","hover_event": 
+ {"action": "show_text","value": 
+  [$(electrique_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 05"}},
+{"text":"[","color":"#BF8FBF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(fee_changement)
+   ]}},
+{"text":"FÉE","color":"#FFBFFF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(fee_changement)
+   ]}},
+{"text":"]\n","color":"#BF8FBF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(fee_changement)
+   ]}},
+{"text":"[","color":"#BF8FBF","hover_event": 
+ {"action": "show_text","value": 
+  [$(fee_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 06"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(fee_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 06"}},
+{"text":"]\n\n","color":"#BF8FBF","hover_event": 
+ {"action": "show_text","value": 
+  [$(fee_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 06"}}
+]],
+[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},
+{"text":"\nStade : Base\n\n","color":"#5F8F77"},
+{"text":"[","color":"#BF2F00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(feu_changement)
+   ]}},
+{"text":"FEU","color":"#FF3F00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(feu_changement)
+   ]}},
+{"text":"]\n","color":"#BF2F00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(feu_changement)
+   ]}},
+{"text":"[","color":"#BF2F00","hover_event": 
+ {"action": "show_text","value": 
+  [$(feu_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 07"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(feu_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 07"}},
+{"text":"]\n\n","color":"#BF2F00","hover_event": 
+ {"action": "show_text","value": 
+  [$(feu_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 07"}},
+{"text":"[","color":"#8FA7BF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(glace_changement)
+   ]}},
+{"text":"GLACE","color":"#BFDFFF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(glace_changement)
+   ]}},
+{"text":"]\n","color":"#8FA7BF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(glace_changement)
+   ]}},
+{"text":"[","color":"#8FA7BF","hover_event": 
+ {"action": "show_text","value": 
+  [$(glace_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 08"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(glace_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 08"}},
+{"text":"]\n\n","color":"#8FA7BF","hover_event": 
+ {"action": "show_text","value": 
+  [$(glace_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 08"}},
+{"text":"[","color":"#8FA700","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(insecte_changement)
+   ]}},
+{"text":"INSECTE","color":"#BFDF00","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(insecte_changement)
+   ]}},
+{"text":"]\n","color":"#8FA700","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(insecte_changement)
+   ]}},
+{"text":"[","color":"#8FA700","hover_event": 
+ {"action": "show_text","value": 
+  [$(insecte_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 09"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(insecte_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 09"}},
+{"text":"]\n\n","color":"#8FA700","hover_event": 
+ {"action": "show_text","value": 
+  [$(insecte_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 09"}}
+]],
+[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},
+{"text":"\nStade : Base\n\n","color":"#5F8F77"},
+{"text":"[","color":"#B3B3B3","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(normal_changement)
+   ]}},
+{"text":"NORMAL","color":"#EFEFEF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(normal_changement)
+   ]}},
+{"text":"]\n","color":"#B3B3B3","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(normal_changement)
+   ]}},
+{"text":"[","color":"#B3B3B3","hover_event": 
+ {"action": "show_text","value": 
+  [$(normal_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 10"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(normal_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 10"}},
+{"text":"]\n\n","color":"#B3B3B3","hover_event": 
+ {"action": "show_text","value": 
+  [$(normal_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 10"}},
+{"text":"[","color":"#5FA72F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(plante_changement)
+   ]}},
+{"text":"PLANTE","color":"#7FDF3F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(plante_changement)
+   ]}},
+{"text":"]\n","color":"#5FA72F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(plante_changement)
+   ]}},
+{"text":"[","color":"#5FA72F","hover_event": 
+ {"action": "show_text","value": 
+  [$(plante_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 11"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(plante_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 11"}},
+{"text":"]\n\n","color":"#5FA72F","hover_event": 
+ {"action": "show_text","value": 
+  [$(plante_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 11"}},
+{"text":"[","color":"#772F77","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(poison_changement)
+   ]}},
+{"text":"POISON","color":"#9F3F9F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(poison_changement)
+   ]}},
+{"text":"]\n","color":"#772F77","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(poison_changement)
+   ]}},
+{"text":"[","color":"#772F77","hover_event": 
+ {"action": "show_text","value": 
+  [$(poison_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 12"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(poison_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 12"}},
+{"text":"]\n\n","color":"#772F77","hover_event": 
+ {"action": "show_text","value": 
+  [$(poison_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 12"}}
+]],
+[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},
+{"text":"\nStade : Base\n\n","color":"#5F8F77"},
+{"text":"[","color":"#BF2F5F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(psy_changement)
+   ]}},
+{"text":"PSY","color":"#FF3F7F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(psy_changement)
+   ]}},
+{"text":"]\n","color":"#BF2F5F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(psy_changement)
+   ]}},
+{"text":"[","color":"#BF2F5F","hover_event": 
+ {"action": "show_text","value": 
+  [$(psy_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 13"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(psy_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 13"}},
+{"text":"]\n\n","color":"#BF2F5F","hover_event": 
+ {"action": "show_text","value": 
+  [$(psy_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 13"}},
+{"text":"[","color":"#8F7747","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(roche_changement)
+   ]}},
+{"text":"ROCHE","color":"#BF9F5F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(roche_changement)
+   ]}},
+{"text":"]\n","color":"#8F7747","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(roche_changement)
+   ]}},
+{"text":"[","color":"#8F7747","hover_event": 
+ {"action": "show_text","value": 
+  [$(roche_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 14"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(roche_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 14"}},
+{"text":"]\n\n","color":"#8F7747","hover_event": 
+ {"action": "show_text","value": 
+  [$(roche_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 14"}},
+{"text":"[","color":"#A78F5F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(sol_changement)
+   ]}},
+{"text":"SOL","color":"#DFBF7F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(sol_changement)
+   ]}},
+{"text":"]\n","color":"#A78F5F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(sol_changement)
+   ]}},
+{"text":"[","color":"#A78F5F","hover_event": 
+ {"action": "show_text","value": 
+  [$(sol_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 15"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(sol_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 15"}},
+{"text":"]\n\n","color":"#A78F5F","hover_event": 
+ {"action": "show_text","value": 
+  [$(sol_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 15"}}
+]],
+[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},
+{"text":"\nStade : Base\n\n","color":"#5F8F77"},
+{"text":"[","color":"#5F5F8F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(spectre_changement)
+   ]}},
+{"text":"SPECTRE","color":"#7F7FBF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(spectre_changement)
+   ]}},
+{"text":"]\n","color":"#5F5F8F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(spectre_changement)
+   ]}},
+{"text":"[","color":"#5F5F8F","hover_event": 
+ {"action": "show_text","value": 
+  [$(spectre_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 16"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(spectre_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 16"}},
+{"text":"]\n\n","color":"#5F5F8F","hover_event": 
+ {"action": "show_text","value": 
+  [$(spectre_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 16"}},
+{"text":"[","color":"#472F2F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(tenebres_changement)
+   ]}},
+{"text":"TÉNÈBRES","color":"#5F3F3F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(tenebres_changement)
+   ]}},
+{"text":"]\n","color":"#472F2F","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(tenebres_changement)
+   ]}},
+{"text":"[","color":"#472F2F","hover_event": 
+ {"action": "show_text","value": 
+  [$(tenebres_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 17"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(tenebres_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 17"}},
+{"text":"]\n\n","color":"#472F2F","hover_event": 
+ {"action": "show_text","value": 
+  [$(tenebres_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 17"}},
+{"text":"[","color":"#8F8FBF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(vol_changement)
+   ]}},
+{"text":"VOL","color":"#BFBFFF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(vol_changement)
+   ]}},
+{"text":"]\n","color":"#8F8FBF","bold":true,"hover_event": 
+ {"action": "show_text","value": 
+  [$(vol_changement)
+   ]}},
+{"text":"[","color":"#8F8FBF","hover_event": 
+ {"action": "show_text","value": 
+  [$(vol_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 18"}},
+{"text":"ÉVOLUER","color":"#00BFFF","hover_event": 
+ {"action": "show_text","value": 
+  [$(vol_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 18"}},
+{"text":"]\n\n","color":"#8F8FBF","hover_event": 
+ {"action": "show_text","value": 
+  [$(vol_condition)
+   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 18"}}
+]]
+],title:"Livre des types",author:"Nuzlocke UHC"}]
+
+
+
+
+
+
+
+
+"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}
+
+
+
+acier_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFBFBF","bold":true},{"text":"\n• ","color":"#BFBFBF","bold":true},{"text":"15 niveaux","color":"#EFEFEF","bold":false},{"text":"\n• ","color":"#BFBFBF","bold":true},{"text":"1 diamant","color":"#EFEFEF","bold":false},{"text":"\n• ","color":"#BFBFBF","bold":true},{"text":"1 pioche en fer neuve","color":"#EFEFEF","bold":false},{"text":"\n• ","color":"#BFBFBF","bold":true},{"text":"1 bouclier neuf","color":"#EFEFEF","bold":false},{"text":"\n• ","color":"#BFBFBF","bold":true},{"text":"3 blocs de fer","color":"#EFEFEF","bold":false}],acier_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFBFBF","bold":true},{"text":"\n• ","color":"#BFBFBF","bold":true}, {"text":"STATISTIQUES","color":"#DFDFDF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFEFEF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFEFEF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFEFEF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFEFEF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFEFEF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFEFEF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFEFEF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFEFEF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFEFEF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFEFEF","bold":true}, {"text":" si ","color":"#F7F7F7","bold":false}, {"text":"Y>0","color":"#EFEFEF","bold":true}, {"text":"\n\n• ","color":"#BFBFBF","bold":true}, {"text":"ÉPINE DE FER","color":"#DFDFDF","bold":true},{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"40%","color":"#EFEFEF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7F7F7","bold":false}, {"text":" (+0,4)","color":"#3F9FFF","bold":false}, {"text":"\n\n• ","color":"#BFBFBF","bold":true}, {"text":"MUR DE FER","color":"#DFDFDF","bold":true},{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+1","color":"#EFEFEF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFEFEF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"-1","color":"#EFEFEF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFEFEF","bold":true},{"text":"\n\n• ","color":"#BFBFBF","bold":true}, {"text":"PARTICULARITÉS","color":"#DFDFDF","bold":true},{"text":"\n+ Immunisé ","color":"#3F9FFF","bold":true}, {"text":"à l\'","color":"#EFEFEF","bold":true}, {"text":"empoisonnement","color":"#9F3F9F","bold":true}, {"text":"\n- Absorption désactivée","color":"#FF3F3F","bold":true}, {"text":"","color":"#EFEFEF","bold":true}],combat_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F3F00","bold":true},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"15 niveaux","color":"#DFCFBF","bold":false},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"1 pioche en fer neuve","color":"#DFCFBF","bold":false},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"1 bouclier neuf","color":"#DFCFBF","bold":false},{"text":"\n• ","color":"#7F3F00","bold":true},{"text":"64 lingots de fer","color":"#DFCFBF","bold":false}],combat_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7F3F00","bold":true},{"text":"\n• ","color":"#7F3F00","bold":true}, {"text":"STATISTIQUES","color":"#BF9F7F","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFCFBF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFCFBF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFCFBF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFCFBF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFCFBF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFCFBF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFCFBF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFCFBF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFCFBF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFCFBF","bold":true}, {"text":" si ","color":"#EFE7DF","bold":false}, {"text":"Y>0","color":"#DFCFBF","bold":true}, {"text":"\n\n• ","color":"#7F3F00","bold":true}, {"text":"ÉPINE DE FER","color":"#BF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#DFCFBF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFE7DF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#7F3F00","bold":true}, {"text":"MUR DE FER","color":"#BF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFCFBF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFCFBF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFCFBF","bold":true},{"text":"\n\n• ","color":"#7F3F00","bold":true}, {"text":"PARTICULARITÉS","color":"#BF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFCFBF","bold":true}],dragon_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F5FDF","bold":true},{"text":"\n• ","color":"#7F5FDF","bold":true},{"text":"15 niveaux","color":"#DFD7F7","bold":false},{"text":"\n• ","color":"#7F5FDF","bold":true},{"text":"1 pioche en fer neuve","color":"#DFD7F7","bold":false},{"text":"\n• ","color":"#7F5FDF","bold":true},{"text":"1 bouclier neuf","color":"#DFD7F7","bold":false},{"text":"\n• ","color":"#7F5FDF","bold":true},{"text":"64 lingots de fer","color":"#DFD7F7","bold":false}],dragon_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7F5FDF","bold":true},{"text":"\n• ","color":"#7F5FDF","bold":true}, {"text":"STATISTIQUES","color":"#BFAFEF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFD7F7","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFD7F7","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFD7F7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFD7F7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFD7F7","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFD7F7","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFD7F7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFD7F7","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFD7F7","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFD7F7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFD7F7","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFD7F7","bold":true}, {"text":" si ","color":"#EFEBFB","bold":false}, {"text":"Y>0","color":"#DFD7F7","bold":true}, {"text":"\n\n• ","color":"#7F5FDF","bold":true}, {"text":"ÉPINE DE FER","color":"#BFAFEF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#DFD7F7","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFEBFB","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#7F5FDF","bold":true}, {"text":"MUR DE FER","color":"#BFAFEF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFD7F7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFD7F7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFD7F7","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFD7F7","bold":true},{"text":"\n\n• ","color":"#7F5FDF","bold":true}, {"text":"PARTICULARITÉS","color":"#BFAFEF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFD7F7","bold":true}],eau_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#3F9FFF","bold":true},{"text":"\n• ","color":"#3F9FFF","bold":true},{"text":"15 niveaux","color":"#CFE7FF","bold":false},{"text":"\n• ","color":"#3F9FFF","bold":true},{"text":"1 pioche en fer neuve","color":"#CFE7FF","bold":false},{"text":"\n• ","color":"#3F9FFF","bold":true},{"text":"1 bouclier neuf","color":"#CFE7FF","bold":false},{"text":"\n• ","color":"#3F9FFF","bold":true},{"text":"64 lingots de fer","color":"#CFE7FF","bold":false}],eau_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#3F9FFF","bold":true},{"text":"\n• ","color":"#3F9FFF","bold":true}, {"text":"STATISTIQUES","color":"#9FCFFF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#CFE7FF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#CFE7FF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#CFE7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#CFE7FF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#CFE7FF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#CFE7FF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#CFE7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#CFE7FF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#CFE7FF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#CFE7FF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#CFE7FF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#CFE7FF","bold":true}, {"text":" si ","color":"#E7F3FF","bold":false}, {"text":"Y>0","color":"#CFE7FF","bold":true}, {"text":"\n\n• ","color":"#3F9FFF","bold":true}, {"text":"ÉPINE DE FER","color":"#9FCFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#CFE7FF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#E7F3FF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#3F9FFF","bold":true}, {"text":"MUR DE FER","color":"#9FCFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#CFE7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#CFE7FF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#CFE7FF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#CFE7FF","bold":true},{"text":"\n\n• ","color":"#3F9FFF","bold":true}, {"text":"PARTICULARITÉS","color":"#9FCFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#CFE7FF","bold":true}],electrique_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FFDF00","bold":true},{"text":"\n• ","color":"#FFDF00","bold":true},{"text":"15 niveaux","color":"#FFF7BF","bold":false},{"text":"\n• ","color":"#FFDF00","bold":true},{"text":"1 pioche en fer neuve","color":"#FFF7BF","bold":false},{"text":"\n• ","color":"#FFDF00","bold":true},{"text":"1 bouclier neuf","color":"#FFF7BF","bold":false},{"text":"\n• ","color":"#FFDF00","bold":true},{"text":"64 lingots de fer","color":"#FFF7BF","bold":false}],electrique_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FFDF00","bold":true},{"text":"\n• ","color":"#FFDF00","bold":true}, {"text":"STATISTIQUES","color":"#FFEF7F","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFF7BF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFF7BF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFF7BF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFF7BF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFF7BF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFF7BF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFF7BF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFF7BF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFF7BF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFF7BF","bold":true}, {"text":" si ","color":"#FFFBDF","bold":false}, {"text":"Y>0","color":"#FFF7BF","bold":true}, {"text":"\n\n• ","color":"#FFDF00","bold":true}, {"text":"ÉPINE DE FER","color":"#FFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFF7BF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFFBDF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#FFDF00","bold":true}, {"text":"MUR DE FER","color":"#FFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFF7BF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFF7BF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFF7BF","bold":true},{"text":"\n\n• ","color":"#FFDF00","bold":true}, {"text":"PARTICULARITÉS","color":"#FFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFF7BF","bold":true}],fee_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FFBFFF","bold":true},{"text":"\n• ","color":"#FFBFFF","bold":true},{"text":"15 niveaux","color":"#FFEFFF","bold":false},{"text":"\n• ","color":"#FFBFFF","bold":true},{"text":"1 pioche en fer neuve","color":"#FFEFFF","bold":false},{"text":"\n• ","color":"#FFBFFF","bold":true},{"text":"1 bouclier neuf","color":"#FFEFFF","bold":false},{"text":"\n• ","color":"#FFBFFF","bold":true},{"text":"64 lingots de fer","color":"#FFEFFF","bold":false}],fee_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FFBFFF","bold":true},{"text":"\n• ","color":"#FFBFFF","bold":true}, {"text":"STATISTIQUES","color":"#FFDFFF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFEFFF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFEFFF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFEFFF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFEFFF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFEFFF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFEFFF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFEFFF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFEFFF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFEFFF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFEFFF","bold":true}, {"text":" si ","color":"#FFF7FF","bold":false}, {"text":"Y>0","color":"#FFEFFF","bold":true}, {"text":"\n\n• ","color":"#FFBFFF","bold":true}, {"text":"ÉPINE DE FER","color":"#FFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFEFFF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFF7FF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#FFBFFF","bold":true}, {"text":"MUR DE FER","color":"#FFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFEFFF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFEFFF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFEFFF","bold":true},{"text":"\n\n• ","color":"#FFBFFF","bold":true}, {"text":"PARTICULARITÉS","color":"#FFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFEFFF","bold":true}],feu_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FF3F00","bold":true},{"text":"\n• ","color":"#FF3F00","bold":true},{"text":"15 niveaux","color":"#FFCFBF","bold":false},{"text":"\n• ","color":"#FF3F00","bold":true},{"text":"1 pioche en fer neuve","color":"#FFCFBF","bold":false},{"text":"\n• ","color":"#FF3F00","bold":true},{"text":"1 bouclier neuf","color":"#FFCFBF","bold":false},{"text":"\n• ","color":"#FF3F00","bold":true},{"text":"64 lingots de fer","color":"#FFCFBF","bold":false}],feu_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FF3F00","bold":true},{"text":"\n• ","color":"#FF3F00","bold":true}, {"text":"STATISTIQUES","color":"#FF9F7F","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFCFBF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFCFBF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFCFBF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFCFBF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFCFBF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFCFBF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFCFBF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFCFBF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFCFBF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFCFBF","bold":true}, {"text":" si ","color":"#FFE7DF","bold":false}, {"text":"Y>0","color":"#FFCFBF","bold":true}, {"text":"\n\n• ","color":"#FF3F00","bold":true}, {"text":"ÉPINE DE FER","color":"#FF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFCFBF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFE7DF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#FF3F00","bold":true}, {"text":"MUR DE FER","color":"#FF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFCFBF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFCFBF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFCFBF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFCFBF","bold":true},{"text":"\n\n• ","color":"#FF3F00","bold":true}, {"text":"PARTICULARITÉS","color":"#FF9F7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFCFBF","bold":true}],glace_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFDFFF","bold":true},{"text":"\n• ","color":"#BFDFFF","bold":true},{"text":"15 niveaux","color":"#EFF7FF","bold":false},{"text":"\n• ","color":"#BFDFFF","bold":true},{"text":"1 pioche en fer neuve","color":"#EFF7FF","bold":false},{"text":"\n• ","color":"#BFDFFF","bold":true},{"text":"1 bouclier neuf","color":"#EFF7FF","bold":false},{"text":"\n• ","color":"#BFDFFF","bold":true},{"text":"64 lingots de fer","color":"#EFF7FF","bold":false}],glace_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFDFFF","bold":true},{"text":"\n• ","color":"#BFDFFF","bold":true}, {"text":"STATISTIQUES","color":"#DFEFFF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFF7FF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFF7FF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFF7FF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFF7FF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFF7FF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFF7FF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFF7FF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFF7FF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFF7FF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFF7FF","bold":true}, {"text":" si ","color":"#F7FBFF","bold":false}, {"text":"Y>0","color":"#EFF7FF","bold":true}, {"text":"\n\n• ","color":"#BFDFFF","bold":true}, {"text":"ÉPINE DE FER","color":"#DFEFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFF7FF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7FBFF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#BFDFFF","bold":true}, {"text":"MUR DE FER","color":"#DFEFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFF7FF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFF7FF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFF7FF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFF7FF","bold":true},{"text":"\n\n• ","color":"#BFDFFF","bold":true}, {"text":"PARTICULARITÉS","color":"#DFEFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFF7FF","bold":true}],insecte_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFDF00","bold":true},{"text":"\n• ","color":"#BFDF00","bold":true},{"text":"15 niveaux","color":"#EFF7BF","bold":false},{"text":"\n• ","color":"#BFDF00","bold":true},{"text":"1 pioche en fer neuve","color":"#EFF7BF","bold":false},{"text":"\n• ","color":"#BFDF00","bold":true},{"text":"1 bouclier neuf","color":"#EFF7BF","bold":false},{"text":"\n• ","color":"#BFDF00","bold":true},{"text":"64 lingots de fer","color":"#EFF7BF","bold":false}],insecte_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFDF00","bold":true},{"text":"\n• ","color":"#BFDF00","bold":true}, {"text":"STATISTIQUES","color":"#DFEF7F","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFF7BF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFF7BF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFF7BF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFF7BF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFF7BF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFF7BF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFF7BF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFF7BF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFF7BF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFF7BF","bold":true}, {"text":" si ","color":"#F7FBDF","bold":false}, {"text":"Y>0","color":"#EFF7BF","bold":true}, {"text":"\n\n• ","color":"#BFDF00","bold":true}, {"text":"ÉPINE DE FER","color":"#DFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFF7BF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7FBDF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#BFDF00","bold":true}, {"text":"MUR DE FER","color":"#DFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFF7BF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFF7BF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFF7BF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFF7BF","bold":true},{"text":"\n\n• ","color":"#BFDF00","bold":true}, {"text":"PARTICULARITÉS","color":"#DFEF7F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFF7BF","bold":true}],normal_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#EFEFEF","bold":true},{"text":"\n• ","color":"#EFEFEF","bold":true},{"text":"15 niveaux","color":"#FBFBFB","bold":false},{"text":"\n• ","color":"#EFEFEF","bold":true},{"text":"1 pioche en fer neuve","color":"#FBFBFB","bold":false},{"text":"\n• ","color":"#EFEFEF","bold":true},{"text":"1 bouclier neuf","color":"#FBFBFB","bold":false},{"text":"\n• ","color":"#EFEFEF","bold":true},{"text":"64 lingots de fer","color":"#FBFBFB","bold":false}],normal_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#EFEFEF","bold":true},{"text":"\n• ","color":"#EFEFEF","bold":true}, {"text":"STATISTIQUES","color":"#F7F7F7","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FBFBFB","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FBFBFB","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FBFBFB","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FBFBFB","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FBFBFB","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FBFBFB","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FBFBFB","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FBFBFB","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FBFBFB","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FBFBFB","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FBFBFB","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FBFBFB","bold":true}, {"text":" si ","color":"#FBFBFB","bold":false}, {"text":"Y>0","color":"#FBFBFB","bold":true}, {"text":"\n\n• ","color":"#EFEFEF","bold":true}, {"text":"ÉPINE DE FER","color":"#F7F7F7","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FBFBFB","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FBFBFB","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#EFEFEF","bold":true}, {"text":"MUR DE FER","color":"#F7F7F7","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FBFBFB","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FBFBFB","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FBFBFB","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FBFBFB","bold":true},{"text":"\n\n• ","color":"#EFEFEF","bold":true}, {"text":"PARTICULARITÉS","color":"#F7F7F7","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FBFBFB","bold":true}],plante_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7FDF3F","bold":true},{"text":"\n• ","color":"#7FDF3F","bold":true},{"text":"15 niveaux","color":"#DFF7CF","bold":false},{"text":"\n• ","color":"#7FDF3F","bold":true},{"text":"1 pioche en fer neuve","color":"#DFF7CF","bold":false},{"text":"\n• ","color":"#7FDF3F","bold":true},{"text":"1 bouclier neuf","color":"#DFF7CF","bold":false},{"text":"\n• ","color":"#7FDF3F","bold":true},{"text":"64 lingots de fer","color":"#DFF7CF","bold":false}],plante_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7FDF3F","bold":true},{"text":"\n• ","color":"#7FDF3F","bold":true}, {"text":"STATISTIQUES","color":"#BFEF9F","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFF7CF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFF7CF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFF7CF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFF7CF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFF7CF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFF7CF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFF7CF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFF7CF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFF7CF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFF7CF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFF7CF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFF7CF","bold":true}, {"text":" si ","color":"#EFFBE7","bold":false}, {"text":"Y>0","color":"#DFF7CF","bold":true}, {"text":"\n\n• ","color":"#7FDF3F","bold":true}, {"text":"ÉPINE DE FER","color":"#BFEF9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#DFF7CF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFFBE7","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#7FDF3F","bold":true}, {"text":"MUR DE FER","color":"#BFEF9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFF7CF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFF7CF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFF7CF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFF7CF","bold":true},{"text":"\n\n• ","color":"#7FDF3F","bold":true}, {"text":"PARTICULARITÉS","color":"#BFEF9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFF7CF","bold":true}],poison_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#9F3F9F","bold":true},{"text":"\n• ","color":"#9F3F9F","bold":true},{"text":"15 niveaux","color":"#E7CFE7","bold":false},{"text":"\n• ","color":"#9F3F9F","bold":true},{"text":"1 pioche en fer neuve","color":"#E7CFE7","bold":false},{"text":"\n• ","color":"#9F3F9F","bold":true},{"text":"1 bouclier neuf","color":"#E7CFE7","bold":false},{"text":"\n• ","color":"#9F3F9F","bold":true},{"text":"64 lingots de fer","color":"#E7CFE7","bold":false}],poison_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#9F3F9F","bold":true},{"text":"\n• ","color":"#9F3F9F","bold":true}, {"text":"STATISTIQUES","color":"#CF9FCF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#E7CFE7","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#E7CFE7","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#E7CFE7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#E7CFE7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#E7CFE7","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#E7CFE7","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#E7CFE7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#E7CFE7","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#E7CFE7","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#E7CFE7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#E7CFE7","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#E7CFE7","bold":true}, {"text":" si ","color":"#F3E7F3","bold":false}, {"text":"Y>0","color":"#E7CFE7","bold":true}, {"text":"\n\n• ","color":"#9F3F9F","bold":true}, {"text":"ÉPINE DE FER","color":"#CF9FCF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#E7CFE7","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F3E7F3","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#9F3F9F","bold":true}, {"text":"MUR DE FER","color":"#CF9FCF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#E7CFE7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#E7CFE7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#E7CFE7","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#E7CFE7","bold":true},{"text":"\n\n• ","color":"#9F3F9F","bold":true}, {"text":"PARTICULARITÉS","color":"#CF9FCF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#E7CFE7","bold":true}],psy_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#FF3F7F","bold":true},{"text":"\n• ","color":"#FF3F7F","bold":true},{"text":"15 niveaux","color":"#FFCFDF","bold":false},{"text":"\n• ","color":"#FF3F7F","bold":true},{"text":"1 pioche en fer neuve","color":"#FFCFDF","bold":false},{"text":"\n• ","color":"#FF3F7F","bold":true},{"text":"1 bouclier neuf","color":"#FFCFDF","bold":false},{"text":"\n• ","color":"#FF3F7F","bold":true},{"text":"64 lingots de fer","color":"#FFCFDF","bold":false}],psy_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#FF3F7F","bold":true},{"text":"\n• ","color":"#FF3F7F","bold":true}, {"text":"STATISTIQUES","color":"#FF9FBF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#FFCFDF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#FFCFDF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#FFCFDF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#FFCFDF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#FFCFDF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#FFCFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#FFCFDF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#FFCFDF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#FFCFDF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#FFCFDF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#FFCFDF","bold":true}, {"text":" si ","color":"#FFE7EF","bold":false}, {"text":"Y>0","color":"#FFCFDF","bold":true}, {"text":"\n\n• ","color":"#FF3F7F","bold":true}, {"text":"ÉPINE DE FER","color":"#FF9FBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#FFCFDF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FFE7EF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#FF3F7F","bold":true}, {"text":"MUR DE FER","color":"#FF9FBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#FFCFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#FFCFDF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#FFCFDF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#FFCFDF","bold":true},{"text":"\n\n• ","color":"#FF3F7F","bold":true}, {"text":"PARTICULARITÉS","color":"#FF9FBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#FFCFDF","bold":true}],roche_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BF9F5F","bold":true},{"text":"\n• ","color":"#BF9F5F","bold":true},{"text":"15 niveaux","color":"#EFE7D7","bold":false},{"text":"\n• ","color":"#BF9F5F","bold":true},{"text":"1 pioche en fer neuve","color":"#EFE7D7","bold":false},{"text":"\n• ","color":"#BF9F5F","bold":true},{"text":"1 bouclier neuf","color":"#EFE7D7","bold":false},{"text":"\n• ","color":"#BF9F5F","bold":true},{"text":"64 lingots de fer","color":"#EFE7D7","bold":false}],roche_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BF9F5F","bold":true},{"text":"\n• ","color":"#BF9F5F","bold":true}, {"text":"STATISTIQUES","color":"#DFCFAF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFE7D7","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFE7D7","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFE7D7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFE7D7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFE7D7","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFE7D7","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFE7D7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFE7D7","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFE7D7","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFE7D7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFE7D7","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFE7D7","bold":true}, {"text":" si ","color":"#F7F3EB","bold":false}, {"text":"Y>0","color":"#EFE7D7","bold":true}, {"text":"\n\n• ","color":"#BF9F5F","bold":true}, {"text":"ÉPINE DE FER","color":"#DFCFAF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFE7D7","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7F3EB","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#BF9F5F","bold":true}, {"text":"MUR DE FER","color":"#DFCFAF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFE7D7","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFE7D7","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFE7D7","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFE7D7","bold":true},{"text":"\n\n• ","color":"#BF9F5F","bold":true}, {"text":"PARTICULARITÉS","color":"#DFCFAF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFE7D7","bold":true}],sol_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#DFBF7F","bold":true},{"text":"\n• ","color":"#DFBF7F","bold":true},{"text":"15 niveaux","color":"#F7EFDF","bold":false},{"text":"\n• ","color":"#DFBF7F","bold":true},{"text":"1 pioche en fer neuve","color":"#F7EFDF","bold":false},{"text":"\n• ","color":"#DFBF7F","bold":true},{"text":"1 bouclier neuf","color":"#F7EFDF","bold":false},{"text":"\n• ","color":"#DFBF7F","bold":true},{"text":"64 lingots de fer","color":"#F7EFDF","bold":false}],sol_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#DFBF7F","bold":true},{"text":"\n• ","color":"#DFBF7F","bold":true}, {"text":"STATISTIQUES","color":"#EFDFBF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#F7EFDF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#F7EFDF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#F7EFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#F7EFDF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#F7EFDF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#F7EFDF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#F7EFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#F7EFDF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#F7EFDF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#F7EFDF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#F7EFDF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#F7EFDF","bold":true}, {"text":" si ","color":"#FBF7EF","bold":false}, {"text":"Y>0","color":"#F7EFDF","bold":true}, {"text":"\n\n• ","color":"#DFBF7F","bold":true}, {"text":"ÉPINE DE FER","color":"#EFDFBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#F7EFDF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#FBF7EF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#DFBF7F","bold":true}, {"text":"MUR DE FER","color":"#EFDFBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#F7EFDF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#F7EFDF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#F7EFDF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#F7EFDF","bold":true},{"text":"\n\n• ","color":"#DFBF7F","bold":true}, {"text":"PARTICULARITÉS","color":"#EFDFBF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#F7EFDF","bold":true}],spectre_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#7F7FBF","bold":true},{"text":"\n• ","color":"#7F7FBF","bold":true},{"text":"15 niveaux","color":"#DFDFEF","bold":false},{"text":"\n• ","color":"#7F7FBF","bold":true},{"text":"1 pioche en fer neuve","color":"#DFDFEF","bold":false},{"text":"\n• ","color":"#7F7FBF","bold":true},{"text":"1 bouclier neuf","color":"#DFDFEF","bold":false},{"text":"\n• ","color":"#7F7FBF","bold":true},{"text":"64 lingots de fer","color":"#DFDFEF","bold":false}],spectre_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#7F7FBF","bold":true},{"text":"\n• ","color":"#7F7FBF","bold":true}, {"text":"STATISTIQUES","color":"#BFBFDF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#DFDFEF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#DFDFEF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFDFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#DFDFEF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#DFDFEF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#DFDFEF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#DFDFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#DFDFEF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#DFDFEF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#DFDFEF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#DFDFEF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#DFDFEF","bold":true}, {"text":" si ","color":"#EFEFF7","bold":false}, {"text":"Y>0","color":"#DFDFEF","bold":true}, {"text":"\n\n• ","color":"#7F7FBF","bold":true}, {"text":"ÉPINE DE FER","color":"#BFBFDF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#DFDFEF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EFEFF7","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#7F7FBF","bold":true}, {"text":"MUR DE FER","color":"#BFBFDF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#DFDFEF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#DFDFEF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#DFDFEF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#DFDFEF","bold":true},{"text":"\n\n• ","color":"#7F7FBF","bold":true}, {"text":"PARTICULARITÉS","color":"#BFBFDF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#DFDFEF","bold":true}],tenebres_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#5F3F3F","bold":true},{"text":"\n• ","color":"#5F3F3F","bold":true},{"text":"15 niveaux","color":"#D7CFCF","bold":false},{"text":"\n• ","color":"#5F3F3F","bold":true},{"text":"1 pioche en fer neuve","color":"#D7CFCF","bold":false},{"text":"\n• ","color":"#5F3F3F","bold":true},{"text":"1 bouclier neuf","color":"#D7CFCF","bold":false},{"text":"\n• ","color":"#5F3F3F","bold":true},{"text":"64 lingots de fer","color":"#D7CFCF","bold":false}],tenebres_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#5F3F3F","bold":true},{"text":"\n• ","color":"#5F3F3F","bold":true}, {"text":"STATISTIQUES","color":"#AF9F9F","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#D7CFCF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#D7CFCF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#D7CFCF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#D7CFCF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#D7CFCF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#D7CFCF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#D7CFCF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#D7CFCF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#D7CFCF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#D7CFCF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#D7CFCF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#D7CFCF","bold":true}, {"text":" si ","color":"#EBE7E7","bold":false}, {"text":"Y>0","color":"#D7CFCF","bold":true}, {"text":"\n\n• ","color":"#5F3F3F","bold":true}, {"text":"ÉPINE DE FER","color":"#AF9F9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#D7CFCF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#EBE7E7","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#5F3F3F","bold":true}, {"text":"MUR DE FER","color":"#AF9F9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#D7CFCF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#D7CFCF","bold":true},{"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#D7CFCF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#D7CFCF","bold":true},{"text":"\n\n• ","color":"#5F3F3F","bold":true}, {"text":"PARTICULARITÉS","color":"#AF9F9F","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#D7CFCF","bold":true}],vol_condition:[{"text":"CONDITIONS POUR ÉVOLUER","color":"#BFBFFF","bold":true},{"text":"\n• ","color":"#BFBFFF","bold":true},{"text":"15 niveaux","color":"#EFEFFF","bold":false},{"text":"\n• ","color":"#BFBFFF","bold":true},{"text":"1 pioche en fer neuve","color":"#EFEFFF","bold":false},{"text":"\n• ","color":"#BFBFFF","bold":true},{"text":"1 bouclier neuf","color":"#EFEFFF","bold":false},{"text":"\n• ","color":"#BFBFFF","bold":true},{"text":"64 lingots de fer","color":"#EFEFFF","bold":false}],vol_changement:[{"text":"CHANGEMENTS À LA PROCHAINE ÉVOLUTION","color":"#BFBFFF","bold":true},{"text":"\n• ","color":"#BFBFFF","bold":true}, {"text":"STATISTIQUES","color":"#DFDFFF","bold":true},{"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"16","color":"#EFEFFF","bold":true}, {"text":" (-4) ","color":"#FF3F3F","bold":false}, {"text":"PV","color":"#EFEFFF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque","color":"#EFEFFF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"12","color":"#EFEFFF","bold":true}, {"text":" (+2) ","color":"#3F9FFF","bold":false}, {"text":"Défense","color":"#EFEFFF","bold":true}, {"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"10","color":"#EFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Attaque spéciale","color":"#EFEFFF","bold":true}, {"text":"\n↓ ","color":"#FF3F3F","bold":true}, {"text":"09","color":"#EFEFFF","bold":true}, {"text":" (-1) ","color":"#FF3F3F","bold":false}, {"text":"Vitesse","color":"#EFEFFF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"16","color":"#EFEFFF","bold":true}, {"text":" (+6) ","color":"#3F9FFF","bold":false}, {"text":"Minage","color":"#EFEFFF","bold":true}, {"text":" si ","color":"#F7F7FF","bold":false}, {"text":"Y>0","color":"#EFEFFF","bold":true}, {"text":"\n\n• ","color":"#BFBFFF","bold":true}, {"text":"ÉPINE DE FER","color":"#DFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"40%","color":"#EFEFFF","bold":true}, {"text":" de chance d\'infliger des dégâts lorsque frappé","color":"#F7F7FF","bold":false}, {"text":" (+0)","color":"#DFDF3F","bold":false}, {"text":"\n\n• ","color":"#BFBFFF","bold":true}, {"text":"MUR DE FER","color":"#DFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"+1","color":"#EFEFFF","bold":true}, {"text":" (+0) ","color":"#DFDF3F","bold":false}, {"text":"Défense","color":"#EFEFFF","bold":true}, {"text":"\n↑ ","color":"#3F9FFF","bold":true}, {"text":"+0","color":"#EFEFFF","bold":true}, {"text":" (+1) ","color":"#3F9FFF","bold":false}, {"text":"Vitesse","color":"#EFEFFF","bold":true},{"text":"\n\n• ","color":"#BFBFFF","bold":true}, {"text":"PARTICULARITÉS","color":"#DFDFFF","bold":true},{"text":"\n- ","color":"#DFDF3F","bold":true}, {"text":"Aucune","color":"#EFEFFF","bold":true}]
+
+give @s written_book[written_book_content={pages:[["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},{"text":"\nStade : Base\n\n","color":"#5F8F77"},{"text":"[","color":"#8F8F8F","bold":true,"hover_event":  {"action": "show_text","value":   [$(acier_changement)   ]}},{"text":"ACIER","color":"#BFBFBF","bold":true,"hover_event":  {"action": "show_text","value":   [$(acier_changement)   ]}},{"text":"]\n","color":"#8F8F8F","bold":true,"hover_event":  {"action": "show_text","value":   [$(acier_changement)   ]}},{"text":"[","color":"#8F8F8F","hover_event":  {"action": "show_text","value":   [$(acier_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(acier_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}},{"text":"]\n\n","color":"#8F8F8F","hover_event":  {"action": "show_text","value":   [$(acier_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 01"}},{"text":"[","color":"#5F2F00","bold":true,"hover_event":  {"action": "show_text","value":   [$(combat_changement)   ]}},{"text":"COMBAT","color":"#7F3F00","bold":true,"hover_event":  {"action": "show_text","value":   [$(combat_changement)   ]}},{"text":"]\n","color":"#5F2F00","bold":true,"hover_event":  {"action": "show_text","value":   [$(combat_changement)   ]}},{"text":"[","color":"#5F2F00","hover_event":  {"action": "show_text","value":   [$(combat_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 02"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(combat_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 02"}},{"text":"]\n\n","color":"#5F2F00","hover_event":  {"action": "show_text","value":   [$(combat_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 02"}},{"text":"[","color":"#5F47A7","bold":true,"hover_event":  {"action": "show_text","value":   [$(dragon_changement)   ]}},{"text":"DRAGON","color":"#7F5FDF","bold":true,"hover_event":  {"action": "show_text","value":   [$(dragon_changement)   ]}},{"text":"]\n","color":"#5F47A7","bold":true,"hover_event":  {"action": "show_text","value":   [$(dragon_changement)   ]}},{"text":"[","color":"#5F47A7","hover_event":  {"action": "show_text","value":   [$(dragon_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 03"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(dragon_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 03"}},{"text":"]\n\n","color":"#5F47A7","hover_event":  {"action": "show_text","value":   [$(dragon_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 03"}}],["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},{"text":"\nStade : Base\n\n","color":"#5F8F77"},{"text":"[","color":"#2F77BF","bold":true,"hover_event":  {"action": "show_text","value":   [$(eau_changement)   ]}},{"text":"EAU","color":"#3F9FFF","bold":true,"hover_event":  {"action": "show_text","value":   [$(eau_changement)   ]}},{"text":"]\n","color":"#2F77BF","bold":true,"hover_event":  {"action": "show_text","value":   [$(eau_changement)   ]}},{"text":"[","color":"#2F77BF","hover_event":  {"action": "show_text","value":   [$(eau_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 04"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(eau_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 04"}},{"text":"]\n\n","color":"#2F77BF","hover_event":  {"action": "show_text","value":   [$(eau_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 04"}},{"text":"[","color":"#BFA700","bold":true,"hover_event":  {"action": "show_text","value":   [$(electrique_changement)   ]}},{"text":"ÉLECTRIQUE","color":"#FFDF00","bold":true,"hover_event":  {"action": "show_text","value":   [$(electrique_changement)   ]}},{"text":"]\n","color":"#BFA700","bold":true,"hover_event":  {"action": "show_text","value":   [$(electrique_changement)   ]}},{"text":"[","color":"#BFA700","hover_event":  {"action": "show_text","value":   [$(electrique_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 05"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(electrique_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 05"}},{"text":"]\n\n","color":"#BFA700","hover_event":  {"action": "show_text","value":   [$(electrique_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 05"}},{"text":"[","color":"#BF8FBF","bold":true,"hover_event":  {"action": "show_text","value":   [$(fee_changement)   ]}},{"text":"FÉE","color":"#FFBFFF","bold":true,"hover_event":  {"action": "show_text","value":   [$(fee_changement)   ]}},{"text":"]\n","color":"#BF8FBF","bold":true,"hover_event":  {"action": "show_text","value":   [$(fee_changement)   ]}},{"text":"[","color":"#BF8FBF","hover_event":  {"action": "show_text","value":   [$(fee_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 06"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(fee_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 06"}},{"text":"]\n\n","color":"#BF8FBF","hover_event":  {"action": "show_text","value":   [$(fee_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 06"}}],["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},{"text":"\nStade : Base\n\n","color":"#5F8F77"},{"text":"[","color":"#BF2F00","bold":true,"hover_event":  {"action": "show_text","value":   [$(feu_changement)   ]}},{"text":"FEU","color":"#FF3F00","bold":true,"hover_event":  {"action": "show_text","value":   [$(feu_changement)   ]}},{"text":"]\n","color":"#BF2F00","bold":true,"hover_event":  {"action": "show_text","value":   [$(feu_changement)   ]}},{"text":"[","color":"#BF2F00","hover_event":  {"action": "show_text","value":   [$(feu_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 07"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(feu_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 07"}},{"text":"]\n\n","color":"#BF2F00","hover_event":  {"action": "show_text","value":   [$(feu_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 07"}},{"text":"[","color":"#8FA7BF","bold":true,"hover_event":  {"action": "show_text","value":   [$(glace_changement)   ]}},{"text":"GLACE","color":"#BFDFFF","bold":true,"hover_event":  {"action": "show_text","value":   [$(glace_changement)   ]}},{"text":"]\n","color":"#8FA7BF","bold":true,"hover_event":  {"action": "show_text","value":   [$(glace_changement)   ]}},{"text":"[","color":"#8FA7BF","hover_event":  {"action": "show_text","value":   [$(glace_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 08"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(glace_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 08"}},{"text":"]\n\n","color":"#8FA7BF","hover_event":  {"action": "show_text","value":   [$(glace_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 08"}},{"text":"[","color":"#8FA700","bold":true,"hover_event":  {"action": "show_text","value":   [$(insecte_changement)   ]}},{"text":"INSECTE","color":"#BFDF00","bold":true,"hover_event":  {"action": "show_text","value":   [$(insecte_changement)   ]}},{"text":"]\n","color":"#8FA700","bold":true,"hover_event":  {"action": "show_text","value":   [$(insecte_changement)   ]}},{"text":"[","color":"#8FA700","hover_event":  {"action": "show_text","value":   [$(insecte_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 09"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(insecte_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 09"}},{"text":"]\n\n","color":"#8FA700","hover_event":  {"action": "show_text","value":   [$(insecte_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 09"}}],["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},{"text":"\nStade : Base\n\n","color":"#5F8F77"},{"text":"[","color":"#B3B3B3","bold":true,"hover_event":  {"action": "show_text","value":   [$(normal_changement)   ]}},{"text":"NORMAL","color":"#EFEFEF","bold":true,"hover_event":  {"action": "show_text","value":   [$(normal_changement)   ]}},{"text":"]\n","color":"#B3B3B3","bold":true,"hover_event":  {"action": "show_text","value":   [$(normal_changement)   ]}},{"text":"[","color":"#B3B3B3","hover_event":  {"action": "show_text","value":   [$(normal_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 10"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(normal_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 10"}},{"text":"]\n\n","color":"#B3B3B3","hover_event":  {"action": "show_text","value":   [$(normal_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 10"}},{"text":"[","color":"#5FA72F","bold":true,"hover_event":  {"action": "show_text","value":   [$(plante_changement)   ]}},{"text":"PLANTE","color":"#7FDF3F","bold":true,"hover_event":  {"action": "show_text","value":   [$(plante_changement)   ]}},{"text":"]\n","color":"#5FA72F","bold":true,"hover_event":  {"action": "show_text","value":   [$(plante_changement)   ]}},{"text":"[","color":"#5FA72F","hover_event":  {"action": "show_text","value":   [$(plante_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 11"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(plante_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 11"}},{"text":"]\n\n","color":"#5FA72F","hover_event":  {"action": "show_text","value":   [$(plante_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 11"}},{"text":"[","color":"#772F77","bold":true,"hover_event":  {"action": "show_text","value":   [$(poison_changement)   ]}},{"text":"POISON","color":"#9F3F9F","bold":true,"hover_event":  {"action": "show_text","value":   [$(poison_changement)   ]}},{"text":"]\n","color":"#772F77","bold":true,"hover_event":  {"action": "show_text","value":   [$(poison_changement)   ]}},{"text":"[","color":"#772F77","hover_event":  {"action": "show_text","value":   [$(poison_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 12"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(poison_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 12"}},{"text":"]\n\n","color":"#772F77","hover_event":  {"action": "show_text","value":   [$(poison_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 12"}}],["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},{"text":"\nStade : Base\n\n","color":"#5F8F77"},{"text":"[","color":"#BF2F5F","bold":true,"hover_event":  {"action": "show_text","value":   [$(psy_changement)   ]}},{"text":"PSY","color":"#FF3F7F","bold":true,"hover_event":  {"action": "show_text","value":   [$(psy_changement)   ]}},{"text":"]\n","color":"#BF2F5F","bold":true,"hover_event":  {"action": "show_text","value":   [$(psy_changement)   ]}},{"text":"[","color":"#BF2F5F","hover_event":  {"action": "show_text","value":   [$(psy_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 13"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(psy_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 13"}},{"text":"]\n\n","color":"#BF2F5F","hover_event":  {"action": "show_text","value":   [$(psy_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 13"}},{"text":"[","color":"#8F7747","bold":true,"hover_event":  {"action": "show_text","value":   [$(roche_changement)   ]}},{"text":"ROCHE","color":"#BF9F5F","bold":true,"hover_event":  {"action": "show_text","value":   [$(roche_changement)   ]}},{"text":"]\n","color":"#8F7747","bold":true,"hover_event":  {"action": "show_text","value":   [$(roche_changement)   ]}},{"text":"[","color":"#8F7747","hover_event":  {"action": "show_text","value":   [$(roche_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 14"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(roche_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 14"}},{"text":"]\n\n","color":"#8F7747","hover_event":  {"action": "show_text","value":   [$(roche_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 14"}},{"text":"[","color":"#A78F5F","bold":true,"hover_event":  {"action": "show_text","value":   [$(sol_changement)   ]}},{"text":"SOL","color":"#DFBF7F","bold":true,"hover_event":  {"action": "show_text","value":   [$(sol_changement)   ]}},{"text":"]\n","color":"#A78F5F","bold":true,"hover_event":  {"action": "show_text","value":   [$(sol_changement)   ]}},{"text":"[","color":"#A78F5F","hover_event":  {"action": "show_text","value":   [$(sol_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 15"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(sol_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 15"}},{"text":"]\n\n","color":"#A78F5F","hover_event":  {"action": "show_text","value":   [$(sol_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 15"}}],["",{"text":"???","bold":true,"underlined":true,"color":"#7FBF9F"},{"text":"\nStade : Base\n\n","color":"#5F8F77"},{"text":"[","color":"#5F5F8F","bold":true,"hover_event":  {"action": "show_text","value":   [$(spectre_changement)   ]}},{"text":"SPECTRE","color":"#7F7FBF","bold":true,"hover_event":  {"action": "show_text","value":   [$(spectre_changement)   ]}},{"text":"]\n","color":"#5F5F8F","bold":true,"hover_event":  {"action": "show_text","value":   [$(spectre_changement)   ]}},{"text":"[","color":"#5F5F8F","hover_event":  {"action": "show_text","value":   [$(spectre_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 16"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(spectre_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 16"}},{"text":"]\n\n","color":"#5F5F8F","hover_event":  {"action": "show_text","value":   [$(spectre_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 16"}},{"text":"[","color":"#472F2F","bold":true,"hover_event":  {"action": "show_text","value":   [$(tenebres_changement)   ]}},{"text":"TÉNÈBRES","color":"#5F3F3F","bold":true,"hover_event":  {"action": "show_text","value":   [$(tenebres_changement)   ]}},{"text":"]\n","color":"#472F2F","bold":true,"hover_event":  {"action": "show_text","value":   [$(tenebres_changement)   ]}},{"text":"[","color":"#472F2F","hover_event":  {"action": "show_text","value":   [$(tenebres_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 17"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event":  {"action": "show_text","value":   [$(tenebres_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 17"}},{"text":"]\n\n","color":"#472F2F","hover_event":  {"action": "show_text","value":   [$(tenebres_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 17"}},{"text":"[","color":"#8F8FBF","bold":true,"hover_event":  {"action": "show_text","value":   [$(vol_changement)   ]}},{"text":"VOL","color":"#BFBFFF","bold":true,"hover_event":  {"action": "show_text","value":   [$(vol_changement)   ]}},{"text":"]\n","color":"#8F8FBF","bold":true,"hover_event":  {"action": "show_text","value":   [$(vol_changement)   ]}},{"text":"[","color":"#8F8FBF","hover_event":  {"action": "show_text","value":   [$(vol_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 18"}},{"text":"ÉVOLUER","color":"#00BFFF","hover_event": {"action": "show_text","value":   [$(vol_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 18"}},{"text":"]\n\n","color":"#8F8FBF","hover_event":  {"action": "show_text","value":   [$(vol_condition)   ]},"click_event": {"action":"run_command","command":"/trigger nzl.type.select set 18"}}]],title:"Livre des types",author:"Nuzlocke UHC"},minecraft:item_name=[{"text":"Type ???","color":"#7FBF9F","bold":true,"italic":false}]]
