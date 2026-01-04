@@ -1,7 +1,7 @@
 
 #> uhc:in_game/inventory/equipment/diamond_sharpness
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/gamemode/mls
 #
-# @within			uhc:pre_game/menu/detector/host
+# @within			uhc:pre_game/menu/detector/menu
 # 
 #
 # @description		Redirection
@@ -23,7 +23,7 @@ execute unless items entity @s[scores={uhc.menu.gamemode.mls=2}] inventory.23 *[
 execute unless items entity @s[scores={uhc.menu.gamemode.mls=2}] inventory.24 *[minecraft:item_name=[{"text":"+4","color":"#3FCFCF","italic":false}]] run function uhc:pre_game/menu/load/gamemode/mls/4_add_4
 
 execute unless items entity @s[scores={uhc.menu.gamemode.mls=1..}] inventory.19 *[minecraft:custom_data={Tags:"disable"}] run function uhc:pre_game/menu/load/gamemode/mls/disable
-execute unless items entity @s[scores={uhc.menu.gamemode.mls=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/gamemode/
+execute unless items entity @s[scores={uhc.menu.gamemode.mls=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/gamemode/menu
 execute if score @s uhc.menu.gamemode.mls matches 1.. run function uhc:pre_game/menu/load/gamemode/mls/
 
 execute if score #vanilla uhc.gamemode matches 1 run data modify storage uhc:settings gamemode set value [{"text":"Aucun","color":"#E7E7E7","bold":true}]

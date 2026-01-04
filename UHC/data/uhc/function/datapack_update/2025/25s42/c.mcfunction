@@ -15,6 +15,6 @@ scoreboard players enable @a uhc.best_pve.list
 scoreboard players enable @a uhc.ironman.list
 scoreboard players enable @a uhc.night_vision
 tag @a[tag=uhc.player.night_vision] add uhc.night_vision
-execute if score #pvp uhc.data.temp matches 1.. run gamerule pvp false
+execute if score #pvp uhc.data.temp matches 1.. run gamerule minecraft:pvp false
 
 scoreboard players set #update uhc.data.update 25423

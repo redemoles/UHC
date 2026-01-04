@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/sound_paranoia/trigger_marker
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Son aléatoire sur un joueur

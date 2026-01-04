@@ -8,10 +8,11 @@
 #
 
 execute if score @s uhc.menu.gamemode.bhc matches 9 at @s unless entity @p[tag=uhc.host,distance=0.1..,scores={uhc.menu.gamemode.bhc=9}] run function uhc:pre_game/menu/load/gamemode/bhc/grids_check/close
-function uhc:pre_game/menu/load/main/host/
+function uhc:pre_game/menu/load/main/host/menu
 
 tag @s add uhc.menu.main.host
 scoreboard players set @s uhc.menu.main.player 0
+scoreboard players set @s uhc.menu.language 0
 tag @s remove uhc.menu.gamemode
 scoreboard players set @s uhc.menu.gamemode.bhc 0
 scoreboard players set @s uhc.menu.gamemode.mls 0
@@ -21,8 +22,7 @@ scoreboard players set @s uhc.menu.gamemode.mls.supermoles_per_team 0
 scoreboard players set @s uhc.menu.gamemode.mls.teams_of_moles 0
 scoreboard players set @s uhc.menu.gamemode.mls.teams_of_supermoles 0
 tag @s remove uhc.menu.lobby
-tag @s remove uhc.menu.scenario.1
-tag @s remove uhc.menu.scenario.2
+scoreboard players set @s uhc.menu.scenario.main 0
 scoreboard players set @s uhc.menu.scenario.blood_diamond 0
 tag @s remove uhc.menu.scenario.enchanting_setup
 scoreboard players set @s uhc.menu.settings 0
@@ -32,7 +32,7 @@ scoreboard players set @s uhc.menu.settings.pvp 0
 scoreboard players set @s uhc.menu.settings.border 0
 scoreboard players set @s uhc.menu.settings.inventory 0
 scoreboard players set @s uhc.menu.settings.misc 0
-scoreboard players set @s uhc.menu.team_settings 0
+scoreboard players set @s uhc.menu.settings.team 0
 tag @s remove uhc.menu.start
 tag @s remove uhc.menu.tp
 tag @s remove uhc.menu.world_check

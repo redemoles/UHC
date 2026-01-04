@@ -80,7 +80,7 @@ execute if score #message uhc.data.setup matches 6 run scoreboard players set #m
 execute as @e[type=minecraft:player,scores={uhc.player.death=1}] run function uhc:in_game/player/death/
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
-execute as @a run function uhc:in_game/timer/players
+execute as @a run function uhc:in_game/player/tick
 execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect/absorption] run function uhc:in_game/player/effect/absorption
 
 ## End

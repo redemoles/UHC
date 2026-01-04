@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "uhc:pre_game/menu/detector/"
+    "function": "uhc:pre_game/menu/detector/main"
   }
 }

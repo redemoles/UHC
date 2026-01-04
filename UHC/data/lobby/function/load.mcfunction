@@ -142,4 +142,4 @@ team modify mgs.backroom color gray
 team modify mgs.backroom prefix [{"text":"■■ ","color":"gray","bold":true,"obfuscated":true}]
 team modify mgs.backroom seeFriendlyInvisibles false
 
-function lobby:mini_games/tc/mini_games/_order/marker_summon
+execute in uhc:lobby run function lobby:mini_games/tc/mini_games/_order/marker_summon

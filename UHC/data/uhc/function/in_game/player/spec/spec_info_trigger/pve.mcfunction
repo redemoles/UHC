@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/spec_info_trigger/pve
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Activation/Désactivation des messages de dégâts PvE dans le chat

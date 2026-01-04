@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/pvp/settings/version_pvp/1_21
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		PvP 1.21

@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/settings/pve/macro_set
+#> uhc:pre_game/menu/load/settings/border/macro_set
 #
 # @within			uhc:pre_game/menu/selection/
 #

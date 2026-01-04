@@ -7,6 +7,9 @@
 # @description		Configuration des joueurs
 #
 
+execute as @a if score @s uhc.id.team matches 091..092 run function uhc:pre_game/menu/load/main/player/team_join/spec
+execute as @a if score @s uhc.id.team matches 191..192 run function uhc:pre_game/menu/load/main/player/team_join/spec
+
 ## Préparation des joueurs
 effect clear @a
 clear @a
@@ -86,8 +89,8 @@ execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data
 execute if score #nzl uhc.gamemode matches 1 as @a[tag=uhc.player] run function uhc:in_game/player/team_join/nzl
 
 # Random Team
-execute if score #random_team uhc.data.setup matches 2 run scoreboard players remove @a[scores={uhc.id.team=101..}] uhc.id.team 100
-execute if score #random_team uhc.data.setup matches 2 unless score #biome_paranoia uhc.scenario matches 2 run function uhc:pre_game/player_and_team/random_team/1_group/reveal/instant
+execute as @a[scores={uhc.id.team=101..}] run scoreboard players operation @s uhc.id.team %= #100 uhc.data.numbers
+execute unless score #biome_paranoia uhc.scenario matches 2 as @a[tag=uhc.player] run function uhc:pre_game/player_and_team/team_join
 
 # Biome Paranoia
 scoreboard players set #team uhc.id.team 0

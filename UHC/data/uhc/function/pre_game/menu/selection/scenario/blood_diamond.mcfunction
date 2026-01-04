@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/scenario/blood_diamond
 #
-# @within			uhc:pre_game/menu/selection/scenario/1
+# @within			uhc:pre_game/menu/selection/scenario/page_1
 #			
 #
 # @description		Redirection
@@ -16,5 +16,5 @@ execute unless items entity @s[scores={uhc.menu.scenario.blood_diamond=1..}] inv
 execute unless items entity @s[scores={uhc.menu.scenario.blood_diamond=1..}] inventory.4 *[minecraft:custom_data={Tags:"scenario_blood_diamond_tier_2"}] run scoreboard players set @s uhc.menu.scenario.blood_diamond 3
 execute unless items entity @s[scores={uhc.menu.scenario.blood_diamond=1..}] inventory.5 *[minecraft:custom_data={Tags:"scenario_blood_diamond_tier_3"}] run scoreboard players set @s uhc.menu.scenario.blood_diamond 4
 
-execute unless items entity @s[scores={uhc.menu.scenario.blood_diamond=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/1
+execute unless items entity @s[scores={uhc.menu.scenario.blood_diamond=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/menu_1
 execute if score @s uhc.menu.scenario.blood_diamond matches 1.. run function uhc:pre_game/menu/load/scenario/blood_diamond/ with storage uhc:temp blood_diamond

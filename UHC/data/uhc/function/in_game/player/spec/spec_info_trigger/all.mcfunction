@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/spec_info_trigger/all
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Activation de toutes les notifications spectateur dans le chat

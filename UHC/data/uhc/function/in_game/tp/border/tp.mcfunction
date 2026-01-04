@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/border/tp
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		TP d'un joueur derrière la worldborder 

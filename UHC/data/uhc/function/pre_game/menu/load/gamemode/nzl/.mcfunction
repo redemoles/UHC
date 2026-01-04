@@ -19,7 +19,7 @@ scoreboard players add #nzl uhc.gamemode 1
 execute if score #nzl uhc.gamemode matches 0 run scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #nzl nzl.scenario 0
 
-function uhc:pre_game/menu/load/gamemode/
+function uhc:pre_game/menu/load/gamemode/menu
 
 execute if score #nzl uhc.gamemode matches 0 run tellraw @a [{"text":"Nuzlocke","color":"#3F9FFF","bold":true},{"text":" UHC","color":"#FFE73F","bold":true},{"text":" désactivé","color":"#FF3F3F","bold":false}]
 execute if score #nzl uhc.gamemode matches 1 run tellraw @a [{"text":"Nuzlocke","color":"#3F9FFF","bold":true},{"text":" UHC","color":"#FFE73F","bold":true},{"text":" activé","color":"#3FE7FF","bold":false}]

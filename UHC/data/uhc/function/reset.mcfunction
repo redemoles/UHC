@@ -154,6 +154,7 @@ scoreboard objectives remove uhc.id.spawn
 scoreboard objectives remove uhc.game_progress
 scoreboard objectives remove uhc.data.temp
 scoreboard objectives remove uhc.data.temp.inv
+scoreboard objectives remove uhc.menu.language
 scoreboard objectives remove uhc.menu.main.player
 scoreboard objectives remove uhc.menu.gamemode.bhc
 scoreboard objectives remove uhc.menu.gamemode.mls
@@ -163,13 +164,14 @@ scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_moles
 scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_supermoles
 scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.scenario.blood_diamond
+scoreboard objectives remove uhc.menu.scenario.main
 scoreboard objectives remove uhc.menu.settings.lives
 scoreboard objectives remove uhc.menu.settings.pve
 scoreboard objectives remove uhc.menu.settings.pvp
 scoreboard objectives remove uhc.menu.settings.border
 scoreboard objectives remove uhc.menu.settings.inventory
+scoreboard objectives remove uhc.menu.settings.team
 scoreboard objectives remove uhc.menu.settings.misc
-scoreboard objectives remove uhc.menu.team_settings
 scoreboard objectives remove uhc.menu.tp
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.player.wolf
@@ -181,6 +183,9 @@ scoreboard objectives remove uhc.player.health
 scoreboard objectives remove uhc.player.health.100
 scoreboard objectives remove uhc.player.timer
 scoreboard objectives remove uhc.player.border_alert
+scoreboard objectives remove uhc.player.map_height.effect
+scoreboard objectives remove uhc.player.map_height.sound
+scoreboard objectives remove uhc.player.map_height.text
 scoreboard objectives remove uhc.player.damage_dealt.pvp
 scoreboard objectives remove uhc.player.damage_taken
 scoreboard objectives remove uhc.player.damage_taken.pve
@@ -217,6 +222,7 @@ scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.temp dummy
 scoreboard objectives add uhc.data.temp.inv dummy
 scoreboard objectives add uhc.data.numbers dummy
+scoreboard objectives add uhc.menu.language dummy
 scoreboard objectives add uhc.menu.main.player dummy
 scoreboard objectives add uhc.menu.gamemode.bhc dummy
 scoreboard objectives add uhc.menu.gamemode.mls dummy
@@ -226,14 +232,15 @@ scoreboard objectives add uhc.menu.gamemode.mls.teams_of_moles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.teams_of_supermoles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.supermoles_per_team dummy
 scoreboard objectives add uhc.menu.scenario.blood_diamond dummy
+scoreboard objectives add uhc.menu.scenario.main dummy
 scoreboard objectives add uhc.menu.settings dummy
 scoreboard objectives add uhc.menu.settings.lives dummy
 scoreboard objectives add uhc.menu.settings.pve dummy
 scoreboard objectives add uhc.menu.settings.pvp dummy
 scoreboard objectives add uhc.menu.settings.border dummy
 scoreboard objectives add uhc.menu.settings.inventory dummy
+scoreboard objectives add uhc.menu.settings.team dummy
 scoreboard objectives add uhc.menu.settings.misc dummy
-scoreboard objectives add uhc.menu.team_settings dummy
 scoreboard objectives add uhc.menu.tp dummy
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.player.wolf dummy
@@ -255,6 +262,9 @@ scoreboard objectives add uhc.player.target.distance.x dummy
 scoreboard objectives add uhc.player.target.distance.z dummy
 scoreboard objectives add uhc.player.target.distance.xxzz dummy
 scoreboard objectives add uhc.player.border_alert dummy
+scoreboard objectives add uhc.player.map_height.effect dummy
+scoreboard objectives add uhc.player.map_height.sound dummy
+scoreboard objectives add uhc.player.map_height.text dummy
 scoreboard objectives add uhc.player.death deathCount
 scoreboard objectives add uhc.player.death_summary dummy
 scoreboard objectives add uhc.player.lang dummy
@@ -295,8 +305,8 @@ execute in minecraft:overworld run function uhc:all_dimension_commands/reset
 execute in minecraft:the_nether run function uhc:all_dimension_commands/reset
 execute in minecraft:the_end run function uhc:all_dimension_commands/reset
 execute in uhc:lobby run function uhc:all_dimension_commands/reset
-execute in uhc:lobby run gamerule doVinesSpread false
-gamerule maxCommandChainLength 262144
+execute in uhc:lobby run gamerule minecraft:spread_vines false
+gamerule minecraft:max_command_sequence_length 262144
 weather clear 999999
 
 ## Load
@@ -409,4 +419,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 25511
+scoreboard players set #update uhc.data.update 26010

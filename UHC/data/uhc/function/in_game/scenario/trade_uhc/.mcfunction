@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/trade_uhc/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		

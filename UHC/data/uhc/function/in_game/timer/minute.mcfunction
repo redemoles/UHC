@@ -23,18 +23,19 @@ scoreboard players remove #shrink_3_timer_end uhc.data.temp 1
 scoreboard players remove #live_3 uhc.data.temp 1
 scoreboard players remove #live_2 uhc.data.temp 1
 scoreboard players remove #live_1 uhc.data.temp 1
+scoreboard players remove #map_height_timer uhc.data.temp 1
 execute as @a[tag=uhc.player] run scoreboard players operation @s uhc.player.timer = #minutes uhc.data.temp
 
 ## Activation PvP
-execute if score #pvp uhc.data.temp matches 0 in minecraft:overworld run gamerule pvp true
-execute if score #pvp uhc.data.temp matches 0 in minecraft:the_nether run gamerule pvp true
-execute if score #pvp uhc.data.temp matches 0 in minecraft:the_end run gamerule pvp true
+execute if score #pvp uhc.data.temp matches 0 in minecraft:overworld run gamerule minecraft:pvp true
+execute if score #pvp uhc.data.temp matches 0 in minecraft:the_nether run gamerule minecraft:pvp true
+execute if score #pvp uhc.data.temp matches 0 in minecraft:the_end run gamerule minecraft:pvp true
 
 ## Réduction de la worldborder
 execute if score #shrink_1_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/1
 execute if score #shrink_2_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/2
 execute if score #shrink_3_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/3
-execute if score #shrink_1_timer_end uhc.data.temp matches 0 run gamerule doMobSpawning false
+execute if score #shrink_1_timer_end uhc.data.temp matches 0 run gamerule minecraft:spawn_mobs false
 
 ## Minuteur de modes de jeu
 execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/minute

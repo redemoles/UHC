@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/inventory
 #
-# @within			uhc:pre_game/menu/detector/
+# @within			uhc:pre_game/menu/detector/main
 #
 #
 # @description		Gestion des modifications d'inventaire pendant un mini-jeu

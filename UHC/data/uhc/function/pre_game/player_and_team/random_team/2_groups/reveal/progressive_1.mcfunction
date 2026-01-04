@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/player_and_team/random_team/2_group/reveal/progressive_1
+#> uhc:pre_game/player_and_team/random_team/2_groups/reveal/progressive_1
 #
-# @within			uhc:pre_game/player_and_team/random_team/2_group/reveal/progressive
+# @within			uhc:pre_game/player_and_team/random_team/2_groups/reveal/progressive
 #
 #
 # @description		Génération d'équipes aléatoires

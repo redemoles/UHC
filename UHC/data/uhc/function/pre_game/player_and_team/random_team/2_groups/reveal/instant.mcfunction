@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/player_and_team/random_team/2_group/reveal/instant
+#> uhc:pre_game/player_and_team/random_team/2_groups/reveal/instant
 #
-# @within			uhc:pre_game/player_and_team/random_team/2_group/
+# @within			uhc:pre_game/player_and_team/random_team/2_groups/
 #
 #
 # @description		Génération d'équipes aléatoires

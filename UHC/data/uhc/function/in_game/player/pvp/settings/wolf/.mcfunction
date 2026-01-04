@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/pvp/settings/wolf/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Vérification du nombre de loups par un joueur

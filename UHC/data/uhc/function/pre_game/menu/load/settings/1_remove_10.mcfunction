@@ -89,3 +89,26 @@ execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_2_leng
 # Shrink 2 - Temps de réduction
 execute if score @s uhc.menu.settings.border matches 34 run scoreboard players remove #shrink_3_length uhc.data.setup 10
 execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_3_length uhc.data.setup matches ..0 run scoreboard players set #shrink_3_length uhc.data.setup 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Nombre de joueur par équipe
+execute if score @s uhc.menu.settings.team matches 2 run scoreboard players remove #team_size uhc.data.setup 4
+execute if score @s uhc.menu.settings.team matches 2 if score #team_size uhc.data.setup matches ..1 run scoreboard players set #team_size uhc.data.setup 1

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/blood_diamond/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Choix aléatoire de l'effet du Blood Diamond

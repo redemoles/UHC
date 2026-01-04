@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/gamemode/main
 #
-# @within			uhc:pre_game/menu/detector/host
+# @within			uhc:pre_game/menu/detector/menu
 #
 #
 # @description		Redirection
@@ -15,7 +15,7 @@ execute unless items entity @s[tag=uhc.menu.gamemode] inventory.3 *[minecraft:cu
 execute if score #nzl uhc.gamemode matches 1 if score #type_start nzl.data matches 0 unless items entity @s[tag=uhc.menu.gamemode] inventory.19 *[minecraft:custom_data={Tags:"gamemode_nzl_evolution"}] run function uhc:pre_game/menu/load/gamemode/nzl/type
 execute if score #nzl uhc.gamemode matches 1 if score #type_start nzl.data matches 1 unless items entity @s[tag=uhc.menu.gamemode] inventory.19 *[minecraft:custom_data={Tags:"gamemode_nzl_evolution"}] run function uhc:pre_game/menu/load/gamemode/nzl/type
 
-execute unless items entity @s[tag=uhc.menu.gamemode] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/
-execute if entity @s[tag=uhc.menu.gamemode] run function uhc:pre_game/menu/load/gamemode/
+execute unless items entity @s[tag=uhc.menu.gamemode] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/menu
+execute if entity @s[tag=uhc.menu.gamemode] run function uhc:pre_game/menu/load/gamemode/menu
 
 execute if score #vanilla uhc.gamemode matches 1 run data modify storage uhc:settings gamemode set value [{"text":"Aucun","color":"#E7E7E7","bold":true}]

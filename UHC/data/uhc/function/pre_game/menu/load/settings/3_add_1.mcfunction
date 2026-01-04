@@ -108,3 +108,7 @@ execute if score @s uhc.menu.settings.inventory matches 32 if score #cobweb uhc.
 execute if score @s uhc.menu.settings.inventory matches 32 if score #cobweb uhc.data.setup matches ..1 run scoreboard players set #cobweb uhc.data.setup 1
 execute if score @s uhc.menu.settings.inventory matches 32 if score #cobweb uhc.data.setup matches ..1 run scoreboard players set @s uhc.menu.settings 2
 execute if score @s uhc.menu.settings.inventory matches 32 if score #cobweb uhc.data.setup matches 2.. run scoreboard players set @s uhc.menu.settings 6
+
+# Nombre de joueur par équipe
+execute if score @s uhc.menu.settings.team matches 2 unless score #team_size uhc.data.setup matches 64.. run scoreboard players add #team_size uhc.data.setup 1
+

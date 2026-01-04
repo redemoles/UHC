@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/spec_info_trigger/blood_diamond
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Activation/Désactivation des messages du scénario Blood Diamond dans le chat

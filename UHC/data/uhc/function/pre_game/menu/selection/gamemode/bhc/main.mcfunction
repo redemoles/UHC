@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/gamemode/bhc/main
 #
-# @within			uhc:pre_game/menu/detector/host
+# @within			uhc:pre_game/menu/detector/menu
 #
 #
 # @description		Redirection
@@ -17,5 +17,5 @@ execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.16 *
 
 execute unless items entity @s[scores={uhc.menu.gamemode.bhc=1..}] inventory.1 *[minecraft:custom_data={Tags:"bhc_scenario"}] run scoreboard players set @s uhc.menu.gamemode.bhc 01
 execute if score #bhc uhc.gamemode matches 1 unless items entity @s[scores={uhc.menu.gamemode.bhc=1..}] inventory.19 *[minecraft:custom_data={Tags:"disable"}] run function uhc:pre_game/menu/load/gamemode/bhc/disable
-execute unless items entity @s[scores={uhc.menu.gamemode.bhc=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/gamemode/
+execute unless items entity @s[scores={uhc.menu.gamemode.bhc=1..}] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/gamemode/menu
 execute if score @s uhc.menu.gamemode.bhc matches 1.. run function uhc:pre_game/menu/load/gamemode/bhc/main

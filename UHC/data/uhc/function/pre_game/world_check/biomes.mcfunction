@@ -9,7 +9,7 @@
 
 tag @s add host.check_biomes
 
-gamerule sendCommandFeedback true
+gamerule minecraft:send_command_feedback true
 
 tellraw @s [{"text":"DESERT","color":"#FFFF3F","click_event":{"action":"run_command","command":"/execute in minecraft:overworld positioned 0 0 0 run locate biome desert"}}]
 tellraw @s [{"text":"BADLANDS","color":"#FF6F3F","click_event":{"action":"run_command","command":"/execute in minecraft:overworld positioned 0 0 0 run locate biome badlands"}}]

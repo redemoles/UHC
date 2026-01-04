@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/world_generation
 #
-# @within			uhc:pre_game/menu/detector/host
+# @within			uhc:pre_game/menu/detector/menu
 #
 #
 # @description		Redirection
@@ -23,5 +23,5 @@ execute unless score #the_end_finished pregen.world matches 6.. unless items ent
 execute unless score #the_end_finished pregen.world matches 8.. unless items entity @s[tag=uhc.menu.world_generation] inventory.22 *[minecraft:custom_data={Tags:"the_end_8000"}] run function uhc:pre_game/menu/load/world_generation/the_end/8000
 execute unless score #the_end_finished pregen.world matches 10.. unless items entity @s[tag=uhc.menu.world_generation] inventory.23 *[minecraft:custom_data={Tags:"the_end_10000"}] run function uhc:pre_game/menu/load/world_generation/the_end/10000
 execute unless items entity @s[tag=uhc.menu.world_generation] inventory.7 *[minecraft:custom_data={Tags:"cancel"}] run function uhc:pre_game/menu/load/world_generation/disable
-execute unless items entity @s[tag=uhc.menu.world_generation] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/
+execute unless items entity @s[tag=uhc.menu.world_generation] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/menu
 execute if entity @s[tag=uhc.menu.world_generation] run function uhc:pre_game/menu/load/world_generation/

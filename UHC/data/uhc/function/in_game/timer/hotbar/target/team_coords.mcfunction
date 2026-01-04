@@ -32,12 +32,12 @@ scoreboard players operation #distance_bc uhc.player.target.cos.a = #distance uh
 function uhc:in_game/timer/hotbar/target/angle/
 function uhc:in_game/timer/hotbar/target/cos_angle/
 
-execute if entity @s[predicate=uhc:target/overworld] if entity @p[tag=uhc.target.targeted_current,predicate=uhc:target/overworld] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_same
-execute if entity @s[predicate=uhc:target/the_end] if entity @p[tag=uhc.target.targeted_current,predicate=uhc:target/the_end] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_same
-execute if entity @s[predicate=uhc:target/the_nether] if entity @p[tag=uhc.target.targeted_current,predicate=uhc:target/the_nether] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_same
-execute if entity @s[predicate=uhc:target/overworld] unless entity @p[tag=uhc.target.targeted_current,predicate=uhc:target/overworld] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_diff
-execute if entity @s[predicate=uhc:target/the_end] unless entity @p[tag=uhc.target.targeted_current,predicate=uhc:target/the_end] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_diff
-execute if entity @s[predicate=uhc:target/the_nether] unless entity @p[tag=uhc.target.targeted_current,predicate=uhc:target/the_nether] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_diff
+execute if entity @s[predicate=uhc:dimension/overworld] if entity @p[tag=uhc.target.targeted_current,predicate=uhc:dimension/overworld] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_same
+execute if entity @s[predicate=uhc:dimension/the_end] if entity @p[tag=uhc.target.targeted_current,predicate=uhc:dimension/the_end] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_same
+execute if entity @s[predicate=uhc:dimension/the_nether] if entity @p[tag=uhc.target.targeted_current,predicate=uhc:dimension/the_nether] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_same
+execute if entity @s[predicate=uhc:dimension/overworld] unless entity @p[tag=uhc.target.targeted_current,predicate=uhc:dimension/overworld] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_diff
+execute if entity @s[predicate=uhc:dimension/the_end] unless entity @p[tag=uhc.target.targeted_current,predicate=uhc:dimension/the_end] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_diff
+execute if entity @s[predicate=uhc:dimension/the_nether] unless entity @p[tag=uhc.target.targeted_current,predicate=uhc:dimension/the_nether] in uhc:lobby run function uhc:in_game/timer/hotbar/target/dimension_diff
 
 tag @p[tag=uhc.target.targeted_current] add uhc.target.targeted_done
 tag @p[tag=uhc.target.targeted_current] remove uhc.target.targeted_current

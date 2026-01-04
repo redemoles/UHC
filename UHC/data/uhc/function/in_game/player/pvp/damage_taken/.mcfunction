@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/pvp/damage_taken/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Détection dégâts pris 

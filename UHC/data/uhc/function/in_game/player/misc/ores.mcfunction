@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/misc/ores
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Function executed every second

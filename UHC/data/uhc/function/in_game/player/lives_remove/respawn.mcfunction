@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/lives_remove/respawn
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Cooldown avant de respawn

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Donne les effets / gamemode aux specs

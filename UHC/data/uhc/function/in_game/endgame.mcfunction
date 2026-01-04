@@ -18,6 +18,6 @@ execute if score #vanilla uhc.gamemode matches 1 run tellraw @a[scores={uhc.play
 execute if score #vanilla uhc.gamemode matches 1 run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"The game is over!\nThe victory is attributed to ","color":"#3FE7FF"},{"selector":"@a[predicate=uhc:id_team_alive]"},{"text":" !\n","color":"#3FE7FF"}]
 
 execute unless score #bhc uhc.gamemode matches 1 run scoreboard objectives setdisplay sidebar uhc.player.kills
-gamerule spectatorsGenerateChunks true
+gamerule minecraft:spectators_generate_chunks true
 
 scoreboard players enable @a uhc.info.team

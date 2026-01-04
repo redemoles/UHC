@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/go_to_hell/tick
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Test si le joueur a cumulé 30 secondes hors du Nether

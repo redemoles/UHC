@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/main/
 #
-# @within			uhc:pre_game/menu/detector/host
+# @within			uhc:pre_game/menu/detector/menu
 #
 #
 # @description		Redirection
@@ -17,7 +17,7 @@ execute if score @s uhc.menu.main.player matches 1..10 if score #random_team uhc
 execute if score @s uhc.menu.main.player matches 1..10 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/menu/selection/main/player/team_menu/random
 execute if score @s uhc.menu.main.player matches 1..10 if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/menu/selection/main/player/team_menu/random_split
 
-execute unless items entity @s[tag=uhc.host,scores={uhc.menu.main.player=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_main_host"}] run return run function uhc:pre_game/menu/load/main/host/
+execute unless items entity @s[tag=uhc.host,scores={uhc.menu.main.player=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_main_host"}] run return run function uhc:pre_game/menu/load/main/host/menu
 execute unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_main_host"}] run return run function uhc:pre_game/menu/load/settings/menu
 
 execute as @s[scores={uhc.menu.main.player=1..10}] run function uhc:pre_game/menu/load/main/player/

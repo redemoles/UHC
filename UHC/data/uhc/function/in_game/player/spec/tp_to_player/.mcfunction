@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/tp_to_player/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Téléportation d'un spectateur à un joueur

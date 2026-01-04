@@ -8,7 +8,7 @@
 #
 
 clear @s
-tag @s remove uhc.menu.scenario.1
+scoreboard players set @s uhc.menu.scenario.main 0
 tag @s add uhc.menu.scenario.enchanting_setup
 
 

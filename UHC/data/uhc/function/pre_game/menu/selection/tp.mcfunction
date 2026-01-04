@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/tp
 #
-# @within			uhc:pre_game/menu/detector/host
+# @within			uhc:pre_game/menu/detector/menu
 #
 #
 # @description		Redirection

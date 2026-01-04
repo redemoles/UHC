@@ -10,5 +10,5 @@
 tag @a[tag=uhc.temp] remove uhc.temp
 execute if score #game_progress uhc.game_progress matches 0.. run return fail
 execute in minecraft:overworld positioned 0 100 0 positioned over world_surface run tp @a[tag=uhc.temp] ~ ~40 ~ 0 45
-execute in minecraft:overworld run gamerule spectatorsGenerateChunks true
+execute in minecraft:overworld run gamerule minecraft:spectators_generate_chunks true
 tag @a add uhc.spec

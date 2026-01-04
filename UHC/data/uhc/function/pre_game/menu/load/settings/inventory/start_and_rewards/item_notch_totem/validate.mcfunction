@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_notch_totem/validate
 #
-# @within			uhc:pre_game/menu/detector/
+# @within			uhc:pre_game/menu/detector/main
 #
 #
 # @description		Menu

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/team_health/
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Mise à jour des points de vie de l'équipe

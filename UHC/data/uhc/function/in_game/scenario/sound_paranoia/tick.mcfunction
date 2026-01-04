@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/sound_paranoia/tick
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Son

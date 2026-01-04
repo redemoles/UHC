@@ -7,7 +7,7 @@
 # @description		Kit de meet-up, commande manuelle
 #
 
-gamerule doMobSpawning false
+gamerule minecraft:spawn_mobs false
 clear @a[tag=uhc.player]
 
 ## Kit de stuff pour Build UHC

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/biome_paranoia/by_nickname
 #
-# @within			uhc:in_game/timer/players
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Biome paranoia - Tri par équipe

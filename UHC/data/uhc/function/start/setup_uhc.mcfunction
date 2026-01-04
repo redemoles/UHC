@@ -70,6 +70,9 @@ execute store result storage uhc:settings shield.durability int 1 run scoreboard
 execute store result storage uhc:settings item.cobweb int 1 run scoreboard players get #cobweb uhc.data.setup
 
 execute if score #tracker_allies uhc.data.setup matches 1 run scoreboard players set #tracker uhc.data.temp 1
+scoreboard players operation #map_height_limit_above uhc.data.temp = #map_height_limit_above uhc.data.setup
+execute if score #sky_high uhc.scenario matches 1 run scoreboard players set #map_height_limit_above uhc.data.temp 257
+scoreboard players operation #map_height_limit_below uhc.data.temp = #map_height_limit_below uhc.data.setup
 
 ## Annulation des effets causés par le passage de la minute -1 à 0
 scoreboard players set #tick_start uhc.data.temp 201
@@ -82,6 +85,7 @@ scoreboard players add #shrink_3_time_left uhc.data.temp 1
 scoreboard players add #live_3 uhc.data.temp 1
 scoreboard players add #live_2 uhc.data.temp 1
 scoreboard players add #live_1 uhc.data.temp 1
+scoreboard players add #map_height_timer uhc.data.temp 1
 
 ## Border Alerte Sonore
 scoreboard players operation #shrink_1_timer_end uhc.data.temp = #shrink_1_length uhc.data.setup
