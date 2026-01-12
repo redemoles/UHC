@@ -8,4 +8,4 @@
 #
 
 tag @s add uhc.night_vision
-function uhc:pre_game/menu/load/main/player/
+function uhc:pre_game/menu/load/main/player/main

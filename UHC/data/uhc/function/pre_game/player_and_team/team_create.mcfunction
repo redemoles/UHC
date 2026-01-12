@@ -187,6 +187,7 @@ team add 130
 team add 131
 team add 132
 team add 192
+team add 292
 
 ## Couleurs des équipes
 team modify 000 color white
@@ -260,6 +261,7 @@ team modify 130 color gray
 team modify 131 color dark_gray
 team modify 132 color black
 team modify 192 color red
+team modify 292 color yellow
 
 team modify 017 prefix "♦ "
 team modify 018 prefix "♦ "
@@ -506,3 +508,4 @@ team modify 130 collisionRule never
 team modify 131 collisionRule never
 team modify 132 collisionRule never
 team modify 192 collisionRule never
+team modify 292 collisionRule never

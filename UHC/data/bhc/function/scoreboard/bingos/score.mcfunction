@@ -1,5 +1,5 @@
 
-#> bhc:scoreboard/stepb/score
+#> bhc:scoreboard/bingos/score
 #
 # @within			
 #

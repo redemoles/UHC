@@ -24,5 +24,6 @@ execute as @a run function uhc:pre_game/player_and_team/reset_effects
 
 ## Random team
 execute if score #anonyme_team uhc.data.setup matches 1 if score #biome_paranoia uhc.scenario matches 2 run scoreboard players set #biome_paranoia uhc.scenario 1
-execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/player_and_team/random_team/1_group/main
-execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/player_and_team/random_team/2_groups/main
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/player_and_team/random_team/1_pot/main
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/player_and_team/random_team/2_pots/main
+execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 3 run function uhc:pre_game/player_and_team/random_team/3_pots/main

@@ -72,6 +72,6 @@ execute if score @s uhc.player.lang matches 051407 run item replace entity @s in
 execute if score @s uhc.menu.settings.team matches 01.. run function uhc:pre_game/menu/load/settings/team/menu
 
 # Divers
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.7 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Divers","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.7 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Miscellaneous","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.7 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Divers","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.7 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Miscellaneous","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
 execute if score @s uhc.menu.settings.misc matches 01.. run function uhc:pre_game/menu/load/settings/misc/menu

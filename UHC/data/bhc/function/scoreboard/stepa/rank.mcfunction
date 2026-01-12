@@ -1,5 +1,5 @@
 
-#> bhc:scoreboard/stepb/rank
+#> bhc:scoreboard/stepa/rank
 #
 # @within			
 #

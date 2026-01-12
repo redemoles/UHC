@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/main/player/team_menu/chosen/page_1
 #
-# @within			uhc:pre_game/menu/load/main/player/team_menu/chosen/
+# @within			uhc:pre_game/menu/load/main/player/team_menu/chosen/main
 #
 #
 # @description		Menu

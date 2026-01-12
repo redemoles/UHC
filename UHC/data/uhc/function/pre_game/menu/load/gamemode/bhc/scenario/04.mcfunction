@@ -35,6 +35,7 @@ scoreboard players set #shrink_1_size_end uhc.data.setup 200
 scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3_size_end uhc.data.setup 32
 scoreboard players set #shrink_dynamic uhc.data.setup 1
+scoreboard players set #map_height_timer uhc.data.setup 105
 
 ## Configuration du starter give
 execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]

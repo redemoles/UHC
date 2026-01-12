@@ -28,6 +28,7 @@ scoreboard players operation #shrink_3_time_left uhc.data.temp = #shrink_3_time_
 scoreboard players operation #live_3 uhc.data.temp = #live_3 uhc.data.setup
 scoreboard players operation #live_2 uhc.data.temp = #live_2 uhc.data.setup
 scoreboard players operation #live_1 uhc.data.temp = #live_1 uhc.data.setup
+scoreboard players operation #map_height_timer uhc.data.temp = #map_height_timer uhc.data.setup
 
 # Divers paramètres
 scoreboard players operation #lives uhc.player.lives = #lives uhc.data.setup

@@ -8,7 +8,7 @@
 #
 
 
-function uhc:pre_game/menu/load/main/player/
+function uhc:pre_game/menu/load/main/player/main
 
 tag @s remove uhc.menu.main.host
 execute unless score @s uhc.menu.main.player matches 1.. run scoreboard players set @s uhc.menu.main.player 1

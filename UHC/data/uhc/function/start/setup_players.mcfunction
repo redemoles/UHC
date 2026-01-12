@@ -8,7 +8,8 @@
 #
 
 execute as @a if score @s uhc.id.team matches 091..092 run function uhc:pre_game/menu/load/main/player/team_join/spec
-execute as @a if score @s uhc.id.team matches 191..192 run function uhc:pre_game/menu/load/main/player/team_join/spec
+execute as @a if score @s uhc.id.team matches 192 run function uhc:pre_game/menu/load/main/player/team_join/spec
+execute as @a if score @s uhc.id.team matches 292 run function uhc:pre_game/menu/load/main/player/team_join/spec
 
 ## Préparation des joueurs
 effect clear @a

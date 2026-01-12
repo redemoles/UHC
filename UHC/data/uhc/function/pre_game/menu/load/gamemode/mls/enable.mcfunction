@@ -35,6 +35,7 @@ scoreboard players set #shrink_1_size_start uhc.data.setup 1500
 scoreboard players set #shrink_1_size_end uhc.data.setup 200
 scoreboard players set #shrink_2_size_end uhc.data.setup 64
 scoreboard players set #shrink_3_size_end uhc.data.setup 32
+scoreboard players set #map_height_timer uhc.data.setup 105
 
 ## Vies
 scoreboard players set #lives uhc.data.setup 2

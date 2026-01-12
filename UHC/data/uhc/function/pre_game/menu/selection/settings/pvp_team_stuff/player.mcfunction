@@ -15,5 +15,5 @@ execute unless items entity @s inventory.4 *[minecraft:custom_data={Tags:"settin
 
 execute unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"settings_pvp"}] run return run function uhc:pre_game/menu/load/settings/pvp/preset_menu
 
-execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/player/
+execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/player/main
 execute if score @s uhc.menu.settings matches 1.. run function uhc:pre_game/menu/load/settings/menu

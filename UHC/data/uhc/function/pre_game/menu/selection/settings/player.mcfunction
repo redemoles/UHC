@@ -28,5 +28,5 @@ execute if score @s uhc.menu.settings.inventory matches 1.. unless items entity 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"gamemode_list"}] run return run function uhc:pre_game/menu/load/settings/player_menu/gamemode/
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.20 *[minecraft:custom_data={Tags:"scenario_list"}] run return run function uhc:pre_game/menu/load/settings/player_menu/scenario/
 
-execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/player/
+execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/player/main
 execute if score @s uhc.menu.settings matches 1.. run function uhc:pre_game/menu/load/settings/menu

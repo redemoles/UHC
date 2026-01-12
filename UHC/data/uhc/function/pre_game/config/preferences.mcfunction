@@ -71,12 +71,13 @@ scoreboard players set #effect_compatibility_speed_strength uhc.data.setup 0
 ## Miscellaneous / Divers
 scoreboard players set #river_solid uhc.data.setup 0
 
-scoreboard players set #map_height_timer uhc.data.temp 80 
-scoreboard players set #map_height_tick_above uhc.data.setup 6
+scoreboard players set #map_height_timer uhc.data.setup 80 
+scoreboard players set #map_height_tick_above uhc.data.setup 10
 scoreboard players set #map_height_tick_below uhc.data.setup 30
 
 ## Team settings / Paramètres d'équipe
 scoreboard players set #random_team uhc.data.setup 0
+scoreboard players set #random_team_pots uhc.data.setup 1
 scoreboard players set #random_team_player uhc.data.setup 0
 scoreboard players set #random_team_tick uhc.data.setup -1
 scoreboard players set #anonyme_team uhc.data.setup 0

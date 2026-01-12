@@ -1,5 +1,5 @@
 
-#> bhc:scoreboard/stepb/personal
+#> bhc:scoreboard/stepa/personal
 #
 # @within			
 #
