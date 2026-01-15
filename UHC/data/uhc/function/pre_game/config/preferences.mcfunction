@@ -61,8 +61,9 @@ scoreboard players set #iron_protection uhc.data.setup 4
 scoreboard players set #iron_sharpness uhc.data.setup 5
 scoreboard players set #axes_sharpness uhc.data.setup 3
 scoreboard players set #bow_power uhc.data.setup 4
-scoreboard players set #depth_strider uhc.data.setup 3
 scoreboard players set #fire_flame uhc.data.setup 0
+scoreboard players set #depth_strider uhc.data.setup 3
+scoreboard players set #lunge uhc.data.setup 1
 
 scoreboard players set #cobweb uhc.data.setup 2
 scoreboard players set #milk_bucket uhc.data.setup 1

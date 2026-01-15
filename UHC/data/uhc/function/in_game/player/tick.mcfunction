@@ -29,6 +29,7 @@ execute if score #iron_sharpness uhc.data.setup matches ..4 run function uhc:in_
 execute if score #axes_sharpness uhc.data.setup matches ..4 run function uhc:in_game/inventory/equipment/axes_sharpness with storage uhc:settings enchantments.axes_sharpness
 execute if score #bow_power uhc.data.setup matches ..4 run function uhc:in_game/inventory/equipment/bow_power with storage uhc:settings enchantments.bow_power
 execute if score #depth_strider uhc.data.setup matches ..2 run function uhc:in_game/inventory/equipment/depth_strider with storage uhc:settings enchantments.depth_strider
+execute if score #lunge uhc.data.setup matches ..2 run function uhc:in_game/inventory/equipment/lunge with storage uhc:settings enchantments.lunge
 # Fire Aspect / Flame
 execute if score #fire_flame uhc.data.setup matches 0 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[minecraft:enchantments~[{"enchantments":"minecraft:fire_aspect"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:fire_aspect":-255},add:true}
 execute if score #fire_flame uhc.data.setup matches 0 if items entity @s[tag=!uhc.fire_flame] weapon.mainhand *[minecraft:enchantments~[{"enchantments":"minecraft:flame"}]] run item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"minecraft:flame":-255},add:true}

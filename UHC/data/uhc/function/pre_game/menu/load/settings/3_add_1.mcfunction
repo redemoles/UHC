@@ -102,6 +102,7 @@ execute if score @s uhc.menu.settings.inventory matches 15 unless score #iron_sh
 execute if score @s uhc.menu.settings.inventory matches 16 unless score #axes_sharpness uhc.data.setup matches 5.. run scoreboard players add #axes_sharpness uhc.data.setup 1
 execute if score @s uhc.menu.settings.inventory matches 17 unless score #bow_power uhc.data.setup matches 5.. run scoreboard players add #bow_power uhc.data.setup 1
 execute if score @s uhc.menu.settings.inventory matches 22 unless score #depth_strider uhc.data.setup matches 3.. run scoreboard players add #depth_strider uhc.data.setup 1
+execute if score @s uhc.menu.settings.inventory matches 23 unless score #lunge uhc.data.setup matches 3.. run scoreboard players add #lunge uhc.data.setup 1
 
 # Cobweb
 execute if score @s uhc.menu.settings.inventory matches 32 if score #cobweb uhc.data.setup matches ..32 run scoreboard players operation #cobweb uhc.data.setup *= #02 uhc.data.numbers

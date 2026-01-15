@@ -43,6 +43,9 @@ execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:
 execute if score @s uhc.menu.settings.inventory matches 21..30 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/depth_strider/macro_set
 execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/depth_strider/macro_text with storage uhc:settings
 
+execute if score @s uhc.menu.settings.inventory matches 21..30 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/lunge/macro_set
+execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/lunge/macro_text with storage uhc:settings
+
 execute if score @s uhc.menu.settings.inventory matches 31..40 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_set
 execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_text with storage uhc:settings
 

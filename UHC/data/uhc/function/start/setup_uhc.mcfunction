@@ -39,6 +39,7 @@ scoreboard players operation #iron_sharpness uhc.data.temp = #iron_sharpness uhc
 scoreboard players operation #axes_sharpness uhc.data.temp = #axes_sharpness uhc.data.setup
 scoreboard players operation #bow_power uhc.data.temp = #bow_power uhc.data.setup
 scoreboard players operation #depth_strider uhc.data.temp = #depth_strider uhc.data.setup
+scoreboard players operation #lunge uhc.data.temp = #lunge uhc.data.setup
 execute if score #shrink_dynamic uhc.data.setup matches 1 run scoreboard players set #shrink_1_dynamic uhc.data.temp 1
 execute if score #shrink_dynamic uhc.data.setup matches 2 run scoreboard players set #shrink_2_dynamic uhc.data.temp 1
 execute if score #shrink_dynamic uhc.data.setup matches 3 run scoreboard players set #shrink_3_dynamic uhc.data.temp 1
@@ -52,6 +53,7 @@ scoreboard players add #iron_sharpness uhc.data.temp 1
 scoreboard players add #axes_sharpness uhc.data.temp 1
 scoreboard players add #bow_power uhc.data.temp 1
 scoreboard players add #depth_strider uhc.data.temp 1
+scoreboard players add #lunge uhc.data.temp 1
 
 execute store result storage uhc:settings enchantments.diamond_protection.max int 1 run scoreboard players get #diamond_protection uhc.data.setup
 execute store result storage uhc:settings enchantments.diamond_protection.max_plus_1 int 1 run scoreboard players get #diamond_protection uhc.data.temp
@@ -67,6 +69,8 @@ execute store result storage uhc:settings enchantments.bow_power.max int 1 run s
 execute store result storage uhc:settings enchantments.bow_power.max_plus_1 int 1 run scoreboard players get #bow_power uhc.data.temp
 execute store result storage uhc:settings enchantments.depth_strider.max int 1 run scoreboard players get #depth_strider uhc.data.setup
 execute store result storage uhc:settings enchantments.depth_strider.max_plus_1 int 1 run scoreboard players get #depth_strider uhc.data.temp
+execute store result storage uhc:settings enchantments.lunge.max int 1 run scoreboard players get #lunge uhc.data.setup
+execute store result storage uhc:settings enchantments.lunge.max_plus_1 int 1 run scoreboard players get #lunge uhc.data.temp
 execute store result storage uhc:settings shield.durability int 1 run scoreboard players get #shield uhc.data.setup
 execute store result storage uhc:settings item.cobweb int 1 run scoreboard players get #cobweb uhc.data.setup
 

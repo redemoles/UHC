@@ -1,5 +1,5 @@
 
-#> bhc:scenario/02/target/tellraw
+#> bhc:scenario/02/target/randomizer/tellraw
 #
 # @within			bhc:scenario/02/target/
 #

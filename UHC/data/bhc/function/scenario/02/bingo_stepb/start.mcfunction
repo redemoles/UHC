@@ -53,4 +53,4 @@ scoreboard players operation #column_stepb bhc.data = #column bhc.data
 execute as @e[type=marker,tag=UHC,distance=0..] run scoreboard players operation @s bhc.stepb.score.inv = @s bhc.stepa.rank.score.inv
 execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/stepb/rank
 
-function bhc:scenario/02/target/main
+function bhc:scenario/02/target/randomizer/main

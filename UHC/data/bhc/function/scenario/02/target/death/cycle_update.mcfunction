@@ -1,5 +1,5 @@
 
-#> bhc:scenario/02/target/death/cycle_reset
+#> bhc:scenario/02/target/death/cycle_update
 #
 # @within			bhc:scores_calculator/kills/player_dead
 #
