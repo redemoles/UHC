@@ -16,8 +16,6 @@ scoreboard objectives add uhc.player.damage_dealt minecraft.custom:minecraft.dam
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run scoreboard players set @s uhc.player.damage_dealt 0
 scoreboard players set @a uhc.player.damage_dealt 0
 
-scoreboard objectives add uhc.player.damage_dealt.temp minecraft.custom:minecraft.damage_dealt
-
 scoreboard objectives add bhc.chill_mode.tie_break.score dummy
 scoreboard objectives add bhc.chill_mode.tie_break.rank dummy
 

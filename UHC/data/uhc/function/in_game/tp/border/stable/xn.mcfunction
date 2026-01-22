@@ -7,13 +7,13 @@
 # @description		TP d'un joueur derrière la worldborder 
 #
 
-scoreboard players operation #player_x uhc.data.setup *= #-1 uhc.data.numbers
-scoreboard players operation #player_x uhc.data.setup -= #border_size uhc.data.temp
-execute unless score #player_x uhc.data.setup matches 1.. run return run scoreboard players reset #player_x
+scoreboard players operation #player_x uhc.data.temp *= #-1 uhc.data.numbers
+scoreboard players operation #player_x uhc.data.temp -= #border_size uhc.data.temp
+execute unless score #player_x uhc.data.temp matches 1.. run return run scoreboard players reset #player_x uhc.data.temp
 
-scoreboard players add #player_x uhc.data.setup 1
+scoreboard players add #player_x uhc.data.temp 1
 
-execute store result storage uhc:temp tp.xn int 1 run scoreboard players get #player_x uhc.data.setup
-scoreboard players operation #player_x uhc.data.setup *= #-1 uhc.data.numbers
+execute store result storage uhc:temp tp.xn int 1 run scoreboard players get #player_x uhc.data.temp
+scoreboard players operation #player_x uhc.data.temp *= #-1 uhc.data.numbers
 
 damage @s 1

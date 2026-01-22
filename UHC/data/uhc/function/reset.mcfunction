@@ -186,8 +186,10 @@ scoreboard objectives remove uhc.player.border_alert
 scoreboard objectives remove uhc.player.map_height.effect
 scoreboard objectives remove uhc.player.map_height.sound
 scoreboard objectives remove uhc.player.map_height.text
+scoreboard objectives remove uhc.player.damage_dealt.total
+scoreboard objectives remove uhc.player.damage_dealt.pve
 scoreboard objectives remove uhc.player.damage_dealt.pvp
-scoreboard objectives remove uhc.player.damage_taken
+scoreboard objectives remove uhc.player.damage_taken.total
 scoreboard objectives remove uhc.player.damage_taken.pve
 scoreboard objectives remove uhc.player.damage_taken.pvp
 scoreboard objectives remove uhc.player.damage_taken.temp
@@ -419,4 +421,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26012
+scoreboard players set #update uhc.data.update 26013

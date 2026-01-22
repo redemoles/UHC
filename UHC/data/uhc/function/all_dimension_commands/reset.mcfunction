@@ -13,7 +13,7 @@ gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:show_advancement_messages false
 gamerule minecraft:advance_time false
 gamerule minecraft:advance_weather false
-gamerule minecraft:spawn_mobs false
+gamerule minecraft:spawn_monsters false
 gamerule minecraft:immediate_respawn true
 gamerule minecraft:spectators_generate_chunks true
 gamerule minecraft:natural_health_regeneration false

@@ -113,7 +113,9 @@ scoreboard objectives remove bhc.data.temp
 scoreboard objectives remove bhc.team.livescount
 
 scoreboard objectives remove bhc.targeted.id
+scoreboard objectives remove bhc.targeted.former_id
 scoreboard objectives remove bhc.targeter.id
+scoreboard objectives remove bhc.targeter.former_id
 scoreboard objectives remove bhc.target.cycle
 scoreboard objectives remove bhc.target.known
 scoreboard objectives remove bhc.target.dead.cycle
@@ -258,7 +260,9 @@ scoreboard objectives add bhc.data.temp dummy
 scoreboard objectives add bhc.team.livescount dummy
 
 scoreboard objectives add bhc.targeted.id dummy
+scoreboard objectives add bhc.targeted.former_id dummy
 scoreboard objectives add bhc.targeter.id dummy
+scoreboard objectives add bhc.targeter.former_id dummy
 scoreboard objectives add bhc.target.cycle dummy
 scoreboard objectives add bhc.target.known dummy
 scoreboard objectives add bhc.target.dead.cycle dummy

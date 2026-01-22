@@ -1,0 +1,24 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
+		"bhc.targeted.former_id": {
+			"min": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#temp"
+				},
+				"score": "bhc.targeter.former_id"
+			},
+			"max": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#temp"
+				},
+				"score": "bhc.targeter.former_id"
+			}
+		}
+	}
+}

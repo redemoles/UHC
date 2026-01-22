@@ -38,7 +38,7 @@ execute if score #fire_flame uhc.data.setup matches 0 if items entity @s[tag=!uh
 
 # PvP Version 1.8
 execute if score #version_pvp uhc.data.setup matches 1 run function uhc:in_game/player/pvp/settings/version_pvp/1_8
-execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/player/pvp/settings/version_pvp/1_21
+#execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/player/pvp/settings/version_pvp/1_21
 
 # Chevaux
 execute if score #horse_limit uhc.data.setup matches 0 if entity @s[predicate=uhc:ride_a_horse] run function uhc:in_game/player/pvp/settings/horse/
@@ -74,7 +74,9 @@ execute as @s[tag=uhc.player.start_in_the_sky] unless items entity @s armor.ches
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/lives_remove/respawn
 
 ## Vie en pourcentage
-execute unless score #team_health uhc.scenario matches 1 if score #hp_100 uhc.data.setup matches 1.. store result score @s uhc.player.health.100 run data get entity @s Health 5
+scoreboard players operation #temp uhc.data.temp = #tick uhc.data.temp
+scoreboard players operation #temp uhc.data.temp %= #03 uhc.data.numbers
+execute if score #temp uhc.data.temp matches 0 unless score #team_health uhc.scenario matches 1 if score #hp_100 uhc.data.setup matches 1.. if entity @s[tag=uhc.player] store result score @s uhc.player.health.100 run data get entity @s Health 5
 
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenario/best_pve/tick
@@ -89,8 +91,7 @@ execute if score #team_health uhc.scenario matches 1 if entity @s[gamemode=!spec
 execute as @s[tag=uhc.player] run function uhc:in_game/player/misc/ores
 
 ## Scoreboard de dégâts
-execute as @s[scores={uhc.player.damage_taken=1..}] run function uhc:in_game/player/pvp/damage_taken/
-execute as @s[scores={uhc.player.damage_dealt.temp=1..}] run function uhc:in_game/player/pvp/damage_dealt/
+execute as @s[scores={uhc.player.damage_taken.temp=1..}] run function uhc:in_game/player/pvp/damage_taken/
 
 ## Loups
 execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:in_game/player/pvp/settings/wolf/

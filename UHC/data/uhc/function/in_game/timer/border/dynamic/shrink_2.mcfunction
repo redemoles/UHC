@@ -10,7 +10,7 @@
 ## Taille de la bordure
 scoreboard players set #shrink_2_size_end uhc.data.temp 32
 scoreboard players operation #shrink_2_size_end uhc.data.temp *= #team uhc.data.temp.inv
-scoreboard players remove #shrink_1_size_end uhc.data.temp 32
+scoreboard players remove #shrink_2_size_end uhc.data.temp 32
 execute if score #shrink_2_size_end uhc.data.temp matches ..0 run scoreboard players set #shrink_2_size_end uhc.data.temp 32
 
 ## Durée de réduction de la bordure

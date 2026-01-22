@@ -9,6 +9,7 @@
 
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 scoreboard players operation @s uhc.player.damage_dealt.pvp += #temp uhc.player.damage_taken.temp
+scoreboard players operation @s uhc.player.damage_dealt.pve -= #temp uhc.player.damage_taken.temp
 scoreboard players operation @p[tag=uhc.temp.attacked] uhc.player.damage_taken.pve -= #temp uhc.player.damage_taken.temp
 scoreboard players operation @p[tag=uhc.temp.attacked] uhc.player.damage_taken.pvp += #temp uhc.player.damage_taken.temp
 

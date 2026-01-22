@@ -9,7 +9,8 @@
 
 scoreboard players enable @s bhc.test.target_kill
 
-scoreboard players remove @s uhc.data.temp.inv 1
+scoreboard players remove #team uhc.data.temp.inv 1
+execute unless score #tracker_ennemies uhc.data.temp matches 1.. run scoreboard players set #tracker_ennemies uhc.data.temp 1
 
 execute if entity @p[scores={bhc.test.target_kill=01}] run scoreboard players set @n[type=marker,tag=UHC,distance=0..,scores={uhc.id.team=01}] uhc.player.lives 0
 execute if entity @p[scores={bhc.test.target_kill=01}] as @n[type=marker,tag=UHC,distance=0..,scores={uhc.id.team=01}] run function bhc:scenario/02/target/death/team_out

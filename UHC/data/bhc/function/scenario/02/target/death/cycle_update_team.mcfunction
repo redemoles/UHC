@@ -1,5 +1,5 @@
 
-#> bhc:scenario/02/target/death/team_out
+#> bhc:scenario/02/target/death/cycle_update_team
 #
 # @within			bhc:scenario/02/target/death/
 #

@@ -34,8 +34,10 @@ scoreboard players set @s uhc.player.mined.lapis 0
 scoreboard players set @s uhc.player.mined.redstone 0
 scoreboard players set @s uhc.player.mined.diamond 0
 
+scoreboard players set @s uhc.player.damage_dealt.total 0
 scoreboard players set @s uhc.player.damage_dealt.pvp 0
-scoreboard players set @s uhc.player.damage_taken 0
+scoreboard players set @s uhc.player.damage_dealt.pve 0
+scoreboard players set @s uhc.player.damage_taken.total 0
 scoreboard players set @s uhc.player.damage_taken.pve 0
 scoreboard players set @s uhc.player.damage_taken.pvp 0
 
