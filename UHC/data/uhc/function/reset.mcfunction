@@ -32,7 +32,7 @@ scoreboard objectives remove uhc.scenario.bookception
 scoreboard objectives remove uhc.scenario.cut_clean.random
 scoreboard objectives remove uhc.scenario.go_to_hell.damage
 scoreboard objectives remove uhc.scenario.go_to_hell.tick
-scoreboard objectives remove uhc.scenario.team_health.player
+scoreboard objectives remove uhc.scenario.team_health.100
 scoreboard objectives remove uhc.scenario.team_health.team
 scoreboard objectives remove uhc.scenario.sky_high.damage
 scoreboard objectives remove uhc.scenario.sky_high.tick
@@ -106,8 +106,8 @@ scoreboard objectives add uhc.scenario.cut_clean.random dummy
 scoreboard objectives add uhc.scenario.enchanting_setup dummy
 scoreboard objectives add uhc.scenario.go_to_hell.damage dummy
 scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
-scoreboard objectives add uhc.scenario.team_health.player dummy
-scoreboard objectives add uhc.scenario.team_health.team dummy "❤"
+scoreboard objectives add uhc.scenario.team_health.100 dummy "%"
+scoreboard objectives add uhc.scenario.team_health.team dummy [{"text":"❤","color":"#FF5F5F"}]
 scoreboard objectives add uhc.scenario.sky_high.damage dummy
 scoreboard objectives add uhc.scenario.sky_high.tick dummy
 scoreboard objectives add uhc.scenario.sound_paranoia.number dummy
@@ -179,7 +179,8 @@ scoreboard objectives remove uhc.player.online
 scoreboard objectives remove uhc.player.disconnect
 scoreboard objectives remove uhc.player.tp
 scoreboard objectives remove uhc.player.lives
-scoreboard objectives remove uhc.player.health
+scoreboard objectives remove uhc.player.health.auto
+scoreboard objectives remove uhc.player.health.check
 scoreboard objectives remove uhc.player.health.100
 scoreboard objectives remove uhc.player.timer
 scoreboard objectives remove uhc.player.border_alert
@@ -250,8 +251,9 @@ scoreboard objectives add uhc.player.online dummy
 scoreboard objectives add uhc.player.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.player.tp dummy
 scoreboard objectives add uhc.player.lives dummy
-scoreboard objectives add uhc.player.health health [{"text":"❤","color":"#FF5F5F"}]
 scoreboard objectives add uhc.player.health.100 dummy "%"
+scoreboard objectives add uhc.player.health.auto health [{"text":"❤","color":"#FF5F5F"}]
+scoreboard objectives add uhc.player.health.check dummy
 scoreboard objectives add uhc.player.timer dummy "Minutes jouées"
 scoreboard objectives add uhc.player.x dummy
 scoreboard objectives add uhc.player.y dummy
@@ -284,7 +286,7 @@ scoreboard objectives add uhc.timer.absorption dummy
 scoreboard objectives add uhc.spawn.check trigger
 scoreboard objectives add uhc.world.end dummy
 scoreboard objectives setdisplay sidebar
-scoreboard objectives setdisplay list uhc.player.health
+scoreboard objectives setdisplay list uhc.player.health.auto
 kill @e[type=minecraft:marker,tag=!lobby]
 kill @e[type=minecraft:falling_block]
 title @a reset
@@ -323,18 +325,20 @@ function nzl:reset/sb
 
 # Team Health
 execute if score #hp_name uhc.data.setup matches 0 run scoreboard objectives setdisplay below_name
-execute if score #team_health uhc.scenario matches 0 if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.player.health
+execute if score #team_health uhc.scenario matches 0 if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.player.health.auto
 execute if score #team_health uhc.scenario matches 1 if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.scenario.team_health.team
-execute if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.player.health.100
+execute if score #team_health uhc.scenario matches 0 if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.player.health.100
+execute if score #team_health uhc.scenario matches 1 if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.scenario.team_health.100
 
 execute if score #hp_tab uhc.data.setup matches 0 run scoreboard objectives setdisplay list
-execute if score #team_health uhc.scenario matches 0 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health
+execute if score #team_health uhc.scenario matches 0 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health.auto
 execute if score #team_health uhc.scenario matches 1 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.team
-execute if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health.100
+execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health.100
+execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.100
 
-execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.player.health rendertype integer
+execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.player.health.auto rendertype integer
 execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.scenario.team_health.team rendertype integer
-execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.player.health rendertype hearts
+execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.player.health.auto rendertype hearts
 execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.scenario.team_health.team rendertype hearts
 
 ## Multiplicateurs
@@ -421,4 +425,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26013
+scoreboard players set #update uhc.data.update 26014

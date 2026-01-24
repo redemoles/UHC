@@ -1,7 +1,7 @@
 
-#> uhc:in_game/advancement/wolf_killed_player/pos
+#> uhc:in_game/advancement/killed_by_wolf/pos
 #
-# @within			uhc:in_game/advancement/wolf_killed_player/
+# @within			uhc:in_game/advancement/killed_by_wolf/
 #
 #
 # @description		Le joueur est mort par un loup

@@ -7,6 +7,8 @@
 # @description		Commandes pre-game en tick pour joueurs
 #
 
+scoreboard players operation #team uhc.id.team = @s uhc.id.team
+
 # Joueur hors du lobby
 execute as @a[predicate=uhc:effect/absorption] run effect clear @s minecraft:absorption
 execute unless score @s uhc.player.online matches 1 run function uhc:pre_game/player_and_team/new_player
@@ -32,9 +34,7 @@ execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory
 execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_additional/validate
 
 # Vie en pourcentage
-scoreboard players operation #team uhc.id.team = @s uhc.id.team
-execute unless score #team_health uhc.scenario matches 1 if score #hp_100 uhc.data.setup matches 1.. store result score @s uhc.player.health.100 run data get entity @s Health 5
-execute if score #team_health uhc.scenario matches 1 unless score @s uhc.player.health = @s uhc.scenario.team_health.player run function uhc:in_game/scenario/team_health/
+execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
 
 # Vérification des spawns
 execute as @s[scores={uhc.spawn.check=0..}] in minecraft:overworld run function uhc:pre_game/world_check/spawns

@@ -11,6 +11,6 @@
     },
     "rewards": 
     {
-        "function": "uhc:in_game/advancement/player_killed_player/"
+        "function": "uhc:in_game/advancement/killed_by_player/"
     }
 }

@@ -24,6 +24,6 @@
         }
     },
     "rewards": {
-        "function": "uhc:in_game/advancement/arrow_hurt_player/"
+        "function": "uhc:in_game/advancement/hurted_by_arrow/"
     }
 }

@@ -1,13 +1,13 @@
 
-#> uhc:in_game/advancement/player_killed_player/
+#> uhc:in_game/advancement/killed_by_player/
 #
-# @within			advancement #uhc:player_killed_player
+# @within			advancement #uhc:killed_by_player
 #
 #
 # @description		Le joueur est mort
 #
 
-advancement revoke @s only uhc:player_killed_player
+advancement revoke @s only uhc:killed_by_player
 execute on attacker unless entity @s[type=minecraft:player] run return fail
 
 # Récompenses pour le tueur

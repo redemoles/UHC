@@ -26,6 +26,7 @@ execute unless items entity @s inventory.15 *[minecraft:custom_data={Tags:"scena
 execute unless items entity @s inventory.16 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/load/scenario/red_arrows
 
 # Ligne 3
+execute unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/load/scenario/mystery_scenarios
 execute unless items entity @s inventory.24 *[minecraft:item_name=[{"text":"Page 2","color":"#3FE7FF","italic":false}]] run return run function uhc:pre_game/menu/load/scenario/menu_2
 execute unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/menu
 function uhc:pre_game/menu/load/scenario/menu_1

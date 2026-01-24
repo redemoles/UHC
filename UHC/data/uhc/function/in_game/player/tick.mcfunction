@@ -75,8 +75,8 @@ execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/li
 
 ## Vie en pourcentage
 scoreboard players operation #temp uhc.data.temp = #tick uhc.data.temp
-scoreboard players operation #temp uhc.data.temp %= #03 uhc.data.numbers
-execute if score #temp uhc.data.temp matches 0 unless score #team_health uhc.scenario matches 1 if score #hp_100 uhc.data.setup matches 1.. if entity @s[tag=uhc.player] store result score @s uhc.player.health.100 run data get entity @s Health 5
+scoreboard players operation #temp uhc.data.temp %= #05 uhc.data.numbers
+execute if score #temp uhc.data.temp matches 0 if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
 
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenario/best_pve/tick
@@ -86,7 +86,6 @@ execute if score #blood_diamond uhc.scenario matches 1.. as @s[scores={uhc.scena
 execute if score #blood_diamond uhc.scenario matches 1.. as @s[scores={uhc.scenario.blood_diamond.temp=1..}] run function uhc:in_game/scenario/blood_diamond/
 execute if score #go_to_hell uhc.scenario matches 1 if score #shrink_1_time_left uhc.data.temp matches ..0 at @s[tag=uhc.player] run function uhc:in_game/scenario/go_to_hell/tick
 execute if score #sky_high uhc.scenario matches 1 if score #shrink_1_time_left uhc.data.temp matches ..0 at @s[tag=uhc.player] run function uhc:in_game/scenario/sky_high/tick
-execute if score #team_health uhc.scenario matches 1 if entity @s[gamemode=!spectator] unless score @s uhc.player.health = @s uhc.scenario.team_health.player run function uhc:in_game/scenario/team_health/
 # Minerais
 execute as @s[tag=uhc.player] run function uhc:in_game/player/misc/ores
 

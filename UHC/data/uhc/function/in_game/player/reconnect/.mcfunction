@@ -14,7 +14,7 @@ scoreboard players set @s uhc.player.disconnect 0
 execute if entity @s[tag=uhc.player.start_in_the_sky] if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. run function uhc:in_game/player/reconnect/start_in_the_sky
 
 # Team Health
-execute if score #team_health uhc.scenario matches 1 run function uhc:in_game/scenario/team_health/
+execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
 
 # Supprimer les effets de start / respawn
 execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,predicate=uhc:effect_respawn] run function uhc:in_game/player/reconnect/start

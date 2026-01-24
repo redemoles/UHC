@@ -62,6 +62,8 @@ scoreboard players set #sound_paranoia uhc.scenario 0
 scoreboard players set #team_health uhc.scenario 0
 scoreboard players set #trade_uhc uhc.scenario 0
 
+scoreboard players set #mystery_scenarios uhc.data.setup 0
+
 # Blood Diamond
 scoreboard players set #end_tier_1 uhc.scenario.blood_diamond.tier 8
 scoreboard players set #end_tier_2 uhc.scenario.blood_diamond.tier 20

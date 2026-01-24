@@ -1,7 +1,7 @@
 
-#> uhc:in_game/advancement/player_hurt_player/
+#> uhc:in_game/advancement/hurted_by_entity/attacker/
 #
-# @within			uhc:in_game/advancement/entity_hurt_player/
+# @within			uhc:in_game/advancement/hurted_by_entity/
 #
 #
 # @description		Le joueur a pris un dégât PvP
@@ -16,13 +16,13 @@ execute unless entity @p[tag=uhc.spec_info.pvp] run return fail
 function uhc:in_game/player/team_join/vanilla
 
 # Données du joueur
-function uhc:in_game/scenario/team_health/hp
-execute if score #hp_chat uhc.data.setup matches 0 store result score #temp_entity uhc.player.health.100 run scoreboard players operation @s uhc.scenario.team_health.player /= #05 uhc.data.numbers
-execute if score #hp_chat uhc.data.setup matches 1 store result score #temp_entity uhc.player.health.100 run scoreboard players get @s uhc.scenario.team_health.player
+function uhc:in_game/player/health
+execute if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.check
+execute if score #hp_chat uhc.data.setup matches 1 run scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.100
 
 tag @s add uhc.temp.attacker
-execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/player_hurt_player/tellraw_heart with storage uhc:temp hp
-execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/player_hurt_player/tellraw_percent with storage uhc:temp hp
+execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart with storage uhc:temp hp
+execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_percent with storage uhc:temp hp
 tag @s remove uhc.temp.attacker
 
 # Couleur du joueur

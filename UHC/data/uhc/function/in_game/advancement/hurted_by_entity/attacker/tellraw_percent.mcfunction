@@ -1,7 +1,7 @@
 
-#> uhc:in_game/advancement/player_hurt_player/tellraw_percent
+#> uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_percent
 #
-# @within			uhc:in_game/advancement/player_hurt_player/
+# @within			uhc:in_game/advancement/hurted_by_entity/attacker/
 #
 #
 # @description		Le joueur a pris un dégât par un autre joueur

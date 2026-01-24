@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "uhc:in_game/scenario/_advancement/player_kill_player"
+        "function": "uhc:in_game/scenario/_advancement/kill_player"
     }
 }

@@ -14,6 +14,6 @@
     },
     "rewards":
     {
-        "function": "uhc:in_game/advancement/entity_hurt_player/"
+        "function": "uhc:in_game/advancement/hurted_by_entity/"
     }
 }

@@ -20,7 +20,7 @@ scoreboard players set @s[tag=!uhc.host] uhc.menu.main.player 0
 function uhc:pre_game/menu/load/background/
 
 execute if entity @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/player_menu/gamemode/macro_text with storage uhc:settings
-execute if entity @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/player_menu/scenario/macro_text
+execute if entity @s[tag=!uhc.host] unless score #mystery_scenarios uhc.data.setup matches 1 run function uhc:pre_game/menu/load/settings/player_menu/scenario/macro_text
 
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 3..4 run item replace entity @s inventory.20 with minecraft:purple_concrete[minecraft:item_name=[{"text":"-10","color":"#CF3F3F","italic":false}],minecraft:custom_data={Tags:"-10"}]
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 2..4 run item replace entity @s inventory.21 with minecraft:magenta_concrete[minecraft:item_name=[{"text":"-1","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"-1"}]
