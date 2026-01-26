@@ -384,10 +384,6 @@ execute in uhc:lobby run forceload add -128 -128 127 127
 execute in uhc:lobby run forceload add -32 -672 31 -609
 execute in uhc:lobby run setblock 0 -62 0 minecraft:barrier
 execute in uhc:lobby run setblock 0 -61 0 minecraft:oak_sign destroy
-data modify storage uhc:team interpreted_0 set from block 0 -61 0 front_text.messages[0]
-data modify storage uhc:team interpreted_1 set from block 0 -61 0 front_text.messages[1]
-data modify storage uhc:team interpreted_2 set from block 0 -61 0 front_text.messages[2]
-data modify storage uhc:team interpreted_3 set from block 0 -61 0 front_text.messages[3]
 function lobby:load
 
 ## Définition TP border
@@ -425,4 +421,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26014
+scoreboard players set #update uhc.data.update 26015

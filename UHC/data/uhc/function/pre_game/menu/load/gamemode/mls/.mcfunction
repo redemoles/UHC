@@ -28,19 +28,19 @@ execute if score #mls mls.scenario matches 1 if score @s uhc.player.lang matches
 execute if score #mls mls.scenario matches 2 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:yellow_concrete[minecraft:item_name=[{"text":"Moles Apocalypse","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"type_moles"},minecraft:lore=[[{"text":"Moles are chosen randomly among all the players.","color":"#FFFFFF","italic":false}],[{"text":"A team may well have no mole, or only moles.","color":"#FFFFFF","italic":false}]]]
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/gamemode/mls/teams_of_moles/macro_set
-function uhc:pre_game/menu/load/gamemode/mls/teams_of_moles/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/gamemode/mls/teams_of_moles/macro_text with storage uhc:settings mls
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/gamemode/mls/moles_per_team/macro_set
-function uhc:pre_game/menu/load/gamemode/mls/moles_per_team/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/gamemode/mls/moles_per_team/macro_text with storage uhc:settings mls
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/gamemode/mls/moles_per_game/macro_set
-function uhc:pre_game/menu/load/gamemode/mls/moles_per_game/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/gamemode/mls/moles_per_game/macro_text with storage uhc:settings mls
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/gamemode/mls/teams_of_supermoles/macro_set
-function uhc:pre_game/menu/load/gamemode/mls/teams_of_supermoles/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/gamemode/mls/teams_of_supermoles/macro_text with storage uhc:settings mls
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/gamemode/mls/supermoles_per_team/macro_set
-function uhc:pre_game/menu/load/gamemode/mls/supermoles_per_team/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/gamemode/mls/supermoles_per_team/macro_text with storage uhc:settings mls
 
 execute if score @s uhc.menu.gamemode.mls matches 2 run item replace entity @s inventory.20 with minecraft:purple_concrete[minecraft:item_name=[{"text":"-4","color":"#CF3F3F","italic":false}]]
 execute if score @s uhc.menu.gamemode.mls matches 2 run item replace entity @s inventory.21 with minecraft:magenta_concrete[minecraft:item_name=[{"text":"-1","color":"#FF3F3F","italic":false}]]

@@ -7,5 +7,5 @@
 # @description		Menu
 #
 
-data modify block 0 -61 0 front_text.messages[2] set value [{"score":{"name":"#end_tier_1","objective":"uhc.scenario.blood_diamond.tier"}}]
-data modify storage uhc:temp blood_diamond.end_tier_1 set from block 0 -61 0 front_text.messages[2]
+data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#end_tier_1","objective":"uhc.scenario.blood_diamond.tier"}}]
+data modify storage uhc:temp blood_diamond.end_tier_1 set from block 0 -61 0 front_text.messages[0]

@@ -13,7 +13,7 @@ execute if score #random_team uhc.data.setup matches 0 if score @s uhc.player.la
 execute if score #random_team uhc.data.setup matches 1 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.11 with minecraft:light_blue_bundle[minecraft:item_name=[{"text":"Team format","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Chosen team","color":"#9F9F9F","italic":true}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Random team","color":"#FFFFFF","italic":false}]],minecraft:tooltip_display={"hidden_components":["minecraft:bundle_contents"]},minecraft:custom_data={Tags:"team_format"}]
 
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/team/team_size/macro_set
-function uhc:pre_game/menu/load/settings/team/team_size/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/settings/team/team_size/macro_text with storage uhc:settings menu
 
 execute if score #anonyme_team uhc.data.setup matches 0 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.16 with minecraft:red_concrete[minecraft:item_name=[{"text":"Équipes anonymes","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"team_anonyme"}]
 execute if score #anonyme_team uhc.data.setup matches 1 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.16 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"Équipes anonymes","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"team_anonyme"}]

@@ -43,22 +43,22 @@ execute if score @s uhc.menu.settings.pvp matches 11.. run return run function u
 
 # Vies
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/macro_set
-function uhc:pre_game/menu/load/settings/lives/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/settings/lives/macro_text with storage uhc:settings menu
 execute if score @s uhc.menu.settings.lives matches 01.. run function uhc:pre_game/menu/load/settings/lives/menu
 
 # PvE
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/macro_set
-function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings menu
 execute if score @s uhc.menu.settings.pve matches 01.. run function uhc:pre_game/menu/load/settings/pve/menu
 
 # PvP
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/macro_set
-function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings menu
 execute if score @s uhc.menu.settings.pvp matches 01.. run function uhc:pre_game/menu/load/settings/pvp/menu
 
 # Bordure
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
-function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings menu
 execute if score @s uhc.menu.settings.border matches 01.. run function uhc:pre_game/menu/load/settings/border/menu
 
 # Règles d'inventaire

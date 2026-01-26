@@ -9,7 +9,7 @@
 
 # Retour
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/macro_set
-function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings
+function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings menu
 
 # PvP Version
 execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/version/macro_text
@@ -28,4 +28,4 @@ execute if score @s uhc.menu.settings.pvp matches 21..30 run function uhc:pre_ga
 
 # No Clean Up
 execute if score @s uhc.menu.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
-execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings menu

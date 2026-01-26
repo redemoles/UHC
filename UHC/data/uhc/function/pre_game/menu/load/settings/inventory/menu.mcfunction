@@ -20,34 +20,34 @@ execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.p
 execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.13 with minecraft:dropper[minecraft:item_name=[{"text":"Additionnal items at the death of a player","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Applies to the death of a player, except if","color":"#FFFFFF"}],[{"text":"non-definitive death before PvP is activated","color":"#FFFFFF","italic":false}],[{"text":"Hosts only","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_additional"}]
 
 execute if score @s uhc.menu.settings.inventory matches 11..20 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_protection/macro_set
-execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_protection/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_protection/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 11..20 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_sharpness/macro_set
-execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_sharpness/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_sharpness/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 11..20 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_protection/macro_set
-execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_protection/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_protection/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 11..20 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_sharpness/macro_set
-execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_sharpness/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_sharpness/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 11..20 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/axes_sharpness/macro_set
-execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/axes_sharpness/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/axes_sharpness/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 11..20 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/bow_power/macro_set
-execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/bow_power/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 11..20 run function uhc:pre_game/menu/load/settings/inventory/enchantments_main/bow_power/macro_text with storage uhc:settings menu
 
 
 execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/fire_flame/macro_text
 
 execute if score @s uhc.menu.settings.inventory matches 21..30 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/depth_strider/macro_set
-execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/depth_strider/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/depth_strider/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 21..30 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/lunge/macro_set
-execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/lunge/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/lunge/macro_text with storage uhc:settings menu
 
 execute if score @s uhc.menu.settings.inventory matches 31..40 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_set
-execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_text with storage uhc:settings
+execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_text with storage uhc:settings menu
 
 execute if score @s[tag=uhc.host] uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.19 with minecraft:filled_map[minecraft:item_name=[{"text":"Pages","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FFE73F","italic":false},{"text":"Items au démarrage et récompenses","color":"#FFEF7F"}],[{"text":"• ","color":"#CFCFCF","italic":false},{"text":"Enchantements principaux","color":"#FFFFFF"}],[{"text":"• ","color":"#CFCFCF","italic":false},{"text":"Enchantements secondaires","color":"#FFFFFF"}],[{"text":"• ","color":"#CFCFCF","italic":false},{"text":"Autorisation d'items","color":"#FFFFFF"}]],minecraft:tooltip_display={"hidden_components":["map_id"]},minecraft:custom_data={Tags:"settings_inventory_pages"}]
 execute if score @s[tag=uhc.host] uhc.menu.settings.inventory matches 11..20 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.19 with minecraft:filled_map[minecraft:item_name=[{"text":"Pages","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#CFCFCF","italic":false},{"text":"Items au démarrage et récompenses","color":"#FFFFFF"}],[{"text":"• ","color":"#FFE73F","italic":false},{"text":"Enchantements principaux","color":"#FFEF7F"}],[{"text":"• ","color":"#CFCFCF","italic":false},{"text":"Enchantements secondaires","color":"#FFFFFF"}],[{"text":"• ","color":"#CFCFCF","italic":false},{"text":"Autorisation d'items","color":"#FFFFFF"}]],minecraft:tooltip_display={"hidden_components":["map_id"]},minecraft:custom_data={Tags:"settings_inventory_pages"}]

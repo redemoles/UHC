@@ -7,5 +7,5 @@
 # @description		Menu
 #
 
-data modify block 0 -61 0 front_text.messages[2] set value [{"score":{"name":"#iron_sharpness","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings interpreted_2 set from block 0 -61 0 front_text.messages[2]
+data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#iron_sharpness","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
+data modify storage uhc:settings menu.iron_sharpness set from block 0 -61 0 front_text.messages[0]
