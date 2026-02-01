@@ -7,12 +7,10 @@
 # @description		Menu
 #
 
-data modify block 0 -61 0 front_text.messages set value [{"score":{"name":"#shrink_1_size_start","objective":"uhc.data.setup"},"color":"#CFCFCF","bold":false,"italic":true},{"score":{"name":"#shrink_1_size_end","objective":"uhc.data.setup"},"color":"#CFCFCF","bold":false,"italic":true},{"score":{"name":"#shrink_1_time_left","objective":"uhc.data.setup"},"color":"#CFCFCF","bold":false,"italic":true},{"score":{"name":"#shrink_1_length","objective":"uhc.data.setup"},"color":"#CFCFCF","bold":false,"italic":true}]
-execute if score @s uhc.menu.settings.border matches 11 run data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#shrink_1_size_start","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
-execute if score @s uhc.menu.settings.border matches 12 run data modify block 0 -61 0 front_text.messages[1] set value [{"score":{"name":"#shrink_1_size_end","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
-execute if score @s uhc.menu.settings.border matches 13 run data modify block 0 -61 0 front_text.messages[2] set value [{"score":{"name":"#shrink_1_time_left","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
-execute if score @s uhc.menu.settings.border matches 14 run data modify block 0 -61 0 front_text.messages[3] set value [{"score":{"name":"#shrink_1_length","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
-data modify storage uhc:settings menu.shrink_1_size_start set from block 0 -61 0 front_text.messages[0]
-data modify storage uhc:settings menu.shrink_1_size_end set from block 0 -61 0 front_text.messages[1]
-data modify storage uhc:settings menu.shrink_1_time_left set from block 0 -61 0 front_text.messages[2]
-data modify storage uhc:settings menu.shrink_1_length set from block 0 -61 0 front_text.messages[3]
+data modify block 0 -61 0 front_text.messages set value [{"score":{"name":"#shrink_1_size_start","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false},{"score":{"name":"#shrink_1_size_end","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false},{"score":{"name":"#shrink_1_time_left","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false},{"score":{"name":"#shrink_1_length","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
+data modify storage uhc:settings menu.shrink.1_size_start set from block 0 -61 0 front_text.messages[0]
+data modify storage uhc:settings menu.shrink.1_size_end set from block 0 -61 0 front_text.messages[1]
+data modify storage uhc:settings menu.shrink.1_time_left set from block 0 -61 0 front_text.messages[2]
+data modify storage uhc:settings menu.shrink.1_length set from block 0 -61 0 front_text.messages[3]
+execute unless score #shrink_dynamic uhc.data.setup matches 1..64 store result storage uhc:settings menu.shrink.dynamic_count int 1 run scoreboard players get #01 uhc.data.numbers
+execute if score #shrink_dynamic uhc.data.setup matches 1..64 store result storage uhc:settings menu.shrink.dynamic_count int 1 run scoreboard players get #shrink_dynamic uhc.data.setup

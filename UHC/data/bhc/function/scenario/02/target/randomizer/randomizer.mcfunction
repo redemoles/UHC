@@ -20,7 +20,7 @@ execute if score @s bhc.targeted.id matches 0 run scoreboard players operation @
 
 ## Ciblage
 # Recherche d'équipe "valide"
-execute if score #temp bhc.data.temp matches 2 as @n[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1,bhc.targeter.former_id=}] run return run function bhc:scenario/02/target/randomizer/randomizer
+execute if score #temp bhc.data.temp matches 2 as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1}] if score @s bhc.targeter.former_id = #team bhc.data.temp run return run function bhc:scenario/02/target/randomizer/randomizer
 execute as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer
 execute if score #temp bhc.data.temp matches 0 run return fail
 # Les équipes "en attente de validation" deviennent "valides"

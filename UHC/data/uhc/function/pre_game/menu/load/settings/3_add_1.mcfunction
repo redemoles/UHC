@@ -90,10 +90,6 @@ execute if score @s uhc.menu.settings.border matches 24 unless score #shrink_2_l
 execute if score @s uhc.menu.settings.border matches 34 unless score #shrink_3_length uhc.data.setup matches 300.. run scoreboard players add #shrink_3_length uhc.data.setup 1
 
 
-# Réduction dynamique
-execute if score @s uhc.menu.settings.border matches 91 unless score #shrink_dynamic uhc.data.setup matches 3.. run scoreboard players add #shrink_dynamic uhc.data.setup 1
-
-
 # Règles d'enchantements - Armures en diamants, Épées en diamants, Armures en fer, Épées en diamants, Haches, Arcs, Bottes
 execute if score @s uhc.menu.settings.inventory matches 12 unless score #diamond_protection uhc.data.setup matches 4.. run scoreboard players add #diamond_protection uhc.data.setup 1
 execute if score @s uhc.menu.settings.inventory matches 13 unless score #diamond_sharpness uhc.data.setup matches 5.. run scoreboard players add #diamond_sharpness uhc.data.setup 1

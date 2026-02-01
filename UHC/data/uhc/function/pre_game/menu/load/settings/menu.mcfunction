@@ -58,7 +58,7 @@ execute if score @s uhc.menu.settings.pvp matches 01.. run function uhc:pre_game
 
 # Bordure
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
-function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings menu
+function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings menu.shrink
 execute if score @s uhc.menu.settings.border matches 01.. run function uhc:pre_game/menu/load/settings/border/menu
 
 # Règles d'inventaire

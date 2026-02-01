@@ -12,16 +12,16 @@ scoreboard players operation #temp bhc.data = @s bhc.bingo.score.inv
 
 ## Compte le nombre d'équipe avec un score inférieur à celle sélectionnée
 tag @s add bhc.count
-scoreboard players set #count bhc.data 0
-execute as @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count] if score @s bhc.bingo.score.inv < #temp bhc.data run scoreboard players add #count bhc.data 1
+scoreboard players set #count bhc.data.temp 0
+execute as @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count] if score @s bhc.bingo.score.inv < #temp bhc.data run scoreboard players add #count bhc.data.temp 1
 tag @s remove bhc.count
 
 ## Classement
-scoreboard players operation @s bhc.bingo.rank.number = #team bhc.data
-scoreboard players operation @s bhc.bingo.rank.number -= #count bhc.data
+scoreboard players operation @s bhc.bingo.rank.number = #team bhc.data.temp
+scoreboard players operation @s bhc.bingo.rank.number -= #count bhc.data.temp
 
 ## Scores
-scoreboard players operation @s bhc.bingo.rank.score.inv = #count bhc.data
+scoreboard players operation @s bhc.bingo.rank.score.inv = #count bhc.data.temp
 
 # Classement Bingo Spécial → Score perso → Score d'affichage pour les messages
 scoreboard players operation #team uhc.id.team = @s uhc.id.team

@@ -11,7 +11,7 @@
 scoreboard players set #bingo_1a_enabled bhc.data 1
 scoreboard players set #stepa_enabled bhc.data 1
 
-scoreboard players operation #exhausted bhc.case = #team bhc.data
+scoreboard players operation #exhausted bhc.case = #team bhc.data.temp
 scoreboard players add #exhausted bhc.case 2
 scoreboard players operation #exhausted bhc.case /= #03 uhc.data.numbers
 

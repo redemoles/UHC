@@ -36,8 +36,8 @@ scoreboard players operation #team uhc.id.team = @s uhc.id.team
 give @a[scores={uhc.player.lives=3},predicate=uhc:id_team] minecraft:golden_apple 2
 
 # Bingo UHC
-execute if score #bhc uhc.gamemode matches 1 store result score #count bhc.data if entity @a[scores={uhc.player.lives=3},predicate=uhc:id_team]
-execute if score #bhc uhc.gamemode matches 1 run scoreboard players operation @s bhc.team.livescount += #count bhc.data
+execute if score #bhc uhc.gamemode matches 1 store result score #count bhc.data.temp if entity @a[scores={uhc.player.lives=3},predicate=uhc:id_team]
+execute if score #bhc uhc.gamemode matches 1 run scoreboard players operation @s bhc.team.livescount += #count bhc.data.temp
 execute if score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.temp matches ..-1 unless score #seconds uhc.data.temp matches 0 unless score #game_progress uhc.game_progress matches 2.. run function bhc:scores_calculator/death/update
 
 ## Retrait vie

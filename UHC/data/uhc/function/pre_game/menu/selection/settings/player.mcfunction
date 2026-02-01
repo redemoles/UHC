@@ -7,9 +7,9 @@
 # @description		Redirection
 #
 
-execute if score @s uhc.menu.settings.pvp matches 11..20 run function uhc:pre_game/menu/selection/settings/pvp_fight_stuff/player
-execute if score @s uhc.menu.settings.pvp matches 21..30 run function uhc:pre_game/menu/selection/settings/pvp_team_stuff/player
-execute if score @s uhc.menu.settings.pvp matches 31..40 run function uhc:pre_game/menu/selection/settings/pvp_potion/player
+execute if score @s uhc.menu.settings.pvp matches 11..20 run function uhc:pre_game/menu/selection/settings/pvp/fight_stuff/player
+execute if score @s uhc.menu.settings.pvp matches 21..30 run function uhc:pre_game/menu/selection/settings/pvp/team_stuff/player
+execute if score @s uhc.menu.settings.pvp matches 31..40 run function uhc:pre_game/menu/selection/settings/pvp/potion/player
 
 execute if score @s uhc.menu.settings.pvp matches 11.. run return fail
 

@@ -12,13 +12,13 @@ scoreboard players operation #temp bhc.data = @s bhc.total.tie_break.score
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
 tag @s add bhc.count
-scoreboard players set #count bhc.data 0
-execute as @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count] if score @s bhc.total.tie_break.score > #temp bhc.data run scoreboard players add #count bhc.data 1
+scoreboard players set #count bhc.data.temp 0
+execute as @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count] if score @s bhc.total.tie_break.score > #temp bhc.data run scoreboard players add #count bhc.data.temp 1
 tag @s remove bhc.count
 
 ## Classement d'équipe
-scoreboard players operation @s bhc.total.tie_break.rank = #team bhc.data
-scoreboard players operation @s bhc.total.tie_break.rank -= #count bhc.data
+scoreboard players operation @s bhc.total.tie_break.rank = #team bhc.data.temp
+scoreboard players operation @s bhc.total.tie_break.rank -= #count bhc.data.temp
 
 ## Somme des scores
 scoreboard players operation @s bhc.total.score.inv = @s bhc.stepa.rank.score.inv

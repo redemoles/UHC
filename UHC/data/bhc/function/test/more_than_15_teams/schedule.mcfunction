@@ -8,9 +8,9 @@
 #
 
 function bhc:test/scores/team
-scoreboard players operation #team/2 bhc.data = #team bhc.data
+scoreboard players operation #team/2 bhc.data = #team bhc.data.temp
 scoreboard players operation #team/2 bhc.data /= #02 uhc.data.numbers
-scoreboard players operation #temp bhc.stepa.score.inv = #team bhc.data
+scoreboard players operation #temp bhc.stepa.score.inv = #team bhc.data.temp
 execute if score #team/2 bhc.data matches 16.. run scoreboard players set #team/2 bhc.data 15
 
 scoreboard players set @a[tag=uhc.player] bhc.stepa.score.inv 0

@@ -13,16 +13,16 @@ scoreboard players remove #temp bhc.data 1
 
 ## Compte le nombre d'équipe avec un score supérieur à celle sélectionnée
 tag @s add bhc.count
-scoreboard players set #count bhc.data 0
-execute as @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count] if score @s bhc.death.score.inv <= #temp bhc.data run scoreboard players add #count bhc.data 1
+scoreboard players set #count bhc.data.temp 0
+execute as @e[type=marker,tag=UHC,distance=0..,tag=!bhc.count] if score @s bhc.death.score.inv <= #temp bhc.data run scoreboard players add #count bhc.data.temp 1
 tag @s remove bhc.count
 
 ## Classement
-scoreboard players operation @s bhc.death.rank.number = #team bhc.data
-scoreboard players operation @s bhc.death.rank.number -= #count bhc.data
+scoreboard players operation @s bhc.death.rank.number = #team bhc.data.temp
+scoreboard players operation @s bhc.death.rank.number -= #count bhc.data.temp
 
 ## Scores
-scoreboard players operation @s bhc.death.rank.score.inv = #count bhc.data
+scoreboard players operation @s bhc.death.rank.score.inv = #count bhc.data.temp
 scoreboard players add @s[scores={bhc.death.rank.number=1}] bhc.death.rank.score.inv 1
 
 # Équipes à moins de 0 point

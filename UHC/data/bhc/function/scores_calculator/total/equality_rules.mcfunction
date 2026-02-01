@@ -7,10 +7,10 @@
 # @description		Calcul pour départager les équipes aux scores finaux égaux
 #
 
-scoreboard players operation @s bhc.stepa.rank.number -= #team bhc.data
-scoreboard players operation @s bhc.stepb.rank.number -= #team bhc.data
-scoreboard players operation @s bhc.kills.rank.number -= #team bhc.data
-scoreboard players operation @s bhc.death.rank.number -= #team bhc.data
+scoreboard players operation @s bhc.stepa.rank.number -= #team bhc.data.temp
+scoreboard players operation @s bhc.stepb.rank.number -= #team bhc.data.temp
+scoreboard players operation @s bhc.kills.rank.number -= #team bhc.data.temp
+scoreboard players operation @s bhc.death.rank.number -= #team bhc.data.temp
 
 scoreboard players remove @s bhc.stepa.rank.number 1
 scoreboard players remove @s bhc.stepb.rank.number 1
@@ -28,10 +28,10 @@ scoreboard players operation @s bhc.total.tie_break.score /= #100 uhc.data.numbe
 scoreboard players operation @s bhc.total.tie_break.score *= #100 uhc.data.numbers
 scoreboard players operation @s bhc.total.tie_break.score -= @s bhc.death.rank.number
 
-scoreboard players operation @s bhc.stepa.rank.number += #team bhc.data
-scoreboard players operation @s bhc.stepb.rank.number += #team bhc.data
-scoreboard players operation @s bhc.kills.rank.number += #team bhc.data
-scoreboard players operation @s bhc.death.rank.number += #team bhc.data
+scoreboard players operation @s bhc.stepa.rank.number += #team bhc.data.temp
+scoreboard players operation @s bhc.stepb.rank.number += #team bhc.data.temp
+scoreboard players operation @s bhc.kills.rank.number += #team bhc.data.temp
+scoreboard players operation @s bhc.death.rank.number += #team bhc.data.temp
 
 scoreboard players add @s bhc.stepa.rank.number 1
 scoreboard players add @s bhc.stepb.rank.number 1

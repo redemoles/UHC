@@ -31,5 +31,5 @@ execute as @e[type=marker,tag=UHC,distance=0..,tag=temp] run function bhc:test/b
 scoreboard players set #team uhc.id.team 0
 
 # Nombre d'équipes
-execute store result score #team bhc.data if entity @e[type=marker,tag=UHC,distance=0..]
+execute store result score #team bhc.data.temp if entity @e[type=marker,tag=UHC,distance=0..]
 execute store result score #team uhc.data.temp.inv if entity @e[type=marker,tag=UHC,distance=0..]

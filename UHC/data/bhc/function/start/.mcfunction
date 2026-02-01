@@ -21,8 +21,8 @@ scoreboard players operation #stepb_end bhc.data.temp = #stepb_end bhc.data.setu
 execute if score #bhc bhc.scenario matches 01 run scoreboard players operation #stepb_exhaustion bhc.data.temp = #stepb_exhaustion bhc.data.setup
 
 ## Équipes et joueurs
-scoreboard players operation #team bhc.data = #team uhc.data.temp.inv
-scoreboard players operation #team/2 bhc.data = #team bhc.data
+scoreboard players operation #team bhc.data.temp = #team uhc.data.temp.inv
+scoreboard players operation #team/2 bhc.data = #team bhc.data.temp
 scoreboard players operation #team/2 bhc.data /= #02 uhc.data.numbers
 execute if score #team/2 bhc.data matches 16.. run scoreboard players set #team/2 bhc.data 15
 

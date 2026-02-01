@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/settings/pvp_no_clean/host
+#> uhc:pre_game/menu/selection/settings/pvp/no_clean/host
 #
 # @within			uhc:pre_game/menu/selection/settings/host
 # 
