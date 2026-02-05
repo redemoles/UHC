@@ -10,7 +10,7 @@
 # Type disponible ?
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 execute if score #type_13 nzl.type.available matches 0 run scoreboard players set @s nzl.type.select 99
-execute if entity @e[tag=nzl.type.13,predicate=uhc:id_team] run scoreboard players set @s nzl.type.select 99
+execute if entity @e[tag=nzl.type.13,predicate=uhc:id/team] run scoreboard players set @s nzl.type.select 99
 
 # Si type indisponible
 tellraw @s[scores={nzl.type.select=99}] [{"text":"Le type ","color":"#FF3F3F","bold":false},{"text":"Psy","color":"#FF3F7F","bold":true},{"text":" n'est plus disponible.","color":"#FF3F3F","bold":false}]

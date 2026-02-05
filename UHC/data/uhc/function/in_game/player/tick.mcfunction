@@ -41,7 +41,7 @@ execute if score #version_pvp uhc.data.setup matches 1 run function uhc:in_game/
 #execute if score #version_pvp uhc.data.setup matches 0 run function uhc:in_game/player/pvp/settings/version_pvp/1_21
 
 # Chevaux
-execute if score #horse_limit uhc.data.setup matches 0 if entity @s[predicate=uhc:ride_a_horse] run function uhc:in_game/player/pvp/settings/horse/
+execute if score #horse_limit uhc.data.setup matches 0 if entity @s[predicate=uhc:settings/ride_a_horse] run function uhc:in_game/player/pvp/settings/horse/
 
 ## Effets aux joueurs
 # Résistance
@@ -68,7 +68,7 @@ execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s uh
 
 ## Apparition / Réapparition
 # Démarrage dans le ciel
-execute in minecraft:overworld positioned 0 180 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:start_in_the_sky/on_ground,distance=25..] run function uhc:in_game/player/misc/on_ground_with_elytra
+execute in minecraft:overworld positioned 0 180 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:settings/start_in_the_sky/on_ground,distance=25..] run function uhc:in_game/player/misc/on_ground_with_elytra
 execute as @s[tag=uhc.player.start_in_the_sky] unless items entity @s armor.chest minecraft:elytra run function uhc:in_game/player/misc/on_ground_with_elytra
 # Réapparition
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/lives_remove/respawn

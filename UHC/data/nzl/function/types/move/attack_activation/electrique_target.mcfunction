@@ -11,7 +11,7 @@
 execute at @s run summon minecraft:lightning_bolt ~ ~ ~
 
 tag @s add nzl.electrique.power_1
-execute if predicate uhc:weather_thunder run tag @s add nzl.electrique.power_2
+execute if predicate uhc:weather/thunder run tag @s add nzl.electrique.power_2
 
 execute if score #team uhc.id.team matches 01 run tag @s add nzl.electrique.team_01
 execute if score #team uhc.id.team matches 02 run tag @s add nzl.electrique.team_02

@@ -23,7 +23,7 @@ scoreboard players set @s nzl.sound.evolve 1
 scoreboard players set @s nzl.dragon.malus 0
 # Équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-tag @e[type=marker,predicate=uhc:id_team] add nzl.type.03
+tag @e[type=marker,predicate=uhc:id/team] add nzl.type.03
 
 # Points de vie
 attribute @s minecraft:max_health base set 18

@@ -36,8 +36,8 @@ $execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players se
 $execute if score @s bhc.line_$(line) = #line bhc.data unless score #line_$(line) bhc.line matches 1.. run scoreboard players set #total_first_line_$(line) bhc.data 1
 $execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players add @s bhc.line 1
 $execute if score @s bhc.line_$(line) = #line bhc.data run scoreboard players add #line_$(line) bhc.line 1
-$scoreboard players operation @a[predicate=uhc:id_team] bhc.line_$(line) = @s bhc.line_$(line)
-scoreboard players operation @a[predicate=uhc:id_team] bhc.line = @s bhc.line
+$scoreboard players operation @a[predicate=uhc:id/team] bhc.line_$(line) = @s bhc.line_$(line)
+scoreboard players operation @a[predicate=uhc:id/team] bhc.line = @s bhc.line
 
 ## Colonne
 $scoreboard players add @s bhc.column_$(column) 1
@@ -47,8 +47,8 @@ $execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard play
 $execute if score @s bhc.column_$(column) = #column bhc.data unless score #column_$(column) bhc.column matches 1.. run scoreboard players set #total_first_column_$(column) bhc.data 1
 $execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players add @s bhc.column 1
 $execute if score @s bhc.column_$(column) = #column bhc.data run scoreboard players add #column_$(column) bhc.column 1
-$scoreboard players operation @a[predicate=uhc:id_team] bhc.column_$(column) = @s bhc.column_$(column)
-scoreboard players operation @a[predicate=uhc:id_team] bhc.column = @s bhc.column
+$scoreboard players operation @a[predicate=uhc:id/team] bhc.column_$(column) = @s bhc.column_$(column)
+scoreboard players operation @a[predicate=uhc:id/team] bhc.column = @s bhc.column
 
 $scoreboard players operation @s bhc.$(namespace)_$(line)_$(column) = #minutes uhc.data.temp
 

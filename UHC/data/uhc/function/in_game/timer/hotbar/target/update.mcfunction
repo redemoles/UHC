@@ -12,7 +12,7 @@ data modify storage uhc:temp target set value {}
 
 # Test si d'autres joueurs dans l'équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-execute if score #tracker_allies uhc.data.setup matches 1 if entity @p[tag=uhc.player,tag=!uhc.target.targeter,predicate=uhc:id_team] at @s run function uhc:in_game/timer/hotbar/target/team
+execute if score #tracker_allies uhc.data.setup matches 1 if entity @p[tag=uhc.player,tag=!uhc.target.targeter,predicate=uhc:id/team] at @s run function uhc:in_game/timer/hotbar/target/team
 
 # Bingo UHC
 scoreboard players operation #team uhc.id.team = @s uhc.id.team

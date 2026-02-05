@@ -12,10 +12,10 @@ scoreboard players operation #team uhc.id.team = @s uhc.id.team
 # Joueur hors du lobby
 execute as @a[predicate=uhc:effect/absorption] run effect clear @s minecraft:absorption
 execute unless score @s uhc.player.online matches 1 run function uhc:pre_game/player_and_team/new_player
-execute at @s if entity @s[predicate=uhc:dimension/uhc_lobby,y=-1,dy=-64] in uhc:lobby run function uhc:pre_game/player_and_team/in_void
+execute at @s if entity @s[predicate=uhc:dimension/uhc_lobby,y=-1,dy=-64] run function uhc:pre_game/player_and_team/in_void
 
 # Reconnexion d'un joueur
-execute if score @s uhc.player.disconnect matches 1.. in uhc:lobby run function uhc:pre_game/player_and_team/reconnect/
+execute if score @s uhc.player.disconnect matches 1.. run function uhc:pre_game/player_and_team/reconnect/
 
 # Changement grade host
 execute if entity @s[tag=host,tag=!uhc.host] run function uhc:pre_game/timer/host_grade/host

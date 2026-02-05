@@ -20,4 +20,4 @@ scoreboard players remove @s nzl.stats.attack 2
 scoreboard players remove @s[y=50,dy=-128] nzl.stats.mining_speed 2
 
 ## ATTAQUE
-execute if entity @n[type=marker,predicate=uhc:id_team,scores={nzl.attack.length.01=1..}] run function nzl:types/move/attack/eau
+execute if entity @n[type=marker,predicate=uhc:id/team,scores={nzl.attack.length.01=1..}] run function nzl:types/move/attack/eau

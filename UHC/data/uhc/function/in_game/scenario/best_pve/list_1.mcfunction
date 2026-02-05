@@ -9,5 +9,5 @@
 
 scoreboard players add #team uhc.id.team 1
 
-execute as @a[scores={uhc.scenario.best_pve.list=0},predicate=uhc:id_team] run function uhc:in_game/scenario/best_pve/list_2
+execute as @a[scores={uhc.scenario.best_pve.list=0},predicate=uhc:id/team] run function uhc:in_game/scenario/best_pve/list_2
 execute if entity @p[scores={uhc.scenario.best_pve.list=0}] run function uhc:in_game/scenario/best_pve/list_1

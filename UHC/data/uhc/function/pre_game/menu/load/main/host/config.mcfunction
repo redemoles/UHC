@@ -57,4 +57,3 @@ execute if score #sky_high uhc.scenario matches 1 run tellraw @s [{"text":"• "
 execute if score #sound_paranoia uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Sound Paranoia","color":"#3FE7FF","bold":false}]
 execute if score #team_health uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Team Health","color":"#3FE7FF","bold":false}]
 execute if score #trade_uhc uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Trade UHC","color":"#3FE7FF","bold":false}]
-tellraw @s [{"text":"","color":"#FFFFFF"}]

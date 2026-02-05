@@ -33,7 +33,7 @@ tag @s remove uhc.spec_info.pvp
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 scoreboard players add #player uhc.data.temp 1
 scoreboard players add #player uhc.data.temp.inv 1
-execute as @e[type=marker,predicate=uhc:id_team] run function uhc:in_game/player/spec/revive_team
+execute as @e[type=marker,predicate=uhc:id/team] run function uhc:in_game/player/spec/revive_team
 
 gamemode survival @s
 effect clear @s

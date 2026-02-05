@@ -15,12 +15,12 @@ scoreboard players remove #player uhc.data.temp.inv 1
 
 # -1 Joueur dans l'équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-scoreboard players remove @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_team] uhc.player.lives 1
+scoreboard players remove @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.player.lives 1
 execute if score #player uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.player set value ""
 
 # Dernier joueur de l'équipe ?
 scoreboard players set #team_out uhc.id.team 1
-execute if score @n[type=marker,tag=UHC,distance=0..,predicate=uhc:id_team] uhc.player.lives matches 1.. run scoreboard players set #team_out uhc.id.team 0
+execute if score @n[type=marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.player.lives matches 1.. run scoreboard players set #team_out uhc.id.team 0
 execute if score #team_out uhc.id.team matches 1 run function uhc:in_game/team/out/main
 
 # Attribution des effets

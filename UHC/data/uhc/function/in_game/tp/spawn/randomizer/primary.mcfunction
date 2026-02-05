@@ -45,6 +45,6 @@ execute if score #spawn uhc.id.spawn matches 32 unless score #spawn_32 uhc.id.sp
 execute if score #spawn uhc.id.spawn matches 33 run return run function uhc:in_game/tp/spawn/randomizer/secondary
 
 scoreboard players operation #team uhc.id.team = @r[tag=uhc.id.spawn] uhc.id.team
-scoreboard players operation @a[predicate=uhc:id_team] uhc.id.spawn = #spawn uhc.id.spawn
-tag @a[predicate=uhc:id_team] remove uhc.id.spawn
+scoreboard players operation @a[predicate=uhc:id/team] uhc.id.spawn = #spawn uhc.id.spawn
+tag @a[predicate=uhc:id/team] remove uhc.id.spawn
 execute if entity @p[tag=uhc.id.spawn] run function uhc:in_game/tp/spawn/randomizer/primary

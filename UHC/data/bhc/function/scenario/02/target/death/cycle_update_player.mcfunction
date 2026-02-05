@@ -8,5 +8,5 @@
 #
 
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-scoreboard players operation @a[tag=uhc.player,predicate=uhc:id_team] bhc.targeted.id = @s bhc.targeted.id
-scoreboard players operation @a[tag=uhc.player,predicate=uhc:id_team] bhc.targeter.id = @s bhc.targeter.id
+scoreboard players operation @a[tag=uhc.player,predicate=uhc:id/team] bhc.targeted.id = @s bhc.targeted.id
+scoreboard players operation @a[tag=uhc.player,predicate=uhc:id/team] bhc.targeter.id = @s bhc.targeter.id

@@ -38,9 +38,9 @@ scoreboard players operation @s bhc.bingo.score.inv += @s uhc.id.team
 
 # Classement Bingo Classique → Score perso → Score d'affichage pour les messages
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-scoreboard players operation @a[predicate=uhc:id_team] bhc.stepa.rank.number = @s bhc.stepa.rank.number
-scoreboard players operation @a[predicate=uhc:id_team] bhc.stepa.rank.score.inv = @s bhc.stepa.rank.score.inv
-scoreboard players operation @a[predicate=uhc:id_team] bhc.bingo.score.inv = @s bhc.bingo.score.inv
+scoreboard players operation @a[predicate=uhc:id/team] bhc.stepa.rank.number = @s bhc.stepa.rank.number
+scoreboard players operation @a[predicate=uhc:id/team] bhc.stepa.rank.score.inv = @s bhc.stepa.rank.score.inv
+scoreboard players operation @a[predicate=uhc:id/team] bhc.bingo.score.inv = @s bhc.bingo.score.inv
 
 function bhc:scores_calculator/total/score
 function bhc:timer/scoreboard/marker_name

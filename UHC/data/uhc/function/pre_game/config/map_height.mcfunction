@@ -54,7 +54,8 @@ execute positioned -32 ~ -32 positioned over world_surface summon minecraft:mark
 execute as @n[type=minecraft:marker,tag=uhc.temp.height,distance=0..] store result storage uhc:settings map_height.-- int 1 store result score #map_height_-- uhc.data.setup run data get entity @s Pos[1]
 kill @n[type=minecraft:marker,tag=uhc.temp.height,distance=0..]
 
-scoreboard players operation #map_height_max uhc.data.setup = #map_height_00 uhc.data.setup
+scoreboard players set #map_height_max uhc.data.setup 128
+scoreboard players operation #map_height_max uhc.data.setup > #map_height_00 uhc.data.setup
 scoreboard players operation #map_height_max uhc.data.setup > #map_height_+0 uhc.data.setup
 scoreboard players operation #map_height_max uhc.data.setup > #map_height_0+ uhc.data.setup
 scoreboard players operation #map_height_max uhc.data.setup > #map_height_-0 uhc.data.setup
@@ -63,17 +64,8 @@ scoreboard players operation #map_height_max uhc.data.setup > #map_height_++ uhc
 scoreboard players operation #map_height_max uhc.data.setup > #map_height_+- uhc.data.setup
 scoreboard players operation #map_height_max uhc.data.setup > #map_height_-+ uhc.data.setup
 scoreboard players operation #map_height_max uhc.data.setup > #map_height_-- uhc.data.setup
-scoreboard players set #map_height_max uhc.data.setup 200
 
-scoreboard players operation #map_height_min uhc.data.setup = #map_height_00 uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_+0 uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_0+ uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_-0 uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_0- uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_++ uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_+- uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_-+ uhc.data.setup
-scoreboard players operation #map_height_min uhc.data.setup < #map_height_-- uhc.data.setup
+scoreboard players set #map_height_min uhc.data.setup 64
 
 scoreboard players set #temp uhc.data.setup 9
 scoreboard players operation #map_height_avg uhc.data.setup = #map_height_00 uhc.data.setup
@@ -91,4 +83,4 @@ scoreboard players operation #map_height_limit_above uhc.data.setup = #map_heigh
 scoreboard players add #map_height_limit_above uhc.data.setup 32
 
 scoreboard players operation #map_height_limit_below uhc.data.setup = #map_height_min uhc.data.setup
-scoreboard players remove #map_height_limit_below uhc.data.setup 12
+scoreboard players remove #map_height_limit_below uhc.data.setup 8

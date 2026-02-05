@@ -24,7 +24,7 @@ tag @s add nzl.type.14
 
 # Équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-tag @e[type=marker,predicate=uhc:id_team] add nzl.type.14
+tag @e[type=marker,predicate=uhc:id/team] add nzl.type.14
 
 ## Points de vie
 attribute @s minecraft:max_health base set 20

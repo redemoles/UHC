@@ -22,6 +22,6 @@ execute if score #shrink_2_dynamic uhc.data.temp matches 1 if score #shrink_2_ti
 execute if score #shrink_3_dynamic uhc.data.temp matches 1 if score #shrink_3_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
 
 ## Bingo UHC : Ère Viking → Liste des cibles
-execute if score #bhc bhc.scenario matches 2 run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id_team] [{"text":" Pour voir la liste des cibles :","color":"#FFFFFF","bold":false},{"text":"\n/trigger bhc.target.list","color":"#FFE73F","bold":false}]
-execute if score #bhc bhc.scenario matches 2 run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id_team] [{"text":" To see the players list:","color":"#FFFFFF","bold":false},{"text":"\n/trigger bhc.target.list","color":"#FFE73F","bold":false}]
-execute if score #bhc bhc.scenario matches 2 run scoreboard players enable @a[predicate=uhc:id_team] bhc.target.list
+execute if score #bhc bhc.scenario matches 2 run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":" Pour voir la liste des cibles :","color":"#FFFFFF","bold":false},{"text":"\n/trigger bhc.target.list","color":"#FFE73F","bold":false}]
+execute if score #bhc bhc.scenario matches 2 run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":" To see the players list:","color":"#FFFFFF","bold":false},{"text":"\n/trigger bhc.target.list","color":"#FFE73F","bold":false}]
+execute if score #bhc bhc.scenario matches 2 run scoreboard players enable @a[predicate=uhc:id/team] bhc.target.list

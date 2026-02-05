@@ -8,4 +8,4 @@
 #
 
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-execute if entity @a[tag=uhc.player,predicate=uhc:id_team] run scoreboard players add #temp uhc.data.temp 1
+execute if entity @a[tag=uhc.player,predicate=uhc:id/team] run scoreboard players add #temp uhc.data.temp 1

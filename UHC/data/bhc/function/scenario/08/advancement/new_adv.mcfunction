@@ -12,7 +12,7 @@
 ## Sélection du joueur et son équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 tag @s add bhc.new_adv
-$execute in uhc:lobby as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_team] run function bhc:scenario/08/advancement/new_adv_1 with storage $(namespace) $(line)_$(column)
+$execute in uhc:lobby as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function bhc:scenario/08/advancement/new_adv_1 with storage $(namespace) $(line)_$(column)
 execute if score #team_first_case bhc.data matches 0 run return run tag @s remove bhc.new_adv
 
 ## Resélection de l'équipe du joueur
@@ -39,7 +39,7 @@ $execute if score #team_first_line_$(line) bhc.data matches 1 run function bhc:s
 $execute if score #team_first_column_$(column) bhc.data matches 1 run function bhc:scenario/08/advancement/message_column with storage $(namespace) $(line)_$(column)
 
 ## Don de l'advancement aux alliés
-$advancement grant @a[predicate=uhc:id_team] only $(namespace):$(line)_$(column)
+$advancement grant @a[predicate=uhc:id/team] only $(namespace):$(line)_$(column)
 
 
 

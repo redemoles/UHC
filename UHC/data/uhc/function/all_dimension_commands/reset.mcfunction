@@ -14,6 +14,7 @@ gamerule minecraft:show_advancement_messages false
 gamerule minecraft:advance_time false
 gamerule minecraft:advance_weather false
 gamerule minecraft:spawn_monsters false
+gamerule minecraft:spawn_mobs true
 gamerule minecraft:immediate_respawn true
 gamerule minecraft:spectators_generate_chunks true
 gamerule minecraft:natural_health_regeneration false
@@ -21,5 +22,5 @@ gamerule minecraft:show_death_messages false
 gamerule minecraft:keep_inventory true
 gamerule minecraft:spawn_phantoms false
 gamerule minecraft:spawn_wandering_traders false
-gamerule minecraft:pvp false
+gamerule minecraft:pvp true
 difficulty normal

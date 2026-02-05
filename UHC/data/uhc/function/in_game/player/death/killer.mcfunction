@@ -30,4 +30,4 @@ execute if score #experienceless uhc.scenario matches 1 run experience add @s 4 
 
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @s uhc.player.kills 1
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @s uhc.player.kills.inv 1
-execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_team] uhc.team.kills 1
+execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.team.kills 1

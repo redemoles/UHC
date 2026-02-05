@@ -1031,4 +1031,5 @@ $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 1489 r
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 1489 run scoreboard players set #$(dimension)_working pregen.world 0
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 1489 run scoreboard players set #$(dimension)_finished pregen.world 4
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 1489 as @a[tag=uhc.menu.world_generation] run advancement grant @s only uhc:inventory_menu
+$execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 1489 in uhc:lobby run gamerule minecraft:spawn_mobs false
 $execute if score #$(dimension)_chunk_pregen_$(area) pregen.world matches 1489 run scoreboard players set #$(dimension)_chunk_pregen_$(area) pregen.world 0

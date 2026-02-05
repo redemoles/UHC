@@ -23,7 +23,7 @@ scoreboard players set @s nzl.sound.evolve 1
 
 # Équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-tag @e[type=marker,predicate=uhc:id_team] add nzl.type.04
+tag @e[type=marker,predicate=uhc:id/team] add nzl.type.04
 
 # Minage sous l'eau
 attribute @s minecraft:submerged_mining_speed base set 0.6

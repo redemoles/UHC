@@ -11,8 +11,8 @@
 scoreboard players set #seconds nzl.attack.length.04 25
 scoreboard players operation @s nzl.attack.length.04 = #seconds nzl.attack.length.04
 scoreboard players operation @s nzl.attack.length.04 *= #20 uhc.data.numbers
-tellraw @p[scores={nzl.type.player=04,uhc.player.lang=061801},predicate=uhc:id_team] [{"text":"\nAttaque activée.","color":"#3F9FFF","bold":true},{"text":"\nDurée : ","color":"#7FBFFF","bold":false},{"score":{"name":"#seconds","objective":"nzl.attack.length.04"},"color":"#FF3F3F","bold":false},{"text":" secondes.\n","color":"#7FBFFF","bold":false}]
-tellraw @p[scores={nzl.type.player=04,uhc.player.lang=051407},predicate=uhc:id_team] [{"text":"\nAttack activated.","color":"#3F9FFF","bold":true},{"text":"\nDuration: ","color":"#7FBFFF","bold":false},{"score":{"name":"#seconds","objective":"nzl.attack.length.04"},"color":"#FF3F3F","bold":false},{"text":" seconds.\n","color":"#7FBFFF","bold":false}]
+tellraw @p[scores={nzl.type.player=04,uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"\nAttaque activée.","color":"#3F9FFF","bold":true},{"text":"\nDurée : ","color":"#7FBFFF","bold":false},{"score":{"name":"#seconds","objective":"nzl.attack.length.04"},"color":"#FF3F3F","bold":false},{"text":" secondes.\n","color":"#7FBFFF","bold":false}]
+tellraw @p[scores={nzl.type.player=04,uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"\nAttack activated.","color":"#3F9FFF","bold":true},{"text":"\nDuration: ","color":"#7FBFFF","bold":false},{"score":{"name":"#seconds","objective":"nzl.attack.length.04"},"color":"#FF3F3F","bold":false},{"text":" seconds.\n","color":"#7FBFFF","bold":false}]
 playsound minecraft:entity.blaze.death master @a ~ ~ ~ 0.5 1 0.5
 scoreboard players set @s nzl.attack.cooldown.04 300
 scoreboard players operation @s nzl.attack.cooldown.04 *= #20 uhc.data.numbers
@@ -22,7 +22,7 @@ scoreboard players operation @s nzl.attack.cooldown > @s nzl.attack.cooldown.04
 
 # Instantanée
 scoreboard players add @n[type=marker,tag=nzl.weather] nzl.weather.rain 1
-execute at @p[scores={nzl.type.player=04},predicate=uhc:id_team] as @a[distance=..50] run function nzl:types/move/attack_activation/eau_target
+execute at @p[scores={nzl.type.player=04},predicate=uhc:id/team] as @a[distance=..50] run function nzl:types/move/attack_activation/eau_target
 
 execute if score #team uhc.id.team matches 01 run tag @s add nzl.eau.team_01
 execute if score #team uhc.id.team matches 02 run tag @s add nzl.eau.team_02

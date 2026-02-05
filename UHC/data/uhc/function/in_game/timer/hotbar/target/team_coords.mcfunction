@@ -7,7 +7,7 @@
 # @description		Ajout des joueurs de l'équipe dans la Hotbar de Target 
 #
 
-tag @p[tag=uhc.player,tag=!uhc.target.targeter,tag=!uhc.target.targeted_done,predicate=uhc:id_team] add uhc.target.targeted_current
+tag @p[tag=uhc.player,tag=!uhc.target.targeter,tag=!uhc.target.targeted_done,predicate=uhc:id/team] add uhc.target.targeted_current
 
 # Distance x et z
 scoreboard players operation @s uhc.player.target.distance.x = @s uhc.player.x
@@ -41,4 +41,4 @@ execute if entity @s[predicate=uhc:dimension/the_nether] unless entity @p[tag=uh
 
 tag @p[tag=uhc.target.targeted_current] add uhc.target.targeted_done
 tag @p[tag=uhc.target.targeted_current] remove uhc.target.targeted_current
-execute if entity @p[tag=uhc.player,tag=!uhc.target.targeter,tag=!uhc.target.targeted_done,predicate=uhc:id_team] run function uhc:in_game/timer/hotbar/target/team_coords
+execute if entity @p[tag=uhc.player,tag=!uhc.target.targeter,tag=!uhc.target.targeted_done,predicate=uhc:id/team] run function uhc:in_game/timer/hotbar/target/team_coords

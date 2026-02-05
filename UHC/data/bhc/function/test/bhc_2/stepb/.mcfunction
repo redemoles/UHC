@@ -16,6 +16,6 @@ scoreboard players set #stepb_start bhc.data.temp 1
 scoreboard players set #pve uhc.data.temp 1
 scoreboard players set #pvp uhc.data.temp 1
 
-tag Redemoles add test
+tag @s add test
 schedule function bhc:test/bhc_2/stepb/minute_later 60t
 

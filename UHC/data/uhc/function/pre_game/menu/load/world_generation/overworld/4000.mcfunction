@@ -14,3 +14,4 @@ function uhc:pre_game/menu/load/world_generation/
 execute store result storage uhc:settings pregen.area int 1 run scoreboard players get #overworld_working pregen.world
 data modify storage uhc:settings pregen.text set value [{"text":"Overworld : ","color":"#FFFFFF"}]
 data modify storage uhc:settings pregen.dimension set value overworld
+execute in minecraft:overworld run gamerule minecraft:spawn_mobs true

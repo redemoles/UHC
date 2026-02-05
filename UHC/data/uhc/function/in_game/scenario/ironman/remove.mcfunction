@@ -20,6 +20,6 @@ data modify storage uhc:temp ironman.message append from block 0 -61 0 front_tex
 tag @s remove uhc.temp
 
 # Ironman dans l'équipe
-execute as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id_team] run function uhc:in_game/scenario/ironman/remove_team
+execute as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function uhc:in_game/scenario/ironman/remove_team
 
 tag @s remove uhc.ironman

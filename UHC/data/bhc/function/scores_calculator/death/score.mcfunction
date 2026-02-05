@@ -31,4 +31,4 @@ scoreboard players operation @s bhc.death.score.inv *= #100 uhc.data.numbers
 scoreboard players operation @s bhc.death.score.inv += @s bhc.death.tie_break.rank.score
 
 ## Minutes de jeu (joueurs)
-scoreboard players operation @a[scores={uhc.player.lives=1..},predicate=uhc:id_team] bhc.death.score.inv = @s bhc.death.score.inv
+scoreboard players operation @a[scores={uhc.player.lives=1..},predicate=uhc:id/team] bhc.death.score.inv = @s bhc.death.score.inv
