@@ -40,6 +40,7 @@ execute if score @s uhc.player.lang matches 051407 run item replace entity @s in
 
 # Menu PvP
 execute if score @s uhc.menu.settings.pvp matches 11.. run return run function uhc:pre_game/menu/load/settings/pvp/menu
+execute if score @s uhc.menu.settings.border matches 11.. run return run function uhc:pre_game/menu/load/settings/border/menu
 
 # Vies
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/macro_set

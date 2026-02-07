@@ -7,11 +7,10 @@
 # @description		Redirection
 #
 
-execute if score @s uhc.menu.settings.pvp matches 11..20 run function uhc:pre_game/menu/selection/settings/pvp/fight_stuff/player
-execute if score @s uhc.menu.settings.pvp matches 21..30 run function uhc:pre_game/menu/selection/settings/pvp/team_stuff/player
-execute if score @s uhc.menu.settings.pvp matches 31..40 run function uhc:pre_game/menu/selection/settings/pvp/potion/player
-
-execute if score @s uhc.menu.settings.pvp matches 11.. run return fail
+execute if score @s uhc.menu.settings.pvp matches 11..20 run return run function uhc:pre_game/menu/selection/settings/pvp/fight_stuff/player
+execute if score @s uhc.menu.settings.pvp matches 21..30 run return run function uhc:pre_game/menu/selection/settings/pvp/team_stuff/player
+execute if score @s uhc.menu.settings.pvp matches 31..40 run return run function uhc:pre_game/menu/selection/settings/pvp/potion/player
+execute if score @s uhc.menu.settings.border matches 11.. run return run function uhc:pre_game/menu/selection/settings/border/shrink/player
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_lives"}] run return run function uhc:pre_game/menu/load/settings/lives/preset_menu
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"settings_pve"}] run return run function uhc:pre_game/menu/load/settings/pve/preset_menu
@@ -20,6 +19,9 @@ execute if score @s uhc.menu.settings.pvp matches 1.. unless items entity @s inv
 execute if score @s uhc.menu.settings.pvp matches 1.. unless items entity @s inventory.12 *[minecraft:custom_data={Tags:"settings_pvp_potion"}] run function uhc:pre_game/menu/load/settings/pvp/potion/preset_menu
 execute if score @s uhc.menu.settings.pvp matches 1.. unless items entity @s inventory.13 *[minecraft:custom_data={Tags:"settings_pvp_team_stuff"}] run function uhc:pre_game/menu/load/settings/pvp/team_stuff/preset_menu
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.4 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/preset_menu
+execute if score @s uhc.menu.settings.border matches 1..10 unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/shrink_1/preset_menu
+execute if score @s uhc.menu.settings.border matches 1..10 unless items entity @s inventory.11 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/shrink_2/preset_menu
+execute if score @s uhc.menu.settings.border matches 1..10 unless items entity @s inventory.12 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/shrink_3/preset_menu
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.5 *[minecraft:custom_data={Tags:"settings_inventory"}] run return run function uhc:pre_game/menu/load/settings/inventory/preset_menu
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.6 *[minecraft:custom_data={Tags:"settings_team"}] run return run function uhc:pre_game/menu/load/settings/team/preset_menu
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"settings_misc"}] run return run function uhc:pre_game/menu/load/settings/misc/preset_menu

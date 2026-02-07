@@ -11,6 +11,7 @@ execute if score @s uhc.menu.settings.pvp matches 11..20 run return run function
 execute if score @s uhc.menu.settings.pvp matches 21..30 run return run function uhc:pre_game/menu/selection/settings/pvp/team_stuff/host
 execute if score @s uhc.menu.settings.pvp matches 31..40 run return run function uhc:pre_game/menu/selection/settings/pvp/potion/host
 execute if score @s uhc.menu.settings.pvp matches 41..50 run return run function uhc:pre_game/menu/selection/settings/pvp/no_clean/host
+execute if score @s uhc.menu.settings.border matches 11.. run return run function uhc:pre_game/menu/selection/settings/border/shrink/host
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_lives"}] run return run function uhc:pre_game/menu/load/settings/lives/preset_menu
 execute if score @s uhc.menu.settings.lives matches 1.. run function uhc:pre_game/menu/selection/settings/lives/host

@@ -7,7 +7,7 @@
 # @description		Biome paranoia - Tri par couleur
 #
 
-execute if score #bhc uhc.gamemode matches 1 if score #game_progress uhc.game_progress matches 2 run return fail
+execute if score #bhc uhc.gamemode matches 1 if score #game_progress uhc.game_progress matches 2.. run return fail
 team join 001 @s[predicate=uhc:scenario/biome_paranoia/dark_blue,team=!001]
 team join 002 @s[predicate=uhc:scenario/biome_paranoia/blue,team=!002]
 team join 003 @s[predicate=uhc:scenario/biome_paranoia/dark_cyan,team=!003]
