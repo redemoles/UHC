@@ -18,5 +18,5 @@ execute if score @s uhc.player.map_height.sound matches 2 run scoreboard players
 scoreboard players add @s uhc.player.map_height.effect 1
 
 execute if score @s uhc.player.map_height.effect >= #map_height_tick_below uhc.data.setup run damage @s 1
-execute if score @s uhc.player.map_height.effect >= #map_height_tick_below uhc.data.setup run effect give @s minecraft:glowing 2 0 true
+execute if score @s uhc.player.map_height.effect >= #map_height_tick_below uhc.data.setup run effect give @s minecraft:glowing 3 0 true
 execute if score @s uhc.player.map_height.effect >= #map_height_tick_below uhc.data.setup run scoreboard players remove @s uhc.player.map_height.effect 3

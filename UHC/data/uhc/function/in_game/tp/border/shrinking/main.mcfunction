@@ -1,5 +1,5 @@
 
-#> uhc:in_game/tp/border/shrinking/
+#> uhc:in_game/tp/border/shrinking/main
 #
 # @within			uhc:in_game/tp/border/coords/
 #

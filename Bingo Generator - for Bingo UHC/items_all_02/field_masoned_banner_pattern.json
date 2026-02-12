@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:wooden_pickaxe"
+			"id": "minecraft:field_masoned_banner_pattern"
 		},
 		"title": {
-			"text": "Wooden Pickaxe",
+			"text": "Field Masoned Banner Pattern",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Wooden Pickaxe",
+			"text": "Obtenir un(e) Field Masoned Banner Pattern",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:wooden_pickaxe"
+							"minecraft:field_masoned_banner_pattern"
 						]
 					}
 				]

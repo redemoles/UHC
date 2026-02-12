@@ -1,5 +1,5 @@
 
-#> bhc:scenario/02/target/randomizer/cycle_first
+#> bhc:scenario/02/target/randomizer/sort_first_cycle
 #
 # @within			bhc:scenario/02/target/randomizer/main
 #

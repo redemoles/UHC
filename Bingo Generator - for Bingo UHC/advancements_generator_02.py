@@ -108,9 +108,16 @@ unobtainable_blocks = [
 	"minecraft:suspicious_gravel",
 	"minecraft:bell",
 	"minecraft:tall_grass",
-	"minecraft:vault"
+	"minecraft:vault",
+	"minecraft:creeper_banner_pattern",
+	"minecraft:flow_banner_pattern",
+	"minecraft:globe_banner_pattern",
+	"minecraft:guster_banner_pattern",
+	"minecraft:mojang_banner_pattern",
+	"minecraft:piglin_banner_pattern",
+	"minecraft:skull_banner_pattern"
 ]
-block_should_not_contains = ["command_block", "test", "spawn", "infested", "banner_pattern", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "copper_horse", "n_horse", "d_horse", "music_disc", "golem", "nautilus_armor"]
+block_should_not_contains = ["command_block", "test", "spawn", "infested", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "copper_horse", "n_horse", "d_horse", "music_disc", "golem", "nautilus_armor"]
 unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
 
 silk_touch_block = ["grass_block", "mushroom_stem", "mushroom_block", "beehive", "_ore", "nylium", "sculk"]
@@ -193,6 +200,7 @@ too_easy_block = [
 	"minecraft:raw_iron",
 	"minecraft:crafting_table",
 	"minecraft:furnace",
+	"minecraft:wooden_pickaxe",
 	"minecraft:bundle",
 	"minecraft:candle",
 	"minecraft:glass",

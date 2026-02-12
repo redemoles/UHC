@@ -10,7 +10,7 @@
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 ## Résumé des morts
-execute unless score @s uhc.player.death_summary matches 1 if score #bhc bhc.scenario matches 02 in uhc:lobby run function bhc:scenario/02/target/death/
+execute unless score @s uhc.player.death_summary matches 1 if score #bhc bhc.scenario matches 02 in uhc:lobby run function bhc:scenario/02/target/death/main
 execute unless score @s uhc.player.death_summary matches 1 run function uhc:in_game/player/death/text_end_game/ with storage uhc:temp hotbar
 scoreboard players set @s uhc.player.death_summary 0
 

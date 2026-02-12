@@ -8,7 +8,7 @@
 #
 
 ## Si la 3e réduction est configuré pour être dynamique
-execute if score #shrink_3_dynamic uhc.data.temp matches 1 run function uhc:in_game/timer/border/dynamic/shrink_3
+execute if score #shrink_dynamic uhc.data.temp matches 3 run function uhc:in_game/timer/border/dynamic/shrink_3
 
 ## Macro de taille et durée de réduction
 execute store result storage uhc:temp border_size int 1 run scoreboard players get #shrink_3_size_end uhc.data.temp

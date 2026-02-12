@@ -1,5 +1,5 @@
 
-#> bhc:scenario/02/target/death/
+#> bhc:scenario/02/target/death/main
 #
 # @within			bhc:scores_calculator/kills/player_dead
 #
@@ -14,7 +14,7 @@ tag @s add bhc.temp.dead
 scoreboard players operation #temp bhc.targeted.id = @s bhc.targeted.id
 scoreboard players operation #temp bhc.targeter.id = @s bhc.targeter.id
 execute as @e[type=marker,tag=UHC,distance=0..,predicate=uhc:id/team] run tag @s add bhc.temp.dead.team
-execute on attacker as @s[type=minecraft:player] run function bhc:scenario/02/target/death/killer/
+execute on attacker as @s[type=minecraft:player] run function bhc:scenario/02/target/death/killer/main
 execute as @e[type=marker,tag=UHC,distance=0..,tag=bhc.temp.dead.team] run tag @s remove bhc.temp.dead.team
 tag @a[tag=bhc.temp.killer] remove bhc.temp.killer
 

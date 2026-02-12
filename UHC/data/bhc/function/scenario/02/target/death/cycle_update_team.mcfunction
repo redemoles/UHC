@@ -1,7 +1,7 @@
 
 #> bhc:scenario/02/target/death/cycle_update_team
 #
-# @within			bhc:scenario/02/target/death/
+# @within			bhc:scenario/02/target/death/main
 #
 #
 # @description		Rectification des cibles 

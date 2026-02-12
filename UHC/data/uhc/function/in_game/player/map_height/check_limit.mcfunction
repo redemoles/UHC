@@ -7,11 +7,10 @@
 # @description		Vérifie la hauteur du joueur
 #
 
-data modify storage uhc:temp player merge from entity @s
-execute store result score #temp_y uhc.data.temp run data get storage uhc:temp player.Pos[1]
+execute unless score @s uhc.player.data.check matches 1 run function uhc:in_game/player/data/main
 
-execute if score #temp_y uhc.data.temp > #map_height_limit_above uhc.data.temp run return run function uhc:in_game/player/map_height/above
-execute if score #temp_y uhc.data.temp < #map_height_limit_below uhc.data.temp run return run function uhc:in_game/player/map_height/below
+execute if score @s uhc.player.y > #map_height_limit_above uhc.data.temp run return run function uhc:in_game/player/map_height/above
+execute if score @s uhc.player.y < #map_height_limit_below uhc.data.temp run return run function uhc:in_game/player/map_height/below
 
 scoreboard players set @s uhc.player.map_height.sound 0
 scoreboard players set @s uhc.player.map_height.text 0

@@ -32,7 +32,6 @@ scoreboard players operation #border_size uhc.data.temp /= #02 uhc.data.numbers
 
 # Texte informations de positions de joueurs
 execute if score #tracker uhc.data.temp matches 1 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
-execute if score #tracker uhc.data.temp matches 1 run tag @a[tag=uhc.player.location_check] remove uhc.player.location_check
 
 # Texte informations de base
 execute if score #hotbar_cooldown uhc.data.temp matches 1.. if score #tick uhc.data.temp matches 0 run function uhc:in_game/timer/hotbar/cooldown/ with storage uhc:temp hotbar
@@ -99,3 +98,5 @@ execute if entity @p[scores={uhc.game_progress=1}] in uhc:lobby run function uhc
 execute if score #bhc uhc.gamemode matches 1 unless score #game_progress uhc.game_progress matches 2.. run function bhc:timer/tick
 execute if score #mls uhc.gamemode matches 1 if score #pvp uhc.data.temp matches ..0 run function mls:timer/tick
 execute if score #nzl uhc.gamemode matches 1 unless score #game_progress uhc.game_progress matches 2.. run function nzl:timer/tick
+
+scoreboard players set @a uhc.player.data.check 0

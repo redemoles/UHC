@@ -20,13 +20,14 @@ execute as @e[type=marker,tag=UHC,distance=0..] run scoreboard players set @s bh
 scoreboard players set @a[tag=uhc.player] bhc.target.known 0
 # Réinitialisation du cycle
 scoreboard players set #temp bhc.data.temp 0
-execute if score #cycle bhc.target.cycle matches 1 as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenario/02/target/randomizer/cycle_first
-execute if score #cycle bhc.target.cycle matches 2.. as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenario/02/target/randomizer/cycle_next
+execute if score #cycle bhc.target.cycle matches 1 as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenario/02/target/randomizer/sort_first_cycle
+execute if score #cycle bhc.target.cycle matches 2.. unless score #team bhc.data.temp matches 4 as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenario/02/target/randomizer/sort_next_cycle
 scoreboard players set #temp bhc.targeted.id -1
 scoreboard players set #temp bhc.targeter.id 0
 # Génération du cycle
 execute if score #cycle bhc.target.cycle matches 1 as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..},limit=1,sort=random] run function bhc:scenario/02/target/randomizer/randomizer
-execute if score #cycle bhc.target.cycle matches 2.. as @n[type=marker,tag=UHC,distance=0..,scores={bhc.targeter.former_id=1}] run function bhc:scenario/02/target/randomizer/randomizer
+execute if score #cycle bhc.target.cycle matches 2.. unless score #team bhc.data.temp matches 4 as @n[type=marker,tag=UHC,distance=0..,scores={bhc.targeter.former_id=1}] run function bhc:scenario/02/target/randomizer/randomizer
+execute if score #cycle bhc.target.cycle matches 2.. if score #team bhc.data.temp matches 4 as @n[type=marker,tag=UHC,distance=0..,scores={bhc.targeter.former_id=1}] run function bhc:scenario/02/target/randomizer/4_teams_left/check
 # Annonce aux joueurs
 execute as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..}] run function bhc:scenario/02/target/randomizer/tellraw
 # Annonce aux spectateurs

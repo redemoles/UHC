@@ -40,12 +40,12 @@ scoreboard players operation #axes_sharpness uhc.data.temp = #axes_sharpness uhc
 scoreboard players operation #bow_power uhc.data.temp = #bow_power uhc.data.setup
 scoreboard players operation #depth_strider uhc.data.temp = #depth_strider uhc.data.setup
 scoreboard players operation #lunge uhc.data.temp = #lunge uhc.data.setup
-execute if score #shrink_dynamic uhc.data.setup matches 1 run scoreboard players set #shrink_1_dynamic uhc.data.temp 1
-execute if score #shrink_dynamic uhc.data.setup matches 2 run scoreboard players set #shrink_2_dynamic uhc.data.temp 1
-execute if score #shrink_dynamic uhc.data.setup matches 3 run scoreboard players set #shrink_3_dynamic uhc.data.temp 1
-execute if score #shrink_1_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_2_time_left uhc.data.temp -1
-execute if score #shrink_1_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
-execute if score #shrink_2_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
+execute if score #shrink_dynamic uhc.data.setup matches 1 run scoreboard players set #shrink_dynamic uhc.data.temp 1
+execute if score #shrink_dynamic uhc.data.setup matches 2 run scoreboard players set #shrink_dynamic uhc.data.temp 2
+execute if score #shrink_dynamic uhc.data.setup matches 3 run scoreboard players set #shrink_dynamic uhc.data.temp 3
+execute if score #shrink_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_2_time_left uhc.data.temp -1
+execute if score #shrink_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
+execute if score #shrink_dynamic uhc.data.temp matches 2 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
 scoreboard players add #diamond_protection uhc.data.temp 1
 scoreboard players add #diamond_sharpness uhc.data.temp 1
 scoreboard players add #iron_protection uhc.data.temp 1

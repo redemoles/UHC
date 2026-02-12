@@ -1,7 +1,7 @@
 
 #> bhc:scenario/02/target/death/killer/new_adv/line
 #
-# @within			bhc:scenario/02/target/death/killer/targeter
+# @within			bhc:scenario/02/target/death/killer/is_targeter
 #
 #
 # @description		Nouvelle case pour l'assassin 

@@ -74,9 +74,9 @@ execute as @s[tag=uhc.player.start_in_the_sky] unless items entity @s armor.ches
 execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/lives_remove/respawn
 
 ## Vie en pourcentage
-scoreboard players operation #temp uhc.data.temp = #tick uhc.data.temp
-scoreboard players operation #temp uhc.data.temp %= #05 uhc.data.numbers
-execute if score #temp uhc.data.temp matches 0 if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
+scoreboard players operation #data_check uhc.data.temp = #tick uhc.data.temp
+scoreboard players operation #data_check uhc.data.temp %= #05 uhc.data.numbers
+execute if score #data_check uhc.data.temp matches 0 if entity @s[gamemode=!spectator] unless score @s uhc.player.health.check = @s uhc.player.health.auto run function uhc:in_game/player/health
 
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenario/best_pve/tick
@@ -96,7 +96,7 @@ execute as @s[scores={uhc.player.damage_taken.temp=1..}] run function uhc:in_gam
 execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:in_game/player/pvp/settings/wolf/
 
 ## Border TP
-execute if score #shrink_1_time_left uhc.data.temp matches ..0 as @s[tag=uhc.player,predicate=!uhc:dimension/the_nether] at @s run function uhc:in_game/tp/border/coords
+execute if score #shrink_1_time_left uhc.data.temp matches ..0 if score #data_check uhc.data.temp matches 0 as @s[tag=uhc.player] at @s run function uhc:in_game/tp/border/coords
 execute if score #map_height_timer uhc.data.temp matches ..0 if score #tick uhc.data.temp matches 0 if entity @s[tag=uhc.player,predicate=uhc:dimension/overworld] run function uhc:in_game/player/map_height/check_limit
 
 ## Joueur à respwan

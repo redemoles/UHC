@@ -17,7 +17,7 @@ function uhc:in_game/player/team_join/vanilla
 
 # Données du joueur
 function uhc:in_game/player/health
-execute if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.check
+execute if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.20
 execute if score #hp_chat uhc.data.setup matches 1 run scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.100
 
 tag @s add uhc.temp.attacker

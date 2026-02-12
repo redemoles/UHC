@@ -18,7 +18,7 @@ function uhc:in_game/player/team_join/vanilla
 # Données du joueur
 execute store result storage uhc:temp hp.id int 1 run scoreboard players get @s uhc.id.player
 function uhc:in_game/player/health
-execute if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.check
+execute if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.20
 execute if score #hp_chat uhc.data.setup matches 1 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.100
 
 # Si l'entité est un joueur

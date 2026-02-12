@@ -1,5 +1,5 @@
 
-#> uhc:in_game/tp/border/stable/
+#> uhc:in_game/tp/border/stable/main
 #
 # @within			uhc:in_game/tp/border/coords/
 #

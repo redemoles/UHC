@@ -1,7 +1,7 @@
 
 #> bhc:scenario/02/target/randomizer/tellraw
 #
-# @within			bhc:scenario/02/target/
+# @within			bhc:scenario/02/target/randomizer/main
 #
 #
 # @description		Annonce des nouvelles cibles

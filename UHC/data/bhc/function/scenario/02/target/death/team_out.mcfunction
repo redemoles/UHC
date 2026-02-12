@@ -1,13 +1,13 @@
 
 #> bhc:scenario/02/target/death/team_out
 #
-# @within			bhc:scenario/02/target/death/
+# @within			bhc:scenario/02/target/death/main
 #
 #
 # @description		Rectification des cibles 
 #
 
-execute as @a[predicate=bhc:bhc_2/this_is_targeter] run scoreboard players set @s bhc.target.known 0
+execute as @a[predicate=bhc:bhc_2/this_is_targeter] run scoreboard players set @s bhc.target.known 2
 
 # Diminue le numéro de cible/assassin des équipes
 tag @s add bhc.temp

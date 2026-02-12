@@ -17,9 +17,9 @@ execute if entity @a[tag=uhc.player] run scoreboard players get #temp uhc.data.t
 execute if score #team uhc.data.temp.inv matches 2.. unless score #temp uhc.data.temp = #player uhc.data.temp.inv in uhc:lobby run function uhc:in_game/team/out/player_log_out
 
 ## Réduction dynamique
-execute if score #shrink_1_dynamic uhc.data.temp matches 1 if score #shrink_1_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
-execute if score #shrink_2_dynamic uhc.data.temp matches 1 if score #shrink_2_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
-execute if score #shrink_3_dynamic uhc.data.temp matches 1 if score #shrink_3_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
+execute if score #shrink_dynamic uhc.data.temp matches 1 if score #shrink_1_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
+execute if score #shrink_dynamic uhc.data.temp matches 2 if score #shrink_2_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
+execute if score #shrink_dynamic uhc.data.temp matches 3 if score #shrink_3_time_left uhc.data.temp matches ..0 run function uhc:in_game/timer/border/team_out/
 
 ## Bingo UHC : Ère Viking → Liste des cibles
 execute if score #bhc bhc.scenario matches 2 run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":" Pour voir la liste des cibles :","color":"#FFFFFF","bold":false},{"text":"\n/trigger bhc.target.list","color":"#FFE73F","bold":false}]

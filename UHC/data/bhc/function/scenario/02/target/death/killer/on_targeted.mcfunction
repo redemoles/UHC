@@ -1,7 +1,7 @@
 
-#> bhc:scenario/02/target/death/killer/targeted
+#> bhc:scenario/02/target/death/killer/on_targeted
 #
-# @within			bhc:scenario/02/target/death/killer/targeter
+# @within			bhc:scenario/02/target/death/killer/is_targeter
 #
 #
 # @description		Protection de la cible et son équipe 

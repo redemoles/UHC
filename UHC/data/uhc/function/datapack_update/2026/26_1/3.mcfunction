@@ -1,5 +1,5 @@
 
-#> uhc:datapack_update/2025/26_1/3
+#> uhc:datapack_update/2026/26_1/3
 #
 # @within			uhc:datapack_update/list
 #

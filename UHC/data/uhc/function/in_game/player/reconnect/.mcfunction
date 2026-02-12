@@ -16,6 +16,9 @@ execute if entity @s[tag=uhc.player.start_in_the_sky] if score #game_progress uh
 # Team Health
 execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
 
+# TP Bordure
+execute if score #shrink_1_time_left uhc.data.temp matches ..0 as @s[tag=uhc.player,predicate=!uhc:dimension/the_nether] at @s run function uhc:in_game/tp/border/coords
+
 # Supprimer les effets de start / respawn
 execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,predicate=uhc:effect_respawn] run function uhc:in_game/player/reconnect/start
 

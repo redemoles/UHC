@@ -8,8 +8,8 @@
 #
 
 # Récupération de la localisation du joueurs
-execute as @p[tag=uhc.player,predicate=!bhc:bhc_2/safe_target,predicate=!bhc:bhc_2/last_death_same_cycle,predicate=bhc:bhc_2/this_is_targeted] if entity @s[tag=!uhc.player.location_check] run function uhc:in_game/timer/hotbar/target/location
-execute if entity @s[tag=!uhc.player.location_check] run function uhc:in_game/timer/hotbar/target/location
+execute as @p[tag=uhc.player,predicate=!bhc:bhc_2/safe_target,predicate=!bhc:bhc_2/last_death_same_cycle,predicate=bhc:bhc_2/this_is_targeted] unless score @s uhc.player.data.check matches 1 run function uhc:in_game/player/data/main
+execute unless score @s uhc.player.data.check matches 1 run function uhc:in_game/player/data/main
 
 # Hotbar joueurs ciblés
 function bhc:scenario/02/target/hotbar/player_coords
