@@ -16,7 +16,7 @@
 					  "type": "minecraft:score",
 					  "target": {
 						"type": "minecraft:fixed",
-						"name": "#trade_uhc"
+						"name": "#blood_diamond"
 					  },
 					  "score": "uhc.scenario"
 					},

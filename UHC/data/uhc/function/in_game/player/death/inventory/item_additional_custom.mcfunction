@@ -7,12 +7,9 @@
 # @description		
 #
 
-# Loot
-loot spawn ~ ~ ~ loot uhc:temp_item
-
-# Remplacer l'item temporaire par le vrai de l'inventaire
-data modify entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"uhc_temp_item":1b}}}},limit=1] Item set from storage uhc:temp Item_additional[0]
+$loot spawn ~ ~ ~ loot {"type":"minecraft:block","pools":[{"rolls":1,"bonus_rolls":0,"entries":[{"type":"minecraft:item","name":"$(id)","functions":[{"function":"minecraft:set_components","components":$(components)},{"function":"minecraft:set_count","count":$(count)}]}]}]}
 
 # Boucle tant qu'il reste un item dans l'inventaire
 data remove storage uhc:temp Item_additional[0]
-execute if data storage uhc:temp Item_additional[0] run function uhc:in_game/player/death/inventory/item_additional_custom
+data modify storage uhc:temp Item_additional[0].components merge value {}
+execute if data storage uhc:temp Item_additional[0] run function uhc:in_game/player/death/inventory/item_additional_custom with storage uhc:temp Item_additional[0]

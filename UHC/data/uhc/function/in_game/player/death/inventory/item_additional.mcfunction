@@ -8,8 +8,8 @@
 #
 
 # Item additionnels
-execute unless score #cancel_additional_item uhc.data.temp matches 1 if score #pvp uhc.data.temp matches ..0 run function uhc:in_game/player/death/inventory/item_additional_custom
-execute unless score #cancel_additional_item uhc.data.temp matches 1 if score #pvp uhc.data.temp matches 1.. if score @s uhc.player.lives matches ..0 run function uhc:in_game/player/death/inventory/item_additional_custom
+execute unless score #cancel_additional_item uhc.data.temp matches 1 if score #pvp uhc.data.temp matches ..0 run function uhc:in_game/player/death/inventory/item_additional_custom with storage uhc:temp Item_additional[0]
+execute unless score #cancel_additional_item uhc.data.temp matches 1 if score #pvp uhc.data.temp matches 1.. if score @s uhc.player.lives matches ..0 run function uhc:in_game/player/death/inventory/item_additional_custom with storage uhc:temp Item_additional[0]
 
 # Bookception
 execute unless score #cancel_additional_item uhc.data.temp matches 1 if score #bookception uhc.scenario matches 1 if score #pvp uhc.data.temp matches ..0 run function uhc:in_game/scenario/bookception/
