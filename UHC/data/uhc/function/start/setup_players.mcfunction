@@ -41,6 +41,7 @@ execute if score #friendly_fire uhc.data.setup matches 1 run function uhc:in_gam
 
 ## Starter
 data modify storage uhc:temp Item_starter set from storage uhc:settings Item_starter
+data modify storage uhc:temp Item_starter[0].components merge value {}
 function uhc:start/item_starter with storage uhc:temp Item_starter[0]
 
 ## Scenarios

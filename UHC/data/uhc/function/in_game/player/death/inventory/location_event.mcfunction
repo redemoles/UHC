@@ -21,5 +21,6 @@ $execute if score @s uhc.player.lives matches ..0 in $(dim) positioned $(x) $(y)
 
 # Pour toute mort
 data modify storage uhc:temp Item_additional set from storage uhc:settings Item_additional
+data modify storage uhc:temp Item_additional[0].components merge value {}
 $execute in $(dim) positioned $(x) $(y) $(z) if data storage uhc:temp Item_additional[0] run function uhc:in_game/player/death/inventory/item_additional
 $execute if score #message uhc.data.setup matches 0..4 in $(dim) positioned $(x) $(y) $(z) run playsound minecraft:entity.lightning_bolt.thunder weather @a[distance=0..] ~ ~ ~ 100 1 1
