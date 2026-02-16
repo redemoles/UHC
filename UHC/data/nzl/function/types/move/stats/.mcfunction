@@ -29,7 +29,7 @@ execute if score #pve uhc.data.temp matches ..0 run scoreboard players operation
 # Fin de bonus/malus sur certaines attaques (Crachin, Fatal-Foudre, Champ Brumeux)
 execute as @s[tag=nzl.eau.target] run function nzl:types/move/attack_end/eau
 execute as @s[tag=nzl.electrique.power_1] run function nzl:types/move/attack_end/electrique
-execute as @s[tag=nzl.fee.bonus] unless entity @s[predicate=nzl:effects/champ_brumeux] if score @n[type=marker,predicate=uhc:id/team] nzl.attack.length.06 matches 0 run function nzl:types/move/attack_end/fee
+execute as @s[tag=nzl.fee.bonus] unless entity @s[predicate=nzl:effects/champ_brumeux] if score @n[type=minecraft:marker,predicate=uhc:id/team] nzl.attack.length.06 matches 0 run function nzl:types/move/attack_end/fee
 
 # Activation d'une attaque (Lancée de boule de neige)
 execute as @s[scores={nzl.attack.right_click=1..}] run function nzl:types/move/attack_available/

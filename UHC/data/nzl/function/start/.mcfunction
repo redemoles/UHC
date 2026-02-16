@@ -12,7 +12,7 @@ function nzl:start/config
 
 ## Reset Tags pour tous les joueurs (nécessaires en cas de restart)
 function nzl:start/marker_summon
-execute as @e[type=marker,tag=nzl.type] run function nzl:start/marker_type
+execute as @e[type=minecraft:marker,tag=nzl.type] run function nzl:start/marker_type
 
 ## Marker de types
 execute as @a run function nzl:start/reset_tags

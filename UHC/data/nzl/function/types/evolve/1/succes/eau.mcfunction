@@ -23,7 +23,7 @@ scoreboard players set @s nzl.sound.evolve 1
 
 # Équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-tag @e[type=marker,predicate=uhc:id/team] add nzl.type.04
+tag @e[type=minecraft:marker,predicate=uhc:id/team] add nzl.type.04
 
 # Minage sous l'eau
 attribute @s minecraft:submerged_mining_speed base set 0.6
@@ -39,7 +39,7 @@ experience add @s -15 levels
 clear @s minecraft:written_book
 
 ## Réduction du nombre d'emplacement pour ce type
-scoreboard players remove @n[type=marker,tag=nzl.type,tag=04] nzl.type.available 1
+scoreboard players remove @n[type=minecraft:marker,tag=nzl.type,tag=04] nzl.type.available 1
 scoreboard players remove #type_04 nzl.type.available 1
 
 ## Préfix

@@ -9,7 +9,6 @@
 
 scoreboard players set @s uhc.scenario.sky_high.tick 0
 scoreboard players add @s uhc.scenario.sky_high.damage 1
-damage @s 1
 
 # Msg FRA
 tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Vous êtes en dessous de y=150 !","color":"#FF3F3F"}]

@@ -15,8 +15,12 @@ execute if score #mls uhc.gamemode matches 1 run function mls:start/
 execute if score #nzl uhc.gamemode matches 1 run function nzl:start/
 
 ## Scénarios
-# Biome Paranoia
+execute if score #bats uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["UHC","scenario.bats"],CustomName:[{"text":"Bat"}]}
 execute if score #biome_paranoia uhc.scenario matches 1.. run scoreboard players set #friendly_fire uhc.data.setup 1
+execute if score #blood_cycle uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["UHC","scenario.blood_cycle"],CustomName:[{"text":"Blood Cycle"}]}
+execute if score #blood_diamond uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["UHC","scenario.blood_diamond"],CustomName:[{"text":"Blood Diamond"}]}
+execute if score #go_to_hell uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["UHC","scenario.go_to_hell"],CustomName:[{"text":"Go To Hell"}]}
+execute if score #sky_high uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["UHC","scenario.sky_high"],CustomName:[{"text":"Sky High"}]}
 
 ## Copie de données dans des scoreboards temporaires
 # Minuteurs

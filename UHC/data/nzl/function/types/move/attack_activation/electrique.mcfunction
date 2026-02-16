@@ -22,7 +22,7 @@ scoreboard players operation @s nzl.attack.cooldown > @s nzl.attack.cooldown.05
 
 # Instantanée
 execute at @p[scores={nzl.type.player=05},predicate=uhc:id/team] if predicate uhc:weather/rain if entity @a[scores={nzl.attack.length.05=1..},distance=..50] run scoreboard players add @s nzl.weather.thunder 1
-execute if score @s nzl.weather.thunder matches 1 run scoreboard players add @n[type=marker,tag=nzl.weather] nzl.weather.thunder 1
+execute if score @s nzl.weather.thunder matches 1 run scoreboard players add @n[type=minecraft:marker,tag=nzl.weather] nzl.weather.thunder 1
 execute at @p[scores={nzl.type.player=05},predicate=uhc:id/team] as @a[distance=..50,tag=!nzl.type.15] run function nzl:types/move/attack_activation/electrique_target
 
 execute if score #team uhc.id.team matches 01 run tag @s add nzl.electrique.team_01

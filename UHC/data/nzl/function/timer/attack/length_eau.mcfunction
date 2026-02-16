@@ -23,4 +23,4 @@ tag @s remove nzl.eau.team_13
 tag @s remove nzl.eau.team_14
 tag @s remove nzl.eau.team_15
 tag @s remove nzl.eau.team_16
-scoreboard players remove @n[type=marker,tag=nzl.weather] nzl.weather.rain 1
+scoreboard players remove @n[type=minecraft:marker,tag=nzl.weather] nzl.weather.rain 1

@@ -18,7 +18,7 @@ scoreboard players set #playing_puzzle lobby.tc.data 0
 
 # Changement de mini-jeu
 scoreboard players add #random_mini_games_pick lobby.tc.data 1
-execute unless entity @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..] run scoreboard players set #random_mini_games_pick lobby.tc.data 1
+execute unless entity @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..] run scoreboard players set #random_mini_games_pick lobby.tc.data 1
 fill -22 ~1 -22 22 ~9 22 minecraft:air
 
 
@@ -29,12 +29,12 @@ fill -22 ~1 -22 22 ~9 22 minecraft:air
 
 
 # Mise en place du mini-jeu
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.craft] run function lobby:mini_games/tc/timer/map_pick
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.ctb] run function lobby:mini_games/tc/mini_games/ctb/
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.memory_build] run function lobby:mini_games/tc/mini_games/memory_build/
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.os_pve] run function lobby:mini_games/tc/mini_games/os_pve/
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.os_pvp] run function lobby:mini_games/tc/timer/map_pick
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.parkour] run function lobby:mini_games/tc/mini_games/parkour/
-execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.puzzle] run function lobby:mini_games/tc/timer/map_pick
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.craft] run function lobby:mini_games/tc/timer/map_pick
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.ctb] run function lobby:mini_games/tc/mini_games/ctb/
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.memory_build] run function lobby:mini_games/tc/mini_games/memory_build/
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.os_pve] run function lobby:mini_games/tc/mini_games/os_pve/
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.os_pvp] run function lobby:mini_games/tc/timer/map_pick
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.parkour] run function lobby:mini_games/tc/mini_games/parkour/
+execute unless score #timer_start_tick lobby.tc.data matches 1.. as @n[type=minecraft:marker,predicate=lobby:tc/id_mini_games,distance=0..,tag=lobby.tc.puzzle] run function lobby:mini_games/tc/timer/map_pick
 
 stopsound @a[tag=mgs.tc.player]

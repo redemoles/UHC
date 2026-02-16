@@ -7,8 +7,8 @@
 # @description		Function executed every second
 #
 
-execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/
-execute if score #trade_uhc uhc.scenario matches 1 run function uhc:in_game/scenario/trade_uhc/
+execute if score #blood_cycle uhc.scenario matches 1 at @s run function uhc:in_game/scenario/blood_cycle/tick
+execute if score #trade_uhc uhc.scenario matches 1 run function uhc:in_game/scenario/trade_uhc/tick
 
 execute if score @s uhc.player.mined.temp.coal_deepslate matches 1 run scoreboard players add @s uhc.player.mined.coal 1
 execute if score @s uhc.player.mined.temp.copper_deepslate matches 1 run scoreboard players add @s uhc.player.mined.copper 1

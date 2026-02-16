@@ -1,7 +1,7 @@
 
-#> uhc:in_game/scenario/trade_uhc/
+#> uhc:in_game/scenario/trade_uhc/tick
 #
-# @within			uhc:in_game/player/tick
+# @within			uhc:in_game/player/misc/ores
 #
 #
 # @description		

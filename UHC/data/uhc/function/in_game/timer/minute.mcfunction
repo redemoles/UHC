@@ -53,8 +53,8 @@ execute if score #lives_start uhc.player.lives matches 2.. if score #live_1 uhc.
 execute if score #live_2 uhc.data.temp matches 0 run scoreboard players set #lives uhc.player.lives 2
 execute if score #live_1 uhc.data.temp matches 0 run scoreboard players set #lives uhc.player.lives 1
 
-execute if score #live_2 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=3}] as @e[type=marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
-execute if score #live_1 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=2}] as @e[type=marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
+execute if score #live_2 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
+execute if score #live_1 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 
 ## Minuteur de scénarios
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/cooldown

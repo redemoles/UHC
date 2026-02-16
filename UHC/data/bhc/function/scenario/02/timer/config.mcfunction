@@ -46,5 +46,5 @@ scoreboard objectives setdisplay sidebar
 
 scoreboard players set #tracker uhc.data.temp 1
 scoreboard players set @a[tag=uhc.player] bhc.target.dead.temp 0
-scoreboard players set @e[type=marker,tag=UHC,distance=0..] bhc.target.dead.temp 0
-scoreboard players set @e[type=marker,tag=UHC,distance=0..] bhc.target.sort 1
+scoreboard players set @e[type=minecraft:marker,tag=UHC,distance=0..] bhc.target.dead.temp 0
+scoreboard players set @e[type=minecraft:marker,tag=UHC,distance=0..] bhc.target.sort 1

@@ -8,6 +8,6 @@
 #
 
 # Bats
-execute if score #bats uhc.scenario matches 1 run function uhc:in_game/scenario/bats/
+execute if score #bats uhc.scenario matches 1 in uhc:lobby run function uhc:in_game/scenario/bats/tick
 
 advancement revoke @s only uhc:kill_bat

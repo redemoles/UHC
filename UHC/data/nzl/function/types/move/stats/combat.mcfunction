@@ -19,4 +19,4 @@ scoreboard players add @s[scores={nzl.type.level=3}] nzl.stats.mining_speed 4
 scoreboard players remove @s nzl.stats.attack_special 5
 
 ## ATTAQUE
-execute if entity @n[type=marker,predicate=uhc:id/team,scores={nzl.attack.length.02=1..}] run function nzl:types/move/attack/combat
+execute if entity @n[type=minecraft:marker,predicate=uhc:id/team,scores={nzl.attack.length.02=1..}] run function nzl:types/move/attack/combat

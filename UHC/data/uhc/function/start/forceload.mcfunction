@@ -52,4 +52,4 @@ forceload add -540 780
 forceload add -540 -780
 
 execute if score #enchanting_setup uhc.scenario matches 1 run summon marker 0 100 0 {Tags:["uhc.scenario.enchanting_setup"]}
-execute if score #enchanting_setup uhc.scenario matches 1 as @n[type=marker,nbt={Tags:["uhc.scenario.enchanting_setup"]}] run function uhc:start/scenario/enchanting_setup/
+execute if score #enchanting_setup uhc.scenario matches 1 as @n[type=minecraft:marker,nbt={Tags:["uhc.scenario.enchanting_setup"]}] run function uhc:start/scenario/enchanting_setup/

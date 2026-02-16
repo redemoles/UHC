@@ -23,7 +23,7 @@ scoreboard players set @s nzl.sound.evolve 1
 attribute @s minecraft:scale base set 0.65
 # Équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-tag @e[type=marker,predicate=uhc:id/team] add nzl.type.06
+tag @e[type=minecraft:marker,predicate=uhc:id/team] add nzl.type.06
 
 # Points de vie
 attribute @s minecraft:max_health base set 18
@@ -39,7 +39,7 @@ experience add @s -15 levels
 clear @s minecraft:written_book
 
 ## Réduction du nombre d'emplacement pour ce type
-scoreboard players remove @n[type=marker,tag=nzl.type,tag=06] nzl.type.available 1
+scoreboard players remove @n[type=minecraft:marker,tag=nzl.type,tag=06] nzl.type.available 1
 scoreboard players remove #type_06 nzl.type.available 1
 
 ## Préfix

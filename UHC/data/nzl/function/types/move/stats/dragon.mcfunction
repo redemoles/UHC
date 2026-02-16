@@ -27,4 +27,4 @@ scoreboard players add @s[scores={nzl.type.level=2..,nzl.dragon.malus=0}] nzl.st
 scoreboard players remove @s[scores={nzl.type.level=..2}] nzl.stats.speed 1
 
 ## ATTAQUE
-execute if score @s nzl.dragon.malus matches 0 if entity @n[type=marker,predicate=uhc:id/team,scores={nzl.attack.length.03=1..}] run function nzl:types/move/attack/dragon
+execute if score @s nzl.dragon.malus matches 0 if entity @n[type=minecraft:marker,predicate=uhc:id/team,scores={nzl.attack.length.03=1..}] run function nzl:types/move/attack/dragon

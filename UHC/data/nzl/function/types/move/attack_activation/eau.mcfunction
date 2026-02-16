@@ -21,7 +21,7 @@ scoreboard players operation @s nzl.attack.length > @s nzl.attack.length.04
 scoreboard players operation @s nzl.attack.cooldown > @s nzl.attack.cooldown.04
 
 # Instantanée
-scoreboard players add @n[type=marker,tag=nzl.weather] nzl.weather.rain 1
+scoreboard players add @n[type=minecraft:marker,tag=nzl.weather] nzl.weather.rain 1
 execute at @p[scores={nzl.type.player=04},predicate=uhc:id/team] as @a[distance=..50] run function nzl:types/move/attack_activation/eau_target
 
 execute if score #team uhc.id.team matches 01 run tag @s add nzl.eau.team_01

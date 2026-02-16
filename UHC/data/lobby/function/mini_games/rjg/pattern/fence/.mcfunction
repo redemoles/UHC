@@ -44,5 +44,5 @@ scoreboard players operation @s lobby.rjg.y += #new_block lobby.rjg.y
 execute if score #cycle_temp+2 lobby.rjg.score.inv matches 131.. if score #new_block lobby.rjg.x matches 01.. run scoreboard players set #wall_jump lobby.rjg.wall_jump 1
 execute if score #cycle_temp+2 lobby.rjg.score.inv matches 131.. if score #new_block lobby.rjg.x matches ..-1 run scoreboard players set #wall_jump lobby.rjg.wall_jump -1
 
-execute as @n[type=marker,tag=mgs.jump.marker,distance=0..,predicate=lobby:rjg/id_player,predicate=lobby:rjg/id_block_and_1] at @s run function lobby:mini_games/rjg/pattern/fence/place with storage rjg:temp new_block
-execute as @n[type=marker,tag=mgs.jump.marker,distance=0..,predicate=lobby:rjg/id_player,predicate=lobby:rjg/id_block_less_1] at @s run function lobby:mini_games/rjg/marker/kill
+execute as @n[type=minecraft:marker,tag=mgs.jump.marker,distance=0..,predicate=lobby:rjg/id_player,predicate=lobby:rjg/id_block_and_1] at @s run function lobby:mini_games/rjg/pattern/fence/place with storage rjg:temp new_block
+execute as @n[type=minecraft:marker,tag=mgs.jump.marker,distance=0..,predicate=lobby:rjg/id_player,predicate=lobby:rjg/id_block_less_1] at @s run function lobby:mini_games/rjg/marker/kill

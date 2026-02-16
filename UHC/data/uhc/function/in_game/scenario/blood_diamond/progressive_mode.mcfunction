@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/blood_diamond/progressive_mode
 #
-# @within			uhc:in_game/scenario/blood_diamond/
+# @within			uhc:in_game/scenario/blood_diamond/tick
 #
 #
 # @description		Choix aléatoire de l'effet du Blood Diamond

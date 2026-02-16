@@ -16,7 +16,7 @@ execute as @a run function mls:start/reset_tags
 ## Attribution de rôles
 scoreboard players set @a[tag=uhc.player] mls.player.team 0
 scoreboard players set #team mls.player.team 1
-execute as @e[type=marker,tag=UHC] run function mls:start/set_moles
+execute as @e[type=minecraft:marker,tag=UHC] run function mls:start/set_moles
 
 ## Attribution des kits
 execute store result score #number mls.player.kit run random value 0..6

@@ -24,4 +24,4 @@ execute as @a[scores={uhc.player.lang=051407},tag=uhc.player.dead] run tellraw @
 # Scoreboard d'affichage
 scoreboard players set #sb bhc.data.temp 13
 scoreboard objectives setdisplay sidebar bhc.bingo.score
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name

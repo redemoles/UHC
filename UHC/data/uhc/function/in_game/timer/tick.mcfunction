@@ -64,11 +64,11 @@ execute as @p[scores={uhc.info.team.temp=1..}] run function uhc:in_game/player/m
 ## Scenarios
 execute if score #experienceless uhc.scenario matches 1 as @e[type=experience_orb] run kill @s
 execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_game/scenario/enchanting_setup/tick
-execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenario/sound_paranoia/tick
+execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=minecraft:marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenario/sound_paranoia/tick
 
 ## Réduction de vie automatique
-execute if score #live_2 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=3}] as @e[type=marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
-execute if score #live_1 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=2}] as @e[type=marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
+execute if score #live_2 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
+execute if score #live_1 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 
 ## Morts
 # Message de mort

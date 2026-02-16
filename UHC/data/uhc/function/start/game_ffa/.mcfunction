@@ -22,7 +22,7 @@ execute as @a[tag=uhc.player] run function uhc:start/game_ffa/id_player
 
 # Id Markers
 scoreboard players set #team uhc.id.team 0
-execute as @e[type=marker,tag=temp] run function uhc:start/game_ffa/id_marker
+execute as @e[type=minecraft:marker,tag=temp] run function uhc:start/game_ffa/id_marker
 scoreboard players set #team uhc.id.team 0
 
 ## Nombre d'équipes en jeu

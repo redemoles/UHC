@@ -7,6 +7,6 @@
 # @description		Rectification des cibles 
 #
 
-execute if score @s bhc.targeted.id matches 1 run scoreboard players operation @s bhc.targeted.id = @n[type=marker,tag=UHC,distance=0..,tag=bhc.temp] bhc.targeted.id
+execute if score @s bhc.targeted.id matches 1 run scoreboard players operation @s bhc.targeted.id = @n[type=minecraft:marker,tag=UHC,distance=0..,tag=bhc.temp] bhc.targeted.id
 scoreboard players remove @s bhc.targeted.id 1
 execute unless score @s bhc.targeter.id matches 1 run scoreboard players remove @s bhc.targeter.id 1

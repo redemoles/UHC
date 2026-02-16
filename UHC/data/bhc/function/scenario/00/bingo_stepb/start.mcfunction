@@ -19,7 +19,7 @@ scoreboard players set #sb bhc.data.temp 5
 scoreboard objectives setdisplay sidebar bhc.stepb.score
 
 # Reset des succès
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenario/00/timer/reset_scores
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scenario/00/timer/reset_scores
 
 data modify storage bhc:temp scoreboard.bingo set value "bingo_0b"
 function bhc:advancement/scoreboard with storage bhc:temp scoreboard
@@ -50,5 +50,5 @@ scoreboard players operation #line_stepb bhc.data = #line bhc.data
 scoreboard players operation #column_stepb bhc.data = #column bhc.data
 
 # Départage égalité
-execute as @e[type=marker,tag=UHC,distance=0..] run scoreboard players operation @s bhc.stepb.score.inv = @s bhc.stepa.rank.score.inv
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/stepb/rank
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run scoreboard players operation @s bhc.stepb.score.inv = @s bhc.stepa.rank.score.inv
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/stepb/rank

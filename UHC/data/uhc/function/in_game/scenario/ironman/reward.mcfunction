@@ -17,7 +17,7 @@ data modify storage uhc:temp Item_ironman[0].components merge value {}
 execute if data storage uhc:temp Item_ironman[0] run function uhc:in_game/scenario/ironman/item with storage uhc:temp Item_ironman[0]
 
 # Équipe
-execute in uhc:lobby as @e[type=marker,tag=UHC,distance=0..,scores={uhc.scenario.ironman=1..}] run function bhc:scores_calculator/death/ironman/remove_1
+execute in uhc:lobby as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.scenario.ironman=1..}] run function bhc:scores_calculator/death/ironman/remove_1
 
 # Anti-boucle
 scoreboard players set #winner_rewarded uhc.scenario.ironman 1

@@ -20,11 +20,11 @@ execute if score @s bhc.targeted.id matches 0 run scoreboard players operation @
 
 ## Ciblage
 # Recherche d'équipe "valide"
-execute if score #temp bhc.data.temp matches 2 as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1}] if score @s bhc.targeter.former_id = #team uhc.data.temp.inv run return run function bhc:scenario/02/target/randomizer/randomizer
-execute if score #temp bhc.targeter.id matches 1 as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},predicate=!bhc:bhc_2/this_is_former_targeted,limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer
-execute as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer
+execute if score #temp bhc.data.temp matches 2 as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1}] if score @s bhc.targeter.former_id = #team uhc.data.temp.inv run return run function bhc:scenario/02/target/randomizer/randomizer
+execute if score #temp bhc.targeter.id matches 1 as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},predicate=!bhc:bhc_2/this_is_former_targeted,limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer
 execute if score #temp bhc.data.temp matches 0 run return fail
 # Les équipes "en attente de validation" deviennent "valides"
-execute as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.targeter.id=-1}] run scoreboard players add @s bhc.target.sort 1
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.targeter.id=-1}] run scoreboard players add @s bhc.target.sort 1
 scoreboard players operation #temp bhc.targeter.former_id = @s bhc.targeter.former_id
-execute as @e[type=marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},predicate=!bhc:bhc_2/this_is_former_targeted,limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.player.lives=1..,bhc.target.sort=1},predicate=!bhc:bhc_2/this_is_former_targeted,limit=1,sort=random] run return run function bhc:scenario/02/target/randomizer/randomizer

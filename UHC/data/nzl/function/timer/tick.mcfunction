@@ -19,13 +19,13 @@ execute as @a[scores={uhc.player.lives=1..}] run function nzl:types/move/stats/
 execute as @a[scores={uhc.player.lives=1..}] run function nzl:types/move/effects
 
 # Diminution de la durée et du délai d'attaque
-execute as @e[type=marker,tag=UHC] run function nzl:timer/attack/
+execute as @e[type=minecraft:marker,tag=UHC] run function nzl:timer/attack/
 
 # Affichage des types disponibles
-execute as @e[type=marker,tag=nzl.type] run function nzl:timer/scoreboard/marker_tick
+execute as @e[type=minecraft:marker,tag=nzl.type] run function nzl:timer/scoreboard/marker_tick
 
 # Changement de temps en fonction des attaques en cours
-execute as @n[type=marker,tag=nzl.weather] run function nzl:timer/weather
+execute as @n[type=minecraft:marker,tag=nzl.weather] run function nzl:timer/weather
 
 # Clear Item de types au sol
 execute as @e[type=item,tag=!item.check] run function nzl:timer/clear

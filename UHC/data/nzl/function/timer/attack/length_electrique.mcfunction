@@ -23,5 +23,5 @@ tag @s remove nzl.electrique.team_13
 tag @s remove nzl.electrique.team_14
 tag @s remove nzl.electrique.team_15
 tag @s remove nzl.electrique.team_16
-execute if score @s nzl.weather.thunder matches 1 run scoreboard players remove @n[type=marker,tag=nzl.weather] nzl.weather.thunder 1
+execute if score @s nzl.weather.thunder matches 1 run scoreboard players remove @n[type=minecraft:marker,tag=nzl.weather] nzl.weather.thunder 1
 scoreboard players set @s nzl.weather.thunder 0

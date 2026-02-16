@@ -80,7 +80,7 @@ team join 014 @s[tag=30]
 team join 015 @s[tag=31]
 team join 016 @s[tag=32]
 
-tp @e[type=marker,tag=temp,distance=0..] ~ ~1 ~
+tp @e[type=minecraft:marker,tag=temp,distance=0..] ~ ~1 ~
 
 # Kill marker si pas de joueur dans l'équipe
 execute if entity @s[tag=temp] run return run kill @s

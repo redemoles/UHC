@@ -9,7 +9,6 @@
 
 scoreboard players set @s uhc.scenario.go_to_hell.tick 0
 scoreboard players add @s uhc.scenario.go_to_hell.damage 1
-damage @s 1
 
 # Msg FRA
 tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Vous n'êtes pas dans le Nether !","color":"#FF3F3F"}]

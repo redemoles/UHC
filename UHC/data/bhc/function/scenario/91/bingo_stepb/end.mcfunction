@@ -24,7 +24,7 @@ execute as @a[scores={uhc.player.lang=051407},tag=uhc.player.dead] run tellraw @
 # Scoreboard d'affichage
 scoreboard players set #sb bhc.data.temp 13
 scoreboard objectives setdisplay sidebar bhc.bingo.score
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
 
 # Mort subite
 execute if score #player uhc.scenario.ironman matches 2.. run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@a[tag=uhc.ironman]","bold":false},{"text":" sont Ironmans !","color":"#FFE73F","bold":false}]

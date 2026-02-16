@@ -24,14 +24,14 @@ tag @s add nzl.type.10
 
 # Équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-tag @e[type=marker,predicate=uhc:id/team] add nzl.type.10
+tag @e[type=minecraft:marker,predicate=uhc:id/team] add nzl.type.10
 
 ## Points de vie
 attribute @s minecraft:max_health base set 20
 
 
 ## Réduction du nombre d'emplacement pour ce type
-scoreboard players remove @n[type=marker,tag=nzl.type,tag=10] nzl.type.available 1
+scoreboard players remove @n[type=minecraft:marker,tag=nzl.type,tag=10] nzl.type.available 1
 scoreboard players remove #type_10 nzl.type.available 1
 
 scoreboard players set @s nzl.type.evolve 0

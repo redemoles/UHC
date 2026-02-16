@@ -44,9 +44,9 @@ summon marker 1 100 1 {Tags:["uhc.player.test","uhc.player.ban3"],CustomName:[{"
 summon marker 1 100 1 {Tags:["uhc.player.test","uhc.player.ban3"],CustomName:[{"text":"8"}],data:{name:"8"}}
 summon marker 1 100 1 {Tags:["uhc.player.test","uhc.player.ban3"],CustomName:[{"text":"9"}],data:{name:"9"}}
 
-scoreboard players set @e[type=marker,tag=uhc.player.test,tag=uhc.player.ban1] uhc.id.random_team.ban 301
-scoreboard players set @e[type=marker,tag=uhc.player.test,tag=uhc.player.ban2] uhc.id.random_team.ban 201
-scoreboard players set @e[type=marker,tag=uhc.player.test,tag=uhc.player.ban3] uhc.id.random_team.ban 101
-scoreboard players set @e[type=marker,tag=uhc.player.test] uhc.id.team 0
+scoreboard players set @e[type=minecraft:marker,tag=uhc.player.test,tag=uhc.player.ban1] uhc.id.random_team.ban 301
+scoreboard players set @e[type=minecraft:marker,tag=uhc.player.test,tag=uhc.player.ban2] uhc.id.random_team.ban 201
+scoreboard players set @e[type=minecraft:marker,tag=uhc.player.test,tag=uhc.player.ban3] uhc.id.random_team.ban 101
+scoreboard players set @e[type=minecraft:marker,tag=uhc.player.test] uhc.id.team 0
 
 scoreboard players set #team_size uhc.data.setup 3

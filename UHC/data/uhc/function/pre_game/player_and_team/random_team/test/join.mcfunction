@@ -16,7 +16,7 @@ execute if score @s uhc.id.random_team.ban matches 100..199 run scoreboard playe
 execute if score @s uhc.id.random_team.ban matches 200..299 run scoreboard players remove #ban uhc.id.random_team.ban 100
 
 # Vérification si l'équipe en cours de génération et le joueur sont compatibles (ban list)
-execute if entity @e[type=marker,predicate=uhc:random_team_ban] run function uhc:pre_game/player_and_team/random_team/test/ban
+execute if entity @e[type=minecraft:marker,predicate=uhc:random_team_ban] run function uhc:pre_game/player_and_team/random_team/test/ban
 execute if entity @s[tag=uhc.random_team.ban] run return fail
 
 # Ajout dans une équipe

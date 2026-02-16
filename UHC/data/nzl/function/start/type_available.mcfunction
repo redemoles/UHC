@@ -26,4 +26,4 @@ scoreboard players add #type_16 nzl.type.available 1
 scoreboard players add #type_17 nzl.type.available 1
 scoreboard players add #type_18 nzl.type.available 1
 
-execute as @e[type=marker,tag=nzl.type] run scoreboard players add @s nzl.type.available 1
+execute as @e[type=minecraft:marker,tag=nzl.type] run scoreboard players add @s nzl.type.available 1

@@ -16,7 +16,7 @@ execute if score #sb bhc.data.temp matches 13.. run scoreboard players set #sb b
 execute if score #sb bhc.data.temp matches 04 if score #bhc bhc.scenario matches 99 run scoreboard players set #sb bhc.data.temp 07
 execute if score #sb bhc.data.temp matches 07 if score #bhc bhc.scenario matches 91 run scoreboard players set #sb bhc.data.temp 10
 
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
 
 execute unless score #sb bhc.data.temp matches 01.. run return run scoreboard objectives setdisplay sidebar bhc.total.score
 

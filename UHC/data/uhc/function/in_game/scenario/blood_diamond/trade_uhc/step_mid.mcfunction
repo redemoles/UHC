@@ -9,10 +9,12 @@
 
 execute at @s run tag @r[distance=0.1..,tag=uhc.player] add uhc.blood_diamond.receive
 
-execute if score #random uhc.scenario.blood_diamond.temp matches 1..25 run damage @s 1
+attribute @s minecraft:knockback_resistance modifier add uhc:temp.knockback_resistance 1 add_value
+execute if score #random uhc.scenario.blood_diamond.temp matches 1..25 at @s run damage @s 1 minecraft:mob_attack by @n[type=minecraft:marker,tag=scenario.blood_diamond]
 execute if score #random uhc.scenario.blood_diamond.temp matches 26..50 run give @s minecraft:gold_ingot
 execute if score #random uhc.scenario.blood_diamond.temp matches 51..75 run give @s minecraft:emerald
 execute if score #random uhc.scenario.blood_diamond.temp matches 76..100 run give @p[tag=uhc.blood_diamond.receive] minecraft:emerald
+attribute @s minecraft:knockback_resistance modifier remove uhc:temp.knockback_resistance
 
 ## Joueur
 # Msg FRA

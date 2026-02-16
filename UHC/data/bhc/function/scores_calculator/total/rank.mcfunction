@@ -8,8 +8,8 @@
 #
 
 ## Égalités
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/equality_rules
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/equality_rank
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/equality_rules
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/equality_rank
 
 ## Classement
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/rank_1
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/rank_1

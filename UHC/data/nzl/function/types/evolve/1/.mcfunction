@@ -27,5 +27,5 @@ execute as @s[scores={nzl.type.select=17}] run function nzl:types/evolve/1/dispo
 execute as @s[scores={nzl.type.select=18}] run function nzl:types/evolve/1/disponible/vol
 
 scoreboard players remove #double_type nzl.data 1
-execute if score #double_type nzl.data matches 0 run scoreboard players remove @n[type=marker,tag=nzl.type,tag=01] nzl.type.available 1
+execute if score #double_type nzl.data matches 0 run scoreboard players remove @n[type=minecraft:marker,tag=nzl.type,tag=01] nzl.type.available 1
 execute if score #double_type nzl.data matches 0 run scoreboard players remove #type_01 nzl.type.available 1

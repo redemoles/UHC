@@ -25,27 +25,27 @@ summon marker 0 1 0 {Tags:["temp","UHC"]}
 summon marker 0 1 0 {Tags:["temp","UHC"]}
 summon marker 0 1 0 {Tags:["temp","UHC"]}
 # 4 → 8
-execute as @e[type=marker,tag=UHC,distance=0..] run summon marker 0 1 0 {Tags:["temp","UHC"]}
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run summon marker 0 1 0 {Tags:["temp","UHC"]}
 # 8 → 16
-execute as @e[type=marker,tag=UHC,distance=0..] run summon marker 0 1 0 {Tags:["temp","UHC"]}
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run summon marker 0 1 0 {Tags:["temp","UHC"]}
 # 16 → 32
-execute as @e[type=marker,tag=UHC,distance=0..] run summon marker 0 1 0 {Tags:["temp","UHC"]}
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run summon marker 0 1 0 {Tags:["temp","UHC"]}
 
 # Id markers
 scoreboard players set #team uhc.id.team 0
 scoreboard players set #team uhc.data.temp 0
-execute as @e[type=marker,tag=temp,distance=0..] run function uhc:start/game_team/id_marker
+execute as @e[type=minecraft:marker,tag=temp,distance=0..] run function uhc:start/game_team/id_marker
 scoreboard players operation #team uhc.data.temp.inv = #team uhc.data.temp
 scoreboard players operation #team uhc.scenario.ironman = #team uhc.data.temp
 scoreboard players set #team uhc.id.team 0
 
 # Taille des équipes
 scoreboard players set #team_size uhc.data.temp 1
-scoreboard players operation #team_size uhc.data.temp > @e[type=marker,tag=UHC,distance=0..] uhc.player.lives
+scoreboard players operation #team_size uhc.data.temp > @e[type=minecraft:marker,tag=UHC,distance=0..] uhc.player.lives
 
 # Id markers inversé (pour Bingo UHC)
 scoreboard players operation #temp uhc.id.team.inverted = #team uhc.data.temp
-execute as @e[type=marker,tag=UHC,distance=0..] run function uhc:start/game_team/id_marker_inverted
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function uhc:start/game_team/id_marker_inverted
 
 # Id joueur
 execute as @a[tag=uhc.player] run function uhc:start/game_team/id_player

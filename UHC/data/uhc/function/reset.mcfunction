@@ -7,7 +7,7 @@
 # @description		Fonction d'initialisation et réinitialisation (partielle) du datapack
 #
 
-execute as @e[type=marker,tag=mgs.jump.marker,distance=0..] at @s run function lobby:mini_games/rjg/marker/kill
+execute as @e[type=minecraft:marker,tag=mgs.jump.marker,distance=0..] at @s run function lobby:mini_games/rjg/marker/kill
 
 execute if score #reset uhc.data.update matches 2 run return run function uhc:datapack_update/reset/full
 
@@ -426,4 +426,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26020
+scoreboard players set #update uhc.data.update 26021

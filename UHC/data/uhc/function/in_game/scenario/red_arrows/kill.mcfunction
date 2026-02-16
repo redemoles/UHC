@@ -1,5 +1,5 @@
 
-#> uhc:in_game/scenario/red_arrows/
+#> uhc:in_game/scenario/red_arrows/kill
 #
 # @within			uhc:in_game/player/death/inventory/item_additional
 #

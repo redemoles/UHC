@@ -21,4 +21,4 @@ execute if score #day nzl.data matches 0.. run scoreboard players add @s nzl.sta
 execute if score #day nzl.data matches 0.. run scoreboard players add @s nzl.stats.speed 1
 
 ## ATTAQUE
-execute if entity @n[type=marker,predicate=uhc:id/team,scores={nzl.attack.length.01=1..}] run function nzl:types/move/attack/fee
+execute if entity @n[type=minecraft:marker,predicate=uhc:id/team,scores={nzl.attack.length.01=1..}] run function nzl:types/move/attack/fee

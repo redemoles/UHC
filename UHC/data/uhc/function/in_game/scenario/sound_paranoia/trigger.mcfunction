@@ -40,4 +40,4 @@ execute as @s[scores={uhc.scenario.sound_paranoia.sound=11}] run function uhc:in
 tag @s remove uhc.scenario.sound_paranoia.on
 
 execute if score @s uhc.scenario.sound_paranoia.tick matches 1.. run summon minecraft:marker ~ ~ ~ {Tags:["uhc.sound_paranoia.temp"]}
-execute as @n[type=marker,nbt={Tags:["uhc.sound_paranoia.temp"]}] run function uhc:in_game/scenario/sound_paranoia/trigger_marker
+execute as @n[type=minecraft:marker,nbt={Tags:["uhc.sound_paranoia.temp"]}] run function uhc:in_game/scenario/sound_paranoia/trigger_marker

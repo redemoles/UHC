@@ -19,7 +19,7 @@ scoreboard players set #sb bhc.data.temp 2
 scoreboard objectives setdisplay sidebar bhc.stepa.score
 
 # Reset des succès
-execute as @e[type=marker,tag=UHC,distance=0..] run function bhc:scenario/99/timer/reset_scores
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scenario/99/timer/reset_scores
 
 data modify storage bhc:temp scoreboard.bingo set value "bingo_99"
 function bhc:advancement/scoreboard with storage bhc:temp scoreboard
