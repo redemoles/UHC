@@ -18,3 +18,5 @@ place template lobby:lobby_map/12/102 ~-23 ~23 ~-70
 place template lobby:lobby_map/12/202 ~-70 ~23 ~-70
 
 scoreboard players set #loaded lobby.structure.data 1
+
+fill -23 47 -28 -19 51 -24 minecraft:stone

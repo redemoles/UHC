@@ -29,4 +29,3 @@ execute as @a run function uhc:in_game/player/team_join/vanilla
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
 
 execute if score #bhc bhc.scenario matches 02 run scoreboard players set #tracker_ennemies uhc.data.temp 1001
-execute if score #bhc bhc.scenario matches 91 run effect clear @a[tag=uhc.player] minecraft:wither

@@ -7,6 +7,9 @@
 # @description		Fonction d'initialisation et réinitialisation (partielle) du datapack
 #
 
+execute if score #game_progress uhc.game_progress matches 1.. run scoreboard players set #warning uhc.game.reset 1
+execute if score #warning uhc.game.reset matches 1 unless score @s uhc.game.reset matches 1.. run return run function uhc:reset/warning/normal
+
 execute as @e[type=minecraft:marker,tag=mgs.jump.marker,distance=0..] at @s run function lobby:mini_games/rjg/marker/kill
 
 execute if score #reset uhc.data.update matches 2 run return run function uhc:datapack_update/reset/full
@@ -17,7 +20,8 @@ execute in minecraft:overworld positioned 0 300 0 positioned over motion_blockin
 function uhc:pre_game/player_and_team/team_create
 
 ## Reset des scores
-scoreboard objectives remove uhc.reset
+scoreboard objectives remove uhc.game.reset
+scoreboard objectives remove uhc.game_progress
 
 scoreboard objectives remove uhc.scenario.bats
 scoreboard objectives remove uhc.scenario.best_pve.list
@@ -90,6 +94,9 @@ scoreboard objectives remove uhc.best_pve.list
 scoreboard objectives remove uhc.ironman.list
 scoreboard objectives remove uhc.night_vision
 
+scoreboard objectives add uhc.game.reset trigger
+scoreboard objectives add uhc.game_progress trigger
+
 scoreboard objectives add uhc.gamemode dummy
 scoreboard objectives add uhc.scenario dummy
 scoreboard objectives add uhc.scenario.bats dummy
@@ -151,7 +158,6 @@ scoreboard objectives remove uhc.id.random_team
 scoreboard objectives remove uhc.id.random_team.ban
 scoreboard objectives remove uhc.id.player
 scoreboard objectives remove uhc.id.spawn
-scoreboard objectives remove uhc.game_progress
 scoreboard objectives remove uhc.data.temp
 scoreboard objectives remove uhc.data.temp.inv
 scoreboard objectives remove uhc.menu.language
@@ -221,7 +227,6 @@ scoreboard objectives add uhc.id.random_team dummy
 scoreboard objectives add uhc.id.random_team.ban dummy
 scoreboard objectives add uhc.id.player dummy
 scoreboard objectives add uhc.id.spawn dummy
-scoreboard objectives add uhc.game_progress trigger
 scoreboard objectives add uhc.data.update dummy
 scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.temp dummy
@@ -426,4 +431,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26021
+scoreboard players set #update uhc.data.update 26022

@@ -134,6 +134,7 @@ with zipfile.ZipFile(f"{bingo_namespace}.zip", "w") as zip_file:
 execute if score #{bingo_namespace}_enabled {configuration_objective} matches 1 run data modify storage {bingo_namespace} {line}_{column} set value {{title:"{advancement["display"]["title"]["text"]}", description:"{advancement["display"]["description"]["text"]}", namespace:"{bingo_namespace}", step:"{step_number}", line:"{line}", column:"{column}"}}
 execute if score #{bingo_namespace}_enabled {configuration_objective} matches 1 run function #bhc:advancements with storage {bingo_namespace} {line}_{column}
 execute unless score #{bingo_namespace}_enabled {configuration_objective} matches 1 run advancement revoke @s only {bingo_namespace}:{line}_{column}
+execute unless score #game_progress uhc.game_progress matches 1 run advancement revoke @s only {bingo_namespace}:{line}_{column}
 """)
 		# Write a last advancement for the line with no display
 		last_line_advancement["parent"] = f"{bingo_namespace}:{line}_{bingo_size['columns']}"
@@ -299,6 +300,7 @@ with zipfile.ZipFile(f"{bingo_namespace}.zip", "w") as zip_file:
 execute if score #{bingo_namespace}_enabled {configuration_objective} matches 1 run data modify storage {bingo_namespace} {line}_{column} set value {{title:"{advancement["display"]["title"]["text"]}", description:"{advancement["display"]["description"]["text"]}", namespace:"{bingo_namespace}", step:"{step_number}", line:"{line}", column:"{column}"}}
 execute if score #{bingo_namespace}_enabled {configuration_objective} matches 1 run function #bhc:advancements with storage {bingo_namespace} {line}_{column}
 execute unless score #{bingo_namespace}_enabled {configuration_objective} matches 1 run advancement revoke @s only {bingo_namespace}:{line}_{column}
+execute unless score #game_progress uhc.game_progress matches 1 run advancement revoke @s only {bingo_namespace}:{line}_{column}
 """)
 		# Write a last advancement for the line with no display
 		last_line_advancement["parent"] = f"{bingo_namespace}:{line}_{bingo_size['columns']}"

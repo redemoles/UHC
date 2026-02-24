@@ -103,6 +103,9 @@ execute if score #map_height_timer uhc.data.temp matches ..0 if score #tick uhc.
 execute as @s[tag=uhc.revive] run function uhc:in_game/player/spec/revive
 
 ## Spectateur
+# Localisé sous la carte
+execute unless score @s[tag=uhc.spec] uhc.player.data.check matches 1 run function uhc:in_game/player/data/pos_only
+execute if score @s[tag=uhc.spec] uhc.player.y matches ..-65 at @s positioned over motion_blocking run tp @s ~ ~32 ~ 0 67.5
 # Téléportation à un joueur
 execute if score @s uhc.spec.tp matches 1.. run function uhc:in_game/player/spec/tp_to_player/
 # Info spec
