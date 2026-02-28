@@ -71,7 +71,7 @@ execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s uh
 execute in minecraft:overworld positioned 0 180 0 as @s[tag=uhc.player.start_in_the_sky] if entity @s[predicate=uhc:settings/start_in_the_sky/on_ground,distance=25..] run function uhc:in_game/player/misc/on_ground_with_elytra
 execute as @s[tag=uhc.player.start_in_the_sky] unless items entity @s armor.chest minecraft:elytra run function uhc:in_game/player/misc/on_ground_with_elytra
 # Réapparition
-execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/lives_remove/respawn
+execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/death/respawn
 
 ## Vie en pourcentage
 scoreboard players operation #data_check uhc.data.temp = #tick uhc.data.temp
@@ -84,8 +84,8 @@ execute if score #biome_paranoia uhc.scenario matches 1 if score #game_progress 
 execute if score #biome_paranoia uhc.scenario matches 2 if score #game_progress uhc.game_progress matches 1 as @s[tag=uhc.player] run function uhc:in_game/scenario/biome_paranoia/by_nickname
 execute if score #blood_diamond uhc.scenario matches 1.. as @s[scores={uhc.scenario.blood_diamond.deepslate=1..}] in uhc:lobby run function uhc:in_game/scenario/blood_diamond/tick
 execute if score #blood_diamond uhc.scenario matches 1.. as @s[scores={uhc.scenario.blood_diamond.temp=1..}] in uhc:lobby run function uhc:in_game/scenario/blood_diamond/tick
-execute if score #go_to_hell uhc.scenario matches 1 if score #shrink_1_time_left uhc.data.temp matches ..0 at @s[tag=uhc.player] run function uhc:in_game/scenario/go_to_hell/tick
-execute if score #sky_high uhc.scenario matches 1 if score #shrink_1_time_left uhc.data.temp matches ..0 at @s[tag=uhc.player] run function uhc:in_game/scenario/sky_high/tick
+execute if score #go_to_hell uhc.scenario matches 1 if score #go_to_hell uhc.data.temp matches ..0 at @s[tag=uhc.player] run function uhc:in_game/scenario/go_to_hell/tick with storage uhc:scenario go_to_hell
+execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.temp matches ..0 at @s[tag=uhc.player] run function uhc:in_game/scenario/sky_high/tick with storage uhc:scenario sky_high
 # Minerais
 execute as @s[tag=uhc.player] run function uhc:in_game/player/misc/ores
 

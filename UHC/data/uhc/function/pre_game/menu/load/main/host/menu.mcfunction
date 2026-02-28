@@ -22,6 +22,8 @@ scoreboard players set @s uhc.menu.gamemode.mls.teams_of_supermoles 0
 tag @s remove uhc.menu.lobby
 scoreboard players set @s uhc.menu.scenario.main 0
 scoreboard players set @s uhc.menu.scenario.blood_diamond 0
+scoreboard players set @s uhc.menu.scenario.go_to_hell 0
+scoreboard players set @s uhc.menu.scenario.sky_high 0
 tag @s remove uhc.menu.scenario.enchanting_setup
 scoreboard players set @s uhc.menu.settings 0
 scoreboard players set @s uhc.menu.settings.lives 0

@@ -13,3 +13,5 @@ execute if score #pvp uhc.data.temp = #min_cooldown_temp uhc.data.temp run score
 execute if score #shrink_1_time_left uhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
 execute if score #shrink_2_time_left uhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
 execute if score #shrink_3_time_left uhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
+execute if score #go_to_hell uhc.scenario matches 1 if score #go_to_hell uhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1
+execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players add #min_cooldown_alert uhc.data.temp 1

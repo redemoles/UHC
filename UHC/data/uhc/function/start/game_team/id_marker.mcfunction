@@ -91,3 +91,4 @@ scoreboard players add #team uhc.data.temp 1
 # Nombre de joueurs dans l'équipe
 execute store result score @s uhc.player.lives if entity @a[tag=uhc.player,predicate=uhc:id/team]
 scoreboard players operation @s uhc.scenario.ironman = @s uhc.player.lives
+scoreboard players operation @s uhc.team.size = @s uhc.player.lives

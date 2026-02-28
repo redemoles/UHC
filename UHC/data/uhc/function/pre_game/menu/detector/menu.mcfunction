@@ -17,6 +17,8 @@ execute if score @s uhc.menu.language matches 1.. run return run function uhc:pr
 execute if score @s uhc.menu.scenario.main matches 1 run return run function uhc:pre_game/menu/selection/scenario/page_1
 execute if score @s uhc.menu.scenario.main matches 2 run return run function uhc:pre_game/menu/selection/scenario/page_2
 execute if score @s uhc.menu.scenario.blood_diamond matches 1.. run return run function uhc:pre_game/menu/selection/scenario/blood_diamond
+execute if score @s uhc.menu.scenario.go_to_hell matches 1.. run return run function uhc:pre_game/menu/selection/scenario/go_to_hell
+execute if score @s uhc.menu.scenario.sky_high matches 1.. run return run function uhc:pre_game/menu/selection/scenario/sky_high
 execute if entity @s[tag=uhc.menu.scenario.enchanting_setup] run return run function uhc:pre_game/menu/selection/scenario/enchanting_setup
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 1.. run return run function uhc:pre_game/menu/selection/settings/host
 execute if score @s[tag=!uhc.host] uhc.menu.settings matches 1.. run return run function uhc:pre_game/menu/selection/settings/player

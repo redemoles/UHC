@@ -20,5 +20,5 @@ $title @s[scores={uhc.player.lang=051407}] title [{"text":"-$(damage) HP","color
 title @s[scores={uhc.player.lang=051407}] subtitle [{"text":"Blood Diamond - Progressive","color":"#FF3F3F"}]
 
 attribute @s minecraft:knockback_resistance modifier add uhc:temp.knockback_resistance 1 add_value
-$execute at @s run damage @s $(damage) minecraft:mob_attack by @n[type=minecraft:marker,tag=scenario.blood_diamond]
+$execute at @s run damage @s $(damage) minecraft:mob_attack by @n[type=minecraft:marker,tag=uhc.scenario.blood_diamond]
 attribute @s minecraft:knockback_resistance modifier remove uhc:temp.knockback_resistance

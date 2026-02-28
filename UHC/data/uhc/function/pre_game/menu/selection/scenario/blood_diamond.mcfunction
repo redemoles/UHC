@@ -17,4 +17,4 @@ execute if score @s uhc.menu.scenario.blood_diamond matches 1.. unless items ent
 execute if score @s uhc.menu.scenario.blood_diamond matches 1.. unless items entity @s inventory.5 *[minecraft:custom_data={Tags:"scenario_blood_diamond_tier_3"}] run scoreboard players set @s uhc.menu.scenario.blood_diamond 4
 
 execute if score @s uhc.menu.scenario.blood_diamond matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/menu_1
-execute if score @s uhc.menu.scenario.blood_diamond matches 1.. run function uhc:pre_game/menu/load/scenario/blood_diamond/ with storage uhc:temp blood_diamond
+execute if score @s uhc.menu.scenario.blood_diamond matches 1.. run function uhc:pre_game/menu/load/scenario/blood_diamond/ with storage uhc:scenario blood_diamond

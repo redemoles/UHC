@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/death/coords
 #
-# @within			uhc:in_game/player/death/
+# @within			uhc:in_game/player/death/main
 # 
 #
 # @description		Donne au joueur les coordonnées d'où il est mort

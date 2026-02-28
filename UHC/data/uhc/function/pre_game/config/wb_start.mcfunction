@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/config/wb_start
 #
-# @within			uhc:in_game/timer/minute
+# @within			uhc:in_game/timer/minute/main
 #
 #
 # @description		Fonction de configuration des timers dans la partie

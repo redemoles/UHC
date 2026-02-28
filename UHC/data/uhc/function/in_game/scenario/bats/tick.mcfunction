@@ -14,5 +14,5 @@ execute if score #roll uhc.scenario.bats matches 2..20 run return run give @s mi
 
 # Mort
 attribute @s minecraft:knockback_resistance modifier add uhc:temp.knockback_resistance 1 add_value
-damage @s 200 minecraft:mob_attack by @n[type=minecraft:marker,tag=scenario.bats]
+damage @s 200 minecraft:mob_attack by @n[type=minecraft:marker,tag=uhc.scenario.bats]
 attribute @s minecraft:knockback_resistance modifier remove uhc:temp.knockback_resistance

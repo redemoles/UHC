@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/death/definitive
 #
-# @within			uhc:in_game/player/death/
+# @within			uhc:in_game/player/death/main
 #
 #
 # @description		Fonction si morts ou kills à chaque ticks

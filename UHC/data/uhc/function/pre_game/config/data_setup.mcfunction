@@ -64,20 +64,6 @@ scoreboard players set #trade_uhc uhc.scenario 0
 
 scoreboard players set #mystery_scenarios uhc.data.setup 0
 
-# Blood Diamond
-scoreboard players set #end_tier_1 uhc.scenario.blood_diamond.tier 8
-scoreboard players set #end_tier_2 uhc.scenario.blood_diamond.tier 20
-scoreboard players set #mined_tier_2 uhc.scenario.blood_diamond.tier 12
-execute store result storage uhc:temp blood_diamond.end_tier_1 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
-execute store result storage uhc:temp blood_diamond.end_tier_2 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
-scoreboard players add #end_tier_1 uhc.scenario.blood_diamond.tier 1
-scoreboard players add #end_tier_2 uhc.scenario.blood_diamond.tier 1
-execute store result storage uhc:temp blood_diamond.start_tier_2 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
-execute store result storage uhc:temp blood_diamond.start_tier_3 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
-scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
-scoreboard players remove #end_tier_2 uhc.scenario.blood_diamond.tier 1
-execute store result storage uhc:temp blood_diamond.mined_tier_2 int 1 run scoreboard players get #mined_tier_2 uhc.scenario.blood_diamond.tier
-
 # Enchanting Setup
 scoreboard players set #100b uhc.scenario.enchanting_setup 0
 scoreboard players set #500b uhc.scenario.enchanting_setup 0
@@ -90,3 +76,21 @@ execute in minecraft:overworld run function uhc:pre_game/config/map_height
 
 # Configuration personnalisable
 function uhc:pre_game/config/preferences
+
+# Blood Diamond
+scoreboard players operation #mined_tier_2 uhc.scenario.blood_diamond.tier = #end_tier_2 uhc.scenario.blood_diamond.tier
+scoreboard players operation #mined_tier_2 uhc.scenario.blood_diamond.tier -= #end_tier_1 uhc.scenario.blood_diamond.tier
+execute store result storage uhc:scenario blood_diamond.end_tier_1 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
+execute store result storage uhc:scenario blood_diamond.end_tier_2 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
+scoreboard players add #end_tier_1 uhc.scenario.blood_diamond.tier 1
+scoreboard players add #end_tier_2 uhc.scenario.blood_diamond.tier 1
+execute store result storage uhc:scenario blood_diamond.start_tier_2 int 1 run scoreboard players get #end_tier_1 uhc.scenario.blood_diamond.tier
+execute store result storage uhc:scenario blood_diamond.start_tier_3 int 1 run scoreboard players get #end_tier_2 uhc.scenario.blood_diamond.tier
+scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
+scoreboard players remove #end_tier_2 uhc.scenario.blood_diamond.tier 1
+execute store result storage uhc:scenario blood_diamond.mined_tier_2 int 1 run scoreboard players get #mined_tier_2 uhc.scenario.blood_diamond.tier
+
+execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard players get #go_to_hell uhc.data.temp
+
+execute store result storage uhc:scenario sky_high.timer int 1 run scoreboard players get #sky_high uhc.data.temp
+execute store result storage uhc:scenario sky_high.height int 1 run scoreboard players get #height uhc.scenario.sky_high.settings

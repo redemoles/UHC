@@ -89,3 +89,23 @@ execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
+
+## Scenario
+# Blood Diamond
+scoreboard players set #end_tier_1 uhc.scenario.blood_diamond.tier 8
+scoreboard players set #end_tier_2 uhc.scenario.blood_diamond.tier 20
+
+# Go To Hell
+#> damage_type > 1 = -1 HP every 30 seconds
+#> damage_type > 2 = Progrssive HP loss every 30 seconds with reset
+#> damage_type > 3 = Progrssive HP loss every 30 seconds without reset
+scoreboard players set #go_to_hell uhc.data.temp 60
+scoreboard players set #damage_type uhc.scenario.go_to_hell.settings 3
+
+# Sky High
+#> damage_type > 1 = -1 HP every 30 seconds
+#> damage_type > 2 = Progrssive HP loss every 30 seconds with reset
+#> damage_type > 3 = Progrssive HP loss every 30 seconds without reset
+scoreboard players set #sky_high uhc.data.temp 60
+scoreboard players set #damage_type uhc.scenario.sky_high.settings 3
+scoreboard players set #height uhc.scenario.sky_high.settings 150

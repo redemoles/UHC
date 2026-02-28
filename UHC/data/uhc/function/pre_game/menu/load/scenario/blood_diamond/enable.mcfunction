@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/scenario/blood_diamond
+#> uhc:pre_game/menu/load/scenario/blood_diamond/enable
 #
 # @within			uhc:pre_game/menu/selection/scenario/
 #

@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/death/update
 #
-# @within			uhc:in_game/player/death/
+# @within			uhc:in_game/player/death/main
 # @within			bhc:scores_calculator/endgame/detect
 #
 # @description		Actualisation scores death 

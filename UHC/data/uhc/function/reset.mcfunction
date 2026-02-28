@@ -112,10 +112,12 @@ scoreboard objectives add uhc.scenario.bookception dummy
 scoreboard objectives add uhc.scenario.cut_clean.random dummy
 scoreboard objectives add uhc.scenario.enchanting_setup dummy
 scoreboard objectives add uhc.scenario.go_to_hell.damage dummy
+scoreboard objectives add uhc.scenario.go_to_hell.settings dummy
 scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
 scoreboard objectives add uhc.scenario.team_health.100 dummy "%"
 scoreboard objectives add uhc.scenario.team_health.team dummy [{"text":"❤","color":"#FF5F5F"}]
 scoreboard objectives add uhc.scenario.sky_high.damage dummy
+scoreboard objectives add uhc.scenario.sky_high.settings dummy
 scoreboard objectives add uhc.scenario.sky_high.tick dummy
 scoreboard objectives add uhc.scenario.sound_paranoia.number dummy
 scoreboard objectives add uhc.scenario.sound_paranoia.sound dummy
@@ -170,6 +172,8 @@ scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_moles
 scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_supermoles
 scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.scenario.blood_diamond
+scoreboard objectives remove uhc.menu.scenario.go_to_hell
+scoreboard objectives remove uhc.menu.scenario.sky_high
 scoreboard objectives remove uhc.menu.scenario.main
 scoreboard objectives remove uhc.menu.settings.lives
 scoreboard objectives remove uhc.menu.settings.pve
@@ -214,6 +218,7 @@ scoreboard objectives remove uhc.spec_info.blood_diamond
 scoreboard objectives remove uhc.spec_info.pvp
 scoreboard objectives remove uhc.spec_info.pve
 scoreboard objectives remove uhc.team.kills
+scoreboard objectives remove uhc.team.size
 scoreboard objectives remove uhc.timer.respawn
 scoreboard objectives remove uhc.timer.start
 scoreboard objectives remove uhc.timer.entities
@@ -242,6 +247,8 @@ scoreboard objectives add uhc.menu.gamemode.mls.teams_of_moles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.teams_of_supermoles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.supermoles_per_team dummy
 scoreboard objectives add uhc.menu.scenario.blood_diamond dummy
+scoreboard objectives add uhc.menu.scenario.go_to_hell dummy
+scoreboard objectives add uhc.menu.scenario.sky_high dummy
 scoreboard objectives add uhc.menu.scenario.main dummy
 scoreboard objectives add uhc.menu.settings dummy
 scoreboard objectives add uhc.menu.settings.lives dummy
@@ -288,6 +295,7 @@ scoreboard objectives add uhc.spec_info.none trigger
 scoreboard objectives add uhc.spec_info.blood_diamond trigger
 scoreboard objectives add uhc.spec_info.pvp trigger
 scoreboard objectives add uhc.spec_info.pve trigger
+scoreboard objectives add uhc.team.size dummy
 scoreboard objectives add uhc.timer.respawn dummy
 scoreboard objectives add uhc.timer.start dummy
 scoreboard objectives add uhc.timer.entities dummy
@@ -431,4 +439,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26022
+scoreboard players set #update uhc.data.update 26023

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/pvp/settings/friendly_fire/enable
 #
-# @within			uhc:in_game/timer/minute
+# @within			uhc:in_game/timer/minute/main
 #
 #
 # @description		Vérification de la position des joueurs entre eux

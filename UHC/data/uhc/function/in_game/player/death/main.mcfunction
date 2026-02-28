@@ -1,5 +1,5 @@
 
-#> uhc:in_game/player/death/
+#> uhc:in_game/player/death/main
 #
 # @within			uhc:in_game/timer/tick
 #

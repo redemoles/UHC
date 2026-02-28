@@ -2,7 +2,7 @@
 #> uhc:in_game/player/death/text_end_game/
 #
 # @within			uhc:in_game/advancement/player_killed_player/
-# @within           uhc:in_game/player/death/
+# @within           uhc:in_game/player/death/main
 #
 # @description		Note des morts
 #

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/timer/border/shrink/3
 #
-# @within			uhc:in_game/timer/minute
+# @within			uhc:in_game/timer/minute/main
 #
 #
 # @description		Function générale de 3e réduction de la bordure

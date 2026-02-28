@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn/border_size/150-199
 #
-# @within			uhc:in_game/player/death/
+# @within			uhc:in_game/player/death/main
 # @within			uhc:start/game_team/
 #
 # @description		Changement des points d'apparitions des équipes

@@ -28,4 +28,4 @@ execute if score #stepa_end bhc.data.temp = #min_cooldown_temp uhc.data.temp if 
 execute if score #bhc bhc.scenario matches 00 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/00/start
 execute if score #bhc bhc.scenario matches 01 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/01/start
 execute if score #bhc bhc.scenario matches 02 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/02/start
-execute if score #bhc bhc.scenario matches 91 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/01/start
+execute if score #bhc bhc.scenario matches 91 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/00/start

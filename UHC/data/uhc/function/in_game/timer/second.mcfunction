@@ -11,7 +11,7 @@ scoreboard players set #tick uhc.data.temp 0
 scoreboard players add #seconds uhc.data.temp 1
 scoreboard players set #sec_cooldown uhc.data.temp 60
 scoreboard players operation #sec_cooldown uhc.data.temp -= #seconds uhc.data.temp
-execute if score #seconds uhc.data.temp matches 60 run function uhc:in_game/timer/minute
+execute if score #seconds uhc.data.temp matches 60 run function uhc:in_game/timer/minute/main
 execute if score #game_progress uhc.game_progress matches 2.. run scoreboard players add #seconds uhc.game_progress 1
 
 execute if score #seconds uhc.data.temp matches 00 run data modify storage uhc:temp hotbar.seconds set value "0"

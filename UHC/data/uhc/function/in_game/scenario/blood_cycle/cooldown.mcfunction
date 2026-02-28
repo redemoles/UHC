@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/blood_cycle/cooldown
 #
-# @within			uhc:in_game/timer/minutes
+# @within			uhc:in_game/timer/minute/mains
 #
 #
 # @description		

@@ -1,8 +1,8 @@
 
 #> bhc:scores_calculator/death/score
 #
-# @within			bhc:tick
-# @within			bhc:scores_calculator/endgame/detect
+# @within			bhc:scores_calculator/death/update
+#
 #
 # @description		Détection aucun joueur dans une équipe
 #
@@ -16,9 +16,16 @@ scoreboard players operation @s bhc.death.score.inv /= #1200 uhc.data.numbers
 
 ## Bonus
 # Vies non utilisées
-scoreboard players operation @s bhc.team.livescount *= #10 uhc.data.numbers
+scoreboard players set #temp uhc.data.temp 100
+scoreboard players operation #temp uhc.data.temp *= #team_size uhc.data.temp
+scoreboard players operation #temp uhc.data.temp /= @s uhc.team.size
+
+execute if score #game_progress uhc.game_progress matches 2 run function bhc:scores_calculator/death/lives_never_lost
+scoreboard players operation @s bhc.team.livescount *= #temp uhc.data.temp
+scoreboard players operation @s bhc.death.score.inv *= #10 uhc.data.numbers
 scoreboard players operation @s bhc.death.score.inv += @s bhc.team.livescount
-scoreboard players operation @s bhc.team.livescount /= #10 uhc.data.numbers
+scoreboard players operation @s bhc.death.score.inv /= #10 uhc.data.numbers
+scoreboard players operation @s bhc.team.livescount /= #temp uhc.data.temp
 
 # Ironman
 scoreboard players operation @s bhc.death.score.inv += @s bhc.ironman.score.inv

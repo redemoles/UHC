@@ -13,3 +13,5 @@ execute if score #sky_high uhc.scenario matches 2 run scoreboard players set #sk
 
 execute if score #sky_high uhc.scenario matches 0 run tellraw @a [{"text":"Sky High","color":"#FF3F3F","bold":true},{"text":" désactivé","color":"#FF3F3F","bold":false}]
 execute if score #sky_high uhc.scenario matches 1 run tellraw @a [{"text":"Sky High","color":"#3FE7FF","bold":true},{"text":" activé","color":"#3FE7FF","bold":false}]
+
+execute if score @s uhc.menu.scenario.sky_high matches 1.. run function uhc:pre_game/menu/load/scenario/sky_high/menu with storage uhc:scenario sky_high

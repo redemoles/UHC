@@ -33,6 +33,8 @@ scoreboard players operation #live_3 uhc.data.temp = #live_3 uhc.data.setup
 scoreboard players operation #live_2 uhc.data.temp = #live_2 uhc.data.setup
 scoreboard players operation #live_1 uhc.data.temp = #live_1 uhc.data.setup
 scoreboard players operation #map_height_timer uhc.data.temp = #map_height_timer uhc.data.setup
+scoreboard players operation #go_to_hell uhc.data.temp = #go_to_hell uhc.data.setup
+scoreboard players operation #sky_high uhc.data.temp = #sky_high uhc.data.setup
 
 # Divers paramètres
 scoreboard players operation #lives uhc.player.lives = #lives uhc.data.setup
@@ -83,18 +85,8 @@ scoreboard players operation #map_height_limit_above uhc.data.temp = #map_height
 execute if score #sky_high uhc.scenario matches 1 run scoreboard players set #map_height_limit_above uhc.data.temp 257
 scoreboard players operation #map_height_limit_below uhc.data.temp = #map_height_limit_below uhc.data.setup
 
-## Annulation des effets causés par le passage de la minute -1 à 0
 scoreboard players set #tick_start uhc.data.temp 201
 scoreboard players set #tick uhc.data.temp 20
-scoreboard players add #pve uhc.data.temp 1
-scoreboard players add #pvp uhc.data.temp 1
-scoreboard players add #shrink_1_time_left uhc.data.temp 1
-scoreboard players add #shrink_2_time_left uhc.data.temp 1
-scoreboard players add #shrink_3_time_left uhc.data.temp 1
-scoreboard players add #live_3 uhc.data.temp 1
-scoreboard players add #live_2 uhc.data.temp 1
-scoreboard players add #live_1 uhc.data.temp 1
-scoreboard players add #map_height_timer uhc.data.temp 1
 
 ## Border Alerte Sonore
 scoreboard players operation #shrink_1_timer_end uhc.data.temp = #shrink_1_length uhc.data.setup

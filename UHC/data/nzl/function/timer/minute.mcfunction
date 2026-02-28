@@ -1,7 +1,7 @@
 
 #> nzl:timer/minute
 #
-# @within			uhc:in_game/timer/minute
+# @within			uhc:in_game/timer/minute/main
 #
 #
 # @description		Function executed every tick

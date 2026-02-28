@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/death/inventory/location_set
 #
-# @within			uhc:in_game/player/death/
+# @within			uhc:in_game/player/death/main
 #
 #
 # @description		
