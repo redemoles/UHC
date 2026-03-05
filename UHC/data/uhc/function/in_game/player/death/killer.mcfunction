@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/death/killer
 #
-# @within			uhc:in_game/advancement/player_killed_player/
+# @within			uhc:in_game/advancement/killed_by_player/
 #
 #
 # @description		Fonction si morts ou kills à chaque ticks
@@ -31,3 +31,6 @@ execute if score #experienceless uhc.scenario matches 1 run experience add @s 4 
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @s uhc.player.kills 1
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @s uhc.player.kills.inv 1
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @e[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.team.kills 1
+
+# Duplicat de l'armure du joueur mort non définitivement
+execute as @p[tag=uhc.temp] if score @s uhc.player.lives matches 1.. if score #item_additional_armor uhc.data.setup matches 1.. run scoreboard players set @s uhc.player.death.armor_additional_item 1

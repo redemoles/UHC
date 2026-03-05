@@ -90,6 +90,9 @@ execute if score @s uhc.menu.settings.border matches 24 unless score #shrink_2_l
 execute if score @s uhc.menu.settings.border matches 34 unless score #shrink_3_length uhc.data.setup matches ..0 run scoreboard players remove #shrink_3_length uhc.data.setup 1
 
 
+# Nombre d'amures dupliqué à la mort d'un joueur
+execute if score @s uhc.menu.settings.inventory matches 06 unless score #item_additional_armor uhc.data.setup matches ..0 run scoreboard players remove #item_additional_armor uhc.data.setup 1
+
 # Règles d'enchantements - Armures en diamants, Épées en diamants, Armures en fer, Épées en diamants, Haches, Arcs, Bottes
 execute if score @s uhc.menu.settings.inventory matches 12 unless score #diamond_protection uhc.data.setup matches ..0 run scoreboard players remove #diamond_protection uhc.data.setup 1
 execute if score @s uhc.menu.settings.inventory matches 13 unless score #diamond_sharpness uhc.data.setup matches ..0 run scoreboard players remove #diamond_sharpness uhc.data.setup 1

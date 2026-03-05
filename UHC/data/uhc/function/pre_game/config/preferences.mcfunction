@@ -69,6 +69,8 @@ scoreboard players set #cobweb uhc.data.setup 2
 scoreboard players set #milk_bucket uhc.data.setup 1
 scoreboard players set #effect_compatibility_speed_strength uhc.data.setup 0
 
+scoreboard players set #item_additional_armor uhc.data.setup 2
+
 ## Miscellaneous / Divers
 scoreboard players set #river_solid uhc.data.setup 0
 

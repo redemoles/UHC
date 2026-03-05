@@ -1,7 +1,7 @@
 
-#> uhc:in_game/player/death/inventory/item_inventory
+#> uhc:in_game/player/death/location/item_drop/inventory
 #
-# @within			uhc:in_game/player/death/inventory/location_event
+# @within			uhc:in_game/player/death/location/event
 #
 #
 # @description		
@@ -15,4 +15,4 @@ data modify entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{
 
 # Boucle tant qu'il reste un item dans l'inventaire
 data remove storage uhc:temp Inventory[0]
-execute if data storage uhc:temp Inventory[0] run function uhc:in_game/player/death/inventory/item_inventory
+execute if data storage uhc:temp Inventory[0] run function uhc:in_game/player/death/location/item_drop/inventory

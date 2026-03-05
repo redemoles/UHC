@@ -23,7 +23,7 @@ execute if score #permakill uhc.scenario matches 1 run time add 600s
 
 ## Récompenses au kill, changement paramètres du joueur mort
 function uhc:in_game/player/death/reveal
-function uhc:in_game/player/death/inventory/location_set
+function uhc:in_game/player/death/location/data
 execute if score @s uhc.player.lives matches ..0 in uhc:lobby run function uhc:in_game/player/death/definitive
 
 ## BHC → Attribution des points de survie (seulement si la partie n'est pas terminée)

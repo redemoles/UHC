@@ -1,5 +1,5 @@
 
-#> uhc:in_game/player/death/inventory/location_set
+#> uhc:in_game/player/death/location/data
 #
 # @within			uhc:in_game/player/death/main
 #
@@ -14,4 +14,4 @@ data modify storage uhc:temp input.y set from entity @s LastDeathLocation.pos[1]
 data modify storage uhc:temp input.z set from entity @s LastDeathLocation.pos[2]
 data modify storage uhc:temp input.dim set from entity @s LastDeathLocation.dimension
 
-function uhc:in_game/player/death/inventory/location_event with storage uhc:temp input
+function uhc:in_game/player/death/location/event with storage uhc:temp input

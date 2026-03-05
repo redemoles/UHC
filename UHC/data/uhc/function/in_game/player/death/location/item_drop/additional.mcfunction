@@ -1,7 +1,7 @@
 
-#> uhc:in_game/player/death/inventory/item_additional_custom
+#> uhc:in_game/player/death/location/item_drop/additional
 #
-# @within			uhc:in_game/player/death/inventory/item_additional
+# @within			uhc:in_game/player/death/location/item_drop/main
 #
 #
 # @description		
@@ -12,4 +12,4 @@ $loot spawn ~ ~ ~ loot {"type":"minecraft:block","pools":[{"rolls":1,"bonus_roll
 # Boucle tant qu'il reste un item dans l'inventaire
 data remove storage uhc:temp Item_additional[0]
 data modify storage uhc:temp Item_additional[0].components merge value {}
-execute if data storage uhc:temp Item_additional[0] run function uhc:in_game/player/death/inventory/item_additional_custom with storage uhc:temp Item_additional[0]
+execute if data storage uhc:temp Item_additional[0] run function uhc:in_game/player/death/location/item_drop/additional with storage uhc:temp Item_additional[0]
