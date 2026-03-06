@@ -9,3 +9,5 @@
 
 scoreboard players set @s uhc.menu.settings 5
 scoreboard players set @s uhc.menu.settings.border 21
+
+function uhc:pre_game/menu/load/settings/menu

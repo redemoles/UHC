@@ -219,6 +219,7 @@ scoreboard objectives remove uhc.spec_info.none
 scoreboard objectives remove uhc.spec_info.blood_diamond
 scoreboard objectives remove uhc.spec_info.pvp
 scoreboard objectives remove uhc.spec_info.pve
+scoreboard objectives remove uhc.random_team
 scoreboard objectives remove uhc.team.kills
 scoreboard objectives remove uhc.team.size
 scoreboard objectives remove uhc.timer.respawn
@@ -299,6 +300,7 @@ scoreboard objectives add uhc.spec_info.none trigger
 scoreboard objectives add uhc.spec_info.blood_diamond trigger
 scoreboard objectives add uhc.spec_info.pvp trigger
 scoreboard objectives add uhc.spec_info.pve trigger
+scoreboard objectives add uhc.random_team dummy
 scoreboard objectives add uhc.team.size dummy
 scoreboard objectives add uhc.timer.respawn dummy
 scoreboard objectives add uhc.timer.start dummy
@@ -443,4 +445,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26030
+scoreboard players set #update uhc.data.update 26031

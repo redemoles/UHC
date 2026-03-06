@@ -17,6 +17,13 @@ execute store result score #team uhc.id.team run random value 0..15
 scoreboard players set #team uhc.id.random_team 1
 scoreboard players set #count uhc.id.random_team 1
 
-function uhc:pre_game/player_and_team/random_team/1_pot/selector
+## Préparation d'une répartition équitable dans les équipes
+scoreboard players operation #team_size uhc.random_team = #team_size uhc.data.setup
+execute store result score #player uhc.random_team if entity @a[tag=uhc.player,scores={uhc.id.random_team=0}]
+scoreboard players operation #player_modulo uhc.random_team = #player uhc.random_team
+scoreboard players operation #player_modulo uhc.random_team %= #team_size uhc.random_team
+execute if score #player_modulo uhc.random_team matches 1.. run function uhc:pre_game/player_and_team/random_team/1_pot/balance_setup
+
+execute as @r[tag=uhc.player,scores={uhc.id.random_team=0}] run function uhc:pre_game/player_and_team/random_team/1_pot/join
 execute as @r[tag=uhc.player] run function uhc:pre_game/player_and_team/random_team/1_pot/color
 execute if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/player_and_team/random_team/1_pot/reveal/instant

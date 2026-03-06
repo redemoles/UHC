@@ -10,9 +10,9 @@
 execute if score @s uhc.menu.settings.border matches 11..20 unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/preset_menu
 execute if score @s uhc.menu.settings.border matches 21..30 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/preset_menu
 execute if score @s uhc.menu.settings.border matches 31..40 unless items entity @s inventory.3 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/preset_menu
-execute unless score @s uhc.menu.settings.border matches 11..20 unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/shrink_1/preset_menu
-execute unless score @s uhc.menu.settings.border matches 21..30 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/shrink_2/preset_menu
-execute unless score @s uhc.menu.settings.border matches 31..40 unless items entity @s inventory.3 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/shrink_3/preset_menu
+execute unless score @s uhc.menu.settings.border matches 11..20 unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/shrink_1/preset_menu
+execute unless score @s uhc.menu.settings.border matches 21..30 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/shrink_2/preset_menu
+execute unless score @s uhc.menu.settings.border matches 31..40 unless items entity @s inventory.3 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/shrink_3/preset_menu
 
 execute unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/size_start/apply_change
 execute unless items entity @s inventory.11 *[minecraft:custom_data={Tags:"settings_border"}] run function uhc:pre_game/menu/load/settings/border/size_end/apply_change

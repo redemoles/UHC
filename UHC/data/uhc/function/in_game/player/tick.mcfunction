@@ -97,7 +97,7 @@ execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:i
 
 ## Border TP
 execute if score #shrink_1_time_left uhc.data.temp matches ..0 if score #data_check uhc.data.temp matches 0 as @s[tag=uhc.player] at @s run function uhc:in_game/tp/border/coords
-execute if score #map_height_timer uhc.data.temp matches ..0 if score #tick uhc.data.temp matches 0 if entity @s[tag=uhc.player,predicate=uhc:dimension/overworld] run function uhc:in_game/player/map_height/check_limit
+execute if score #map_height_timer uhc.data.temp matches ..0 if score #tick uhc.data.temp matches 0 unless score #sky_high uhc.scenario matches 1 if entity @s[tag=uhc.player,predicate=uhc:dimension/overworld] run function uhc:in_game/player/map_height/check_limit
 
 ## Joueur à respwan
 execute as @s[tag=uhc.revive] run function uhc:in_game/player/spec/revive

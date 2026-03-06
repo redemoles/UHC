@@ -24,6 +24,7 @@ execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.4 *[minecraft:custom_data={Tags:"settings_border"}] run return run function uhc:pre_game/menu/load/settings/border/preset_menu
 execute if score @s uhc.menu.settings.border matches 1.. run function uhc:pre_game/menu/selection/settings/border/host
+execute if score @s uhc.menu.settings.border matches 11.. run return fail
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.5 *[minecraft:custom_data={Tags:"settings_inventory"}] run return run function uhc:pre_game/menu/load/settings/inventory/preset_menu
 execute if score @s uhc.menu.settings.inventory matches 1.. run function uhc:pre_game/menu/selection/settings/inventory/host
