@@ -8,7 +8,7 @@
 #
 
 scoreboard players set #team uhc.id.team 0
-scoreboard players set @a[tag=uhc.scenario.best_pve] uhc.scenario.best_pve.list 0
+tag @a[tag=uhc.player] add uhc.best_pve.list
 
 tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Best PvE ","color":"#E73F3F","bold":false},{"text":">","color":"#9F9F9F","bold":true}]
 tellraw @s[scores={uhc.player.lang=051407}] [{"text":"Best PvE ","color":"#E73F3F","bold":false},{"text":">","color":"#9F9F9F","bold":true}]

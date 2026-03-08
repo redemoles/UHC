@@ -15,6 +15,7 @@ execute if score #lobby lobby.structure.data matches 10..19 positioned 0 64 0 ru
 
 ## Joueurs
 execute as @a run function uhc:pre_game/timer/tick_player
+scoreboard players set @a uhc.player.data.check 0
 
 ## Random team progressive reveal
 execute if score #random_team_tick uhc.data.setup matches 0.. if score #random_team uhc.data.setup matches 1 run function uhc:pre_game/player_and_team/random_team/1_pot/reveal/progressive

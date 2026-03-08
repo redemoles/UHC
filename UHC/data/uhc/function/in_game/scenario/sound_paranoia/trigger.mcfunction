@@ -29,10 +29,10 @@ execute as @s[scores={uhc.scenario.sound_paranoia.sound=4}] run function uhc:in_
 execute as @s[scores={uhc.scenario.sound_paranoia.sound=5}] run function uhc:in_game/scenario/sound_paranoia/long_sound/witch
 execute as @s[scores={uhc.scenario.sound_paranoia.sound=6}] run function uhc:in_game/scenario/sound_paranoia/sound/arrow
 execute as @s[scores={uhc.scenario.sound_paranoia.sound=7}] run function uhc:in_game/scenario/sound_paranoia/sound/player_fall
-execute as @s[y=-21,dy=-64,scores={uhc.scenario.sound_paranoia.sound=8}] run function uhc:in_game/scenario/sound_paranoia/long_sound/lava
-execute as @s[y=-19,dy=350,scores={uhc.scenario.sound_paranoia.sound=8}] run function uhc:in_game/scenario/sound_paranoia/sound/wind_charge
-execute as @s[y=-21,dy=-64,scores={uhc.scenario.sound_paranoia.sound=9}] run function uhc:in_game/scenario/sound_paranoia/long_sound/warden
-execute as @s[y=-19,dy=350,scores={uhc.scenario.sound_paranoia.sound=9}] run function uhc:in_game/scenario/sound_paranoia/sound/enderpearl
+execute as @s[scores={uhc.scenario.sound_paranoia.sound=8,uhc.player.y=..-21}] run function uhc:in_game/scenario/sound_paranoia/long_sound/lava
+execute as @s[scores={uhc.scenario.sound_paranoia.sound=8,uhc.player.y=-19..}] run function uhc:in_game/scenario/sound_paranoia/sound/wind_charge
+execute as @s[scores={uhc.scenario.sound_paranoia.sound=9,uhc.player.y=..-21}] run function uhc:in_game/scenario/sound_paranoia/long_sound/warden
+execute as @s[scores={uhc.scenario.sound_paranoia.sound=9,uhc.player.y=-19..}] run function uhc:in_game/scenario/sound_paranoia/sound/enderpearl
 execute as @s[predicate=uhc:dimension/overworld,scores={uhc.scenario.sound_paranoia.sound=10}] run function uhc:in_game/scenario/sound_paranoia/long_sound/water_bucket
 execute as @s[predicate=uhc:dimension/the_nether,scores={uhc.scenario.sound_paranoia.sound=10}] run function uhc:in_game/scenario/sound_paranoia/sound/wither_skeleton
 execute as @s[scores={uhc.scenario.sound_paranoia.sound=11}] run function uhc:in_game/scenario/sound_paranoia/long_sound/stone

@@ -10,7 +10,7 @@
 scoreboard players operation #temp lobby.rjg.id.player = @s lobby.rjg.id.player
 
 # Si joueur tombé
-execute if entity @s[y=12,dy=-4] run function lobby:mini_games/rjg/player/out
+execute if score @s uhc.player.y matches ..12 run function lobby:mini_games/rjg/player/out
 
 # Si joueur atteint un nouveau block
 scoreboard players operation #temp+1 lobby.rjg.score.inv = @s lobby.rjg.score.sb

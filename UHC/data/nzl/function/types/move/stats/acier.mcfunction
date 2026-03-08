@@ -12,9 +12,9 @@
 
 ## BONUS
 scoreboard players add @s nzl.stats.defense 2
-scoreboard players add @s[y=0,dy=320,scores={nzl.type.level=1}] nzl.stats.mining_speed 4
-scoreboard players add @s[y=0,dy=320,scores={nzl.type.level=2}] nzl.stats.mining_speed 6
-scoreboard players add @s[y=0,dy=320,scores={nzl.type.level=3}] nzl.stats.mining_speed 8
+scoreboard players add @s[scores={nzl.type.level=1,uhc.player.y=0..}] nzl.stats.mining_speed 4
+scoreboard players add @s[scores={nzl.type.level=2,uhc.player.y=0..}] nzl.stats.mining_speed 6
+scoreboard players add @s[scores={nzl.type.level=3,uhc.player.y=0..}] nzl.stats.mining_speed 8
 
 ## MALUS
 scoreboard players remove @s[scores={nzl.type.level=..2}] nzl.stats.abso 1

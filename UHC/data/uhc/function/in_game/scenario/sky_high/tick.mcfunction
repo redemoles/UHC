@@ -7,5 +7,5 @@
 # @description		Test si le joueur a cumulé 30 secondes sous la couche 150
 #
 
-$execute if entity @s[y=$(height),dy=240] run function uhc:in_game/scenario/sky_high/stop
-$execute if entity @s[y=$(height),dy=-320] run function uhc:in_game/scenario/sky_high/damage
+$execute if score @s uhc.player.y matches $(height).. run function uhc:in_game/scenario/sky_high/stop
+$execute if score @s uhc.player.y matches ..$(height) run function uhc:in_game/scenario/sky_high/damage
