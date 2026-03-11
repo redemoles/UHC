@@ -13,8 +13,10 @@ execute unless items entity @s inventory.3 *[minecraft:custom_data={Tags:"settin
 execute unless items entity @s inventory.4 *[minecraft:custom_data={Tags:"settings_pvp_team_stuff"}] run function uhc:pre_game/menu/load/settings/pvp/team_stuff/preset_menu
 execute unless items entity @s inventory.5 *[minecraft:custom_data={Tags:"settings_pvp_no_clean"}] run function uhc:pre_game/menu/load/settings/pvp/no_clean/preset_menu
 
-execute unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"settings_pvp_milk_bucket"}] run function uhc:pre_game/menu/load/settings/pvp/potion/milk_bucket/
-execute unless items entity @s inventory.11 *[minecraft:custom_data={Tags:"settings_pvp_compatibility"}] run function uhc:pre_game/menu/load/settings/pvp/potion/compatibility/
+execute unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"settings_pvp_milk_bucket"}] run function uhc:pre_game/menu/load/settings/pvp/potion/milk_bucket/apply_change
+execute unless items entity @s inventory.11 *[minecraft:custom_data={Tags:"settings_pvp_compatibility"}] run function uhc:pre_game/menu/load/settings/pvp/potion/compatibility/apply_change
+execute unless items entity @s inventory.12 *[minecraft:custom_data={Tags:"settings_pvp_speed"}] run function uhc:pre_game/menu/load/settings/pvp/potion/effect_speed/apply_change
+execute unless items entity @s inventory.13 *[minecraft:custom_data={Tags:"settings_pvp_strength"}] run function uhc:pre_game/menu/load/settings/pvp/potion/effect_strength/apply_change
 
 execute unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"settings_pvp"}] run return run function uhc:pre_game/menu/load/settings/pvp/preset_menu
 

@@ -15,12 +15,20 @@ execute if score #mls uhc.gamemode matches 1 run function mls:start/
 execute if score #nzl uhc.gamemode matches 1 run function nzl:start/
 
 ## Scénarios
+# Markers
 execute if score #bats uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.bats"],CustomName:[{"text":"Bat"}]}
 execute if score #biome_paranoia uhc.scenario matches 1.. run scoreboard players set #friendly_fire uhc.data.setup 1
 execute if score #blood_cycle uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.blood_cycle"],CustomName:[{"text":"Blood Cycle"}]}
 execute if score #blood_diamond uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.blood_diamond"],CustomName:[{"text":"Blood Diamond"}]}
 execute if score #go_to_hell uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.go_to_hell"],CustomName:[{"text":"Go To Hell"}]}
 execute if score #sky_high uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.sky_high"],CustomName:[{"text":"Sky High"}]}
+
+# Blood Diamond
+scoreboard players operation #random_damage_gold_ingot uhc.scenario.blood_diamond.temp = #tier_2_damage uhc.scenario.blood_diamond.setup
+scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp = #tier_2_gold_ingot uhc.scenario.blood_diamond.setup
+scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp += #random_damage_gold_ingot uhc.scenario.blood_diamond.temp
+scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp = #tier_2_diamond uhc.scenario.blood_diamond.setup
+scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp += #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp
 
 ## Copie de données dans des scoreboards temporaires
 # Minuteurs

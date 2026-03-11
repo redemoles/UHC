@@ -9,7 +9,7 @@
 
 execute if score #bhc uhc.gamemode matches 1 run function uhc:in_game/timer/hotbar/cooldown/priority_check/bhc
 function uhc:in_game/timer/hotbar/cooldown/priority_check/uhc
-execute if score #min_cooldown_alert uhc.data.temp matches 1.. run return run function uhc:in_game/timer/hotbar/cooldown/event_list/
+execute if score #min_cooldown_alert uhc.data.temp matches 1.. run return run function uhc:in_game/timer/hotbar/cooldown/event_list/main
 
 scoreboard players add #min_cooldown_temp uhc.data.temp 1
 

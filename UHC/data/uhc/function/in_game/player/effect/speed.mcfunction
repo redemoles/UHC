@@ -7,16 +7,21 @@
 # @description		Custom effet vitesse
 #
 
+# Suppression
+execute if score #effect_speed uhc.data.setup matches 0 if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Effet interdite.","color":"#FF3F3F"}]
+execute if score #effect_speed uhc.data.setup matches 0 if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"Effet forbidden.","color":"#FF3F3F"}]
+execute if score #effect_speed uhc.data.setup matches 0 run return run effect clear @s minecraft:speed
+
 # Speed Strength Compatibilité
 execute if score #effect_compatibility_speed_strength uhc.data.setup matches 0 if entity @s[tag=!uhc.effect.speed] run effect clear @s minecraft:strength
 
-# Nerf
+# Fin nerf
 execute if entity @s[predicate=!uhc:effect/speed] run tag @s remove uhc.effect.speed
-execute if score #effect_nerf_speed uhc.data.setup matches 1 if entity @s[predicate=!uhc:effect/speed] run return run attribute @s minecraft:movement_speed modifier remove uhc.effect.speed
+execute if score #effect_speed uhc.data.setup matches 1 if entity @s[predicate=!uhc:effect/speed] run return run attribute @s minecraft:movement_speed modifier remove uhc.effect.speed
 
 # Nerf
 execute if entity @s[predicate=uhc:effect/speed] run tag @s add uhc.effect.speed
-execute if score #effect_nerf_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_1] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.083 add_multiplied_total
-execute if score #effect_nerf_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_2] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.143 add_multiplied_total
-execute if score #effect_nerf_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_3] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.188 add_multiplied_total
-execute if score #effect_nerf_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_4] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.222 add_multiplied_total
+execute if score #effect_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_1] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.083 add_multiplied_total
+execute if score #effect_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_2] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.143 add_multiplied_total
+execute if score #effect_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_3] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.188 add_multiplied_total
+execute if score #effect_speed uhc.data.setup matches 1 if entity @s[predicate=uhc:effect/speed_4] run return run attribute @s minecraft:movement_speed modifier add uhc.effect.speed -0.222 add_multiplied_total

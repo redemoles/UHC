@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/settings/pvp/potion/compatibility/
+#> uhc:pre_game/menu/load/settings/pvp/potion/compatibility/apply_change
 #
 # @within			uhc:pre_game/menu/selection/
 #

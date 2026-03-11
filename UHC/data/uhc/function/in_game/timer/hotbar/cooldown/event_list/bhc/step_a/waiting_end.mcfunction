@@ -1,15 +1,16 @@
 
-#> uhc:in_game/timer/hotbar/cooldown/event_list/go_to_hell
+#> uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_a/waiting_end
 #
-# @within			uhc:in_game/timer/hotbar/cooldown/event_list/main
+# @within			uhc:in_game/timer/hotbar/cooldown/event_list/bhc/waiting
 #
 #
 # @description		Alerte décompte 
 #
 
-data modify storage uhc:temp hotbar.alert_fra append value [{"text":"de ","color":"#FFFFFF"}, {"text":"Go To Hell","color":"#FF3F3F"}]
-data modify storage uhc:temp hotbar.alert_eng append value [{"text":"of ","color":"#FFFFFF"}, {"text":"Go To Hell","color":"#FF3F3F"}]
+data modify storage uhc:temp hotbar.alert_fra append value [{"text":"fin du ","color":"#FFFFFF"}, {"text":"Bingo Classique","color":"#B73FFF"}]
+data modify storage uhc:temp hotbar.alert_eng append value [{"text":"end of the ","color":"#FFFFFF"}, {"text":"Classic Bingo","color":"#B73FFF"}]
 scoreboard players remove #min_cooldown_alert uhc.data.temp 1
+scoreboard players set #min_cooldown_temp_bhc uhc.data.temp 1
 execute if score #min_cooldown_alert uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.alert_fra append value [{"text":", ","color":"#FFFFFF"}]
 execute if score #min_cooldown_alert uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.alert_eng append value [{"text":", ","color":"#FFFFFF"}]
 execute if score #min_cooldown_alert uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_fra append value [{"text":" et ","color":"#FFFFFF"}]

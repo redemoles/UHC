@@ -8,10 +8,10 @@
 #
 
 ## Life / Vie
-# Timer when 1 life left.
-scoreboard players set #live_1 uhc.data.setup 0
-scoreboard players set #live_2 uhc.data.setup 0
-scoreboard players set #live_3 uhc.data.setup 0
+# Timer when 1 life delete.
+scoreboard players set #live_1 uhc.data.setup 30
+scoreboard players set #live_2 uhc.data.setup 30
+#scoreboard players set #live_3 uhc.data.setup 0
 scoreboard players set #lives uhc.data.setup 1
 scoreboard players set #start_in_sky uhc.data.setup 0
 
@@ -37,8 +37,8 @@ execute store result storage uhc:settings reward_kill.health int 1 run scoreboar
 scoreboard players set #friendly_fire uhc.data.setup 1
 scoreboard players set #tracker_allies uhc.data.setup 0
 
-scoreboard players set #effect_nerf_speed uhc.data.setup 1
-scoreboard players set #effect_nerf_strength uhc.data.setup 1
+scoreboard players set #effect_speed uhc.data.setup 1
+scoreboard players set #effect_strength uhc.data.setup 0
 scoreboard players set #custom_arrow uhc.data.setup 0
 
 ## Border / Bordure
@@ -96,6 +96,10 @@ execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:
 # Blood Diamond
 scoreboard players set #end_tier_1 uhc.scenario.blood_diamond.tier 8
 scoreboard players set #end_tier_2 uhc.scenario.blood_diamond.tier 20
+scoreboard players set #tier_2_damage uhc.scenario.blood_diamond.setup 20
+scoreboard players set #tier_2_gold_ingot uhc.scenario.blood_diamond.setup 20
+scoreboard players set #tier_2_diamond uhc.scenario.blood_diamond.setup 40
+scoreboard players set #tier_2_gift uhc.scenario.blood_diamond.setup 20
 
 # Go To Hell
 #> damage_type > 1 = -1 HP every 30 seconds

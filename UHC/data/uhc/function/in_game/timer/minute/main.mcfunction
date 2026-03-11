@@ -26,6 +26,13 @@ execute if score #shrink_2_time_left uhc.data.temp matches 0 run function uhc:in
 execute if score #shrink_3_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/3
 execute if score #shrink_1_timer_end uhc.data.temp matches 0 run gamerule minecraft:spawn_monsters false
 
+## Minuteur de modes de jeu
+execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/minute
+execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
+
+## Minuteur de scénarios
+execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/cooldown
+
 ## Réduction de vie automatique
 # Msg FRA
 execute if score #lives_start uhc.player.lives matches 3.. if score #live_2 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
@@ -40,13 +47,6 @@ execute if score #live_1 uhc.data.temp matches 0 run scoreboard players set #liv
 
 execute if score #live_2 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
 execute if score #live_1 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
-
-## Minuteur de modes de jeu
-execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/minute
-execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
-
-## Minuteur de scénarios
-execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/cooldown
 
 ## Texte alerte
 function uhc:in_game/timer/hotbar/cooldown/text_tellraw with storage uhc:temp

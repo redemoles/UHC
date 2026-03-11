@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/load/settings/pvp/potion/milk_bucket/
+#> uhc:pre_game/menu/load/settings/pvp/potion/milk_bucket/apply_change
 #
 # @within			uhc:pre_game/menu/selection/
 #

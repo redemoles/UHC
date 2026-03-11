@@ -25,5 +25,11 @@ execute if items entity @s container.* minecraft:totem_of_undying run function u
 # Items configurables
 execute if score #cobweb uhc.data.setup matches 0 if items entity @s container.* minecraft:cobweb run function uhc:in_game/inventory/ban_item/cobweb
 execute if score #milk_bucket uhc.data.setup matches 0 if items entity @s container.* minecraft:milk_bucket run function uhc:in_game/inventory/ban_item/milk_bucket
+execute if score #effect_speed uhc.data.setup matches 0 if items entity @s container.* *[potion_contents={potion:"minecraft:swiftness"}] run function uhc:in_game/inventory/ban_item/speed_potion
+execute if score #effect_speed uhc.data.setup matches 0 if items entity @s container.* *[potion_contents={potion:"minecraft:long_swiftness"}] run function uhc:in_game/inventory/ban_item/speed_potion
+execute if score #effect_speed uhc.data.setup matches 0 if items entity @s container.* *[potion_contents={potion:"minecraft:strong_swiftness"}] run function uhc:in_game/inventory/ban_item/speed_potion
+execute if score #effect_strength uhc.data.setup matches 0 if items entity @s container.* *[potion_contents={potion:"minecraft:strength"}] run function uhc:in_game/inventory/ban_item/strength_potion
+execute if score #effect_strength uhc.data.setup matches 0 if items entity @s container.* *[potion_contents={potion:"minecraft:long_strength"}] run function uhc:in_game/inventory/ban_item/strength_potion
+execute if score #effect_strength uhc.data.setup matches 0 if items entity @s container.* *[potion_contents={potion:"minecraft:strong_strength"}] run function uhc:in_game/inventory/ban_item/strength_potion
 
 advancement revoke @s only uhc:inventory_changed
