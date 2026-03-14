@@ -7,11 +7,6 @@
 # @description		Executed when the player completes the advancement
 #
 
-
-# Scoreboard d'advancement (+ recréation si partie relancée)
-#$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard objectives remove bhc.$(namespace)_$(line)_$(column)
-#$execute unless score #$(namespace)_$(line)_$(column) bhc.case matches -1000.. run scoreboard objectives add bhc.$(namespace)_$(line)_$(column) dummy
-
 ## Test si premier joueur de l'équipe et de la game à compléter
 # Premier joueur de l'équipe à réaliser la case
 scoreboard players set #team_first_case bhc.data 0

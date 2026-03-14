@@ -84,6 +84,8 @@ scoreboard players operation #shrink_2_length uhc.data.temp = #shrink_2_length u
 scoreboard players operation #shrink_3_length uhc.data.temp = #shrink_3_length uhc.data.setup
 function uhc:pre_game/config/timer
 
+scoreboard players operation #anonyme_team uhc.data.temp = #anonyme_team uhc.data.setup
+
 ## Équipe, Id, Markers, Spawns et TP
 # Remettre les joueurs dans leur équipes (si un mini-jeu du lobby les a fait leave)
 execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data.setup matches 0 as @a[tag=uhc.player] run function uhc:in_game/player/team_join/vanilla

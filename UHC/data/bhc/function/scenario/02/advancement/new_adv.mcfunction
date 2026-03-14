@@ -18,26 +18,6 @@ execute if score #team_first_case bhc.data matches 0 run return run tag @s remov
 ## Resélection de l'équipe du joueur
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Don de l'advancement aux alliés
 $advancement grant @a[predicate=uhc:id/team] only $(namespace):$(line)_$(column)
 
