@@ -1,7 +1,7 @@
 
 #> uhc:in_game/entity/item/cobweb
 #
-# @within			uhc:in_game/entity/item/
+# @within			uhc:in_game/entity/item/tick
 #
 #
 # @description		Modification des stacks de cobweb

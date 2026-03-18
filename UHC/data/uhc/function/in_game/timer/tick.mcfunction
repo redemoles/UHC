@@ -45,8 +45,10 @@ tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
 # Réduction des dégâts des flèches
 execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow] run function uhc:in_game/entity/arrow/
 execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow,tag=!uhc.checked] run function uhc:in_game/entity/arrow/basic
+execute if score #bhc bhc.scenario matches 51 as @e[type=#uhc:spiders,tag=!uhc.checked] run function uhc:in_game/entity/spider/reverse_size
+execute if score #bhc bhc.scenario matches 51 as @e[type=#uhc:zombies,tag=!uhc.checked] run function uhc:in_game/entity/zombie/reverse_size
 # Items
-execute as @e[type=minecraft:item,tag=!uhc.checked] run function uhc:in_game/entity/item/
+execute as @e[type=minecraft:item,tag=!uhc.checked] run function uhc:in_game/entity/item/tick
 
 ## Triggers
 # Night Vision
@@ -67,6 +69,7 @@ execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_ga
 execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=minecraft:marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenario/sound_paranoia/tick
 
 ## Réduction de vie automatique
+execute if score #live_3 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=4..}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
 execute if score #live_2 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
 execute if score #live_1 uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 

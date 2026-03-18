@@ -1,10 +1,10 @@
 
-#> uhc:pre_game/menu/load/lobby/02
+#> uhc:pre_game/menu/load/lobby/12
 #
 # @within			uhc:pre_game/menu/selection/
 #
 #
-# @description		Chargement du Lobby BHC Pale Garden
+# @description		Chargement du Lobby Ère Viking
 #
 
 scoreboard players set #lobby lobby.structure.data 12

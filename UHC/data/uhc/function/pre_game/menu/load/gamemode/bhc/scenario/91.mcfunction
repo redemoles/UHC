@@ -48,8 +48,8 @@ scoreboard players set #live_1 uhc.data.setup 60
 ## Scénario et autre configuration
 scoreboard players set #blood_diamond uhc.scenario 1
 scoreboard players set #biome_paranoia uhc.scenario 0
+
 scoreboard players set #start_in_sky uhc.data.setup 1
 scoreboard players set #tracker_allies uhc.data.setup 1
-
 scoreboard players set #absorption uhc.data.setup 1
 scoreboard players set #wolf_count uhc.data.setup 0

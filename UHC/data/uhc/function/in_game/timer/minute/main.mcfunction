@@ -35,16 +35,20 @@ execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/sc
 
 ## Réduction de vie automatique
 # Msg FRA
+execute if score #lives_start uhc.player.lives matches 4.. if score #live_3 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.lives"},"color":"#ffffff","bold":true},{"text":"❤ ","color":"#E73FFF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤❤","color":"#3FE7FF","bold":false}]
 execute if score #lives_start uhc.player.lives matches 3.. if score #live_2 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
 execute if score #lives_start uhc.player.lives matches 2.. if score #live_1 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤ ","color":"#FFE73F","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤","color":"#E73F3F","bold":false}]
 
 # Msg ENG
+execute if score #lives_start uhc.player.lives matches 4.. if score #live_3 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.lives"},"color":"#ffffff","bold":true},{"text":"❤ ","color":"#E73FFF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤❤","color":"#3FE7FF","bold":false}]
 execute if score #lives_start uhc.player.lives matches 3.. if score #live_2 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
 execute if score #lives_start uhc.player.lives matches 2.. if score #live_1 uhc.data.temp matches 0 as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ❤❤ ","color":"#FFE73F","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤","color":"#E73F3F","bold":false}]
 
+execute if score #live_3 uhc.data.temp matches 0 run scoreboard players set #lives uhc.player.lives 3
 execute if score #live_2 uhc.data.temp matches 0 run scoreboard players set #lives uhc.player.lives 2
 execute if score #live_1 uhc.data.temp matches 0 run scoreboard players set #lives uhc.player.lives 1
 
+execute if score #live_3 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=4..}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
 execute if score #live_2 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
 execute if score #live_1 uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 

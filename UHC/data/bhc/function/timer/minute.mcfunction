@@ -17,6 +17,7 @@ execute if score #bhc bhc.scenario matches 01 run scoreboard players remove #ste
 execute if score #bhc bhc.scenario matches 00 run function bhc:scenario/00/timer/steps
 execute if score #bhc bhc.scenario matches 01 run function bhc:scenario/01/timer/steps
 execute if score #bhc bhc.scenario matches 02 run function bhc:scenario/02/timer/steps
+execute if score #bhc bhc.scenario matches 51 run function bhc:scenario/51/timer/steps
 execute if score #bhc bhc.scenario matches 91 run function bhc:scenario/91/timer/steps
 execute if score #bhc bhc.scenario matches 99 run function bhc:scenario/99/timer/steps
 execute if score #minutes uhc.data.temp matches 0 run scoreboard players operation #tick bhc.data.temp = #tick uhc.data.temp

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/cut_clean/tick
 #
-# @within			uhc:in_game/entity/item/
+# @within			uhc:in_game/entity/item/tick
 #
 #
 # @description		Donne un item cuit lors de l'obtention d'un item non cuit/fondu

@@ -22,6 +22,7 @@ scoreboard players operation #anonyme_team uhc.data.setup = #anonyme_team uhc.da
 $execute if score #bhc bhc.scenario matches 00 run function bhc:scenario/00/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 01 run function bhc:scenario/01/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 02 run function bhc:scenario/02/advancement/new_adv with storage $(namespace) $(line)_$(column)
+$execute if score #bhc bhc.scenario matches 51 run function bhc:scenario/51/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 91 run function bhc:scenario/91/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 99 run function bhc:scenario/99/advancement/new_adv with storage $(namespace) $(line)_$(column)
 

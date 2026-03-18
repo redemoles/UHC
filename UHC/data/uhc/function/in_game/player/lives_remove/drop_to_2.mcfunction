@@ -29,6 +29,7 @@ execute unless score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.temp 
 execute if score #bhc uhc.gamemode matches 1 if score #live_2 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survival","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
 
 # Title
+execute if score #live_2 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run title @s times 0s 1.5s 0.5s
 execute if score #live_2 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run title @s title [{"text":" ","color":"#FFE73F","bold":false}]
 execute if score #live_2 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run title @s subtitle [{"text":"❤❤❤ ","color":"#3FE7FF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤","color":"#FFE73F","bold":false}]
 execute if score #live_2 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 1 0.5

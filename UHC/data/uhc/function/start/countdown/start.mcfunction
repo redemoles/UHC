@@ -14,7 +14,8 @@ scoreboard players set @a uhc.player.tp 0
 execute if score #tick_start uhc.data.temp matches 4 run function uhc:start/countdown/text
 
 # Sons
-execute if score #tick_start uhc.data.temp matches 4 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute unless score #bhc bhc.scenario matches 51..60 if score #tick_start uhc.data.temp matches 4 as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 100 1 1
+execute if score #bhc bhc.scenario matches 51 if score #tick_start uhc.data.temp matches 4..42 run function uhc:start/countdown/sound/among_us
 execute if score #tick_start uhc.data.temp matches 81 as @a at @s run playsound minecraft:item.trident.riptide_3 master @s ~ ~ ~ 0.8 1 1
 execute if score #tick_start uhc.data.temp matches 100 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5
 execute if score #tick_start uhc.data.temp matches 120 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5

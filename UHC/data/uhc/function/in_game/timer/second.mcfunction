@@ -21,8 +21,7 @@ execute if score #sec_cooldown uhc.data.temp matches 00..09 run data modify stor
 execute if score #sec_cooldown uhc.data.temp matches 10..59 run data modify storage uhc:temp hotbar.sec_cooldown set value ""
 
 ## Compteur avant kill items
-scoreboard players add @e[type=item] uhc.timer.entities 1
-kill @e[type=item,scores={uhc.timer.entities=150..}]
+execute as @e[type=minecraft:item] run function uhc:in_game/entity/item/second
 
 ## Kill Bats
 execute unless score #bats uhc.scenario matches 1 as @e[type=minecraft:bat] run tp 0 -1000 0

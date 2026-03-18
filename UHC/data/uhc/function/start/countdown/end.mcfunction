@@ -12,7 +12,9 @@ execute in minecraft:the_nether run function uhc:all_dimension_commands/start
 execute in minecraft:the_end run function uhc:all_dimension_commands/start
 
 ## Démarrage de la partie
-time set 0
+time set 0s
+execute if score #bhc bhc.scenario matches 51 run time set 600s
+execute if score #bhc bhc.scenario matches 51 in minecraft:overworld run gamerule minecraft:spawn_monsters false
 gamemode survival @a[tag=uhc.player]
 effect clear @a
 effect give @a minecraft:instant_health 1 9 true

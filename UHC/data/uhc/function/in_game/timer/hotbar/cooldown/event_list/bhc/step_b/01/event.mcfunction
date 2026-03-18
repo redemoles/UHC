@@ -1,7 +1,7 @@
 
-#> uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/01/start
+#> uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/01/event
 #
-# @within			uhc:in_game/timer/hotbar/cooldown/event_list/bhc/event_start
+# @within			uhc:in_game/timer/hotbar/cooldown/event_list/bhc/event
 #
 #
 # @description		Alerte décompte 

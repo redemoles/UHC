@@ -18,6 +18,10 @@ execute if score #bhc bhc.scenario matches 02 run title @a title [{"text":"Bingo
 execute if score #bhc bhc.scenario matches 02 as @a[scores={uhc.player.lang=061801}] run title @s subtitle [{"text":" Ère Viking ","color":"#FFFFFF","bold":false}]
 execute if score #bhc bhc.scenario matches 02 as @a[scores={uhc.player.lang=051407}] run title @s subtitle [{"text":" Viking Era ","color":"#FFFFFF","bold":false}]
 
+execute if score #bhc bhc.scenario matches 51 run title @a title [{"text":"CHU ","color":"#FFE73F","bold":false},{"text":"ogniB","color":"#B73FFF","bold":false}]
+execute if score #bhc bhc.scenario matches 51 as @a[scores={uhc.player.lang=061801}] run title @s subtitle [{"text":" Inversion ","color":"#FFFFFF","bold":false}]
+execute if score #bhc bhc.scenario matches 51 as @a[scores={uhc.player.lang=051407}] run title @s subtitle [{"text":" Inverted ","color":"#FFFFFF","bold":false}]
+
 execute if score #bhc bhc.scenario matches 91 run title @a title [{"text":"Bingo","color":"#CFCFCF","bold":false},{"text":" UHC","color":"#FFE73F","bold":false}]
 execute if score #bhc bhc.scenario matches 91 as @a[scores={uhc.player.lang=061801}] run title @s subtitle [{"text":" Chill Mode ","color":"#FFFFFF","bold":false}]
 execute if score #bhc bhc.scenario matches 91 as @a[scores={uhc.player.lang=051407}] run title @s subtitle [{"text":" Chill Mode ","color":"#FFFFFF","bold":false}]

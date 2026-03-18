@@ -33,15 +33,27 @@ execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.str
 execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 05 positioned 0 65 0 run function lobby:lobby_map/12/5
 execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 07 positioned 0 65 0 run function lobby:lobby_map/12/7
 execute if score #lobby lobby.structure.data matches 12 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/12/11
+# Lobby 13 - Bingo UHC - April Fool 2026
+execute if score #lobby lobby.structure.data matches 13 if score #tick lobby.structure.data matches 01 positioned 0 65 0 run function lobby:lobby_map/13/1
+execute if score #lobby lobby.structure.data matches 13 if score #tick lobby.structure.data matches 03 positioned 0 65 0 run function lobby:lobby_map/13/3
+execute if score #lobby lobby.structure.data matches 13 if score #tick lobby.structure.data matches 05 positioned 0 65 0 run function lobby:lobby_map/13/5
+execute if score #lobby lobby.structure.data matches 13 if score #tick lobby.structure.data matches 07 positioned 0 65 0 run function lobby:lobby_map/13/7
+execute if score #lobby lobby.structure.data matches 13 if score #tick lobby.structure.data matches 11 positioned 0 65 0 run function lobby:lobby_map/13/11
 
 # Backroom
 execute if score #tick lobby.structure.data matches 01 positioned 0 62 -640 run function lobby:lobby_map/backroom/
 
-execute positioned 0 65 0 run fill ~-63 ~-3 ~23 ~64 ~-7 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
-execute positioned 0 65 0 run fill ~-63 ~-8 ~23 ~64 ~-12 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
-execute positioned 0 65 0 run fill ~-63 ~-13 ~23 ~64 ~-17 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-3 ~23 ~69 ~-7 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-8 ~23 ~69 ~-12 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-13 ~23 ~69 ~-17 ~69 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
 
-execute positioned 0 65 0 run fillbiome ~-63 ~30 ~69 ~64 ~-7 ~-69 minecraft:taiga
+execute positioned 0 65 0 run fill ~-68 ~-3 ~22 ~69 ~-7 ~-21 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-8 ~22 ~69 ~-12 ~-21 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-13 ~22 ~69 ~-17 ~-21 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+
+execute positioned 0 65 0 run fill ~-68 ~-3 ~-22 ~69 ~-7 ~-68 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-8 ~-22 ~69 ~-12 ~-68 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
+execute positioned 0 65 0 run fill ~-68 ~-13 ~-22 ~69 ~-17 ~-68 minecraft:light[level=0,waterlogged=false] replace minecraft:bedrock
 
 # Message fin
 execute if score #loaded lobby.structure.data matches 1 run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Lobby chargé."}]

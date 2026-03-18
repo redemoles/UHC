@@ -39,5 +39,6 @@ execute if score #game_progress uhc.game_progress matches 2.. run scoreboard pla
 
 # Bingo UHC
 execute if score #bhc bhc.scenario matches 02 as @s[tag=uhc.player] in uhc:lobby run function bhc:scenario/02/target/death/cycle_reset
+execute if score #live_3 uhc.data.temp matches ..0 if score @s uhc.player.lives matches 4.. as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
 execute if score #live_2 uhc.data.temp matches ..0 if score @s uhc.player.lives matches 3 as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
 execute if score #live_1 uhc.data.temp matches ..0 if score @s uhc.player.lives matches 2 as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1

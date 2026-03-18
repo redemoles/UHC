@@ -94,17 +94,9 @@ scoreboard players remove #end_tier_1 uhc.scenario.blood_diamond.tier 1
 scoreboard players remove #end_tier_2 uhc.scenario.blood_diamond.tier 1
 execute store result storage uhc:scenario blood_diamond.mined_tier_2 int 1 run scoreboard players get #mined_tier_2 uhc.scenario.blood_diamond.tier
 
-scoreboard players remove #tier_2_damage uhc.scenario.blood_diamond.setup 1
-scoreboard players remove #tier_2_damage uhc.scenario.blood_diamond.setup 1
 execute store result storage uhc:scenario blood_diamond.tier_2_damage int 1 run scoreboard players get #tier_2_damage uhc.scenario.blood_diamond.setup
-scoreboard players remove #tier_2_gold_ingot uhc.scenario.blood_diamond.setup 1
-scoreboard players remove #tier_2_gold_ingot uhc.scenario.blood_diamond.setup 1
 execute store result storage uhc:scenario blood_diamond.tier_2_gold_ingot int 1 run scoreboard players get #tier_2_gold_ingot uhc.scenario.blood_diamond.setup
-scoreboard players remove #tier_2_diamond uhc.scenario.blood_diamond.setup 1
-scoreboard players remove #tier_2_diamond uhc.scenario.blood_diamond.setup 1
 execute store result storage uhc:scenario blood_diamond.tier_2_diamond int 1 run scoreboard players get #tier_2_diamond uhc.scenario.blood_diamond.setup
-scoreboard players remove #tier_2_gift uhc.scenario.blood_diamond.setup 1
-scoreboard players remove #tier_2_gift uhc.scenario.blood_diamond.setup 1
 execute store result storage uhc:scenario blood_diamond.tier_2_gift int 1 run scoreboard players get #tier_2_gift uhc.scenario.blood_diamond.setup
 
 execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard players get #go_to_hell uhc.data.temp

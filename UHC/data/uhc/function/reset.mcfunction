@@ -192,6 +192,8 @@ scoreboard objectives remove uhc.player.tp
 scoreboard objectives remove uhc.player.lives
 scoreboard objectives remove uhc.player.health.20
 scoreboard objectives remove uhc.player.health.100
+scoreboard objectives remove uhc.player.health.reverse.20
+scoreboard objectives remove uhc.player.health.reverse.100
 scoreboard objectives remove uhc.player.health.auto
 scoreboard objectives remove uhc.player.health.check
 scoreboard objectives remove uhc.player.timer
@@ -269,6 +271,8 @@ scoreboard objectives add uhc.player.online dummy
 scoreboard objectives add uhc.player.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.player.tp dummy
 scoreboard objectives add uhc.player.lives dummy
+scoreboard objectives add uhc.player.health.reverse.20 dummy
+scoreboard objectives add uhc.player.health.reverse.100 dummy
 scoreboard objectives add uhc.player.health.20 dummy
 scoreboard objectives add uhc.player.health.100 dummy "%"
 scoreboard objectives add uhc.player.health.auto health [{"text":"❤","color":"#FF5F5F"}]
@@ -361,10 +365,10 @@ execute if score #team_health uhc.scenario matches 1 unless score #hp_tab uhc.da
 execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health.100
 execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.100
 
-execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.player.health.auto rendertype integer
-execute if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.scenario.team_health.team rendertype integer
-execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.player.health.auto rendertype hearts
-execute if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.scenario.team_health.team rendertype hearts
+execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.player.health.auto rendertype integer
+execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.scenario.team_health.team rendertype integer
+execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.player.health.auto rendertype hearts
+execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.scenario.team_health.team rendertype hearts
 
 ## Multiplicateurs
 scoreboard players set #-1m uhc.data.numbers -1000000
@@ -446,4 +450,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26034
+scoreboard players set #update uhc.data.update 26035
