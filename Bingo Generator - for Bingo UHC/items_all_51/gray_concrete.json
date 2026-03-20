@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Light Gray Concrete",
+			"text": "Obtenir un(e) Light Gray Glazed Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:light_gray_concrete"
+							"minecraft:light_gray_glazed_terracotta"
 						]
 					}
 				]

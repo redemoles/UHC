@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Cobbled Deepslate Wall",
+			"text": "Obtenir un(e) Tuff Wall",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:cobbled_deepslate_wall"
+							"minecraft:tuff_wall"
 						]
 					}
 				]

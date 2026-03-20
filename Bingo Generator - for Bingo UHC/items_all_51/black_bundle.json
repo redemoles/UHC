@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) White Bundle",
+			"text": "Obtenir un(e) White Harness",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:white_bundle"
+							"minecraft:white_harness"
 						]
 					}
 				]

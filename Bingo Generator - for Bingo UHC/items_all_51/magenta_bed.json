@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Orange Bed",
+			"text": "Obtenir un(e) Orange Carpet",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:orange_bed"
+							"minecraft:orange_carpet"
 						]
 					}
 				]

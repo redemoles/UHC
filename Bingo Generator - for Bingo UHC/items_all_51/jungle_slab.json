@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Bamboo Slab",
+			"text": "Obtenir un(e) Bamboo Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:bamboo_slab"
+							"minecraft:bamboo_stairs"
 						]
 					}
 				]

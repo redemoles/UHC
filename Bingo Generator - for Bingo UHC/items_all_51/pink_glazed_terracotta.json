@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Purple Glazed Terracotta",
+			"text": "Obtenir un(e) Purple Concrete",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:purple_glazed_terracotta"
+							"minecraft:purple_concrete"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Cyan Concrete Powder",
+			"text": "Obtenir un(e) Cyan Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:cyan_concrete_powder"
+							"minecraft:cyan_terracotta"
 						]
 					}
 				]

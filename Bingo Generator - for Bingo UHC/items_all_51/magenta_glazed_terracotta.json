@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Orange Glazed Terracotta",
+			"text": "Obtenir un(e) Orange Concrete",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:orange_glazed_terracotta"
+							"minecraft:orange_concrete"
 						]
 					}
 				]

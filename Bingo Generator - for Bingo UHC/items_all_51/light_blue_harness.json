@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Blue Harness",
+			"text": "Obtenir un(e) Blue Bundle",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:blue_harness"
+							"minecraft:blue_bundle"
 						]
 					}
 				]

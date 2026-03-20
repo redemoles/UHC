@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Light Gray Wool",
+			"text": "Obtenir un(e) Light Gray Banner",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:light_gray_wool"
+							"minecraft:light_gray_banner"
 						]
 					}
 				]

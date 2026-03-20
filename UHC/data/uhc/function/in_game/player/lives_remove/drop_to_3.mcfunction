@@ -14,34 +14,31 @@ scoreboard players operation #team uhc.id.team = @s uhc.id.team
 execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run function uhc:in_game/player/team_join/vanilla
 
 ## Message
-# Points
+# Bingo UHC > Points
 scoreboard players set #temp uhc.data.temp 100
 scoreboard players operation #temp uhc.data.temp *= #team_size uhc.data.temp
 scoreboard players operation #temp uhc.data.temp /= @s uhc.team.size
 scoreboard players operation #temp uhc.data.temp /= #10 uhc.data.numbers
 
 # FRA
-execute unless score #bhc uhc.gamemode matches 1 if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" -1 vie.","color":"#FF3F3F","bold":false},{"text":" Compensation reçu.","color":"#FFFFFF","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survie","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
+execute unless score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" -1 vie.","color":"#FF3F3F","bold":false},{"text":" Compensation reçu.","color":"#FFFFFF","bold":false}]
+execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survie","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
 
 # ENG
-execute unless score #bhc uhc.gamemode matches 1 if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" -1 live.","color":"#FF3F3F","bold":false},{"text":" Compensation received.","color":"#FFFFFF","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survival","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
+execute unless score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" -1 live.","color":"#FF3F3F","bold":false},{"text":" Compensation received.","color":"#FFFFFF","bold":false}]
+execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survival","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
 
 # Title
-execute if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s times 0s 1.5s 0.5s
-execute if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s title [{"text":" ","color":"#FFE73F","bold":false}]
-execute if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s subtitle [{"score":{"name":"@s","objective":"uhc.player.lives"},"color":"#FFFFFF","bold":true},{"text":"❤ ","color":"#E73FFF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤❤","color":"#3FE7FF","bold":false}]
-execute if score #live_3 uhc.data.temp matches ..0 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 1 0.5
+execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s times 0s 1.5s 0.5s
+execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s title [{"text":" ","color":"#FFE73F","bold":false}]
+execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s subtitle [{"score":{"name":"@s","objective":"uhc.player.lives"},"color":"#FFFFFF","bold":true},{"text":"❤ ","color":"#E73FFF","bold":false},{"text":"→","color":"#FFFFFF","bold":false},{"text":" ❤❤❤","color":"#3FE7FF","bold":false}]
+execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 1 0.5
 
 # Couleur du joueur
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run function uhc:in_game/scenario/biome_paranoia/by_colors
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run function uhc:in_game/scenario/biome_paranoia/by_nickname
 execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data.setup matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run team join 091 @s
 execute if score #nzl uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run function uhc:in_game/player/team_join/nzl
-
-## Équipe resélectionnée
-scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 ## Récompense
 # Tous les modes de jeu

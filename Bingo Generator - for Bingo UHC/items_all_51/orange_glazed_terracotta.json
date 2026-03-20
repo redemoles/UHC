@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Magenta Glazed Terracotta",
+			"text": "Obtenir un(e) Magenta Concrete",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:magenta_glazed_terracotta"
+							"minecraft:magenta_concrete"
 						]
 					}
 				]

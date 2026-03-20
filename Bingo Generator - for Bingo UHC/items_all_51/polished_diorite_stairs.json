@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Polished Andesite Stairs",
+			"text": "Obtenir un(e) Polished Andesite Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:polished_andesite_stairs"
+							"minecraft:polished_andesite_slab"
 						]
 					}
 				]

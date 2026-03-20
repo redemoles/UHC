@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Light Gray Bed",
+			"text": "Obtenir un(e) Light Gray Carpet",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:light_gray_bed"
+							"minecraft:light_gray_carpet"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Cyan Harness",
+			"text": "Obtenir un(e) Cyan Bundle",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:cyan_harness"
+							"minecraft:cyan_bundle"
 						]
 					}
 				]

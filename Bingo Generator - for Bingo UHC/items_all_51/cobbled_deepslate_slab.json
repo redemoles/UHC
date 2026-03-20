@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Cobbled Deepslate Slab",
+			"text": "Obtenir un(e) Tuff Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:cobbled_deepslate_slab"
+							"minecraft:tuff_stairs"
 						]
 					}
 				]

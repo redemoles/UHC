@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Cobblestone Slab",
+			"text": "Obtenir un(e) Cobblestone Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:cobblestone_slab"
+							"minecraft:cobblestone_stairs"
 						]
 					}
 				]

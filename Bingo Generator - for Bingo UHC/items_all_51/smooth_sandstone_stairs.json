@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Smooth Red Sandstone Stairs",
+			"text": "Obtenir un(e) Smooth Red Sandstone Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:smooth_red_sandstone_stairs"
+							"minecraft:smooth_red_sandstone_slab"
 						]
 					}
 				]

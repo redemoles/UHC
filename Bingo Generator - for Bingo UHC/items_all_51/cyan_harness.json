@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Lime Harness",
+			"text": "Obtenir un(e) Lime Bundle",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:lime_harness"
+							"minecraft:lime_bundle"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Tuff Brick Slab",
+			"text": "Obtenir un(e) Deepslate Brick Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:tuff_brick_slab"
+							"minecraft:deepslate_brick_stairs"
 						]
 					}
 				]

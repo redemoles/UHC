@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Nether Brick Stairs",
+			"text": "Obtenir un(e) Nether Brick Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:nether_brick_stairs"
+							"minecraft:nether_brick_slab"
 						]
 					}
 				]

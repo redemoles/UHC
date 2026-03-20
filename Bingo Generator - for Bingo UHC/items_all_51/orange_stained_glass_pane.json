@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Magenta Stained Glass Pane",
+			"text": "Obtenir un(e) Magenta Stained Glass",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:magenta_stained_glass_pane"
+							"minecraft:magenta_stained_glass"
 						]
 					}
 				]

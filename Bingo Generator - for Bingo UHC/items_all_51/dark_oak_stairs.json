@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Pale Oak Stairs",
+			"text": "Obtenir un(e) Pale Oak Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:pale_oak_stairs"
+							"minecraft:pale_oak_slab"
 						]
 					}
 				]

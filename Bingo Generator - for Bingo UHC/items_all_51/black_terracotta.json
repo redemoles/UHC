@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) White Terracotta",
+			"text": "Obtenir un(e) White Concrete Powder",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:white_terracotta"
+							"minecraft:white_concrete_powder"
 						]
 					}
 				]

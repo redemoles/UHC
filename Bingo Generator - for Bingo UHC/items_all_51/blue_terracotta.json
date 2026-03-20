@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Light Blue Terracotta",
+			"text": "Obtenir un(e) Light Blue Concrete Powder",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:light_blue_terracotta"
+							"minecraft:light_blue_concrete_powder"
 						]
 					}
 				]

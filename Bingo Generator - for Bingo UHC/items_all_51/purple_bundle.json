@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Pink Bundle",
+			"text": "Obtenir un(e) Pink Harness",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:pink_bundle"
+							"minecraft:pink_harness"
 						]
 					}
 				]

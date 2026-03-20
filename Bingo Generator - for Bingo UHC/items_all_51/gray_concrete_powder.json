@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Light Gray Concrete Powder",
+			"text": "Obtenir un(e) Light Gray Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:light_gray_concrete_powder"
+							"minecraft:light_gray_terracotta"
 						]
 					}
 				]

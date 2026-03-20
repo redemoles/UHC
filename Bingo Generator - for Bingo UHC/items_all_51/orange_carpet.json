@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Magenta Carpet",
+			"text": "Obtenir un(e) Magenta Bed",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:magenta_carpet"
+							"minecraft:magenta_bed"
 						]
 					}
 				]

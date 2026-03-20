@@ -23,13 +23,6 @@ execute if score #blood_diamond uhc.scenario matches 1.. in uhc:lobby run summon
 execute if score #go_to_hell uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.go_to_hell"],CustomName:[{"text":"Go To Hell"}]}
 execute if score #sky_high uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.sky_high"],CustomName:[{"text":"Sky High"}]}
 
-# Blood Diamond
-scoreboard players operation #random_damage_gold_ingot uhc.scenario.blood_diamond.temp = #tier_2_damage uhc.scenario.blood_diamond.setup
-scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp = #tier_2_gold_ingot uhc.scenario.blood_diamond.setup
-scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp += #random_damage_gold_ingot uhc.scenario.blood_diamond.temp
-scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp = #tier_2_diamond uhc.scenario.blood_diamond.setup
-scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp += #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp
-
 ## Copie de données dans des scoreboards temporaires
 # Minuteurs
 scoreboard players operation #pve uhc.data.temp = #pve uhc.data.setup
@@ -120,8 +113,15 @@ execute if score #start_delay uhc.data.setup matches 1 run scoreboard players se
 execute unless score #start_in_sky uhc.data.setup matches 1 run function uhc:in_game/team/collision/always
 
 ## Scoreboard spéciaux
+# Blood Diamond
 scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
+
+scoreboard players operation #random_damage_gold_ingot uhc.scenario.blood_diamond.temp = #tier_2_damage uhc.scenario.blood_diamond.setup
+scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp = #tier_2_gold_ingot uhc.scenario.blood_diamond.setup
+scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp += #random_damage_gold_ingot uhc.scenario.blood_diamond.temp
+scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp = #tier_2_diamond uhc.scenario.blood_diamond.setup
+scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp += #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp
 
 scoreboard objectives add uhc.player.mined.temp.coal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add uhc.player.mined.temp.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Spruce Stairs",
+			"text": "Obtenir un(e) Spruce Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:spruce_stairs"
+							"minecraft:spruce_slab"
 						]
 					}
 				]

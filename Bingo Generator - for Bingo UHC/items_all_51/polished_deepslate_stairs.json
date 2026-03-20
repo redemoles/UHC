@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Polished Deepslate Stairs",
+			"text": "Obtenir un(e) Polished Tuff Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:polished_deepslate_stairs"
+							"minecraft:polished_tuff_slab"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Mud Brick Slab",
+			"text": "Obtenir un(e) Mud Brick Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:mud_brick_slab"
+							"minecraft:mud_brick_stairs"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Jungle Stairs",
+			"text": "Obtenir un(e) Jungle Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:jungle_stairs"
+							"minecraft:jungle_slab"
 						]
 					}
 				]

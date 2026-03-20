@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Yellow Bundle",
+			"text": "Obtenir un(e) Yellow Harness",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:yellow_bundle"
+							"minecraft:yellow_harness"
 						]
 					}
 				]

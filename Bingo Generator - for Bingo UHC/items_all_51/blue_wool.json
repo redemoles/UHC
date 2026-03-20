@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Light Blue Wool",
+			"text": "Obtenir un(e) Light Blue Banner",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:light_blue_wool"
+							"minecraft:light_blue_banner"
 						]
 					}
 				]

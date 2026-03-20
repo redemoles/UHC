@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Chiseled Deepslate",
+			"text": "Obtenir un(e) Chiseled Tuff",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:chiseled_deepslate"
+							"minecraft:chiseled_tuff"
 						]
 					}
 				]

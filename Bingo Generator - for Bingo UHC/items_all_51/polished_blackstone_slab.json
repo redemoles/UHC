@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Stone Slab",
+			"text": "Obtenir un(e) Stone Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:stone_slab"
+							"minecraft:stone_stairs"
 						]
 					}
 				]

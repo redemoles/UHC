@@ -7,7 +7,6 @@
 # @description		Détection aucun joueur dans une équipe
 #
 
-execute store result score #count bhc.data.temp if entity @a[scores={uhc.player.lives=3},predicate=uhc:id/team]
-scoreboard players operation @s bhc.team.livescount += #count bhc.data.temp
-execute store result score #count bhc.data.temp if entity @a[scores={uhc.player.lives=2},predicate=uhc:id/team]
-scoreboard players operation @s bhc.team.livescount += #count bhc.data.temp
+function uhc:in_game/player/lives_remove/drop_to_3
+function uhc:in_game/player/lives_remove/drop_to_2
+function uhc:in_game/player/lives_remove/drop_to_1

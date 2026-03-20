@@ -28,7 +28,7 @@ execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer
 
 # Mort subite
 execute if score #player uhc.scenario.ironman matches 2.. run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@a[tag=uhc.ironman]","bold":false},{"text":" sont Ironmans !","color":"#FFE73F","bold":false}]
-execute if score #player uhc.scenario.ironman matches 2.. run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@a[tag=uhc.ironman]","bold":false},{"text":" sont Ironmans !","color":"#FFE73F","bold":false}]
+execute if score #player uhc.scenario.ironman matches 2.. run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@a[tag=uhc.ironman]","bold":false},{"text":" are Ironmans !","color":"#FFE73F","bold":false}]
 tag @a[tag=uhc.ironman] remove uhc.ironman
 scoreboard players set #player uhc.scenario.ironman 0
 

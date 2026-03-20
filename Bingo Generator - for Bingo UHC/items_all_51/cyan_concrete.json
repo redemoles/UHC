@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Lime Concrete",
+			"text": "Obtenir un(e) Lime Glazed Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:lime_concrete"
+							"minecraft:lime_glazed_terracotta"
 						]
 					}
 				]

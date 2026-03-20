@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Polished Blackstone Stairs",
+			"text": "Obtenir un(e) Polished Blackstone Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:polished_blackstone_stairs"
+							"minecraft:polished_blackstone_slab"
 						]
 					}
 				]

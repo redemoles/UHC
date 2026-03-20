@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Yellow Concrete",
+			"text": "Obtenir un(e) Yellow Glazed Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:yellow_concrete"
+							"minecraft:yellow_glazed_terracotta"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Dark Oak Slab",
+			"text": "Obtenir un(e) Dark Oak Stairs",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:dark_oak_slab"
+							"minecraft:dark_oak_stairs"
 						]
 					}
 				]

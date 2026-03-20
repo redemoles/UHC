@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Chiseled Tuff Bricks",
+			"text": "Obtenir un(e) Deepslate Tiles",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:chiseled_tuff_bricks"
+							"minecraft:deepslate_tiles"
 						]
 					}
 				]

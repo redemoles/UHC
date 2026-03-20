@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Green Harness",
+			"text": "Obtenir un(e) Green Bundle",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:green_harness"
+							"minecraft:green_bundle"
 						]
 					}
 				]

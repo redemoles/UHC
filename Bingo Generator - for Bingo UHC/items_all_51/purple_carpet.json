@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Pink Carpet",
+			"text": "Obtenir un(e) Pink Bed",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:pink_carpet"
+							"minecraft:pink_bed"
 						]
 					}
 				]

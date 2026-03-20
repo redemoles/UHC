@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Brown Bundle",
+			"text": "Obtenir un(e) Brown Harness",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:brown_bundle"
+							"minecraft:brown_harness"
 						]
 					}
 				]

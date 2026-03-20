@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Red Carpet",
+			"text": "Obtenir un(e) Red Bed",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:red_carpet"
+							"minecraft:red_bed"
 						]
 					}
 				]

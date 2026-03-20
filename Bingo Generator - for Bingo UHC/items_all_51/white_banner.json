@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Black Banner",
+			"text": "Obtenir un(e) Black Wool",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:black_banner"
+							"minecraft:black_wool"
 						]
 					}
 				]

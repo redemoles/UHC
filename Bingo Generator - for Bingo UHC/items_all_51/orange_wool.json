@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Magenta Wool",
+			"text": "Obtenir un(e) Magenta Banner",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:magenta_wool"
+							"minecraft:magenta_banner"
 						]
 					}
 				]

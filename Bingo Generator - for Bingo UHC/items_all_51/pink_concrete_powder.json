@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Purple Concrete Powder",
+			"text": "Obtenir un(e) Purple Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:purple_concrete_powder"
+							"minecraft:purple_terracotta"
 						]
 					}
 				]

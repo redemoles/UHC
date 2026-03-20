@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Brown Stained Glass Pane",
+			"text": "Obtenir un(e) Brown Stained Glass",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:brown_stained_glass_pane"
+							"minecraft:brown_stained_glass"
 						]
 					}
 				]

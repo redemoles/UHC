@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Polished Granite Stairs",
+			"text": "Obtenir un(e) Polished Granite Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:polished_granite_stairs"
+							"minecraft:polished_granite_slab"
 						]
 					}
 				]

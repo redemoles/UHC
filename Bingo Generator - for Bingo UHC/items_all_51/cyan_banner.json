@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Lime Banner",
+			"text": "Obtenir un(e) Lime Wool",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:lime_banner"
+							"minecraft:lime_wool"
 						]
 					}
 				]

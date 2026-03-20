@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) White Carpet",
+			"text": "Obtenir un(e) White Bed",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:white_carpet"
+							"minecraft:white_bed"
 						]
 					}
 				]

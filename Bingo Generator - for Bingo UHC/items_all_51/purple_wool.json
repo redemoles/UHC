@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Pink Wool",
+			"text": "Obtenir un(e) Pink Banner",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:pink_wool"
+							"minecraft:pink_banner"
 						]
 					}
 				]

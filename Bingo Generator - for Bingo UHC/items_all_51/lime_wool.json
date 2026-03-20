@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Cyan Wool",
+			"text": "Obtenir un(e) Cyan Banner",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:cyan_wool"
+							"minecraft:cyan_banner"
 						]
 					}
 				]

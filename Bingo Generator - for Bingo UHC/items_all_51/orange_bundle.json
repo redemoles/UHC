@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Magenta Bundle",
+			"text": "Obtenir un(e) Magenta Harness",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:magenta_bundle"
+							"minecraft:magenta_harness"
 						]
 					}
 				]

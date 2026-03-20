@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Orange Banner",
+			"text": "Obtenir un(e) Orange Wool",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:orange_banner"
+							"minecraft:orange_wool"
 						]
 					}
 				]

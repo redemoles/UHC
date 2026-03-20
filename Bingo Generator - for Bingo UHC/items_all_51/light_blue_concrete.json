@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Blue Concrete",
+			"text": "Obtenir un(e) Blue Glazed Terracotta",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:blue_concrete"
+							"minecraft:blue_glazed_terracotta"
 						]
 					}
 				]

@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Yellow Bed",
+			"text": "Obtenir un(e) Yellow Carpet",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:yellow_bed"
+							"minecraft:yellow_carpet"
 						]
 					}
 				]

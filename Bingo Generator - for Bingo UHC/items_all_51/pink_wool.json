@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Purple Wool",
+			"text": "Obtenir un(e) Purple Banner",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:purple_wool"
+							"minecraft:purple_banner"
 						]
 					}
 				]

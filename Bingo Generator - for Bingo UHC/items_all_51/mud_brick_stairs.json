@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Brick Stairs",
+			"text": "Obtenir un(e) Brick Slab",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:brick_stairs"
+							"minecraft:brick_slab"
 						]
 					}
 				]
