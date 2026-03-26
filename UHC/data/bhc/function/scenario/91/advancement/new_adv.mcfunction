@@ -26,6 +26,6 @@ $advancement grant @a[predicate=uhc:id/team] only $(namespace):$(line)_$(column)
 
 ## Récompenses
 $execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scenario/91/bingo_stepa/player_reward/case with storage $(namespace) $(line)_$(column)
-$execute if score #stepb_enabled bhc.data matches $(step) run function bhc:scenario/91/bingo_stepb/player_reward/case with storage $(namespace) $(line)_$(column)
+
 
 tag @s remove bhc.new_adv

@@ -28,4 +28,4 @@ execute if score #bhc bhc.scenario matches 00 run function bhc:timer/cooldown/st
 execute if score #bhc bhc.scenario matches 01 run function bhc:timer/cooldown/stepb_01
 execute if score #bhc bhc.scenario matches 02 run function bhc:timer/cooldown/stepb_02
 execute if score #bhc bhc.scenario matches 51 run function bhc:timer/cooldown/stepb_51
-execute if score #bhc bhc.scenario matches 91 run function bhc:timer/cooldown/stepb_01
+execute if score #bhc bhc.scenario matches 92 run function bhc:timer/cooldown/stepb_01

@@ -12,7 +12,8 @@ execute if score #bhc uhc.gamemode matches 1 unless items entity @s[scores={uhc.
 execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.10 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/01
 execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.11 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/02
 execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.22 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/51
-execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.14 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/91
+execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.13 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/91
+execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.14 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/92
 execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.15 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/99
 execute unless items entity @s[scores={uhc.menu.gamemode.bhc=01}] inventory.16 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/load/gamemode/bhc/scenario/00
 

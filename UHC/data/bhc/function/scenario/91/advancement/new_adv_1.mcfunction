@@ -49,18 +49,14 @@ $scoreboard players operation @s bhc.$(namespace)_$(line)_$(column) = #minutes u
 
 ## Scores
 $execute if score #stepa_enabled bhc.data matches $(step) run function bhc:scenario/91/bingo_stepa/team_reward/case with storage $(namespace) $(line)_$(column)
-$execute if score #stepb_enabled bhc.data matches $(step) run function bhc:scenario/91/bingo_stepb/team_reward/case with storage $(namespace) $(line)_$(column)
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 ## Complété
 scoreboard players set #team_first_completion bhc.data 0
 scoreboard players set #total_first_completion bhc.data 0
 $execute if score #stepa_enabled bhc.data matches $(step) if score @s bhc.stepa.case = #max bhc.stepa.case run scoreboard players set #team_first_completion bhc.data 1
-$execute if score #stepb_enabled bhc.data matches $(step) if score @s bhc.stepb.case = #max bhc.stepb.case run scoreboard players set #team_first_completion bhc.data 1
 execute if score @s bhc.stepa.case = #max bhc.stepa.case unless score #stepa bhc.completion matches 1.. run scoreboard players set #total_first_completion bhc.data 1
-execute if score @s bhc.stepb.case = #max bhc.stepb.case unless score #stepb bhc.completion matches 1.. run scoreboard players set #total_first_completion bhc.data 1
 execute if score @s bhc.stepa.case = #max bhc.stepa.case run scoreboard players add #stepa bhc.completion 1
-execute if score @s bhc.stepb.case = #max bhc.stepb.case run scoreboard players add #stepb bhc.completion 1
 
 ## Messages
 # Msg de case pour l'équipe l'ayant réalisé

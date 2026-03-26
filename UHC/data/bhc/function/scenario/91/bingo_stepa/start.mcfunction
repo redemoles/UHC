@@ -8,11 +8,11 @@
 #
 
 # Activation du Bingo
-scoreboard players set #bingo_91a_enabled bhc.data 1
+scoreboard players set #bingo_91_enabled bhc.data 1
 scoreboard players set #stepa_enabled bhc.data 1
 
-tellraw @a[scores={uhc.player.lang=061801}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo Classique","color":"#B73FFF","bold":true},{"text":" !","color":"#FFFFFF","bold":false}]
-tellraw @a[scores={uhc.player.lang=051407}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of the ","color":"#FFFFFF","bold":false},{"text":"Classic Bingo","color":"#B73FFF","bold":true},{"text":"!","color":"#FFFFFF","bold":false}]
+tellraw @a[scores={uhc.player.lang=061801}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo","color":"#B73FFF","bold":true},{"text":" !","color":"#FFFFFF","bold":false}]
+tellraw @a[scores={uhc.player.lang=051407}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of the ","color":"#FFFFFF","bold":false},{"text":"Bingo","color":"#B73FFF","bold":true},{"text":"!","color":"#FFFFFF","bold":false}]
 
 # Scoreboard d'affichage
 scoreboard players set #sb bhc.data.temp 2
@@ -21,7 +21,7 @@ scoreboard objectives setdisplay sidebar bhc.stepa.score
 # Reset des succès
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scenario/91/timer/reset_scores
 
-data modify storage bhc:temp scoreboard.bingo set value "bingo_91a"
+data modify storage bhc:temp scoreboard.bingo set value "bingo_91"
 function bhc:advancement/scoreboard with storage bhc:temp scoreboard
 
 scoreboard players set #line_1 bhc.line 0
@@ -45,6 +45,11 @@ scoreboard players set #column_8 bhc.column 0
 scoreboard players set #column_9 bhc.column 0
 
 # Enregistrement du nombre de lignes et colonnes
-function bingo_91a:load
+function bingo_91:load
 scoreboard players operation #line_stepa bhc.data = #line bhc.data
 scoreboard players operation #column_stepa bhc.data = #column bhc.data
+
+scoreboard players operation #max bhc.stepa.score.inv = #line bhc.data
+scoreboard players operation #max bhc.stepa.score.inv += #column bhc.data
+scoreboard players operation #max bhc.stepa.score.inv *= #02 uhc.data.numbers
+scoreboard players operation #max bhc.stepa.score.inv += #max bhc.stepa.case

@@ -8,16 +8,16 @@
 #
 
 # Désactivation du Bingo
-scoreboard players set #bingo_91a_enabled bhc.data 0
+scoreboard players set #bingo_91_enabled bhc.data 0
 scoreboard players set #stepa_enabled bhc.data 0
 
 # Msg FRA
-execute as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" ","bold":false},{"text":"Bingo Classique","color":"#B73FFF","bold":true},{"text":" terminé !","color":"#FFFFFF","bold":false}]
+execute as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" ","bold":false},{"text":"Bingo","color":"#B73FFF","bold":true},{"text":" terminé !","color":"#FFFFFF","bold":false}]
 execute as @a[scores={uhc.player.lang=061801},tag=uhc.player] run tellraw @s [{"text":"Score : ","color":"#FFFFFF","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.score.inv"},"color":"#3FE7FF","bold":true},{"text":" points","color":"#00C3DF"},{"text":"\nRang : ","color":"#FFFFFF","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.rank.number"},"color":"#FFE73F","bold":false},{"text":"/","color":"#FFFFFF","bold":false},{"score":{"name":"#team","objective":"bhc.data.temp"},"color":"#FFE73F","bold":false},{"text":" → ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"bhc.stepa.rank.score.inv"},"color":"#FFE73F","bold":true},{"text":" points","color":"#DFC300"},{"text":"\n"}]
 execute as @a[scores={uhc.player.lang=061801},tag=uhc.player.dead] run tellraw @s [{"text":"Score : ","color":"#FFFFFF","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.score.inv"},"color":"#3FE7FF","bold":true},{"text":" points","color":"#00C3DF"},{"text":"\nRang : ","color":"#FFFFFF","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.rank.number"},"color":"#FFE73F","bold":false},{"text":"/","color":"#FFFFFF","bold":false},{"score":{"name":"#team","objective":"bhc.data.temp"},"color":"#FFE73F","bold":false},{"text":" → ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"bhc.stepa.rank.score.inv"},"color":"#FFE73F","bold":true},{"text":" points","color":"#DFC300"},{"text":"\n"}]
 
 # Msg ENG
-execute as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" ","bold":false},{"text":"Classic Bingo","color":"#B73FFF","bold":true},{"text":" is over!","color":"#FFFFFF","bold":false}]
+execute as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"\n[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" ","bold":false},{"text":"Bingo","color":"#B73FFF","bold":true},{"text":" is over!","color":"#FFFFFF","bold":false}]
 execute as @a[scores={uhc.player.lang=051407},tag=uhc.player] run tellraw @s [{"text":"Score: ","color":"#FFFFFF","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.score.inv"},"color":"#3FE7FF","bold":true},{"text":" points","color":"#00C3DF"},{"text":"\nRank: ","color":"#FFEF7F","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.rank.number"},"color":"#FFE73F","bold":false},{"text":"/","color":"#FFFFFF","bold":false},{"score":{"name":"#team","objective":"bhc.data.temp"},"color":"#FFE73F","bold":false},{"text":" → ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"bhc.stepa.rank.score.inv"},"color":"#FFE73F","bold":true},{"text":" points","color":"#DFC300"},{"text":"\n"}]
 execute as @a[scores={uhc.player.lang=051407},tag=uhc.player.dead] run tellraw @s [{"text":"Score: ","color":"#FFFFFF","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.score.inv"},"color":"#3FE7FF","bold":true},{"text":" points","color":"#00C3DF"},{"text":"\nRank: ","color":"#FFEF7F","bold":false},{"score":{"name":"@s","objective":"bhc.stepa.rank.number"},"color":"#FFE73F","bold":false},{"text":"/","color":"#FFFFFF","bold":false},{"score":{"name":"#team","objective":"bhc.data.temp"},"color":"#FFE73F","bold":false},{"text":" → ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"bhc.stepa.rank.score.inv"},"color":"#FFE73F","bold":true},{"text":" points","color":"#DFC300"},{"text":"\n"}]
 
@@ -25,3 +25,12 @@ execute as @a[scores={uhc.player.lang=051407},tag=uhc.player.dead] run tellraw @
 scoreboard players set #sb bhc.data.temp 13
 scoreboard objectives setdisplay sidebar bhc.bingo.score
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
+
+# Fin de partie
+execute if score #player uhc.scenario.ironman matches 2.. run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@a[tag=uhc.ironman]","bold":false},{"text":" sont Ironmans !","color":"#FFE73F","bold":false}]
+execute if score #player uhc.scenario.ironman matches 2.. run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"Ironman ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" ","color":"#FFFFFF","bold":false},{"selector":"@a[tag=uhc.ironman]","bold":false},{"text":" are Ironmans !","color":"#FFE73F","bold":false}]
+tag @a[tag=uhc.ironman] remove uhc.ironman
+scoreboard players set #player uhc.scenario.ironman 0
+
+scoreboard players add #game_progress uhc.game_progress 1
+function uhc:in_game/endgame

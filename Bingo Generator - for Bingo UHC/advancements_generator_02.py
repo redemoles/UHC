@@ -146,8 +146,8 @@ slime_block = ["slime", "sticky_piston", "tadpole"]
 slime = []
 #slime = [block for block in blocks if any(x in block for x in slime_block)]
 
-trial_chamber_block = ["mace", "heavy_core", "trial"]
-#trial_chamber_block += ["breeze_rod", "wind_charge"]
+trial_chamber_block = ["mace", "heavy_core", "ominous"]
+#trial_chamber_block += ["breeze_rod", "wind_charge", "trial"]
 trial_chamber = []
 trial_chamber = [block for block in blocks if any(x in block for x in trial_chamber_block)]
 
@@ -155,8 +155,10 @@ monument_block = ["prismarine", "sea_lantern", "sponge"]
 monument = []
 monument = [block for block in blocks if any(x in block for x in monument_block)]
 
-the_end_block = ["end_stone", "purpur", "chorus", "shulker"]
-the_end_block += ["dragon", "lingering", "tipped_arrow"]
+the_end_block = ["shulker"]
+the_end_block += ["dragon", "purpur", "chorus"]
+the_end_block += ["lingering", "tipped_arrow"]
+the_end_block += ["end_stone"]
 the_end = []
 the_end = [block for block in blocks if any(x in block for x in the_end_block)]
 
@@ -193,6 +195,7 @@ too_easy_block = [
 	"minecraft:cobbled_deepslate",
 	"minecraft:tuff",
 	"minecraft:netherrack",
+	"minecraft:blackstone",
 	"minecraft:wheat_seeds",
 	"minecraft:clay_ball",
 	"minecraft:bamboo",

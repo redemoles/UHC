@@ -2,7 +2,7 @@
 #> bhc:scenario/91/timer/reset_scores
 #
 # @within			bhc:scenario/91/bingo_stepa/start
-# @within			bhc:scenario/91/bingo_stepb/start
+# @within			
 #
 # @description		Activation du Bingo et réinitialisation des lignes validés
 #

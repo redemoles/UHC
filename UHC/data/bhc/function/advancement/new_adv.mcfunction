@@ -24,6 +24,7 @@ $execute if score #bhc bhc.scenario matches 01 run function bhc:scenario/01/adva
 $execute if score #bhc bhc.scenario matches 02 run function bhc:scenario/02/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 51 run function bhc:scenario/51/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 91 run function bhc:scenario/91/advancement/new_adv with storage $(namespace) $(line)_$(column)
+$execute if score #bhc bhc.scenario matches 92 run function bhc:scenario/92/advancement/new_adv with storage $(namespace) $(line)_$(column)
 $execute if score #bhc bhc.scenario matches 99 run function bhc:scenario/99/advancement/new_adv with storage $(namespace) $(line)_$(column)
 
 ## Couleur du joueur

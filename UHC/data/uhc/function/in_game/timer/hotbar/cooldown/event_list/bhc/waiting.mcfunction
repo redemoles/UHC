@@ -16,4 +16,4 @@ execute if score #bhc bhc.scenario matches 00 run return run function uhc:in_gam
 execute if score #bhc bhc.scenario matches 01 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/01/waiting
 execute if score #bhc bhc.scenario matches 02 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/02/waiting
 execute if score #bhc bhc.scenario matches 51 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/51/waiting
-execute if score #bhc bhc.scenario matches 91 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/00/waiting
+execute if score #bhc bhc.scenario matches 92 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/step_b/00/waiting

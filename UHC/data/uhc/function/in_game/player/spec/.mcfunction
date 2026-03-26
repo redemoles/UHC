@@ -41,4 +41,4 @@ scoreboard players enable @s uhc.spec_info.pve
 scoreboard players enable @s uhc.spec_info.pvp
 execute if score #blood_diamond uhc.scenario matches 1.. run scoreboard players enable @s uhc.spec_info.blood_diamond
 function uhc:in_game/player/spec/spec_info_trigger/all
-execute if score #bhc bhc.scenario matches 91 run tag @s remove uhc.spec_info.pve
+execute if score #bhc bhc.scenario matches 91..98 run tag @s remove uhc.spec_info.pve

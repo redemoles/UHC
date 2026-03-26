@@ -13,8 +13,9 @@ scoreboard players remove #seconds uhc.game_progress 8
 execute if score #sb bhc.data.temp matches 13.. run scoreboard players set #seconds uhc.game_progress 0
 execute if score #sb bhc.data.temp matches 13.. run scoreboard players set #sb bhc.data.temp 0
 
+execute if score #sb bhc.data.temp matches 04 if score #bhc bhc.scenario matches 91 run scoreboard players set #sb bhc.data.temp 02
 execute if score #sb bhc.data.temp matches 04 if score #bhc bhc.scenario matches 99 run scoreboard players set #sb bhc.data.temp 07
-execute if score #sb bhc.data.temp matches 07 if score #bhc bhc.scenario matches 91 run scoreboard players set #sb bhc.data.temp 10
+execute if score #sb bhc.data.temp matches 07 if score #bhc bhc.scenario matches 91..98 run scoreboard players set #sb bhc.data.temp 10
 
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:timer/scoreboard/marker_name
 

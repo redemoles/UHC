@@ -13,6 +13,7 @@ execute if score #bhc bhc.scenario matches 01 run function bhc:scenario/01/timer
 execute if score #bhc bhc.scenario matches 02 run function bhc:scenario/02/timer/config
 execute if score #bhc bhc.scenario matches 51 run function bhc:scenario/51/timer/config
 execute if score #bhc bhc.scenario matches 91 run function bhc:scenario/91/timer/config
+execute if score #bhc bhc.scenario matches 92 run function bhc:scenario/92/timer/config
 execute if score #bhc bhc.scenario matches 99 run function bhc:scenario/99/timer/config
 
 scoreboard players operation #stepa_start bhc.data.temp = #stepa_start bhc.data.setup

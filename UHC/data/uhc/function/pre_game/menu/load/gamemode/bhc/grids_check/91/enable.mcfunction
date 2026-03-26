@@ -7,5 +7,4 @@
 # @description		Vérification des grilles de bingo
 #
 
-scoreboard players set #bingo_91a_enabled bhc.data 1
-scoreboard players set #bingo_91b_enabled bhc.data 1
+scoreboard players set #bingo_91_enabled bhc.data 1

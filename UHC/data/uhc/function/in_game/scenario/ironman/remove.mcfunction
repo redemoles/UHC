@@ -22,4 +22,5 @@ tag @s remove uhc.temp
 # Ironman dans l'équipe
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function uhc:in_game/scenario/ironman/remove_team
 
+execute if score #player uhc.scenario.ironman matches ..0 run scoreboard players reset @a uhc.ironman.list
 tag @s remove uhc.ironman

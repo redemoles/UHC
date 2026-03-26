@@ -14,5 +14,5 @@ execute unless entity @p[scores={uhc.player.lives=1..},predicate=uhc:id/team] ru
 # Temps de jeu de l'équipe
 scoreboard players operation @s bhc.death.tie_break.score.inv = #tick bhc.data.temp
 scoreboard players operation @s bhc.death.tie_break.score.inv *= #100 uhc.data.numbers
-execute if score #bhc bhc.scenario matches 91 if score #game_progress uhc.game_progress matches 2.. run return run scoreboard players operation @s bhc.death.tie_break.score.inv += @s bhc.chill_mode.tie_break.rank
+execute if score #bhc bhc.scenario matches 91..98 if score #game_progress uhc.game_progress matches 2.. run return run scoreboard players operation @s bhc.death.tie_break.score.inv += @s bhc.chill_mode.tie_break.rank
 scoreboard players operation @s bhc.death.tie_break.score.inv += @s uhc.id.team.inverted

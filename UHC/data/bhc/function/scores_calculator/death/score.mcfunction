@@ -32,7 +32,7 @@ scoreboard players operation @s bhc.team.livescount /= #temp uhc.data.temp
 scoreboard players operation @s bhc.death.score.inv += @s bhc.ironman.score.inv
 
 # Dernière équipe en vie
-execute if score #game_progress uhc.game_progress matches 2.. unless score #bhc bhc.scenario matches 91 if score @s bhc.death.tie_break.rank.number matches 1 run scoreboard players add @s bhc.death.score.inv 1000
+execute if score #game_progress uhc.game_progress matches 2.. unless score #bhc bhc.scenario matches 91..98 if score @s bhc.death.tie_break.rank.number matches 1 run scoreboard players add @s bhc.death.score.inv 1000
 
 # Règle en cas d'égalité
 scoreboard players operation @s bhc.death.score.inv *= #100 uhc.data.numbers

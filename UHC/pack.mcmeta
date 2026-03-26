@@ -2,7 +2,7 @@
 	"pack": {
 		"min_format": [94, 1],
 		"max_format": [94, 1],
-		"description": [{"text":"UHC 26.3.6","color":"#FFE73F"},{"text":" par ","color":"#9F9F9F"},{"text":"Redemoles","color":"#E73FFF"},{"text":" pour ","color":"#9F9F9F"},{"text":"MC 1.21.11","color":"#3FE7FF"}]
+		"description": [{"text":"UHC 26.3.7","color":"#FFE73F"},{"text":" par ","color":"#9F9F9F"},{"text":"Redemoles","color":"#E73FFF"},{"text":" pour ","color":"#9F9F9F"},{"text":"MC 1.21.11","color":"#3FE7FF"}]
 	},
   "filter": {
     "block": [
