@@ -1,10 +1,10 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:stripped_oak_wood"
+			"id": "minecraft:stripped_mangrove_wood"
 		},
 		"title": {
-			"text": "Stripped Oak Wood",
+			"text": "Stripped Mangrove Wood",
 			"color": "#FFDF00"
 		},
 		"description": {

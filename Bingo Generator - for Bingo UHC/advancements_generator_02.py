@@ -146,8 +146,8 @@ slime_block = ["slime", "sticky_piston", "tadpole"]
 slime = []
 #slime = [block for block in blocks if any(x in block for x in slime_block)]
 
-trial_chamber_block = ["mace", "heavy_core", "ominous"]
-#trial_chamber_block += ["breeze_rod", "wind_charge", "trial"]
+trial_chamber_block = ["mace", "heavy_core", "ominous_trial"]
+#trial_chamber_block += ["breeze_rod", "wind_charge", "trial", "ominous"]
 trial_chamber = []
 trial_chamber = [block for block in blocks if any(x in block for x in trial_chamber_block)]
 

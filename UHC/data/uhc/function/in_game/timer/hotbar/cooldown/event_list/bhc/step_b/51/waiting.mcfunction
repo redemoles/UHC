@@ -7,8 +7,8 @@
 # @description		Alerte décompte 
 #
 
-execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"début du ","color":"#FFFFFF"}, {"text":"B euqissalC ogniB","color":"#B73FFF"}]
-execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"start of the ","color":"#FFFFFF"}, {"text":"B ogniB cissalC","color":"#B73FFF"}]
+execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"début du ","color":"#FFFFFF"}, {"text":"Grille Basique 2","color":"#B73FFF"}]
+execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"start of the ","color":"#FFFFFF"}, {"text":"Basic Grid 2","color":"#B73FFF"}]
 execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players remove #min_cooldown_alert uhc.data.temp 1
 execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players set #min_cooldown_temp_bhc uhc.data.temp 1
 execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp if score #min_cooldown_alert uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.alert_fra append value [{"text":", ","color":"#FFFFFF"}]
@@ -16,8 +16,8 @@ execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp i
 execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp if score #min_cooldown_alert uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_fra append value [{"text":" et ","color":"#FFFFFF"}]
 execute if score #stepb_start bhc.data.temp = #min_cooldown_temp uhc.data.temp if score #min_cooldown_alert uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_eng append value [{"text":" and ","color":"#FFFFFF"}]
 
-execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"fin du ","color":"#FFFFFF"}, {"text":"B euqissalC ogniB","color":"#B73FFF"}]
-execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"end of the ","color":"#FFFFFF"}, {"text":"B ogniB cissalC","color":"#B73FFF"}]
+execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"fin du ","color":"#FFFFFF"}, {"text":"Grille Basique 2","color":"#B73FFF"}]
+execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"end of the ","color":"#FFFFFF"}, {"text":"Basic Grid 2","color":"#B73FFF"}]
 execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players remove #min_cooldown_alert uhc.data.temp 1
 execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp run scoreboard players set #min_cooldown_temp_bhc uhc.data.temp 1
 execute if score #stepb_end bhc.data.temp = #min_cooldown_temp uhc.data.temp if score #min_cooldown_alert uhc.data.temp matches 2.. run data modify storage uhc:temp hotbar.alert_fra append value [{"text":", ","color":"#FFFFFF"}]

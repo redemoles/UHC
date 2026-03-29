@@ -17,7 +17,7 @@ scoreboard players set #stepa_multiplier bhc.data.setup 10
 
 # Autre
 scoreboard players set #stepb_start bhc.data.setup -1
-scoreboard players set #stepb_end bhc.data.setup -1
+scoreboard players set #stepb_end bhc.data.setup 9999
 scoreboard players set #stepb_multiplier bhc.data.setup 0
 
 scoreboard players set #kills_multiplier bhc.data.setup 0

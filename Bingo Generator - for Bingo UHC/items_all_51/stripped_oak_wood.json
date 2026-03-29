@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:stripped_mangrove_wood"
+			"id": "minecraft:stripped_oak_wood"
 		},
 		"title": {
 			"text": "Stripped Oak Wood",
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Stripped Oak Wood",
+			"text": "Obtenir un(e) Stripped Mangrove Wood",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
