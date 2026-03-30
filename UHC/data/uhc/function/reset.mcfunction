@@ -271,8 +271,8 @@ scoreboard objectives add uhc.player.online dummy
 scoreboard objectives add uhc.player.disconnect minecraft.custom:minecraft.leave_game
 scoreboard objectives add uhc.player.tp dummy
 scoreboard objectives add uhc.player.lives dummy
-scoreboard objectives add uhc.player.health.reverse.20 dummy
-scoreboard objectives add uhc.player.health.reverse.100 dummy
+scoreboard objectives add uhc.player.health.reverse.20 dummy [{"text":"❤","color":"#FF5F5F"}]
+scoreboard objectives add uhc.player.health.reverse.100 dummy "%"
 scoreboard objectives add uhc.player.health.20 dummy
 scoreboard objectives add uhc.player.health.100 dummy "%"
 scoreboard objectives add uhc.player.health.auto health [{"text":"❤","color":"#FF5F5F"}]

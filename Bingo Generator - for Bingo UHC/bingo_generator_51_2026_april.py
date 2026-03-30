@@ -212,7 +212,7 @@ if not os.path.exists("bingo_generator_51_2026_april.py"):
 # Define configuration
 bingo_size = {"lines": 5, "columns": 5}
 bingo_namespace = "bingo_51b"
-bingo_name = "Bingo Classique B"
+bingo_name = "Grille Basique 2"
 step_number = "2"
 advancements_folder = "items_all_51"
 configuration_objective = "bhc.data"

@@ -15,12 +15,8 @@ scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 # Données du joueur
 function uhc:in_game/player/health
-execute if score #team_health uhc.scenario matches 0 if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.20
-execute if score #team_health uhc.scenario matches 0 if score #hp_chat uhc.data.setup matches 1 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.100
-execute if score #team_health uhc.scenario matches 1 if score #hp_chat uhc.data.setup matches 0 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.scenario.team_health.team
-execute if score #team_health uhc.scenario matches 1 if score #hp_chat uhc.data.setup matches 1 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.scenario.team_health.100
 
-# Spec Info
+# Player Info
 execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_arrow/tellraw_heart
 execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_arrow/tellraw_percent
 

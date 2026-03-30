@@ -8,7 +8,7 @@
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) Soul Sand",
+			"text": "Obtenir un(e) Polished Basalt",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",
@@ -23,7 +23,7 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:soul_sand"
+							"minecraft:polished_basalt"
 						]
 					}
 				]
