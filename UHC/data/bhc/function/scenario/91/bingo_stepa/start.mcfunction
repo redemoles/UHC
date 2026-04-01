@@ -46,8 +46,8 @@ scoreboard players set #column_9 bhc.column 0
 
 # Enregistrement du nombre de lignes et colonnes
 function bingo_91:load
-scoreboard players operation #line_stepa bhc.data = #line bhc.data
-scoreboard players operation #column_stepa bhc.data = #column bhc.data
+scoreboard players operation #line_step bhc.data = #line bhc.data
+scoreboard players operation #column_step bhc.data = #column bhc.data
 
 scoreboard players operation #max bhc.stepa.score.inv = #line bhc.data
 scoreboard players operation #max bhc.stepa.score.inv += #column bhc.data

@@ -13,6 +13,7 @@ execute unless score #line_stepa bhc.data matches 1.. run return fail
 tellraw @p[tag=uhc.temp] [{"text":"\n"},{"selector":"@s"},{"text":" - Grille des Bingos"},{"text":"\n\nBingo Classique"}]
 scoreboard players set #temp_line bhc.data 0
 data modify storage bhc:temp info.step set value a
+execute unless score #line_stepb bhc.data matches 1.. run data modify storage bhc:temp info.step set value ''
 function uhc:in_game/player/misc/info/team/bhc/line with storage bhc:temp info
 
 execute unless score #line_stepb bhc.data matches 1.. run return fail

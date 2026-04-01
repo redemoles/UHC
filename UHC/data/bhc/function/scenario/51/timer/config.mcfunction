@@ -16,8 +16,8 @@ scoreboard players operation #stepa_end bhc.data.setup += #stepa_start bhc.data.
 scoreboard players set #stepa_multiplier bhc.data.setup 2
 
 # Étape B : Bingo
-scoreboard players set #stepb_start bhc.data.setup 40
-scoreboard players set #stepb_end bhc.data.setup 20
+scoreboard players set #stepb_start bhc.data.setup 45
+scoreboard players set #stepb_end bhc.data.setup 30
 scoreboard players operation #stepb_end bhc.data.setup += #stepb_start bhc.data.setup
 scoreboard players set #stepb_multiplier bhc.data.setup 2
 

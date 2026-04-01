@@ -23,8 +23,8 @@ scoreboard players set #bhc bhc.scenario 51
 
 ## UHC → Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2
-scoreboard players set #pvp uhc.data.setup 60
-scoreboard players set #shrink_1_time_left uhc.data.setup 75
+scoreboard players set #pvp uhc.data.setup 75
+scoreboard players set #shrink_1_time_left uhc.data.setup 90
 scoreboard players set #shrink_2_time_left uhc.data.setup 110
 scoreboard players set #shrink_3_time_left uhc.data.setup 120
 scoreboard players set #shrink_1_length uhc.data.setup 30
@@ -43,7 +43,7 @@ execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:setting
 ## Vies
 scoreboard players set #lives uhc.data.setup 4
 scoreboard players set #live_3 uhc.data.setup 10
-scoreboard players set #live_2 uhc.data.setup 60
+scoreboard players set #live_2 uhc.data.setup 75
 scoreboard players set #live_1 uhc.data.setup 105
 
 ## Scénario
