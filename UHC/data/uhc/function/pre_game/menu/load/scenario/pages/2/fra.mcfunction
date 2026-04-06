@@ -1,0 +1,44 @@
+
+#> uhc:pre_game/menu/load/scenario/pages/2/fra
+#
+# @within			uhc:pre_game/menu/load/scenario/pages/2/main
+#
+#
+# @description		Menu
+#
+
+clear @s
+tag @s remove uhc.menu.main.host
+scoreboard players set @s uhc.menu.scenario.main 2
+scoreboard players set @s uhc.menu.scenario.sky_high 0
+
+
+
+
+
+
+function uhc:pre_game/menu/load/background/
+
+execute if score #permakill uhc.scenario matches 0 run item replace entity @s inventory.1 with minecraft:red_concrete[minecraft:item_name=[{"text":"Permakill","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"À la mort d'un joueur, le cycle jour/nuit est changé.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #permakill uhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:clock[minecraft:item_name=[{"text":"Permakill","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"À la mort d'un joueur, le cycle jour/nuit est changé.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #red_arrows uhc.scenario matches 0 run item replace entity @s inventory.2 with minecraft:red_concrete[minecraft:item_name=[{"text":"Red Arrows","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Une flèche rouge en hauteur apparaît sur le lieu de mort d'un joueur.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #red_arrows uhc.scenario matches 1 run item replace entity @s inventory.2 with minecraft:magenta_glazed_terracotta[minecraft:item_name=[{"text":"Red Arrows","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Une flèche rouge en hauteur apparaît sur le lieu de mort d'un joueur.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #rewarding_longshots uhc.scenario matches 0 run item replace entity @s inventory.3 with minecraft:red_concrete[minecraft:item_name=[{"text":"Rewarding Longshots","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Toucher des joueurs avec une flèche sera récompensé avec divers items.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #rewarding_longshots uhc.scenario matches 1 run item replace entity @s inventory.3 with minecraft:arrow[minecraft:item_name=[{"text":"Rewarding Longshots","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Toucher des joueurs avec une flèche sera récompensé avec divers items.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+$execute if score #sky_high uhc.scenario matches 0 if score #damage_type uhc.scenario.sky_high.settings matches 1 run item replace entity @s inventory.4 with minecraft:red_concrete[minecraft:item_name=[{"text":"Sky High","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"À $(sky_high_timer) minutes, les joueurs en dessous de Y=$(sky_high_height) perdront","color":"#FFFFFF","italic":false}],[{"text":"1 demi-coeur toutes les 30 secondes.","color":"#FFFFFF","italic":false}],[{"text":"Incompatible avec ","color":"#FF7F7F","italic":false},{"text":"Go To Hell","color":"#FF3F3F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+$execute if score #sky_high uhc.scenario matches 1 if score #damage_type uhc.scenario.sky_high.settings matches 1 run item replace entity @s inventory.4 with minecraft:phantom_membrane[minecraft:item_name=[{"text":"Sky High","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"À $(sky_high_timer) minutes, les joueurs en dessous de Y=$(sky_high_height) perdront","color":"#FFFFFF","italic":false}],[{"text":"1 demi-coeur toutes les 30 secondes.","color":"#FFFFFF","italic":false}],[{"text":"Incompatible avec ","color":"#FF7F7F","italic":false},{"text":"Go To Hell","color":"#FF3F3F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+$execute if score #sky_high uhc.scenario matches 0 if score #damage_type uhc.scenario.sky_high.settings matches 2.. run item replace entity @s inventory.4 with minecraft:red_concrete[minecraft:item_name=[{"text":"Sky High","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"À $(sky_high_timer) minutes, les joueurs en dessous de Y=$(sky_high_height) recevront","color":"#FFFFFF","italic":false}],[{"text":"des dégâts progressifs toutes les 30 secondes.","color":"#FFFFFF","italic":false}],[{"text":"Incompatible avec ","color":"#FF7F7F","italic":false},{"text":"Go To Hell","color":"#FF3F3F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+$execute if score #sky_high uhc.scenario matches 1 if score #damage_type uhc.scenario.sky_high.settings matches 2.. run item replace entity @s inventory.4 with minecraft:phantom_membrane[minecraft:item_name=[{"text":"Sky High","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"À $(sky_high_timer) minutes, les joueurs en dessous de Y=$(sky_high_height) recevront","color":"#FFFFFF","italic":false}],[{"text":"des dégâts progressifs toutes les 30 secondes.","color":"#FFFFFF","italic":false}],[{"text":"Incompatible avec ","color":"#FF7F7F","italic":false},{"text":"Go To Hell","color":"#FF3F3F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #sound_paranoia uhc.scenario matches 0 run item replace entity @s inventory.5 with minecraft:red_concrete[minecraft:item_name=[{"text":"Sound Paranoia","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Chaque joueur entendra un faux son toutes les 1m30 à 7m30.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #sound_paranoia uhc.scenario matches 1 run item replace entity @s inventory.5 with minecraft:note_block[minecraft:item_name=[{"text":"Sound Paranoia","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Chaque joueur entendra un faux son toutes les 1m30 à 7m30.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #team_health uhc.scenario matches 0 run item replace entity @s inventory.6 with minecraft:red_concrete[minecraft:item_name=[{"text":"Team Health","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Les points de vie indiqués correspondent","color":"#FFFFFF","italic":false}],[{"text":"aux points de vie de tous les joueurs de l'équipe.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #team_health uhc.scenario matches 1 run item replace entity @s inventory.6 with minecraft:apple[minecraft:item_name=[{"text":"Team Health","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Les points de vie indiqués correspondent","color":"#FFFFFF","italic":false}],[{"text":"aux points de vie de tous les joueurs de l'équipe.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #trade_uhc uhc.scenario matches 0 run item replace entity @s inventory.7 with minecraft:red_concrete[minecraft:item_name=[{"text":"Trade UHC","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Tous les minerais, excepté l'or et le charbon, donnent de l'émeraude.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #trade_uhc uhc.scenario matches 1 run item replace entity @s inventory.7 with minecraft:emerald[minecraft:item_name=[{"text":"Trade UHC","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Tous les minerais, excepté l'or et le charbon, donnent de l'émeraude.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+
+execute if score #mystery_scenarios uhc.data.setup matches 0 run item replace entity @s inventory.19 with minecraft:red_concrete[minecraft:item_name=[{"text":"Mystery Scenarios","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Scénarios cachés aux joueurs.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #mystery_scenarios uhc.data.setup matches 1 run item replace entity @s inventory.19 with minecraft:written_book[minecraft:item_name=[{"text":"Mystery Scenarios","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Scénarios cachés aux joueurs.","color":"#FFFFFF","italic":false}]],minecraft:tooltip_display={"hidden_components":["written_book_content"]},minecraft:custom_data={Tags:"scenario"}]
+
+item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 1","color":"#3FE7FF","italic":false}]]
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

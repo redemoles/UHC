@@ -7,9 +7,9 @@
 # @description		Configuration des joueurs
 #
 
-execute as @a if score @s uhc.id.team matches 091..092 run function uhc:pre_game/menu/load/main/player/team_join/spec
-execute as @a if score @s uhc.id.team matches 192 run function uhc:pre_game/menu/load/main/player/team_join/spec
-execute as @a if score @s uhc.id.team matches 292 run function uhc:pre_game/menu/load/main/player/team_join/spec
+execute as @a if score @s uhc.id.team matches 091..092 run function uhc:pre_game/menu/selection/main/player/team/chosen/spec
+execute as @a if score @s uhc.id.team matches 192 run function uhc:pre_game/menu/selection/main/player/team/chosen/spec
+execute as @a if score @s uhc.id.team matches 292 run function uhc:pre_game/menu/selection/main/player/team/chosen/spec
 
 ## Préparation des joueurs
 effect clear @a

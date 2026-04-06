@@ -7,7 +7,8 @@
 # @description		Palier 1 - Diamant assuré
 #
 
-give @s minecraft:diamond
+give @s minecraft:diamond 1
+execute if score #double_ores uhc.scenario matches 1 run give @s minecraft:diamond 1
 $tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Blood Diamond ($(mined)/$(end_tier_1)) ","color":"#3FE7FF","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" +1 diamant (100%)","color":"#3FE7FF","bold":false}]
 $tellraw @s[scores={uhc.player.lang=051407}] [{"text":"Blood Diamond ($(mined)/$(end_tier_1)) ","color":"#3FE7FF","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" +1 diamond (100%)","color":"#3FE7FF","bold":false}]
 

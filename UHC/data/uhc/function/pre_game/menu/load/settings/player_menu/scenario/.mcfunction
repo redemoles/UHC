@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/player_menu/scenario/
 #
-# @within			uhc:pre_game/menu/selection/main/player/team_menu/x
+# @within			uhc:pre_game/menu/selection/main/player/team/x
 #
 #
 # @description		Menu Settings pour les joueurs

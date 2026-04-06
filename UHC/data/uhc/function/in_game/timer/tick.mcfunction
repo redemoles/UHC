@@ -45,8 +45,6 @@ tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
 # Réduction des dégâts des flèches
 execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow] run function uhc:in_game/entity/arrow/
 execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow,tag=!uhc.checked] run function uhc:in_game/entity/arrow/basic
-execute if score #bhc bhc.scenario matches 51 as @e[type=#uhc:spiders,tag=!uhc.checked] run function uhc:in_game/entity/spider/reverse_size
-execute if score #bhc bhc.scenario matches 51 as @e[type=#uhc:zombies,tag=!uhc.checked] run function uhc:in_game/entity/zombie/reverse_size
 # Items
 execute as @e[type=minecraft:item,tag=!uhc.checked] run function uhc:in_game/entity/item/tick
 

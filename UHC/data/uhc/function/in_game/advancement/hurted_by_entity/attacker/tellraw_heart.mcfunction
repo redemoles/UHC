@@ -7,8 +7,8 @@
 # @description		Le joueur a pris un dégât par un autre joueur
 #
 
-scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.20
-execute if score #bhc bhc.scenario matches 51 run scoreboard players operation #temp uhc.player.health.100 = @s uhc.player.health.reverse.20
+scoreboard players operation #temp uhc.player.health.100 = @p[tag=uhc.temp] uhc.player.health.20
+execute if score #bhc bhc.scenario matches 51 run scoreboard players operation #temp uhc.player.health.100 = @p[tag=uhc.temp] uhc.player.health.reverse.20
 
 scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.20
 execute if score #bhc bhc.scenario matches 51 run scoreboard players operation #temp_entity uhc.player.health.100 = @s uhc.player.health.reverse.20

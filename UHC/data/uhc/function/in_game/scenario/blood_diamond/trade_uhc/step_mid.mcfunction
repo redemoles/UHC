@@ -13,8 +13,10 @@ execute at @s run tag @r[distance=0.1..,tag=uhc.player] add uhc.blood_diamond.re
 
 attribute @s minecraft:knockback_resistance modifier add uhc:temp.knockback_resistance 1 add_value
 execute if score #random uhc.scenario.blood_diamond.temp <= #random_damage_gold_ingot uhc.scenario.blood_diamond.temp at @s run damage @s 1 minecraft:mob_attack by @n[type=minecraft:marker,tag=uhc.scenario.blood_diamond]
-execute if score #random uhc.scenario.blood_diamond.temp > #random_damage_gold_ingot uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp run give @s minecraft:gold_ingot
-execute if score #random uhc.scenario.blood_diamond.temp > #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_diamond_gift uhc.scenario.blood_diamond.temp run give @s minecraft:emerald
+execute if score #random uhc.scenario.blood_diamond.temp > #random_damage_gold_ingot uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp run give @s minecraft:gold_ingot 1
+execute if score #random uhc.scenario.blood_diamond.temp > #random_damage_gold_ingot uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp if score #double_ores uhc.scenario matches 1 run give @s minecraft:gold_ingot 1
+execute if score #random uhc.scenario.blood_diamond.temp > #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_diamond_gift uhc.scenario.blood_diamond.temp run give @s minecraft:emerald 1
+execute if score #random uhc.scenario.blood_diamond.temp > #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_diamond_gift uhc.scenario.blood_diamond.temp if score #double_ores uhc.scenario matches 1 run give @s minecraft:emerald 1
 execute if score #random uhc.scenario.blood_diamond.temp > #random_diamond_gift uhc.scenario.blood_diamond.temp run give @p[tag=uhc.blood_diamond.receive] minecraft:emerald
 attribute @s minecraft:knockback_resistance modifier remove uhc:temp.knockback_resistance
 

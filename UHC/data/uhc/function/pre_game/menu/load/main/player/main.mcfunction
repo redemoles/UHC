@@ -17,10 +17,10 @@ tag @s remove uhc.menu.tp
 
 
 
-execute if score #random_team uhc.data.setup matches 0 run function uhc:pre_game/menu/load/main/player/team_menu/chosen/main
-execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 1 run function uhc:pre_game/menu/load/main/player/team_menu/random/1_pot
-execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 2 run function uhc:pre_game/menu/load/main/player/team_menu/random/2_pots
-execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 3 run function uhc:pre_game/menu/load/main/player/team_menu/random/3_pots
+execute if score #random_team uhc.data.setup matches 0 run function uhc:pre_game/menu/load/main/player/team/chosen/main
+execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 1 run function uhc:pre_game/menu/load/main/player/team/random/1_pot
+execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 2 run function uhc:pre_game/menu/load/main/player/team/random/2_pots
+execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 3 run function uhc:pre_game/menu/load/main/player/team/random/3_pots
 
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:player_head[minecraft:item_name=[{"text":"Français","color":"#3FE7FF","italic":false}],minecraft:profile={id:[I;-725263891,1925465020,-1485463140,-730824118],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjkwMzM0OWZhNDViZGQ4NzEyNmQ5Y2QzYzZjMGFiYmE3ZGJkNmY1NmZiOGQ3ODcwMTg3M2ExZTdjOGVlMzNjZiJ9fX0="}]},minecraft:custom_data={Tags:"lang_fra"}]
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:player_head[minecraft:item_name=[{"text":"Français","color":"#FF3F3F","italic":false}],minecraft:profile={id:[I;-725263891,1925465020,-1485463140,-730824118],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjkwMzM0OWZhNDViZGQ4NzEyNmQ5Y2QzYzZjMGFiYmE3ZGJkNmY1NmZiOGQ3ODcwMTg3M2ExZTdjOGVlMzNjZiJ9fX0="}]},minecraft:custom_data={Tags:"lang_fra"}]

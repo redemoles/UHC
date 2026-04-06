@@ -22,7 +22,7 @@ function uhc:pre_game/menu/load/background/
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:book[minecraft:item_name=[{"text":"Liste des scénarios","color":"#F3F3F3","italic":false}],minecraft:custom_data={Tags:"bhc_scenario"}]
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:book[minecraft:item_name=[{"text":"Scenarios list","color":"#F3F3F3","italic":false}],minecraft:custom_data={Tags:"bhc_scenario"}]
 
-execute if score @s uhc.menu.gamemode.bhc matches 1 run function uhc:pre_game/menu/load/gamemode/bhc/scenario/main
+execute if score @s uhc.menu.gamemode.bhc matches 1 run function uhc:pre_game/menu/load/gamemode/bhc/scenario
 
 execute if score #bhc uhc.gamemode matches 1 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.7 with minecraft:crafter[minecraft:item_name=[{"text":"Vérifier les grilles de bingo","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Attention : Les joueurs pourront également les voir.","color":"#CFCFCF"}]],minecraft:custom_data={Tags:"bhc_display_grid"}]
 execute if score #bhc uhc.gamemode matches 1 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.7 with minecraft:crafter[minecraft:item_name=[{"text":"Check the bingo grids","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Note: Players will also be able to see them.","color":"#CFCFCF"}]],minecraft:custom_data={Tags:"bhc_display_grid"}]

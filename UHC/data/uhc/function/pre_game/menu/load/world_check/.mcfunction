@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/world_check/
 #
-# @within			uhc:pre_game/menu/selection/main/host
+# @within			uhc:pre_game/menu/selection/main/host/main
 #
 #
 # @description		Menu

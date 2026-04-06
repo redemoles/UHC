@@ -7,7 +7,7 @@
 # @description		Réinitialisation de l'inventaire
 #
 
-execute if score @s uhc.menu.gamemode.bhc matches 9 at @s unless entity @p[tag=uhc.host,distance=0.1..,scores={uhc.menu.gamemode.bhc=9}] run function uhc:pre_game/menu/load/gamemode/bhc/grids_check/close
+execute if score @s uhc.menu.gamemode.bhc matches 9 at @s unless entity @p[tag=uhc.host,distance=0.1..,scores={uhc.menu.gamemode.bhc=9}] run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/close
 function uhc:pre_game/menu/load/main/host/menu
 
 tag @s add uhc.menu.main.host

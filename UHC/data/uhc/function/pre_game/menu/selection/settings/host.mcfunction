@@ -34,7 +34,7 @@ execute if score @s uhc.menu.settings matches 1.. unless items entity @s invento
 execute if score @s uhc.menu.settings.team matches 1.. run function uhc:pre_game/menu/selection/settings/team/host
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"settings_misc"}] run return run function uhc:pre_game/menu/load/settings/misc/preset_menu
-execute if score @s uhc.menu.settings.misc matches 1.. unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"settings_misc_river"}] run function uhc:pre_game/menu/load/settings/misc/river/apply_change
+execute if score @s uhc.menu.settings.misc matches 1.. unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"settings_misc_river"}] run function uhc:pre_game/menu/selection/settings/misc/river
 
 execute if score @s uhc.menu.settings matches 3..9 unless items entity @s inventory.20 *[minecraft:custom_data={Tags:"-10"}] run function uhc:pre_game/menu/load/settings/1_remove_10
 execute if score @s uhc.menu.settings matches 2..9 unless items entity @s inventory.21 *[minecraft:custom_data={Tags:"-1"}] run function uhc:pre_game/menu/load/settings/2_remove_1

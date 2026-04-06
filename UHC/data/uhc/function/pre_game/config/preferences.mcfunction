@@ -56,11 +56,11 @@ scoreboard players set #shrink_dynamic uhc.data.setup 0
 
 ## Inventory Rules / Règles Inventaire
 scoreboard players set #diamond_protection uhc.data.setup 2
-scoreboard players set #diamond_sharpness uhc.data.setup 5
+scoreboard players set #diamond_sharpness uhc.data.setup 4
 scoreboard players set #iron_protection uhc.data.setup 4
-scoreboard players set #iron_sharpness uhc.data.setup 5
+scoreboard players set #iron_sharpness uhc.data.setup 4
 scoreboard players set #axes_sharpness uhc.data.setup 3
-scoreboard players set #bow_power uhc.data.setup 4
+scoreboard players set #bow_power uhc.data.setup 3
 scoreboard players set #fire_flame uhc.data.setup 0
 scoreboard players set #depth_strider uhc.data.setup 3
 scoreboard players set #lunge uhc.data.setup 1

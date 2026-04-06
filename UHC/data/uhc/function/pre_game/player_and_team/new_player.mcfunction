@@ -56,3 +56,6 @@ experience set @s 0 points
 tag @s add lobby.temp
 attribute @s minecraft:max_health modifier add lobby.temp -19 add_multiplied_total
 schedule function uhc:pre_game/player_and_team/new_player_heal 2t
+
+# Hastey Boys
+execute if score #hastey_boys uhc.scenario matches 0 as @a run attribute @s minecraft:mining_efficiency modifier remove uhc:hastey_boys
