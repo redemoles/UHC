@@ -11,5 +11,5 @@
 scoreboard players add #bats uhc.scenario 1
 execute if score #bats uhc.scenario matches 2 run scoreboard players set #bats uhc.scenario 0
 
-execute if score #bats uhc.scenario matches 0 run tellraw @a [{"text":"Bats","color":"#FF3F3F","bold":true},{"text":" désactivé","color":"#FF3F3F","bold":false}]
-execute if score #bats uhc.scenario matches 1 run tellraw @a [{"text":"Bats","color":"#3FE7FF","bold":true},{"text":" activé","color":"#3FE7FF","bold":false}]
+execute if score #bats uhc.scenario matches 0 if score #mystery_scenarios uhc.data.setup matches 0 run tellraw @a [{"text":"Scenarios ","color":"#FFE73F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Bats","color":"#FFFFFF","bold":false},{"text":" disabled.","color":"#FF3F3F","bold":false}]
+execute if score #bats uhc.scenario matches 1 if score #mystery_scenarios uhc.data.setup matches 0 run tellraw @a [{"text":"Scenarios ","color":"#FFE73F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Bats","color":"#FFFFFF","bold":false},{"text":" enabled.","color":"#3FE7FF","bold":false}]

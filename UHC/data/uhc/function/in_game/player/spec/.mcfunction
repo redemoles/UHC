@@ -16,7 +16,7 @@ attribute @s minecraft:attack_damage base set 1
 attribute @s minecraft:attack_speed base set 4
 attribute @s minecraft:knockback_resistance base set 0
 attribute @s minecraft:scale base set 1.0
-attribute @s minecraft:fall_damage_multiplier base set 1.0
+attribute @s minecraft:fall_damage_multiplier modifier remove lobby:fall_damage
 attribute @s minecraft:safe_fall_distance base set 3.0
 attribute @s minecraft:submerged_mining_speed base set 0.2
 attribute @s minecraft:attack_knockback base set 0
@@ -34,6 +34,8 @@ execute if score #sound_paranoia uhc.scenario matches 1 run tag @s add uhc.scena
 scoreboard players set @s uhc.player.death 2
 scoreboard players set @s uhc.timer.respawn 0
 scoreboard players set @s uhc.player.online 1
+
+# Trigger
 scoreboard players enable @s uhc.spec.tp
 scoreboard players enable @s uhc.spec_info.all
 scoreboard players enable @s uhc.spec_info.none

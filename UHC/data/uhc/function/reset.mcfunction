@@ -173,8 +173,7 @@ scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_moles
 scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_supermoles
 scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.scenario.blood_diamond
-scoreboard objectives remove uhc.menu.scenario.go_to_hell
-scoreboard objectives remove uhc.menu.scenario.sky_high
+scoreboard objectives remove uhc.menu.scenario.restricted_area
 scoreboard objectives remove uhc.menu.scenario.main
 scoreboard objectives remove uhc.menu.settings.lives
 scoreboard objectives remove uhc.menu.settings.pve
@@ -253,8 +252,7 @@ scoreboard objectives add uhc.menu.gamemode.mls.teams_of_moles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.teams_of_supermoles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.supermoles_per_team dummy
 scoreboard objectives add uhc.menu.scenario.blood_diamond dummy
-scoreboard objectives add uhc.menu.scenario.go_to_hell dummy
-scoreboard objectives add uhc.menu.scenario.sky_high dummy
+scoreboard objectives add uhc.menu.scenario.restricted_area dummy
 scoreboard objectives add uhc.menu.scenario.main dummy
 scoreboard objectives add uhc.menu.settings dummy
 scoreboard objectives add uhc.menu.settings.lives dummy
@@ -450,4 +448,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26041
+scoreboard players set #update uhc.data.update 26042

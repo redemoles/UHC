@@ -20,6 +20,7 @@ execute if score #experienceless uhc.scenario matches 1 run tellraw @s [{"text":
 execute if score #go_to_hell uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Go To Hell","color":"#3FE7FF","bold":false}]
 execute if score #gone_fishing uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Gone Fishing","color":"#3FE7FF","bold":false}]
 execute if score #no_fall uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"No Fall","color":"#3FE7FF","bold":false}]
+execute if score #no_fire uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"No Fire","color":"#3FE7FF","bold":false}]
 execute if score #permakill uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Permakill","color":"#3FE7FF","bold":false}]
 execute if score #red_arrows uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Red Arrows","color":"#3FE7FF","bold":false}]
 execute if score #rewarding_longshots uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Rewarding Longshots","color":"#3FE7FF","bold":false}]

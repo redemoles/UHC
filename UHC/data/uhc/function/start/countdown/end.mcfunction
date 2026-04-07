@@ -22,6 +22,7 @@ execute if score #bhc bhc.scenario matches 51 in minecraft:overworld run gamerul
 gamemode survival @a[tag=uhc.player]
 effect clear @a
 effect give @a minecraft:instant_health 1 9 true
+execute as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier modifier remove lobby:fall_damage
 execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a[tag=uhc.player] uhc.effect.resistance -1
 # Paramètres spéciaux
@@ -29,6 +30,7 @@ effect give @a[tag=uhc.player.start_in_the_sky] minecraft:invisibility 30 0 true
 effect give @a[tag=uhc.player.start_in_the_sky] minecraft:weakness infinite 0 true
 # Scenario
 execute if score #hastey_boys uhc.scenario matches 1 as @a run attribute @s minecraft:mining_efficiency modifier add uhc:hastey_boys 10 add_value
+execute if score #no_fall uhc.scenario matches 1 as @a run attribute @s minecraft:fall_damage_multiplier modifier add uhc:no_fall -1.0 add_value
 
 ## Messages
 # FRA

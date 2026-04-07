@@ -8,8 +8,8 @@
 #
 
 # Message
-execute as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"\nLancement de la partie...","color":"#CFCFCF"}]
-execute as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"\nGame launch...","color":"#CFCFCF"}]
+execute as @a[scores={uhc.player.lang=061801}] run tellraw @s [{"text":"\nDémarrage en cours...","color":"#CFCFCF"}]
+execute as @a[scores={uhc.player.lang=051407}] run tellraw @s [{"text":"\nStart in progress...","color":"#CFCFCF"}]
 
 # Title
 title @a reset

@@ -56,12 +56,14 @@ scoreboard players set #gone_fishing uhc.scenario 0
 scoreboard players set #hastey_boys uhc.scenario 0
 scoreboard players set #no_fall uhc.scenario 0
 
+scoreboard players set #no_fire uhc.scenario 0
 scoreboard players set #permakill uhc.scenario 0
 scoreboard players set #red_arrows uhc.scenario 0
 scoreboard players set #rewarding_longshots uhc.scenario 0
 scoreboard players set #sky_high uhc.scenario 0
 scoreboard players set #sound_paranoia uhc.scenario 0
 scoreboard players set #team_health uhc.scenario 0
+
 scoreboard players set #trade_uhc uhc.scenario 0
 
 scoreboard players set #mystery_scenarios uhc.data.setup 0
@@ -101,7 +103,7 @@ execute store result storage uhc:scenario blood_diamond.tier_2_gold_ingot int 1 
 execute store result storage uhc:scenario blood_diamond.tier_2_diamond int 1 run scoreboard players get #tier_2_diamond uhc.scenario.blood_diamond.setup
 execute store result storage uhc:scenario blood_diamond.tier_2_gift int 1 run scoreboard players get #tier_2_gift uhc.scenario.blood_diamond.setup
 
-execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard players get #go_to_hell uhc.data.temp
+execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard players get #go_to_hell uhc.data.setup
 
-execute store result storage uhc:scenario sky_high.timer int 1 run scoreboard players get #sky_high uhc.data.temp
+execute store result storage uhc:scenario sky_high.timer int 1 run scoreboard players get #sky_high uhc.data.setup
 execute store result storage uhc:scenario sky_high.height int 1 run scoreboard players get #height uhc.scenario.sky_high.settings

@@ -8,7 +8,7 @@
 #
 
 attribute @s minecraft:max_health base set 20
-attribute @s minecraft:fall_damage_multiplier base set 1.0
+attribute @s minecraft:fall_damage_multiplier modifier remove lobby:fall_damage
 attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:safe_fall_distance base set 3.0
 effect give @s minecraft:instant_health 1 9 true

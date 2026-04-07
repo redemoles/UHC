@@ -105,13 +105,13 @@ scoreboard players set #tier_2_gift uhc.scenario.blood_diamond.setup 20
 #> damage_type > 1 = -1 HP every 30 seconds
 #> damage_type > 2 = Progrssive HP loss every 30 seconds with reset
 #> damage_type > 3 = Progrssive HP loss every 30 seconds without reset
-scoreboard players set #go_to_hell uhc.data.temp 60
+scoreboard players set #go_to_hell uhc.data.setup 60
 scoreboard players set #damage_type uhc.scenario.go_to_hell.settings 3
 
 # Sky High
 #> damage_type > 1 = -1 HP every 30 seconds
 #> damage_type > 2 = Progrssive HP loss every 30 seconds with reset
 #> damage_type > 3 = Progrssive HP loss every 30 seconds without reset
-scoreboard players set #sky_high uhc.data.temp 60
+scoreboard players set #sky_high uhc.data.setup 60
 scoreboard players set #damage_type uhc.scenario.sky_high.settings 3
 scoreboard players set #height uhc.scenario.sky_high.settings 150

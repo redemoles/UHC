@@ -55,6 +55,9 @@ effect give @s[scores={uhc.effect.resistance=3}] minecraft:resistance infinite 2
 # Night Vision
 execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.night_vision] minecraft:night_vision infinite 0 true
 
+# Fire Resistance
+execute if score #no_fire uhc.scenario matches 1 run effect give @s minecraft:fire_resistance infinite 0 true
+
 # Speed
 execute if entity @s[tag=uhc.player,tag=!uhc.effect.speed,predicate=uhc:effect/speed] run function uhc:in_game/player/effect/speed
 execute if entity @s[tag=uhc.player,tag=uhc.effect.speed,predicate=!uhc:effect/speed] run function uhc:in_game/player/effect/speed
