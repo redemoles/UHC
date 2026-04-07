@@ -32,19 +32,21 @@ playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=1
 
 # Effets
 effect give @s minecraft:resistance infinite 4 true
-effect give @s minecraft:slowness infinite 9 true
-effect give @s minecraft:weakness infinite 9 true
 effect give @s minecraft:invisibility infinite 0 true
-attribute @s minecraft:jump_strength base set 0
+attribute @s minecraft:attack_damage modifier add uhc.waiting_respawn -1.0 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add uhc.waiting_respawn -1.0 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add uhc.waiting_respawn -1.0 add_multiplied_total
 execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:resistance
-execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:slowness
-execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:weakness
 execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:invisibility
-execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:jump_strength base set 0.42
+execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:attack_damage modifier remove uhc.waiting_respawn
+execute if score @s uhc.timer.respawn matches 1 if score #no_fall uhc.scenario matches 1 run attribute @s minecraft:fall_damage_multiplier modifier add uhc.no_fall -1.0 add_multiplied_total
+execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:jump_strength modifier remove uhc.waiting_respawn
+execute if score @s uhc.timer.respawn matches 1 if score #hastey_boys uhc.scenario matches 1 run attribute @s minecraft:mining_efficiency modifier add uhc.hastey_boys 10 add_value
+execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:movement_speed modifier remove uhc.waiting_respawn
 
 # Absorption
-execute if score @s uhc.player.lives matches 1.. run effect give @s minecraft:absorption 10 0
-execute if score @s uhc.player.lives matches 1.. run attribute @s minecraft:max_absorption base set 4
+execute if score @s uhc.player.lives matches 1.. run effect give @s minecraft:absorption 10 1
+execute if score @s uhc.player.lives matches 1.. run attribute @s minecraft:max_absorption base set 10
 execute if score @s uhc.player.lives matches 1.. run scoreboard players set @s uhc.timer.absorption 11
 effect clear @s minecraft:absorption
 

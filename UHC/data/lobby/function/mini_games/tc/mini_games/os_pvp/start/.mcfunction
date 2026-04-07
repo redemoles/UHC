@@ -25,3 +25,5 @@ execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.pla
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game_min lobby.tc.data 2
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game_sec lobby.tc.data 40
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game lobby.tc.data 160
+
+execute if score #timer_start_tick lobby.tc.data matches 00 in uhc:lobby run gamerule minecraft:pvp true

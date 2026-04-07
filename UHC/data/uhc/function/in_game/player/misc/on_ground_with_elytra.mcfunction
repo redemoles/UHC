@@ -10,7 +10,7 @@
 tag @s remove uhc.player.start_in_the_sky
 clear @s minecraft:elytra[minecraft:custom_data={Tags:"start_in_the_sky"}]
 effect clear @s minecraft:invisibility
-effect clear @s minecraft:weakness
+attribute @s minecraft:attack_damage modifier remove uhc.lobby
 
 execute unless score #biome_paranoia uhc.scenario matches 2 run return fail
 

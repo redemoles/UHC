@@ -40,6 +40,3 @@ effect clear @s
 
 tp @s 0 200 0
 scoreboard players set @s uhc.player.tp 1
-
-execute if score #version_pvp uhc.data.setup matches 1 run attribute @s minecraft:attack_knockback base set 0.55
-execute if score #version_pvp uhc.data.setup matches 1 run attribute @s minecraft:attack_speed base set 1024

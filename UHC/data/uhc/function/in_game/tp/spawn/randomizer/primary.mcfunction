@@ -7,9 +7,10 @@
 # @description		Configuration du timer 
 #
 
+
 scoreboard players add #spawn uhc.id.spawn 1
 
-# Skip si spawn interdit - 33 attribue des spawns interdits si tous les spawns ont déjà été attribué
+# Skip un point d'apparition non correct - 33 attribue des points d'apparition non vérifiés si tous ont déjà été attribués
 execute if score #spawn uhc.id.spawn matches 01 unless score #spawn_01 uhc.id.spawn_check matches 1 run return run function uhc:in_game/tp/spawn/randomizer/primary
 execute if score #spawn uhc.id.spawn matches 02 unless score #spawn_02 uhc.id.spawn_check matches 1 run return run function uhc:in_game/tp/spawn/randomizer/primary
 execute if score #spawn uhc.id.spawn matches 03 unless score #spawn_03 uhc.id.spawn_check matches 1 run return run function uhc:in_game/tp/spawn/randomizer/primary

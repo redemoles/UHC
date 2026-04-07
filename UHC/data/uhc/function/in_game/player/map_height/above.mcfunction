@@ -17,8 +17,8 @@ execute if score @s uhc.player.map_height.sound matches 2 run scoreboard players
 
 scoreboard players add @s uhc.player.map_height.effect 1
 
-execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run attribute @s minecraft:knockback_resistance modifier add uhc:temp.knockback_resistance 1 add_value
+execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run attribute @s minecraft:knockback_resistance modifier add uhc.knockback_resistance.temp 1 add_value
 execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run damage @s 1 minecraft:outside_border
 execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run effect give @s minecraft:glowing 3 0 true
 execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run scoreboard players remove @s uhc.player.map_height.effect 3
-execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run attribute @s minecraft:knockback_resistance modifier remove uhc:temp.knockback_resistance
+execute if score @s uhc.player.map_height.effect >= #map_height_tick_above uhc.data.setup run attribute @s minecraft:knockback_resistance modifier remove uhc.knockback_resistance.temp

@@ -7,9 +7,11 @@
 # @description		PvP 1.8
 #
 
+tag @s add uhc.version_pvp.1_8
+
 # Vitesse d'attaque et recul
-attribute @s minecraft:attack_knockback base set 0.55
-attribute @s minecraft:attack_speed base set 1024
+attribute @s minecraft:attack_knockback modifier add uhc.pvp_1_8 0.55 add_value
+attribute @s minecraft:attack_speed modifier add uhc.pvp_1_8 1024 add_value
 
 execute if entity @s[predicate=!uhc:item_hand/swords,predicate=!uhc:item_hand/axes] run return fail
 

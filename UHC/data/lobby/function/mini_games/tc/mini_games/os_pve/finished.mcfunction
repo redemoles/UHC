@@ -18,4 +18,4 @@ execute if score #timer_game lobby.tc.data matches 41.. run scoreboard players s
 
 execute if score #random_os_pve_pick lobby.tc.data matches 1 run function lobby:mini_games/tc/mini_games/os_pve/record/classic_01/
 execute if score #random_os_pve_pick lobby.tc.data matches 2 run function lobby:mini_games/tc/mini_games/os_pve/record/temperature_01/
-function lobby:mini_games/tc/timer/start_effects
+function lobby:mini_games/tc/player_attribute/default

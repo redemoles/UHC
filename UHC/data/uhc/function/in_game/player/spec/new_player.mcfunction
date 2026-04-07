@@ -48,10 +48,6 @@ tag @s remove uhc.fire_flame
 function uhc:pre_game/player_and_team/reset_tags
 # Scénarios
 tag @s remove uhc.scenario.best_pve
-execute if score #hastey_boys uhc.scenario matches 0 run attribute @s minecraft:mining_efficiency modifier remove uhc:hastey_boys
-execute if score #hastey_boys uhc.scenario matches 1 run attribute @s minecraft:mining_efficiency modifier add uhc:hastey_boys 10 add_value
-execute if score #no_fall uhc.scenario matches 0 run attribute @s minecraft:fall_damage_multiplier modifier remove uhc:no_fall
-execute if score #no_fall uhc.scenario matches 1 run attribute @s minecraft:fall_damage_multiplier modifier add uhc:no_fall -1.0 add_value
 # Mode de jeu
 function mls:start/reset_tags
 function nzl:start/reset_tags

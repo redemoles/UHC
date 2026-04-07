@@ -20,14 +20,12 @@ gamemode adventure @a[tag=uhc.player]
 gamemode spectator @a[tag=uhc.spec]
 recipe take @a *
 
+tag @a[tag=uhc.player] add uhc.start.temp 
 effect give @a[tag=uhc.player] minecraft:resistance infinite 4 true
 effect give @a[tag=uhc.player] minecraft:blindness infinite 4 true
-effect give @a[tag=uhc.player] minecraft:slowness infinite 9 true
-effect give @a[tag=uhc.player] minecraft:weakness infinite 9 true
 effect give @a[tag=uhc.player] minecraft:invisibility infinite 0 true
-execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0
-execute if score #version_pvp uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_speed base set 1024
-execute if score #version_pvp uhc.data.setup matches 1 as @a[tag=uhc.player] run attribute @s minecraft:attack_knockback base set 0.55
+execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength modifier add uhc.waiting_start -1.0 add_multiplied_total
+execute as @a[tag=uhc.player] run attribute @s minecraft:movement_speed modifier add uhc.waiting_start -1.0 add_multiplied_total
 
 advancement revoke @a everything
 

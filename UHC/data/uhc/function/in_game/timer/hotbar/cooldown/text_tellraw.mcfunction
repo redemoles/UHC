@@ -7,6 +7,8 @@
 # @description		Annonce décompte
 #
 
+execute if score #minutes uhc.data.temp matches 0 run tellraw @a [{"text":""}]
+
 execute if score #bhc uhc.gamemode matches 1 run function bhc:timer/cooldown/text_tellraw
 execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/timer/hotbar/cooldown/scenario/go_to_hell
 execute if score #sky_high uhc.scenario matches 1 run function uhc:in_game/timer/hotbar/cooldown/scenario/sky_high

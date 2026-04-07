@@ -20,7 +20,7 @@ execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
 execute if score #shrink_1_time_left uhc.data.temp matches ..0 as @s[tag=uhc.player,predicate=!uhc:dimension/the_nether] at @s run function uhc:in_game/tp/border/coords
 
 # Supprimer les effets de start / respawn
-execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,predicate=uhc:effect_respawn] run function uhc:in_game/player/reconnect/start
+execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,tag=uhc.start.temp] run function uhc:in_game/player/reconnect/start
 
 # Coordonnées de respawn
 execute if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn/text with storage uhc:temp respawn_location

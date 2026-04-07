@@ -38,18 +38,19 @@ playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=1
 
 # Effets
 effect give @s minecraft:resistance infinite 4 true
-effect give @s minecraft:slowness infinite 9 true
-effect give @s minecraft:weakness infinite 9 true
 effect give @s minecraft:invisibility infinite 9 true
-attribute @s minecraft:jump_strength base set 0
+attribute @s minecraft:attack_damage modifier add uhc.waiting_respawn -1.0 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add uhc.waiting_respawn -1.0 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add uhc.waiting_respawn -1.0 add_multiplied_total
 execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:resistance
-execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:slowness
-execute if score @s uhc.timer.respawn matches 1 unless score #playing_os_pve lobby.tc.data matches 1 run effect clear @s minecraft:weakness
 execute if score @s uhc.timer.respawn matches 1 unless score #playing_os_pve lobby.tc.data matches 1 run effect clear @s minecraft:invisibility
-execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:jump_strength base set 0.42
+execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:attack_damage modifier remove uhc.waiting_respawn
+execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:jump_strength modifier remove uhc.waiting_respawn
+execute if score @s uhc.timer.respawn matches 31 if score #playing_os_pve lobby.tc.data matches 1 run attribute @s minecraft:max_health modifier add lobby.tc.os_pve -1 add_multiplied_total
+execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:movement_speed modifier remove uhc.waiting_respawn
 
 # Absorption
-execute if score @s uhc.player.lives matches 1.. run effect give @s minecraft:absorption 3 0
+effect give @s minecraft:absorption 3 0
 
 # Timer respawn
 scoreboard players remove @s uhc.timer.respawn 1

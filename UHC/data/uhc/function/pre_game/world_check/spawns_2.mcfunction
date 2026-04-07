@@ -43,4 +43,4 @@ execute if score @s uhc.spawn.check matches 32 if score @s uhc.id.spawn_check ma
 
 ## Point suivant
 scoreboard players add @s uhc.spawn.check 1
-execute if score @s uhc.spawn.check matches 01..32 run function uhc:pre_game/world_check/text_trigger
+execute if score @s uhc.spawn.check matches 01..32 run function uhc:pre_game/world_check/text_trigger/main

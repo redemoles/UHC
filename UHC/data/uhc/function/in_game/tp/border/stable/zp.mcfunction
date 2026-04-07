@@ -16,6 +16,6 @@ scoreboard players add #player_z uhc.data.temp 1
 execute store result storage uhc:temp tp.zp int 1 run scoreboard players get #player_z uhc.data.temp
 
 
-attribute @s minecraft:knockback_resistance modifier add uhc:temp.knockback_resistance 1 add_value
+attribute @s minecraft:knockback_resistance modifier add uhc.knockback_resistance.temp 1 add_value
 damage @s 1 minecraft:outside_border
-attribute @s minecraft:knockback_resistance modifier remove uhc:temp.knockback_resistance
+attribute @s minecraft:knockback_resistance modifier remove uhc.knockback_resistance.temp

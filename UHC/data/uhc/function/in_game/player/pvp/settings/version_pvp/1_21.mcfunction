@@ -8,8 +8,8 @@
 #
 
 # Vitesse d'attaque et recul
-attribute @s minecraft:attack_damage base set 1
-attribute @s minecraft:attack_speed base set 4
+attribute @s minecraft:attack_knockback modifier remove uhc.pvp_1_8
+attribute @s minecraft:attack_speed modifier remove uhc.pvp_1_8
 
 execute if entity @s[predicate=!uhc:item_hand/swords,predicate=!uhc:item_hand/axes] run return fail
 
