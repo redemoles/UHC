@@ -7,7 +7,7 @@
 # @description		Note des morts
 #
 
-scoreboard players set @s uhc.player.death_summary 1
+scoreboard players set @s uhc.player.death.summary 1
 tag @s add uhc.temp
 
 # Couleur d'équipe de base

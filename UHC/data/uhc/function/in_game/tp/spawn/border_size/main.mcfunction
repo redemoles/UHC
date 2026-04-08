@@ -1,5 +1,5 @@
 
-#> uhc:in_game/tp/spawn/border_size/
+#> uhc:in_game/tp/spawn/border_size/main
 #
 # @within			uhc:in_game/timer/tick
 # 

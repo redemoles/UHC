@@ -38,7 +38,7 @@ scoreboard players operation #go_to_hell uhc.data.temp = #go_to_hell uhc.data.se
 scoreboard players operation #sky_high uhc.data.temp = #sky_high uhc.data.setup
 
 # Divers paramètres
-scoreboard players operation #lives uhc.player.lives = #lives uhc.data.setup
+scoreboard players operation #lives uhc.data.temp = #lives uhc.data.setup
 scoreboard players operation #diamond_protection uhc.data.temp = #diamond_protection uhc.data.setup
 scoreboard players operation #diamond_sharpness uhc.data.temp = #diamond_sharpness uhc.data.setup
 scoreboard players operation #iron_protection uhc.data.temp = #iron_protection uhc.data.setup
@@ -98,7 +98,7 @@ scoreboard players operation #shrink_2_timer_end uhc.data.temp += #shrink_2_time
 scoreboard players operation #shrink_3_timer_end uhc.data.temp += #shrink_3_time_left uhc.data.temp
 
 ## Nombre de vies
-scoreboard players operation #lives_start uhc.player.lives = #lives uhc.player.lives
+scoreboard players operation #lives_start uhc.player.lives = #lives uhc.data.temp
 
 ## Points de vie par kill
 scoreboard players operation #reward_kill_health uhc.data.temp = #reward_kill_health uhc.data.setup

@@ -8,7 +8,5 @@
 #
 
 # Réinitialisation des effets
-effect clear
-function uhc:in_game/player/attribute/default
-
-execute unless score @s uhc.player.online matches 1 run effect give @s minecraft:absorption 1 0 true
+effect clear @s
+function uhc:player_status/attributes_and_effects/lobby/waiting

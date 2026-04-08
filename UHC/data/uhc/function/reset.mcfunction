@@ -209,10 +209,10 @@ scoreboard objectives remove uhc.player.damage_taken.pvp
 scoreboard objectives remove uhc.player.damage_taken.temp
 scoreboard objectives remove uhc.player.kills
 scoreboard objectives remove uhc.player.kills.inv
-scoreboard objectives remove uhc.player.death.cancel_additional_item
 scoreboard objectives remove uhc.player.death.armor_additional_item
-scoreboard objectives remove uhc.player.death
-scoreboard objectives remove uhc.player.death_summary
+scoreboard objectives remove uhc.player.death.cancel_additional_item
+scoreboard objectives remove uhc.player.death.temp
+scoreboard objectives remove uhc.player.death.summary
 scoreboard objectives remove uhc.player.data.check
 scoreboard objectives remove uhc.effect.resistance
 scoreboard objectives remove uhc.spec.tp
@@ -290,10 +290,10 @@ scoreboard objectives add uhc.player.border_alert dummy
 scoreboard objectives add uhc.player.map_height.effect dummy
 scoreboard objectives add uhc.player.map_height.sound dummy
 scoreboard objectives add uhc.player.map_height.text dummy
-scoreboard objectives add uhc.player.death.cancel_additional_item dummy
 scoreboard objectives add uhc.player.death.armor_additional_item dummy
-scoreboard objectives add uhc.player.death deathCount
-scoreboard objectives add uhc.player.death_summary dummy
+scoreboard objectives add uhc.player.death.cancel_additional_item dummy
+scoreboard objectives add uhc.player.death.temp deathCount
+scoreboard objectives add uhc.player.death.summary dummy
 scoreboard objectives add uhc.player.data.check dummy
 scoreboard objectives add uhc.player.lang dummy
 scoreboard objectives add uhc.effect.resistance dummy
@@ -448,4 +448,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26043
+scoreboard players set #update uhc.data.update 26044

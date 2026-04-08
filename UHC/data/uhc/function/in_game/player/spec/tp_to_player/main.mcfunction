@@ -1,5 +1,5 @@
 
-#> uhc:in_game/player/spec/tp_to_player/
+#> uhc:in_game/player/spec/tp_to_player/main
 #
 # @within			uhc:in_game/player/tick
 #

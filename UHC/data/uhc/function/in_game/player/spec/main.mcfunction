@@ -1,5 +1,5 @@
 
-#> uhc:in_game/player/spec/
+#> uhc:in_game/player/spec/main
 #
 # @within			uhc:in_game/player/tick
 #
@@ -7,9 +7,7 @@
 # @description		Donne les effets / gamemode aux specs
 #
 
-execute unless entity @s[scores={uhc.player.online=1}] run function uhc:in_game/player/spec/new_player
-
-function uhc:in_game/player/attribute/default
+function uhc:player_status/attributes_and_effects/uhc/playing
 
 gamemode spectator @s
 effect give @s minecraft:invisibility infinite 1 true
@@ -21,7 +19,7 @@ tag @s[scores={uhc.player.online=1}] add uhc.player.dead
 tag @s remove uhc.ironman
 tag @s remove uhc.scenario.best_pve
 execute if score #sound_paranoia uhc.scenario matches 1 run tag @s add uhc.scenario.sound_paranoia.on
-scoreboard players set @s uhc.player.death 2
+scoreboard players set @s uhc.player.death.temp 2
 scoreboard players set @s uhc.timer.respawn 0
 scoreboard players set @s uhc.player.online 1
 

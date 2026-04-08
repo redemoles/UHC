@@ -1,5 +1,5 @@
 
-#> lobby:mini_games/tc/timer/start/
+#> lobby:mini_games/tc/timer/start
 #
 # @within			lobby:mini_games/tc/
 #
@@ -17,15 +17,10 @@ execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.pl
 execute if score #timer_start_tick lobby.tc.data matches 300 as @a[tag=mgs.tc.player] at @s run setblock ~ ~ ~ minecraft:air
 
 # Effets
-execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run function lobby:mini_games/tc/player_attribute/default
-execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run effect give @s minecraft:blindness infinite 0 true
-execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run effect give @s minecraft:invisibility infinite 0 true
-execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run attribute @s minecraft:jump_strength modifier add uhc.waiting_start -1.0 add_multiplied_total
-execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run attribute @s minecraft:movement_speed modifier add uhc.waiting_start -1.0 add_multiplied_total
-execute if score #timer_start_tick lobby.tc.data matches 0 as @a[tag=mgs.tc.player] run effect clear @s minecraft:blindness
-execute if score #timer_start_tick lobby.tc.data matches 0 as @a[tag=mgs.tc.player] run effect clear @s minecraft:invisibility
-execute if score #timer_start_tick lobby.tc.data matches 0 as @a[tag=mgs.tc.player] run attribute @s minecraft:jump_strength modifier remove uhc.waiting_start
-execute if score #timer_start_tick lobby.tc.data matches 0 as @a[tag=mgs.tc.player] run attribute @s minecraft:movement_speed modifier remove uhc.waiting_start
+execute if score #timer_start_tick lobby.tc.data matches 301 as @a[tag=mgs.tc.player] run function uhc:player_status/attributes_and_effects/lobby/mini_games/tc/launching_game/start
+execute if score #timer_start_tick lobby.tc.data matches 0 as @a[tag=mgs.tc.player] run function uhc:player_status/attributes_and_effects/lobby/mini_games/tc/launching_game/end
+
+# Réinitialisation des équipes
 execute if score #timer_start_tick lobby.tc.data matches 301 run scoreboard players set #team_01 lobby.tc.player.score 0
 execute if score #timer_start_tick lobby.tc.data matches 301 run scoreboard players set #team_02 lobby.tc.player.score 0
 

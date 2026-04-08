@@ -17,7 +17,7 @@ execute if score #timer_game_sec lobby.tc.data matches -1 if score #timer_game_m
 execute if score #timer_game_tick lobby.tc.data matches ..-1 run scoreboard players add #timer_game_tick lobby.tc.data 20
 
 # Résurrection
-execute as @e[type=player,scores={uhc.player.death=1..}] run function lobby:mini_games/tc/timer/respawn
+execute as @e[type=player,scores={uhc.player.death.temp=1..}] run function lobby:mini_games/tc/timer/respawn
 
 # Timer d'enregistrement des records
 scoreboard players add #temp_record lobby.tc.data 50

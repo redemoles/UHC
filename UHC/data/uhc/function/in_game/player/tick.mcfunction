@@ -10,7 +10,7 @@
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 # Connexion d'un joueur externe
-execute unless score @s uhc.player.online matches 1 run function uhc:in_game/player/spec/
+execute unless score @s uhc.player.online matches 1 run function uhc:in_game/player/spec/new_player
 
 # Reconnexion d'un joueur
 execute if score @s uhc.player.disconnect matches 1.. run function uhc:in_game/player/reconnect/
@@ -102,15 +102,15 @@ execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:i
 execute if score #shrink_1_time_left uhc.data.temp matches ..0 if score #data_check uhc.data.temp matches 0 as @s[tag=uhc.player] at @s run function uhc:in_game/tp/border/coords
 execute if score #map_height_timer uhc.data.temp matches ..0 if score #tick uhc.data.temp matches 0 unless score #sky_high uhc.scenario matches 1 if entity @s[tag=uhc.player,predicate=uhc:dimension/overworld] run function uhc:in_game/player/map_height/check_limit
 
-## Joueur à respwan
-execute as @s[tag=uhc.revive] run function uhc:in_game/player/spec/revive
+## Joueur à faire revenir à la vie
+execute unless entity @s[tag=!revive,tag=!uhc.revive] run function uhc:in_game/player/spec/revive/main
 
 ## Spectateur
 # Localisé sous la carte
 execute unless score @s[tag=uhc.spec] uhc.player.data.check matches 1 run function uhc:in_game/player/data/pos_only
 execute if score @s[tag=uhc.spec] uhc.player.y matches ..-65 at @s positioned over motion_blocking run tp @s ~ ~32 ~ 0 67.5
 # Téléportation à un joueur
-execute if score @s uhc.spec.tp matches 1.. run function uhc:in_game/player/spec/tp_to_player/
+execute if score @s uhc.spec.tp matches 1.. run function uhc:in_game/player/spec/tp_to_player/main
 # Info spec
 execute if score @s uhc.spec_info.all matches 1 run function uhc:in_game/player/spec/spec_info_trigger/all
 execute if score @s uhc.spec_info.none matches 1 run function uhc:in_game/player/spec/spec_info_trigger/none

@@ -10,9 +10,9 @@
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 ## Résumé des morts
-execute unless score @s uhc.player.death_summary matches 1 if score #bhc bhc.scenario matches 02 in uhc:lobby run function bhc:scenario/02/target/death/main
-execute unless score @s uhc.player.death_summary matches 1 run function uhc:in_game/player/death/text_end_game/ with storage uhc:temp hotbar
-scoreboard players set @s uhc.player.death_summary 0
+execute unless score @s uhc.player.death.summary matches 1 if score #bhc bhc.scenario matches 02 in uhc:lobby run function bhc:scenario/02/target/death/main
+execute unless score @s uhc.player.death.summary matches 1 run function uhc:in_game/player/death/text_end_game/ with storage uhc:temp hotbar
+scoreboard players set @s uhc.player.death.summary 0
 
 ## Retrait d'une vie au joueur mort
 scoreboard players remove @s uhc.player.lives 1
@@ -32,10 +32,10 @@ execute if score #bhc uhc.gamemode matches 1 unless score #game_progress uhc.gam
 ## Settings Respawn
 # Temps de Respawn
 scoreboard players set @s[scores={uhc.player.lives=1..}] uhc.timer.respawn 32
-scoreboard players set @s[scores={uhc.player.lives=1..}] uhc.player.death 0
+scoreboard players set @s[scores={uhc.player.lives=1..}] uhc.player.death.temp 0
 
 # Lieu de Respawn
-execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/
+execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/main
 execute if score @s uhc.player.lives matches 1.. in minecraft:overworld run function uhc:in_game/tp/spawn/default with storage uhc:temp respawn_location
 
 # Récupère les coordonnées du joueur mort

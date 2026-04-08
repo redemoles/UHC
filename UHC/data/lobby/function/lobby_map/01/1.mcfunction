@@ -52,5 +52,5 @@ place template lobby:lobby_map/01/low_sw ~-30 ~-53 ~0
 place template lobby:lobby_map/01/low_se ~1 ~-53 ~0
 
 time set 10000
-execute unless score #former_lobby lobby.structure.data matches 00..09 run tp @a[tag=!mgs.backroom] ~ ~ ~ 0 0
-execute if score #former_lobby lobby.structure.data matches 00..09 run tp @a[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.backroom] ~ ~ ~ 0 0
+execute unless score #former_lobby lobby.structure.data matches 00..09 run tp @a[tag=!mgs.backroom,tag=!mgs.jump] ~ ~ ~ 0 0
+execute if score #former_lobby lobby.structure.data matches 00..09 run tp @a[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.backroom,tag=!mgs.jump] ~ ~ ~ 0 0

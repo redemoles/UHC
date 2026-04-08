@@ -77,7 +77,7 @@ execute if score #message uhc.data.setup matches 1..5 run scoreboard players add
 execute if score #message uhc.data.setup matches 6 run scoreboard players set #message uhc.data.setup 1
 
 # Détection d'un joueur mort
-execute as @e[type=minecraft:player,scores={uhc.player.death=1}] run function uhc:in_game/player/death/main
+execute as @e[type=minecraft:player,scores={uhc.player.death.temp=1}] run function uhc:in_game/player/death/main
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/player/tick

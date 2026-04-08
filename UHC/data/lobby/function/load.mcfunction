@@ -136,10 +136,4 @@ scoreboard players set #timer_game lobby.tc.data -1
 scoreboard players set #timer_game_min lobby.tc.data -1
 scoreboard players set #timer_game_sec lobby.tc.data -1
 
-team add mgs.backroom
-team modify mgs.backroom collisionRule never
-team modify mgs.backroom color gray
-team modify mgs.backroom prefix [{"text":"■■ ","color":"gray","bold":true,"obfuscated":true}]
-team modify mgs.backroom seeFriendlyInvisibles false
-
 execute in uhc:lobby run function lobby:mini_games/tc/mini_games/_order/marker_summon

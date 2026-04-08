@@ -1,7 +1,7 @@
 
-#> uhc:in_game/player/spec/revive_team
+#> uhc:in_game/player/spec/revive/team
 #
-# @within			uhc:in_game/player/spec/revive
+# @within			uhc:in_game/player/spec/revive/main
 #
 #
 # @description		Resurrection d'un spectateur

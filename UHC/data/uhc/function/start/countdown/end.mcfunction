@@ -22,10 +22,7 @@ execute if score #bhc bhc.scenario matches 51 in minecraft:overworld run gamerul
 gamemode survival @a[tag=uhc.player]
 effect clear @a
 effect give @a minecraft:instant_health 1 9 true
-execute as @a[tag=uhc.player] run attribute @s minecraft:attack_damage modifier remove uhc.lobby
-execute as @a[tag=uhc.player] run attribute @s minecraft:fall_damage_multiplier modifier remove uhc.lobby
-execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength modifier remove uhc.waiting_start
-execute as @a[tag=uhc.player] run attribute @s minecraft:movement_speed modifier remove uhc.waiting_start
+execute as @a[tag=uhc.player] run function uhc:player_status/attributes_and_effects/uhc/playing
 tag @a[tag=uhc.player] remove uhc.start.temp
 scoreboard players set @a[tag=uhc.player] uhc.effect.resistance -1
 # Paramètres spéciaux

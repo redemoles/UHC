@@ -9,7 +9,7 @@
 
 # Timer respawn
 execute unless entity @s[scores={uhc.timer.respawn=1..}] run scoreboard players set @s uhc.timer.respawn 31
-scoreboard players set @s[scores={uhc.timer.respawn=1}] uhc.player.death 0
+scoreboard players set @s[scores={uhc.timer.respawn=1}] uhc.player.death.temp 0
 
 # Téléportation au point de départ
 execute if score #playing_ctb lobby.tc.data matches 1 as @s[scores={uhc.timer.respawn=31},tag=mgs.tc.team.01] run tp @s ~ ~5 ~19 180 0
@@ -31,23 +31,15 @@ title @s[scores={uhc.timer.respawn=1}] title [{"text":" GO ! ","color":"#FFE73F"
 title @s[scores={uhc.timer.respawn=1}] subtitle [{"text":"","color":"#FF3F3F","bold":false}]
 
 # Décompte sonore
-playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=31}] ~ ~ ~ 0.5 0.5 0.5
-playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=21}] ~ ~ ~ 0.4 0.5 0.4
-playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=11}] ~ ~ ~ 0.4 0.5 0.4
-playsound minecraft:block.note_block.pling master @s[scores={uhc.timer.respawn=1}] ~ ~ ~ 0.5 1 0.5
+execute as @s[scores={uhc.timer.respawn=31}] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 0.5 0.5
+execute as @s[scores={uhc.timer.respawn=21}] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.4 0.5 0.4
+execute as @s[scores={uhc.timer.respawn=11}] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.4 0.5 0.4
+execute as @s[scores={uhc.timer.respawn=1}] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 1 0.5
 
 # Effets
-effect give @s minecraft:resistance infinite 4 true
-effect give @s minecraft:invisibility infinite 9 true
-attribute @s minecraft:attack_damage modifier add uhc.waiting_respawn -1.0 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add uhc.waiting_respawn -1.0 add_multiplied_total
-attribute @s minecraft:movement_speed modifier add uhc.waiting_respawn -1.0 add_multiplied_total
-execute if score @s uhc.timer.respawn matches 1 run effect clear @s minecraft:resistance
-execute if score @s uhc.timer.respawn matches 1 unless score #playing_os_pve lobby.tc.data matches 1 run effect clear @s minecraft:invisibility
-execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:attack_damage modifier remove uhc.waiting_respawn
-execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:jump_strength modifier remove uhc.waiting_respawn
+execute if score @s uhc.timer.respawn matches 31 run function uhc:player_status/attributes_and_effects/respawning/start
+execute if score @s uhc.timer.respawn matches 1 run function uhc:player_status/attributes_and_effects/respawning/end
 execute if score @s uhc.timer.respawn matches 31 if score #playing_os_pve lobby.tc.data matches 1 run attribute @s minecraft:max_health modifier add lobby.tc.os_pve -1 add_multiplied_total
-execute if score @s uhc.timer.respawn matches 1 run attribute @s minecraft:movement_speed modifier remove uhc.waiting_respawn
 
 # Absorption
 effect give @s minecraft:absorption 3 0

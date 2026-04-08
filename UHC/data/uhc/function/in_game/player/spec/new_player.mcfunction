@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/new_player
 #
-# @within			uhc:in_game/player/spec/
+# @within			uhc:in_game/player/spec/main
 #
 #
 # @description		Donne les effets / gamemode aux specs
@@ -51,3 +51,5 @@ tag @s remove uhc.scenario.best_pve
 # Mode de jeu
 function mls:start/reset_tags
 function nzl:start/reset_tags
+
+function uhc:in_game/player/spec/main

@@ -39,5 +39,3 @@ team join 029 @a[scores={uhc.id.team=29}]
 team join 030 @a[scores={uhc.id.team=30}]
 team join 031 @a[scores={uhc.id.team=31}]
 team join 032 @a[scores={uhc.id.team=32}]
-
-team join mgs.backroom @a[tag=mgs.backroom]

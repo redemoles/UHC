@@ -20,12 +20,9 @@ gamemode adventure @a[tag=uhc.player]
 gamemode spectator @a[tag=uhc.spec]
 recipe take @a *
 
-tag @a[tag=uhc.player] add uhc.start.temp 
-effect give @a[tag=uhc.player] minecraft:resistance infinite 4 true
-effect give @a[tag=uhc.player] minecraft:blindness infinite 4 true
-effect give @a[tag=uhc.player] minecraft:invisibility infinite 0 true
-execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength modifier add uhc.waiting_start -1.0 add_multiplied_total
-execute as @a[tag=uhc.player] run attribute @s minecraft:movement_speed modifier add uhc.waiting_start -1.0 add_multiplied_total
+tag @a[tag=uhc.player] add uhc.start.temp
+
+execute as @a[tag=uhc.player] run function uhc:player_status/attributes_and_effects/uhc/start
 
 advancement revoke @a everything
 
@@ -60,7 +57,7 @@ execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] st
 ## Nombre de vie
 scoreboard players set @a[tag=uhc.spec] uhc.player.lives 0
 scoreboard players operation @a[tag=uhc.player] uhc.player.lives = #lives uhc.data.setup
-scoreboard players set @a uhc.player.death 0
+scoreboard players set @a uhc.player.death.temp 0
 scoreboard players set @a uhc.timer.respawn 0
 
 ## Nombre de joueurs en jeu

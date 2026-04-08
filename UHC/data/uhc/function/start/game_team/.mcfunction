@@ -12,7 +12,7 @@
 scoreboard players set @a[tag=uhc.player] uhc.id.spawn 0
 tag @a[tag=uhc.player] add uhc.id.spawn
 function uhc:in_game/tp/spawn/randomizer/primary
-execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/
+execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/main
 execute unless score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld as @a[tag=uhc.player] run function uhc:in_game/tp/spawn/default with storage uhc:temp respawn_location
 
 # Points d'apparition dans le ciel

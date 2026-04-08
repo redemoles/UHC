@@ -9,7 +9,7 @@
 
 scoreboard players remove #timer_end_tick lobby.tc.data 1
 scoreboard players set @a[tag=mgs.tc.player] uhc.timer.respawn 0
-scoreboard players set @a[tag=mgs.tc.player] uhc.player.death 0
+scoreboard players set @a[tag=mgs.tc.player] uhc.player.death.temp 0
 
 execute if score #playing_memory_build lobby.tc.data matches 1 run function lobby:mini_games/tc/timer/end_remove_wall
 execute if score #playing_puzzle lobby.tc.data matches 1 run function lobby:mini_games/tc/timer/end_remove_wall
@@ -32,8 +32,9 @@ execute if score #timer_end_tick lobby.tc.data matches 80 as @a[scores={uhc.play
 # Suppression de l'inventaire
 execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run clear @s
 
+# Effets
 execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run effect clear @s
-execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run function lobby:mini_games/tc/player_attribute/default
+execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run function uhc:player_status/attributes_and_effects/lobby/waiting
 
 # Désactivation du PVP
 execute if score #timer_end_tick lobby.tc.data matches 80 in uhc:lobby run gamerule minecraft:pvp false
