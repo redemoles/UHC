@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/spectators_room/when_left
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Joueur détecté quittant la salle des spectateurs

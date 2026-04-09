@@ -27,7 +27,7 @@ function uhc:in_game/player/team_join/vanilla
 
 # Données du joueur
 execute store result storage uhc:temp hp.id int 1 run scoreboard players get @s uhc.id.player
-function uhc:in_game/player/health
+function uhc:in_game/player/misc/health/default
 
 # Si l'entité est un joueur
 execute on attacker as @s[type=minecraft:player] run return run function uhc:in_game/advancement/hurted_by_entity/attacker/

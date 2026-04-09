@@ -242,6 +242,7 @@ scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.temp dummy
 scoreboard objectives add uhc.data.temp.inv dummy
 scoreboard objectives add uhc.data.numbers dummy
+scoreboard objectives add uhc.menu.default_language dummy
 scoreboard objectives add uhc.menu.language dummy
 scoreboard objectives add uhc.menu.main.player dummy
 scoreboard objectives add uhc.menu.gamemode.bhc dummy
@@ -448,4 +449,4 @@ scoreboard players set #respawn_location_780 uhc.data.setup 780
 scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26044
+scoreboard players set #update uhc.data.update 26045

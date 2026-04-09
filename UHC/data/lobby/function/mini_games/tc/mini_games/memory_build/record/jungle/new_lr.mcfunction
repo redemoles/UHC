@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/mini_games/memory_build/record/jungle/new_lr
 #
-# @within			lobby:mini_games/tc/mini_games/memory_build/record/
+# @within			lobby:mini_games/tc/mini_games/memory_build/record/main
 #
 #
 # @description		Annonce un nouveau record local à tous les joueurs

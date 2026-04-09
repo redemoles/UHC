@@ -8,8 +8,9 @@
 #
 
 clear @s
-tag @s add uhc.menu.main.host
+execute if score #language uhc.player.lang matches 1.. run tag @s add uhc.menu.main.host
 scoreboard players set @s uhc.menu.main.player 0
+scoreboard players set @s uhc.menu.default_language 0
 scoreboard players set @s uhc.menu.language 0
 tag @s remove uhc.menu.gamemode
 scoreboard players set @s uhc.menu.gamemode.bhc 0

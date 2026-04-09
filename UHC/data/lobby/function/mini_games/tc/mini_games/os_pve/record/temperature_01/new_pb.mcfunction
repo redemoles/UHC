@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/mini_games/os_pve/record/temperature_01/new_pb
 #
-# @within			lobby:mini_games/tc/mini_games/os_pve/record/
+# @within			lobby:mini_games/tc/mini_games/os_pve/record/main
 #
 #
 # @description		Annonce un nouveau record personnel au joueur concerné

@@ -47,4 +47,5 @@ execute if score #timer_start_tick lobby.tc.data matches 250 if score #random_ct
 execute if score #timer_start_tick lobby.tc.data matches 00 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run effect clear @s
 execute if score #timer_start_tick lobby.tc.data matches 250 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run give @s minecraft:arrow 16
 
+execute if score #timer_start_tick lobby.tc.data matches 00 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run attribute @s minecraft:attack_damage modifier remove uhc.lobby
 execute if score #timer_start_tick lobby.tc.data matches 00 in uhc:lobby run gamerule minecraft:pvp true

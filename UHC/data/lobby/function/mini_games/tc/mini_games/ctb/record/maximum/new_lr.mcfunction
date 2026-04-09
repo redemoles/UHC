@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/mini_games/ctb/record/maximum/new_lr
 #
-# @within			lobby:mini_games/tc/mini_games/ctb/record/
+# @within			lobby:mini_games/tc/mini_games/ctb/record/main
 #
 #
 # @description		Annonce un nouveau record local à tous les joueurs

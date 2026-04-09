@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/timer/pre_start
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Décompte avant prochain mini-jeu

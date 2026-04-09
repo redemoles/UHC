@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/timer/end
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Fin d'un mini-jeu
@@ -34,7 +34,4 @@ execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.playe
 
 # Effets
 execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run effect clear @s
-execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run function uhc:player_status/attributes_and_effects/lobby/waiting
-
-# Désactivation du PVP
-execute if score #timer_end_tick lobby.tc.data matches 80 in uhc:lobby run gamerule minecraft:pvp false
+execute if score #timer_end_tick lobby.tc.data matches 80 as @a[tag=mgs.tc.player] run function uhc:player_status/attributes_and_effects/lobby/default

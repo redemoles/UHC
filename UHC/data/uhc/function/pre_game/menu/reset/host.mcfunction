@@ -8,10 +8,12 @@
 #
 
 execute if score @s uhc.menu.gamemode.bhc matches 9 at @s unless entity @p[tag=uhc.host,distance=0.1..,scores={uhc.menu.gamemode.bhc=9}] run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/close
-function uhc:pre_game/menu/load/main/host/menu
+execute unless score #language uhc.player.lang matches 1.. run function uhc:pre_game/menu/load/language/default_lang
+execute if score #language uhc.player.lang matches 1.. run function uhc:pre_game/menu/load/main/host/menu
 
-tag @s add uhc.menu.main.host
+execute if score #language uhc.player.lang matches 1.. run tag @s add uhc.menu.main.host
 scoreboard players set @s uhc.menu.main.player 0
+scoreboard players set @s uhc.menu.default_language 0
 scoreboard players set @s uhc.menu.language 0
 tag @s remove uhc.menu.gamemode
 scoreboard players set @s uhc.menu.gamemode.bhc 0

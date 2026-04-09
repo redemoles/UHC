@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/waiting/when_left
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Joueur détecté voulant quitter la chambre ou la liste d'attente
@@ -32,4 +32,4 @@ function lobby:mini_games/tc/spectators_room/when_joined
 # Réinitialisation des effets
 effect clear @s
 effect give @s minecraft:absorption 1 1 true
-function uhc:player_status/attributes_and_effects/lobby/waiting
+function uhc:player_status/attributes_and_effects/lobby/default

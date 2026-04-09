@@ -16,7 +16,7 @@ execute unless entity @p[tag=uhc.spec_info.pvp] run return fail
 function uhc:in_game/player/team_join/vanilla
 
 # Données du joueur
-function uhc:in_game/player/health
+function uhc:in_game/player/misc/health/default
 
 tag @s add uhc.temp.attacker
 execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart with storage uhc:temp hp

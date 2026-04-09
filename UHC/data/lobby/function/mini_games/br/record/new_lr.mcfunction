@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/br/record/new_lr
 #
-# @within			lobby:mini_games/br/record/
+# @within			lobby:mini_games/br/record/main
 #
 #
 # @description		Annonce un nouveau record local à tous les joueurs

@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/mini_games/memory_build/record/cherry/new_pb
 #
-# @within			lobby:mini_games/tc/mini_games/memory_build/record/
+# @within			lobby:mini_games/tc/mini_games/memory_build/record/main
 #
 #
 # @description		Annonce un nouveau record personnel au joueur concerné

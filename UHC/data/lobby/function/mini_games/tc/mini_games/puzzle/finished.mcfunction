@@ -14,7 +14,7 @@ scoreboard players set #timer_game_min lobby.tc.data 0
 scoreboard players set #timer_game_sec lobby.tc.data 0
 scoreboard players set #timer_game lobby.tc.data 0
 
-function lobby:mini_games/tc/mini_games/puzzle/record/
+function lobby:mini_games/tc/mini_games/puzzle/record/main
 
 
 

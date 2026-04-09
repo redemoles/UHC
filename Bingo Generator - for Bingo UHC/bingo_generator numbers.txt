@@ -1,6 +1,9 @@
-bingo_generator_0 → Bingo UHC - Vanilla
-bingo_generator_1 → Bingo UHC - Ruée Vers l'Or
-bingo_generator_2 → /
+bingo_generator_0  → Vanilla
+bingo_generator_1  → Ruée Vers l'Or
+bingo_generator_2  → Ère Viking
+bingo_generator_51 → 1er avril 2026
+bingo_generator_91 → Chill Mode (1 grid)
+bingo_generator_92 → Chill Mode (2 grids)
 -----------------a → Premier Bingo
 -----------------b → Second Bingo
 

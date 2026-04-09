@@ -16,7 +16,7 @@ execute if score #timer_game lobby.tc.data matches 41.. run scoreboard players s
 execute if score #timer_game lobby.tc.data matches 41.. run scoreboard players set #timer_game_sec lobby.tc.data 40
 execute if score #timer_game lobby.tc.data matches 41.. run scoreboard players set #timer_game lobby.tc.data 40
 
-execute if score #random_parkour_pick lobby.tc.data matches 1 run function lobby:mini_games/tc/mini_games/parkour/record/classic_01/
-execute if score #random_parkour_pick lobby.tc.data matches 2 run function lobby:mini_games/tc/mini_games/parkour/record/honey_01/
-execute if score #random_parkour_pick lobby.tc.data matches 3 run function lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/
-execute if score #random_parkour_pick lobby.tc.data matches 4 run function lobby:mini_games/tc/mini_games/parkour/record/chains/
+execute if score #random_parkour_pick lobby.tc.data matches 1 run function lobby:mini_games/tc/mini_games/parkour/record/classic_01/main
+execute if score #random_parkour_pick lobby.tc.data matches 2 run function lobby:mini_games/tc/mini_games/parkour/record/honey_01/main
+execute if score #random_parkour_pick lobby.tc.data matches 3 run function lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/main
+execute if score #random_parkour_pick lobby.tc.data matches 4 run function lobby:mini_games/tc/mini_games/parkour/record/chains/main

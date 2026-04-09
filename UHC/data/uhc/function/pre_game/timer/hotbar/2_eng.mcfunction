@@ -7,6 +7,7 @@
 # @description		Commandes pre-game en tick pour joueurs
 #
 
+execute unless score #language uhc.player.lang matches 1.. if entity @s[tag=uhc.host] run return run title @s actionbar [{"text":"Select a language in your inventory","color":"#3FCFFF","bold":true}]
 execute if entity @s[team=091] run return run title @s actionbar [{"text":"","color":"#3FCFFF","bold":true}]
 execute if entity @s[team=092] run return run title @s actionbar [{"text":"","color":"#3FCFFF","bold":true}]
 execute if entity @s[team=192] run return run title @s actionbar [{"text":"","color":"#3FCFFF","bold":true}]

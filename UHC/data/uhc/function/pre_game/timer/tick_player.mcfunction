@@ -35,7 +35,7 @@ execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory
 execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_additional/validate
 
 # Vie en pourcentage
-execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/health
+execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/misc/health/default
 
 # Vérification des spawns
 execute as @s[scores={uhc.spawn.check=0..}] in minecraft:overworld run function uhc:pre_game/world_check/spawns

@@ -13,7 +13,7 @@ scoreboard players operation #team uhc.id.team = @s uhc.id.team
 execute unless score @s uhc.player.online matches 1 run function uhc:in_game/player/spec/new_player
 
 # Reconnexion d'un joueur
-execute if score @s uhc.player.disconnect matches 1.. run function uhc:in_game/player/reconnect/
+execute if score @s uhc.player.disconnect matches 1.. run function uhc:in_game/player/login/main
 
 ## Paramètres
 # Bouclier
@@ -79,7 +79,7 @@ execute as @s[scores={uhc.timer.respawn=1..}] run function uhc:in_game/player/de
 ## Vie en pourcentage
 scoreboard players operation #data_check uhc.data.temp = #tick uhc.data.temp
 scoreboard players operation #data_check uhc.data.temp %= #05 uhc.data.numbers
-execute if score #data_check uhc.data.temp matches 0 if entity @s[gamemode=!spectator] unless score @s uhc.player.health.check = @s uhc.player.health.auto run function uhc:in_game/player/health
+execute if score #data_check uhc.data.temp matches 0 if entity @s[gamemode=!spectator] unless score @s uhc.player.health.check = @s uhc.player.health.auto run function uhc:in_game/player/misc/health/default
 
 ## Scenarios
 execute if score #best_pve uhc.scenario matches 1 as @s[tag=uhc.scenario.best_pve] run function uhc:in_game/scenario/best_pve/tick

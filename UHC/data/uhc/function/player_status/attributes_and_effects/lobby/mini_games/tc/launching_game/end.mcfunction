@@ -7,9 +7,9 @@
 # @description		Démarrage d'un mini-jeu
 #
 
+attribute @s minecraft:fall_damage_multiplier modifier remove uhc.lobby
+
 attribute @s minecraft:jump_strength modifier remove uhc.waiting_start
 attribute @s minecraft:movement_speed modifier remove uhc.waiting_start
 effect clear @s minecraft:blindness
 effect clear @s minecraft:invisibility
-
-attribute @s minecraft:fall_damage_multiplier modifier remove uhc.lobby

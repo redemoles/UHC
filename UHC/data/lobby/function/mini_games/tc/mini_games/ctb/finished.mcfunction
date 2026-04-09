@@ -28,11 +28,11 @@ scoreboard players operation #temp_record_diff_01 lobby.tc.data -= #team_02 lobb
 scoreboard players operation #temp_record_diff_02 lobby.tc.data = #team_02 lobby.tc.player.score
 scoreboard players operation #temp_record_diff_02 lobby.tc.data -= #team_01 lobby.tc.player.score
 
-execute as @a[tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/
-execute as @a[tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/
+execute as @a[tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/main
+execute as @a[tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/main
 
-execute as @a[tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/ctb/record/difference/
-execute as @a[tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/ctb/record/difference/
+execute as @a[tag=mgs.tc.team.01] run function lobby:mini_games/tc/mini_games/ctb/record/difference/main
+execute as @a[tag=mgs.tc.team.02] run function lobby:mini_games/tc/mini_games/ctb/record/difference/main
 
 scoreboard players set #ctb_x2_team_02 lobby.tc.data 0
 scoreboard players set #ctb_x2_team_02 lobby.tc.data 0

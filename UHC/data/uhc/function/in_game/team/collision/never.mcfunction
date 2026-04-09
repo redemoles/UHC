@@ -40,4 +40,8 @@ team modify 029 collisionRule never
 team modify 030 collisionRule never
 team modify 031 collisionRule never
 team modify 032 collisionRule never
+team modify 091 collisionRule never
+team modify 092 collisionRule never
 team modify 099 collisionRule never
+team modify 192 collisionRule never
+team modify 292 collisionRule never

@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/spectators_room/when_join
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Joueur détecté entrant dans la salle des spectateurs

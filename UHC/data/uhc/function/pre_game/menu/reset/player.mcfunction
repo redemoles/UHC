@@ -8,10 +8,11 @@
 #
 
 
-function uhc:pre_game/menu/load/main/player/main
+function uhc:pre_game/menu/load/main/player/menu
 
-tag @s remove uhc.menu.main.host
+execute if score #language uhc.player.lang matches 1.. run tag @s remove uhc.menu.main.host
 execute unless score @s uhc.menu.main.player matches 1.. run scoreboard players set @s uhc.menu.main.player 1
+scoreboard players set @s uhc.menu.default_language 0
 scoreboard players set @s uhc.menu.language 0
 tag @s remove uhc.menu.gamemode
 scoreboard players set @s uhc.menu.gamemode.bhc 0

@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/timer/playing
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Fonction générale de la Trial Chamber

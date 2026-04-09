@@ -7,9 +7,8 @@
 # @description		Redirection
 #
 
-execute unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"lang_fra"}] run scoreboard players set @s uhc.player.lang 061801
-execute unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"lang_eng"}] run scoreboard players set @s uhc.player.lang 051407
-execute unless items entity @s inventory.4 *[minecraft:custom_data={Tags:"teleportation"}] run return run function uhc:pre_game/menu/load/tp/
+execute unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"menu_language"}] run return run function uhc:pre_game/menu/load/language/menu
+execute unless items entity @s inventory.4 *[minecraft:custom_data={Tags:"menu_teleportation"}] run return run function uhc:pre_game/menu/load/tp/main
 execute unless items entity @s[tag=!uhc.night_vision] inventory.7 *[minecraft:custom_data={Tags:"night_vision"}] run return run function uhc:pre_game/menu/selection/main/player/light/on
 execute unless items entity @s[tag=uhc.night_vision] inventory.7 *[minecraft:custom_data={Tags:"night_vision"}] run return run function uhc:pre_game/menu/selection/main/player/light/off
 
@@ -21,4 +20,4 @@ execute if score @s uhc.menu.main.player matches 1..10 if score #random_team uhc
 execute unless items entity @s[tag=uhc.host,scores={uhc.menu.main.player=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_main_host"}] run return run function uhc:pre_game/menu/load/main/host/menu
 execute unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.25 *[minecraft:custom_data={Tags:"menu_main_host"}] run return run function uhc:pre_game/menu/load/settings/menu
 
-execute as @s[scores={uhc.menu.main.player=1..10}] run function uhc:pre_game/menu/load/main/player/main
+execute as @s[scores={uhc.menu.main.player=1..10}] run function uhc:pre_game/menu/load/main/player/menu

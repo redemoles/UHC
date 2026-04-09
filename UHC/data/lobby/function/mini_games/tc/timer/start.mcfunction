@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/timer/start
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Démarrage d'un mini-jeu

@@ -14,7 +14,7 @@ tag @s add uhc.temp
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 # Données du joueur
-function uhc:in_game/player/health
+function uhc:in_game/player/misc/health/default
 
 # Player Info
 execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_arrow/tellraw_heart

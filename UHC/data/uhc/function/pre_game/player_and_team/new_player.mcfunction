@@ -29,7 +29,8 @@ gamemode adventure @s
 clear @s
 title @s reset
 recipe take @s *
-scoreboard players set @s uhc.player.lang 061801
+scoreboard players operation @s uhc.player.lang = #language uhc.player.lang
+execute unless score @s uhc.player.lang matches 1.. run scoreboard players set @s uhc.player.lang 051407
 scoreboard players set @s uhc.id.random_team 0
 
 # Réinitialisation des effets, tags et triggers

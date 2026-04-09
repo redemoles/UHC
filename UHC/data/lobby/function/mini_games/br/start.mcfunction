@@ -1,5 +1,5 @@
 
-#> lobby:mini_games/br/
+#> lobby:mini_games/br/start
 #
 # @within			lobby:mini_games/
 #

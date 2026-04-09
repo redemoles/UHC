@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/waiting/when_joined
 #
-# @within			lobby:mini_games/tc/
+# @within			lobby:mini_games/tc/tick
 #
 #
 # @description		Joueur détecté voulant entrer dans la chambre

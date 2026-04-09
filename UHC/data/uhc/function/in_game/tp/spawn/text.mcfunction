@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn/text
 #
-# @within			uhc:in_game/player/reconnect/
+# @within			uhc:in_game/player/login/main
 # @within			uhc:in_game/tp/spawn/default
 #
 # @description		Configuration du timer 

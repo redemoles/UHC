@@ -9,4 +9,4 @@
 
 # Réinitialisation des effets
 effect clear @s
-function uhc:player_status/attributes_and_effects/lobby/waiting
+function uhc:player_status/attributes_and_effects/lobby/default

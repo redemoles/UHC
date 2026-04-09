@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/new_pb
 #
-# @within			lobby:mini_games/tc/mini_games/parkour/record/
+# @within			lobby:mini_games/tc/mini_games/parkour/record/main
 #
 #
 # @description		Annonce un nouveau record personnel au joueur concerné

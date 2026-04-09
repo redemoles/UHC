@@ -26,4 +26,5 @@ execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard playe
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game_sec lobby.tc.data 40
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game lobby.tc.data 160
 
+execute if score #timer_start_tick lobby.tc.data matches 00 as @a[tag=mgs.tc.player,tag=!mgs.tc.spec] run attribute @s minecraft:attack_damage modifier remove uhc.lobby
 execute if score #timer_start_tick lobby.tc.data matches 00 in uhc:lobby run gamerule minecraft:pvp true
