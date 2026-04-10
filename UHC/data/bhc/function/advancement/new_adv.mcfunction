@@ -11,7 +11,8 @@
 #
 
 ## Si l'advancement est validé pendant la vérification des grilles dans le lobby
-execute if score #game_progress uhc.game_progress matches 0 run return fail
+$execute if score #game_progress uhc.game_progress matches 0 run return run advancement revoke @s only $(namespace):$(line)_$(column)
+$execute unless entity @s[tag=uhc.player,tag=!uhc.player.dead] run return run advancement revoke @s only $(namespace):$(line)_$(column)
 
 ## Équipe du joueur
 scoreboard players set #anonyme_team uhc.data.setup 0

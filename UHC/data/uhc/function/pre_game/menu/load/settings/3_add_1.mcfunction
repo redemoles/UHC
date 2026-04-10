@@ -9,17 +9,14 @@
 
 # Nbr de vie
 execute if score @s uhc.menu.settings.lives matches 1 unless score #lives uhc.data.setup matches 3 run scoreboard players add #lives uhc.data.setup 1
-execute if score @s uhc.menu.settings.lives matches 1 if score #lives uhc.data.setup matches 4 run scoreboard players set #live_3 uhc.data.setup 0
-execute if score @s uhc.menu.settings.lives matches 1 if score #lives uhc.data.setup matches 3 run scoreboard players set #live_2 uhc.data.setup 0
-execute if score @s uhc.menu.settings.lives matches 1 if score #lives uhc.data.setup matches 2 run scoreboard players set #live_1 uhc.data.setup 0
 
 # Descente à 2 vies
-execute if score @s uhc.menu.settings.lives matches 3 unless score #live_2 uhc.data.setup matches 300.. run scoreboard players add #live_2 uhc.data.setup 1
-execute if score @s uhc.menu.settings.lives matches 3.. if score #live_2 uhc.data.setup < #live_3 uhc.data.setup run scoreboard players operation #live_2 uhc.data.setup = #live_3 uhc.data.setup
+execute if score @s uhc.menu.settings.lives matches 3 unless score #2_lives_left uhc.data.setup matches 300.. run scoreboard players add #2_lives_left uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 3.. if score #2_lives_left uhc.data.setup < #3_lives_left uhc.data.setup run scoreboard players operation #2_lives_left uhc.data.setup = #3_lives_left uhc.data.setup
 
 # Descente à 1 vie
-execute if score @s uhc.menu.settings.lives matches 2 unless score #live_1 uhc.data.setup matches 300.. run scoreboard players add #live_1 uhc.data.setup 1
-execute if score @s uhc.menu.settings.lives matches 2.. if score #live_1 uhc.data.setup < #live_2 uhc.data.setup run scoreboard players operation #live_1 uhc.data.setup = #live_2 uhc.data.setup
+execute if score @s uhc.menu.settings.lives matches 2 unless score #1_life_left uhc.data.setup matches 300.. run scoreboard players add #1_life_left uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 2.. if score #1_life_left uhc.data.setup < #2_lives_left uhc.data.setup run scoreboard players operation #1_life_left uhc.data.setup = #2_lives_left uhc.data.setup
 
 
 

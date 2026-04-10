@@ -98,8 +98,8 @@ execute if score #biome_paranoia uhc.scenario matches 2 in uhc:lobby run functio
 #execute if score #bhc bhc.scenario matches 02 run function bhc:start/team_shuffle/
 
 # Id, Markers, Spawns et TP
-execute if score #ffa uhc.data.setup matches 0 in uhc:lobby run function uhc:start/game_team/
-execute if score #ffa uhc.data.setup matches 1.. run function uhc:start/game_ffa/
+execute if score #ffa uhc.data.setup matches 0 in uhc:lobby run function uhc:start/game_team/main
+execute if score #ffa uhc.data.setup matches 1.. run function uhc:start/game_ffa/main
 
 # Hotbar
 execute if score #player uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.player set value ""

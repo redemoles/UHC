@@ -16,4 +16,4 @@ execute in minecraft:the_nether run function uhc:in_game/timer/border/size with 
 execute in minecraft:the_end run function uhc:in_game/timer/border/size with storage uhc:temp
 
 execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/main
-execute in minecraft:overworld as @a[tag=!uhc.target.targeter_done,tag=uhc.player] run function uhc:in_game/tp/spawn/default with storage uhc:temp respawn_location
+execute in minecraft:overworld as @a[tag=!uhc.target.targeter_done,tag=uhc.player] run function uhc:in_game/tp/spawn/default

@@ -15,6 +15,12 @@ execute unless score @s uhc.player.online matches 1 run function uhc:in_game/pla
 # Reconnexion d'un joueur
 execute if score @s uhc.player.disconnect matches 1.. run function uhc:in_game/player/login/main
 
+## Joueur à faire revenir à la vie
+# Ancien joueur
+execute unless entity @s[tag=!revive,tag=!uhc.revive] run function uhc:in_game/player/spec/revive/main
+# Nouveau joueur
+execute if entity @s[tag=uhc.revive.temp] in uhc:lobby run return run function uhc:in_game/player/spec/revive/new_player/tick
+
 ## Paramètres
 # Bouclier
 execute if score #shield uhc.data.setup matches 1..335 run function uhc:in_game/inventory/equipment/shield_durability with storage uhc:settings shield
@@ -101,9 +107,6 @@ execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:i
 ## Border TP
 execute if score #shrink_1_time_left uhc.data.temp matches ..0 if score #data_check uhc.data.temp matches 0 as @s[tag=uhc.player] at @s run function uhc:in_game/tp/border/coords
 execute if score #map_height_timer uhc.data.temp matches ..0 if score #tick uhc.data.temp matches 0 unless score #sky_high uhc.scenario matches 1 if entity @s[tag=uhc.player,predicate=uhc:dimension/overworld] run function uhc:in_game/player/map_height/check_limit
-
-## Joueur à faire revenir à la vie
-execute unless entity @s[tag=!revive,tag=!uhc.revive] run function uhc:in_game/player/spec/revive/main
 
 ## Spectateur
 # Localisé sous la carte

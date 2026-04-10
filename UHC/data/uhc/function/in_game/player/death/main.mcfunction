@@ -36,7 +36,7 @@ scoreboard players set @s[scores={uhc.player.lives=1..}] uhc.player.death.temp 0
 
 # Lieu de Respawn
 execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/main
-execute if score @s uhc.player.lives matches 1.. in minecraft:overworld run function uhc:in_game/tp/spawn/default with storage uhc:temp respawn_location
+execute if score @s uhc.player.lives matches 1.. in minecraft:overworld run function uhc:in_game/tp/spawn/default
 
 # Récupère les coordonnées du joueur mort
 data modify storage uhc:temp input.x set from entity @s LastDeathLocation.pos[0]

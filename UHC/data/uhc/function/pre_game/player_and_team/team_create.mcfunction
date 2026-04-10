@@ -263,39 +263,39 @@ team modify 132 color black
 team modify 192 color red
 team modify 292 color yellow
 
-team modify 017 prefix "♦"
-team modify 018 prefix "♦"
-team modify 019 prefix "♦"
-team modify 020 prefix "♦"
-team modify 021 prefix "♦"
-team modify 022 prefix "♦"
-team modify 023 prefix "♦"
-team modify 024 prefix "♦"
-team modify 025 prefix "♦"
-team modify 026 prefix "♦"
-team modify 027 prefix "♦"
-team modify 028 prefix "♦"
-team modify 029 prefix "♦"
-team modify 030 prefix "♦"
-team modify 031 prefix "♦"
-team modify 032 prefix "♦"
+team modify 017 prefix [{"text":"♦ ","bold":false}]
+team modify 018 prefix [{"text":"♦ ","bold":false}]
+team modify 019 prefix [{"text":"♦ ","bold":false}]
+team modify 020 prefix [{"text":"♦ ","bold":false}]
+team modify 021 prefix [{"text":"♦ ","bold":false}]
+team modify 022 prefix [{"text":"♦ ","bold":false}]
+team modify 023 prefix [{"text":"♦ ","bold":false}]
+team modify 024 prefix [{"text":"♦ ","bold":false}]
+team modify 025 prefix [{"text":"♦ ","bold":false}]
+team modify 026 prefix [{"text":"♦ ","bold":false}]
+team modify 027 prefix [{"text":"♦ ","bold":false}]
+team modify 028 prefix [{"text":"♦ ","bold":false}]
+team modify 029 prefix [{"text":"♦ ","bold":false}]
+team modify 030 prefix [{"text":"♦ ","bold":false}]
+team modify 031 prefix [{"text":"♦ ","bold":false}]
+team modify 032 prefix [{"text":"♦ ","bold":false}]
 
-team modify 117 prefix "♦"
-team modify 118 prefix "♦"
-team modify 119 prefix "♦"
-team modify 120 prefix "♦"
-team modify 121 prefix "♦"
-team modify 122 prefix "♦"
-team modify 123 prefix "♦"
-team modify 124 prefix "♦"
-team modify 125 prefix "♦"
-team modify 126 prefix "♦"
-team modify 127 prefix "♦"
-team modify 128 prefix "♦"
-team modify 129 prefix "♦"
-team modify 130 prefix "♦"
-team modify 131 prefix "♦"
-team modify 132 prefix "♦"
+team modify 117 prefix [{"text":"♦ ","bold":false}]
+team modify 118 prefix [{"text":"♦ ","bold":false}]
+team modify 119 prefix [{"text":"♦ ","bold":false}]
+team modify 120 prefix [{"text":"♦ ","bold":false}]
+team modify 121 prefix [{"text":"♦ ","bold":false}]
+team modify 122 prefix [{"text":"♦ ","bold":false}]
+team modify 123 prefix [{"text":"♦ ","bold":false}]
+team modify 124 prefix [{"text":"♦ ","bold":false}]
+team modify 125 prefix [{"text":"♦ ","bold":false}]
+team modify 126 prefix [{"text":"♦ ","bold":false}]
+team modify 127 prefix [{"text":"♦ ","bold":false}]
+team modify 128 prefix [{"text":"♦ ","bold":false}]
+team modify 129 prefix [{"text":"♦ ","bold":false}]
+team modify 130 prefix [{"text":"♦ ","bold":false}]
+team modify 131 prefix [{"text":"♦ ","bold":false}]
+team modify 132 prefix [{"text":"♦ ","bold":false}]
 
 team modify uhc.pve prefix [{"text":"P","color":"#FF3F3F","bold":true},{"text":"v","color":"#FFFFFF"},{"text":"E","color":"#FF3F3F"}]
 team join uhc.pve §p§v§e

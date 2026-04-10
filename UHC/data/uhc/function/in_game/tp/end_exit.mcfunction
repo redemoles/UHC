@@ -8,6 +8,6 @@
 #
 
 execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/main
-execute in minecraft:overworld run function uhc:in_game/tp/spawn/default with storage uhc:temp respawn_location
+execute in minecraft:overworld run function uhc:in_game/tp/spawn/default
 scoreboard players set @s uhc.player.tp 1
 scoreboard players set @s uhc.world.end 0

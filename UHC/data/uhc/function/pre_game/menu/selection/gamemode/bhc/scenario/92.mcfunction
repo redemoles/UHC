@@ -41,9 +41,9 @@ execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:setting
 
 ## Vies
 scoreboard players set #lives uhc.data.setup 3
-scoreboard players set #live_3 uhc.data.setup 0
-scoreboard players set #live_2 uhc.data.setup 60
-scoreboard players set #live_1 uhc.data.setup 60
+scoreboard players set #3_lives_left uhc.data.setup 0
+scoreboard players set #2_lives_left uhc.data.setup 60
+scoreboard players set #1_life_left uhc.data.setup 60
 
 ## Scénario et autre configuration
 scoreboard players set #blood_diamond uhc.scenario 1

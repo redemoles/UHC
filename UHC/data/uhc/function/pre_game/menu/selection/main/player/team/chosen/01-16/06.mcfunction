@@ -17,6 +17,6 @@ execute if score #anonyme_team uhc.data.setup matches 0 run team join 006 @s
 execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
 
 tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Tu as rejoint l'","color":"#3FE7FF","bold":false},{"text":"Équipe Vert c.","color":"green","bold":false}]
-tellraw @s[scores={uhc.player.lang=051407}] [{"text":"You joined the ","color":"#3FE7FF","bold":false},{"text":"L. Green Team","color":"green","bold":false}]
+tellraw @s[scores={uhc.player.lang=051407}] [{"text":"You joined the ","color":"#3FE7FF","bold":false},{"text":"Lime Team","color":"green","bold":false}]
 
 scoreboard players set @s uhc.id.team 06

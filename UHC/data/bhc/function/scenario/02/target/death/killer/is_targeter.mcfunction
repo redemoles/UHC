@@ -22,6 +22,6 @@ scoreboard players set #points bhc.kills.score.inv 4
 # Si le Bingo de l'Ère Viking est en cours
 execute if score #stepb_end bhc.data.temp matches ..0 run return fail
 scoreboard players set #success bhc.data.temp 0
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] unless score @s bhc.stepb.case = #max bhc.stepb.case run function bhc:scenario/02/target/death/killer/new_adv/line
+execute as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] unless score @s bhc.stepb.case = #max bhc.stepb.case run function bhc:scenario/02/target/death/killer/new_adv/line
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..,tag=bhc.temp.dead.team] run tag @s remove bhc.temp.dead.team
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] unless score @s bhc.stepb.case = #max bhc.stepb.case unless score #success bhc.data.temp matches 1 run function bhc:scenario/02/target/death/killer/new_adv/line
+execute as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] unless score @s bhc.stepb.case = #max bhc.stepb.case unless score #success bhc.data.temp matches 1 run function bhc:scenario/02/target/death/killer/new_adv/line

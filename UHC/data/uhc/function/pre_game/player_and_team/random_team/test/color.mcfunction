@@ -10,7 +10,7 @@
 execute if score #team uhc.id.team matches 16.. run scoreboard players set #team uhc.id.team 0
 scoreboard players add #team uhc.id.team 1
 scoreboard players operation #team uhc.id.random_team = @s uhc.id.random_team
-scoreboard players operation @e[type=minecraft:marker,predicate=uhc:random_team] uhc.id.team = #team uhc.id.team
+scoreboard players operation @e[type=minecraft:marker,tag=UHC,predicate=uhc:random_team] uhc.id.team = #team uhc.id.team
 
 team join 001 @e[type=minecraft:marker,scores={uhc.id.team=01}]
 team join 002 @e[type=minecraft:marker,scores={uhc.id.team=02}]

@@ -9,9 +9,9 @@
 
 ## Life / Vie
 # Timer when 1 life delete.
-scoreboard players set #live_1 uhc.data.setup 30
-scoreboard players set #live_2 uhc.data.setup 30
-#scoreboard players set #live_3 uhc.data.setup 0
+scoreboard players set #1_life_left uhc.data.setup 30
+scoreboard players set #2_lives_left uhc.data.setup 30
+#scoreboard players set #3_lives_left uhc.data.setup 0
 scoreboard players set #lives uhc.data.setup 1
 scoreboard players set #start_in_sky uhc.data.setup 0
 

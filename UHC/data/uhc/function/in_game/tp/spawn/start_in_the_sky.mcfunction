@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn/start_in_the_sky
 #
-# @within			uhc:start/game_team/
+# @within			uhc:start/game_team/main
 #
 #
 # @description		Téléportation aux points d'apparition dans le ciel au centre de la map 
@@ -12,4 +12,3 @@ item replace entity @a[tag=uhc.player] armor.chest with minecraft:elytra[minecra
 tag @a[tag=uhc.player] add uhc.player.start_in_the_sky
 tp @a[tag=uhc.player] 0 180 0
 function uhc:in_game/team/collision/never
-function uhc:in_game/tp/spawn/text with storage uhc:temp respawn_location

@@ -9,7 +9,7 @@
 
 # Fin de Dynamo-poing
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-scoreboard players set @e[type=minecraft:marker,predicate=uhc:id/team] nzl.attack.length.02 0
+scoreboard players set @e[type=minecraft:marker,tag=UHC,predicate=uhc:id/team] nzl.attack.length.02 0
 advancement revoke @s only nzl:combat_attack_p1
 
 # Trouille pour la victime

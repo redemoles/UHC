@@ -161,6 +161,10 @@ scoreboard objectives remove uhc.id.random_team
 scoreboard objectives remove uhc.id.random_team.ban
 scoreboard objectives remove uhc.id.player
 scoreboard objectives remove uhc.id.spawn
+scoreboard objectives remove uhc.id.spawn.x
+scoreboard objectives remove uhc.id.spawn.z
+scoreboard objectives remove uhc.id.spawn.x.temp
+scoreboard objectives remove uhc.id.spawn.z.temp
 scoreboard objectives remove uhc.data.temp
 scoreboard objectives remove uhc.data.temp.inv
 scoreboard objectives remove uhc.menu.language
@@ -183,6 +187,7 @@ scoreboard objectives remove uhc.menu.settings.inventory
 scoreboard objectives remove uhc.menu.settings.team
 scoreboard objectives remove uhc.menu.settings.misc
 scoreboard objectives remove uhc.menu.tp
+scoreboard objectives remove uhc.menu.revive
 scoreboard objectives remove uhc.meetup.activate
 scoreboard objectives remove uhc.player.wolf
 scoreboard objectives remove uhc.player.online
@@ -237,6 +242,10 @@ scoreboard objectives add uhc.id.random_team dummy
 scoreboard objectives add uhc.id.random_team.ban dummy
 scoreboard objectives add uhc.id.player dummy
 scoreboard objectives add uhc.id.spawn dummy
+scoreboard objectives add uhc.id.spawn.x dummy
+scoreboard objectives add uhc.id.spawn.z dummy
+scoreboard objectives add uhc.id.spawn.x.temp dummy
+scoreboard objectives add uhc.id.spawn.z.temp dummy
 scoreboard objectives add uhc.data.update dummy
 scoreboard objectives add uhc.data.setup dummy
 scoreboard objectives add uhc.data.temp dummy
@@ -264,6 +273,7 @@ scoreboard objectives add uhc.menu.settings.inventory dummy
 scoreboard objectives add uhc.menu.settings.team dummy
 scoreboard objectives add uhc.menu.settings.misc dummy
 scoreboard objectives add uhc.menu.tp dummy
+scoreboard objectives add uhc.menu.revive trigger
 scoreboard objectives add uhc.meetup.activate trigger
 scoreboard objectives add uhc.player.wolf dummy
 scoreboard objectives add uhc.player.online dummy
@@ -427,26 +437,6 @@ data modify storage uhc:settings item.totem_of_undying set value {item: "totem_o
 ## Liste des morts
 data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
-
-## Lieu de respawn
-data modify storage uhc:temp respawn_location.720 set value 720
-data modify storage uhc:temp respawn_location.840 set value 840
-data modify storage uhc:temp respawn_location.360 set value 360
-data modify storage uhc:temp respawn_location.960 set value 960
-data modify storage uhc:temp respawn_location.0 set value 960
-data modify storage uhc:temp respawn_location.900 set value 900
-data modify storage uhc:temp respawn_location.180 set value 180
-data modify storage uhc:temp respawn_location.780 set value 780
-data modify storage uhc:temp respawn_location.540 set value 540
-scoreboard players set #respawn_location_720 uhc.data.setup 720
-scoreboard players set #respawn_location_840 uhc.data.setup 840
-scoreboard players set #respawn_location_360 uhc.data.setup 360
-scoreboard players set #respawn_location_960 uhc.data.setup 960
-scoreboard players set #respawn_location_0 uhc.data.setup 0
-scoreboard players set #respawn_location_900 uhc.data.setup 900
-scoreboard players set #respawn_location_180 uhc.data.setup 180
-scoreboard players set #respawn_location_780 uhc.data.setup 780
-scoreboard players set #respawn_location_540 uhc.data.setup 540
 
 ## Mise à jour
 scoreboard players set #update uhc.data.update 26045

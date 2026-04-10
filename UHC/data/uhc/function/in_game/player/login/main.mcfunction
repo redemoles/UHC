@@ -1,5 +1,5 @@
 
-#> uhc:in_game/player/login/
+#> uhc:in_game/player/login/main
 #
 # @within			uhc:in_game/player/tick
 #
@@ -23,7 +23,7 @@ execute if score #shrink_1_time_left uhc.data.temp matches ..0 as @s[tag=uhc.pla
 execute if score #minutes uhc.data.temp matches 0.. as @s[tag=uhc.player,tag=uhc.start.temp] run function uhc:in_game/player/login/start
 
 # Coordonnées de respawn
-execute if score #live_1 uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn/text with storage uhc:temp respawn_location
+execute if score #1_life_left uhc.data.temp matches 1.. run function uhc:in_game/tp/spawn/point/macro_set
 
 # Message trigger Ironman
 execute if score #player uhc.scenario.ironman matches ..0 run scoreboard players reset @s uhc.ironman.list
@@ -39,6 +39,6 @@ execute if score #game_progress uhc.game_progress matches 2.. run scoreboard pla
 
 # Bingo UHC
 execute if score #bhc bhc.scenario matches 02 as @s[tag=uhc.player] in uhc:lobby run function bhc:scenario/02/target/death/cycle_reset
-execute if score #live_3 uhc.data.temp matches ..0 if score @s uhc.player.lives matches 4.. as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
-execute if score #live_2 uhc.data.temp matches ..0 if score @s uhc.player.lives matches 3 as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
-execute if score #live_1 uhc.data.temp matches ..0 if score @s uhc.player.lives matches 2 as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
+execute if score #3_lives_left uhc.data.temp matches ..0 if score @s uhc.player.lives matches 4.. as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
+execute if score #2_lives_left uhc.data.temp matches ..0 if score @s uhc.player.lives matches 3 as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
+execute if score #1_life_left uhc.data.temp matches ..0 if score @s uhc.player.lives matches 2 as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1

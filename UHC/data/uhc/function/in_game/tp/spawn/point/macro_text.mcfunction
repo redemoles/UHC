@@ -1,0 +1,13 @@
+
+#> uhc:in_game/tp/spawn/point/macro_text
+#
+# @within			uhc:in_game/tp/spawn/point/macro_set
+#
+#
+# @description		Envoi des coordonnées du point d'apparition d'équipe
+#
+
+$execute if score #1_life_left uhc.data.temp matches 1.. if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Point de réapparition : ","color":"#FFFFFF"},{"text":"$(x) $(z)","color":"#FFE73F","bold":true}]
+$execute if score #1_life_left uhc.data.temp matches 1.. if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"Respawn point : ","color":"#FFFFFF"},{"text":"$(x) $(z)","color":"#FFE73F","bold":true}]
+$execute if score #tick_start uhc.data.temp matches ..200 if score #lives uhc.data.setup matches 1.. if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Point de réapparition : ","color":"#FFFFFF"},{"text":"$(x) $(z)","color":"#FFE73F","bold":true}]
+$execute if score #tick_start uhc.data.temp matches ..200 if score #lives uhc.data.setup matches 1.. if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"Respawn point : ","color":"#FFFFFF"},{"text":"$(x) $(z)","color":"#FFE73F","bold":true}]

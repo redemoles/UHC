@@ -1,7 +1,7 @@
 
 #> uhc:start/id_player
 #
-# @within			uhc:start/game_team/
+# @within			uhc:start/game_team/main
 #
 #
 # @description		Id joueurs

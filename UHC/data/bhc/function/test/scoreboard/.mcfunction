@@ -1,4 +1,12 @@
 
+#> bhc:test/scoreboard/
+#
+#
+#
+#
+# @description		
+#
+
 tellraw @a[tag=uhc.host] [{"score":{"name":"","objective":"bhc.stepa.rank.score"}}]
 tellraw @a[tag=uhc.host] [{"score":{"name":"§r§0§1","objective":"bhc.stepa.rank.score"}}]
 tellraw @a[tag=uhc.host] [{"score":{"name":"§r§0§2","objective":"bhc.stepa.rank.score"}}]

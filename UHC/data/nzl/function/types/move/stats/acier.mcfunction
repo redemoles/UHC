@@ -21,4 +21,4 @@ scoreboard players remove @s[scores={nzl.type.level=..2}] nzl.stats.abso 1
 scoreboard players remove @s nzl.stats.speed 1
 
 ## ATTAQUE
-execute if entity @n[type=minecraft:marker,predicate=uhc:id/team,scores={nzl.attack.length.01=1..}] run function nzl:types/move/attack/acier
+execute if entity @n[type=minecraft:marker,tag=UHC,predicate=uhc:id/team,scores={nzl.attack.length.01=1..}] run function nzl:types/move/attack/acier

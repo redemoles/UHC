@@ -10,7 +10,7 @@
 tag @s add uhc.target.targeter_success
 
 # Id de traqueur
-scoreboard players operation #temp bhc.targeter.id = @e[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] bhc.targeter.id
+scoreboard players operation #temp bhc.targeter.id = @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] bhc.targeter.id
 
 ## Récupération de la localisation du joueur
 # Joueur traçable

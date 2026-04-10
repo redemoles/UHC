@@ -1,14 +1,15 @@
 
 #> uhc:in_game/tp/spawn/randomizer/tertiary
 #
-# 
-# @within			uhc:start/setup_players
+# @within			uhc:in_game/tp/spawn/randomizer/secondary
 #
-# @description		Configuration du timer 
+#
+# @description		Définition des points d'apparition d'équipe
 #
 
 execute if score #spawn uhc.id.spawn matches 33 run scoreboard players set #spawn uhc.id.spawn 0
 scoreboard players add #spawn uhc.id.spawn 1
+scoreboard players set #spawn_list uhc.id.spawn 3
 
 # Skip un point d'apparition si déjà utilisé
 execute if score #spawn uhc.id.spawn matches 01 unless score #spawn_01 uhc.id.spawn_check matches 2 run return run function uhc:in_game/tp/spawn/randomizer/tertiary
@@ -45,7 +46,9 @@ execute if score #spawn uhc.id.spawn matches 31 unless score #spawn_31 uhc.id.sp
 execute if score #spawn uhc.id.spawn matches 32 unless score #spawn_32 uhc.id.spawn_check matches 2 run return run function uhc:in_game/tp/spawn/randomizer/tertiary
 execute if score #spawn uhc.id.spawn matches 33 run return fail
 
-scoreboard players operation #team uhc.id.team = @r[tag=uhc.id.spawn] uhc.id.team
+scoreboard players operation #team uhc.id.team = @r[tag=uhc.id.spawn.temp] uhc.id.team
 scoreboard players operation @a[predicate=uhc:id/team] uhc.id.spawn = #spawn uhc.id.spawn
-tag @a[predicate=uhc:id/team] remove uhc.id.spawn
-execute if entity @p[tag=uhc.id.spawn] run function uhc:in_game/tp/spawn/randomizer/tertiary
+scoreboard players operation @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.id.spawn = #spawn uhc.id.spawn
+execute as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function uhc:in_game/tp/spawn/randomizer/location
+tag @a[predicate=uhc:id/team] remove uhc.id.spawn.temp
+execute if entity @p[tag=uhc.id.spawn.temp] run function uhc:in_game/tp/spawn/randomizer/tertiary

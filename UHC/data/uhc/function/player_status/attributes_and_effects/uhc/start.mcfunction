@@ -1,5 +1,5 @@
 
-#> uhc:player_status/attributes_and_effects/uhc/waiting_start
+#> uhc:player_status/attributes_and_effects/uhc/start
 #
 # @within			uhc:start/setup_players
 #

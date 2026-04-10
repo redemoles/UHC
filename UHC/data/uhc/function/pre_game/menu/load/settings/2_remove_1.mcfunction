@@ -9,16 +9,13 @@
 
 # Nbr de vie
 execute if score @s uhc.menu.settings.lives matches 1 unless score #lives uhc.data.setup matches 1 run scoreboard players remove #lives uhc.data.setup 1
-execute if score @s uhc.menu.settings.lives matches 1 if score #lives uhc.data.setup matches ..3 run scoreboard players set #live_3 uhc.data.setup 0
-execute if score @s uhc.menu.settings.lives matches 1 if score #lives uhc.data.setup matches ..2 run scoreboard players set #live_2 uhc.data.setup 0
-execute if score @s uhc.menu.settings.lives matches 1 if score #lives uhc.data.setup matches ..1 run scoreboard players set #live_1 uhc.data.setup 0
 
 # Descente à 2 vies
-execute if score @s uhc.menu.settings.lives matches 3 unless score #live_2 uhc.data.setup matches 0 unless score #live_2 uhc.data.setup <= #live_3 uhc.data.setup run scoreboard players remove #live_2 uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 3 unless score #2_lives_left uhc.data.setup matches 0 unless score #2_lives_left uhc.data.setup <= #3_lives_left uhc.data.setup run scoreboard players remove #2_lives_left uhc.data.setup 1
 
 
 # Descente à 1 vie
-execute if score @s uhc.menu.settings.lives matches 2 unless score #live_1 uhc.data.setup matches 0 unless score #live_1 uhc.data.setup <= #live_2 uhc.data.setup run scoreboard players remove #live_1 uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 2 unless score #1_life_left uhc.data.setup matches 0 unless score #1_life_left uhc.data.setup <= #2_lives_left uhc.data.setup run scoreboard players remove #1_life_left uhc.data.setup 1
 
 
 

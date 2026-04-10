@@ -13,7 +13,7 @@ execute if score #message uhc.data.setup matches 0..4 run scoreboard players rem
 scoreboard players remove #player uhc.data.temp.inv 1
 # -1 Joueur dans l'équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-scoreboard players remove @e[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.player.lives 1
+scoreboard players remove @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.player.lives 1
 execute if score #player uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.player set value ""
 # Dernier joueur de l'équipe ?
 scoreboard players set #team_out uhc.id.team 1
