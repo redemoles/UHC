@@ -34,11 +34,11 @@ scoreboard players operation #border_size uhc.data.temp /= #02 uhc.data.numbers
 execute if score #tracker uhc.data.temp matches 1 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
 
 # Texte informations de base
-execute if score #hotbar_cooldown uhc.data.temp matches 1.. if score #tick uhc.data.temp matches 0 run function uhc:in_game/timer/hotbar/cooldown/ with storage uhc:temp hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:in_game/timer/hotbar/ with storage uhc:temp hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function bhc:timer/hotbar/ with storage uhc:temp hotbar
+execute if score #hotbar_cooldown uhc.data.temp matches 1.. if score #tick uhc.data.temp matches 0 run function uhc:in_game/timer/hotbar/cooldown/
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:translation/hotbar/uhc with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function bhc:timer/hotbar
 execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #mls uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function mls:timer/hotbar with storage uhc:temp hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function nzl:timer/hotbar/ with storage uhc:temp hotbar
+execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function nzl:timer/hotbar
 tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
 
 ## Modifications de données d'entités
@@ -57,7 +57,7 @@ execute if score #player uhc.scenario.ironman matches 1 unless score #winner_rew
 # Best PvE
 execute if score #best_pve uhc.scenario matches 1 as @p[scores={uhc.best_pve.list=1}] run function uhc:in_game/scenario/best_pve/list
 # Info personnel et des autres équipes
-execute as @p[scores={uhc.info.me=1}] run function uhc:in_game/player/misc/info/me/
+execute as @p[scores={uhc.info.me=1}] run function uhc:in_game/player/misc/info/me
 execute as @p[scores={uhc.info.team=1}] run function uhc:in_game/player/misc/info/team/list
 execute as @p[scores={uhc.info.team.temp=1..}] run function uhc:in_game/player/misc/info/team/bhc/
 

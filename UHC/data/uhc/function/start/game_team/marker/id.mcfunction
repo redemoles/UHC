@@ -17,8 +17,7 @@ scoreboard players remove #temp uhc.id.team.inverted 1
 
 ## Équipe du marker
 # Tag + Nom
-execute if score #language uhc.player.lang matches 061801 run function uhc:start/game_team/marker/team_name/fra
-execute if score #language uhc.player.lang matches 051407 run function uhc:start/game_team/marker/team_name/eng
+function uhc:translation/start_game_team_marker_id
 # Team join des markers
 team join 001 @s[scores={uhc.id.team=01}]
 team join 002 @s[scores={uhc.id.team=02}]

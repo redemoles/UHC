@@ -10,8 +10,7 @@
 ## Vérifie si l'équipe choisie est complète
 scoreboard players operation #team uhc.id.team = @s uhc.menu.revive
 execute store result score #temp uhc.data.setup run scoreboard players get @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.team.size
-execute if score #temp uhc.data.setup >= #team_size uhc.data.temp if score @s uhc.player.lang matches 061801 run return run tellraw @s [{"text":"Équipe complète","color":"#FF3F3F"}]
-execute if score #temp uhc.data.setup >= #team_size uhc.data.temp if score @s uhc.player.lang matches 051407 run return run tellraw @s [{"text":"Team full","color":"#FF3F3F"}]
+execute if score #temp uhc.data.setup >= #team_size uhc.data.temp run return run function uhc:translation/in_game/player_spec_revive_cancel_team_full
 
 ## Équipe
 scoreboard players operation @s uhc.id.team = #team uhc.id.team

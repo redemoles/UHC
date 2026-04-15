@@ -19,4 +19,4 @@ execute if score #shrink_3_time_left uhc.data.temp = #min_cooldown_temp uhc.data
 # Title
 execute if score #min_cooldown_temp uhc.data.temp matches 0 run scoreboard players set #min_cooldown_temp uhc.data.temp -1
 execute if score #min_cooldown_temp uhc.data.temp matches 1.. unless score #sec_cooldown uhc.data.temp matches 0 run scoreboard players remove #min_cooldown_temp uhc.data.temp 1
-function uhc:in_game/timer/hotbar/cooldown/text_title with storage uhc:temp hotbar
+function uhc:translation/hotbar/uhc_countdown_actionbar with storage uhc:temp hotbar

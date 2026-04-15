@@ -15,5 +15,4 @@ scoreboard players operation @a[tag=uhc.player,predicate=uhc:id/team] bhc.target
 
 # Message
 scoreboard players operation #temp bhc.targeter.id = @s bhc.targeter.id
-execute as @a[predicate=uhc:id/team,scores={uhc.player.lang=061801}] run tellraw @s [{"text":"\nÈre Viking ","color":"#CF6F3F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Nouvelles cibles attribuées !","color":"#FFE73F"}]
-execute as @a[predicate=uhc:id/team,scores={uhc.player.lang=051407}] run tellraw @s [{"text":"\nViking Era ","color":"#CF6F3F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" New targets assigned!","color":"#FFE73F"}]
+function uhc:translation/bhc/02_viking_era/target_randomizer

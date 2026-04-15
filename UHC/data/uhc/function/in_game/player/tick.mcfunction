@@ -99,7 +99,8 @@ execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.te
 execute as @s[tag=uhc.player] run function uhc:in_game/player/misc/ores
 
 ## Scoreboard de dégâts
-execute as @s[scores={uhc.player.damage_taken.temp=1..}] run function uhc:in_game/player/pvp/damage_taken/
+execute if score #game_progress uhc.game_progress matches 1 as @s[scores={uhc.player.damage_dealt.temp=1..}] run function uhc:in_game/player/pvp/damage_dealt/
+execute if score #game_progress uhc.game_progress matches 1 as @s[scores={uhc.player.damage_taken.temp=1..}] run function uhc:in_game/player/pvp/damage_taken/
 
 ## Loups
 execute at @s if entity @n[type=minecraft:wolf,distance=..10] run function uhc:in_game/player/pvp/settings/wolf/

@@ -8,7 +8,7 @@
 #
 
 execute if score #game_progress uhc.game_progress matches 1.. run scoreboard players set #warning uhc.game.reset 1
-execute if score #warning uhc.game.reset matches 1 unless score @s uhc.game.reset matches 1.. run return run function uhc:reset/warning/normal
+execute if score #warning uhc.game.reset matches 1 unless score @s uhc.game.reset matches 1.. run return run function uhc:translation/reset_warning_normal
 
 execute as @e[type=minecraft:marker,tag=mgs.jump.marker,distance=0..] at @s run function lobby:mini_games/rjg/marker/kill
 
@@ -208,6 +208,7 @@ scoreboard objectives remove uhc.player.map_height.text
 scoreboard objectives remove uhc.player.damage_dealt.total
 scoreboard objectives remove uhc.player.damage_dealt.pve
 scoreboard objectives remove uhc.player.damage_dealt.pvp
+scoreboard objectives remove uhc.player.damage_dealt.temp
 scoreboard objectives remove uhc.player.damage_taken.total
 scoreboard objectives remove uhc.player.damage_taken.pve
 scoreboard objectives remove uhc.player.damage_taken.pvp
@@ -439,4 +440,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26045
+scoreboard players set #update uhc.data.update 26047

@@ -1,0 +1,14 @@
+
+#> uhc:translation/in_game/player_misc_info_me
+#
+# @within			uhc:in_game/player/misc/info/me
+#
+#
+#
+#
+
+## FRA - Français / French
+tellraw @s[scores={uhc.player.lang=061801}] ["",{"text":"\nTes statistiques","bold":true},{"text":"\n\nKill(s) "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.kills.inv"}},{"text":"\nDégâts émis"},{"text":"/","color":"#9F9F9F"},{"text":"subis "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"#integer","objective":"uhc.player.damage_dealt.pvp"}},{"text":","},{"score":{"name":"#decimal","objective":"uhc.player.damage_dealt.pvp"}},{"text":"/","color":"#9F9F9F"},{"score":{"name":"#integer","objective":"uhc.player.damage_taken.total"}},{"text":","},{"score":{"name":"#decimal","objective":"uhc.player.damage_taken.total"}},{"text":"\n\nTemps jouées "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.timer"}},{"text":" minutes"},{"text":"\nMinerais minés "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.mined.diamond"},"color":"#3FE7FF"},{"text":" diamants","color":"#3FE7FF"},{"text":", ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"uhc.player.mined.iron"},"color":"#FFE73F"},{"text":" or","color":"#FFE73F"},{"text":", ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"uhc.player.mined.iron"},"color":"#E7E7E7"},{"text":" fer","color":"#E7E7E7"}]
+
+## ENG - English
+tellraw @s[scores={uhc.player.lang=051407}] ["",{"text":"\nYour statistics","bold":true},{"text":"\n\nKill(s) "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.kills.inv"}},{"text":"\nDamage dealt"},{"text":"/","color":"#9F9F9F"},{"text":"taken "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"#integer","objective":"uhc.player.damage_dealt.pvp"}},{"text":"."},{"score":{"name":"#decimal","objective":"uhc.player.damage_dealt.pvp"}},{"text":"/","color":"#9F9F9F"},{"score":{"name":"#integer","objective":"uhc.player.damage_taken.total"}},{"text":"."},{"score":{"name":"#decimal","objective":"uhc.player.damage_taken.total"}},{"text":"\n\nTime played "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.timer"}},{"text":" minutes"},{"text":"\nMined ores "},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"score":{"name":"@s","objective":"uhc.player.mined.diamond"},"color":"#3FE7FF"},{"text":" diamonds","color":"#3FE7FF"},{"text":", ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"uhc.player.mined.iron"},"color":"#FFE73F"},{"text":" gold","color":"#FFE73F"},{"text":", ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"uhc.player.mined.iron"},"color":"#E7E7E7"},{"text":" iron","color":"#E7E7E7"}]

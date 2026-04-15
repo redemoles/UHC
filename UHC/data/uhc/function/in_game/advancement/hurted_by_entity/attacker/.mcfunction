@@ -19,8 +19,8 @@ function uhc:in_game/player/team_join/vanilla
 function uhc:in_game/player/misc/health/default
 
 tag @s add uhc.temp.attacker
-execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart with storage uhc:temp hp
-execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_percent with storage uhc:temp hp
+execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart
+execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_percent
 tag @s remove uhc.temp.attacker
 
 # Couleur du joueur

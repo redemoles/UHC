@@ -8,12 +8,11 @@
 #
 
 scoreboard players add @s uhc.player.map_height.text 1
-execute if score @s uhc.player.map_height.text matches 2 if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Tu es au-dessus de la hauteur maximale autorisée ! Tu peux subir des effets négatifs.","color":"#FF3F3F"}]
-execute if score @s uhc.player.map_height.text matches 2 if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"You are above the maximum authorized height! You may suffer negative effects.","color":"#FF3F3F"}]
+execute if score @s uhc.player.map_height.text matches 2 run function uhc:translation/in_game/player_map_height_above
 
 scoreboard players add @s uhc.player.map_height.sound 1
-execute if score @s uhc.player.map_height.sound matches 2 at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.4 0.5 0
-execute if score @s uhc.player.map_height.sound matches 2 run scoreboard players set @s uhc.player.map_height.sound 0
+execute if score @s uhc.player.map_height.sound matches 3 at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.4 0.5 0
+execute if score @s uhc.player.map_height.sound matches 3 run scoreboard players set @s uhc.player.map_height.sound 0
 
 scoreboard players add @s uhc.player.map_height.effect 1
 

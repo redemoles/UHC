@@ -15,8 +15,7 @@ scoreboard players operation #exhausted bhc.case = #team bhc.data.temp
 scoreboard players add #exhausted bhc.case 2
 scoreboard players operation #exhausted bhc.case /= #03 uhc.data.numbers
 
-tellraw @a[scores={uhc.player.lang=061801}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo Classique","color":"#B73FFF","bold":true},{"text":" !","color":"#FFFFFF","bold":false}]
-tellraw @a[scores={uhc.player.lang=051407}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of the ","color":"#FFFFFF","bold":false},{"text":"Classic Bingo","color":"#B73FFF","bold":true},{"text":"!","color":"#FFFFFF","bold":false}]
+function uhc:translation/bhc/01_gold_rush/bingo_a_start
 
 # Scoreboard d'affichage
 scoreboard players set #sb bhc.data.temp 2

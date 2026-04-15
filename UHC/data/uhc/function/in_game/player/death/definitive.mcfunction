@@ -25,8 +25,7 @@ function uhc:in_game/player/spec/main
 execute if score #biome_paranoia uhc.scenario matches 1.. run function uhc:in_game/player/team_join/vanilla
 
 ## Messages
-execute if score #vanilla uhc.gamemode matches 1 if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"\nTu es mort. Merci d'avoir participé !\nSi un chat vocal de proximité est utilisé, merci de te rendre muet.","color":"#3FE7FF"}]
-execute if score #vanilla uhc.gamemode matches 1 if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"\nYou died. Thank you for playing!\nIf a proximity voice chat is used, please mute yourself.","color":"#3FE7FF"}]
+execute if score #vanilla uhc.gamemode matches 1 run function uhc:translation/in_game/player_death_definitive
 
 ## Détection victoire
 execute if score #team uhc.data.temp.inv matches ..1 run scoreboard players add #game_progress uhc.game_progress 1

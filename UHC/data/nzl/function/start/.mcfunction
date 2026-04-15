@@ -18,8 +18,7 @@ execute as @e[type=minecraft:marker,tag=nzl.type] run function nzl:start/marker_
 execute as @a run function nzl:start/reset_tags
 
 ## Message de démarrage
-tellraw @a[scores={uhc.player.lang=061801}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Nuzlocke","color":"#3F9FFF"},{"text":"UHC","color":"#2F5FBF"},{"text":"]","color":"#DFC300"},{"text":" La partie vient de démarrer !","color":"#FFE73F","bold":false}]
-tellraw @a[scores={uhc.player.lang=051407}] [{"text":"[","color":"#DFC300","bold":true},{"text":"Nuzlocke","color":"#3F9FFF"},{"text":"UHC","color":"#2F5FBF"},{"text":"]","color":"#DFC300"},{"text":" Game starting now!","color":"#FFE73F","bold":false}]
+function uhc:translation/nzl/start
 
 ## Type ???
 execute as @a[tag=uhc.player] run function nzl:types/prefix/---

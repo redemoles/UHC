@@ -18,4 +18,4 @@ scoreboard players operation #temp bhc.kills.rank.number = @s bhc.kills.rank.num
 scoreboard players operation #temp bhc.death.rank.number = @s bhc.death.rank.number
 scoreboard players operation #temp bhc.total.rank.number = @s bhc.total.rank.number
 
-function uhc:in_game/player/misc/info/team/marker_text with storage uhc:temp text
+function uhc:translation/in_game/player_misc_info_team_marker_macro_text with storage uhc:temp text

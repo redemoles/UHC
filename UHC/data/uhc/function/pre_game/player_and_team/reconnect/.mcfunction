@@ -20,5 +20,5 @@ scoreboard players set @s uhc.player.online 1
 scoreboard players set @s uhc.player.disconnect 0
 
 # Si déconnexion pendant la préparation des points d'apparition
-execute if score @s uhc.spawn.check matches 01..32 run function uhc:pre_game/world_check/text_trigger/main
+execute if score @s uhc.spawn.check matches 01..32 run function uhc:translation/pre_game/world_check_trigger
 execute if score @s uhc.spawn.check matches 01..32 run gamemode spectator @s

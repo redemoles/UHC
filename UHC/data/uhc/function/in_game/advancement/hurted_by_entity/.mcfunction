@@ -33,8 +33,8 @@ function uhc:in_game/player/misc/health/default
 execute on attacker as @s[type=minecraft:player] run return run function uhc:in_game/advancement/hurted_by_entity/attacker/
 
 # Si l'entité n'est pas un joueur
-execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/tellraw_heart with storage uhc:temp hp
-execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/tellraw_percent with storage uhc:temp hp
+execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/tellraw_heart
+execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/tellraw_percent
 
 # Couleur du joueur
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 run function uhc:in_game/scenario/biome_paranoia/by_colors

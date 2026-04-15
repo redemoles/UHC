@@ -24,7 +24,7 @@ execute unless score #temp_record lobby.tc.record.ctb.maximum.for <= @s lobby.tc
 execute if score #temp_record lobby.tc.record.ctb.maximum.for = @s lobby.tc.record.ctb.maximum.for if score #temp_record lobby.tc.record.ctb.maximum.difference >= @s lobby.tc.record.ctb.maximum.difference run tag @s add mgs.tc.pb
 execute unless score #temp_record lobby.tc.record.ctb.maximum.for <= #record lobby.tc.record.ctb.maximum.for if score #temp_record lobby.tc.record.ctb.maximum.difference matches 0.. run tag @s add mgs.tc.lr
 execute if score #temp_record lobby.tc.record.ctb.maximum.for = #record lobby.tc.record.ctb.maximum.for if score #temp_record lobby.tc.record.ctb.maximum.difference >= #record lobby.tc.record.ctb.maximum.difference if score #temp_record lobby.tc.record.ctb.maximum.difference matches 0.. run tag @s add mgs.tc.lr
-execute if entity @s[tag=!mgs.tc.lr,tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/new_pb
+execute if entity @s[tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/new_pb
 execute if entity @s[tag=mgs.tc.lr] run function lobby:mini_games/tc/mini_games/ctb/record/maximum/new_lr
 tag @s remove mgs.tc.pb
 tag @s remove mgs.tc.lr

@@ -28,7 +28,7 @@ scoreboard players operation #temp_record lobby.tc.record.memory_build.cherry /=
 # Vérifie si nouveau record local
 execute unless score #temp_record lobby.tc.data.record.memory_build.cherry > @s lobby.tc.data.record.memory_build.cherry run tag @s add mgs.tc.pb
 execute unless score #temp_record lobby.tc.data.record.memory_build.cherry > #record lobby.tc.data.record.memory_build.cherry run tag @s add mgs.tc.lr
-execute if entity @s[tag=!mgs.tc.lr,tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/memory_build/record/cherry/new_pb
+execute if entity @s[tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/memory_build/record/cherry/new_pb
 execute if entity @s[tag=mgs.tc.lr] run function lobby:mini_games/tc/mini_games/memory_build/record/cherry/new_lr
 execute if entity @s[tag=!mgs.tc.lr,tag=!mgs.tc.pb] run function lobby:mini_games/tc/mini_games/memory_build/record/cherry/time
 tag @s remove mgs.tc.pb

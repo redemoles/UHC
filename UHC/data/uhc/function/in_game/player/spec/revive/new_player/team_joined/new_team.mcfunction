@@ -9,8 +9,7 @@
 
 ## Activation du marker d'équipe
 # Tag + Nom
-execute if score #language uhc.player.lang matches 061801 run function uhc:start/game_team/marker/team_name/fra
-execute if score #language uhc.player.lang matches 051407 run function uhc:start/game_team/marker/team_name/eng
+function uhc:translation/in_game/player_spec_revive_create_team
 # Point d'apparition
 execute if score #spawn_list uhc.id.spawn matches 3 run function uhc:in_game/tp/spawn/randomizer/tertiary
 execute if score #spawn_list uhc.id.spawn matches 2 run function uhc:in_game/tp/spawn/randomizer/secondary

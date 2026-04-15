@@ -59,5 +59,4 @@ execute if score @s uhc.spawn.check matches 32 run tp @s[gamemode=!creative] -54
 ## Téléportations
 execute at @s positioned over motion_blocking run tp @s[gamemode=!creative] ~ ~ ~
 
-execute if score @s uhc.spawn.check matches 0..32 run title @s[scores={uhc.player.lang=061801}] actionbar [{"text":"Vérification des points d'apparition","color":"#FFE73F","bold":true}]
-execute if score @s uhc.spawn.check matches 0..32 run title @s[scores={uhc.player.lang=051407}] actionbar [{"text":"Spawn points check","color":"#FFE73F","bold":true}]
+execute if score @s uhc.spawn.check matches 0..32 run function uhc:translation/pre_game/world_check_spawns_hotbar

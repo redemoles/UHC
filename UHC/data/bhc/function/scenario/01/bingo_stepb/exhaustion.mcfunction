@@ -102,8 +102,4 @@ function bhc:scenario/01/bingo_stepb/exhaustion_1 with storage bingo_1b 9_7
 function bhc:scenario/01/bingo_stepb/exhaustion_1 with storage bingo_1b 9_8
 function bhc:scenario/01/bingo_stepb/exhaustion_1 with storage bingo_1b 9_9
 
-# Msg FRA
-tellraw @a[scores={uhc.player.lang=061801}] [{"text":"\nLes ressources commencent à ","color":"#FF3F3F","bold":false},{"text":"s'épuiser !\n","color":"#FF3F3F","bold":false}]
-
-# Msg ENG
-tellraw @a[scores={uhc.player.lang=051407}] [{"text":"\nResources start to ","color":"#FF3F3F","bold":false},{"text":"run out!\n","color":"#FF3F3F","bold":false}]
+function uhc:translation/bhc/01_gold_rush/bingo_b_exhaustion_all

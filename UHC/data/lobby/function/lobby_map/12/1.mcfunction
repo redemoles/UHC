@@ -30,5 +30,5 @@ fillbiome ~-63 ~-4 ~-63 ~64 ~-4 ~64 minecraft:taiga
 fillbiome ~-63 ~-8 ~-63 ~64 ~-8 ~64 minecraft:taiga
 
 time set 18000
-execute unless score #former_lobby lobby.structure.data matches 10..19 run tp @a[tag=!mgs.backroom,tag=!mgs.jump] ~ ~ ~ 0 0
-execute if score #former_lobby lobby.structure.data matches 10..19 run tp @a[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.backroom,tag=!mgs.jump] ~ ~ ~ 0 0
+execute unless score #former_lobby lobby.structure.data matches 10..39 run tp @a[tag=!mgs.backroom,tag=!mgs.jump] ~ ~ ~ 0 0
+execute if score #former_lobby lobby.structure.data matches 10..39 run tp @a[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.backroom,tag=!mgs.jump] ~ ~ ~ 0 0

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/world_check/text_trigger/eng
 #
-# @within			uhc:pre_game/world_check/text_trigger/main
+# @within			uhc:translation/pre_game/world_check_trigger
 #
 #
 # @description		Vérification des points de spawns des équipes

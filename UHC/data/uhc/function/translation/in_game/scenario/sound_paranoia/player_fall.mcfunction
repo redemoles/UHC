@@ -1,0 +1,14 @@
+
+#> uhc:translation/in_game/scenario/sound_paranoia/player_fall
+#
+# @within			uhc:in_game/scenario/sound_paranoia/long_sound/player_fall
+#
+#
+# @description		Son de joueur qui tombe sur un joueur
+#
+
+## FRA - Français / French
+tellraw @a[tag=uhc.spec,scores={uhc.player.lang=061801}] [{"text":"Sound Paranoia >","color":"#CF3FFF","bold":true},{"text":" Joueur prend un dégât de chute sur ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false}]
+
+## ENG - English
+tellraw @a[tag=uhc.spec,scores={uhc.player.lang=051407}] [{"text":"Sound Paranoia >","color":"#CF3FFF","bold":true},{"text":" Player took fall damage on ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false}]

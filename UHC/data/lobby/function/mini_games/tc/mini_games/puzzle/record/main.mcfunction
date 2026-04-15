@@ -28,7 +28,7 @@ scoreboard players operation #temp_record lobby.tc.record.puzzle /= #1000 uhc.da
 # Vérifie si nouveau record local
 execute unless score #temp_record lobby.tc.data.record.puzzle > @s lobby.tc.data.record.puzzle run tag @s add mgs.tc.pb
 execute unless score #temp_record lobby.tc.data.record.puzzle > #record lobby.tc.data.record.puzzle run tag @s add mgs.tc.lr
-execute if entity @s[tag=!mgs.tc.lr,tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/puzzle/record/new_pb
+execute if entity @s[tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/puzzle/record/new_pb
 execute if entity @s[tag=mgs.tc.lr] run function lobby:mini_games/tc/mini_games/puzzle/record/new_lr
 execute if entity @s[tag=!mgs.tc.lr,tag=!mgs.tc.pb] run function lobby:mini_games/tc/mini_games/puzzle/record/time
 tag @s remove mgs.tc.pb

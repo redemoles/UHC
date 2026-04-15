@@ -16,9 +16,9 @@ scoreboard players set @s lobby.rjg.block_pick 0
 scoreboard players set @s lobby.rjg.full_cycle 0
 scoreboard players set @s lobby.rjg.wall_jump 0
 
-execute unless score @s lobby.rjg.record.battle.score matches 0.. run scoreboard players set @s lobby.rjg.record.battle.score 0
+execute unless score @s lobby.rjg.record.race.score matches 0.. run scoreboard players set @s lobby.rjg.record.race.score 0
 execute unless score @s lobby.rjg.record.infinite.score matches 0.. run scoreboard players set @s lobby.rjg.record.infinite.score 0
-execute unless score @s lobby.rjg.record.solo.score matches 0.. run scoreboard players set @s lobby.rjg.record.solo.score 0
+execute unless score @s lobby.rjg.record.speedrun.score matches 0.. run scoreboard players set @s lobby.rjg.record.speedrun.score 0
 
 scoreboard players set @s lobby.rjg.temp.min 0
 scoreboard players set @s lobby.rjg.temp.sec 0

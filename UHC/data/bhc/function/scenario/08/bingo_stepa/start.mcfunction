@@ -11,8 +11,7 @@
 scoreboard players set #bingo_8a_enabled bhc.data 1
 scoreboard players set #stepa_enabled bhc.data 1
 
-tellraw @a[scores={uhc.player.lang=061801}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Début du ","color":"#FFFFFF","bold":false},{"text":"Bingo Classique A","color":"#B73FFF","bold":true}]
-tellraw @a[scores={uhc.player.lang=051407}] [{"text":"[","color":"#FFFFFF","bold":true},{"text":"Bingo","color":"#B73FFF"},{"text":"UHC","color":"#FFE73F"},{"text":"]","color":"#FFFFFF"},{"text":" Start of ","color":"#FFFFFF","bold":false},{"text":"Classic Bingo A","color":"#B73FFF","bold":true}]
+function uhc:translation/bhc/08/bingo_a_start
 
 # Scoreboard d'affichage
 scoreboard players set #sb bhc.data.temp 2

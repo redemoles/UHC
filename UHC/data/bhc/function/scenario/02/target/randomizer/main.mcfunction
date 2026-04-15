@@ -18,6 +18,7 @@ scoreboard players operation @a[tag=uhc.player] bhc.target.cycle = #cycle bhc.ta
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run scoreboard players operation @s bhc.target.team.live = @s uhc.player.lives
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run scoreboard players set @s bhc.target.dead.temp 0
 scoreboard players set @a[tag=uhc.player] bhc.target.known 0
+scoreboard players set @e[type=minecraft:marker,tag=UHC,distance=0..] bhc.target.known 0
 # Réinitialisation du cycle
 scoreboard players set #temp bhc.data.temp 0
 execute if score #cycle bhc.target.cycle matches 1 as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scenario/02/target/randomizer/sort_first_cycle

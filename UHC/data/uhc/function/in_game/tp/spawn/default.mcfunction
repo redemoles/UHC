@@ -22,6 +22,6 @@ scoreboard players set @s uhc.player.tp 1
 # Spawn 00
 execute if score @s uhc.id.spawn matches 00 in minecraft:overworld positioned 0 300 0 run tp @s ~ ~ ~ 0.0 0.0
 # Spawn 01-*
+scoreboard players operation #team uhc.id.team = @s uhc.id.team
 function uhc:in_game/tp/spawn/point/macro_set
 execute if score @s uhc.id.spawn matches 01.. run function uhc:in_game/tp/spawn/point/tp with storage uhc:temp respawn_location
-execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches -1 

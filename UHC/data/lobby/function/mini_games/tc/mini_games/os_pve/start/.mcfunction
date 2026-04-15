@@ -17,8 +17,7 @@ execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.pl
 execute if score #timer_start_tick lobby.tc.data matches 120 as @a[tag=mgs.tc.player] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 2 0.5
 
 execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player] run title @s title [{"text":"Parkour One Shot","color":"#FFE73F"}]
-execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player,scores={uhc.player.lang=061801}] run title @s subtitle [{"text":"Temps limite : 2:40.000","color":"#FFFFFF"}]
-execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player,scores={uhc.player.lang=051407}] run title @s subtitle [{"text":"Time limit : 2:40.000","color":"#FFFFFF"}]
+execute if score #timer_start_tick lobby.tc.data matches 90 run function uhc:translation/lobby/tc_2m40_start
 execute if score #timer_start_tick lobby.tc.data matches 90 as @a[tag=mgs.tc.player] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 2 0.5
 
 execute if score #timer_start_tick lobby.tc.data matches 00 run scoreboard players set #timer_game_min lobby.tc.data 2

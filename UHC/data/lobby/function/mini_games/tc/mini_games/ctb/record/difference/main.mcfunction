@@ -24,7 +24,7 @@ execute unless score #temp_record lobby.tc.record.ctb.difference.difference <= @
 execute if score #temp_record lobby.tc.record.ctb.difference.difference = @s lobby.tc.record.ctb.difference.difference if score #temp_record lobby.tc.record.ctb.difference.for >= @s lobby.tc.record.ctb.difference.for run tag @s add mgs.tc.pb
 execute unless score #temp_record lobby.tc.record.ctb.difference.difference <= #record lobby.tc.record.ctb.difference.difference if score #temp_record lobby.tc.record.ctb.difference.difference matches 0.. run tag @s add mgs.tc.lr
 execute if score #temp_record lobby.tc.record.ctb.difference.difference = #record lobby.tc.record.ctb.difference.difference if score #temp_record lobby.tc.record.ctb.difference.for >= #record lobby.tc.record.ctb.difference.for run tag @s add mgs.tc.lr
-execute if entity @s[tag=!mgs.tc.lr,tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/ctb/record/difference/new_pb
+execute if entity @s[tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/ctb/record/difference/new_pb
 execute if entity @s[tag=mgs.tc.lr] run function lobby:mini_games/tc/mini_games/ctb/record/difference/new_lr
 tag @s remove mgs.tc.pb
 tag @s remove mgs.tc.lr

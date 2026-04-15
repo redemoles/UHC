@@ -11,13 +11,9 @@ scoreboard players enable @s lobby.tc.player.click_to_join
 scoreboard players set @s lobby.tc.player.click_to_join 0
 execute if entity @s[tag=!mgs.tc.player] run return fail
 
-execute if score @s[tag=mgs.tc.spec,tag=mgs.tc.player] uhc.player.lang matches 061801 run tellraw @s [{"text":"Tu as quitté la liste d'attente.","color":"#FF3F3F"}]
-execute if score @s[tag=mgs.tc.spec,tag=mgs.tc.player] uhc.player.lang matches 051407 run tellraw @s [{"text":"You left the waiting list.","color":"#FF3F3F"}]
+function uhc:translation/lobby/tc_waiting_list_left
 
-execute if score @s[tag=!mgs.tc.spec,tag=mgs.tc.player] uhc.player.lang matches 061801 run tellraw @s [{"text":"Tu as quitté la chambre.","color":"#FF3F3F"}]
-execute if score @s[tag=!mgs.tc.spec,tag=mgs.tc.player] uhc.player.lang matches 051407 run tellraw @s [{"text":"You left the chamber.","color":"#FF3F3F"}]
-
-execute if entity @s[tag=!mgs.tc.spec,tag=mgs.tc.player] run tp @s 0 49 -23 0 0
+execute if entity @s[tag=!mgs.tc.spec] run tp @s 0 49 -23 0 0
 
 # Menu d'inventaire
 scoreboard players set @s uhc.player.online 0

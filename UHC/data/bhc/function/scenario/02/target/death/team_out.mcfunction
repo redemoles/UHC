@@ -8,6 +8,7 @@
 #
 
 execute as @a[predicate=bhc:bhc_2/this_is_targeter] run scoreboard players set @s bhc.target.known 2
+execute as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=bhc:bhc_2/this_is_targeter] run scoreboard players set @s bhc.target.known 2
 
 # Diminue le numéro de cible/assassin des équipes
 tag @s add bhc.temp

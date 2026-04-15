@@ -11,7 +11,7 @@
 execute if score #bhc bhc.scenario matches 02 if score #stepb_start bhc.data.temp matches ..0 if score #tracker_ennemies uhc.data.temp matches ..1000 if score #team uhc.data.temp.inv matches 3.. run function bhc:scenario/02/target/randomizer/cooldown
 
 # Rappel scénario
-execute if score #stepb_start bhc.data.temp matches 5 if score #seconds uhc.data.temp matches 10 run function bhc:timer/cooldown/reminder
+execute if score #stepb_start bhc.data.temp matches 5 if score #seconds uhc.data.temp matches 10 run function bhc:timer/countdown/reminder
 
 # Général
 execute unless score #team/2 bhc.data matches 8.. unless score #game_progress uhc.game_progress matches 2.. if score #stepb_end bhc.data.temp matches ..-1 run function bhc:timer/scoreboard/less_than_15_teams/

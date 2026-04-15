@@ -23,10 +23,9 @@ execute if entity @s[tag=host,tag=!uhc.host] run function uhc:pre_game/timer/hos
 execute if entity @s[tag=!host,tag=uhc.host] run function uhc:pre_game/timer/host_grade/player
 
 # Hotbar
-execute if score @s[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.jump] uhc.player.lang matches 061801 run function uhc:pre_game/timer/hotbar/1_fra
-execute if score @s[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.jump] uhc.player.lang matches 051407 run function uhc:pre_game/timer/hotbar/2_eng
+execute as @s[tag=!mgs.tc.player,tag=!mgs.tc.spec,tag=!mgs.jump] run function uhc:translation/hotbar/lobby_main
 execute unless entity @s[tag=!mgs.tc.player,tag=!mgs.tc.spec] run function lobby:mini_games/tc/hotbar/
-execute unless entity @s[tag=!mgs.jump] run function lobby:mini_games/rjg/hotbar/
+execute unless entity @s[tag=!mgs.jump] run function lobby:mini_games/rjg/hotbar/root
 
 # Modification des items au démarrage et des items additionnels à la mort d'un joueur
 execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 2 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_starter/validate

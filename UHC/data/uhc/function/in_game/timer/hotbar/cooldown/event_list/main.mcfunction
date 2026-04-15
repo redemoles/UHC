@@ -49,7 +49,7 @@ execute if score #min_cooldown_temp uhc.data.temp matches 1 if score #sec_cooldo
 execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/timer/hotbar/cooldown/event_list/go_to_hell
 execute if score #sky_high uhc.scenario matches 1 run function uhc:in_game/timer/hotbar/cooldown/event_list/sky_high
 # Mode de jeu
-execute if score #bhc bhc.scenario matches 99 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/scenario/run/main
+execute if score #bhc uhc.gamemode matches 1 if score #bhc bhc.scenario matches 99 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/scenario/run/main
 # Divers
 execute if score #pve uhc.data.temp = #min_cooldown_temp uhc.data.temp run function uhc:in_game/timer/hotbar/cooldown/event_list/pve
 execute if score #pvp uhc.data.temp = #min_cooldown_temp uhc.data.temp run function uhc:in_game/timer/hotbar/cooldown/event_list/pvp
@@ -59,4 +59,4 @@ execute if score #shrink_3_time_left uhc.data.temp = #min_cooldown_temp uhc.data
 # Title
 execute if score #min_cooldown_temp uhc.data.temp matches 0 run scoreboard players set #min_cooldown_temp uhc.data.temp -1
 execute if score #min_cooldown_temp uhc.data.temp matches 1.. unless score #sec_cooldown uhc.data.temp matches 0 run scoreboard players remove #min_cooldown_temp uhc.data.temp 1
-function uhc:in_game/timer/hotbar/cooldown/text_title with storage uhc:temp hotbar
+function uhc:translation/hotbar/uhc_countdown_actionbar with storage uhc:temp hotbar

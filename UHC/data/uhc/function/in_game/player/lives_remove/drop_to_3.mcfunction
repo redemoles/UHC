@@ -20,13 +20,7 @@ scoreboard players operation #temp uhc.data.temp *= #team_size uhc.data.temp
 scoreboard players operation #temp uhc.data.temp /= @s uhc.team.size
 scoreboard players operation #temp uhc.data.temp /= #10 uhc.data.numbers
 
-# FRA
-execute unless score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" -1 vie.","color":"#FF3F3F","bold":false},{"text":" Compensation reçu.","color":"#FFFFFF","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=061801},predicate=uhc:id/team] [{"text":"Vies maximum ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survie","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
-
-# ENG
-execute unless score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" -1 live.","color":"#FF3F3F","bold":false},{"text":" Compensation received.","color":"#FFFFFF","bold":false}]
-execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run tellraw @a[scores={uhc.player.lang=051407},predicate=uhc:id/team] [{"text":"Maximum lives ","color":"#FFE73F","bold":false},{"text":">","color":"#9F9F9F","bold":true},{"text":" "},{"text":"+","color":"#3FE7FF","bold":true},{"score":{"name":"#temp","objective":"uhc.data.temp"},"color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Survival","color":"#3FE7FF"},{"text":"] (","color":"#FFFFFF"},{"selector":"@s"},{"text":")","color":"#FFFFFF"}]
+execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run function uhc:translation/in_game/player_lives_remove_drop_to_3
 
 # Title
 execute as @a[scores={uhc.player.lives=4..},predicate=uhc:id/team] run title @s times 0s 1.5s 0.5s

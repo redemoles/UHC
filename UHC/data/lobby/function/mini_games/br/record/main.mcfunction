@@ -28,7 +28,7 @@ scoreboard players operation #temp_record lobby.br.timer /= #1000 uhc.data.numbe
 # Vérifie si nouveau record local
 execute unless score #temp_record lobby.br.data.record > @s lobby.br.data.record run tag @s add mgs.br.pb
 execute unless score #temp_record lobby.br.data.record > #record lobby.br.data.record run tag @s add mgs.br.lr
-execute if entity @s[tag=!mgs.br.lr,tag=mgs.br.pb] run function lobby:mini_games/br/record/new_pb
+execute if entity @s[tag=mgs.br.pb] run function lobby:mini_games/br/record/new_pb
 execute if entity @s[tag=mgs.br.lr] run function lobby:mini_games/br/record/new_lr
 execute if entity @s[tag=!mgs.br.lr,tag=!mgs.br.pb] run function lobby:mini_games/br/record/time
 tag @s remove mgs.br.pb

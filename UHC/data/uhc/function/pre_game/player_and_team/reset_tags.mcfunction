@@ -10,9 +10,9 @@
 ## Réinitialisation tags des mini-jeux du lobby
 tag @s remove mgs.backroom
 tag @s remove mgs.jump
-tag @s remove mgs.jump.battle
+tag @s remove mgs.jump.race
 tag @s remove mgs.jump.infinite
-tag @s remove mgs.jump.solo
+tag @s remove mgs.jump.speedrun
 tag @s remove mgs.tc.player
 tag @s remove mgs.tc.spec
 tag @s remove mgs.tc.finished

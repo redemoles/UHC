@@ -9,7 +9,7 @@
 
 tag @s remove revive
 tag @s remove uhc.revive
-execute if entity @s[tag=uhc.player] run return run function uhc:in_game/player/spec/revive/cancel
+execute if entity @s[tag=uhc.player] run return run function uhc:translation/in_game/player_spec_revive_cancel_is_playing
 
 ## Spec Chat
 # Trigger

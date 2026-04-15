@@ -165,12 +165,13 @@ scoreboard objectives add uhc.player.kills.inv dummy
 scoreboard players set @a[tag=uhc.player] uhc.player.kills.inv 0
 scoreboard players set §p§v§e uhc.player.kills 0
 
-scoreboard objectives add uhc.player.damage_dealt.total minecraft.custom:minecraft.damage_dealt [{"text":" [Dégâts émis total]*10","color":"#FFFFFF"}]
-scoreboard objectives add uhc.player.damage_dealt.pve minecraft.custom:minecraft.damage_dealt [{"text":" [Dégâts émis PvE]*10","color":"#FFFFFF"}]
+scoreboard objectives add uhc.player.damage_dealt.total dummy [{"text":" [Dégâts émis total]*10","color":"#FFFFFF"}]
+scoreboard objectives add uhc.player.damage_dealt.pve dummy [{"text":" [Dégâts émis PvE]*10","color":"#FFFFFF"}]
 scoreboard objectives add uhc.player.damage_dealt.pvp dummy [{"text":" [Dégâts émis PvP]*10","color":"#FFFFFF"}]
-scoreboard objectives add uhc.player.damage_taken.total minecraft.custom:minecraft.damage_taken
-scoreboard objectives add uhc.player.damage_taken.pve minecraft.custom:minecraft.damage_taken
-scoreboard objectives add uhc.player.damage_taken.pvp dummy
+scoreboard objectives add uhc.player.damage_dealt.temp minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add uhc.player.damage_taken.total dummy [{"text":" [Dégâts reçus total]*10","color":"#FFFFFF"}]
+scoreboard objectives add uhc.player.damage_taken.pve dummy [{"text":" [Dégâts reçus PvE]*10","color":"#FFFFFF"}]
+scoreboard objectives add uhc.player.damage_taken.pvp dummy [{"text":" [Dégâts reçus PvP]*10","color":"#FFFFFF"}]
 scoreboard objectives add uhc.player.damage_taken.temp minecraft.custom:minecraft.damage_taken
 
 scoreboard players set @a uhc.player.damage_dealt.total 0

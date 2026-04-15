@@ -13,10 +13,7 @@ execute as @p[tag=bhc.temp.dead] run function bhc:scenario/02/target/death/kille
 
 # Message et points
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-execute as @a[predicate=!uhc:id/team,tag=uhc.spec,scores={uhc.player.lang=061801}] run tellraw @s [{"text":"Cible tuée","color":"#CFCFCF","italic":true}]
-execute as @a[predicate=uhc:id/team,scores={uhc.player.lang=061801}] run tellraw @s [{"text":"+5","color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Kills","color":"#3FE7FF"},{"text":"] ","color":"#FFFFFF"},{"text":"Cible tuée","color":"#CFCFCF","italic":true,"bold":false}]
-execute as @a[predicate=!uhc:id/team,tag=uhc.spec,scores={uhc.player.lang=051407}] run tellraw @s [{"text":"Target killed","color":"#CFCFCF","italic":true}]
-execute as @a[predicate=uhc:id/team,scores={uhc.player.lang=051407}] run tellraw @s [{"text":"+5","color":"#3FE7FF","bold":true},{"text":" points ","color":"#00C3DF","bold":false},{"text":"[","color":"#FFFFFF"},{"text":"Kills","color":"#3FE7FF"},{"text":"] ","color":"#FFFFFF"},{"text":"Target killed","color":"#CFCFCF","italic":true,"bold":false}]
+function uhc:translation/bhc/02_viking_era/target_killer_is_targeter
 scoreboard players set #points bhc.kills.score.inv 4
 
 # Si le Bingo de l'Ère Viking est en cours

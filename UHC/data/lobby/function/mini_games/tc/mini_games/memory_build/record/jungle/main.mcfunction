@@ -28,7 +28,7 @@ scoreboard players operation #temp_record lobby.tc.record.memory_build.jungle /=
 # Vérifie si nouveau record local
 execute unless score #temp_record lobby.tc.data.record.memory_build.jungle > @s lobby.tc.data.record.memory_build.jungle run tag @s add mgs.tc.pb
 execute unless score #temp_record lobby.tc.data.record.memory_build.jungle > #record lobby.tc.data.record.memory_build.jungle run tag @s add mgs.tc.lr
-execute if entity @s[tag=!mgs.tc.lr,tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/memory_build/record/jungle/new_pb
+execute if entity @s[tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/memory_build/record/jungle/new_pb
 execute if entity @s[tag=mgs.tc.lr] run function lobby:mini_games/tc/mini_games/memory_build/record/jungle/new_lr
 execute if entity @s[tag=!mgs.tc.lr,tag=!mgs.tc.pb] run function lobby:mini_games/tc/mini_games/memory_build/record/jungle/time
 tag @s remove mgs.tc.pb

@@ -28,7 +28,7 @@ scoreboard players operation #temp_record lobby.tc.record.parkour.piston_slime_0
 # Vérifie si nouveau record local
 execute unless score #temp_record lobby.tc.data.record.parkour.piston_slime_01 > @s lobby.tc.data.record.parkour.piston_slime_01 run tag @s add mgs.tc.pb
 execute unless score #temp_record lobby.tc.data.record.parkour.piston_slime_01 > #record lobby.tc.data.record.parkour.piston_slime_01 run tag @s add mgs.tc.lr
-execute if entity @s[tag=!mgs.tc.lr,tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/new_pb
+execute if entity @s[tag=mgs.tc.pb] run function lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/new_pb
 execute if entity @s[tag=mgs.tc.lr] run function lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/new_lr
 execute if entity @s[tag=!mgs.tc.lr,tag=!mgs.tc.pb] run function lobby:mini_games/tc/mini_games/parkour/record/piston_slime_01/time
 tag @s remove mgs.tc.pb

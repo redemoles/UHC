@@ -8,8 +8,7 @@
 #
 
 # Suppression
-execute if score #effect_speed uhc.data.setup matches 0 if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Effet interdite.","color":"#FF3F3F"}]
-execute if score #effect_speed uhc.data.setup matches 0 if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"Effet forbidden.","color":"#FF3F3F"}]
+execute if score #effect_speed uhc.data.setup matches 0 run function uhc:translation/in_game/player_effect
 execute if score #effect_speed uhc.data.setup matches 0 run return run effect clear @s minecraft:speed
 
 # Speed Strength Compatibilité

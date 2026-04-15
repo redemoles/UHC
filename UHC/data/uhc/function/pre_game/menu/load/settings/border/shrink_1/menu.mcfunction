@@ -32,6 +32,6 @@ execute if score #shrink_dynamic uhc.data.setup matches 0 if score @s uhc.player
 $execute if score #shrink_dynamic uhc.data.setup matches 1.. if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.16 with minecraft:magma_cream[minecraft:item_name=[{"text":"Dynamic shrinkage","color":"#3FE7FF"}],minecraft:lore=[[{"text":"Adapts to the number of teams alive.","color":"#FFFFFF","italic":false,"bold":false}],[{"text":"Reduction by 1 block/sec.","color":"#FFFFFF","italic":false,"bold":false}]],minecraft:custom_data={Tags:"settings_border"}] $(dynamic_count)
 
 
-execute if score #shrink_dynamic uhc.data.setup matches 1 run item replace entity @s inventory.11 with minecraft:black_stained_glass[minecraft:tooltip_display={"hide_tooltip":true}]
+execute if score #shrink_dynamic uhc.data.setup matches 1 run item replace entity @s inventory.11 with minecraft:black_stained_glass[minecraft:tooltip_display={"hide_tooltip":true},minecraft:custom_data={Tags:"settings_border"}]
 
-execute if score #shrink_dynamic uhc.data.setup matches 1 run item replace entity @s inventory.13 with minecraft:black_stained_glass[minecraft:tooltip_display={"hide_tooltip":true}]
+execute if score #shrink_dynamic uhc.data.setup matches 1 run item replace entity @s inventory.13 with minecraft:black_stained_glass[minecraft:tooltip_display={"hide_tooltip":true},minecraft:custom_data={Tags:"settings_border"}]

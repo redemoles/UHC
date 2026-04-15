@@ -21,5 +21,4 @@ execute if score @s uhc.scenario.sound_paranoia.stereo matches 2 run playsound m
 execute if score @s uhc.scenario.sound_paranoia.stereo matches 3 run playsound minecraft:entity.generic.small_fall hostile @a[tag=uhc.scenario.sound_paranoia.on] ^1 ^ ^-4 0.5 1 0
 execute if score @s uhc.scenario.sound_paranoia.stereo matches 4 run playsound minecraft:entity.generic.small_fall hostile @a[tag=uhc.scenario.sound_paranoia.on] ^4 ^ ^-2 0.5 1 0
 
-tellraw @a[tag=uhc.spec,scores={uhc.player.lang=061801}] [{"text":"Sound Paranoia >","color":"#CF3FFF","bold":true},{"text":" Zombie prend un dégât de chute sur ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false}]
-tellraw @a[tag=uhc.spec,scores={uhc.player.lang=051407}] [{"text":"Sound Paranoia >","color":"#CF3FFF","bold":true},{"text":" Zombie took fall damage on ","color":"#FFFFFF","bold":false},{"selector":"@s","bold":false}]
+function uhc:translation/in_game/scenario/sound_paranoia/zombie

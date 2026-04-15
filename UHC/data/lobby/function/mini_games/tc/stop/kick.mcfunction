@@ -15,8 +15,7 @@ tag @s remove mgs.tc.team.01
 tag @s remove mgs.tc.team.02
 tp @s 20 66 -24 0 0
 
-execute if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"La chambre a été fermée de force par l'hôte.","color":"#FF3F3F"}]
-execute if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"The chamber has been forcibly closed by the host.","color":"#FF3F3F"}]
+function uhc:translation/lobby/tc_stop_kick
 
 function uhc:pre_game/player_and_team/reset_effects
 
