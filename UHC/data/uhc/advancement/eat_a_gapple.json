@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[\"uhc.player\"]}"
+                },
+                "item": {
+                    "items": "minecraft:golden_apple"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "uhc:in_game/advancement/eat_a_gapple/"
+    }
+}

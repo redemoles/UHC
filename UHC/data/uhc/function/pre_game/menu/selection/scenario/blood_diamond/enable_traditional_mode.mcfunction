@@ -7,8 +7,13 @@
 # @description		Activation/Désactivation Blood Diamond
 #
 
-execute if score #blood_diamond uhc.scenario matches 2 if score #mystery_scenarios uhc.data.setup matches 0 run tellraw @a [{"text":"Scenarios ","color":"#FFE73F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Blood Diamond","color":"#FFFFFF","bold":false},{"text":" disabled.","color":"#FF3F3F","bold":false}]
-execute if score #blood_diamond uhc.scenario matches 0 if score #mystery_scenarios uhc.data.setup matches 0 run tellraw @a [{"text":"Scenarios ","color":"#FFE73F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Blood Diamond","color":"#FFFFFF","bold":false},{"text":" enabled.","color":"#3FE7FF","bold":false}]
+data modify storage uhc:temp scenario set value {"internal":"blood_diamond","chat":"Blood Diamond"}
+execute unless score #blood_diamond uhc.scenario matches 1 run function uhc:translation/menu/selected/scenario_inverted with storage uhc:temp scenario
 
-execute if score #blood_diamond uhc.scenario matches 2 run return run scoreboard players set #blood_diamond uhc.scenario 0
-scoreboard players set #blood_diamond uhc.scenario 2
+execute if score @s uhc.menu.scenario.blood_diamond matches 2.. if score #blood_diamond uhc.scenario matches 2 run scoreboard players set #blood_diamond uhc.scenario 0
+execute if score @s uhc.menu.scenario.blood_diamond matches 2.. if score #blood_diamond uhc.scenario matches 1 run scoreboard players set #blood_diamond uhc.scenario 2
+execute if score @s uhc.menu.scenario.blood_diamond matches 1 run scoreboard players set #blood_diamond uhc.scenario 2
+execute if score #blood_diamond uhc.scenario matches 0 run scoreboard players set @s uhc.menu.scenario.blood_diamond 1
+execute if score #blood_diamond uhc.scenario matches 1.. run scoreboard players set @s uhc.menu.scenario.blood_diamond 2
+
+function uhc:pre_game/menu/load/scenario/blood_diamond/main with storage uhc:scenario blood_diamond

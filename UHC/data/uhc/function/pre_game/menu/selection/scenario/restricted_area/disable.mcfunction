@@ -7,8 +7,10 @@
 # @description		Redirection
 #
 
-execute if score #go_to_hell uhc.scenario matches 1 if score #mystery_scenarios uhc.data.setup matches 0 run tellraw @a [{"text":"Scenarios ","color":"#FFE73F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Go To Hell","color":"#FFFFFF","bold":false},{"text":" disabled.","color":"#FF3F3F","bold":false}]
-execute if score #sky_high uhc.scenario matches 1 if score #mystery_scenarios uhc.data.setup matches 0 run tellraw @a [{"text":"Scenarios ","color":"#FFE73F"},{"text":">","color":"#9F9F9F","bold":true},{"text":" Sky High","color":"#FFFFFF","bold":false},{"text":" disabled.","color":"#FF3F3F","bold":false}]
+execute if score #go_to_hell uhc.scenario matches 1 run data modify storage uhc:temp scenario set value {"internal":"go_to_hell","chat":"Go To Hell"}
+execute if score #go_to_hell uhc.scenario matches 1 if score #mystery_scenarios uhc.data.setup matches 0 run function uhc:translation/menu/selected/scenario_inverted with storage uhc:temp scenario
+execute if score #sky_high uhc.scenario matches 1 run data modify storage uhc:temp scenario set value {"internal":"sky_high","chat":"Sky High"}
+execute if score #sky_high uhc.scenario matches 1 if score #mystery_scenarios uhc.data.setup matches 0 run function uhc:translation/menu/selected/scenario_inverted with storage uhc:temp scenario
 
 scoreboard players set #go_to_hell uhc.scenario 0
 scoreboard players set #sky_high uhc.scenario 0

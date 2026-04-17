@@ -8,7 +8,7 @@
 #
 
 # Timer Go To Hell
-execute if score @s uhc.menu.scenario.restricted_area matches 2 if score #go_to_hell uhc.data.setup matches ..179 run scoreboard players add #go_to_hell uhc.data.setup 1
+execute if score @s uhc.menu.scenario.restricted_area matches 3 if score #go_to_hell uhc.data.setup matches ..179 run scoreboard players add #go_to_hell uhc.data.setup 1
 
 
 execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard players get #go_to_hell uhc.data.setup

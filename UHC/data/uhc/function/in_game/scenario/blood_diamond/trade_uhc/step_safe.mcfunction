@@ -12,4 +12,4 @@ execute if score #double_ores uhc.scenario matches 1 run give @s minecraft:emera
 
 ## Joueur
 title @s[scores={uhc.scenario.blood_diamond.mined=1}] title [{"text":""}]
-function uhc:translation/in_game/scenario/blood_diamond_trade_uhc_step_safe
+function uhc:translation/in_game/scenario/blood_diamond_trade_uhc_step_safe with storage uhc:scenario blood_diamond

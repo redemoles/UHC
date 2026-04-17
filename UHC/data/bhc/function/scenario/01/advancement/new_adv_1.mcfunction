@@ -67,6 +67,8 @@ execute if score @s bhc.stepb.case = #max bhc.stepb.case run scoreboard players 
 $execute as @p[tag=bhc.new_adv] run function uhc:translation/bhc/01_gold_rush/square_team with storage $(namespace) $(line)_$(column)
 # Case - Pour tous
 $function uhc:translation/bhc/01_gold_rush/square_everyone with storage $(namespace) $(line)_$(column)
+# Case - Épuisement
+$execute if score #stepb_enabled bhc.data matches $(step) if score #$(namespace)_$(line)_$(column) bhc.case matches 0 run function uhc:translation/bhc/01_gold_rush/bingo_b_exhaustion_square with storage $(namespace) $(line)_$(column)
 # Ligne / Colonne
 $execute unless score #team_first_completion bhc.data matches 1 if score #team_first_line_$(line) bhc.data matches 1 run function uhc:translation/bhc/01_gold_rush/line with storage $(namespace) $(line)_$(column)
 $execute unless score #team_first_completion bhc.data matches 1 if score #team_first_column_$(column) bhc.data matches 1 run function uhc:translation/bhc/01_gold_rush/column with storage $(namespace) $(line)_$(column)

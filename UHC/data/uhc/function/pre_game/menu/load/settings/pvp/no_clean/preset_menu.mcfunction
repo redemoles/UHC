@@ -14,3 +14,5 @@ execute if score @s uhc.menu.settings.pvp matches 41 run scoreboard players add 
 execute if score @s uhc.menu.settings.pvp matches 41 if score #reward_kill_absorption uhc.data.setup matches 2 run scoreboard players set #reward_kill_absorption uhc.data.setup 0
 execute if score @s uhc.menu.settings.pvp matches ..10 run scoreboard players set @s uhc.menu.settings.pvp 2
 execute if score @s uhc.menu.settings.pvp matches 11.. run scoreboard players set @s uhc.menu.settings.pvp 41
+
+function uhc:pre_game/menu/load/settings/menu

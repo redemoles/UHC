@@ -13,5 +13,4 @@ execute if score #warning uhc.game.reset matches 2 unless score @s uhc.game.rese
 function uhc:load
 scoreboard objectives remove lobby.structure.data
 scoreboard objectives remove uhc.data.setup
-scoreboard objectives remove uhc.player.lang
 function uhc:reset

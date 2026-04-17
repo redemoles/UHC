@@ -11,6 +11,8 @@ data modify storage uhc:temp player merge from entity @s
 
 # Vie
 execute store result score @s uhc.player.health.100 run data get storage uhc:temp player.Health 5
+execute store result score @s uhc.player.absorption.100 run data get storage uhc:temp player.AbsorptionAmount 5
+scoreboard players operation @s uhc.player.health.100 += @s uhc.player.absorption.100
 
 # Localisation
 execute store result score @s uhc.player.x run data get storage uhc:temp player.Pos[0]

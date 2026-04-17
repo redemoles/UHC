@@ -14,7 +14,7 @@ scoreboard players set #stepa_enabled bhc.data 0
 function uhc:translation/bhc/91_1_grid_chill_mode/bingo_end
 
 # Scoreboard d'affichage
-function bhc:summary/stepa/score
+function bhc:summary/stepa/rank
 
 # Fin de partie
 execute if score #player uhc.scenario.ironman matches 2.. run function uhc:translation/bhc/91_1_grid_chill_mode/ironman

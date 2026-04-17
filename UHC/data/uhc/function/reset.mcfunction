@@ -285,6 +285,8 @@ scoreboard objectives add uhc.player.health.reverse.20 dummy [{"text":"❤","col
 scoreboard objectives add uhc.player.health.reverse.100 dummy "%"
 scoreboard objectives add uhc.player.health.20 dummy
 scoreboard objectives add uhc.player.health.100 dummy "%"
+scoreboard objectives add uhc.player.absorption.20 dummy [{"text":"❤","color":"#FFEB5F"}]
+scoreboard objectives add uhc.player.absorption.100 dummy "%"
 scoreboard objectives add uhc.player.health.auto health [{"text":"❤","color":"#FF5F5F"}]
 scoreboard objectives add uhc.player.health.check dummy
 scoreboard objectives add uhc.player.timer dummy "Minutes jouées"
@@ -440,4 +442,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26047
+scoreboard players set #update uhc.data.update 26048

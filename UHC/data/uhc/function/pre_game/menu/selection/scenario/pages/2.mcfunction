@@ -16,8 +16,6 @@ execute unless items entity @s inventory.5 *[minecraft:custom_data={Tags:"scenar
 execute unless items entity @s inventory.6 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/sound_paranoia
 execute unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/team_health
 
-execute unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/trade_uhc
-
 # Ligne 3
 execute unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/mystery_scenarios
 execute unless items entity @s inventory.24 *[minecraft:item_name=[{"text":"Page 1","color":"#3FE7FF","italic":false}]] run return run function uhc:pre_game/menu/load/scenario/pages/1/main

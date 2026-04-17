@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[\"uhc.player\"]}"
+                },
+                "item": {
+                    "items": "minecraft:suspicious_stew",
+                    "components": {
+                        "suspicious_stew_effects": [
+                            {
+                                "id": "minecraft:regeneration"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "uhc:in_game/advancement/eat_a_regeneration_stew/"
+    }
+}
