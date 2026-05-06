@@ -158,8 +158,8 @@ scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"min_format": [94, 1],
-		"max_format": [94, 1],
+		"min_format": [101, 1],
+		"max_format": [101, 1],
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y/%m/%d")}"
 	}}
 }}""")
@@ -324,8 +324,8 @@ scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"min_format": [94, 1],
-		"max_format": [94, 1],
+		"min_format": [101, 1],
+		"max_format": [101, 1],
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y/%m/%d")}"
 	}}
 }}""")

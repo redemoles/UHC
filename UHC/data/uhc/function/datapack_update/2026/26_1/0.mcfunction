@@ -4,7 +4,7 @@
 # @within			uhc:datapack_update/list
 #
 #
-# @description		Mise à jour du datapack - UHC 26.1.0
+# @description		Mise à jour du datapack - UHC 26.1.2
 #
 
 scoreboard players set #reset uhc.data.update 1

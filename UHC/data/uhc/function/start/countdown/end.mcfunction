@@ -16,6 +16,8 @@ execute in minecraft:the_end run function uhc:all_dimension_commands/start
 ## Démarrage de la partie
 # Cycle jour/nuit
 time set 0s
+execute if score #perma_day uhc.scenario matches 1 run time set 300s
+execute if score #perma_night uhc.scenario matches 1 run time set 900s
 execute if score #bhc bhc.scenario matches 51 run time set 600s
 execute if score #bhc bhc.scenario matches 51 in minecraft:overworld run gamerule minecraft:spawn_monsters false
 # Joueurs
