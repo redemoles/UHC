@@ -14,8 +14,9 @@ execute unless items entity @s[tag=uhc.host] inventory.4 *[minecraft:custom_data
 
 execute unless items entity @s[tag=uhc.host] inventory.10 *[minecraft:custom_data={Tags:"settings_pvp_shield"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/shield/
 execute unless items entity @s[tag=uhc.host] inventory.11 *[minecraft:custom_data={Tags:"settings_pvp_horse"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/horse/
-execute if score @s[tag=uhc.host] uhc.menu.settings.pvp matches 13 unless items entity @s inventory.22 *[minecraft:custom_data={Tags:"settings_pvp_wolf"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/wolf/
-execute unless items entity @s[tag=uhc.host] inventory.12 *[minecraft:custom_data={Tags:"settings_pvp_wolf"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/wolf/
+execute if score @s[tag=uhc.host] uhc.menu.settings.pvp matches 13 unless items entity @s inventory.22 *[minecraft:custom_data={Tags:"settings_pvp_wolf"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/wolf/limit_number
+execute unless items entity @s[tag=uhc.host] inventory.12 *[minecraft:custom_data={Tags:"settings_pvp_wolf"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/wolf/limit_number
+execute unless items entity @s[tag=uhc.host] inventory.13 *[minecraft:custom_data={Tags:"settings_pvp_wolf"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/wolf/armor
 
 execute unless items entity @s[tag=uhc.host] inventory.19 *[minecraft:custom_data={Tags:"settings_pvp"}] run function uhc:pre_game/menu/selection/settings/pvp/preset_menu
 execute unless items entity @s[tag=!uhc.host] inventory.24 *[minecraft:custom_data={Tags:"settings_pvp"}] run return run function uhc:pre_game/menu/selection/settings/pvp/preset_menu

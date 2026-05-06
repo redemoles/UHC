@@ -72,12 +72,11 @@ execute if score #2_lives_left uhc.data.temp matches ..0 if entity @p[scores={uh
 execute if score #1_life_left uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 
 ## Morts
-# Message de mort
-execute if score #message uhc.data.setup matches 1..5 run scoreboard players add #message uhc.data.setup 1
-execute if score #message uhc.data.setup matches 6 run scoreboard players set #message uhc.data.setup 1
-
 # Détection d'un joueur mort
 execute as @e[type=minecraft:player,scores={uhc.player.death.temp=1}] run function uhc:in_game/player/death/main
+execute if score #death_message uhc.data.setup matches 6 store result score #death_message uhc.data.temp run random value 1..5
+execute if predicate uhc:scenario/silent_night/day_time if score #death_message uhc.data.temp matches 5 unless score #death_message uhc.data.setup matches 5..6 run scoreboard players operation #death_message uhc.data.temp = #death_message uhc.data.setup
+execute if predicate uhc:scenario/silent_night/night_time unless score #death_message uhc.data.temp matches 5 run scoreboard players set #death_message uhc.data.temp 5
 
 ## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
 execute as @a run function uhc:in_game/player/tick

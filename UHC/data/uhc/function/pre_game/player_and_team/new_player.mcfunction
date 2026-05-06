@@ -16,6 +16,7 @@ tag @s remove uhc.random_team.in_a_team
 tag @s add uhc.spec
 tag @s remove uhc.scenario.biome_paranoia.team
 tag @s remove uhc.scenario.sound_paranoia.on
+tag @s remove uhc.armor.malus
 
 tag @s remove uhc.spec_info.blood_diamond
 tag @s remove uhc.spec_info.pve

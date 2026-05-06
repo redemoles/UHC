@@ -1,7 +1,7 @@
 
 #> uhc:in_game/inventory/ban_item/compensation
 #
-# @within			uhc:in_game/inventory/ban_item/
+# @within			uhc:in_game/inventory/ban_item/root
 #
 #
 # @description		Compensation à la suppresion d'items interdits

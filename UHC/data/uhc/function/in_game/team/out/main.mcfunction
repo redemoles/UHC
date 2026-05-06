@@ -8,7 +8,7 @@
 #
 
 execute if score #team uhc.data.temp matches ..1 run data modify storage uhc:temp hotbar.team set value ""
-execute if score #message uhc.data.setup matches 0..4 run scoreboard players remove #team uhc.data.temp 1
+execute if score #death_message uhc.data.temp matches 0..4 run scoreboard players remove #team uhc.data.temp 1
 scoreboard players remove #team uhc.data.temp.inv 1
 
 ## Vérifie si des joueurs en vie sont déconnectés

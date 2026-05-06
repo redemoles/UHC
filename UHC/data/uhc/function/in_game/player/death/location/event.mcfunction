@@ -14,7 +14,7 @@ $execute if score @s uhc.player.lives matches ..0 in $(dim) positioned $(x) $(y)
 ## Drop d'items
 $execute unless score @s uhc.player.death.cancel_additional_item matches 1 if score #pvp uhc.data.temp matches ..0 in $(dim) positioned $(x) $(y) $(z) run function uhc:in_game/player/death/location/item_drop/main
 $execute unless score @s uhc.player.death.cancel_additional_item matches 1 if score #pvp uhc.data.temp matches 1.. if score @s uhc.player.lives matches ..0 in $(dim) positioned $(x) $(y) $(z) run function uhc:in_game/player/death/location/item_drop/main
-$execute if score #message uhc.data.setup matches 0..4 in $(dim) positioned $(x) $(y) $(z) run playsound minecraft:entity.lightning_bolt.thunder weather @a[distance=0..] ~ ~ ~ 100 1 1
+$execute if score #death_message uhc.data.temp matches 0..4 in $(dim) positioned $(x) $(y) $(z) run playsound minecraft:entity.lightning_bolt.thunder weather @a[distance=0..] ~ ~ ~ 100 1 1
 
 ## Scénarios
 # Red Arrows

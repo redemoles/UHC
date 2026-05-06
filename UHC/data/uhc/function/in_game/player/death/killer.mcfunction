@@ -7,17 +7,8 @@
 # @description		Fonction si morts ou kills à chaque ticks
 #
 
-# Msg FRA
-execute if score #message uhc.data.setup matches 1 run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"\n","color":"#3FE7FF"},{"selector":"@s","color":"#B73FFF"},{"text":" a éliminé(e) un joueur. ","color":"#FF3FFF"}]
-execute if score #message uhc.data.setup matches 3 run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"\n","color":"#3FE7FF"},{"selector":"@s","color":"#B73FFF"},{"text":" a éliminé(e) un joueur. ","color":"#FF3FFF"}]
-execute if score #message uhc.data.setup matches 1..4 run tellraw @a[scores={uhc.player.lang=061801}] [{"text":"Il reste au maximum ","color":"#FFE73F"},{"score":{"name":"#player","objective":"uhc.data.temp"},"color":"#FF9F3F"},{"text":" joueurs en vie.","color":"#FFE73F"},{"text":"\n","color":"#FF3FFF"}]
-execute if score #message uhc.data.setup matches 1..8 if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Tu as ","color":"#FF3FFF"},{"score":{"name":"@s","objective":"uhc.player.kills"},"color":"#B73FFF","bold":true},{"text":" kill(s)","color":"#FF3FFF"}]
-
-# Msg ENG
-execute if score #message uhc.data.setup matches 1 run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"\n","color":"#3FE7FF"},{"selector":"@s","color":"#B73FFF"},{"text":" killed a player. ","color":"#FF3FFF"}]
-execute if score #message uhc.data.setup matches 3 run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"\n","color":"#3FE7FF"},{"selector":"@s","color":"#B73FFF"},{"text":" killed a player. ","color":"#FF3FFF"}]
-execute if score #message uhc.data.setup matches 1..4 run tellraw @a[scores={uhc.player.lang=051407}] [{"text":"There are a maximum of  ","color":"#FFE73F"},{"score":{"name":"#player","objective":"uhc.data.temp"},"color":"#FF9F3F"},{"text":" people left.","color":"#FFE73F"},{"text":"\n","color":"#FF3FFF"}]
-execute if score #message uhc.data.setup matches 1..8 if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"You have ","color":"#FF3FFF"},{"score":{"name":"@s","objective":"uhc.player.kills"},"color":"#B73FFF","bold":true},{"text":" kill(s)","color":"#FF3FFF"}]
+function uhc:translation/in_game/player_death_killer
+execute if score #death_message uhc.data.temp matches 1..3 unless score #death_message uhc.data.temp matches 2 run scoreboard players set @s uhc.player.death.message 0
 
 # Attribution d'effets au killer
 $execute if score #reward_kill_health uhc.data.temp matches 2.. run effect give @s minecraft:regeneration $(health) 1 true

@@ -57,10 +57,13 @@ scoreboard players set #hastey_boys uhc.scenario 0
 scoreboard players set #no_fall uhc.scenario 0
 
 scoreboard players set #no_fire uhc.scenario 0
+scoreboard players set #perma_day uhc.scenario 0
+scoreboard players set #perma_night uhc.scenario 0
 scoreboard players set #permakill uhc.scenario 0
 scoreboard players set #red_arrows uhc.scenario 0
 scoreboard players set #rewarding_longshots uhc.scenario 0
 scoreboard players set #sky_high uhc.scenario 0
+
 scoreboard players set #sound_paranoia uhc.scenario 0
 scoreboard players set #team_health uhc.scenario 0
 

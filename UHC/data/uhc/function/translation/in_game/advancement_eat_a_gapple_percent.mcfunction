@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_advancement_eat_a_apple_percent
+#> uhc:translation/in_game/advancement_eat_a_apple_percent
 #
 # @within			uhc:in_game/advancement/eat_a_apple/tellraw_percent
 #

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/inventory/ban_item/speed_potion
 #
-# @within			uhc:in_game/inventory/ban_item/
+# @within			uhc:in_game/inventory/ban_item/root
 #
 #
 # @description		Suppression du seau de lait

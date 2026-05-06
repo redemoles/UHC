@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_player_effect
+#> uhc:translation/in_game/player_effect
 #
 # @within			uhc:in_game/player/effect/*
 #

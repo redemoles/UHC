@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_player_death_main
+#> uhc:translation/in_game/player_death_main
 #
 # @within			uhc:in_game/player/death/main
 #

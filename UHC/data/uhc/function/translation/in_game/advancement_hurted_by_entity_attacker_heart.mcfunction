@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_advancement_hurted_by_entity_attacker_heart
+#> uhc:translation/in_game/advancement_hurted_by_entity_attacker_heart
 #
 # @within			uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart
 #

@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_advancement_hurted_by_arrow_percent
+#> uhc:translation/in_game/advancement_hurted_by_arrow_percent
 #
 # @within			uhc:in_game/advancement/hurted_by_arrow/tellraw_percent
 #

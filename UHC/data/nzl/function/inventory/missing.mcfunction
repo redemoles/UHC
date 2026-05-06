@@ -1,7 +1,7 @@
 
 #> nzl:inventory/missing
 #
-# @within			uhc:in_game/inventory/ban_item/
+# @within			uhc:in_game/inventory/ban_item/root
 #
 #
 # @description		Retire les items qui n'appartiennent pas au type du joueur

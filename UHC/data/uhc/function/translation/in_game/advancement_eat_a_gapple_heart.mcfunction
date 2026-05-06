@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_advancement_eat_a_apple_heart
+#> uhc:translation/in_game/advancement_eat_a_apple_heart
 #
 # @within			uhc:in_game/advancement/eat_a_apple/tellraw_heart
 #

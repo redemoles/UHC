@@ -23,9 +23,11 @@ attribute @s minecraft:attack_damage modifier remove uhc.effect.strength
 attribute @s minecraft:attack_damage modifier remove uhc.waiting_respawn
 attribute @s minecraft:attack_knockback modifier remove uhc.pvp_1_8
 attribute @s minecraft:attack_speed modifier remove uhc.pvp.1_8
+attribute @s minecraft:jump_strength modifier remove uhc.armor.malus
 attribute @s minecraft:jump_strength modifier remove uhc.waiting_respawn
 attribute @s minecraft:jump_strength modifier remove uhc.waiting_start
 attribute @s minecraft:knockback_resistance modifier remove uhc.block.knockback_resistance
 attribute @s minecraft:max_health modifier remove lobby.tc.os_pve
+attribute @s minecraft:movement_speed modifier remove uhc.armor.malus
 attribute @s minecraft:movement_speed modifier remove uhc.waiting_respawn
 attribute @s minecraft:movement_speed modifier remove uhc.waiting_start

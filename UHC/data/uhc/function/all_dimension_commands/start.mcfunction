@@ -17,4 +17,4 @@ gamerule minecraft:spawn_monsters true
 gamerule minecraft:spawn_mobs true
 gamerule minecraft:spectators_generate_chunks false
 gamerule minecraft:pvp false
-execute if score #message uhc.data.setup matches 0 run gamerule minecraft:show_death_messages true
+execute if score #death_message uhc.data.setup matches 0 run gamerule minecraft:show_death_messages true

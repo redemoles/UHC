@@ -1,7 +1,7 @@
 
 #> uhc:in_game/inventory/equipment/diamond_protection
 #
-# @within			uhc:in_game/player/tick
+# @within			uhc:in_game/inventory/ban_item/root
 #
 #
 # @description		

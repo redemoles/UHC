@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_player_login_main
+#> uhc:translation/in_game/player_login_main
 #
 # @within			uhc:in_game/player/login/main
 #

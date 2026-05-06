@@ -29,6 +29,7 @@ scoreboard players set #version_pvp uhc.data.setup 0
 scoreboard players set #shield_percent uhc.data.setup 50
 scoreboard players set #shield uhc.data.setup 168
 scoreboard players set #horse_limit uhc.data.setup 1
+scoreboard players set #wolf_armor uhc.data.setup 1
 scoreboard players set #wolf_limit uhc.data.setup 1
 scoreboard players set #wolf_count uhc.data.setup 1
 scoreboard players set #reward_kill_health uhc.data.setup 0
@@ -66,6 +67,8 @@ scoreboard players set #depth_strider uhc.data.setup 3
 scoreboard players set #lunge uhc.data.setup 1
 
 scoreboard players set #cobweb uhc.data.setup 2
+scoreboard players set #diamond_armor uhc.data.setup 4
+scoreboard players set #netherite_armor uhc.data.setup 1
 scoreboard players set #milk_bucket uhc.data.setup 1
 scoreboard players set #effect_compatibility_speed_strength uhc.data.setup 0
 
@@ -91,6 +94,14 @@ execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 2, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
+
+## Death message / Message de mort
+# 0 : Default message / Message par défaut
+# 2 : Dead player only / Joueur mort seulement
+# 3 : Killer only / Tueur seulement
+# 4 : Killer and dead player not revealed / Tueur et joueur mort non révélés
+# 5 : No death announcement / Aucune annonce de mort
+scoreboard players set #death_message uhc.data.setup 0
 
 ## Scenario
 # Blood Diamond

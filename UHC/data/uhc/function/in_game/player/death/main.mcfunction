@@ -21,8 +21,11 @@ scoreboard players remove @s uhc.player.lives 1
 # Permakill
 execute if score #permakill uhc.scenario matches 1 run time add 600s
 
+## Message mort
+execute if score @s uhc.player.death.message matches 1 run function uhc:translation/in_game/player_death_reveal
+scoreboard players set @s uhc.player.death.message 0
+
 ## Récompenses au kill, changement paramètres du joueur mort
-function uhc:in_game/player/death/reveal
 function uhc:in_game/player/death/location/data
 execute if score @s uhc.player.lives matches ..0 in uhc:lobby run function uhc:in_game/player/death/definitive
 
@@ -47,4 +50,4 @@ data modify storage uhc:temp input.z set from entity @s LastDeathLocation.pos[2]
 function uhc:translation/in_game/player_death_main with storage uhc:temp input
 
 # Scoreboard Kills
-execute if score #vanilla uhc.gamemode matches 1 if score #message uhc.data.setup matches 0 run scoreboard objectives setdisplay sidebar uhc.player.kills
+execute if score #vanilla uhc.gamemode matches 1 if score #death_message uhc.data.setup matches 0 run scoreboard objectives setdisplay sidebar uhc.player.kills

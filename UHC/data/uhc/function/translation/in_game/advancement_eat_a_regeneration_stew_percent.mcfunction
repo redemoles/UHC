@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_advancement_eat_a_regeneration_stew_percent
+#> uhc:translation/in_game/advancement_eat_a_regeneration_stew_percent
 #
 # @within			uhc:in_game/advancement/eat_a_regeneration_stew/tellraw_percent
 #

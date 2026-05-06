@@ -40,7 +40,7 @@ gamemode survival @s
 effect clear @s
 function uhc:player_status/attributes_and_effects/uhc/playing
 execute if score #minutes uhc.data.temp matches -1 run gamemode adventure
-execute if score #minutes uhc.data.temp matches -1 run function uhc:player_status/attributes_and_effects/uhc/start
+execute if score #minutes uhc.data.temp matches -1 run function uhc:player_status/attributes_and_effects/respawning/start
 
 ## Basiques
 # Ajout Joueur

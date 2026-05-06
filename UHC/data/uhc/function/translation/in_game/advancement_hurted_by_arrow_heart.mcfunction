@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_advancement_hurted_by_arrow_heart
+#> uhc:translation/in_game/advancement_hurted_by_arrow_heart
 #
 # @within			uhc:in_game/advancement/hurted_by_arrow/tellraw_heart
 #

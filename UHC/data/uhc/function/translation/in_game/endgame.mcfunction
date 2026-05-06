@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_endgame
+#> uhc:translation/in_game/endgame
 #
 # @within			uhc:in_game/endgame
 #

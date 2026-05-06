@@ -1,14 +1,14 @@
 
 #> uhc:in_game/scenario/enchanting_setup/ban_items
 #
-# @within			uhc:in_game/inventory/ban_item/
+# @within			uhc:in_game/inventory/ban_item/root
 #
 #
 # @description		Suppression d'items interdits
 #
 
-clear @s enchanting_table 1
+clear @s minecraft:enchanting_table 1
 
-give @s obsidian 4
-give @s diamond 2
-give @s book 1
+give @s minecraft:obsidian 4
+give @s minecraft:diamond 2
+give @s minecraft:book 1

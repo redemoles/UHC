@@ -9,7 +9,7 @@
 
 ## Paramètres internes
 # -1 Joueur
-execute if score #message uhc.data.setup matches 0..4 run scoreboard players remove #player uhc.data.temp 1
+execute if score #death_message uhc.data.temp matches 0..4 run scoreboard players remove #player uhc.data.temp 1
 scoreboard players remove #player uhc.data.temp.inv 1
 # -1 Joueur dans l'équipe
 scoreboard players operation #team uhc.id.team = @s uhc.id.team

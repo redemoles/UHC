@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_player_lives_remove_drop_to_2
+#> uhc:translation/in_game/player_lives_remove_drop_to_2
 #
 # @within			uhc:in_game/player/lives_remove/drop_to_2
 #

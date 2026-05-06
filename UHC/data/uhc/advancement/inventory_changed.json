@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "uhc:in_game/inventory/ban_item/"
+		"function": "uhc:in_game/inventory/ban_item/root"
 	}
 }

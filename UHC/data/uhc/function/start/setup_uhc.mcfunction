@@ -23,6 +23,8 @@ execute if score #blood_diamond uhc.scenario matches 1.. in uhc:lobby run summon
 execute if score #go_to_hell uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.go_to_hell"],CustomName:[{"text":"Go To Hell"}]}
 execute if score #sky_high uhc.scenario matches 1.. in uhc:lobby run summon minecraft:marker 0 0 0 {Tags:["uhc.scenario.sky_high"],CustomName:[{"text":"Sky High"}]}
 
+scoreboard players operation #death_message uhc.data.temp = #death_message uhc.data.setup
+
 ## Copie de données dans des scoreboards temporaires
 # Minuteurs
 scoreboard players operation #pve uhc.data.temp = #pve uhc.data.setup

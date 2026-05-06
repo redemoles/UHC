@@ -1,7 +1,7 @@
 
 #> uhc:in_game/timer/second
 #
-# @within			uhc:tick
+# @within			uhc:in_game/timer/tick
 #
 #
 # @description		Fonction seconde de base en jeu
@@ -39,7 +39,7 @@ execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.da
 execute if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 run function uhc:in_game/team/collision/always
 
 ## Scénarios
-# Sound Paranoia
+execute if score #silent_night uhc.scenario matches 1 run function uhc:in_game/scenario/silent_night/tick
 execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] at @s run function uhc:in_game/scenario/sound_paranoia/cooldown
 
 ## Autres mode de jeu

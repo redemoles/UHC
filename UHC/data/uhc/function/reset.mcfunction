@@ -36,8 +36,6 @@ scoreboard objectives remove uhc.scenario.bookception
 scoreboard objectives remove uhc.scenario.cut_clean.random
 scoreboard objectives remove uhc.scenario.go_to_hell.damage
 scoreboard objectives remove uhc.scenario.go_to_hell.tick
-scoreboard objectives remove uhc.scenario.team_health.100
-scoreboard objectives remove uhc.scenario.team_health.team
 scoreboard objectives remove uhc.scenario.sky_high.damage
 scoreboard objectives remove uhc.scenario.sky_high.tick
 scoreboard objectives remove uhc.scenario.sound_paranoia.number
@@ -63,6 +61,8 @@ scoreboard objectives remove uhc.scenario.sound_paranoia.sb.warden
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.water_bucket
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.wither_skeleton
 scoreboard objectives remove uhc.scenario.sound_paranoia.sb.placed_blocks
+scoreboard objectives remove uhc.scenario.team_health.100
+scoreboard objectives remove uhc.scenario.team_health.team
 scoreboard objectives remove uhc.scenario.ironman
 scoreboard objectives remove uhc.player.ironman.list
 scoreboard objectives remove uhc.player.mined.coal
@@ -115,8 +115,6 @@ scoreboard objectives add uhc.scenario.enchanting_setup dummy
 scoreboard objectives add uhc.scenario.go_to_hell.damage dummy
 scoreboard objectives add uhc.scenario.go_to_hell.settings dummy
 scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
-scoreboard objectives add uhc.scenario.team_health.100 dummy "%"
-scoreboard objectives add uhc.scenario.team_health.team dummy [{"text":"❤","color":"#FF5F5F"}]
 scoreboard objectives add uhc.scenario.sky_high.damage dummy
 scoreboard objectives add uhc.scenario.sky_high.settings dummy
 scoreboard objectives add uhc.scenario.sky_high.tick dummy
@@ -143,6 +141,8 @@ scoreboard objectives add uhc.scenario.sound_paranoia.sb.warden dummy "Warden"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.water_bucket dummy "Water bucket"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.wither_skeleton dummy "Wither Skeleton"
 scoreboard objectives add uhc.scenario.sound_paranoia.sb.placed_blocks dummy "Blocks"
+scoreboard objectives add uhc.scenario.team_health.100 dummy "%"
+scoreboard objectives add uhc.scenario.team_health.team dummy [{"text":"❤","color":"#FF5F5F"}]
 scoreboard objectives add uhc.scenario.ironman dummy
 scoreboard objectives add uhc.player.ironman.list dummy
 scoreboard objectives add bhc.scenario dummy
@@ -306,6 +306,7 @@ scoreboard objectives add uhc.player.map_height.sound dummy
 scoreboard objectives add uhc.player.map_height.text dummy
 scoreboard objectives add uhc.player.death.armor_additional_item dummy
 scoreboard objectives add uhc.player.death.cancel_additional_item dummy
+scoreboard objectives add uhc.player.death.message deathCount
 scoreboard objectives add uhc.player.death.temp deathCount
 scoreboard objectives add uhc.player.death.summary dummy
 scoreboard objectives add uhc.player.data.check dummy
@@ -365,22 +366,8 @@ function mls:reset
 function nzl:reset/sb
 
 # Team Health
-execute if score #hp_name uhc.data.setup matches 0 run scoreboard objectives setdisplay below_name
-execute if score #team_health uhc.scenario matches 0 if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.player.health.auto
-execute if score #team_health uhc.scenario matches 1 if score #hp_name uhc.data.setup matches 1 run scoreboard objectives setdisplay below_name uhc.scenario.team_health.team
-execute if score #team_health uhc.scenario matches 0 if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.player.health.100
-execute if score #team_health uhc.scenario matches 1 if score #hp_name uhc.data.setup matches 2 run scoreboard objectives setdisplay below_name uhc.scenario.team_health.100
-
-execute if score #hp_tab uhc.data.setup matches 0 run scoreboard objectives setdisplay list
-execute if score #team_health uhc.scenario matches 0 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health.auto
-execute if score #team_health uhc.scenario matches 1 unless score #hp_tab uhc.data.setup matches 0 unless score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.team
-execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.player.health.100
-execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 2 run scoreboard objectives setdisplay list uhc.scenario.team_health.100
-
-execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.player.health.auto rendertype integer
-execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 0..2 run scoreboard objectives modify uhc.scenario.team_health.team rendertype integer
-execute if score #team_health uhc.scenario matches 0 if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.player.health.auto rendertype hearts
-execute if score #team_health uhc.scenario matches 1 if score #hp_tab uhc.data.setup matches 3 run scoreboard objectives modify uhc.scenario.team_health.team rendertype hearts
+function uhc:in_game/player/misc/score_display/below_name
+function uhc:in_game/player/misc/score_display/list
 
 ## Multiplicateurs
 scoreboard players set #-1m uhc.data.numbers -1000000
@@ -442,4 +429,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26050
+scoreboard players set #update uhc.data.update 26051

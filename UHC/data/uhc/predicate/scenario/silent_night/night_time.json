@@ -1,0 +1,26 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:time_check",
+      "clock": "minecraft:overworld",
+      "value": {
+        "min": 12000,
+        "max": 23999
+      },
+    "period": 24000
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#silent_night"
+        },
+        "score": "uhc.scenario"
+      },
+      "range": 1
+    }
+  ]
+}

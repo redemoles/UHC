@@ -1,5 +1,5 @@
 
-#> uhc:translation/in_game_player_map_height_below
+#> uhc:translation/in_game/player_map_height_below
 #
 # @within			uhc:in_game/player/map_height/below
 #

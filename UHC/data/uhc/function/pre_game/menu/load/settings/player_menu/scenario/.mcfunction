@@ -26,6 +26,7 @@ execute if score #perma_night uhc.scenario matches 1 run tellraw @s [{"text":"�
 execute if score #permakill uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Permakill","color":"#3FE7FF","bold":false}]
 execute if score #red_arrows uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Red Arrows","color":"#3FE7FF","bold":false}]
 execute if score #rewarding_longshots uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Rewarding Longshots","color":"#3FE7FF","bold":false}]
+execute if score #silent_night uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Silent Night","color":"#3FE7FF","bold":false}]
 execute if score #sky_high uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Sky High","color":"#3FE7FF","bold":false}]
 execute if score #sound_paranoia uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Sound Paranoia","color":"#3FE7FF","bold":false}]
 execute if score #team_health uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Team Health","color":"#3FE7FF","bold":false}]

@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/revive/new_player/tick
 #
-# @within			uhc:in_game/player/spec/revive/main
+# @within			uhc:in_game/player/tick
 #
 #
 # @description		Resurrection d'un spectateur
