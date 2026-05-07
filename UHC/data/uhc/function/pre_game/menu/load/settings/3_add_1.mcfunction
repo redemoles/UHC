@@ -7,25 +7,22 @@
 # @description		Menu
 #
 
+# Période de Résistance
+execute if score @s uhc.menu.settings.lives matches 1 unless score #pve uhc.data.setup matches 300.. run scoreboard players add #pve uhc.data.setup 1
+
+
 # Nbr de vie
-execute if score @s uhc.menu.settings.lives matches 1 unless score #lives uhc.data.setup matches 3 run scoreboard players add #lives uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 11 unless score #lives uhc.data.setup matches 3 run scoreboard players add #lives uhc.data.setup 1
 
 # Descente à 2 vies
 execute if score @s uhc.menu.settings.lives matches 3 unless score #2_lives_left uhc.data.setup matches 300.. run scoreboard players add #2_lives_left uhc.data.setup 1
-execute if score @s uhc.menu.settings.lives matches 3.. if score #2_lives_left uhc.data.setup < #3_lives_left uhc.data.setup run scoreboard players operation #2_lives_left uhc.data.setup = #3_lives_left uhc.data.setup
+
+execute if score @s uhc.menu.settings.lives matches 3..10 if score #2_lives_left uhc.data.setup < #3_lives_left uhc.data.setup run scoreboard players operation #2_lives_left uhc.data.setup = #3_lives_left uhc.data.setup
 
 # Descente à 1 vie
 execute if score @s uhc.menu.settings.lives matches 2 unless score #1_life_left uhc.data.setup matches 300.. run scoreboard players add #1_life_left uhc.data.setup 1
-execute if score @s uhc.menu.settings.lives matches 2.. if score #1_life_left uhc.data.setup < #2_lives_left uhc.data.setup run scoreboard players operation #1_life_left uhc.data.setup = #2_lives_left uhc.data.setup
 
-
-
-# Période de Résistance
-execute if score @s uhc.menu.settings.pve matches 1 unless score #pve uhc.data.setup matches 300.. run scoreboard players add #pve uhc.data.setup 1
-
-
-# Absorption
-execute if score @s uhc.menu.settings.pve matches 2 unless score #absorption uhc.data.setup matches 2.. run scoreboard players add #absorption uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 2..10 if score #1_life_left uhc.data.setup < #2_lives_left uhc.data.setup run scoreboard players operation #1_life_left uhc.data.setup = #2_lives_left uhc.data.setup
 
 # Période sans PvP
 execute if score @s uhc.menu.settings.pvp matches 1 unless score #pvp uhc.data.setup matches 300.. run scoreboard players add #pvp uhc.data.setup 1
@@ -34,6 +31,10 @@ execute if score @s uhc.menu.settings.pvp matches 1 unless score #pvp uhc.data.s
 # Régénération après kill
 execute if score @s uhc.menu.settings.pvp matches 2 unless score #reward_kill_health uhc.data.setup matches 4.. run scoreboard players add #reward_kill_health uhc.data.setup 1
 execute if score @s uhc.menu.settings.pvp matches 41 unless score #reward_kill_health uhc.data.setup matches 4.. run scoreboard players add #reward_kill_health uhc.data.setup 1
+
+# Absorption
+execute if score @s uhc.menu.settings.pvp matches 3 unless score #absorption uhc.data.setup matches 2.. run scoreboard players add #absorption uhc.data.setup 1
+execute if score @s uhc.menu.settings.pvp matches 51 unless score #absorption uhc.data.setup matches 2.. run scoreboard players add #absorption uhc.data.setup 1
 
 # Durabilité des boucliers
 execute if score @s uhc.menu.settings.pvp matches 12 unless score #shield_percent uhc.data.setup matches 100.. run scoreboard players add #shield_percent uhc.data.setup 1

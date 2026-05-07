@@ -1,11 +1,13 @@
 
 #> uhc:in_game/timer/hotbar/cooldown/event_list/main
 #
-# @within			uhc:in_game/timer/hotbar/cooldown/
+# @within			uhc:in_game/timer/hotbar/cooldown/main
 #
 #
 # @description		Alerte décompte 
 #
+
+scoreboard players operation #min_cooldown_text_uppercase uhc.data.temp = #min_cooldown_alert uhc.data.temp
 
 ## Réinitialisation
 data modify storage uhc:temp hotbar.alert_fra set value []
@@ -28,12 +30,14 @@ execute if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_co
 execute if score #go_to_hell uhc.scenario matches 1 unless score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #go_to_hell uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 0.5 1 0.5
 execute if score #sky_high uhc.scenario matches 1 unless score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #sky_high uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 0.5 1 0.5
 
+execute if score #lives_after_alert uhc.data.temp matches 1.. run function uhc:in_game/timer/hotbar/cooldown/event_list/lives
+
 ## Texte général
 # Si activation d'événement
-execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 unless score #min_cooldown_temp_bhc uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"Activation ","color":"#FFFFFF"}]
-execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 unless score #min_cooldown_temp_bhc uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"Activation ","color":"#FFFFFF"}]
-execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 if score #min_cooldown_temp_bhc uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"activation ","color":"#FFFFFF"}]
-execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 if score #min_cooldown_temp_bhc uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"activation ","color":"#FFFFFF"}]
+execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 if score #min_cooldown_text_uppercase uhc.data.temp = #min_cooldown_alert uhc.data.temp run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"Activation ","color":"#FFFFFF"}]
+execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 if score #min_cooldown_text_uppercase uhc.data.temp = #min_cooldown_alert uhc.data.temp run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"Activation ","color":"#FFFFFF"}]
+execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 unless score #min_cooldown_text_uppercase uhc.data.temp = #min_cooldown_alert uhc.data.temp run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"activation ","color":"#FFFFFF"}]
+execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches ..0 unless score #min_cooldown_text_uppercase uhc.data.temp = #min_cooldown_alert uhc.data.temp run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"activation ","color":"#FFFFFF"}]
 # Sinon
 execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches 1.. run data modify storage uhc:temp hotbar.alert_fra append value [{"text":"activation ","color":"#FFFFFF"}]
 execute if score #min_cooldown_alert uhc.data.temp matches 1.. if score #min_cooldown_temp uhc.data.temp matches 1.. run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"activation ","color":"#FFFFFF"}]
@@ -59,4 +63,6 @@ execute if score #shrink_3_time_left uhc.data.temp = #min_cooldown_temp uhc.data
 # Title
 execute if score #min_cooldown_temp uhc.data.temp matches 0 run scoreboard players set #min_cooldown_temp uhc.data.temp -1
 execute if score #min_cooldown_temp uhc.data.temp matches 1.. unless score #sec_cooldown uhc.data.temp matches 0 run scoreboard players remove #min_cooldown_temp uhc.data.temp 1
+execute if score #min_cooldown_text_exclamation uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_fra append value [{"text":" !","color":"#FFFFFF"}]
+execute if score #min_cooldown_text_exclamation uhc.data.temp matches 1 run data modify storage uhc:temp hotbar.alert_eng append value [{"text":"!","color":"#FFFFFF"}]
 function uhc:translation/hotbar/uhc_countdown_actionbar with storage uhc:temp hotbar

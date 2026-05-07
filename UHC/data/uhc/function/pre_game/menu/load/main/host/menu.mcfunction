@@ -27,7 +27,6 @@ scoreboard players set @s uhc.menu.scenario.restricted_area 0
 tag @s remove uhc.menu.scenario.enchanting_setup
 scoreboard players set @s uhc.menu.settings 0
 scoreboard players set @s uhc.menu.settings.lives 0
-scoreboard players set @s uhc.menu.settings.pve 0
 scoreboard players set @s uhc.menu.settings.pvp 0
 scoreboard players set @s uhc.menu.settings.border 0
 scoreboard players set @s uhc.menu.settings.inventory 0

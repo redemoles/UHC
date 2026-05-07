@@ -1,5 +1,5 @@
 
-#> uhc:in_game/timer/hotbar/cooldown/
+#> uhc:in_game/timer/hotbar/cooldown/main
 #
 # @within			uhc:in_game/timer/tick
 #
@@ -17,4 +17,6 @@ execute if score #minutes uhc.data.temp matches ..-1 run return fail
 scoreboard players set #min_cooldown_alert uhc.data.temp 0
 scoreboard players set #min_cooldown_temp uhc.data.temp 0
 scoreboard players set #min_cooldown_temp_bhc uhc.data.temp 0
-function uhc:in_game/timer/hotbar/cooldown/priority_check/
+scoreboard players set #min_cooldown_text_uppercase uhc.data.temp 0
+scoreboard players set #min_cooldown_text_exclamation uhc.data.temp 1
+function uhc:in_game/timer/hotbar/cooldown/priority_check/main

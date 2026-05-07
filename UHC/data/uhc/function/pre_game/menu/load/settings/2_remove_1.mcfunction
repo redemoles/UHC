@@ -7,25 +7,22 @@
 # @description		Menu
 #
 
+# Période de Résistance
+execute if score @s uhc.menu.settings.lives matches 1 unless score #pve uhc.data.setup matches ..0 run scoreboard players remove #pve uhc.data.setup 1
+
+
 # Nbr de vie
-execute if score @s uhc.menu.settings.lives matches 1 unless score #lives uhc.data.setup matches 1 run scoreboard players remove #lives uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 11 unless score #lives uhc.data.setup matches 1 run scoreboard players remove #lives uhc.data.setup 1
 
 # Descente à 2 vies
-execute if score @s uhc.menu.settings.lives matches 3 unless score #2_lives_left uhc.data.setup matches 0 unless score #2_lives_left uhc.data.setup <= #3_lives_left uhc.data.setup run scoreboard players remove #2_lives_left uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 3 unless score #2_lives_left uhc.data.setup matches 0 run scoreboard players remove #2_lives_left uhc.data.setup 1
 
+execute if score @s uhc.menu.settings.lives matches 3..10 if score #2_lives_left uhc.data.setup < #3_lives_left uhc.data.setup run scoreboard players operation #3_lives_left uhc.data.setup = #2_lives_left uhc.data.setup
 
 # Descente à 1 vie
-execute if score @s uhc.menu.settings.lives matches 2 unless score #1_life_left uhc.data.setup matches 0 unless score #1_life_left uhc.data.setup <= #2_lives_left uhc.data.setup run scoreboard players remove #1_life_left uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 2 unless score #1_life_left uhc.data.setup matches 0 run scoreboard players remove #1_life_left uhc.data.setup 1
 
-
-
-
-# Période de Résistance
-execute if score @s uhc.menu.settings.pve matches 1 unless score #pve uhc.data.setup matches ..0 run scoreboard players remove #pve uhc.data.setup 1
-
-
-# Absorption
-execute if score @s uhc.menu.settings.pve matches 2 unless score #absorption uhc.data.setup matches ..0 run scoreboard players remove #absorption uhc.data.setup 1
+execute if score @s uhc.menu.settings.lives matches 2..10 if score #1_life_left uhc.data.setup < #2_lives_left uhc.data.setup run scoreboard players operation #2_lives_left uhc.data.setup = #1_life_left uhc.data.setup
 
 # Période sans PvP
 execute if score @s uhc.menu.settings.pvp matches 1 unless score #pvp uhc.data.setup matches ..0 run scoreboard players remove #pvp uhc.data.setup 1
@@ -34,6 +31,10 @@ execute if score @s uhc.menu.settings.pvp matches 1 unless score #pvp uhc.data.s
 # Régénération après kill
 execute if score @s uhc.menu.settings.pvp matches 2 unless score #reward_kill_health uhc.data.setup matches ..0 run scoreboard players remove #reward_kill_health uhc.data.setup 1
 execute if score @s uhc.menu.settings.pvp matches 41 unless score #reward_kill_health uhc.data.setup matches ..0 run scoreboard players remove #reward_kill_health uhc.data.setup 1
+
+# Absorption
+execute if score @s uhc.menu.settings.pvp matches 3 unless score #absorption uhc.data.setup matches ..0 run scoreboard players remove #absorption uhc.data.setup 1
+execute if score @s uhc.menu.settings.pvp matches 51 unless score #absorption uhc.data.setup matches ..0 run scoreboard players remove #absorption uhc.data.setup 1
 
 # Durabilité des boucliers
 execute if score @s uhc.menu.settings.pvp matches 12 unless score #shield_percent uhc.data.setup matches ..0 run scoreboard players remove #shield_percent uhc.data.setup 1
@@ -62,12 +63,12 @@ execute if score @s uhc.menu.settings.border matches 32 run scoreboard players r
 execute if score @s uhc.menu.settings.border matches 33 run scoreboard players remove #shrink_3_time_left uhc.data.setup 1
 
 # Meet-up, Shrink 1, Shrink 2
-execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_1_size_start uhc.data.setup matches ..150 run scoreboard players set #shrink_1_size_start uhc.data.setup 150
-execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_1_size_end uhc.data.setup matches ..1 run scoreboard players set #shrink_1_size_end uhc.data.setup 1
-execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_2_size_end uhc.data.setup matches ..1 run scoreboard players set #shrink_2_size_end uhc.data.setup 1
-execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_3_size_end uhc.data.setup matches ..1 run scoreboard players set #shrink_3_size_end uhc.data.setup 1
+execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_1_size_start uhc.data.setup matches ..100 run scoreboard players set #shrink_1_size_start uhc.data.setup 100
+execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_1_size_end uhc.data.setup matches ..1 run scoreboard players set #shrink_1_size_end uhc.data.setup 2
+execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_2_size_end uhc.data.setup matches ..1 run scoreboard players set #shrink_2_size_end uhc.data.setup 2
+execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_3_size_end uhc.data.setup matches ..1 run scoreboard players set #shrink_3_size_end uhc.data.setup 2
 
-execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_1_size_end uhc.data.setup > #start_size_end uhc.data.setup run scoreboard players operation #shrink_1_size_end uhc.data.setup = #start_size_end uhc.data.setup
+execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_1_size_end uhc.data.setup > #shrink_1_size_start uhc.data.setup run scoreboard players operation #shrink_1_size_end uhc.data.setup = #shrink_1_size_start uhc.data.setup
 execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_2_size_end uhc.data.setup > #shrink_1_size_end uhc.data.setup run scoreboard players operation #shrink_2_size_end uhc.data.setup = #shrink_1_size_end uhc.data.setup
 execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_3_size_end uhc.data.setup > #shrink_2_size_end uhc.data.setup run scoreboard players operation #shrink_3_size_end uhc.data.setup = #shrink_2_size_end uhc.data.setup
 

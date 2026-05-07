@@ -25,3 +25,6 @@ execute if score @s uhc.menu.settings.pvp matches 31..40 run function uhc:pre_ga
 # No Clean Up
 execute if score @s uhc.menu.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
 execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings menu
+
+# Absorption
+execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/absorption/macro_text

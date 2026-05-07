@@ -1,7 +1,7 @@
 
 #> uhc:in_game/timer/hotbar/cooldown/priority_check/bhc
 #
-# @within			uhc:in_game/timer/hotbar/cooldown/
+# @within			uhc:in_game/timer/hotbar/cooldown/main
 #
 #
 # @description		Test de priorité 

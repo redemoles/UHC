@@ -39,6 +39,10 @@ scoreboard players operation #map_height_timer uhc.data.temp = #map_height_timer
 scoreboard players operation #go_to_hell uhc.data.temp = #go_to_hell uhc.data.setup
 scoreboard players operation #sky_high uhc.data.temp = #sky_high uhc.data.setup
 
+execute if score #3_lives_left uhc.data.temp matches 0 run scoreboard players set #3_lives_left uhc.data.temp -1
+execute if score #2_lives_left uhc.data.temp matches 0 run scoreboard players set #2_lives_left uhc.data.temp -1
+execute if score #1_life_left uhc.data.temp matches 0 run scoreboard players set #1_life_left uhc.data.temp -1
+
 # Divers paramètres
 scoreboard players operation #lives uhc.data.temp = #lives uhc.data.setup
 scoreboard players operation #diamond_protection uhc.data.temp = #diamond_protection uhc.data.setup

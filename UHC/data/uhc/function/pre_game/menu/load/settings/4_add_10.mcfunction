@@ -7,29 +7,30 @@
 # @description		Menu
 #
 
+# Période de Résistance
+execute if score @s uhc.menu.settings.lives matches 1 run scoreboard players add #pve uhc.data.setup 10
+execute if score @s uhc.menu.settings.lives matches 1 if score #pve uhc.data.setup matches 300.. run scoreboard players set #pve uhc.data.setup 300
+
 # Nbr de vie
-execute if score @s uhc.menu.settings.lives matches 1 unless score #lives uhc.data.setup matches 3 run scoreboard players set #lives uhc.data.setup 3
+execute if score @s uhc.menu.settings.lives matches 11 unless score #lives uhc.data.setup matches 3 run scoreboard players set #lives uhc.data.setup 3
 
 # Descente à 2 vies
 execute if score @s uhc.menu.settings.lives matches 3 unless score #2_lives_left uhc.data.setup matches 300.. run scoreboard players add #2_lives_left uhc.data.setup 10
-execute if score @s uhc.menu.settings.lives matches 3.. if score #2_lives_left uhc.data.setup < #3_lives_left uhc.data.setup run scoreboard players operation #2_lives_left uhc.data.setup = #3_lives_left uhc.data.setup
 execute if score @s uhc.menu.settings.lives matches 3 if score #2_lives_left uhc.data.setup matches 300.. run scoreboard players set #2_lives_left uhc.data.setup 300
+execute if score @s uhc.menu.settings.lives matches 3..10 if score #2_lives_left uhc.data.setup < #3_lives_left uhc.data.setup run scoreboard players operation #2_lives_left uhc.data.setup = #3_lives_left uhc.data.setup
+
 # Descente à 1 vie
 execute if score @s uhc.menu.settings.lives matches 2 unless score #1_life_left uhc.data.setup matches 300.. run scoreboard players add #1_life_left uhc.data.setup 10
-execute if score @s uhc.menu.settings.lives matches 2.. if score #1_life_left uhc.data.setup < #2_lives_left uhc.data.setup run scoreboard players operation #1_life_left uhc.data.setup = #2_lives_left uhc.data.setup
 execute if score @s uhc.menu.settings.lives matches 2 if score #1_life_left uhc.data.setup matches 300.. run scoreboard players set #1_life_left uhc.data.setup 300
-
-
-# Période de Résistance
-execute if score @s uhc.menu.settings.pve matches 1 run scoreboard players add #pve uhc.data.setup 10
-execute if score @s uhc.menu.settings.pve matches 1 if score #pve uhc.data.setup matches 300.. run scoreboard players set #pve uhc.data.setup 300
-
-
-
+execute if score @s uhc.menu.settings.lives matches 2..10 if score #1_life_left uhc.data.setup < #2_lives_left uhc.data.setup run scoreboard players operation #1_life_left uhc.data.setup = #2_lives_left uhc.data.setup
 
 # Période sans PvP
 execute if score @s uhc.menu.settings.pvp matches 1 run scoreboard players add #pvp uhc.data.setup 10
 execute if score @s uhc.menu.settings.pvp matches 1 if score #pvp uhc.data.setup matches 300.. run scoreboard players set #pvp uhc.data.setup 300
+
+
+
+
 
 
 

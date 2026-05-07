@@ -13,6 +13,7 @@ execute if score @s uhc.menu.settings.misc matches 21..30 run return run functio
 execute if score @s uhc.menu.settings.pvp matches 11..20 run return run function uhc:pre_game/menu/selection/settings/pvp/fight_stuff
 execute if score @s uhc.menu.settings.pvp matches 31..40 run return run function uhc:pre_game/menu/selection/settings/pvp/potion
 execute if score @s uhc.menu.settings.pvp matches 41..50 run return run function uhc:pre_game/menu/selection/settings/pvp/no_clean
+execute if score @s uhc.menu.settings.pvp matches 51..60 run return run function uhc:pre_game/menu/selection/settings/pvp/absorption
 execute if score @s uhc.menu.settings.border matches 11.. run return run function uhc:pre_game/menu/selection/settings/border/shrink/main
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_team"}] run return run function uhc:pre_game/menu/selection/settings/team/preset_menu
@@ -34,9 +35,6 @@ execute if score @s uhc.menu.settings.inventory matches 2..5 run return fail
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.6 *[minecraft:custom_data={Tags:"settings_misc"}] run return run function uhc:pre_game/menu/selection/settings/misc/preset_menu
 execute if score @s uhc.menu.settings.misc matches 1.. run function uhc:pre_game/menu/selection/settings/misc/host
-
-execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"settings_pve"}] run return run function uhc:pre_game/menu/selection/settings/pve/preset_menu
-execute if score @s uhc.menu.settings.pve matches 1.. run function uhc:pre_game/menu/selection/settings/pve/host
 
 execute if score @s uhc.menu.settings matches 3..9 unless items entity @s inventory.20 *[minecraft:custom_data={Tags:"-10"}] run function uhc:pre_game/menu/load/settings/1_remove_10
 execute if score @s uhc.menu.settings matches 2..9 unless items entity @s inventory.21 *[minecraft:custom_data={Tags:"-1"}] run function uhc:pre_game/menu/load/settings/2_remove_1

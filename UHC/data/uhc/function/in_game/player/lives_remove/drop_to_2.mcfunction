@@ -21,6 +21,7 @@ scoreboard players operation #temp uhc.data.temp /= @s uhc.team.size
 scoreboard players operation #temp uhc.data.temp /= #10 uhc.data.numbers
 
 execute as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:translation/in_game/player_lives_remove_drop_to_2
+execute if score #bhc uhc.gamemode matches 1 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:translation/bhc/player_lives_remove_drop_to_2
 
 # Title
 execute as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run title @s times 0s 1.5s 0.5s

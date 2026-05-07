@@ -11,6 +11,7 @@ execute unless items entity @s[tag=uhc.host] inventory.1 *[minecraft:custom_data
 execute unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"settings_pvp_fight_stuff"}] run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/preset_menu
 execute unless items entity @s inventory.3 *[minecraft:custom_data={Tags:"settings_pvp_potion"}] run return run function uhc:pre_game/menu/selection/settings/pvp/preset_menu
 execute unless items entity @s[tag=uhc.host] inventory.4 *[minecraft:custom_data={Tags:"settings_pvp_no_clean"}] run return run return run function uhc:pre_game/menu/load/settings/pvp/no_clean/preset_menu
+execute unless items entity @s[tag=uhc.host] inventory.5 *[minecraft:custom_data={Tags:"settings_absorption"}] run function uhc:pre_game/menu/load/settings/pvp/absorption/preset_menu
 
 execute unless items entity @s[tag=uhc.host] inventory.10 *[minecraft:custom_data={Tags:"settings_pvp_milk_bucket"}] run function uhc:pre_game/menu/load/settings/pvp/potion/milk_bucket/apply_change
 execute unless items entity @s[tag=uhc.host] inventory.11 *[minecraft:custom_data={Tags:"settings_pvp_compatibility"}] run function uhc:pre_game/menu/load/settings/pvp/potion/compatibility/apply_change

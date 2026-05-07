@@ -43,15 +43,15 @@ execute if score @s uhc.menu.settings.border matches 11.. run return run functio
 execute if score @s uhc.menu.settings.misc matches 11.. run return run function uhc:pre_game/menu/load/settings/misc/menu
 execute if score @s uhc.menu.settings.pvp matches 11.. run return run function uhc:pre_game/menu/load/settings/pvp/menu
 
+# Équipe
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:white_banner[minecraft:item_name=[{"text":"Paramètres d'équipe","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Réglage d'avant partie uniquement.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"settings_team"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:white_banner[minecraft:item_name=[{"text":"Team settings","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Pre-game settings only.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"settings_team"}]
+execute if score @s uhc.menu.settings.team matches 01.. run function uhc:pre_game/menu/load/settings/team/menu
+
 # Vies
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/macro_set
 function uhc:pre_game/menu/load/settings/lives/macro_text with storage uhc:settings menu
 execute if score @s uhc.menu.settings.lives matches 01.. run function uhc:pre_game/menu/load/settings/lives/menu
-
-# PvE
-execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/macro_set
-function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings menu
-execute if score @s uhc.menu.settings.pve matches 01.. run function uhc:pre_game/menu/load/settings/pve/menu
 
 # PvP
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/macro_set
@@ -59,14 +59,9 @@ function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:setting
 execute if score @s uhc.menu.settings.pvp matches 01.. run function uhc:pre_game/menu/load/settings/pvp/menu
 
 # Bordure
-execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
-function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings menu.shrink
+execute unless score @s uhc.menu.settings.border matches 01.. run execute in uhc:lobby run function uhc:pre_game/menu/load/settings/border/macro_set
+execute unless score @s uhc.menu.settings.border matches 01.. run function uhc:pre_game/menu/load/settings/border/macro_text with storage uhc:settings menu.shrink
 execute if score @s uhc.menu.settings.border matches 01.. run function uhc:pre_game/menu/load/settings/border/menu
-
-# Équipe
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:white_banner[minecraft:item_name=[{"text":"Paramètres d'équipe","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Réglage d'avant partie uniquement.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"settings_team"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:white_banner[minecraft:item_name=[{"text":"Team settings","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Pre-game settings only.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"settings_team"}]
-execute if score @s uhc.menu.settings.team matches 01.. run function uhc:pre_game/menu/load/settings/team/menu
 
 # Règles d'inventaire
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.5 with minecraft:chest[minecraft:item_name=[{"text":"Inventaire","color":"#FFE73F","italic":false}],minecraft:lore=[{"text":"Règles de stuff, items au démarrage et récompenses","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_inventory"}]
