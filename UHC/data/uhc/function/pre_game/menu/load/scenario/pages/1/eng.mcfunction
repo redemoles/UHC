@@ -10,10 +10,10 @@
 clear @s
 tag @s remove uhc.menu.main.host
 scoreboard players set @s uhc.menu.scenario.main 1
+scoreboard players set @s uhc.menu.main.player 0
 scoreboard players set @s uhc.menu.scenario.blood_diamond 0
 tag @s remove uhc.menu.scenario.enchanting_setup
 scoreboard players set @s uhc.menu.scenario.restricted_area 0
-
 
 
 
@@ -53,9 +53,8 @@ execute if score #hastey_boys uhc.scenario matches 1 run item replace entity @s 
 execute if score #no_fall uhc.scenario matches 0 run item replace entity @s inventory.16 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"No Fall","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Fall damage disabled.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"},minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]}]
 execute if score #no_fall uhc.scenario matches 1 run item replace entity @s inventory.16 with minecraft:diamond_boots[minecraft:item_name=[{"text":"No Fall","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Fall damage disabled.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"},minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]}]
 
-execute if score #mystery_scenarios uhc.data.setup matches 0 run item replace entity @s inventory.19 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"Mystery Scenarios","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Scenarios hidden to players.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
-execute if score #mystery_scenarios uhc.data.setup matches 1 run item replace entity @s inventory.19 with minecraft:written_book[minecraft:item_name=[{"text":"Mystery Scenarios","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Scenarios hidden to players.","color":"#FFFFFF","italic":false}]],minecraft:tooltip_display={"hidden_components":["written_book_content"]},minecraft:custom_data={Tags:"scenario"}]
+execute if score #mystery_scenarios uhc.data.setup matches 0 run item replace entity @s[tag=uhc.host] inventory.19 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"Mystery Scenarios","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Scenarios hidden to players.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
+execute if score #mystery_scenarios uhc.data.setup matches 1 run item replace entity @s[tag=uhc.host] inventory.19 with minecraft:written_book[minecraft:item_name=[{"text":"Mystery Scenarios","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Scenarios hidden to players.","color":"#FFFFFF","italic":false}]],minecraft:tooltip_display={"hidden_components":["written_book_content"]},minecraft:custom_data={Tags:"scenario"}]
 
-item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 2","color":"#3FE7FF","italic":false}]]
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+item replace entity @s inventory.24 with minecraft:arrow[minecraft:item_name=[{"text":"Page 2","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"page"}]
+item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]

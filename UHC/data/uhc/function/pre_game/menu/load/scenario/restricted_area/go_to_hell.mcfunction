@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/scenario/restricted_area/go_to_hell
 #
-# @within			uhc:pre_game/menu/selection/scenario/
+# @within			uhc:pre_game/menu/selection/scenario/list/
 #
 #
 # @description		Menu Go To Hell

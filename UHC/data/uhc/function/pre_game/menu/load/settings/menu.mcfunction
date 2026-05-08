@@ -19,9 +19,6 @@ scoreboard players set @s[tag=!uhc.host] uhc.menu.main.player 0
 
 function uhc:pre_game/menu/load/background/
 
-execute if entity @s[tag=!uhc.host] run function uhc:pre_game/menu/load/settings/player_menu/gamemode/macro_text with storage uhc:settings
-execute if entity @s[tag=!uhc.host] unless score #mystery_scenarios uhc.data.setup matches 1 run function uhc:pre_game/menu/load/settings/player_menu/scenario/macro_text
-
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 3..4 run item replace entity @s inventory.20 with minecraft:purple_concrete[minecraft:item_name=[{"text":"-10","color":"#CF3F3F","italic":false}],minecraft:custom_data={Tags:"-10"}]
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 2..4 run item replace entity @s inventory.21 with minecraft:magenta_concrete[minecraft:item_name=[{"text":"-1","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"-1"}]
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 2..4 run item replace entity @s inventory.23 with minecraft:light_blue_concrete[minecraft:item_name=[{"text":"+1","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"+1"}]
@@ -49,9 +46,9 @@ execute if score @s uhc.player.lang matches 051407 run item replace entity @s in
 execute if score @s uhc.menu.settings.team matches 01.. run function uhc:pre_game/menu/load/settings/team/menu
 
 # Vies
-execute in uhc:lobby run function uhc:pre_game/menu/load/settings/lives/macro_set
-function uhc:pre_game/menu/load/settings/lives/macro_text with storage uhc:settings menu
-execute if score @s uhc.menu.settings.lives matches 01.. run function uhc:pre_game/menu/load/settings/lives/menu
+execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/macro_set
+function uhc:pre_game/menu/load/settings/pve/macro_text with storage uhc:settings menu
+execute if score @s uhc.menu.settings.pve matches 01.. run function uhc:pre_game/menu/load/settings/pve/menu
 
 # PvP
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/macro_set
@@ -68,7 +65,12 @@ execute if score @s uhc.player.lang matches 061801 run item replace entity @s in
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.5 with minecraft:chest[minecraft:item_name=[{"text":"Inventory","color":"#FFE73F","italic":false}],minecraft:lore=[{"text":"Items rules, starter and rewards items","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_inventory"}]
 execute if score @s uhc.menu.settings.inventory matches 01.. run function uhc:pre_game/menu/load/settings/inventory/menu
 
+# Potion
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.6 with minecraft:potion[minecraft:custom_name=[{"text":"Effets et potions","color":"#3F6FFF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:potion_contents"]},minecraft:custom_data={Tags:"settings_potion"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.6 with minecraft:potion[minecraft:custom_name=[{"text":"Effects and potions","color":"#3F6FFF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:potion_contents"]},minecraft:custom_data={Tags:"settings_potion"}]
+execute if score @s uhc.menu.settings.potion matches 01.. run function uhc:pre_game/menu/load/settings/potion/menu
+
 # Divers
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.6 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Divers","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.6 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Miscellaneous","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.7 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Divers","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.7 with minecraft:music_disc_lava_chicken[minecraft:item_name=[{"text":"Miscellaneous","color":"#3FE7FF","italic":false}],minecraft:tooltip_display={"hidden_components":["minecraft:jukebox_playable"]},minecraft:custom_data={Tags:"settings_misc"}]
 execute if score @s uhc.menu.settings.misc matches 01.. run function uhc:pre_game/menu/load/settings/misc/menu

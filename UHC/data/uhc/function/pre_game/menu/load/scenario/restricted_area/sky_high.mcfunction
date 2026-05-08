@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/scenario/restricted_area/sky_high
 #
-# @within			uhc:pre_game/menu/selection/scenario/
+# @within			uhc:pre_game/menu/selection/scenario/list/
 #
 #
 # @description		Menu Sky High

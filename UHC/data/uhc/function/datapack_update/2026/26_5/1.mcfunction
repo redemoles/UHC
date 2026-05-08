@@ -19,5 +19,3 @@ scoreboard players set #perma_night uhc.scenario 0
 scoreboard players set #silent_night uhc.scenario 0
 
 scoreboard players set #update uhc.data.update 26051
-
-execute as @a[tag=uhc.host] run function uhc:translation/datapack_update_version

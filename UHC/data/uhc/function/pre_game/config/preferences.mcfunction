@@ -38,9 +38,20 @@ execute store result storage uhc:settings reward_kill.health int 1 run scoreboar
 scoreboard players set #friendly_fire uhc.data.setup 1
 scoreboard players set #tracker_allies uhc.data.setup 0
 
+scoreboard players set #effect_fire_resistance uhc.data.setup 1
+scoreboard players set #effect_harming uhc.data.setup 1
+scoreboard players set #effect_healing uhc.data.setup 1
+scoreboard players set #effect_poison uhc.data.setup 1
+scoreboard players set #effect_regeneration uhc.data.setup 1
+scoreboard players set #effect_slowness uhc.data.setup 1
 scoreboard players set #effect_speed uhc.data.setup 1
 scoreboard players set #effect_strength uhc.data.setup 0
-scoreboard players set #custom_arrow uhc.data.setup 0
+scoreboard players set #effect_weakness uhc.data.setup 1
+
+scoreboard players set #milk_bucket uhc.data.setup 1
+scoreboard players set #effect_compatibility_speed_strength uhc.data.setup 0
+scoreboard players set #effect_level_2 uhc.data.setup 0
+scoreboard players set #effect_extended uhc.data.setup 1
 
 ## Border / Bordure
 scoreboard players set #shrink_1_size_start uhc.data.setup 1000
@@ -69,8 +80,6 @@ scoreboard players set #lunge uhc.data.setup 1
 scoreboard players set #cobweb uhc.data.setup 2
 scoreboard players set #diamond_armor uhc.data.setup 4
 scoreboard players set #netherite_armor uhc.data.setup 1
-scoreboard players set #milk_bucket uhc.data.setup 1
-scoreboard players set #effect_compatibility_speed_strength uhc.data.setup 0
 
 scoreboard players set #item_additional_armor uhc.data.setup 2
 

@@ -1,0 +1,16 @@
+
+#> uhc:pre_game/menu/load/settings/pve/1_life_left/macro_text
+#
+# @within			uhc:pre_game/menu/selection/
+#
+#
+# @description		Menu
+#
+
+$execute if score #lives uhc.data.setup matches 2.. if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.15 with minecraft:red_candle[minecraft:item_name=[{"text":"Descente à 1 vie > ","color":"#FFFFFF","italic":false},$(1_life_left),{"text":" minutes","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_live_1"}]
+execute unless score #lives uhc.data.setup matches 2.. if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.15 with minecraft:black_candle[minecraft:tooltip_display={"hide_tooltip":true},minecraft:custom_data={Tags:"settings_live_1"}]
+$item replace entity @s[scores={uhc.player.lang=061801,uhc.menu.settings.pve=2},tag=uhc.host] inventory.22 with minecraft:red_candle[minecraft:item_name=[{"text":"Descente à 1 vie > ","color":"#FFFFFF","italic":false},$(1_life_left),{"text":" minutes","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_live_1"}]
+
+$execute if score #lives uhc.data.setup matches 2.. if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.15 with minecraft:red_candle[minecraft:item_name=[{"text":"Drop to 1 life > ","color":"#FFFFFF","italic":false},$(1_life_left),{"text":" minutes","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_live_1"}]
+execute unless score #lives uhc.data.setup matches 2.. if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.15 with minecraft:black_candle[minecraft:tooltip_display={"hide_tooltip":true},minecraft:custom_data={Tags:"settings_live_1"}]
+$item replace entity @s[scores={uhc.player.lang=051407,uhc.menu.settings.pve=2},tag=uhc.host] inventory.22 with minecraft:red_candle[minecraft:item_name=[{"text":"Drop to 1 life > ","color":"#FFFFFF","italic":false},$(1_life_left),{"text":" minutes","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"settings_live_1"}]

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/scenario/enchanting_setup/main
 #
-# @within			uhc:pre_game/menu/selection/scenario/
+# @within			uhc:pre_game/menu/selection/scenario/list/
 #
 #
 # @description		Menu Enchanting Setup

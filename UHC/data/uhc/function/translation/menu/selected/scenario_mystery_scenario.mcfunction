@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/scenario_mystery_scenarios
 #
-# @within			uhc:pre_game/menu/selection/scenario/mystery_scenarios
+# @within			uhc:pre_game/menu/selection/scenario/list/mystery_scenarios
 #
 #
 # @description		Redirection

@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/scenario_blood_diamond
 #
-# @within			uhc:pre_game/menu/selection/scenario/blood_diamond
+# @within			uhc:pre_game/menu/selection/scenario/list/blood_diamond
 #
 #
 # @description		Redirection

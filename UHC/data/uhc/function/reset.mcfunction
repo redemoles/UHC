@@ -179,11 +179,12 @@ scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.scenario.blood_diamond
 scoreboard objectives remove uhc.menu.scenario.restricted_area
 scoreboard objectives remove uhc.menu.scenario.main
-scoreboard objectives remove uhc.menu.settings.lives
+scoreboard objectives remove uhc.menu.settings.pve
 scoreboard objectives remove uhc.menu.settings.pvp
 scoreboard objectives remove uhc.menu.settings.border
 scoreboard objectives remove uhc.menu.settings.inventory
 scoreboard objectives remove uhc.menu.settings.team
+scoreboard objectives remove uhc.menu.settings.potion
 scoreboard objectives remove uhc.menu.settings.misc
 scoreboard objectives remove uhc.menu.tp
 scoreboard objectives remove uhc.menu.revive
@@ -265,11 +266,12 @@ scoreboard objectives add uhc.menu.scenario.blood_diamond dummy
 scoreboard objectives add uhc.menu.scenario.restricted_area dummy
 scoreboard objectives add uhc.menu.scenario.main dummy
 scoreboard objectives add uhc.menu.settings dummy
-scoreboard objectives add uhc.menu.settings.lives dummy
+scoreboard objectives add uhc.menu.settings.pve dummy
 scoreboard objectives add uhc.menu.settings.pvp dummy
 scoreboard objectives add uhc.menu.settings.border dummy
 scoreboard objectives add uhc.menu.settings.inventory dummy
 scoreboard objectives add uhc.menu.settings.team dummy
+scoreboard objectives add uhc.menu.settings.potion dummy
 scoreboard objectives add uhc.menu.settings.misc dummy
 scoreboard objectives add uhc.menu.tp dummy
 scoreboard objectives add uhc.menu.revive trigger
@@ -427,4 +429,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26052
+scoreboard players set #update uhc.data.update 26053

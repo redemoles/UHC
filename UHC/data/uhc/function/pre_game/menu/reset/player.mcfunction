@@ -8,6 +8,7 @@
 #
 
 
+
 function uhc:pre_game/menu/load/main/player/menu
 
 execute if score #language uhc.player.lang matches 1.. run tag @s remove uhc.menu.main.host
@@ -28,12 +29,13 @@ scoreboard players set @s uhc.menu.scenario.blood_diamond 0
 tag @s remove uhc.menu.scenario.enchanting_setup
 scoreboard players set @s uhc.menu.scenario.restricted_area 0
 scoreboard players set @s uhc.menu.settings 0
-scoreboard players set @s uhc.menu.settings.lives 0
+scoreboard players set @s uhc.menu.settings.pve 0
 scoreboard players set @s uhc.menu.settings.pvp 0
 scoreboard players set @s uhc.menu.settings.border 0
 scoreboard players set @s uhc.menu.settings.inventory 0
-scoreboard players set @s uhc.menu.settings.misc 0
 scoreboard players set @s uhc.menu.settings.team 0
+scoreboard players set @s uhc.menu.settings.potion 0
+scoreboard players set @s uhc.menu.settings.misc 0
 tag @s remove uhc.menu.start
 tag @s remove uhc.menu.tp
 tag @s remove uhc.menu.world_check
