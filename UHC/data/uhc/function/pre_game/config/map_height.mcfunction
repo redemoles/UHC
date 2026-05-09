@@ -67,7 +67,7 @@ scoreboard players operation #map_height_max uhc.data.setup > #map_height_-- uhc
 
 scoreboard players set #map_height_min uhc.data.setup 58
 
-scoreboard players set #temp uhc.data.setup 9
+scoreboard players set #temp uhc.data.temp 9
 scoreboard players operation #map_height_avg uhc.data.setup = #map_height_00 uhc.data.setup
 scoreboard players operation #map_height_avg uhc.data.setup += #map_height_+0 uhc.data.setup
 scoreboard players operation #map_height_avg uhc.data.setup += #map_height_0+ uhc.data.setup
@@ -77,7 +77,7 @@ scoreboard players operation #map_height_avg uhc.data.setup += #map_height_++ uh
 scoreboard players operation #map_height_avg uhc.data.setup += #map_height_+- uhc.data.setup
 scoreboard players operation #map_height_avg uhc.data.setup += #map_height_-+ uhc.data.setup
 scoreboard players operation #map_height_avg uhc.data.setup += #map_height_-- uhc.data.setup
-scoreboard players operation #map_height_avg uhc.data.setup /= #temp uhc.data.setup
+scoreboard players operation #map_height_avg uhc.data.setup /= #temp uhc.data.temp
 
 scoreboard players operation #map_height_limit_above uhc.data.setup = #map_height_max uhc.data.setup
 scoreboard players add #map_height_limit_above uhc.data.setup 32

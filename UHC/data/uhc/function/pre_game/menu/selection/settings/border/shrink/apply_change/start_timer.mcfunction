@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/settings/border/shrink/apply_change/start_timer
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selection/settings/border/shrink/main
 #
 #
 # @description		Menu

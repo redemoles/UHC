@@ -87,7 +87,7 @@ scoreboard players set #item_additional_armor uhc.data.setup 2
 scoreboard players set #river_solid uhc.data.setup 0
 
 scoreboard players set #map_height_timer uhc.data.setup 80 
-scoreboard players set #map_height_tick_above uhc.data.setup 10
+scoreboard players set #map_height_tick_above uhc.data.setup 12
 scoreboard players set #map_height_tick_below uhc.data.setup 30
 
 ## Team settings / Paramètres d'équipe

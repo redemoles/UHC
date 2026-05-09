@@ -88,6 +88,22 @@ execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_2_leng
 execute if score @s uhc.menu.settings.border matches 34 run scoreboard players add #shrink_3_length uhc.data.setup 10
 execute if score @s uhc.menu.settings.border matches 1.. if score #shrink_3_length uhc.data.setup matches 300.. run scoreboard players set #shrink_3_length uhc.data.setup 300
 
+# Limite Y - Hauteur
+execute if score @s uhc.menu.settings.border matches 41 run scoreboard players add #map_height_limit_above uhc.data.setup 10
+execute if score @s uhc.menu.settings.border matches 41 if score #map_height_limit_above uhc.data.setup matches 256.. run scoreboard players set #map_height_limit_above uhc.data.setup 256
+
+# Limite Y - Profondeur
+execute if score @s uhc.menu.settings.border matches 42 run scoreboard players add #map_height_limit_below uhc.data.setup 10
+execute if score @s uhc.menu.settings.border matches 42 if score #map_height_limit_below uhc.data.setup matches 128.. run scoreboard players set #map_height_limit_below uhc.data.setup 128
+
+# Limite Y - Temps d'activation
+execute if score @s uhc.menu.settings.border matches 43 run scoreboard players add #map_height_timer uhc.data.setup 10
+execute if score @s uhc.menu.settings.border matches 43 if score #map_height_timer uhc.data.setup matches 300.. run scoreboard players set #map_height_timer uhc.data.setup 300
+
+
+
+
+
 
 
 

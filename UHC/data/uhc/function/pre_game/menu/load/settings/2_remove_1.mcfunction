@@ -88,6 +88,18 @@ execute if score @s uhc.menu.settings.border matches 24 unless score #shrink_2_l
 execute if score @s uhc.menu.settings.border matches 34 unless score #shrink_3_length uhc.data.setup matches ..0 run scoreboard players remove #shrink_3_length uhc.data.setup 1
 
 
+# Limite Y - Hauteur
+execute if score @s uhc.menu.settings.border matches 41 unless score #map_height_limit_above uhc.data.setup matches ..64 run scoreboard players remove #map_height_limit_above uhc.data.setup 1
+
+
+# Limite Y - Profondeur
+execute if score @s uhc.menu.settings.border matches 42 unless score #map_height_limit_below uhc.data.setup matches ..-64 run scoreboard players remove #map_height_limit_below uhc.data.setup 1
+
+
+# Limite Y - Temps d'activation
+execute if score @s uhc.menu.settings.border matches 43 unless score #map_height_timer uhc.data.setup matches ..0 run scoreboard players remove #map_height_timer uhc.data.setup 1
+
+
 # Nombre d'amures dupliqué à la mort d'un joueur
 execute if score @s uhc.menu.settings.inventory matches 06 unless score #item_additional_armor uhc.data.setup matches ..0 run scoreboard players remove #item_additional_armor uhc.data.setup 1
 

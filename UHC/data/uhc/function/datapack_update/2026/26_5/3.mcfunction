@@ -21,4 +21,3 @@ scoreboard players set #effect_level_2 uhc.data.setup 0
 scoreboard players set #effect_extended uhc.data.setup 1
 
 scoreboard players set #update uhc.data.update 26053
-execute as @a[tag=uhc.host] run function uhc:translation/datapack_update_version
