@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/gamemode/bhc/scenario_page/3
 #
-# @within			uhc:pre_game/menu/load/gamemode/bhc/main
+# @within			uhc:pre_game/menu/load/gamemode/bhc/scenario_page/main
 #
 #
 # @description		Menu

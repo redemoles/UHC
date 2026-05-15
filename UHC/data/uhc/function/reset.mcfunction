@@ -429,4 +429,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26054
+scoreboard players set #update uhc.data.update 26055

@@ -29,6 +29,7 @@ execute if score #shrink_1_timer_end uhc.data.temp matches 0 run gamerule minecr
 ## Minuteur de modes de jeu
 execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/minute
 execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
+execute if score #switch uhc.gamemode matches 1 run function switch:timer/minute
 
 ## Minuteur de scénarios
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/cooldown

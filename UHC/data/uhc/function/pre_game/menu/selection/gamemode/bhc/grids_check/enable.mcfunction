@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/gamemode/bhc/grids_check/disable
+#> uhc:pre_game/menu/selection/gamemode/bhc/grids_check/enable
 #
 # @within			uhc:pre_game/menu/load/gamemode_bhc/
 #

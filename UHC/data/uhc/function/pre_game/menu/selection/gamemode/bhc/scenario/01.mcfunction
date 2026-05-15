@@ -21,4 +21,10 @@ execute unless score #bhc bhc.scenario matches 01 as @a[scores={uhc.player.lang=
 scoreboard players set #bhc uhc.gamemode 1
 scoreboard players set #bhc bhc.scenario 1
 
+scoreboard players set #stepa_start bhc.data.setup -1
+scoreboard players set #stepa_end bhc.data.setup 30
+scoreboard players set #stepb_start bhc.data.setup 40
+scoreboard players set #stepb_exhaustion bhc.data.setup 45
+scoreboard players set #stepb_end bhc.data.setup 60
+
 function uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario/01
