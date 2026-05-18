@@ -15,6 +15,7 @@ execute if score #lobby lobby.structure.data matches 10..19 positioned 0 64 0 ru
 
 ## Joueurs
 execute as @a run function uhc:pre_game/timer/tick_player
+execute as @e[type=minecraft:player,scores={uhc.player.death.temp=1..},tag=!mgs.tc.player] run function uhc:pre_game/player_and_team/respawn
 scoreboard players set @a uhc.player.data.check 0
 
 ## Random team progressive reveal

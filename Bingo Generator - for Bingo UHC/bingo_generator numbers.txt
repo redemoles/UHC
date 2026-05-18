@@ -1,10 +1,10 @@
-bingo_generator_0  → Vanilla
-bingo_generator_1  → Ruée Vers l'Or
-bingo_generator_2  → Ère Viking
-bingo_generator_51 → 1er avril 2026
-bingo_generator_91 → Chill Mode (1 grid)
-bingo_generator_92 → Chill Mode (2 grids)
------------------a → Premier Bingo
------------------b → Second Bingo
-
+bingo_0  → Vanilla
+bingo_1  → Ruée Vers l'Or / Gold Rush
+bingo_2  → Ère Viking / Viking Era
+bingo_51 → 1er avril 2026 / April's Fool Day 2026
+bingo_91 → Chill Mode (1 grid)
+bingo_92 → Chill Mode (2 grids)
 bingo_99 → Bingo UHC Run
+
+bingo_[number]a → Premier Bingo / First Bingo
+bingo_[number]b → Second Bingo

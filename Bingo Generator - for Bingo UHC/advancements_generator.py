@@ -116,7 +116,8 @@ unobtainable_blocks = [
 	"minecraft:guster_banner_pattern",
 	"minecraft:mojang_banner_pattern",
 	"minecraft:piglin_banner_pattern",
-	"minecraft:skull_banner_pattern"
+	"minecraft:skull_banner_pattern",
+	"minecraft:trident"
 ]
 block_should_not_contains = ["command_block", "test", "spawn", "infested", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "copper_horse", "n_horse", "d_horse", "red_nether", "music_disc", "golem", "nautilus_armor"]
 unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]

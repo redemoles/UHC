@@ -19,7 +19,7 @@ execute unless score @s uhc.menu.gamemode.bhc matches 1.. run scoreboard players
 
 function uhc:pre_game/menu/load/background/
 
-execute if score @s uhc.menu.gamemode.bhc matches 1..8 run function uhc:pre_game/menu/load/gamemode/bhc/scenario_page/main
+execute if score @s uhc.menu.gamemode.bhc matches 1..10 run function uhc:pre_game/menu/load/gamemode/bhc/scenario_page/main
 execute if score @s uhc.menu.gamemode.bhc matches 11 run function uhc:pre_game/menu/load/gamemode/bhc/settings/main
 execute if score @s uhc.menu.gamemode.bhc matches 12.. run return run function uhc:pre_game/menu/load/gamemode/bhc/settings/main
 

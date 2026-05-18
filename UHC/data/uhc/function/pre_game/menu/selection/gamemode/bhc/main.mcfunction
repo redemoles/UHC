@@ -7,8 +7,8 @@
 # @description		Redirection
 #
 
-execute if score @s uhc.menu.gamemode.bhc matches 9 run return run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/main
-execute if score @s uhc.menu.gamemode.bhc matches 11.. run function uhc:pre_game/menu/selection/gamemode/bhc/settings/main
+execute if score @s uhc.menu.gamemode.bhc matches 51.. run return run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/main
+execute if score @s uhc.menu.gamemode.bhc matches 11..50 run function uhc:pre_game/menu/selection/gamemode/bhc/settings/main
 
 execute if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"bhc_scenario"}] run return run function uhc:pre_game/menu/load/gamemode/bhc/preset_menu
 execute if score #bhc uhc.gamemode matches 1 if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"bhc_settings"}] run return run function uhc:pre_game/menu/load/gamemode/bhc/settings/preset_menu
@@ -22,9 +22,9 @@ execute if score @s uhc.menu.gamemode.bhc matches 3 unless items entity @s inven
 execute if score @s uhc.menu.gamemode.bhc matches 3 unless items entity @s inventory.15 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/selection/gamemode/bhc/scenario/91
 execute if score @s uhc.menu.gamemode.bhc matches 3 unless items entity @s inventory.16 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/selection/gamemode/bhc/scenario/92
 
-execute if score @s uhc.menu.gamemode.bhc matches 1..8 unless items entity @s inventory.21 *[minecraft:custom_data={Tags:"menu_bhc"}] run scoreboard players set @s uhc.menu.gamemode.bhc 1
-execute if score @s uhc.menu.gamemode.bhc matches 1..8 unless items entity @s inventory.22 *[minecraft:custom_data={Tags:"menu_bhc"}] run scoreboard players set @s uhc.menu.gamemode.bhc 2
-execute if score @s uhc.menu.gamemode.bhc matches 1..8 unless items entity @s inventory.23 *[minecraft:custom_data={Tags:"menu_bhc"}] run scoreboard players set @s uhc.menu.gamemode.bhc 3
+execute if score @s uhc.menu.gamemode.bhc matches 1..9 unless items entity @s inventory.21 *[minecraft:custom_data={Tags:"menu_bhc"}] run scoreboard players set @s uhc.menu.gamemode.bhc 1
+execute if score @s uhc.menu.gamemode.bhc matches 1..9 unless items entity @s inventory.22 *[minecraft:custom_data={Tags:"menu_bhc"}] run scoreboard players set @s uhc.menu.gamemode.bhc 2
+execute if score @s uhc.menu.gamemode.bhc matches 1..9 unless items entity @s inventory.23 *[minecraft:custom_data={Tags:"menu_bhc"}] run scoreboard players set @s uhc.menu.gamemode.bhc 3
 
 execute if score #bhc uhc.gamemode matches 1 if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"disable"}] run function uhc:pre_game/menu/selection/gamemode/bhc/disable
 

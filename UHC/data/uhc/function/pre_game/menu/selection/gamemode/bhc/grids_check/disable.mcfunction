@@ -15,4 +15,4 @@ execute if score #bhc bhc.scenario matches 91 run function uhc:pre_game/menu/sel
 execute if score #bhc bhc.scenario matches 92 run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/92/disable
 execute if score #bhc bhc.scenario matches 99 run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/99/disable
 
-scoreboard players set @s uhc.menu.gamemode.bhc 1
+scoreboard players remove @s uhc.menu.gamemode.bhc 50
