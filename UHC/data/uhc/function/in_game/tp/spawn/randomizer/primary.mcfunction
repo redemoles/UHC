@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn/randomizer/primary
 #
-# @within			uhc:start/game_team/main
+# @within			uhc:start/setup/team/team_mode/main
 #
 #
 # @description		Définition des points d'apparition d'équipe 

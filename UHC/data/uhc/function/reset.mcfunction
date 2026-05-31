@@ -217,6 +217,7 @@ scoreboard objectives remove uhc.player.kills
 scoreboard objectives remove uhc.player.kills.inv
 scoreboard objectives remove uhc.player.death.armor_additional_item
 scoreboard objectives remove uhc.player.death.cancel_additional_item
+scoreboard objectives remove uhc.player.death.last_time
 scoreboard objectives remove uhc.player.death.temp
 scoreboard objectives remove uhc.player.death.summary
 scoreboard objectives remove uhc.player.data.check
@@ -306,6 +307,7 @@ scoreboard objectives add uhc.player.map_height.sound dummy
 scoreboard objectives add uhc.player.map_height.text dummy
 scoreboard objectives add uhc.player.death.armor_additional_item dummy
 scoreboard objectives add uhc.player.death.cancel_additional_item dummy
+scoreboard objectives add uhc.player.death.last_time dummy
 scoreboard objectives add uhc.player.death.message deathCount
 scoreboard objectives add uhc.player.death.temp deathCount
 scoreboard objectives add uhc.player.death.summary dummy
@@ -429,4 +431,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26056
+scoreboard players set #update uhc.data.update 26057

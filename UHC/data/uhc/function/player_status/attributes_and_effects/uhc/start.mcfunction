@@ -1,7 +1,7 @@
 
 #> uhc:player_status/attributes_and_effects/uhc/start
 #
-# @within			uhc:start/setup_players
+# @within			uhc:start/setup/player/when_tp
 #
 #
 # @description		Donne les effets / gamemode aux specs

@@ -89,15 +89,19 @@ execute if score @s uhc.menu.settings.border matches 34 unless score #shrink_3_l
 
 
 # Limite Y - Hauteur
-execute if score @s uhc.menu.settings.border matches 41 unless score #map_height_limit_above uhc.data.setup matches ..64 run scoreboard players remove #map_height_limit_above uhc.data.setup 1
+execute if score #sky_high uhc.scenario matches 0 if score @s uhc.menu.settings.border matches 41 unless score #map_height_limit_above uhc.data.setup matches ..64 run scoreboard players remove #map_height_limit_above uhc.data.setup 1
 
 
 # Limite Y - Profondeur
-execute if score @s uhc.menu.settings.border matches 42 unless score #map_height_limit_below uhc.data.setup matches ..-64 run scoreboard players remove #map_height_limit_below uhc.data.setup 1
+execute if score #sky_high uhc.scenario matches 0 if score @s uhc.menu.settings.border matches 42 unless score #map_height_limit_below uhc.data.setup matches ..-64 run scoreboard players remove #map_height_limit_below uhc.data.setup 1
+
+execute if score #sky_high uhc.scenario matches 1 if score @s uhc.menu.settings.border matches 42 unless score #height uhc.scenario.sky_high.settings matches ..100 run scoreboard players remove #height uhc.scenario.sky_high.settings 1
 
 
 # Limite Y - Temps d'activation
-execute if score @s uhc.menu.settings.border matches 43 unless score #map_height_timer uhc.data.setup matches ..0 run scoreboard players remove #map_height_timer uhc.data.setup 1
+execute if score #sky_high uhc.scenario matches 0 if score @s uhc.menu.settings.border matches 43 unless score #map_height_timer uhc.data.setup matches ..0 run scoreboard players remove #map_height_timer uhc.data.setup 1
+
+execute if score #sky_high uhc.scenario matches 1 if score @s uhc.menu.settings.border matches 43 unless score #sky_high uhc.data.setup matches ..0 run scoreboard players remove #sky_high uhc.data.setup 1
 
 
 # Nombre d'amures dupliqué à la mort d'un joueur

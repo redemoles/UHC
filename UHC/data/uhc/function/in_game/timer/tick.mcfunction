@@ -8,14 +8,11 @@
 #
 
 # Tick
-execute unless score #tick_start uhc.data.temp matches 0..200 if entity @p[tag=test] run scoreboard players set #tick uhc.data.temp 19
+execute unless score #minutes uhc.data.temp matches -1 if entity @p[tag=test] run scoreboard players set #tick uhc.data.temp 19
 execute unless score #pause uhc.data.temp matches 1 run scoreboard players add #tick uhc.data.temp 1
-execute if score #minutes uhc.data.temp matches -1 run scoreboard players add #tick_start uhc.data.temp 1
 # Chronomètre démarrage
-execute if score #tick_start uhc.data.temp matches 0..200 run function uhc:start/countdown/start
-execute if score #start_delay uhc.data.setup matches 1 if score #sec_cooldown uhc.data.temp matches 1 if score #tick uhc.data.temp matches 20 run function uhc:start/countdown/end
-execute if score #start_delay uhc.data.setup matches 0 run function uhc:start/countdown/end
-execute if score #tick_start uhc.data.temp matches 0..200 run return fail
+execute if score #minutes uhc.data.temp matches -1 run function uhc:start/countdown/start
+execute if score #minutes uhc.data.temp matches -1 run return fail
 # Secondes
 execute if score #tick uhc.data.temp matches 20 run function uhc:in_game/timer/second
 
@@ -25,21 +22,7 @@ execute as @a[scores={uhc.player.tp=1}] at @s positioned over motion_blocking ru
 scoreboard players set @a uhc.player.tp 0
 
 ## Hotbar
-# Données Worldborder
-execute store result score #border_size uhc.data.temp run worldborder get
-scoreboard players remove #border_size uhc.data.temp 1
-scoreboard players operation #border_size uhc.data.temp /= #02 uhc.data.numbers
-
-# Texte informations de positions de joueurs
-execute if score #tracker uhc.data.temp matches 1 as @a[tag=uhc.player] run function uhc:in_game/timer/hotbar/target/
-
-# Texte informations de base
-execute if score #hotbar_cooldown uhc.data.temp matches 1.. if score #tick uhc.data.temp matches 0 run function uhc:in_game/timer/hotbar/cooldown/main
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #vanilla uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function uhc:translation/hotbar/uhc with storage uhc:temp hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #bhc uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function bhc:timer/hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #mls uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function mls:timer/hotbar with storage uhc:temp hotbar
-execute unless score #hotbar_cooldown uhc.data.temp matches 1.. if score #nzl uhc.gamemode matches 1 if score #tick uhc.data.temp matches 0.. run function nzl:timer/hotbar
-tag @a[tag=uhc.target.targeter_done] remove uhc.target.targeter_done
+function uhc:in_game/timer/hotbar/root
 
 ## Modifications de données d'entités
 # Réduction des dégâts des flèches
@@ -48,39 +31,24 @@ execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecra
 # Items
 execute as @e[type=minecraft:item,tag=!uhc.checked] run function uhc:in_game/entity/item/tick
 
-## Triggers
-# Night Vision
-execute as @p[scores={uhc.night_vision=1}] run function uhc:in_game/player/effect/night_vision
-# Ironman
-execute if score #player uhc.scenario.ironman matches 0.. as @p[scores={uhc.ironman.list=1}] run function uhc:in_game/scenario/ironman/list
-execute if score #player uhc.scenario.ironman matches 1 unless score #winner_rewarded uhc.scenario.ironman matches 1 as @p[tag=uhc.ironman] run function uhc:in_game/scenario/ironman/reward
-# Best PvE
-execute if score #best_pve uhc.scenario matches 1 as @p[scores={uhc.best_pve.list=1}] run function uhc:in_game/scenario/best_pve/list
-# Info personnel et des autres équipes
-execute as @p[scores={uhc.info.me=1}] run function uhc:in_game/player/misc/info/me
-execute as @p[scores={uhc.info.team=1}] run function uhc:in_game/player/misc/info/team/list
-execute as @p[scores={uhc.info.team.temp=1..}] run function uhc:in_game/player/misc/info/team/bhc/
-
 ## Scenarios
-execute if score #experienceless uhc.scenario matches 1 as @e[type=experience_orb] run kill @s
-execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_game/scenario/enchanting_setup/tick
-execute if score #sound_paranoia uhc.scenario matches 1 as @e[type=minecraft:marker,tag=uhc.sound_paranoia.on] at @s run function uhc:in_game/scenario/sound_paranoia/tick
+function uhc:in_game/scenario/tick
 
 ## Réduction de vie automatique
 execute if score #3_lives_left uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=4..}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
 execute if score #2_lives_left uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
 execute if score #1_life_left uhc.data.temp matches ..0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 
-## Morts
+## Joueurs
 # Détection d'un joueur mort
 execute as @e[type=minecraft:player,scores={uhc.player.death.temp=1}] run function uhc:in_game/player/death/main
+# Effets, Respawn, Connexion d'un joueur externe, Scenarios
+execute as @a run function uhc:in_game/player/tick
+
+## Annonce de mort
 execute if score #death_message uhc.data.setup matches 6 store result score #death_message uhc.data.temp run random value 1..5
 execute if predicate uhc:scenario/silent_night/day_time if score #death_message uhc.data.temp matches 5 unless score #death_message uhc.data.setup matches 5..6 run scoreboard players operation #death_message uhc.data.temp = #death_message uhc.data.setup
 execute if predicate uhc:scenario/silent_night/night_time unless score #death_message uhc.data.temp matches 5 run scoreboard players set #death_message uhc.data.temp 5
-
-## @a → Effets, Respawn, Connexion d'un joueur externe, Scenarios
-execute as @a run function uhc:in_game/player/tick
-execute if score #absorption uhc.data.setup matches ..1 as @a[tag=uhc.player,predicate=uhc:effect/absorption] run function uhc:in_game/player/effect/absorption
 
 ## End
 # Détection entrée/sortie de l'end et respawn d'un joueur mort

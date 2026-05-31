@@ -1,7 +1,7 @@
 
 #> uhc:in_game/team/collision/always
 #
-# @within			uhc:start/setup_uhc
+# @within			uhc:start/setup/uhc/main
 #
 #
 # @description		Vérification de la position des joueurs entre eux

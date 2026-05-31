@@ -21,3 +21,4 @@ scoreboard players remove #1_life_left uhc.data.temp 1
 scoreboard players remove #map_height_timer uhc.data.temp 1
 execute if score #go_to_hell uhc.scenario matches 1 run scoreboard players remove #go_to_hell uhc.data.temp 1
 execute if score #sky_high uhc.scenario matches 1 run scoreboard players remove #sky_high uhc.data.temp 1
+execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.temp matches ..-1 run scoreboard players remove #sky_high_ender_pearl uhc.data.temp 1

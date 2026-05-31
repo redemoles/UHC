@@ -135,3 +135,5 @@ scoreboard players set #damage_type uhc.scenario.go_to_hell.settings 3
 scoreboard players set #sky_high uhc.data.setup 60
 scoreboard players set #damage_type uhc.scenario.sky_high.settings 3
 scoreboard players set #height uhc.scenario.sky_high.settings 150
+scoreboard players set #ender_pearl_gift uhc.scenario.sky_high.settings 0
+scoreboard players set #ender_pearl_timer uhc.scenario.sky_high.settings 10

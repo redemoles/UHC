@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn/randomizer/ffa
 #
-# @within			uhc:start/game_ffa/main
+# @within			uhc:start/setup/team/ffa_mode/main
 #
 #
 # @description		Coordonnées du point d'apparition du joueur 

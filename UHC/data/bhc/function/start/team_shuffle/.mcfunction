@@ -1,7 +1,7 @@
 
 #> bhc:start/team_shuffle/
 #
-# @within			uhc:start/setup_players
+# @within			uhc:start/setup/player/when_tp
 #
 #
 # @description		Anonymisation des équipes

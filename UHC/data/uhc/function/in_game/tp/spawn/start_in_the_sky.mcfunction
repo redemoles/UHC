@@ -1,7 +1,7 @@
 
 #> uhc:in_game/tp/spawn/start_in_the_sky
 #
-# @within			uhc:start/game_team/main
+# @within			uhc:start/setup/team/team_mode/main
 #
 #
 # @description		Téléportation aux points d'apparition dans le ciel au centre de la map 

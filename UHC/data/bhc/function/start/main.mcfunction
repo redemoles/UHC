@@ -1,7 +1,7 @@
 
 #> bhc:start/main
 #
-# @within			uhc:start/setup_uhc
+# @within			uhc:start/setup/uhc/main
 #
 #
 # @description		Collectes et modifs de quelques données au démarrage

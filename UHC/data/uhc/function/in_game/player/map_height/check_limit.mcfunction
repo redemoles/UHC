@@ -10,7 +10,7 @@
 execute unless score @s uhc.player.data.check matches 1 run function uhc:in_game/player/data/main
 
 execute if score @s uhc.player.y > #map_height_limit_above uhc.data.temp run return run function uhc:in_game/player/map_height/above
-execute if score @s uhc.player.y < #map_height_limit_below uhc.data.temp run return run function uhc:in_game/player/map_height/below
+execute unless score #sky_high uhc.scenario matches 1 if score @s uhc.player.y < #map_height_limit_below uhc.data.temp run return run function uhc:in_game/player/map_height/below
 
 scoreboard players set @s uhc.player.map_height.sound 0
 scoreboard players set @s uhc.player.map_height.text 0

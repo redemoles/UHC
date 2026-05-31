@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/pvp/settings/friendly_fire/disable
 #
-# @within			uhc:start/setup_players
+# @within			uhc:start/setup/player/when_tp
 #
 #
 # @description		Vérification de la position des joueurs entre eux

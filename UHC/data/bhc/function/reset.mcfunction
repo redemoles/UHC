@@ -108,7 +108,6 @@ scoreboard objectives remove bhc.ironman.score
 scoreboard objectives remove bhc.ironman.score.inv
 scoreboard objectives remove bhc.ironman.timer
 scoreboard objectives remove bhc.ironman.timer.inv
-scoreboard objectives remove bhc.data.setup
 scoreboard objectives remove bhc.data.temp
 scoreboard objectives remove bhc.team.livescount
 

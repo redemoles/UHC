@@ -49,5 +49,8 @@ data modify storage uhc:temp input.z set from entity @s LastDeathLocation.pos[2]
 # Envoi au joueur des coordonnées de son lieu de mort
 function uhc:translation/in_game/player_death_main with storage uhc:temp input
 
-# Scoreboard Kills
+## Scoreboard
+# Kills
 execute if score #vanilla uhc.gamemode matches 1 if score #death_message uhc.data.setup matches 0 run scoreboard objectives setdisplay sidebar uhc.player.kills
+# Timer dernière mort
+scoreboard players set @s uhc.player.death.last_time 0

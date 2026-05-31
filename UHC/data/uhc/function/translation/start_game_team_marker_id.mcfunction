@@ -1,14 +1,14 @@
 
 #> uhc:translation/start_game_team_marker_id
 #
-# @within			uhc:start/game_team/marker/id
+# @within			uhc:start/setup/team/team_mode/marker/id
 #
 #
 #
 #
 
 ## FRA - Français / French
-execute if score #language uhc.player.lang matches 061801 run function uhc:start/game_team/marker/team_name/fra
+execute if score #language uhc.player.lang matches 061801 run function uhc:start/setup/team/team_mode/marker/team_name/fra
 
 ## ENG - English
-execute if score #language uhc.player.lang matches 051407 run function uhc:start/game_team/marker/team_name/eng
+execute if score #language uhc.player.lang matches 051407 run function uhc:start/setup/team/team_mode/marker/team_name/eng

@@ -112,3 +112,5 @@ execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard 
 
 execute store result storage uhc:scenario sky_high.timer int 1 run scoreboard players get #sky_high uhc.data.setup
 execute store result storage uhc:scenario sky_high.height int 1 run scoreboard players get #height uhc.scenario.sky_high.settings
+execute store result storage uhc:scenario sky_high.ender_pearl_gift int 1 run scoreboard players get #ender_pearl_gift uhc.scenario.sky_high.settings
+execute store result storage uhc:scenario sky_high.ender_pearl_timer int 1 run scoreboard players get #ender_pearl_timer uhc.scenario.sky_high.settings

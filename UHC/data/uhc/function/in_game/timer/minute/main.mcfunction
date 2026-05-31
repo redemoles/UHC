@@ -31,8 +31,9 @@ execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer
 execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
 execute if score #switch uhc.gamemode matches 1 run function switch:timer/minute
 
-## Minuteur de scénarios
+## Scénarios
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/cooldown
+execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.temp matches ..0 if score #sky_high_ender_pearl uhc.data.temp matches 0 if score #sky_high_gift uhc.data.temp matches 1.. run function uhc:in_game/scenario/sky_high/ender_pearl
 
 ## Réduction de vie automatique
 execute if score #lives_start uhc.player.lives matches 4.. if score #3_lives_left uhc.data.temp matches 0 run function uhc:translation/in_game/timer_minute_3_lives_left

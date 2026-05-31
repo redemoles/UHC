@@ -2,7 +2,7 @@
 #> uhc:in_game/tp/spawn/default
 #
 # @within			uhc:in_game/player/death/main
-# @within			uhc:start/game_team/main
+# @within			uhc:start/setup/team/team_mode/main
 #
 # @description		Téléportation aux points d'apparition des équipes
 #

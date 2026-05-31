@@ -27,8 +27,8 @@ execute if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_co
 execute if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #stepb_start bhc.data.temp matches 0 as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.5 1 0.5
 execute if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #stepb_exhaustion bhc.data.temp matches 0 as @a at @s run playsound minecraft:block.respawn_anchor.deplete master @s ~ ~ ~ 0.4 1 0.4
 execute if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #stepb_end bhc.data.temp matches 0 as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.5 1 0.5
-execute if score #go_to_hell uhc.scenario matches 1 unless score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #go_to_hell uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 0.5 1 0.5
-execute if score #sky_high uhc.scenario matches 1 unless score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #sky_high uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 0.5 1 0.5
+execute if score #go_to_hell uhc.scenario matches 1 if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #go_to_hell uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 0.5 1 0.5
+execute if score #sky_high uhc.scenario matches 1 if score #min_cooldown_temp_bhc uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 0 if score #sky_high uhc.data.temp matches 0 as @a at @s run playsound minecraft:block.portal.travel ambient @s ~ ~ ~ 0.5 1 0.5
 
 execute if score #lives_after_alert uhc.data.temp matches 1.. run function uhc:in_game/timer/hotbar/cooldown/event_list/lives
 
@@ -50,8 +50,8 @@ execute if score #min_cooldown_temp uhc.data.temp matches 1 if score #sec_cooldo
 execute if score #min_cooldown_temp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 2 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5
 execute if score #min_cooldown_temp uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 1 as @a at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.5 1 0.5
 # Scénario
-execute if score #go_to_hell uhc.scenario matches 1 run function uhc:in_game/timer/hotbar/cooldown/event_list/go_to_hell
-execute if score #sky_high uhc.scenario matches 1 run function uhc:in_game/timer/hotbar/cooldown/event_list/sky_high
+execute if score #go_to_hell uhc.scenario matches 1 if score #go_to_hell uhc.data.temp = #min_cooldown_temp uhc.data.temp run function uhc:in_game/timer/hotbar/cooldown/event_list/go_to_hell
+execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.temp = #min_cooldown_temp uhc.data.temp run function uhc:in_game/timer/hotbar/cooldown/event_list/sky_high
 # Mode de jeu
 execute if score #bhc uhc.gamemode matches 1 if score #bhc bhc.scenario matches 99 run return run function uhc:in_game/timer/hotbar/cooldown/event_list/bhc/scenario/run/main
 # Divers
