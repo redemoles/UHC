@@ -8,7 +8,7 @@
 #
 
 # Ironman
-execute if score #minutes uhc.data.temp matches 15.. run tag @s add uhc.ironman
+execute unless score #minutes uhc.data.temp matches 15.. run tag @s add uhc.ironman
 execute if score #minutes uhc.data.temp matches 15.. run scoreboard players remove #player uhc.scenario.ironman 1
 
 # Best PvE

@@ -11,6 +11,7 @@
 tag @s remove uhc.player
 tag @s remove uhc.player.dead
 tag @s remove uhc.player.start_in_the_sky
+tag @s remove uhc.revive.temp
 tag @s remove test
 tag @s remove uhc.random_team.in_a_team
 tag @s add uhc.spec

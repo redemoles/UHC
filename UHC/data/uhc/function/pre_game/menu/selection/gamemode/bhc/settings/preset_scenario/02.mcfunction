@@ -35,8 +35,8 @@ scoreboard players set #1_life_left uhc.data.setup 120
 ## Scénario
 scoreboard players set #mystery_scenarios uhc.data.setup 0
 
-execute if score #biome_paranoia uhc.scenario matches 2 run function uhc:pre_game/menu/selection/scenario/list/biome_paranoia
 execute if score #biome_paranoia uhc.scenario matches 0 run function uhc:pre_game/menu/selection/scenario/list/biome_paranoia
+execute if score #biome_paranoia uhc.scenario matches 1 run function uhc:pre_game/menu/selection/scenario/list/biome_paranoia
 execute unless score #blood_diamond uhc.scenario matches 1 run function uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_progressive_mode
 execute unless score #double_ores uhc.scenario matches 0 run function uhc:pre_game/menu/selection/scenario/list/double_ores
 execute unless score #permakill uhc.scenario matches 0 run function uhc:pre_game/menu/selection/scenario/list/permakill

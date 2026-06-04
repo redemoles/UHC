@@ -24,7 +24,9 @@ execute if score #pvp uhc.data.temp matches 0 in minecraft:the_end run gamerule 
 execute if score #shrink_1_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/1
 execute if score #shrink_2_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/2
 execute if score #shrink_3_time_left uhc.data.temp matches 0 run function uhc:in_game/timer/border/shrink/3
-execute if score #shrink_1_timer_end uhc.data.temp matches 0 run gamerule minecraft:spawn_monsters false
+execute if score #shrink_1_timer_end uhc.data.temp matches 0 in minecraft:overworld run gamerule minecraft:spawn_monsters false
+execute if score #shrink_1_timer_end uhc.data.temp matches 0 in minecraft:the_nether run gamerule minecraft:spawn_monsters false
+execute if score #shrink_1_timer_end uhc.data.temp matches 0 in minecraft:the_end run gamerule minecraft:spawn_monsters false
 
 ## Minuteur de modes de jeu
 execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/minute

@@ -8,7 +8,7 @@
 #
 
 execute if score #game_progress uhc.game_progress matches 1.. as @s[tag=uhc.revive.temp,gamemode=!creative] in uhc:lobby run function uhc:in_game/player/spec/revive/new_player/menu/selection/root
-execute if score #game_progress uhc.game_progress matches 1.. run return run advancement revoke @s only uhc:inventory_menu
+execute if score #game_progress uhc.game_progress matches 1.. run return fail
 
 execute as @s[scores={uhc.player.online=1},gamemode=!creative] unless entity @s[tag=!mgs.tc.spec,tag=mgs.tc.player] unless score @s uhc.menu.settings.inventory matches 2..5 run function uhc:pre_game/menu/detector/menu
 execute as @s[tag=!mgs.tc.spec,tag=mgs.tc.player,scores={uhc.player.online=1},gamemode=!creative] unless score @s uhc.menu.settings.inventory matches 2..5 run return run function lobby:mini_games/inventory

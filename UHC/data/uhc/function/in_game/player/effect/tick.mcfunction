@@ -19,7 +19,7 @@ execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.nigh
 # Resistance
 execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
 effect give @s[scores={uhc.effect.resistance=-1}] minecraft:resistance infinite 4 true
-execute unless score #annonce mls.player.team matches 1 run effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
+effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 0 true
 effect give @s[scores={uhc.effect.resistance=2}] minecraft:resistance infinite 1 true
 effect give @s[scores={uhc.effect.resistance=3}] minecraft:resistance infinite 2 true
