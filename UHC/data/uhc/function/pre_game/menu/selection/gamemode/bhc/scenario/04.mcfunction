@@ -27,3 +27,7 @@ scoreboard players set #stepb_start bhc.data.setup 40
 scoreboard players set #stepb_end bhc.data.setup 60
 
 function uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario/04
+
+scoreboard players set #check_bingo_generated uhc.data.temp 1
+execute store result score #check_bingo_generated uhc.data.temp run function bingo_generator:load
+execute if score #check_bingo_generated uhc.data.temp matches 0 run return run function uhc:translation/menu/selected/gamemode_no_bingo_generated

@@ -138,8 +138,10 @@ scoreboard players set #line-1 {configuration_objective} {line}
 scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
+scoreboard players set #max_line {max_square_objective} {line}
+scoreboard players set #max_column {max_square_objective} {column}
 scoreboard players set #max {max_square_objective} {line}
-scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.numbers
+scoreboard players operation #max {max_square_objective} += #max_column {max_square_objective}
 """)
 
 # Function to generate a bingo and add it to the zip file
@@ -298,8 +300,10 @@ scoreboard players set #line-1 {configuration_objective} {line}
 scoreboard players set #column-1 {configuration_objective} {column}
 scoreboard players remove #line-1 {configuration_objective} 1
 scoreboard players remove #column-1 {configuration_objective} 1
+scoreboard players set #max_line {max_square_objective} {line}
+scoreboard players set #max_column {max_square_objective} {column}
 scoreboard players set #max {max_square_objective} {line}
-scoreboard players operation #max {max_square_objective} *= #0{column} uhc.data.numbers
+scoreboard players operation #max {max_square_objective} += #max_column {max_square_objective}
 """)
 
 
@@ -508,3 +512,5 @@ with zipfile.ZipFile(f"Bingo_UHC_grids_{datetime.datetime.today().strftime('%Y-%
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y_%m_%d")}"
 	}}
 }}""")
+	# Write the main load function file requested by the user
+	zip_file.writestr("data/bingo_generator/function/load.mcfunction", "scoreboard players set #bingo_generator_update uhc.data.update 26060")

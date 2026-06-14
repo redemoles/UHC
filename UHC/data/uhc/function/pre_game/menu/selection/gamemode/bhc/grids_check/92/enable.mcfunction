@@ -7,5 +7,9 @@
 # @description		Vérification des grilles de bingo
 #
 
+scoreboard players set #check_bingo_generated uhc.data.temp 1
+execute store result score #check_bingo_generated uhc.data.temp run function bingo_generator:load
+execute if score #check_bingo_generated uhc.data.temp matches 0 run return run function uhc:translation/menu/selected/gamemode_no_bingo_generated
+
 scoreboard players set #bingo_92a_enabled bhc.data 1
 scoreboard players set #bingo_92b_enabled bhc.data 1
