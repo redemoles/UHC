@@ -21,9 +21,9 @@ execute unless items entity @s[tag=uhc.host] inventory.10 *[minecraft:custom_dat
 execute unless items entity @s[tag=uhc.host] inventory.11 *[minecraft:custom_data={Tags:"scenario"}] run return run function uhc:pre_game/menu/load/scenario/enchanting_setup/main
 execute unless items entity @s[tag=uhc.host] inventory.12 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/experienceless
 execute unless items entity @s[tag=uhc.host] inventory.13 *[minecraft:custom_data={Tags:"scenario"}] run return run function uhc:pre_game/menu/load/scenario/restricted_area/main
-execute unless items entity @s[tag=uhc.host] inventory.14 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/gone_fishing
-execute unless items entity @s[tag=uhc.host] inventory.15 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/hastey_boys
-execute unless items entity @s[tag=uhc.host] inventory.16 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/no_fall
+execute unless items entity @s[tag=uhc.host] inventory.14 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/golden_head
+execute unless items entity @s[tag=uhc.host] inventory.15 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/gone_fishing
+execute unless items entity @s[tag=uhc.host] inventory.16 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/hastey_boys
 
 # Ligne 3
 execute unless items entity @s[tag=uhc.host] inventory.19 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/mystery_scenarios

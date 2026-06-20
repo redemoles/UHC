@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:gold_ingot",
+    "X": "minecraft:player_head"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:golden_apple",
+    "components": {
+      "minecraft:consumable": {
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 1,
+                "duration": 200,
+                "show_particles": true
+              },
+              {
+                "id": "minecraft:absorption",
+                "amplifier": 1,
+                "duration": 2400,
+                "show_particles": true
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:item_name": "Golden Head"
+    }
+  }
+}

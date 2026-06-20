@@ -1,7 +1,7 @@
 
 #> uhc:in_game/scenario/bookception/kill
 #
-# @within			uhc:in_game/player/death/inventory/item_additional
+# @within			uhc:in_game/player/death/location/item_drop/main
 #
 #
 # @description		

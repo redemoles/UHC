@@ -26,3 +26,5 @@ function uhc:in_game/player/death/location/item_drop/additional with storage uhc
 ## Scénarios
 # Bookception
 execute if score #bookception uhc.scenario matches 1 run function uhc:in_game/scenario/bookception/kill
+# Player Head
+execute if score #golden_head uhc.scenario matches 1 run function uhc:in_game/scenario/golden_head/kill
