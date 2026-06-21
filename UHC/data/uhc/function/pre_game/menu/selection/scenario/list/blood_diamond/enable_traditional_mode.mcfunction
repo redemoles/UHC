@@ -16,4 +16,4 @@ execute if score @s uhc.menu.scenario.blood_diamond matches 1 run scoreboard pla
 execute if score #blood_diamond uhc.scenario matches 0 run scoreboard players set @s uhc.menu.scenario.blood_diamond 1
 execute if score #blood_diamond uhc.scenario matches 1.. run scoreboard players set @s uhc.menu.scenario.blood_diamond 2
 
-function uhc:pre_game/menu/load/scenario/blood_diamond/main with storage uhc:scenario blood_diamond
+function uhc:pre_game/menu/load/scenario/blood_diamond

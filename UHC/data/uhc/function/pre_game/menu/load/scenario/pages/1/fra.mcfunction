@@ -7,18 +7,6 @@
 # @description		Menu
 #
 
-clear @s
-tag @s remove uhc.menu.main.host
-scoreboard players set @s uhc.menu.scenario.main 1
-scoreboard players set @s uhc.menu.main.player 0
-scoreboard players set @s uhc.menu.scenario.blood_diamond 0
-tag @s remove uhc.menu.scenario.enchanting_setup
-scoreboard players set @s uhc.menu.scenario.restricted_area 0
-
-
-
-function uhc:pre_game/menu/load/background/
-
 execute if score #bats uhc.scenario matches 0 run item replace entity @s inventory.1 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"Bats","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Un joueur tuant une chauve-souris a :","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"95% de chance d'obtenir une pomme d'or","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"5% de chance de mourir","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
 execute if score #bats uhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:bat_spawn_egg[minecraft:item_name=[{"text":"Bats","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Un joueur tuant une chauve-souris a :","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"95% de chance d'obtenir une pomme d'or","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"5% de chance de mourir","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
 execute if score #best_pve uhc.scenario matches 0 run item replace entity @s inventory.2 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"Best PvE","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Chaque joueur cumulant 10 minutes dans la liste Best PvE","color":"#FFFFFF","italic":false}],[{"text":"obtient un coeur maximum supplémentaire.","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Un joueur quitte la liste Best PvE en prenant un dégât.","color":"#FF7F7F","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"Un joueur retourne dans la liste Best PvE en tuant un autre joueur.","color":"#7FEFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]

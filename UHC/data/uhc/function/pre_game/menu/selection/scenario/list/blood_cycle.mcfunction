@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/selection/scenario/list/blood_cycle
 #
-# @within			uhc:pre_game/menu/load/scenario/blood_diamond/main
+# @within			uhc:pre_game/menu/load/scenario/blood_diamond
 #
 #
 # @description		Activation/Désactivation Blood Cycle

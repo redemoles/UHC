@@ -23,6 +23,7 @@ effect clear @s[scores={uhc.effect.resistance=0}] minecraft:resistance
 effect give @s[scores={uhc.effect.resistance=1}] minecraft:resistance infinite 0 true
 effect give @s[scores={uhc.effect.resistance=2}] minecraft:resistance infinite 1 true
 effect give @s[scores={uhc.effect.resistance=3}] minecraft:resistance infinite 2 true
+execute in uhc:lobby as @a[distance=0..] run effect give @s minecraft:resistance infinite 4 true
 
 # Speed
 execute if entity @s[tag=uhc.player,tag=!uhc.effect.speed,predicate=uhc:effect/speed] run function uhc:in_game/player/effect/speed

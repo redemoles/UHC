@@ -1,7 +1,7 @@
 
 #> bhc:scores_calculator/endgame/detect
 #
-# @within			uhc:in_game/endgame
+# @within			uhc:in_game/end_game/main
 #
 #
 # @description		Fin de partie

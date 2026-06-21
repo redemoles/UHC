@@ -33,7 +33,6 @@ execute as @e[type=minecraft:happy_ghast] run function uhc:in_game/entity/happy_
 # Absorption
 execute as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_absorption base set 0
 scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
-
 # Démarrage dans le ciel
 execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 positioned 0 179 0 run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air
 execute if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 run function uhc:in_game/team/collision/always
@@ -42,9 +41,12 @@ execute if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.tem
 execute if score #silent_night uhc.scenario matches 1 run function uhc:in_game/scenario/silent_night/tick
 execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] at @s run function uhc:in_game/scenario/sound_paranoia/cooldown
 
-## Autres mode de jeu
+## Modes de jeu
 execute if score #minutes uhc.data.temp matches 0.. if score #nzl uhc.gamemode matches 1 run function nzl:timer/second
 execute if score #minutes uhc.data.temp matches 0.. if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/second
+
+## Compte du nombre d'équipes avec un joueur connecté
+execute if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. run function uhc:in_game/team/count/main
 
 ## Alertes sonores
 # Border en cours de réduction
@@ -105,5 +107,5 @@ execute if score #shrink_3_time_left uhc.data.temp matches 1 if score #sec_coold
 execute if score #shrink_3_time_left uhc.data.temp matches 1 if score #sec_cooldown uhc.data.temp matches 10 run scoreboard players set #hotbar_cooldown uhc.data.temp 13
 
 # Données Worldborder
-schedule function uhc:in_game/timer/border/schedule_1s 1s
+scoreboard players operation #border_size+1 uhc.data.temp = #border_size_temp uhc.data.temp
 scoreboard players operation #border_size_temp uhc.data.temp = #border_size uhc.data.temp

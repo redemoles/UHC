@@ -40,6 +40,7 @@ scoreboard players set #/sreveal mls.command 3
 scoreboard players set #/sr mls.command 3
 
 scoreboard players set #custom_arrow uhc.data.setup 0
+scoreboard players set #night_vision uhc.data.setup 1
 
 ## Scénarios
 scoreboard players set #bats uhc.scenario 0

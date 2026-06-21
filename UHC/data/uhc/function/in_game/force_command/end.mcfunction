@@ -8,5 +8,5 @@
 #
 
 scoreboard players add #game_progress uhc.game_progress 1
-function uhc:in_game/endgame
+function uhc:in_game/end_game/main
 scoreboard players set @p[scores={uhc.game_progress=1}] uhc.game_progress 0

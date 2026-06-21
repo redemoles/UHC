@@ -8,4 +8,4 @@
 #
 
 scoreboard players set @s uhc.menu.scenario.blood_diamond 12
-function uhc:pre_game/menu/load/scenario/blood_diamond/main with storage uhc:scenario blood_diamond
+function uhc:pre_game/menu/load/scenario/blood_diamond

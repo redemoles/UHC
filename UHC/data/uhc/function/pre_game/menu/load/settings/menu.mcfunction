@@ -32,8 +32,7 @@ execute if score @s[tag=uhc.host] uhc.menu.settings matches 5 run item replace e
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 6 run item replace entity @s inventory.21 with minecraft:magenta_concrete_powder[minecraft:item_name=[{"text":"/2","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"-1"}]
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 6 run item replace entity @s inventory.23 with minecraft:light_blue_concrete_powder[minecraft:item_name=[{"text":"*2","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"+1"}]
 
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+function uhc:translation/menu/load/close
 
 # Menu Intérieur
 execute if score @s uhc.menu.settings.border matches 11.. run return run function uhc:pre_game/menu/load/settings/border/menu

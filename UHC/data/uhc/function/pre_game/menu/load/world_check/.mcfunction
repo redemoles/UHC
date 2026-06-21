@@ -31,5 +31,4 @@ item replace entity @s[tag=host.check_biomes,scores={uhc.player.lang=051407}] in
 item replace entity @s[tag=!host.check_spawns,scores={uhc.player.lang=051407}] inventory.2 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Spawn points check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_spawns"}]
 item replace entity @s[tag=host.check_spawns,scores={uhc.player.lang=051407}] inventory.2 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Spawn points check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"check_spawns"},minecraft:enchantment_glint_override=true]
 
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+function uhc:translation/menu/load/close

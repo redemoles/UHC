@@ -29,4 +29,4 @@ execute if score #vanilla uhc.gamemode matches 1 run function uhc:translation/in
 
 ## Détection victoire
 execute if score #team uhc.data.temp.inv matches ..1 run scoreboard players add #game_progress uhc.game_progress 1
-execute if score #game_progress uhc.game_progress matches 2 run function uhc:in_game/endgame
+execute if score #game_progress uhc.game_progress matches 2 run function uhc:in_game/end_game/main

@@ -13,4 +13,4 @@ execute unless score #blood_diamond uhc.scenario matches 0 run function uhc:tran
 scoreboard players set #blood_diamond uhc.scenario 0
 scoreboard players set @s uhc.menu.scenario.blood_diamond 1
 
-function uhc:pre_game/menu/load/scenario/blood_diamond/main with storage uhc:scenario blood_diamond
+function uhc:pre_game/menu/load/scenario/blood_diamond

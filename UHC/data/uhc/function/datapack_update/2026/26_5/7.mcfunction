@@ -13,4 +13,3 @@ scoreboard players set #ender_pearl_gift uhc.scenario.sky_high.settings 0
 scoreboard players set #ender_pearl_timer uhc.scenario.sky_high.settings 10
 
 scoreboard players set #update uhc.data.update 26057
-execute as @a[tag=uhc.host] run function uhc:translation/datapack_update_version

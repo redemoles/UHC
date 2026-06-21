@@ -7,6 +7,18 @@
 # @description		Redirection
 #
 
+clear @s
+tag @s remove uhc.menu.main.host
+scoreboard players set @s uhc.menu.scenario.main 2
+scoreboard players set @s uhc.menu.main.player 0
+scoreboard players set @s uhc.menu.scenario.restricted_area 0
+
+
+
+
+
+function uhc:pre_game/menu/load/background/
+
 data modify storage uhc:temp scenario.sky_high_timer set from storage uhc:scenario sky_high.timer
 data modify storage uhc:temp scenario.sky_high_height set from storage uhc:scenario sky_high.height
 data modify storage uhc:temp scenario.sky_high_ender_pearl_gift set from storage uhc:scenario sky_high.ender_pearl_gift

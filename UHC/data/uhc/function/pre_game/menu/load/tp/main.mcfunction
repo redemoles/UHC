@@ -25,5 +25,4 @@ execute if score @s uhc.player.lang matches 051407 run item replace entity @s in
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.22 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Retour au centre","color":"#3F9FCF","italic":false}],minecraft:custom_data={Tags:"tp_center"}]
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.22 with minecraft:ender_pearl[minecraft:item_name=[{"text":"Return to center","color":"#3F9FCF","italic":false}],minecraft:custom_data={Tags:"tp_center"}]
 
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+function uhc:translation/menu/load/close

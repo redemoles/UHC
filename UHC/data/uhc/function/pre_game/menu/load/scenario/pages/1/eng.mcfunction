@@ -7,18 +7,6 @@
 # @description		Menu
 #
 
-clear @s
-tag @s remove uhc.menu.main.host
-scoreboard players set @s uhc.menu.scenario.main 1
-scoreboard players set @s uhc.menu.main.player 0
-scoreboard players set @s uhc.menu.scenario.blood_diamond 0
-tag @s remove uhc.menu.scenario.enchanting_setup
-scoreboard players set @s uhc.menu.scenario.restricted_area 0
-
-
-
-function uhc:pre_game/menu/load/background/
-
 execute if score #bats uhc.scenario matches 0 run item replace entity @s inventory.1 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"Bats","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"A player killing a bat has:","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"95% chance of getting a golden apple","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"5% chance of dying","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
 execute if score #bats uhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:bat_spawn_egg[minecraft:item_name=[{"text":"Bats","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"A player killing a bat has:","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"95% chance of getting a golden apple","color":"#7FEFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"5% chance of dying","color":"#FF7F7F","italic":false}]],minecraft:custom_data={Tags:"scenario"}]
 execute if score #best_pve uhc.scenario matches 0 run item replace entity @s inventory.2 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"Best PvE","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Each player who accumulates 10 minutes in the Best PvE list","color":"#FFFFFF","italic":false}],[{"text":"gets an extra heart.","color":"#FFFFFF","italic":false}],[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"A player leaves the Best PvE list by taking damage.","color":"#FF7F7F","italic":false}],[{"text":"• ","color":"#3FE7FF","italic":false},{"text":"A player returns to the Best PvE list by killing another player.","color":"#7FEFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]

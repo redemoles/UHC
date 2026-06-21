@@ -22,4 +22,4 @@ tag @a[tag=uhc.ironman] remove uhc.ironman
 scoreboard players set #player uhc.scenario.ironman 0
 
 scoreboard players add #game_progress uhc.game_progress 1
-function uhc:in_game/endgame
+function uhc:in_game/end_game/main

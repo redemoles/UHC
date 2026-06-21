@@ -7,18 +7,6 @@
 # @description		Menu
 #
 
-clear @s
-tag @s remove uhc.menu.main.host
-scoreboard players set @s uhc.menu.scenario.main 2
-scoreboard players set @s uhc.menu.main.player 0
-scoreboard players set @s uhc.menu.scenario.restricted_area 0
-
-
-
-
-
-function uhc:pre_game/menu/load/background/
-
 execute if score #no_fall uhc.scenario matches 0 run item replace entity @s inventory.1 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"No Fall","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Dégâts de chute désactivés.","color":"#FFFFFF","italic":false}]],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"scenario"}]
 execute if score #no_fall uhc.scenario matches 1 run item replace entity @s inventory.1 with minecraft:diamond_boots[minecraft:item_name=[{"text":"No Fall","color":"#3FE7FF","italic":false}],minecraft:lore=[[{"text":"Dégâts de chute désactivés.","color":"#FFFFFF","italic":false}]],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"scenario"}]
 execute if score #no_fire uhc.scenario matches 0 run item replace entity @s inventory.2 with minecraft:red_stained_glass[minecraft:item_name=[{"text":"No Fire","color":"#FF3F3F","italic":false}],minecraft:lore=[[{"text":"Dégâts de feu désactivés.","color":"#FFFFFF","italic":false}]],minecraft:custom_data={Tags:"scenario"}]

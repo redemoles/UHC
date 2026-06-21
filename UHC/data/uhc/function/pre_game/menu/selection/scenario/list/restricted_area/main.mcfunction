@@ -16,4 +16,4 @@ execute if score #sky_high uhc.scenario matches 1 run function uhc:pre_game/menu
 execute unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"scenario_restricted_area_disable"}] run function uhc:pre_game/menu/selection/scenario/list/restricted_area/disable
 execute if score @s uhc.menu.scenario.main matches 1 unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/pages/1/main
 execute if score @s uhc.menu.scenario.main matches 2 unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/pages/2/main
-function uhc:pre_game/menu/load/scenario/restricted_area/main
+function uhc:pre_game/menu/load/scenario/restricted_area

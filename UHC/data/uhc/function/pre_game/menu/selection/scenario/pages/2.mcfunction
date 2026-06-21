@@ -17,7 +17,7 @@ execute unless items entity @s[tag=uhc.host] inventory.6 *[minecraft:custom_data
 execute unless items entity @s[tag=uhc.host] inventory.7 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/rewarding_longshots
 
 # Ligne 2
-execute unless items entity @s[tag=uhc.host] inventory.10 *[minecraft:custom_data={Tags:"scenario"}] run return run function uhc:pre_game/menu/load/scenario/restricted_area/main
+execute unless items entity @s[tag=uhc.host] inventory.10 *[minecraft:custom_data={Tags:"scenario"}] run return run function uhc:pre_game/menu/load/scenario/restricted_area
 execute unless items entity @s[tag=uhc.host] inventory.11 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/silent_night
 execute unless items entity @s[tag=uhc.host] inventory.12 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/sound_paranoia
 execute unless items entity @s[tag=uhc.host] inventory.13 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selection/scenario/list/team_health

@@ -18,4 +18,4 @@ function uhc:translation/menu/selected/scenario_general with storage uhc:temp sc
 
 execute if score #sky_high uhc.scenario matches 0 run scoreboard players set @s uhc.menu.scenario.restricted_area 1
 execute if score #sky_high uhc.scenario matches 1 run scoreboard players set @s uhc.menu.scenario.restricted_area 2
-function uhc:pre_game/menu/load/scenario/restricted_area/main
+function uhc:pre_game/menu/load/scenario/restricted_area

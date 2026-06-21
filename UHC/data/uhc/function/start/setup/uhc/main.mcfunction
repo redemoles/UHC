@@ -59,8 +59,7 @@ execute if score #shrink_dynamic uhc.data.setup matches 1 run scoreboard players
 execute if score #shrink_dynamic uhc.data.setup matches 2 run scoreboard players set #shrink_dynamic uhc.data.temp 2
 execute if score #shrink_dynamic uhc.data.setup matches 3 run scoreboard players set #shrink_dynamic uhc.data.temp 3
 execute if score #shrink_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_2_time_left uhc.data.temp -1
-execute if score #shrink_dynamic uhc.data.temp matches 1 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
-execute if score #shrink_dynamic uhc.data.temp matches 2 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
+execute if score #shrink_dynamic uhc.data.temp matches 1..2 run scoreboard players set #shrink_3_time_left uhc.data.temp -1
 scoreboard players add #diamond_protection uhc.data.temp 1
 scoreboard players add #diamond_sharpness uhc.data.temp 1
 scoreboard players add #iron_protection uhc.data.temp 1
@@ -169,6 +168,7 @@ scoreboard objectives add uhc.player.kills.inv dummy
 
 scoreboard players set @a[tag=uhc.player] uhc.player.kills.inv 0
 scoreboard players set §p§v§e uhc.player.kills 0
+scoreboard players set @e[type=minecraft:marker] uhc.team.kills 0
 
 scoreboard objectives add uhc.player.damage_dealt.total dummy [{"text":" [Dégâts émis total]*10","color":"#FFFFFF"}]
 scoreboard objectives add uhc.player.damage_dealt.pve dummy [{"text":" [Dégâts émis PvE]*10","color":"#FFFFFF"}]
