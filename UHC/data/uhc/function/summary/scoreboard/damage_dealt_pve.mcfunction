@@ -7,4 +7,4 @@
 # @description		Scoreboard des dégâts émis PvE
 #
 
-scoreboard objectives setdisplay sidebar uhc.player.damage_dealt.pve
+execute if score #game_progress uhc.game_progress matches 2.. run scoreboard objectives setdisplay sidebar uhc.player.damage_dealt.pve

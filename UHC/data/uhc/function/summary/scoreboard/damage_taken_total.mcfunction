@@ -7,4 +7,4 @@
 # @description		Scoreboard des dégâts pris Total
 #
 
-scoreboard objectives setdisplay sidebar uhc.player.damage_taken.total
+execute if score #game_progress uhc.game_progress matches 2.. run scoreboard objectives setdisplay sidebar uhc.player.damage_taken.total

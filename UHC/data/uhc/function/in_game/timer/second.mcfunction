@@ -46,7 +46,7 @@ execute if score #minutes uhc.data.temp matches 0.. if score #nzl uhc.gamemode m
 execute if score #minutes uhc.data.temp matches 0.. if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/second
 
 ## Compte du nombre d'équipes avec un joueur connecté
-execute if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. run function uhc:in_game/team/count/main
+execute if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. in uhc:lobby run function uhc:in_game/team/count/main
 
 ## Alertes sonores
 # Border en cours de réduction

@@ -15,7 +15,7 @@ gamemode spectator @s[tag=uhc.spec]
 execute as @s[tag=uhc.player] run function uhc:player_status/attributes_and_effects/uhc/start
 
 ## Starter
-function uhc:start/item_starter/data
+execute as @s[tag=uhc.player] run function uhc:start/item_starter/data
 
 ## Téléportation
 execute unless score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld as @s[tag=uhc.player] run function uhc:in_game/tp/spawn/default
