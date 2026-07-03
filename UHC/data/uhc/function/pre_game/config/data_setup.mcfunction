@@ -17,10 +17,10 @@ scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #bhc uhc.gamemode 0
 scoreboard players set #bhc bhc.scenario -1
 scoreboard players set #mls uhc.gamemode 0
-scoreboard players set #mls mls.scenario 0
+scoreboard players set #mls mls.scenario -1
 scoreboard players set #nzl uhc.gamemode 0
 scoreboard players set #nzl nzl.scenario -1
-data modify storage uhc:settings gamemode set value [{"text":"Vanilla","color":"#E7E7E7","bold":true,"italic":false}]
+function uhc:translation/menu/selected/gamemode_text_main
 
 # Moles
 scoreboard objectives add mls.data.player dummy

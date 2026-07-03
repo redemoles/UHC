@@ -22,4 +22,4 @@ execute if score #random_team uhc.data.setup matches 1 if score #random_team_pot
 execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 2 run function uhc:pre_game/menu/load/main/player/team/random/2_pots
 execute if score #random_team uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 3 run function uhc:pre_game/menu/load/main/player/team/random/3_pots
 
-function uhc:translation/menu/load/team/page/all_in_game with storage uhc:settings
+function uhc:translation/menu/load/team/page/all_in_game with storage uhc:settings gamemode

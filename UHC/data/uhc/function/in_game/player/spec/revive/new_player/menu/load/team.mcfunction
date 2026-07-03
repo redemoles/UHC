@@ -13,4 +13,4 @@ scoreboard players set @s uhc.menu.language 0
 
 function uhc:pre_game/menu/load/main/player/team/chosen/main
 
-function uhc:translation/menu/load/team/page/all_in_game
+function uhc:translation/menu/load/team/page/all_in_game with storage uhc:settings gamemode

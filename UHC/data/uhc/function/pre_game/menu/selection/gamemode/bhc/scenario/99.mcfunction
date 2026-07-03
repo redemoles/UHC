@@ -8,16 +8,15 @@
 #
 
 scoreboard players set #vanilla uhc.gamemode 0
-
-
-scoreboard players set #mls uhc.gamemode 0
-scoreboard players set #mls mls.scenario 0
-scoreboard players set #nzl uhc.gamemode 0
-
-data modify storage uhc:settings gamemode set value [{"text":"Bingo","color":"#B73FFF","bold":true},{"text":" UHC Run","color":"#FFE73F","bold":true,"italic":false}]
-execute unless score #bhc uhc.gamemode matches 1 run function uhc:translation/menu/selected/gamemode_bhc_enabled
 scoreboard players set #bhc uhc.gamemode 1
 scoreboard players set #bhc bhc.scenario 99
+scoreboard players set #mls uhc.gamemode 0
+scoreboard players set #mls mls.scenario -1
+scoreboard players set #nzl uhc.gamemode 0
+
+execute unless score #text bhc.scenario = #bhc bhc.scenario run function uhc:translation/menu/selected/gamemode_text_main
+execute unless score #text bhc.scenario = #bhc bhc.scenario run function uhc:translation/menu/selected/gamemode_enabled with storage uhc:settings gamemode
+scoreboard players operation #text bhc.scenario = #bhc bhc.scenario
 
 scoreboard players set #stepa_start bhc.data.setup -1
 scoreboard players set #stepa_end bhc.data.setup 20

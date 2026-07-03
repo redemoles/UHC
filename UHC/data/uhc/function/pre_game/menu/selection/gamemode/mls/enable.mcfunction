@@ -10,17 +10,17 @@
 scoreboard players set #vanilla uhc.gamemode 0
 scoreboard players set #bhc uhc.gamemode 0
 scoreboard players set #bhc bhc.scenario -1
-
-execute if score #mls mls.scenario matches 2 run scoreboard players remove #mls mls.scenario 2
-scoreboard players set #nzl uhc.gamemode 0
-scoreboard players set #nzl nzl.scenario -1
-
-data modify storage uhc:settings gamemode set value [{"text":"Moles","color":"#E73F3F","bold":true}]
-execute if score #mls uhc.gamemode matches 0 run tellraw @a [{"text":"Moles","color":"#E73F3F","bold":true},{"text":" activé","color":"#3FE7FF","bold":false}]
 scoreboard players set #mls uhc.gamemode 1
 scoreboard players add #mls mls.scenario 1
+execute if score #mls mls.scenario matches 2 run scoreboard players remove #mls mls.scenario 2
+scoreboard players set #nzl uhc.gamemode 0
+
+execute unless score #text mls.scenario = #mls mls.scenario run function uhc:translation/menu/selected/gamemode_text_main
+execute unless score #text mls.scenario = #mls mls.scenario run function uhc:translation/menu/selected/gamemode_enabled
+execute unless score #text mls.scenario = #mls mls.scenario run scoreboard players add #custom_arrow uhc.data.setup 1
+scoreboard players operation #text mls.scenario = #mls mls.scenario
+
 function uhc:pre_game/menu/load/gamemode/mls/main
-execute if score #mls uhc.gamemode matches 1 run scoreboard players add #custom_arrow uhc.data.setup 1
 
 ## Préparation Config pre-game
 scoreboard players set #pve uhc.data.setup 2

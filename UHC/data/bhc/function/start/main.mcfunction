@@ -57,11 +57,11 @@ scoreboard players add #stepb_start bhc.data.temp 1
 scoreboard players add #stepb_end bhc.data.temp 1
 execute if score #bhc bhc.scenario matches 01 run scoreboard players add #stepb_exhaustion bhc.data.temp 1
 
+## Scoreboard
 scoreboard objectives add bhc.kills.damage_dealt.rank dummy
 scoreboard objectives add bhc.kills.damage_dealt.inv dummy
-scoreboard objectives add bhc.kills.damage_dealt dummy [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" [Dégâts émis]*10","color":"#FFFFFF"}]
+function uhc:translation/bhc/scoreboard_main
 
-## Scoreboard
 team join bhc.sb.01 §r§0§1
 team join bhc.sb.02 §r§0§2
 team join bhc.sb.03 §r§0§3

@@ -1,5 +1,5 @@
 
-#> uhc:translation/scores_death_ironman_remove
+#> uhc:translation/bhc/scores_death_ironman_remove
 #
 # @within			bhc:scenario/99/advancement/new_adv
 #

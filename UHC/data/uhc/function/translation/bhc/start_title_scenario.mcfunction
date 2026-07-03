@@ -1,5 +1,5 @@
 
-#> uhc:start_title_scenario
+#> uhc:translation/bhc/start_title_scenario
 #
 # @within			uhc:start/countdown/text_bhc
 #

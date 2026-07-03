@@ -141,7 +141,7 @@ scoreboard players remove #column-1 {configuration_objective} 1
 scoreboard players set #max_line {max_square_objective} {line}
 scoreboard players set #max_column {max_square_objective} {column}
 scoreboard players set #max {max_square_objective} {line}
-scoreboard players operation #max {max_square_objective} += #max_column {max_square_objective}
+scoreboard players operation #max {max_square_objective} *= #max_column {max_square_objective}
 """)
 
 # Function to generate a bingo and add it to the zip file

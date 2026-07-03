@@ -9,6 +9,6 @@
 
 execute as @p[tag=uhc.player,tag=!uhc.spec] if entity @s[tag=!uhc.temp] run function uhc:in_game/end_game/if_several_winners
 
-function uhc:translation/in_game/endgame_top_text
+function uhc:translation/in_game/end_game_top_text
 execute as @p[tag=uhc.temp] run function uhc:in_game/end_game/several_winners
 tellraw @a [{"text":"\n--------------------------------","color":"#3F3F3F"}]

@@ -18,6 +18,6 @@ execute unless items entity @s inventory.6 *[minecraft:custom_data={Tags:"menu_s
 execute unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"menu_settings"}] run return run function uhc:pre_game/menu/load/settings/menu
 execute unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"menu_language"}] run return run function uhc:pre_game/menu/load/language/menu
 execute unless items entity @s inventory.22 *[minecraft:custom_data={Tags:"menu_start"}] run return run function uhc:pre_game/menu/load/start/menu
-execute unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"rules_summary"}] run function uhc:pre_game/menu/selection/main/host/config with storage uhc:settings
+execute unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"rules_summary"}] run function uhc:pre_game/menu/selection/main/host/config
 execute unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"menu_player"}] run return run function uhc:pre_game/menu/load/main/player/menu
 execute if entity @s run function uhc:pre_game/menu/load/main/host/menu
