@@ -14,3 +14,5 @@ execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~
 
 data modify storage uhc:temp death.tellraw.temp set from storage uhc:temp death.message[0]
 function uhc:in_game/summary/death/text with storage uhc:temp death.tellraw
+
+scoreboard players set #seconds uhc.game_progress -270
