@@ -54,6 +54,6 @@ tag @s remove uhc.player.dead
 ## Téléportation
 execute in minecraft:overworld run function uhc:in_game/tp/spawn/border_size/main
 execute in minecraft:overworld run function uhc:in_game/tp/spawn/default
-execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches -1 in minecraft:overworld run function uhc:in_game/tp/spawn/start_in_the_sky
+execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches -1 run function uhc:start/tp/in_the_sky
 scoreboard players set @s uhc.timer.respawn 32
 execute if score #minutes uhc.data.temp matches -1 run scoreboard players reset @s uhc.timer.respawn

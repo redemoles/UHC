@@ -11,7 +11,7 @@ scoreboard players operation #team uhc.id.team = @s uhc.id.team
 execute unless score @s uhc.player.data.check matches 1 run function uhc:in_game/player/data/main
 
 # Joueur hors du lobby
-execute as @a[predicate=uhc:effect/absorption] run effect clear @s minecraft:absorption
+execute as @s[predicate=uhc:effect/absorption] run effect clear @s minecraft:absorption
 execute unless score @s uhc.player.online matches 1 run function uhc:pre_game/player_and_team/new_player
 execute at @s if entity @s[predicate=uhc:dimension/uhc_lobby,scores={uhc.player.y=..-1}] run function uhc:pre_game/player_and_team/in_void
 

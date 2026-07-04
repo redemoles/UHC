@@ -1,7 +1,7 @@
 
 #> uhc:in_game/team/collision/never
 #
-# @within			uhc:in_game/tp/spawn/start_in_the_sky
+# @within			uhc:start/tp/in_the_sky
 #
 #
 # @description		Vérification de la position des joueurs entre eux

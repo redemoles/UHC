@@ -35,6 +35,7 @@ execute as @a[scores={uhc.timer.absorption=1}] run attribute @s minecraft:max_ab
 scoreboard players remove @a[scores={uhc.timer.absorption=1..}] uhc.timer.absorption 1
 # Démarrage dans le ciel
 execute if score #start_in_sky uhc.data.setup matches 1 if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 positioned 0 179 0 run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:air
+# Collision entre joueurs
 execute if score #minutes uhc.data.temp matches 0 if score #seconds uhc.data.temp matches 30 run function uhc:in_game/team/collision/always
 
 ## Scénarios

@@ -25,17 +25,23 @@ execute as @a run function uhc:pre_game/player_and_team/reset_tags
 ## Joueurs
 function uhc:start/setup/player/before_tp
 
+## Équipes
+function uhc:start/setup/team/main
+function uhc:in_game/team/collision/never
+
 ## Scenarios
 execute if score #enchanting_setup uhc.scenario matches 1 run summon marker 0 100 0 {Tags:["uhc.scenario.enchanting_setup"]}
 execute if score #enchanting_setup uhc.scenario matches 1 as @n[type=minecraft:marker,nbt={Tags:["uhc.scenario.enchanting_setup"]}] run function uhc:start/setup/scenario/enchanting_setup/
 
-## Configuration Worldborder
+## Configuration
+execute in minecraft:overworld run forceload add -192 -192 191 -65
+execute in minecraft:overworld run forceload add -192 -64 191 63
+execute in minecraft:overworld run forceload add -192 64 191 191
+# Worldborder
 function uhc:start/setup/uhc/border
-
-## Équipes
-function uhc:start/setup/team/main
-
-## Génération des rivières
+# Plateforme démarrage dans le ciel
+execute if score #start_in_sky uhc.data.setup matches 1 in minecraft:overworld positioned -5 179 -5 run place template uhc:start/platform_in_the_sky
+# Génération des rivières
 execute if score #river_solid uhc.data.setup matches 0 in minecraft:overworld run function uhc:start/setup/river/vanilla
 execute if score #river_solid uhc.data.setup matches 1 in minecraft:overworld run function uhc:start/setup/river/solid
 
