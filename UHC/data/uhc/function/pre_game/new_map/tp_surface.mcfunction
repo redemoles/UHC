@@ -7,8 +7,7 @@
 # @description		Gamemode des joueurs à leur connexion si aucun lobby n'a été créé
 #
 
-tag @a[tag=uhc.temp] remove uhc.temp
-execute if score #game_progress uhc.game_progress matches 0.. run return fail
-execute in minecraft:overworld positioned 0 100 0 positioned over world_surface run tp @a[tag=uhc.temp] ~ ~40 ~ 0 45
+tag @s remove uhc.temp
+execute unless score #cancel uhc.game.reset matches 1 in minecraft:overworld positioned 0 100 0 positioned over world_surface run tp @s ~ ~40 ~ 0 52.5
 execute in minecraft:overworld run gamerule minecraft:spectators_generate_chunks true
 tag @a add uhc.spec

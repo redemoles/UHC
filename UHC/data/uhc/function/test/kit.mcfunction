@@ -1,7 +1,7 @@
 
-#> uhc:kit
+#> uhc:test/kit
 #
-# @within			uhc:kit
+# @within			
 #
 #
 # @description		Kit de meet-up, commande manuelle

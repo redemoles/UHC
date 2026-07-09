@@ -9,8 +9,8 @@
 
 execute if score #game_progress uhc.game_progress matches 0.. run return fail
 
-execute in minecraft:overworld run tp @s 0 100 0 0 45
-gamemode spectator @s
-tag @s add uhc.temp
+execute if entity @s[tag=uhc.temp] run return run function uhc:pre_game/new_map/tp_surface
 
-schedule function uhc:pre_game/new_map/tp_surface 1t
+execute unless score #cancel uhc.game.reset matches 1 in minecraft:overworld run tp @s 0 100 0 0 52.5
+execute unless score #cancel uhc.game.reset matches 1 run gamemode spectator @s
+tag @s add uhc.temp
