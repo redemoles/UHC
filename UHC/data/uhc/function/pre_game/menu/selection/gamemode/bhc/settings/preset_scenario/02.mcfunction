@@ -1,10 +1,10 @@
 
-#> uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario02
+#> uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario/02
 #
 # @within			uhc:pre_game/menu/load/gamemode_bhc/
 #
 #
-# @description		Activation BHC II - Ère Viking
+# @description		Paramètres prédéfinis pour BHC II - Ère Viking
 #
 
 ## UHC → Préparation Config pre-game
@@ -24,7 +24,7 @@ scoreboard players set #shrink_dynamic uhc.data.setup 2
 scoreboard players set #map_height_timer uhc.data.setup 135
 
 ## Configuration du starter give
-execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
+data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 
 ## Vies
 scoreboard players set #lives uhc.data.setup 3

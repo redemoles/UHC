@@ -12,6 +12,7 @@ execute if score @s uhc.menu.gamemode.bhc matches 11..50 run function uhc:pre_ga
 
 execute if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"bhc_scenario"}] run return run function uhc:pre_game/menu/load/gamemode/bhc/preset_menu
 execute if score #bhc uhc.gamemode matches 1 if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"bhc_settings"}] run return run function uhc:pre_game/menu/load/gamemode/bhc/settings/preset_menu
+execute if score #bhc uhc.gamemode matches 1 if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.6 *[minecraft:custom_data={Tags:"bhc_settings"}] run return run function uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario/main
 execute if score #bhc uhc.gamemode matches 1 if score @s uhc.menu.gamemode.bhc matches 1..11 unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"bhc_display_grid"}] run return run function uhc:pre_game/menu/selection/gamemode/bhc/grids_check/enable
 
 execute if score @s uhc.menu.gamemode.bhc matches 1 unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"bhc_scenario"}] run function uhc:pre_game/menu/selection/gamemode/bhc/scenario/01

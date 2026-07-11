@@ -1,10 +1,10 @@
 
-#> uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario92
+#> uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario/92
 #
 # @within			uhc:pre_game/menu/load/gamemode_bhc/
 #
 #
-# @description		Activation BHC - Chill Mode
+# @description		Paramètres prédéfinis pour BHC - Chill Mode
 #
 
 ## UHC → Préparation Config pre-game
@@ -23,7 +23,7 @@ scoreboard players set #shrink_3_size_end uhc.data.setup 32
 scoreboard players set #shrink_dynamic uhc.data.setup 1
 
 ## Configuration du starter give
-execute if score #bhc uhc.gamemode matches 1 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
+data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"}]
 
 ## Vies
 scoreboard players set #lives uhc.data.setup 3

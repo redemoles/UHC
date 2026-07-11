@@ -251,6 +251,11 @@ if len(blocks) < number_of_advancements_to_generate:
 # Create the folder "generated_advancements" if it doesn't exist
 if not os.path.exists(generation_folder):
 	os.mkdir(generation_folder)
+else:
+	for filename in os.listdir(generation_folder):
+		file_path = os.path.join(generation_folder, filename)
+		if os.path.isfile(file_path):
+			os.remove(file_path)
 
 # Generate the advancements
 for i in range(number_of_advancements_to_generate):
