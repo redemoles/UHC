@@ -23,7 +23,7 @@ template = """{
 			"color": "#FFDF00"
 		},
 		"description": {
-			"text": "Obtenir un(e) ___ITEM_NAME___",
+			"text": "Obtain ___ITEM_NAME___",
 			"color": "#FFFFFF"
 		},
 		"frame": "task",

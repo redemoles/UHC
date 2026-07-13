@@ -8,7 +8,7 @@
 #
 
 # Tick
-execute unless score #minutes uhc.data.temp matches -1 if entity @p[tag=test] run scoreboard players set #tick uhc.data.temp 19
+execute unless score #minutes uhc.data.temp matches -1 if entity @p[tag=test] run function uhc:in_game/player/test
 execute unless score #pause uhc.data.temp matches 1 run scoreboard players add #tick uhc.data.temp 1
 # Chronomètre démarrage
 execute if score #minutes uhc.data.temp matches -1 run function uhc:start/countdown/start

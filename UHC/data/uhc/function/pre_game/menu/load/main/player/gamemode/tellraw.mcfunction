@@ -7,5 +7,5 @@
 # @description		Menu Settings pour les joueurs
 #
 
-function uhc:translation/menu/selected/team_gamemode
+function uhc:translation/menu/selected/gamemode_docs_link with storage uhc:settings gamemode
 function uhc:pre_game/menu/load/main/player/menu
