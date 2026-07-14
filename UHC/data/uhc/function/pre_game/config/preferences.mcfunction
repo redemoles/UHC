@@ -121,6 +121,10 @@ scoreboard players set #tier_2_gold_ingot uhc.scenario.blood_diamond.setup 20
 scoreboard players set #tier_2_diamond uhc.scenario.blood_diamond.setup 40
 scoreboard players set #tier_2_gift uhc.scenario.blood_diamond.setup 20
 
+# Ores Limit
+scoreboard players set #gold_limit uhc.scenario.ores_limit.setup 64
+scoreboard players set #diamond_limit uhc.scenario.ores_limit.setup 18
+
 # Go To Hell
 #> damage_type > 1 = -1 HP every 30 seconds
 #> damage_type > 2 = Progrssive HP loss every 30 seconds with reset

@@ -8,8 +8,7 @@
 #
 
 scoreboard players add @s uhc.scenario.blood_diamond.damage 1
-give @s minecraft:diamond 1
-execute if score #double_ores uhc.scenario matches 1 run give @s minecraft:diamond 1
+function uhc:in_game/player/misc/ore_mined/diamond_main
 
 execute store result storage uhc:scenario blood_diamond.damage int 1 run scoreboard players get @s uhc.scenario.blood_diamond.damage
 function uhc:in_game/scenario/blood_diamond/step_damage_1 with storage uhc:scenario blood_diamond

@@ -285,19 +285,36 @@
           ],
           "conditions": [
             {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:value_check",
-                "value": {
-                  "type": "minecraft:score",
-                  "target": {
-                    "type": "minecraft:fixed",
-                    "name": "#blood_diamond"
-                  },
-                  "score": "uhc.scenario"
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                      "type": "minecraft:score",
+                      "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#blood_diamond"
+                      },
+                      "score": "uhc.scenario"
+                    },
+                    "range": 1
+                  }
                 },
-                "range": 1
-              }
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#diamond_limit"
+                    },
+                    "score": "uhc.scenario"
+                  },
+                  "range": 0
+                }
+              ]
             }
           ]
         }

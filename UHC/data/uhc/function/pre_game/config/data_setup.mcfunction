@@ -61,18 +61,21 @@ scoreboard players set #hastey_boys uhc.scenario 0
 
 scoreboard players set #no_fall uhc.scenario 0
 scoreboard players set #no_fire uhc.scenario 0
+scoreboard players set #ores_limit uhc.scenario 0
 scoreboard players set #perma_day uhc.scenario 0
 scoreboard players set #perma_night uhc.scenario 0
 scoreboard players set #permakill uhc.scenario 0
 scoreboard players set #red_arrows uhc.scenario 0
-scoreboard players set #rewarding_longshots uhc.scenario 0
 
+scoreboard players set #rewarding_longshots uhc.scenario 0
 scoreboard players set #sky_high uhc.scenario 0
 scoreboard players set #silent_night uhc.scenario 0
 scoreboard players set #sound_paranoia uhc.scenario 0
 scoreboard players set #team_health uhc.scenario 0
 
 scoreboard players set #trade_uhc uhc.scenario 0
+scoreboard players set #gold_limit uhc.scenario 0
+scoreboard players set #diamond_limit uhc.scenario 0
 
 scoreboard players set #mystery_scenarios uhc.data.setup 0
 
@@ -110,6 +113,9 @@ execute store result storage uhc:scenario blood_diamond.tier_2_damage int 1 run 
 execute store result storage uhc:scenario blood_diamond.tier_2_gold_ingot int 1 run scoreboard players get #tier_2_gold_ingot uhc.scenario.blood_diamond.setup
 execute store result storage uhc:scenario blood_diamond.tier_2_diamond int 1 run scoreboard players get #tier_2_diamond uhc.scenario.blood_diamond.setup
 execute store result storage uhc:scenario blood_diamond.tier_2_gift int 1 run scoreboard players get #tier_2_gift uhc.scenario.blood_diamond.setup
+
+execute store result storage uhc:scenario ores_limit.gold int 1 run scoreboard players get #gold_limit uhc.scenario.ores_limit.setup
+execute store result storage uhc:scenario ores_limit.diamond int 1 run scoreboard players get #diamond_limit uhc.scenario.ores_limit.setup
 
 execute store result storage uhc:scenario go_to_hell.timer int 1 run scoreboard players get #go_to_hell uhc.data.setup
 

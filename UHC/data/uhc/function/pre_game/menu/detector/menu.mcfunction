@@ -18,6 +18,7 @@ execute if score @s uhc.menu.language matches 1.. run return run function uhc:pr
 execute if score @s uhc.menu.default_language matches 1.. run return run function uhc:pre_game/menu/selection/language/default_lang/main
 execute if score @s uhc.menu.scenario.blood_diamond matches 1.. run return run function uhc:pre_game/menu/selection/scenario/list/blood_diamond/main
 execute if entity @s[tag=uhc.menu.scenario.enchanting_setup] run return run function uhc:pre_game/menu/selection/scenario/list/enchanting_setup/main
+execute if score @s uhc.menu.scenario.ores_limit matches 1.. run return run function uhc:pre_game/menu/selection/scenario/list/ores_limit/main
 execute if score @s uhc.menu.scenario.restricted_area matches 1.. run return run function uhc:pre_game/menu/selection/scenario/list/restricted_area/main
 execute if score @s uhc.menu.scenario.main matches 1 run return run function uhc:pre_game/menu/selection/scenario/pages/1
 execute if score @s uhc.menu.scenario.main matches 2 run return run function uhc:pre_game/menu/selection/scenario/pages/2

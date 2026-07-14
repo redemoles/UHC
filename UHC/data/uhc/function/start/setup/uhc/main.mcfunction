@@ -118,15 +118,13 @@ execute unless score #start_in_sky uhc.data.setup matches 1 run function uhc:in_
 
 ## Scoreboard spéciaux
 # Blood Diamond
-scoreboard objectives add uhc.scenario.blood_diamond.deepslate minecraft.mined:minecraft.deepslate_diamond_ore
-scoreboard objectives add uhc.scenario.blood_diamond.temp minecraft.mined:minecraft.diamond_ore
-
 scoreboard players operation #random_damage_gold_ingot uhc.scenario.blood_diamond.temp = #tier_2_damage uhc.scenario.blood_diamond.setup
 scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp = #tier_2_gold_ingot uhc.scenario.blood_diamond.setup
 scoreboard players operation #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp += #random_damage_gold_ingot uhc.scenario.blood_diamond.temp
 scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp = #tier_2_diamond uhc.scenario.blood_diamond.setup
 scoreboard players operation #random_diamond_gift uhc.scenario.blood_diamond.temp += #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp
 
+# Minage
 scoreboard objectives add uhc.player.mined.temp.coal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add uhc.player.mined.temp.coal_deepslate minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add uhc.player.mined.temp.copper minecraft.mined:minecraft.copper_ore
@@ -152,7 +150,6 @@ scoreboard objectives add uhc.player.mined.gold minecraft.mined:minecraft.gold_o
 scoreboard objectives add uhc.player.mined.lapis minecraft.mined:minecraft.lapis_ore
 scoreboard objectives add uhc.player.mined.redstone minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add uhc.player.mined.diamond minecraft.mined:minecraft.diamond_ore
-
 scoreboard players set @a uhc.player.mined.coal 0
 scoreboard players set @a uhc.player.mined.copper 0
 scoreboard players set @a uhc.player.mined.iron 0
@@ -161,6 +158,7 @@ scoreboard players set @a uhc.player.mined.lapis 0
 scoreboard players set @a uhc.player.mined.redstone 0
 scoreboard players set @a uhc.player.mined.diamond 0
 
+# Kills
 scoreboard objectives add uhc.team.kills dummy "Kills"
 execute if score #bhc uhc.gamemode matches 0 run scoreboard objectives add uhc.player.kills dummy "Kills"
 execute if score #bhc uhc.gamemode matches 1 run scoreboard objectives add uhc.player.kills dummy [{"text":"Kills ","color":"#FFFFFF"},{"text":">","color":"#00C3DF","bold":true},{"text":" Individuel","color":"#FFFFFF"}]
@@ -170,6 +168,7 @@ scoreboard players set @a[tag=uhc.player] uhc.player.kills.inv 0
 scoreboard players set §p§v§e uhc.player.kills 0
 scoreboard players set @e[type=minecraft:marker] uhc.team.kills 0
 
+# Dégâts
 scoreboard objectives add uhc.player.damage_dealt.total dummy [{"text":" [Dégâts émis total]*10","color":"#FFFFFF"}]
 scoreboard objectives add uhc.player.damage_dealt.pve dummy [{"text":" [Dégâts émis PvE]*10","color":"#FFFFFF"}]
 scoreboard objectives add uhc.player.damage_dealt.pvp dummy [{"text":" [Dégâts émis PvP]*10","color":"#FFFFFF"}]
@@ -186,9 +185,10 @@ scoreboard players set @a uhc.player.damage_taken.total 0
 scoreboard players set @a uhc.player.damage_taken.pve 0
 scoreboard players set @a uhc.player.damage_taken.pvp 0
 
+# Temps de jeu
 scoreboard players set @a[tag=uhc.player] uhc.player.timer 0
 
-# Scoreboard trigger
+# Trigger
 scoreboard players enable @a uhc.ironman.list
 scoreboard players enable @a uhc.night_vision
 execute if score #best_pve uhc.scenario matches 1 run scoreboard players enable @a uhc.best_pve.list

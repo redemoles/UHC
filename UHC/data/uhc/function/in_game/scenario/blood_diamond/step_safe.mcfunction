@@ -7,8 +7,7 @@
 # @description		Palier 1 - Diamant assuré
 #
 
-give @s minecraft:diamond 1
-execute if score #double_ores uhc.scenario matches 1 run give @s minecraft:diamond 1
+function uhc:in_game/player/misc/ore_mined/diamond_main
 
 ## Joueur
 title @s[scores={uhc.scenario.blood_diamond.mined=1}] title [{"text":""}]

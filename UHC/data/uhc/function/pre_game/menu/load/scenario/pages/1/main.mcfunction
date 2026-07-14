@@ -13,8 +13,8 @@ scoreboard players set @s uhc.menu.scenario.main 1
 scoreboard players set @s uhc.menu.main.player 0
 scoreboard players set @s uhc.menu.scenario.blood_diamond 0
 tag @s remove uhc.menu.scenario.enchanting_setup
+scoreboard players set @s uhc.menu.scenario.ores_limit 0
 scoreboard players set @s uhc.menu.scenario.restricted_area 0
-
 
 
 function uhc:pre_game/menu/load/background/

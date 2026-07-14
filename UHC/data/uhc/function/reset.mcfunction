@@ -29,13 +29,14 @@ scoreboard objectives remove uhc.scenario.best_pve.reward
 scoreboard objectives remove uhc.scenario.best_pve.tick
 scoreboard objectives remove uhc.scenario.biome_paranoia.team
 scoreboard objectives remove uhc.scenario.blood_diamond.damage
-scoreboard objectives remove uhc.scenario.blood_diamond.deepslate
 scoreboard objectives remove uhc.scenario.blood_diamond.mined
 scoreboard objectives remove uhc.scenario.blood_diamond.temp
 scoreboard objectives remove uhc.scenario.bookception
 scoreboard objectives remove uhc.scenario.cut_clean.random
 scoreboard objectives remove uhc.scenario.go_to_hell.damage
 scoreboard objectives remove uhc.scenario.go_to_hell.tick
+scoreboard objectives remove uhc.scenario.ores_limit.diamond
+scoreboard objectives remove uhc.scenario.ores_limit.gold
 scoreboard objectives remove uhc.scenario.sky_high.damage
 scoreboard objectives remove uhc.scenario.sky_high.tick
 scoreboard objectives remove uhc.scenario.sound_paranoia.number
@@ -107,6 +108,7 @@ scoreboard objectives add uhc.scenario.biome_paranoia.team dummy
 scoreboard objectives add uhc.scenario.blood_cycle dummy
 scoreboard objectives add uhc.scenario.blood_diamond.damage dummy
 scoreboard objectives add uhc.scenario.blood_diamond.mined dummy
+scoreboard objectives add uhc.scenario.blood_diamond.temp dummy
 scoreboard objectives add uhc.scenario.blood_diamond.tier dummy
 scoreboard objectives add uhc.scenario.blood_diamond.setup dummy
 scoreboard objectives add uhc.scenario.bookception dummy
@@ -115,6 +117,9 @@ scoreboard objectives add uhc.scenario.enchanting_setup dummy
 scoreboard objectives add uhc.scenario.go_to_hell.damage dummy
 scoreboard objectives add uhc.scenario.go_to_hell.settings dummy
 scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
+scoreboard objectives add uhc.scenario.ores_limit.diamond dummy
+scoreboard objectives add uhc.scenario.ores_limit.gold dummy
+scoreboard objectives add uhc.scenario.ores_limit.setup dummy
 scoreboard objectives add uhc.scenario.sky_high.damage dummy
 scoreboard objectives add uhc.scenario.sky_high.settings dummy
 scoreboard objectives add uhc.scenario.sky_high.tick dummy
@@ -177,6 +182,7 @@ scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_moles
 scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_supermoles
 scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.scenario.blood_diamond
+scoreboard objectives remove uhc.menu.scenario.ores_limit
 scoreboard objectives remove uhc.menu.scenario.restricted_area
 scoreboard objectives remove uhc.menu.scenario.main
 scoreboard objectives remove uhc.menu.settings.pve
@@ -264,6 +270,7 @@ scoreboard objectives add uhc.menu.gamemode.mls.teams_of_moles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.teams_of_supermoles dummy
 scoreboard objectives add uhc.menu.gamemode.mls.supermoles_per_team dummy
 scoreboard objectives add uhc.menu.scenario.blood_diamond dummy
+scoreboard objectives add uhc.menu.scenario.ores_limit dummy
 scoreboard objectives add uhc.menu.scenario.restricted_area dummy
 scoreboard objectives add uhc.menu.scenario.main dummy
 scoreboard objectives add uhc.menu.settings dummy
@@ -431,4 +438,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26075
+scoreboard players set #update uhc.data.update 26076
