@@ -4,7 +4,7 @@
 # @within			uhc:datapack_update/list
 #
 #
-# @description		Mise à jour du datapack si non installé
+# @description		Mise à jour du datapack à installer
 #
 
 execute if score #update uhc.data.update matches 25505..26009 run function uhc:datapack_update/2026/26_1/0
@@ -35,3 +35,4 @@ execute if score #update uhc.data.update matches 26057..26061 run function uhc:d
 execute if score #update uhc.data.update matches 26062 run function uhc:datapack_update/2026/26_6/3
 execute if score #update uhc.data.update matches 26063..26064 run function uhc:datapack_update/2026/26_7/0
 execute if score #update uhc.data.update matches 26070..26075 run function uhc:datapack_update/2026/26_7/6
+execute if score #update uhc.data.update matches 26076 run function uhc:datapack_update/2026/26_7/7

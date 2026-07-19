@@ -8,6 +8,7 @@
 #
 
 ## FRA - Français / French
+execute if score #bhc uhc.gamemode matches 0 if score @s uhc.player.lang matches 061801 run tellraw @s [{"text":"Bingo","color":"#B73FFF"},{"text":" UHC","color":"#FFE73F"},{"text":"\nLien du doc\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/"}}]
 $execute if score #bhc bhc.scenario matches 00 if score @s uhc.player.lang matches 061801 run tellraw @s [$(fra),{"text":"\nLien du doc\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/edit?tab=t.ek8wbwgqh7q"}}]
 $execute if score #bhc bhc.scenario matches 01 if score @s uhc.player.lang matches 061801 run tellraw @s [$(fra),{"text":"\nLien du doc\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/edit?tab=t.1ug4y23fnwho"}},{"text":"Vidéo d'explication (1:51)\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://www.youtube.com/watch?v=ANp9NwEiD3M"}}]
 $execute if score #bhc bhc.scenario matches 02 if score @s uhc.player.lang matches 061801 run tellraw @s [$(fra),{"text":"\nLien du doc\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/edit?tab=t.beydqi3cuvej"}}]
@@ -23,6 +24,7 @@ $execute if score #bhc bhc.scenario matches 92 if score @s uhc.player.lang match
 $execute if score #bhc bhc.scenario matches 99 if score @s uhc.player.lang matches 061801 run tellraw @s [$(fra),{"text":"\nLien du doc non disponible pour l'instant\n","color":"#FFE73F"}]
 
 ## ENG - English
+execute if score #bhc uhc.gamemode matches 0 if score @s uhc.player.lang matches 051407 run tellraw @s [{"text":"Bingo","color":"#B73FFF"},{"text":" UHC","color":"#FFE73F"},{"text":"\nDoc Link\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/"}}]
 $execute if score #bhc bhc.scenario matches 00 if score @s uhc.player.lang matches 051407 run tellraw @s [$(eng),{"text":"\nDoc Link\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/edit?tab=t.ek8wbwgqh7q"}}]
 $execute if score #bhc bhc.scenario matches 01 if score @s uhc.player.lang matches 051407 run tellraw @s [$(eng),{"text":"\nDoc Link\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/edit?tab=t.wb97tl2tws82"}}]
 $execute if score #bhc bhc.scenario matches 02 if score @s uhc.player.lang matches 051407 run tellraw @s [$(eng),{"text":"\nDoc Link\n","color":"#3F9FFF","underlined":true,"click_event":{"action":"open_url","url":"https://docs.google.com/document/d/1oHn6c2Z9dQJ-mx1B4Q4rkUSGJUbyGpuyGq-ml9WwzOE/edit?tab=t.pbxrzb33hja0"}}]

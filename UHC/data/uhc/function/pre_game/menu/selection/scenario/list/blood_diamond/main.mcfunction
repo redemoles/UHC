@@ -8,7 +8,7 @@
 #
 
 execute if score @s uhc.menu.scenario.blood_diamond matches ..10 unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"scenario_blood_diamond"}] run return run function uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_progressive_mode
-execute if score @s uhc.menu.scenario.blood_diamond matches ..10 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"scenario_blood_diamond"}] run return run function uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_traditional_mode
+execute if score @s uhc.menu.scenario.blood_diamond matches ..10 unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"scenario_blood_diamond"}] run return run function uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_original_mode
 execute unless items entity @s inventory.19 *[minecraft:custom_data={Tags:"scenario_blood_diamond"}] run return run function uhc:pre_game/menu/selection/scenario/list/blood_diamond/disable
 
 execute if score @s uhc.menu.scenario.blood_diamond matches 12.. unless items entity @s inventory.10 *[minecraft:custom_data={Tags:"scenario_blood_diamond_tier_2"}] run scoreboard players set @s uhc.menu.scenario.blood_diamond 13

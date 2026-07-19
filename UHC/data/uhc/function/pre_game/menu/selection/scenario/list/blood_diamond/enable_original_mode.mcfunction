@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_traditional_mode
+#> uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_original_mode
 #
 # @within			uhc:pre_game/menu/selection/scenario/list/
 #
