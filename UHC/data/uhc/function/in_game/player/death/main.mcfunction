@@ -10,7 +10,7 @@
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 ## Résumé des morts
-execute unless score @s uhc.player.death.summary matches 1 if score #bhc bhc.scenario matches 02 in uhc:lobby run function bhc:scenario/02/target/death/main
+execute unless score @s uhc.player.death.summary matches 1 if score #bhc bhc.scenario matches 02 in uhc:lobby run function bhc:in_game/scenario/02/target/death/main
 execute unless score @s uhc.player.death.summary matches 1 run function uhc:in_game/player/death/text_end_game/ with storage uhc:temp hotbar
 scoreboard players set @s uhc.player.death.summary 0
 
@@ -30,7 +30,7 @@ function uhc:in_game/player/death/location/data
 execute if score @s uhc.player.lives matches ..0 in uhc:lobby run function uhc:in_game/player/death/definitive
 
 ## BHC → Attribution des points de survie (seulement si la partie n'est pas terminée)
-execute if score #bhc uhc.gamemode matches 1 unless score #game_progress uhc.game_progress matches 2.. in uhc:lobby run function bhc:scores_calculator/death/update
+execute if score #bhc uhc.gamemode matches 1 unless score #game_progress uhc.game_progress matches 2.. in uhc:lobby run function bhc:in_game/scores_calculator/death/update
 
 ## Paramètres de réapparition
 # Temps de Respawn

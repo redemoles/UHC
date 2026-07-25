@@ -14,7 +14,7 @@ tag @s add uhc.temp
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 # Couleur d'équipe de base
-function uhc:in_game/player/team_join/vanilla
+function uhc:in_game/player/misc/team_join
 
 # Données du joueur
 execute store result storage uhc:temp hp.id int 1 run scoreboard players get @s uhc.id.player
@@ -27,7 +27,7 @@ execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/adva
 # Couleur du joueur
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 run function uhc:in_game/scenario/biome_paranoia/by_colors
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
-execute if score #nzl uhc.gamemode matches 1 run function uhc:in_game/player/team_join/nzl
+execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
+function #plugin:in_game/player/team_join
 
 tag @s remove uhc.temp

@@ -7,6 +7,8 @@
 #
 #
 
+function #plugin:pre_game/menu/selected/gamemodes_main_menu/text
+
 ## FRA - Français / French
 execute if score #bhc bhc.scenario matches 00 run data modify storage uhc:settings gamemode.fra set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC","color":"#FFE73F"},{"text":" - ","color":"#FFFFFF"},{"text":"Classique","color":"#FFE73F"}]}]
 execute if score #bhc bhc.scenario matches 01 run data modify storage uhc:settings gamemode.fra set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC","color":"#FFE73F"},{"text":" - ","color":"#FFFFFF"},{"text":"Ruée Vers l'Or","color":"#FFE73F"}]}]
@@ -21,7 +23,6 @@ execute if score #bhc bhc.scenario matches 51 run data modify storage uhc:settin
 execute if score #bhc bhc.scenario matches 91 run data modify storage uhc:settings gamemode.fra set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC","color":"#FFE73F"},{"text":" - ","color":"#FFFFFF"},{"text":"Chill Mode","color":"#E7E7E7"}]}]
 execute if score #bhc bhc.scenario matches 92 run data modify storage uhc:settings gamemode.fra set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC","color":"#FFE73F"},{"text":" - ","color":"#FFFFFF"},{"text":"Chill Mode","color":"#E7E7E7"}]}]
 execute if score #bhc bhc.scenario matches 99 run data modify storage uhc:settings gamemode.fra set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC Run","color":"#FFE73F"}]}]
-execute if score #mls uhc.gamemode matches 1 run data modify storage uhc:settings gamemode.fra set value [{"text":"Moles","color":"#E73F3F"}]
 execute if score #vanilla uhc.gamemode matches 1 run data modify storage uhc:settings gamemode.fra set value [{"text":"Vanilla","color":"#E7E7E7"}]
 
 ## ENG - English
@@ -38,5 +39,4 @@ execute if score #bhc bhc.scenario matches 51 run data modify storage uhc:settin
 execute if score #bhc bhc.scenario matches 91 run data modify storage uhc:settings gamemode.eng set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC","color":"#FFE73F"},{"text":" - ","color":"#FFFFFF"},{"text":"Chill Mode","color":"#E7E7E7"}]}]
 execute if score #bhc bhc.scenario matches 92 run data modify storage uhc:settings gamemode.eng set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC","color":"#FFE73F"},{"text":" - ","color":"#FFFFFF"},{"text":"Chill Mode","color":"#E7E7E7"}]}]
 execute if score #bhc bhc.scenario matches 99 run data modify storage uhc:settings gamemode.eng set value [{"text":"Bingo","color":"#B73FFF",extra:[{"text":" UHC Run","color":"#FFE73F"}]}]
-execute if score #mls uhc.gamemode matches 1 run data modify storage uhc:settings gamemode.eng set value [{"text":"Moles","color":"#E73F3F"}]
 execute if score #vanilla uhc.gamemode matches 1 run data modify storage uhc:settings gamemode.eng set value [{"text":"Vanilla","color":"#E7E7E7"}]

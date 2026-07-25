@@ -3,9 +3,6 @@
     "requirement": {
       "trigger": "minecraft:using_item",
       "conditions": {
-        "player": {
-          "type": "minecraft:player"
-        },
         "item": {
           "items": "#minecraft:swords",
           "components": {

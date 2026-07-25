@@ -17,7 +17,7 @@ tp @s 20 66 -24 0 0
 
 function uhc:translation/lobby/tc_stop_kick
 
-function uhc:pre_game/player_and_team/reset_effects
+function uhc:player_status/attributes_and_effects/reset
 
 # Chargement de l'inventaire
 scoreboard players set @s uhc.player.online 0

@@ -34,7 +34,7 @@ execute if score #minutes uhc.data.temp matches 0.. run function uhc:translation
 execute if score #game_progress uhc.game_progress matches 2.. run scoreboard players enable @s uhc.info.team
 
 ## Bingo UHC
-execute if score #bhc bhc.scenario matches 02 as @s[tag=uhc.player] in uhc:lobby run function bhc:scenario/02/target/death/cycle_reset
+execute if score #bhc bhc.scenario matches 02 as @s[tag=uhc.player] in uhc:lobby run function bhc:in_game/scenario/02/target/death/cycle_reset
 
 ## Perte de vie
 execute if score #3_lives_left uhc.data.temp matches ..0 if score @s uhc.player.lives matches 4.. as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3

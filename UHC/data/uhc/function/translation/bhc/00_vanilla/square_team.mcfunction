@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/00_vanilla/square_team
 #
-# @within			bhc:scenario/00/advancement/new_adv_1
+# @within			bhc:in_game/scenario/00/advancement/new_adv_1
 #
 #
 # @description		Message pour l'équipe ayant réalisé une case

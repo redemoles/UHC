@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/99_bhc_run/teleportation
 #
-# @within			bhc:timer/countdown/bhc_run
+# @within			bhc:in_game/timer/countdown/bhc_run
 #
 #
 #

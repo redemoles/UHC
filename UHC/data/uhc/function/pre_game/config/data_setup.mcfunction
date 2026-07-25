@@ -16,10 +16,6 @@ scoreboard players set #loaded uhc.data.setup 1
 scoreboard players set #vanilla uhc.gamemode 1
 scoreboard players set #bhc uhc.gamemode 0
 scoreboard players set #bhc bhc.scenario -1
-scoreboard players set #mls uhc.gamemode 0
-scoreboard players set #mls mls.scenario -1
-scoreboard players set #nzl uhc.gamemode 0
-scoreboard players set #nzl nzl.scenario -1
 function uhc:translation/menu/selected/gamemode_text_main
 
 # Moles

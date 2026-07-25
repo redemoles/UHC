@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/00_vanilla/bingo_b_start
 #
-# @within			bhc:scenario/00/bingo_stepb/start
+# @within			bhc:in_game/scenario/00/bingo_stepb/start
 #
 #
 #

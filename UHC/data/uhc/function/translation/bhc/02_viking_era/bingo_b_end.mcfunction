@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/02_viking_era/bingo_b_end
 #
-# @within			bhc:scenario/02/bingo_stepb/end
+# @within			bhc:in_game/scenario/02/bingo_stepb/end
 #
 #
 #

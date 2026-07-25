@@ -43,14 +43,7 @@ scoreboard players set @s uhc.player.damage_taken.pve 0
 scoreboard players set @s uhc.player.damage_taken.pvp 0
 
 ## Réinitialisation tags
-# Divers
-tag @s remove uhc.fire_flame
 # Lobby
-function uhc:pre_game/player_and_team/reset_tags
-# Scénarios
-tag @s remove uhc.scenario.best_pve
-# Mode de jeu
-function mls:start/reset_tags
-function nzl:start/reset_tags
+function uhc:player_status/tags/reset
 
 function uhc:in_game/player/spec/main

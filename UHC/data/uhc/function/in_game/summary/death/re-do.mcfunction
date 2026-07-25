@@ -8,4 +8,4 @@
 #
 
 data modify storage uhc:temp death.tellraw.temp set from storage uhc:temp death.message[0]
-function uhc:in_game/summary/death/text with storage uhc:temp death.tellraw
+function uhc:in_game/summary/death/text

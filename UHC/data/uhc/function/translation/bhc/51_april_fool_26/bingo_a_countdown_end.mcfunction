@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/51_april_fool_26/bingo_a_countdown_end
 #
-# @within			bhc:timer/cooldown/stepa_51
+# @within			bhc:in_game/timer/cooldown/stepa_51
 #
 #
 #

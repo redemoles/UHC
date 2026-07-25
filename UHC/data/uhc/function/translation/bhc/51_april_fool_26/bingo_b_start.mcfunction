@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/51_april_fool_26/bingo_b_start
 #
-# @within			bhc:scenario/51/bingo_stepb/start
+# @within			bhc:in_game/scenario/51/bingo_stepb/start
 #
 #
 #

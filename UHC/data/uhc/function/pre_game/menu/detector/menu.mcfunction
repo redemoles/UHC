@@ -10,9 +10,9 @@
 execute unless score #language uhc.player.lang matches 1.. if entity @s[tag=uhc.host] run return run function uhc:pre_game/menu/selection/language/default_lang/main
 execute if score @s uhc.menu.main.player matches 1.. run return run function uhc:pre_game/menu/selection/main/player/main
 execute if entity @s[tag=uhc.menu.main.host] run return run function uhc:pre_game/menu/selection/main/host/main
-execute if entity @s[tag=uhc.menu.gamemode] run return run function uhc:pre_game/menu/selection/gamemode/main
+execute if score @s uhc.menu.gamemode.main matches 1 run return run function uhc:pre_game/menu/selection/gamemode/main
 execute if score @s uhc.menu.gamemode.bhc matches 1.. run return run function uhc:pre_game/menu/selection/gamemode/bhc/main
-execute if score @s uhc.menu.gamemode.mls matches 1.. run return run function uhc:pre_game/menu/selection/gamemode/mls/main
+execute if score @s uhc.menu.gamemode.main matches 2.. run return run function #plugin:pre_game/menu/selected/this_gamemode_menu/main
 execute if entity @s[tag=uhc.menu.lobby] run return run function uhc:pre_game/menu/selection/lobby/main
 execute if score @s uhc.menu.language matches 1.. run return run function uhc:pre_game/menu/selection/language/main
 execute if score @s uhc.menu.default_language matches 1.. run return run function uhc:pre_game/menu/selection/language/default_lang/main

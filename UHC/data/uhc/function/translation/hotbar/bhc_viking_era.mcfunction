@@ -1,7 +1,7 @@
 
 #> uhc:translation/hotbar/bhc_viking_era
 #
-# @within			bhc:timer/hotbar/
+# @within			bhc:in_game/timer/hotbar/
 #
 #
 # @description		Affichage Hotbar Ère Viking

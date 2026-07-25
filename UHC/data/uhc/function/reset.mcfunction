@@ -151,7 +151,6 @@ scoreboard objectives add uhc.scenario.team_health.team dummy [{"text":"❤","co
 scoreboard objectives add uhc.scenario.ironman dummy
 scoreboard objectives add uhc.player.ironman.list dummy
 scoreboard objectives add bhc.scenario dummy
-scoreboard objectives add nzl.scenario dummy
 
 scoreboard objectives add uhc.ironman.list trigger
 scoreboard objectives add uhc.night_vision trigger
@@ -174,13 +173,8 @@ scoreboard objectives remove uhc.data.temp
 scoreboard objectives remove uhc.data.temp.inv
 scoreboard objectives remove uhc.menu.language
 scoreboard objectives remove uhc.menu.main.player
+scoreboard objectives remove uhc.menu.gamemode.main
 scoreboard objectives remove uhc.menu.gamemode.bhc
-scoreboard objectives remove uhc.menu.gamemode.mls
-scoreboard objectives remove uhc.menu.gamemode.mls.moles_per_team
-scoreboard objectives remove uhc.menu.gamemode.mls.moles_per_game
-scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_moles
-scoreboard objectives remove uhc.menu.gamemode.mls.teams_of_supermoles
-scoreboard objectives remove uhc.menu.gamemode.mls.supermoles_per_team
 scoreboard objectives remove uhc.menu.scenario.blood_diamond
 scoreboard objectives remove uhc.menu.scenario.ores_limit
 scoreboard objectives remove uhc.menu.scenario.restricted_area
@@ -262,13 +256,8 @@ scoreboard objectives add uhc.data.numbers dummy
 scoreboard objectives add uhc.menu.default_language dummy
 scoreboard objectives add uhc.menu.language dummy
 scoreboard objectives add uhc.menu.main.player dummy
+scoreboard objectives add uhc.menu.gamemode.main dummy
 scoreboard objectives add uhc.menu.gamemode.bhc dummy
-scoreboard objectives add uhc.menu.gamemode.mls dummy
-scoreboard objectives add uhc.menu.gamemode.mls.moles_per_team dummy
-scoreboard objectives add uhc.menu.gamemode.mls.moles_per_game dummy
-scoreboard objectives add uhc.menu.gamemode.mls.teams_of_moles dummy
-scoreboard objectives add uhc.menu.gamemode.mls.teams_of_supermoles dummy
-scoreboard objectives add uhc.menu.gamemode.mls.supermoles_per_team dummy
 scoreboard objectives add uhc.menu.scenario.blood_diamond dummy
 scoreboard objectives add uhc.menu.scenario.ores_limit dummy
 scoreboard objectives add uhc.menu.scenario.restricted_area dummy
@@ -361,7 +350,6 @@ execute in minecraft:the_end run function uhc:all_dimension_commands/reset
 execute in uhc:lobby run function uhc:all_dimension_commands/reset
 execute in uhc:lobby run gamerule minecraft:spawn_mobs false
 execute in uhc:lobby run gamerule minecraft:spread_vines false
-gamerule minecraft:max_command_sequence_length 262144
 weather clear 999999
 
 ## Load
@@ -371,8 +359,7 @@ scoreboard objectives add pregen.world dummy
 ## Configuration de la partie, réinitialisation des modes de jeu
 function uhc:pre_game/config/data_setup
 function bhc:reset
-function mls:reset
-function nzl:reset/sb
+function #plugin:reset
 
 # Team Health
 function uhc:in_game/player/misc/score_display/below_name
@@ -438,4 +425,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26077
+scoreboard players set #update uhc.data.update 26078

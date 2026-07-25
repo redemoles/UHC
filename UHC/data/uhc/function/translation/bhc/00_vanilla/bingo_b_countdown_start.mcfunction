@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/00_vanilla/bingo_b_countdown_start
 #
-# @within			bhc:timer/cooldown/stepb_00
+# @within			bhc:in_game/timer/cooldown/stepb_00
 #
 #
 #

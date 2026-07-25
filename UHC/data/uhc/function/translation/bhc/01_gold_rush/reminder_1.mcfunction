@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/01_gold_rush/reminder_1
 #
-# @within			bhc:scenario/01/timer/reminder
+# @within			bhc:in_game/scenario/01/timer/reminder
 #
 #
 #

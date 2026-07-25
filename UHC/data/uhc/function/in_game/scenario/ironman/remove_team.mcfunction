@@ -16,4 +16,4 @@ scoreboard players set @s uhc.scenario.ironman -1
 scoreboard players remove #team uhc.scenario.ironman 1
 function uhc:translation/in_game/scenario/ironman_remove_team
 
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/death/ironman/remove
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/death/ironman/remove

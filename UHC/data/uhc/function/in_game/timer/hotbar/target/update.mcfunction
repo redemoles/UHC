@@ -16,7 +16,7 @@ execute if score #tracker_allies uhc.data.setup matches 1 if entity @p[tag=uhc.p
 
 # Bingo UHC
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
-execute if score #bhc bhc.scenario matches 02 if score #stepb_start bhc.data.temp matches ..0 in uhc:lobby run function bhc:scenario/02/target/hotbar/
+execute if score #bhc bhc.scenario matches 02 if score #stepb_start bhc.data.temp matches ..0 in uhc:lobby run function bhc:in_game/scenario/02/target/hotbar/
 
 # Hotbar
 function uhc:in_game/timer/hotbar/target/hotbar with storage uhc:temp target

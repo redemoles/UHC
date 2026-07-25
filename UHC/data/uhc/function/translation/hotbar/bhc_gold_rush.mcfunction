@@ -1,7 +1,7 @@
 
 #> uhc:translation/hotbar/bhc_gold_rush
 #
-# @within			bhc:timer/hotbar/
+# @within			bhc:in_game/timer/hotbar/
 #
 #
 # @description		Affichage Hotbar Ruée Vers l'Or

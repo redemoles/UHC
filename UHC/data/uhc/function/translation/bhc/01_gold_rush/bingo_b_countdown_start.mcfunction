@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/01_gold_rush/bingo_b_countdown_start
 #
-# @within			bhc:timer/cooldown/stepb_01
+# @within			bhc:in_game/timer/cooldown/stepb_01
 #
 #
 #

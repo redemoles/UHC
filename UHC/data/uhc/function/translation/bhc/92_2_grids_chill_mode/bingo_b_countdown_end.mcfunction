@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/92_2_grids_chill_mode/bingo_b_countdown_end
 #
-# @within			bhc:timer/cooldown/stepb_92
+# @within			bhc:in_game/timer/cooldown/stepb_92
 #
 #
 #

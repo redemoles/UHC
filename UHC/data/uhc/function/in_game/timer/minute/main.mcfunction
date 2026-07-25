@@ -29,9 +29,8 @@ execute if score #shrink_1_timer_end uhc.data.temp matches 0 in minecraft:the_ne
 execute if score #shrink_1_timer_end uhc.data.temp matches 0 in minecraft:the_end run gamerule minecraft:spawn_monsters false
 
 ## Minuteur de modes de jeu
-execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/minute
-execute if score #nzl uhc.gamemode matches 1 run function nzl:timer/minute
-execute if score #switch uhc.gamemode matches 1 run function switch:timer/minute
+execute if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:in_game/timer/minute
+function #plugin:in_game/timer/minute
 
 ## Scénarios
 execute if score #blood_cycle uhc.scenario matches 1 run function uhc:in_game/scenario/blood_cycle/cooldown

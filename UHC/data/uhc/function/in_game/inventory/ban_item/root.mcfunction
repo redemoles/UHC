@@ -12,7 +12,7 @@ execute unless score #tick_start uhc.data.temp matches 0.. run return run advanc
 
 ## Modes de jeu
 # Nuzlocke UHC - Items manquants
-execute if score #nzl uhc.gamemode matches 1 at @s run function nzl:inventory/missing
+function #plugin:in_game/inventory/check
 
 ## Scenarios
 # Enchanting Setup

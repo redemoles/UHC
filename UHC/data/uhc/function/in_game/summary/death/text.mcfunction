@@ -7,7 +7,8 @@
 # @description		Résumé des morts
 #
 
-$tellraw @a $(temp)
+function uhc:translation/in_game/summary_death with storage uhc:temp death.tellraw
+scoreboard players remove #summary_count uhc.data.temp 1
 
 data remove storage uhc:temp death.message[0]
 execute if data storage uhc:temp death.message[0] run schedule function uhc:in_game/summary/death/re-do 10t

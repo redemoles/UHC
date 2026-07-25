@@ -13,7 +13,7 @@ execute unless entity @p[tag=uhc.spec_info.pvp] run return fail
 
 
 # Couleur d'équipe de base
-function uhc:in_game/player/team_join/vanilla
+function uhc:in_game/player/misc/team_join
 
 # Données du joueur
 function uhc:in_game/player/misc/health/default
@@ -26,13 +26,13 @@ tag @s remove uhc.temp.attacker
 # Couleur du joueur
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 run function uhc:in_game/scenario/biome_paranoia/by_colors
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
-execute if score #nzl uhc.gamemode matches 1 run function uhc:in_game/player/team_join/nzl
+execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
+function #plugin:in_game/player/team_join
 
 # Couleur du joueur ciblé
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 as @p[tag=uhc.temp] run function uhc:in_game/scenario/biome_paranoia/by_colors
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 as @p[tag=uhc.temp] run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data.setup matches 1 as @p[tag=uhc.temp] run team join 091 @s
-execute if score #nzl uhc.gamemode matches 1 as @p[tag=uhc.temp] run function uhc:in_game/player/team_join/nzl
+execute if score #anonyme_team uhc.data.setup matches 1 as @p[tag=uhc.temp] run team join 091 @s
+execute as @p[tag=uhc.temp] run function #plugin:in_game/player/team_join
 
 tag @p[tag=uhc.temp] remove uhc.temp

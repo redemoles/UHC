@@ -11,7 +11,7 @@ execute store result storage uhc:temp text.team int 1 run scoreboard players get
 
 # Récupération des scores
 data modify storage uhc:temp text.sb set value "#temp"
-function bhc:timer/scoreboard/marker_score with storage uhc:temp text
+function bhc:in_game/timer/scoreboard/marker_score with storage uhc:temp text
 scoreboard players operation #temp bhc.stepa.rank.number = @s bhc.stepa.rank.number
 scoreboard players operation #temp bhc.stepb.rank.number = @s bhc.stepa.rank.number
 scoreboard players operation #temp bhc.kills.rank.number = @s bhc.kills.rank.number

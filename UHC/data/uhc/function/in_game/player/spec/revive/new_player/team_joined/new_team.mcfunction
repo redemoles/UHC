@@ -22,9 +22,9 @@ execute if score #minutes uhc.data.temp matches ..14 run scoreboard players add 
 # Bingo UHC
 execute if score #bhc uhc.gamemode matches 1 run scoreboard players add #team bhc.data.temp 1
 execute if score #bhc uhc.gamemode matches 1 run function bhc:start/team_config
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/stepa/rank
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/stepb/rank
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/bingos/rank
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/kills/scores
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/death/update
-execute if score #bhc uhc.gamemode matches 1 run function bhc:scores_calculator/total/rank
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/stepa/rank
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/stepb/rank
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/bingos/rank
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/kills/scores
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/death/update
+execute if score #bhc uhc.gamemode matches 1 run function bhc:in_game/scores_calculator/total/rank

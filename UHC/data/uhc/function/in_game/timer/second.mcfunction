@@ -43,8 +43,8 @@ execute if score #silent_night uhc.scenario matches 1 run function uhc:in_game/s
 execute if score #sound_paranoia uhc.scenario matches 1 as @a[tag=uhc.player] at @s run function uhc:in_game/scenario/sound_paranoia/cooldown
 
 ## Modes de jeu
-execute if score #minutes uhc.data.temp matches 0.. if score #nzl uhc.gamemode matches 1 run function nzl:timer/second
-execute if score #minutes uhc.data.temp matches 0.. if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:timer/second
+execute if score #minutes uhc.data.temp matches 0.. run function #plugin:in_game/timer/second
+execute if score #minutes uhc.data.temp matches 0.. if score #bhc uhc.gamemode matches 1 in uhc:lobby run function bhc:in_game/timer/second
 
 ## Compte du nombre d'équipes avec un joueur connecté
 execute if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. in uhc:lobby run function uhc:in_game/team/count/main

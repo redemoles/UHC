@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/99_bhc_run/bingo_completed
 #
-# @within			bhc:scenario/99/advancement/new_adv
+# @within			bhc:in_game/scenario/99/advancement/new_adv
 #
 #
 # @description		Annonce dans le chat de la réalisation d'un Bingo

@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/01_gold_rush/bingo_b_exhaustion_square
 #
-# @within			bhc:scenario/01/bingo_stepb/exhaustion_1
+# @within			bhc:in_game/scenario/01/bingo_stepb/exhaustion_1
 #
 #
 #

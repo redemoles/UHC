@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/01_gold_rush/bingo_b_end
 #
-# @within			bhc:scenario/01/bingo_stepb/end
+# @within			bhc:in_game/scenario/01/bingo_stepb/end
 #
 #
 #

@@ -16,7 +16,7 @@ data modify storage uhc:temp Item_ironman[0].components merge value {}
 execute if data storage uhc:temp Item_ironman[0] run function uhc:in_game/scenario/ironman/item with storage uhc:temp Item_ironman[0]
 
 # Bingo UHC
-execute if score #bhc uhc.gamemode matches 1 in uhc:lobby as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.scenario.ironman=1..}] run function bhc:scores_calculator/death/ironman/remove_1
+execute if score #bhc uhc.gamemode matches 1 in uhc:lobby as @e[type=minecraft:marker,tag=UHC,distance=0..,scores={uhc.scenario.ironman=1..}] run function bhc:in_game/scores_calculator/death/ironman/remove_1
 
 # Anti-boucle
 scoreboard players set #winner_rewarded uhc.scenario.ironman 1

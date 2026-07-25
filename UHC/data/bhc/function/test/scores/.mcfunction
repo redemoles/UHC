@@ -22,4 +22,4 @@ function bhc:test/scores/advancement
 scoreboard players operation @s uhc.id.team = #team_original uhc.id.team
 
 ## Affichage fin d'étape
-function bhc:scenario/01/bingo_stepa/end
+function bhc:in_game/scenario/01/bingo_stepa/end

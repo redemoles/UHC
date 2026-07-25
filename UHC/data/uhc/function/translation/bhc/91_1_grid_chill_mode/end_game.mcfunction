@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/91_1_grid_chill_mode/end_game
 #
-# @within			bhc:scores_calculator/endgame/message_text
+# @within			bhc:in_game/scores_calculator/endgame/message_text
 #
 #
 #

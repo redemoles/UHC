@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/91_1_grid_chill_mode/ironman
 #
-# @within			bhc:scenario/91/bingo_stepa/end
+# @within			bhc:in_game/scenario/91/bingo_stepa/end
 #
 #
 #

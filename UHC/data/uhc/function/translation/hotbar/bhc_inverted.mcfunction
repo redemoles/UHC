@@ -1,7 +1,7 @@
 
 #> uhc:translation/hotbar/bhc_inverted
 #
-# @within			bhc:timer/hotbar/
+# @within			bhc:in_game/timer/hotbar/
 #
 #
 # @description		Affichage Hotbar inversé

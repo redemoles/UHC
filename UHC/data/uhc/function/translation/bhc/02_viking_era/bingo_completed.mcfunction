@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/02_viking_era/bingo_completed
 #
-# @within			bhc:scenario/01/advancement/new_adv_1
+# @within			bhc:in_game/scenario/01/advancement/new_adv_1
 #
 #
 # @description		Annonce dans le chat de la réalisation d'un Bingo

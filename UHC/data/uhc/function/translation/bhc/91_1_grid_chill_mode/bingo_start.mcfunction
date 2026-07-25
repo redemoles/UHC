@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/91_1_grid_chill_mode/bingo_start
 #
-# @within			bhc:scenario/91/bingo_stepa/start
+# @within			bhc:in_game/scenario/91/bingo_stepa/start
 #
 #
 #

@@ -6,11 +6,11 @@
           "damage": {
             "blocked": false,
             "source_entity": {
-              "type": "#minecraft:arrows"
+              "entity_type": "#minecraft:arrows"
             }
           },
           "entity": {
-            "type": "minecraft:player",
+            "entity_type": "minecraft:player",
             "distance": {
               "absolute": {
                 "min": 30,

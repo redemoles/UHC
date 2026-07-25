@@ -36,8 +36,8 @@ execute unless score @s uhc.player.lang matches 1.. run scoreboard players set @
 scoreboard players set @s uhc.id.random_team 0
 
 # Réinitialisation des effets, tags et triggers
-function uhc:pre_game/player_and_team/reset_effects
-function uhc:pre_game/player_and_team/reset_tags
+function uhc:player_status/attributes_and_effects/reset
+function uhc:player_status/tags/reset
 scoreboard players reset @s uhc.id.spawn_check
 scoreboard players reset @s uhc.info.me
 scoreboard players reset @s uhc.info.team
@@ -47,10 +47,6 @@ scoreboard players reset @s uhc.info.team.temp
 execute as @s[tag=uhc.host] run function uhc:pre_game/menu/reset/host
 execute as @s[tag=!uhc.host] run function uhc:pre_game/menu/reset/player
 scoreboard players set @s uhc.player.online 1
-
-## Réinitialisation tags de tous les scénarios
-# Best PvE
-tag @s remove uhc.scenario.best_pve
 
 advancement revoke @s everything
 experience set @s 0 levels

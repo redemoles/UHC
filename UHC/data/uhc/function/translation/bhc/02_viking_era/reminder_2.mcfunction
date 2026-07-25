@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/02_viking_era/reminder_2
 #
-# @within			bhc:scenario/02/reminder
+# @within			bhc:in_game/scenario/02/reminder
 #
 #
 #

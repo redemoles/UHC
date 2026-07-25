@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/51_april_fool_26/column
 #
-# @within			bhc:scenario/51/advancement/new_adv
+# @within			bhc:in_game/scenario/51/advancement/new_adv
 #
 #
 # @description		Annonce dans le chat de la réalisation d'une colonne

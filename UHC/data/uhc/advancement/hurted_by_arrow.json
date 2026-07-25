@@ -12,12 +12,12 @@
                     {
                         "direct_entity": 
                         {
-                            "type": "#minecraft:arrows"
+                            "entity_type": "#minecraft:arrows"
                         }
                     },
                     "source_entity": 
                     {
-                        "type": "minecraft:player"
+                        "entity_type": "minecraft:player"
                     }
                 }
             }

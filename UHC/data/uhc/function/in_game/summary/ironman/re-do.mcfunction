@@ -8,4 +8,4 @@
 #
 
 data modify storage uhc:temp ironman.tellraw.temp set from storage uhc:temp ironman.message[0]
-function uhc:in_game/summary/ironman/text with storage uhc:temp ironman.tellraw
+function uhc:in_game/summary/ironman/text

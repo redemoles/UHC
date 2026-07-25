@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/99_bhc_run/bingo_start
 #
-# @within			bhc:scenario/99/bingo_stepa/start
+# @within			bhc:in_game/scenario/99/bingo_stepa/start
 #
 #
 #

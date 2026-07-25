@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/99_bhc_run/end_game
 #
-# @within			bhc:scores_calculator/endgame/message_text
+# @within			bhc:in_game/scores_calculator/endgame/message_text
 #
 #
 #

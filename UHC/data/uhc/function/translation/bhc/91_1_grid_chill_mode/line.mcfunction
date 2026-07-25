@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/91_1_grid_chill_mode/line
 #
-# @within			bhc:scenario/91/advancement/new_adv
+# @within			bhc:in_game/scenario/91/advancement/new_adv
 #
 #
 # @description		Annonce dans le chat de la réalisation d'une ligne

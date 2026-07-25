@@ -14,4 +14,4 @@ scoreboard players operation @p[tag=uhc.temp.attacked] uhc.player.damage_taken.p
 scoreboard players operation @p[tag=uhc.temp.attacked] uhc.player.damage_taken.pvp += #temp uhc.player.damage_taken.temp
 
 # Bingo UHC
-execute if score #bhc uhc.gamemode matches 1 if entity @p[tag=uhc.temp.attacked,predicate=!uhc:id/team] as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function bhc:scores_calculator/kills/damage/attacker_team
+execute if score #bhc uhc.gamemode matches 1 if entity @p[tag=uhc.temp.attacked,predicate=!uhc:id/team] as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function bhc:in_game/scores_calculator/kills/damage/attacker_team

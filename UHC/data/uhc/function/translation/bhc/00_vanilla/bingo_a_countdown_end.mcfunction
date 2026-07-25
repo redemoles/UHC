@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/00_vanilla/bingo_a_countdown_end
 #
-# @within			bhc:scenario/00/bingo_stepa/end
+# @within			bhc:in_game/scenario/00/bingo_stepa/end
 #
 #
 #

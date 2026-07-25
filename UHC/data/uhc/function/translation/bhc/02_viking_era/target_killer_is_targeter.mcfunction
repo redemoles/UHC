@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/02_viking_era/target_killer_is_targeter
 #
-# @within			bhc:scenario/02/target/death/killer/is_targeter
+# @within			bhc:in_game/scenario/02/target/death/killer/is_targeter
 #
 #
 # @description		Annonce dans le chat de la réalisation d'une ligne

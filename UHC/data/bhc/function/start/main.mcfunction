@@ -8,13 +8,13 @@
 #
 
 ## Configuration de scénario
-execute if score #bhc bhc.scenario matches 00 run function bhc:scenario/00/timer/settings
-execute if score #bhc bhc.scenario matches 01 run function bhc:scenario/01/timer/settings
-execute if score #bhc bhc.scenario matches 02 run function bhc:scenario/02/timer/settings
-execute if score #bhc bhc.scenario matches 51 run function bhc:scenario/51/timer/settings
-execute if score #bhc bhc.scenario matches 91 run function bhc:scenario/91/timer/settings
-execute if score #bhc bhc.scenario matches 92 run function bhc:scenario/92/timer/settings
-execute if score #bhc bhc.scenario matches 99 run function bhc:scenario/99/timer/settings
+execute if score #bhc bhc.scenario matches 00 run function bhc:in_game/scenario/00/timer/settings
+execute if score #bhc bhc.scenario matches 01 run function bhc:in_game/scenario/01/timer/settings
+execute if score #bhc bhc.scenario matches 02 run function bhc:in_game/scenario/02/timer/settings
+execute if score #bhc bhc.scenario matches 51 run function bhc:in_game/scenario/51/timer/settings
+execute if score #bhc bhc.scenario matches 91 run function bhc:in_game/scenario/91/timer/settings
+execute if score #bhc bhc.scenario matches 92 run function bhc:in_game/scenario/92/timer/settings
+execute if score #bhc bhc.scenario matches 99 run function bhc:in_game/scenario/99/timer/settings
 scoreboard objectives setdisplay sidebar
 
 scoreboard players operation #stepa_start bhc.data.temp = #stepa_start bhc.data.setup
@@ -38,12 +38,12 @@ execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:start
 
 scoreboard players set #team uhc.id.team 0
 scoreboard players set #sb bhc.data.temp 2
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/stepa/rank
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/stepb/rank
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/bingos/rank
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/kills/scores
-function bhc:scores_calculator/death/update
-execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:scores_calculator/total/rank
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/stepa/rank
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/stepb/rank
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/bingos/rank
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/kills/scores
+function bhc:in_game/scores_calculator/death/update
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/total/rank
 
 ## Corrections des timers lié au démarrage
 execute if score #stepa_start bhc.data.setup matches -1 run scoreboard players add #stepa_start bhc.data.temp 1

@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/scores_death_ironman_remove
 #
-# @within			bhc:scenario/99/advancement/new_adv
+# @within			bhc:in_game/scenario/99/advancement/new_adv
 #
 #
 # @description		Annonce dans le chat de la réalisation d'un Bingo

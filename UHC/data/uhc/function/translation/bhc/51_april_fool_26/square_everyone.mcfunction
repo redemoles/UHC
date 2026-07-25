@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/51_april_fool_26/square_everyone
 #
-# @within			bhc:scenario/51/advancement/new_adv_1
+# @within			bhc:in_game/scenario/51/advancement/new_adv_1
 #
 #
 # @description		Executed when the player completes the advancement

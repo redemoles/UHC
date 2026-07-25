@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/02_viking_era/target_randomizer
 #
-# @within			bhc:scenario/02/target/randomizer/tellraw
+# @within			bhc:in_game/scenario/02/target/randomizer/tellraw
 #
 #
 # @description		Annonce dans le chat de la réalisation d'une ligne

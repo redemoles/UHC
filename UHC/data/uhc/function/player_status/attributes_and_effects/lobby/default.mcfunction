@@ -2,7 +2,7 @@
 #> uhc:player_status/attributes_and_effects/lobby/default
 #
 # @within			lobby:mini_games/tc/waiting/when_left
-# @within			uhc:pre_game/player_and_team/reset_effects
+# @within			uhc:player_status/attributes_and_effects/reset
 # @within			uhc:player_status/attributes_and_effects/lobby/mini_games/tc/launching_game/start
 # @description		Donne les effets / gamemode aux specs
 #

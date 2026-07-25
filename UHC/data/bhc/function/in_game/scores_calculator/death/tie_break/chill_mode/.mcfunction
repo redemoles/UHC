@@ -1,0 +1,11 @@
+
+#> bhc:in_game/scores_calculator/death/tie_break/chill_mode/
+#
+# @within			bhc:in_game/scores_calculator/death/tie_break/score
+#
+#
+# @description		Rang d'équipe en survie avec départage sur les dégâts PvE émis  
+#
+
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/death/tie_break/chill_mode/score
+execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/death/tie_break/chill_mode/rank

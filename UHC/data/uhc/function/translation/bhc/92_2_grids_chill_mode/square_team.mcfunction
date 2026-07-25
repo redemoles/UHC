@@ -1,7 +1,7 @@
 
 #> uhc:translation/bhc/92_2_grids_chill_mode/square_team
 #
-# @within			bhc:scenario/92/advancement/new_adv_1
+# @within			bhc:in_game/scenario/92/advancement/new_adv_1
 #
 #
 # @description		Message pour l'équipe ayant réalisé une case

@@ -20,8 +20,8 @@ execute as @a[tag=mgs.backroom] run function uhc:pre_game/menu/selection/tp/cent
 execute as @a[tag=mgs.jump] run function lobby:mini_games/rjg/player/out
 execute if entity @p[tag=mgs.tc.player] run function lobby:mini_games/tc/stop/main
 execute as @a run scoreboard players reset @s lobby.tc.player.click_to_join
-execute as @a run function uhc:pre_game/player_and_team/reset_effects
-execute as @a run function uhc:pre_game/player_and_team/reset_tags
+execute as @a run function uhc:player_status/attributes_and_effects/reset
+execute as @a run function uhc:player_status/tags/reset
 
 ## Joueurs
 function uhc:start/setup/player/before_tp

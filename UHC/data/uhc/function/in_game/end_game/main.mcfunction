@@ -16,8 +16,8 @@ execute as @p[tag=uhc.player,tag=!uhc.spec] run scoreboard players operation #te
 
 ## Mode de jeu
 # Bingo UHC
-execute if score #bhc uhc.gamemode matches 1 if score #game_progress uhc.game_progress matches 2 run function bhc:scores_calculator/endgame/detect
-execute if score #bhc uhc.gamemode matches 1 if score #game_progress uhc.game_progress matches 3.. run function bhc:scores_calculator/endgame/message_text
+execute if score #bhc uhc.gamemode matches 1 if score #game_progress uhc.game_progress matches 2 run function bhc:in_game/scores_calculator/endgame/detect
+execute if score #bhc uhc.gamemode matches 1 if score #game_progress uhc.game_progress matches 3.. run function bhc:in_game/scores_calculator/endgame/message_text
 # Vanilla
 execute if score #vanilla uhc.gamemode matches 1 run function uhc:in_game/end_game/vanilla
 

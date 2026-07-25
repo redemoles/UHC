@@ -9,7 +9,7 @@
 
 ## Si Start 30 secondes après tp
 execute if score #start_delay uhc.data.setup matches 1 if score #sec_cooldown uhc.data.temp matches ..59 run function uhc:translation/hotbar/uhc_delay with storage uhc:temp hotbar
-execute if score #start_delay uhc.data.setup matches 1 unless score #force_stepa uhc.data.temp matches 0 run function bhc:timer/start_cooldown
+execute if score #start_delay uhc.data.setup matches 1 unless score #force_stepa uhc.data.temp matches 0 run function bhc:in_game/timer/start_cooldown
 execute if score #minutes uhc.data.temp matches ..-1 run return fail
 
 ## Priorité des annnoces à envoyer

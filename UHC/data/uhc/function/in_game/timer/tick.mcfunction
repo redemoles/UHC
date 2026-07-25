@@ -26,7 +26,7 @@ function uhc:in_game/timer/hotbar/root
 
 ## Modifications de données d'entités
 # Réduction des dégâts des flèches
-execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow] run function uhc:in_game/entity/arrow/
+execute if score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow] run function uhc:in_game/entity/arrow/root
 execute unless score #custom_arrow uhc.data.setup matches 1.. as @e[type=minecraft:arrow,tag=!uhc.checked] run function uhc:in_game/entity/arrow/basic
 # Items
 execute as @e[type=minecraft:item,tag=!uhc.checked] run function uhc:in_game/entity/item/tick
@@ -62,8 +62,7 @@ execute if entity @p[scores={uhc.meetup.activate=1}] in minecraft:overworld run 
 execute if entity @p[scores={uhc.game_progress=1}] in uhc:lobby run function uhc:in_game/force_command/end
 
 ## Autres modes de jeu
-execute if score #bhc uhc.gamemode matches 1 unless score #game_progress uhc.game_progress matches 2.. run function bhc:timer/tick
-execute if score #mls uhc.gamemode matches 1 if score #pvp uhc.data.temp matches ..0 run function mls:timer/tick
-execute if score #nzl uhc.gamemode matches 1 unless score #game_progress uhc.game_progress matches 2.. run function nzl:timer/tick
+execute unless score #game_progress uhc.game_progress matches 2.. if score #bhc uhc.gamemode matches 1 run function bhc:in_game/timer/tick
+execute unless score #game_progress uhc.game_progress matches 2.. run function #plugin:in_game/timer/tick
 
 scoreboard players set @a uhc.player.data.check 0

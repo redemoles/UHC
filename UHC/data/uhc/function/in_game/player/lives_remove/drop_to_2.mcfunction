@@ -11,7 +11,7 @@
 scoreboard players operation #team uhc.id.team = @s uhc.id.team
 
 # Couleur d'équipe de base
-execute as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:in_game/player/team_join/vanilla
+execute as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:in_game/player/misc/team_join
 
 ## Message
 # Bingo UHC > Points
@@ -32,8 +32,8 @@ execute as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] at @s run plays
 # Couleur du joueur
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:in_game/scenario/biome_paranoia/by_colors
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute unless score #nzl uhc.gamemode matches 1 if score #anonyme_team uhc.data.setup matches 1 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run team join 091 @s
-execute if score #nzl uhc.gamemode matches 1 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function uhc:in_game/player/team_join/nzl
+execute if score #anonyme_team uhc.data.setup matches 1 as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run team join 091 @s
+execute as @a[scores={uhc.player.lives=3},predicate=uhc:id/team] run function #plugin:in_game/player/team_join
 
 ## Récompense
 # Tous les modes de jeu

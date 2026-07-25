@@ -14,7 +14,7 @@ execute if score #absorption uhc.data.setup matches ..1 if entity @s[tag=uhc.pla
 execute if score #no_fire uhc.scenario matches 1 run effect give @s minecraft:fire_resistance infinite 0 true
 
 # Night Vision
-execute unless score #nzl uhc.gamemode matches 1 run effect give @s[tag=uhc.night_vision] minecraft:night_vision infinite 0 true
+execute if score #night_vision uhc.data.setup matches 1 run effect give @s[tag=uhc.night_vision] minecraft:night_vision infinite 0 true
 
 # Resistance
 execute if score #pve uhc.data.temp matches ..0 run scoreboard players set @s[scores={uhc.effect.resistance=-1}] uhc.effect.resistance 0
