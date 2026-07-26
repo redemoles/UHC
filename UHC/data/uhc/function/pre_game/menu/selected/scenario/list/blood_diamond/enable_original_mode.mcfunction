@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/blood_diamond/enable_original_mode
+#> uhc:pre_game/menu/selected/scenario/list/blood_diamond/enable_original_mode
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Blood Diamond

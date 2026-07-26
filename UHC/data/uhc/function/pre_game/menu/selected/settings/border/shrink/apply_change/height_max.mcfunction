@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/border/shrink/apply_change/height_max
+#> uhc:pre_game/menu/selected/settings/border/shrink/apply_change/height_max
 #
-# @within			uhc:pre_game/menu/selection/settings/border/shrink/main
+# @within			uhc:pre_game/menu/selected/settings/border/shrink/main
 #
 #
 # @description		Menu

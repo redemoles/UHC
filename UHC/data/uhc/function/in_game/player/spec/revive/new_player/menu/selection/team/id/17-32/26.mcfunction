@@ -1,7 +1,7 @@
 
 #> uhc:in_game/player/spec/revive/new_player/menu/selection/team/id/17-32/26
 #
-# @within			uhc:pre_game/menu/selection/main/player/gm
+# @within			uhc:pre_game/menu/selected/main/player/gm
 #
 #
 # @description		Formation des équipes

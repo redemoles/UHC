@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/world_generation/overworld/10000
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Génération du monde en 10000x10000

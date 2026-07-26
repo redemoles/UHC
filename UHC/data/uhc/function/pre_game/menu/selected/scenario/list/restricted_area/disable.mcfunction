@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/restricted_area/disabled
+#> uhc:pre_game/menu/selected/scenario/list/restricted_area/disabled
 #
-# @within			uhc:pre_game/menu/selection/scenario/pages/*
+# @within			uhc:pre_game/menu/selected/scenario/pages/*
 #			
 #
 # @description		Redirection

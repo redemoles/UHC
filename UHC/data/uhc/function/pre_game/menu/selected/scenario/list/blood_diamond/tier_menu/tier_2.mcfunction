@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/blood_diamond/tier_menu/tier_2
+#> uhc:pre_game/menu/selected/scenario/list/blood_diamond/tier_menu/tier_2
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/blood_diamond/main
+# @within			uhc:pre_game/menu/selected/scenario/list/blood_diamond/main
 #			
 #
 # @description		Redirection

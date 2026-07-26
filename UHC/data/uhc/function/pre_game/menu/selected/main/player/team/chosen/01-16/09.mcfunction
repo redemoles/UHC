@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/main/player/team/chosen/01-16/09
+#> uhc:pre_game/menu/selected/main/player/team/chosen/01-16/09
 #
-# @within			uhc:pre_game/menu/selection/main/player/gm
+# @within			uhc:pre_game/menu/selected/main/player/gm
 #
 #
 # @description		Formation des équipes

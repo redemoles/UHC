@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/load/scenario/go_to_hell
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Menu Go To Hell

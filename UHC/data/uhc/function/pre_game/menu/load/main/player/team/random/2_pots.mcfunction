@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/main/player/team/random/2_pots
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

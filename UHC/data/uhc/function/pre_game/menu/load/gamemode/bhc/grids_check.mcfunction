@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/gamemode/bhc/grids_check
 #
-# @within			uhc:pre_game/menu/selection/gamemode/bhc/main
+# @within			uhc:pre_game/menu/selected/gamemode/bhc/main
 #
 #
 # @description		Menu vérification des grilles de bingo

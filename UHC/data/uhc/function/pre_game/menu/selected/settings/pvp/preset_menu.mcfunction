@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/pvp/preset_menu
+#> uhc:pre_game/menu/selected/settings/pvp/preset_menu
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

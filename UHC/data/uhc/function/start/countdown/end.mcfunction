@@ -30,6 +30,7 @@ scoreboard players set @a[tag=uhc.player] uhc.effect.resistance -1
 # Paramètres spéciaux
 effect give @a[tag=uhc.player.start_in_the_sky] minecraft:invisibility 30 0 true
 # Scenario
+execute if score #enchanting_setup uhc.scenario matches 1 run function uhc:in_game/scenario/enchanting_setup/start/main
 execute if score #hastey_boys uhc.scenario matches 1 as @a run attribute @s minecraft:mining_efficiency modifier add uhc.hastey_boys 10 add_value
 execute if score #no_fall uhc.scenario matches 1 as @a run attribute @s minecraft:fall_damage_multiplier modifier add uhc.no_fall -1.0 add_value
 

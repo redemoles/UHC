@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/pvp/version_pvp
+#> uhc:pre_game/menu/selected/settings/pvp/version_pvp
 #
-# @within			uhc:pre_game/menu/selection/settings/pvp/host
+# @within			uhc:pre_game/menu/selected/settings/pvp/host
 #
 #
 # @description		Menu

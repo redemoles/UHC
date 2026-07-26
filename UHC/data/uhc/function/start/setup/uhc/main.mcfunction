@@ -40,9 +40,9 @@ scoreboard players operation #sky_high uhc.data.temp = #sky_high uhc.data.setup
 scoreboard players operation #sky_high_ender_pearl uhc.data.temp = #ender_pearl_timer uhc.scenario.sky_high.settings
 scoreboard players operation #sky_high_gift uhc.data.temp = #ender_pearl_gift uhc.scenario.sky_high.settings
 
-execute if score #3_lives_left uhc.data.temp matches 0 run scoreboard players set #3_lives_left uhc.data.temp -1
-execute if score #2_lives_left uhc.data.temp matches 0 run scoreboard players set #2_lives_left uhc.data.temp -1
-execute if score #1_life_left uhc.data.temp matches 0 run scoreboard players set #1_life_left uhc.data.temp -1
+execute if score #lives uhc.data.setup matches ..3 run scoreboard players set #3_lives_left uhc.data.temp -1
+execute if score #lives uhc.data.setup matches ..2 run scoreboard players set #2_lives_left uhc.data.temp -1
+execute if score #lives uhc.data.setup matches ..1 run scoreboard players set #1_life_left uhc.data.temp -1
 
 # Divers paramètres
 scoreboard players operation #lives uhc.data.temp = #lives uhc.data.setup

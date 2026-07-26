@@ -1,7 +1,7 @@
 
 #> uhc:start/main
 #
-# @within			uhc:pre_game/menu/selection/start
+# @within			uhc:pre_game/menu/selected/start
 #
 #
 # @description		Configuration de la partie
@@ -16,7 +16,7 @@ execute unless score #minutes uhc.data.temp matches 0.. run scoreboard players s
 execute unless score #minutes uhc.data.temp matches 0.. run scoreboard players set #seconds uhc.data.temp 0
 
 ## Mini-jeux lobby
-execute as @a[tag=mgs.backroom] run function uhc:pre_game/menu/selection/tp/center
+execute as @a[tag=mgs.backroom] run function uhc:pre_game/menu/selected/tp/center
 execute as @a[tag=mgs.jump] run function lobby:mini_games/rjg/player/out
 execute if entity @p[tag=mgs.tc.player] run function lobby:mini_games/tc/stop/main
 execute as @a run scoreboard players reset @s lobby.tc.player.click_to_join
@@ -31,8 +31,7 @@ function uhc:start/setup/team/main
 function uhc:in_game/team/collision/never
 
 ## Scenarios
-execute if score #enchanting_setup uhc.scenario matches 1 run summon marker 0 100 0 {Tags:["uhc.scenario.enchanting_setup"]}
-execute if score #enchanting_setup uhc.scenario matches 1 as @n[type=minecraft:marker,nbt={Tags:["uhc.scenario.enchanting_setup"]}] run function uhc:start/setup/scenario/enchanting_setup/
+execute if score #enchanting_setup uhc.scenario matches 1 in minecraft:overworld run function uhc:start/setup/scenario/enchanting_setup/
 
 ## Configuration
 execute in minecraft:overworld run forceload add -192 -192 191 -65

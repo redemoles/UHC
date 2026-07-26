@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/language/main
+#> uhc:pre_game/menu/selected/language/main
 #
 # @within			uhc:pre_game/menu/detector/menu
 #

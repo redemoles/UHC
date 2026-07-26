@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/pve/host
+#> uhc:pre_game/menu/selected/settings/pve/host
 #
-# @within			uhc:pre_game/menu/selection/settings/host
+# @within			uhc:pre_game/menu/selected/settings/host
 # 
 #
 # @description		Redirection

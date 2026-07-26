@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/language/menu
 #
-# @within			uhc:pre_game/menu/selection/main/host/main
+# @within			uhc:pre_game/menu/selected/main/host/main
 #
 #
 # @description		Menu

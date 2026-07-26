@@ -351,6 +351,7 @@ execute in uhc:lobby run function uhc:all_dimension_commands/reset
 execute in uhc:lobby run gamerule minecraft:spawn_mobs false
 execute in uhc:lobby run gamerule minecraft:spread_vines false
 weather clear 999999
+gamerule minecraft:max_command_sequence_length 262144
 
 ## Load
 function uhc:load
@@ -425,4 +426,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26078
+scoreboard players set #update uhc.data.update 26079

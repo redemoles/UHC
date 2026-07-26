@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/main/player/pages/colors
+#> uhc:pre_game/menu/selected/main/player/pages/colors
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

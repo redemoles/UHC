@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/potion/milk_bucket/apply_change
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

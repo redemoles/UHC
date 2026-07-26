@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/restricted_area/go_to_hell/3_add_1
+#> uhc:pre_game/menu/selected/scenario/list/restricted_area/go_to_hell/3_add_1
 #
-# @within			uhc:pre_game/menu/selection/settings/host
+# @within			uhc:pre_game/menu/selected/settings/host
 #
 #
 # @description		Menu

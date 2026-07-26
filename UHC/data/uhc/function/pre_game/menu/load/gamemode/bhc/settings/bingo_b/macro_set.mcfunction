@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/gamemode/bhc/settings/bingo_b/macro_set
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

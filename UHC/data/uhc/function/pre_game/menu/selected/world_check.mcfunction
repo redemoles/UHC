@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/world_check
+#> uhc:pre_game/menu/selected/world_check
 #
 # @within			uhc:pre_game/menu/detector/menu
 #

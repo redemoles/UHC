@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/misc/river_solid
+#> uhc:pre_game/menu/selected/settings/misc/river_solid
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

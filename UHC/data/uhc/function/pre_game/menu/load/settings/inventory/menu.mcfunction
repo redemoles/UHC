@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/menu
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu
@@ -16,8 +16,11 @@ execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.p
 execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.12 with minecraft:totem_of_undying[minecraft:item_name=[{"text":"Compensation à la suppression de Pomme de Notch et Totem de resurrection","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"Réservé aux hosts.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_notch_totem"}]
 execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.12 with minecraft:totem_of_undying[minecraft:item_name=[{"text":"Compensation for the removal of Notch apple and Totem of undying","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"Hosts only.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_notch_totem"}]
 
-execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.13 with minecraft:dropper[minecraft:item_name=[{"text":"Items additionnels à la mort d'un joueur","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Appliqué à la mort d'un joueur, sauf si","color":"#FFFFFF"}],[{"text":"mort non définitive avant l'activation du PvP.","color":"#FFFFFF","italic":false}],[{"text":"Réservé aux hosts.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_additional"}]
-execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.13 with minecraft:dropper[minecraft:item_name=[{"text":"Additionnal items at the death of a player","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Applies to the death of a player, except if","color":"#FFFFFF"}],[{"text":"non-definitive death before PvP is activated.","color":"#FFFFFF","italic":false}],[{"text":"Hosts only.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_additional"}]
+execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.13 with minecraft:golden_apple[minecraft:item_name=[{"text":"Compensation de perte de vie forcée","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"Réservé aux hosts.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_life_loss"}]
+execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.13 with minecraft:golden_apple[minecraft:item_name=[{"text":"Compensation for forced life loss","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"Hosts only.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_life_loss"}]
+
+execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.14 with minecraft:dropper[minecraft:item_name=[{"text":"Items additionnels à la mort d'un joueur","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Appliqué à la mort d'un joueur, sauf si","color":"#FFFFFF"}],[{"text":"mort non définitive avant l'activation du PvP.","color":"#FFFFFF","italic":false}],[{"text":"Réservé aux hosts.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_additional"}]
+execute if score @s uhc.menu.settings.inventory matches 01..10 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.14 with minecraft:dropper[minecraft:item_name=[{"text":"Additionnal items at the death of a player","color":"#FFE73F","italic":false}],minecraft:lore=[[{"text":"• ","color":"#FF3F3F","italic":false},{"text":"Applies to the death of a player, except if","color":"#FFFFFF"}],[{"text":"non-definitive death before PvP is activated.","color":"#FFFFFF","italic":false}],[{"text":"Hosts only.","color":"#CFCFCF","italic":true}]],minecraft:custom_data={Tags:"settings_inventory_item_additional"}]
 
 execute if score @s uhc.menu.settings.inventory matches 01..10 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_armor/macro_set
 execute if score @s uhc.menu.settings.inventory matches 01..10 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_armor/macro_text with storage uhc:settings menu
@@ -51,6 +54,12 @@ execute if score @s uhc.menu.settings.inventory matches 21..30 run function uhc:
 
 execute if score @s uhc.menu.settings.inventory matches 31..40 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_set
 execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/cobweb/macro_text with storage uhc:settings menu
+
+
+execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/flint_and_steel/macro_text
+
+
+execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/lava_bucket/macro_text
 
 execute if score @s uhc.menu.settings.inventory matches 31..40 in uhc:lobby run function uhc:pre_game/menu/load/settings/inventory/items_authorization/diamond_armor/macro_set
 execute if score @s uhc.menu.settings.inventory matches 31..40 run function uhc:pre_game/menu/load/settings/inventory/items_authorization/diamond_armor/macro_text with storage uhc:settings menu

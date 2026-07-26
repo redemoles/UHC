@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/settings_cancel_scenario
 #
-# @within			uhc:pre_game/menu/selection/settings/player
+# @within			uhc:pre_game/menu/selected/settings/player
 # 
 #
 # @description		Redirection

@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/hastey_boys
+#> uhc:pre_game/menu/selected/scenario/list/hastey_boys
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Hastey Boys

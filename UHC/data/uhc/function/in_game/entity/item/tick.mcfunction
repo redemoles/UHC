@@ -17,3 +17,6 @@ execute if score #cut_clean uhc.scenario matches 1 run function uhc:in_game/scen
 
 # Elytra start
 kill @s[nbt={Item:{"id":"minecraft:elytra","components":{"minecraft:custom_data":{"Tags":"start_in_the_sky"}}}}]
+
+# Lobby
+execute in uhc:lobby as @e[type=minecraft:item,distance=0..,tag=!lobby.checked] run function uhc:pre_game/entity/item

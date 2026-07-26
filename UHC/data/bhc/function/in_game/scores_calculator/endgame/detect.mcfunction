@@ -25,7 +25,7 @@ scoreboard players set #sb bhc.data.temp 0
 scoreboard objectives setdisplay sidebar bhc.total.score
 
 function bhc:in_game/scores_calculator/endgame/message_text
-execute as @a run function uhc:in_game/player/misc/team_join
+execute as @a run function uhc:in_game/player/misc/team_join/known_team
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/timer/scoreboard/marker_name
 
 execute if score #bhc bhc.scenario matches 02 run scoreboard players set #tracker_ennemies uhc.data.temp 1001

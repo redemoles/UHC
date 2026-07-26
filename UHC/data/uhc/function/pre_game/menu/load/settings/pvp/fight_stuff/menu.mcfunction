@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/pvp/fight_stuff/menu
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

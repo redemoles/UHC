@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/lobby/01
+#> uhc:pre_game/menu/selected/lobby/01
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Chargement du Lobby BHC I

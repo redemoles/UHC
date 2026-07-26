@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/gone_fishing
+#> uhc:pre_game/menu/selected/scenario/list/gone_fishing
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Gone Fishing

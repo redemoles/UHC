@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/silent_night
+#> uhc:pre_game/menu/selected/scenario/list/silent_night
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Perma Day

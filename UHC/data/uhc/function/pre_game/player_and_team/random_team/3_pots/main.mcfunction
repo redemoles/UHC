@@ -17,11 +17,11 @@ scoreboard players set @a[team=292] uhc.id.team 292
 tag @a[tag=uhc.player] add uhc.random_team.in_a_team
 
 scoreboard players set @a[tag=uhc.player] uhc.id.random_team 0
-execute store result score #team uhc.id.team run random value 0..15
+execute store result score #team uhc.id.team run random value 1..32
 scoreboard players set #team uhc.id.random_team 1
 scoreboard players set #count uhc.id.random_team 1
 
 function uhc:pre_game/player_and_team/random_team/3_pots/selector
 
 execute as @r[tag=uhc.player] run function uhc:pre_game/player_and_team/random_team/3_pots/color
-execute if score #anonyme_team uhc.data.setup matches 0 run function uhc:pre_game/player_and_team/random_team/3_pots/reveal/instant
+execute as @a[tag=uhc.player] run function uhc:in_game/player/misc/team_join/main

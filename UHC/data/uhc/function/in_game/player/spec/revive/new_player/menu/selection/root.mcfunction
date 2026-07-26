@@ -8,5 +8,5 @@
 #
 
 execute if score @s uhc.menu.main.player matches 1.. in uhc:lobby run function uhc:in_game/player/spec/revive/new_player/menu/selection/team/root
-execute if score @s uhc.menu.language matches 1.. run function uhc:pre_game/menu/selection/language/main
+execute if score @s uhc.menu.language matches 1.. run function uhc:pre_game/menu/selected/language/main
 advancement revoke @s only uhc:inventory_menu

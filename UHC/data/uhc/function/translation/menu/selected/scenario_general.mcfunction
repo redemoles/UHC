@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/scenario_general
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/*
+# @within			uhc:pre_game/menu/selected/scenario/list/*
 #
 #
 # @description		Redirection

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu
@@ -13,5 +13,5 @@ scoreboard players set @s uhc.menu.settings.inventory 3
 data modify storage uhc:temp Item_ironman set from storage uhc:settings Item_ironman
 data modify storage uhc:temp Item_ironman[0].components merge value {}
 execute if data storage uhc:temp Item_ironman[0] run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/item with storage uhc:temp Item_ironman[0]
-tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Une fois terminé, clique ici ou mets-toi en gamemode adventure pour revenir au menu des paramètres","color":"#3FE7FF",click_event:{"action":"run_command","command":"/gamemode adventure @s"}}]
-tellraw @s[scores={uhc.player.lang=051407}] [{"text":"Once finished, click here or put yourself in gamemode adventure to return to settings menu","color":"#3FE7FF",click_event:{"action":"run_command","command":"/gamemode adventure @s"}}]
+
+function uhc:translation/menu/load/settings_inventory_rewards

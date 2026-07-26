@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/restricted_area/sky_high/4_add_10
+#> uhc:pre_game/menu/selected/scenario/list/restricted_area/sky_high/4_add_10
 #
-# @within			uhc:pre_game/menu/selection/settings/host
+# @within			uhc:pre_game/menu/selected/settings/host
 #
 #
 # @description		Menu

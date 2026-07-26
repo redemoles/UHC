@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/ores_limit/4_add_5
+#> uhc:pre_game/menu/selected/scenario/list/ores_limit/4_add_5
 #
-# @within			uhc:pre_game/menu/selection/settings/host
+# @within			uhc:pre_game/menu/selected/settings/host
 #
 #
 # @description		Menu

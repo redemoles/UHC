@@ -1,0 +1,11 @@
+
+#> uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_life_loss/validate
+#
+# @within			uhc:pre_game/menu/detector/main
+#
+#
+# @description		Menu
+#
+
+advancement grant @s only uhc:inventory_menu
+scoreboard players set @s uhc.menu.settings.inventory 1

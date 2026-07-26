@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/main/player/light/on
+#> uhc:pre_game/menu/selected/main/player/light/on
 #
-# @within			uhc:pre_game/menu/selection/main/
+# @within			uhc:pre_game/menu/selected/main/
 #
 #
 # @description		Menu

@@ -14,7 +14,7 @@ scoreboard players set @s uhc.player.death.summary 1
 tag @s add uhc.temp
 
 # Couleur d'équipe de base
-function uhc:in_game/player/misc/team_join
+function uhc:in_game/player/misc/team_join/known_team
 
 scoreboard players operation #temp uhc.player.lives = @s uhc.player.lives
 scoreboard players remove #temp uhc.player.lives 1
@@ -30,10 +30,7 @@ execute unless score #lives_start uhc.player.lives matches 1 if score @s uhc.pla
 tag @s remove uhc.temp
 
 # Couleur du joueur
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 run function uhc:in_game/scenario/biome_paranoia/by_colors
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
-function #plugin:in_game/player/team_join
+function uhc:in_game/player/misc/team_join/main
 
 # Type de mort PvP ou PvE
 execute on attacker as @s[type=minecraft:player] run return run function uhc:in_game/player/death/text_end_game/killer with storage uhc:temp hotbar

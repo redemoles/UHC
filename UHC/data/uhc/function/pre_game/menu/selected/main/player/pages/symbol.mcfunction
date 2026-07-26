@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/main/player/pages/symbol
+#> uhc:pre_game/menu/selected/main/player/pages/symbol
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

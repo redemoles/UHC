@@ -17,9 +17,9 @@ execute if score #random_team_start uhc.data.setup matches 1 if score #random_te
 execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 2 run function uhc:pre_game/player_and_team/random_team/2_pots/main
 execute if score #random_team_start uhc.data.setup matches 1 if score #random_team uhc.data.setup matches 3 run function uhc:pre_game/player_and_team/random_team/3_pots/main
 # Joueurs sans équipe placés en spectateur
-execute as @a if score @s uhc.id.team matches 091..092 run function uhc:pre_game/menu/selection/main/player/team/chosen/spec
-execute as @a if score @s uhc.id.team matches 192 run function uhc:pre_game/menu/selection/main/player/team/chosen/spec
-execute as @a if score @s uhc.id.team matches 292 run function uhc:pre_game/menu/selection/main/player/team/chosen/spec
+execute as @a if score @s uhc.id.team matches 091..092 run function uhc:pre_game/menu/selected/main/player/team/chosen/spec
+execute as @a if score @s uhc.id.team matches 192 run function uhc:pre_game/menu/selected/main/player/team/chosen/spec
+execute as @a if score @s uhc.id.team matches 292 run function uhc:pre_game/menu/selected/main/player/team/chosen/spec
 
 ## Effets & Inventaire
 effect give @a minecraft:invisibility infinite 0 true

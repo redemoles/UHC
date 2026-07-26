@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/gamemode/bhc/main
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu
@@ -9,7 +9,7 @@
 
 clear @s
 tag @s remove uhc.menu.main.host
-tag @s remove uhc.menu.gamemode
+scoreboard players set @s uhc.menu.gamemode.main 0
 execute unless score @s uhc.menu.gamemode.bhc matches 1.. run scoreboard players set @s uhc.menu.gamemode.bhc 1
 
 

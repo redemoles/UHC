@@ -1,5 +1,5 @@
 
-#> uhc:in_game/player/login/start_in_sky
+#> uhc:in_game/player/login/start_in_the_sky
 #
 # @within			uhc:in_game/player/login/main
 #

@@ -12,4 +12,4 @@ execute if entity @s[tag=mgs.jump.speedrun] run function lobby:mini_games/rjg/re
 
 execute as @e[type=minecraft:marker,tag=mgs.jump.marker,distance=0..,predicate=lobby:rjg/id_player] at @s run function lobby:mini_games/rjg/marker/kill
 
-function uhc:pre_game/menu/selection/tp/center
+function uhc:pre_game/menu/selected/tp/center

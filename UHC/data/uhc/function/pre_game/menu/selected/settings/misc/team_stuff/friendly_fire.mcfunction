@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/misc/team_stuff/friendly_fire
+#> uhc:pre_game/menu/selected/settings/misc/team_stuff/friendly_fire
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

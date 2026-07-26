@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/ores_limit/diamond_limit_enable
+#> uhc:pre_game/menu/selected/scenario/list/ores_limit/diamond_limit_enable
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Diamond Limit

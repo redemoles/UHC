@@ -31,3 +31,6 @@ execute if score #tick_start uhc.data.temp matches 180 run function uhc:start/se
 
 execute if score #tick_start uhc.data.temp matches 180.. if score #start_delay uhc.data.setup matches 0 run return run function uhc:start/countdown/end
 execute if score #tick_start uhc.data.temp matches 180.. run function uhc:start/delay/tick
+
+## Divers
+execute in uhc:lobby as @e[type=minecraft:item,distance=0..,tag=!lobby.checked] run function uhc:pre_game/entity/item

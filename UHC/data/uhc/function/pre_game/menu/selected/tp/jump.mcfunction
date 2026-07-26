@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/tp/jump
+#> uhc:pre_game/menu/selected/tp/jump
 #
-# @within			uhc:pre_game/menu/selection/main/
+# @within			uhc:pre_game/menu/selected/main/
 #
 #
 # @description		Menu

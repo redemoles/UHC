@@ -226,6 +226,7 @@ team modify 032 color black
 team modify 091 color yellow
 team modify 092 color blue
 team modify 099 color white
+team modify 099 prefix [{"text":"Spec ","color":"#CFCFCF"}]
 team modify 099.host color white
 team modify 099.host prefix [{"text":"Host ","color":"#CFCFCF"}]
 team modify 101 color dark_blue

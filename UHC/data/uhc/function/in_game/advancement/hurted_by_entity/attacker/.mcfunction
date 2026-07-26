@@ -13,21 +13,18 @@ execute unless entity @p[tag=uhc.spec_info.pvp] run return fail
 
 
 # Couleur d'équipe de base
-function uhc:in_game/player/misc/team_join
+function uhc:in_game/player/misc/team_join/known_team
 
 # Données du joueur
 function uhc:in_game/player/misc/health/default
 
 tag @s add uhc.temp.attacker
-execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart
-execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_percent
+execute if score #hp_100 uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_heart
+execute if score #hp_100 uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/attacker/tellraw_percent
 tag @s remove uhc.temp.attacker
 
 # Couleur du joueur
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 run function uhc:in_game/scenario/biome_paranoia/by_colors
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
-function #plugin:in_game/player/team_join
+function uhc:in_game/player/misc/team_join/main
 
 # Couleur du joueur ciblé
 execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 as @p[tag=uhc.temp] run function uhc:in_game/scenario/biome_paranoia/by_colors

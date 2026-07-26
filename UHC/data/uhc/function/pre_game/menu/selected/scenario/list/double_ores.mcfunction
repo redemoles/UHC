@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/double_ores
+#> uhc:pre_game/menu/selected/scenario/list/double_ores
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Doubles Ores

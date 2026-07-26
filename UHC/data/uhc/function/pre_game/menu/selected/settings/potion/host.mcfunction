@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/potion/host
+#> uhc:pre_game/menu/selected/settings/potion/host
 #
-# @within			uhc:pre_game/menu/selection/settings/host
+# @within			uhc:pre_game/menu/selected/settings/host
 # 
 #
 # @description		Redirection

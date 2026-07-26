@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/depth_strider/macro_set
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

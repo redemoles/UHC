@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/best_pve
+#> uhc:pre_game/menu/selected/scenario/list/best_pve
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Best PvE

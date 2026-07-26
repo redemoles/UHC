@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/restricted_area/sky_high/damage_type
+#> uhc:pre_game/menu/selected/scenario/list/restricted_area/sky_high/damage_type
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Type de dégât Sky High

@@ -1,7 +1,7 @@
 
 #> limit_number/armor
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

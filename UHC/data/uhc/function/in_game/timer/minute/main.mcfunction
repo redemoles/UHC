@@ -38,15 +38,15 @@ execute if score #sky_high uhc.scenario matches 1 if score #sky_high uhc.data.te
 
 ## Réduction de vie automatique
 execute if score #lives_start uhc.player.lives matches 4.. if score #3_lives_left uhc.data.temp matches 0 run function uhc:translation/in_game/timer_minute_3_lives_left
-execute if score #3_lives_left uhc.data.setup matches 1.. if score #3_lives_left uhc.data.temp matches 0 run scoreboard players set #lives uhc.data.temp 3
+execute if score #3_lives_left uhc.data.temp matches 0 run scoreboard players set #lives uhc.data.temp 3
 execute if score #3_lives_left uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=4..}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_3
 
 execute if score #lives_start uhc.player.lives matches 3.. if score #2_lives_left uhc.data.temp matches 0 run function uhc:translation/in_game/timer_minute_2_lives_left
-execute if score #2_lives_left uhc.data.setup matches 1.. if score #2_lives_left uhc.data.temp matches 0 run scoreboard players set #lives uhc.data.temp 2
+execute if score #2_lives_left uhc.data.temp matches 0 run scoreboard players set #lives uhc.data.temp 2
 execute if score #2_lives_left uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=3}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_2
 
 execute if score #lives_start uhc.player.lives matches 2.. if score #1_life_left uhc.data.temp matches 0 run function uhc:translation/in_game/timer_minute_1_life_left
-execute if score #1_life_left uhc.data.setup matches 1.. if score #1_life_left uhc.data.temp matches 0 run scoreboard players set #lives uhc.data.temp 1
+execute if score #1_life_left uhc.data.temp matches 0 run scoreboard players set #lives uhc.data.temp 1
 execute if score #1_life_left uhc.data.temp matches 0 if entity @p[scores={uhc.player.lives=2}] as @e[type=minecraft:marker,tag=UHC] run function uhc:in_game/player/lives_remove/drop_to_1
 
 ## Texte alerte

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/items_authorization/diamond_armor/macro_set
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

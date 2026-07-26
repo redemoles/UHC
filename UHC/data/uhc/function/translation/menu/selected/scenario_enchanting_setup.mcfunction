@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/scenario_enchanting_setup
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/enchanting_setup
+# @within			uhc:pre_game/menu/selected/scenario/list/enchanting_setup
 #
 #
 # @description		Redirection

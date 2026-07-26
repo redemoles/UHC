@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/lobby/30
+#> uhc:pre_game/menu/selected/lobby/30
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Chargement du Lobby April Fool 2026

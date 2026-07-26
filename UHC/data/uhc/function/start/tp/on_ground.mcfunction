@@ -8,12 +8,12 @@
 #
 
 scoreboard players add #team uhc.id.team 1
-execute as @n[type=minecraft:marker,distance=0..,predicate=uhc:id/team] unless entity @s[tag=UHC] run return run function uhc:start/tp/main
+execute as @n[type=minecraft:marker,distance=0..,predicate=uhc:id/team] unless entity @s[tag=UHC] run return run function uhc:start/tp/on_ground
 
 ## Téléportation
 # Message à tous
 execute as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] run function uhc:translation/start_teleportation_team
-# Téléportatoin et message à l'équipe
+# Téléportation et message à l'équipe
 execute in minecraft:overworld as @a[predicate=uhc:id/team] run function uhc:in_game/tp/spawn/default
 
 ## Cooldown prochaine téléportation

@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/blood_cycle
+#> uhc:pre_game/menu/selected/scenario/list/blood_cycle
 #
 # @within			uhc:pre_game/menu/load/scenario/blood_diamond
 #

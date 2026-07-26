@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/main/host/config
+#> uhc:pre_game/menu/selected/main/host/config
 #
-# @within			uhc:pre_game/menu/selection/main/host/main
+# @within			uhc:pre_game/menu/selected/main/host/main
 #
 #
 # @description		Résumé de la configuration de la partie

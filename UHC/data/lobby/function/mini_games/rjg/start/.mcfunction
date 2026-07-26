@@ -1,7 +1,7 @@
 
 #> lobby:mini_games/rjg/start/
 #
-# @within			uhc:pre_game/menu/selection/tp/jump
+# @within			uhc:pre_game/menu/selected/tp/jump
 #
 #
 # @description		Lancement d'une partie

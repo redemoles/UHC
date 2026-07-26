@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/enchantments_main/iron_protection/macro_text
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

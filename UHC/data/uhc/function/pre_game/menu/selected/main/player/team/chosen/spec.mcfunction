@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/main/player/team/chosen/spec
+#> uhc:pre_game/menu/selected/main/player/team/chosen/spec
 #
-# @within			uhc:pre_game/menu/selection/main/player/gm
+# @within			uhc:pre_game/menu/selected/main/player/gm
 #
 #
 # @description		Ajout des spectateurs

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/pve/1_life_left/preset_menu
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

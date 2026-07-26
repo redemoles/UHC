@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/restricted_area/go_to_hell/enable
+#> uhc:pre_game/menu/selected/scenario/list/restricted_area/go_to_hell/enable
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Go To Hell

@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/load/gamemode/bhc_uhc_settings
 #
-# @within			uhc:pre_game/menu/selection/gamemode/bhc/settings/preset_scenario/main
+# @within			uhc:pre_game/menu/selected/gamemode/bhc/settings/preset_scenario/main
 #
 #
 #

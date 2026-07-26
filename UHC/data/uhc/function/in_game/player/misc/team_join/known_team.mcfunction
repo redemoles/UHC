@@ -1,13 +1,11 @@
 
-#> uhc:in_game/player/misc/team_join
+#> uhc:in_game/player/misc/team_join/known_team
 #
 # @within			
 #
 #
 # @description		Équipe d'affichage du joueur
 #
-
-execute if score #anonyme_team uhc.data.setup matches 1 run return run team join 091 @s
 
 team join 001 @s[scores={uhc.id.team=01}]
 team join 002 @s[scores={uhc.id.team=02}]

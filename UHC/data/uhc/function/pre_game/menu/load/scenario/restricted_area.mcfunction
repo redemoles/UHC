@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/scenario/restricted_area
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Menu Scénario à zone restreinte

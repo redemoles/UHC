@@ -1,7 +1,7 @@
 
 #> uhc:translation/translation/menu/selected/config_world_check
 #
-# @within			uhc:pre_game/menu/selection/main/host/config
+# @within			uhc:pre_game/menu/selected/main/host/config
 #
 #
 #

@@ -5,7 +5,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "entity_type": "minecraft:player",
       "equipment": {
         "mainhand": {
           "items": "minecraft:compass"
@@ -17,7 +16,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "entity_type": "minecraft:player",
       "equipment": {
         "offhand": {
           "items": "minecraft:compass"

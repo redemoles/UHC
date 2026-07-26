@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/rewarding_longshots
+#> uhc:pre_game/menu/selected/scenario/list/rewarding_longshots
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Rewarding Longshots

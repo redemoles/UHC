@@ -24,6 +24,8 @@ execute if items entity @s container.* minecraft:enchanted_golden_apple run func
 execute if items entity @s container.* minecraft:totem_of_undying run function uhc:in_game/inventory/ban_item/compensation with storage uhc:settings item.totem_of_undying
 # Configurables
 execute if score #cobweb uhc.data.setup matches 0 if items entity @s container.* minecraft:cobweb run function uhc:in_game/inventory/ban_item/cobweb
+execute if score #flint_and_steel uhc.data.setup matches 0 if items entity @s container.* minecraft:flint_and_steel run function uhc:in_game/inventory/ban_item/flint_and_steel
+execute if score #lava_bucket uhc.data.setup matches 0 if items entity @s container.* minecraft:lava_bucket run function uhc:in_game/inventory/ban_item/lava_bucket
 execute if score #milk_bucket uhc.data.setup matches 0 if items entity @s container.* minecraft:milk_bucket run function uhc:in_game/inventory/ban_item/milk_bucket
 execute if score #wolf_armor uhc.data.setup matches 0 if items entity @s container.* minecraft:wolf_armor run function uhc:in_game/inventory/ban_item/wolf_armor
 # Potions

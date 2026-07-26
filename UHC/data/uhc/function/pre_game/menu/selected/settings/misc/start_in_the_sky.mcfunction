@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/misc/start_in_the_sky
+#> uhc:pre_game/menu/selected/settings/misc/start_in_the_sky
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

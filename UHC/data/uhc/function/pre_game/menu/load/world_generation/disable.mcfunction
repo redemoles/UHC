@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/world_generation/disable
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Désactivation de la génération du monde

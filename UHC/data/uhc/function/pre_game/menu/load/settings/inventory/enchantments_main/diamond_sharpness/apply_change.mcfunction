@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/enchantments_main/diamond_sharpness/apply_change
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

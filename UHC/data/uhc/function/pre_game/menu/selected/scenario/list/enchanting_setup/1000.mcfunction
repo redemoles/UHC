@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/enchanting_setup/100
+#> uhc:pre_game/menu/selected/scenario/list/enchanting_setup/100
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation d'Enchanting Setup sur les coordonnées en 100/-100

@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/biome_paranoia
+#> uhc:pre_game/menu/selected/scenario/list/biome_paranoia
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Blood Cycle

@@ -22,4 +22,3 @@ execute store result storage uhc:scenario ores_limit.diamond int 1 run scoreboar
 scoreboard objectives add uhc.menu.scenario.ores_limit dummy
 
 scoreboard players set #update uhc.data.update 26076
-execute as @a[tag=uhc.host] run function uhc:translation/datapack_update_version

@@ -34,7 +34,7 @@ function uhc:in_game/inventory/equipment/root
 function uhc:in_game/player/pvp/settings/root
 
 ## Scenarios
-function uhc:in_game/scenario/player
+execute as @s[tag=uhc.player] run function uhc:in_game/scenario/player
 
 ## Triggers
 function uhc:in_game/player/trigger

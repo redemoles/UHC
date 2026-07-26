@@ -12,7 +12,7 @@ scoreboard players set @s uhc.player.disconnect 0
 
 ## Démarrage / Réapparition
 # Si le joueur s'est déconnecté sur un démarrage d'une plateforme dans le ciel
-execute if entity @s[tag=uhc.player.start_in_the_sky] if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. run function uhc:in_game/player/login/start_in_the_sky
+execute if entity @s[tag=uhc.player.start_in_the_sky] if score #game_progress uhc.game_progress matches 1 if score #minutes uhc.data.temp matches 0.. in minecraft:overworld run function uhc:in_game/player/login/start_in_the_sky
 # Déconnexion pendant le démarrage
 execute if entity @s[tag=uhc.player,tag=uhc.start.temp] run function uhc:in_game/player/login/spawn/id
 

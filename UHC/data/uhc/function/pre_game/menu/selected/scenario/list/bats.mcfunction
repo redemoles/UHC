@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/bats
+#> uhc:pre_game/menu/selected/scenario/list/bats
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Bats

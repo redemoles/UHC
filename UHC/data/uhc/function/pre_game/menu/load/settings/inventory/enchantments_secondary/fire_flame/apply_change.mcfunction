@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/enchantments_secondary/fire_flame/apply_change
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Menu

@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/language/default
+#> uhc:pre_game/menu/selected/language/default
 #
-# @within			uhc:pre_game/menu/selection/language/*
+# @within			uhc:pre_game/menu/selected/language/*
 #
 #
 # @description		Langue par défaut

@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/main/player/gamemode/tellraw
 #
-# @within			uhc:pre_game/menu/selection/main/player/team/x
+# @within			uhc:pre_game/menu/selected/main/player/team/x
 #
 #
 # @description		Menu Settings pour les joueurs

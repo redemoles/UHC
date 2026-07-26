@@ -1,11 +1,11 @@
 
-#> uhc:pre_game/menu/selection/language/fra
+#> uhc:pre_game/menu/selected/language/fra
 #
-# @within			uhc:pre_game/menu/selection/language/main
+# @within			uhc:pre_game/menu/selected/language/main
 #
 #
 # @description		Français par défaut
 #
 
 scoreboard players set #language uhc.player.lang 051407
-execute as @a[tag=uhc.host] run function uhc:pre_game/menu/selection/language/default_lang/default
+execute as @a[tag=uhc.host] run function uhc:pre_game/menu/selected/language/default_lang/default

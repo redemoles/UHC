@@ -18,10 +18,9 @@ scoreboard players set #start_in_sky uhc.data.setup 0
 ## PvE
 scoreboard players set #pve uhc.data.setup 2
 scoreboard players set #absorption uhc.data.setup 2
-scoreboard players set #hp_tab uhc.data.setup 2
-scoreboard players set #hp_name uhc.data.setup 2
-scoreboard players set #hp_chat uhc.data.setup 1
-scoreboard players set #hp_100 uhc.data.setup 3
+scoreboard players set #hp_tab uhc.data.setup 1
+scoreboard players set #hp_name uhc.data.setup 1
+scoreboard players set #hp_100 uhc.data.setup 1
 
 ## PvP
 scoreboard players set #pvp uhc.data.setup 40
@@ -78,6 +77,8 @@ scoreboard players set #depth_strider uhc.data.setup 3
 scoreboard players set #lunge uhc.data.setup 1
 
 scoreboard players set #cobweb uhc.data.setup 2
+scoreboard players set #flint_and_steel uhc.data.setup 1
+scoreboard players set #lava_bucket uhc.data.setup 1
 scoreboard players set #diamond_armor uhc.data.setup 4
 scoreboard players set #netherite_armor uhc.data.setup 1
 
@@ -101,8 +102,9 @@ scoreboard players set #team_size uhc.data.setup 4
 ## Additional items / Items additionels
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_starter set value [{count: 1, Slot: 0b, id: "minecraft:oak_boat"},{count: 8, Slot: 1b, id: "minecraft:golden_carrot"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_ironman set value [{count: 1, Slot: 0b, id: "minecraft:golden_apple"}]
-execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 1, Slot: 0b, id: "minecraft:golden_apple"}]
 execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_notch_totem set value [{count: 4, Slot: 0b, id: "minecraft:gold_block"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_life_loss set value [{count: 1, Slot: 0b, id: "minecraft:golden_apple"}]
+execute unless score #00 uhc.data.numbers matches 0 run data modify storage uhc:settings Item_additional set value [{count: 1, Slot: 0b, id: "minecraft:golden_apple"}]
 
 ## Death message / Message de mort
 # 0 : Default message / Message par défaut

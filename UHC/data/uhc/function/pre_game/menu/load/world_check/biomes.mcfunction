@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/world_check/biomes
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Vérification des biomes

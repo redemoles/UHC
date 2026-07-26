@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/no_fall
+#> uhc:pre_game/menu/selected/scenario/list/no_fall
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation No Fall

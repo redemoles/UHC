@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/gamemode_text_main
 #
-# @within			uhc:pre_game/menu/selection/gamemode/*
+# @within			uhc:pre_game/menu/selected/gamemode/*
 #
 #
 #

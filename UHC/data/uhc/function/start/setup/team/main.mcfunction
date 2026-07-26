@@ -10,7 +10,7 @@
 scoreboard players operation #anonyme_team uhc.data.temp = #anonyme_team uhc.data.setup
 
 ## Mettre les joueurs dans leurs équipes
-execute as @a[tag=uhc.player] run function uhc:in_game/player/misc/team_join
+execute as @a[tag=uhc.player] run function uhc:in_game/player/misc/team_join/main
 execute as @a[tag=uhc.player] run function #plugin:in_game/player/team_join
 # Random Team en 2 pots
 execute as @a[scores={uhc.id.team=101..}] run scoreboard players operation @s uhc.id.team %= #100 uhc.data.numbers

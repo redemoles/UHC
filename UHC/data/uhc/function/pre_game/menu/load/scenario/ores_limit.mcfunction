@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/scenario/ores_limit
 #
-# @within			uhc:pre_game/menu/selection/scenario/pages/*
+# @within			uhc:pre_game/menu/selected/scenario/pages/*
 #
 #
 # @description		Menu Ores Limit

@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/gamemode_mls_disabled
 #
-# @within			uhc:pre_game/menu/selection/gamemode/bhc/grids_check/xx/enable
+# @within			uhc:pre_game/menu/selected/gamemode/bhc/grids_check/xx/enable
 #
 #
 #

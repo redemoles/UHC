@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/start
+#> uhc:pre_game/menu/selected/start
 #
 # @within			uhc:pre_game/menu/detector/menu
 #

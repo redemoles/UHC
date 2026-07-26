@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/lobby/12
+#> uhc:pre_game/menu/selected/lobby/12
 #
-# @within			uhc:pre_game/menu/selection/
+# @within			uhc:pre_game/menu/selected/
 #
 #
 # @description		Chargement du Lobby Ère Viking

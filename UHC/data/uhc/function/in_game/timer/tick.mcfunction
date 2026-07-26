@@ -48,7 +48,7 @@ execute as @a run function uhc:in_game/player/tick
 ## Annonce de mort
 execute if score #death_message uhc.data.setup matches 6 store result score #death_message uhc.data.temp run random value 1..5
 execute if predicate uhc:scenario/silent_night/day_time if score #death_message uhc.data.temp matches 5 unless score #death_message uhc.data.setup matches 5..6 run scoreboard players operation #death_message uhc.data.temp = #death_message uhc.data.setup
-execute if predicate uhc:scenario/silent_night/night_time unless score #death_message uhc.data.temp matches 5 run scoreboard players set #death_message uhc.data.temp 5
+execute if predicate uhc:scenario/silent_night/night_time run scoreboard players set #death_message uhc.data.temp 5
 
 ## End dimension
 # Détection entrée/sortie de l'end et respawn d'un joueur mort

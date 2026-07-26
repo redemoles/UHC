@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/sound_paranoia
+#> uhc:pre_game/menu/selected/scenario/list/sound_paranoia
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Blood Cycle

@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/settings/border/shrink/apply_change/size_start
+#> uhc:pre_game/menu/selected/settings/border/shrink/apply_change/size_start
 #
-# @within			uhc:pre_game/menu/selection/settings/border/shrink/main
+# @within			uhc:pre_game/menu/selected/settings/border/shrink/main
 #
 #
 # @description		Menu

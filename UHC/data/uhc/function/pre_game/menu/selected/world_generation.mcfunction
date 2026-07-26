@@ -1,5 +1,5 @@
 
-#> uhc:pre_game/menu/selection/world_generation
+#> uhc:pre_game/menu/selected/world_generation
 #
 # @within			uhc:pre_game/menu/detector/menu
 #

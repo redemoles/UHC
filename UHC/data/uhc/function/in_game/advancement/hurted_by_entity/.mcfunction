@@ -23,7 +23,7 @@ execute unless entity @p[tag=uhc.spec_info.pve] run return fail
 tag @s add uhc.temp
 
 # Couleur d'équipe de base
-function uhc:in_game/player/misc/team_join
+function uhc:in_game/player/misc/team_join/known_team
 
 # Données du joueur
 execute store result storage uhc:temp hp.id int 1 run scoreboard players get @s uhc.id.player
@@ -33,13 +33,10 @@ function uhc:in_game/player/misc/health/default
 execute on attacker as @s[type=minecraft:player] run return run function uhc:in_game/advancement/hurted_by_entity/attacker/
 
 # Si l'entité n'est pas un joueur
-execute if score #hp_chat uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/tellraw_heart
-execute if score #hp_chat uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/tellraw_percent
+execute if score #hp_100 uhc.data.setup matches 0 run function uhc:in_game/advancement/hurted_by_entity/tellraw_heart
+execute if score #hp_100 uhc.data.setup matches 1 run function uhc:in_game/advancement/hurted_by_entity/tellraw_percent
 
 # Couleur du joueur
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 run function uhc:in_game/scenario/biome_paranoia/by_colors
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 run function uhc:in_game/scenario/biome_paranoia/by_nickname
-execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
-function #plugin:in_game/player/team_join
+function uhc:in_game/player/misc/team_join/main
 
 tag @s remove uhc.temp

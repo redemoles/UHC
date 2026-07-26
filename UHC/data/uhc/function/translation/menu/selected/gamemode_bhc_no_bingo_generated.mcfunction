@@ -1,7 +1,7 @@
 
 #> uhc:translation/menu/selected/gamemode_bhc_no_bingo_generated
 #
-# @within			uhc:pre_game/menu/selection/gamemode/bhc/grids_check/xx/enable
+# @within			uhc:pre_game/menu/selected/gamemode/bhc/grids_check/xx/enable
 #
 #
 #

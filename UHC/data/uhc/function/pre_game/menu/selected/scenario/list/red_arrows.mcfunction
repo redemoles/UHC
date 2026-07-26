@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/red_arrows
+#> uhc:pre_game/menu/selected/scenario/list/red_arrows
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Red Arrows

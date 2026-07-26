@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/tp/center
+#> uhc:pre_game/menu/selected/tp/center
 #
-# @within			uhc:pre_game/menu/selection/main/
+# @within			uhc:pre_game/menu/selected/main/
 #
 #
 # @description		Menu

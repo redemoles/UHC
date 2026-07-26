@@ -22,7 +22,7 @@ execute if score #team_out uhc.id.team matches 1 run function uhc:in_game/team/o
 
 ## Attribution des effets
 function uhc:in_game/player/spec/main
-execute if score #biome_paranoia uhc.scenario matches 1.. run function uhc:in_game/player/misc/team_join
+function uhc:in_game/player/misc/team_join/main
 
 ## Messages
 execute if score #vanilla uhc.gamemode matches 1 run function uhc:translation/in_game/player_death_definitive

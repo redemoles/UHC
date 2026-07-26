@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/3_add_1
 #
-# @within			uhc:pre_game/menu/selection/settings/host
+# @within			uhc:pre_game/menu/selected/settings/host
 #
 #
 # @description		Menu
@@ -105,7 +105,7 @@ execute if score #sky_high uhc.scenario matches 1 if score @s uhc.menu.settings.
 
 
 # Nombre d'amures dupliqué à la mort d'un joueur
-execute if score @s uhc.menu.settings.inventory matches 06 unless score #item_additional_armor uhc.data.setup matches 4.. run scoreboard players add #item_additional_armor uhc.data.setup 1
+execute if score @s uhc.menu.settings.inventory matches 07 unless score #item_additional_armor uhc.data.setup matches 4.. run scoreboard players add #item_additional_armor uhc.data.setup 1
 
 # Règles d'enchantements - Armures en diamants, Épées en diamants, Armures en fer, Épées en diamants, Haches, Arcs, Bottes
 execute if score @s uhc.menu.settings.inventory matches 12 unless score #diamond_protection uhc.data.setup matches 4.. run scoreboard players add #diamond_protection uhc.data.setup 1
@@ -130,3 +130,5 @@ execute if score @s uhc.menu.settings.inventory matches 34 if score #netherite_a
 # Nombre de joueur par équipe
 execute if score @s uhc.menu.settings.team matches 2 unless score #team_size uhc.data.setup matches 64.. run scoreboard players add #team_size uhc.data.setup 1
 
+execute if score @s uhc.menu.settings.team matches 2 if score #random_team_pots uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 2.. if score #team_size uhc.data.setup matches 3.. run scoreboard players set #team_size uhc.data.setup 3
+execute if score @s uhc.menu.settings.team matches 2 if score #random_team_pots uhc.data.setup matches 1 if score #random_team_pots uhc.data.setup matches 2.. run scoreboard players operation #random_team_pots uhc.data.setup = #team_size uhc.data.setup

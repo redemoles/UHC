@@ -1,7 +1,7 @@
 
-#> uhc:pre_game/menu/selection/scenario/list/golden_head
+#> uhc:pre_game/menu/selected/scenario/list/golden_head
 #
-# @within			uhc:pre_game/menu/selection/scenario/list/
+# @within			uhc:pre_game/menu/selected/scenario/list/
 #
 #
 # @description		Activation/Désactivation Golden Head

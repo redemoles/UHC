@@ -9,7 +9,7 @@
 
 team join 099 @s[tag=!uhc.host,tag=uhc.spec]
 team join 099.host @s[tag=uhc.host,tag=uhc.spec]
-function uhc:in_game/player/misc/team_join
+function uhc:in_game/player/misc/team_join/main
 
 scoreboard players operation #record lobby.br.data.record = @s lobby.br.data.record
 scoreboard players operation #record lobby.br.data.record.min = @s lobby.br.data.record.min

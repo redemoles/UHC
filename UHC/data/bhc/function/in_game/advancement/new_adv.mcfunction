@@ -12,9 +12,7 @@ $execute if score #game_progress uhc.game_progress matches 0 run return run adva
 execute unless entity @s[tag=uhc.player,tag=!uhc.player.dead] run return fail
 
 ## Équipe du joueur
-scoreboard players set #anonyme_team uhc.data.setup 0
-function uhc:in_game/player/misc/team_join
-scoreboard players operation #anonyme_team uhc.data.setup = #anonyme_team uhc.data.temp
+function uhc:in_game/player/misc/team_join/known_team
 
 ## Recherche du mode de jeu
 $execute if score #bhc bhc.scenario matches 00 run function bhc:in_game/scenario/00/advancement/new_adv with storage $(namespace) $(line)_$(column)
@@ -26,6 +24,4 @@ $execute if score #bhc bhc.scenario matches 92 run function bhc:in_game/scenario
 $execute if score #bhc bhc.scenario matches 99 run function bhc:in_game/scenario/99/advancement/new_adv with storage $(namespace) $(line)_$(column)
 
 ## Couleur du joueur
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 0 if score #anonyme_team uhc.data.setup matches 1 run return run team join 091 @s
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 1 as @s[tag=uhc.player] run function uhc:in_game/scenario/biome_paranoia/by_colors
-execute if score #game_progress uhc.game_progress matches 1 if score #biome_paranoia uhc.scenario matches 2 as @s[tag=uhc.player] run function uhc:in_game/scenario/biome_paranoia/by_nickname
+function uhc:in_game/player/misc/team_join/main
