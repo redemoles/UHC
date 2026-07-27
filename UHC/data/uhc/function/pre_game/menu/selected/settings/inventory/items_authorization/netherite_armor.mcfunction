@@ -1,0 +1,11 @@
+
+#> uhc:pre_game/menu/selected/settings/inventory/items_authorization/netherite_armor
+#
+# @within			uhc:pre_game/menu/selected/
+#
+#
+# @description		Menu
+#
+
+scoreboard players set @s uhc.menu.settings 2
+scoreboard players set @s uhc.menu.settings.inventory 34

@@ -10,9 +10,9 @@
 execute if score @s uhc.menu.settings.misc matches 11..20 run return run function uhc:pre_game/menu/selected/settings/misc/team_stuff/main
 execute if score @s uhc.menu.settings.misc matches 21..30 run return run function uhc:pre_game/menu/selected/settings/misc/health_display/main
 
-execute if score @s uhc.menu.settings.pvp matches 11..20 run return run function uhc:pre_game/menu/selected/settings/pvp/fight_stuff
-execute if score @s uhc.menu.settings.pvp matches 41..50 run return run function uhc:pre_game/menu/selected/settings/pvp/no_clean
-execute if score @s uhc.menu.settings.pvp matches 51..60 run return run function uhc:pre_game/menu/selected/settings/pvp/absorption
+execute if score @s uhc.menu.settings.pvp matches 11..20 run return run function uhc:pre_game/menu/selected/settings/pvp/fight_stuff/menu
+execute if score @s uhc.menu.settings.pvp matches 41..50 run return run function uhc:pre_game/menu/selected/settings/pvp/no_clean/menu
+execute if score @s uhc.menu.settings.pvp matches 51..60 run return run function uhc:pre_game/menu/selected/settings/pvp/absorption/menu
 execute if score @s uhc.menu.settings.border matches 11.. run return run function uhc:pre_game/menu/selected/settings/border/shrink/main
 
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"settings_team"}] run return run function uhc:pre_game/menu/selected/settings/team/preset_menu
@@ -38,10 +38,10 @@ execute if score @s uhc.menu.settings.potion matches 1.. run function uhc:pre_ga
 execute if score @s uhc.menu.settings matches 1.. unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"settings_misc"}] run return run function uhc:pre_game/menu/selected/settings/misc/preset_menu
 execute if score @s uhc.menu.settings.misc matches 1.. run function uhc:pre_game/menu/selected/settings/misc/host
 
-execute if score @s uhc.menu.settings matches 3..9 unless items entity @s inventory.20 *[minecraft:custom_data={Tags:"-10"}] run function uhc:pre_game/menu/load/settings/1_remove_10
-execute if score @s uhc.menu.settings matches 2..9 unless items entity @s inventory.21 *[minecraft:custom_data={Tags:"-1"}] run function uhc:pre_game/menu/load/settings/2_remove_1
-execute if score @s uhc.menu.settings matches 2..9 unless items entity @s inventory.23 *[minecraft:custom_data={Tags:"+1"}] run function uhc:pre_game/menu/load/settings/3_add_1
-execute if score @s uhc.menu.settings matches 3..9 unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"+10"}] run function uhc:pre_game/menu/load/settings/4_add_10
+execute if score @s uhc.menu.settings matches 3..9 unless items entity @s inventory.20 *[minecraft:custom_data={Tags:"-10"}] run function uhc:pre_game/menu/selected/settings/1_remove_10
+execute if score @s uhc.menu.settings matches 2..9 unless items entity @s inventory.21 *[minecraft:custom_data={Tags:"-1"}] run function uhc:pre_game/menu/selected/settings/2_remove_1
+execute if score @s uhc.menu.settings matches 2..9 unless items entity @s inventory.23 *[minecraft:custom_data={Tags:"+1"}] run function uhc:pre_game/menu/selected/settings/3_add_1
+execute if score @s uhc.menu.settings matches 3..9 unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"+10"}] run function uhc:pre_game/menu/selected/settings/4_add_10
 
 execute if score @s[tag=uhc.host] uhc.menu.settings matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/menu
 execute if score @s[tag=!uhc.host] uhc.menu.settings matches 1.. unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/player/menu

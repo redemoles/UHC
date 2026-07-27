@@ -28,11 +28,11 @@ execute unless entity @s[tag=!mgs.tc.player,tag=!mgs.tc.spec] run function lobby
 execute unless entity @s[tag=!mgs.jump] run function lobby:mini_games/rjg/hotbar/root
 
 # Modification des items au démarrage et des items additionnels à la mort d'un joueur
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 2 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_starter/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 3 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 4 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_notch_totem/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_additional/validate
-execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 6 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_life_loss/validate
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 2 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/end_editing
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 3 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/end_editing
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 4 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/end_editing
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 5 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/end_editing
+execute if score @s[tag=uhc.host,gamemode=adventure] uhc.menu.settings.inventory matches 6 run function uhc:pre_game/menu/load/settings/inventory/start_and_rewards/end_editing
 
 # Vie en pourcentage
 execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/misc/health/default

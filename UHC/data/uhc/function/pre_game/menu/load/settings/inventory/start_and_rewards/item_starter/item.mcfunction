@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_starter/item
 #
-# @within			uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_starter/
+# @within			uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_starter/root
 #
 #
 # @description		Menu

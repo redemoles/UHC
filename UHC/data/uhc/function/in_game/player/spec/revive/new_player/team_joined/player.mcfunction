@@ -10,7 +10,7 @@
 ## Vérifie si l'équipe choisie est complète
 scoreboard players operation #team uhc.id.team = @s uhc.menu.revive
 execute store result score #temp uhc.data.setup run scoreboard players get @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] uhc.team.size
-execute if score #temp uhc.data.setup >= #team_size uhc.data.temp run return run function uhc:translation/in_game/player_spec_revive_cancel_team_full
+execute if score #temp uhc.data.setup >= #team_size uhc.data.temp run return run function uhc:translation/menu/load/team/page/team_join/cancel_team_full
 
 ## Équipe
 scoreboard players operation @s uhc.id.team = #team uhc.id.team
@@ -25,6 +25,8 @@ execute as @n[type=minecraft:marker,tag=UHC,distance=0..,predicate=uhc:id/team] 
 execute if score #pve uhc.data.temp matches 1.. run scoreboard players set @s uhc.effect.resistance -1
 # Ironman
 execute if score #minutes uhc.data.temp matches ..14 run tag @s add uhc.ironman
+# Best PvE
+execute if score #best_pve uhc.scenario matches 1 run tag @s add uhc.scenario.best_pve
 # Général
 scoreboard players operation @s uhc.id.team = @s uhc.menu.revive
 scoreboard players operation @s uhc.player.lives = #lives uhc.data.temp
@@ -33,3 +35,5 @@ tag @s remove uhc.revive.temp
 tag @s add uhc.player.dead
 clear @s
 function uhc:in_game/player/spec/revive/main
+# Couleur d'équipe
+function uhc:in_game/player/misc/team_join/main

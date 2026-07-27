@@ -73,8 +73,5 @@ execute if score #the_end_finished pregen.world matches 6.. run item replace ent
 execute if score #the_end_finished pregen.world matches 8.. run item replace entity @s inventory.22 with minecraft:end_stone[minecraft:item_name=[{"text":"4000/-4000","color":"#3FE7FF","italic":false}],minecraft:lore=[{"text":"End","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"the_end_8000"}]
 execute if score #the_end_finished pregen.world matches 10.. run item replace entity @s inventory.23 with minecraft:end_stone[minecraft:item_name=[{"text":"5000/-5000","color":"#3FE7FF","italic":false}],minecraft:lore=[{"text":"End","color":"#FFFFFF","italic":false}],minecraft:custom_data={Tags:"the_end_10000"}]
 
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.7 with minecraft:barrier[minecraft:item_name=[{"text":"Annuler","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"cancel"}]
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Fermer","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
-
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.7 with minecraft:barrier[minecraft:item_name=[{"text":"Cancel","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"cancel"}]
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.25 with minecraft:barrier[minecraft:item_name=[{"text":"Close","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"close"}]
+function uhc:translation/menu/load/world_generation
+function uhc:translation/menu/load/close

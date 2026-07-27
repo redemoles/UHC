@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_life_loss/item
 #
-# @within			uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_life_loss/
+# @within			uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_life_loss/root
 #
 #
 # @description		Menu

@@ -27,7 +27,7 @@ execute unless items entity @s[tag=uhc.host] inventory.16 *[minecraft:custom_dat
 
 # Ligne 3
 execute unless items entity @s[tag=uhc.host] inventory.19 *[minecraft:custom_data={Tags:"scenario"}] run function uhc:pre_game/menu/selected/scenario/list/mystery_scenarios
-execute unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"page"}] run return run function uhc:pre_game/menu/load/scenario/pages/2/main
+execute unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"page"}] run return run function uhc:pre_game/menu/load/scenario/pages_2
 execute unless items entity @s[tag=uhc.host] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/host/menu
 execute unless items entity @s[tag=!uhc.host] inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/main/player/menu
-function uhc:pre_game/menu/load/scenario/pages/1/main
+function uhc:pre_game/menu/load/scenario/pages_1

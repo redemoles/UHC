@@ -7,11 +7,7 @@
 # @description		Menu
 #
 
-execute if score @s uhc.menu.settings.pve matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/lives_number/macro_set
-execute if score @s uhc.menu.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/lives_number/macro_text with storage uhc:settings menu
-
-execute if score @s uhc.menu.settings.pve matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/1_life_left/macro_set
-execute if score @s uhc.menu.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/1_life_left/macro_text with storage uhc:settings menu
-
-execute if score @s uhc.menu.settings.pve matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/2_lives_left/macro_set
-execute if score @s uhc.menu.settings.pve matches 1.. run function uhc:pre_game/menu/load/settings/pve/2_lives_left/macro_text with storage uhc:settings menu
+execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pve/macro_set
+function uhc:translation/menu/load/settings/pve_lives_number with storage uhc:settings menu
+function uhc:translation/menu/load/settings/pve_1_life_left with storage uhc:settings menu
+function uhc:translation/menu/load/settings/pve_2_lives_left with storage uhc:settings menu

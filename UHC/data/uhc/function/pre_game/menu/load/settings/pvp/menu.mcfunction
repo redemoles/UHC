@@ -9,18 +9,17 @@
 
 # Retour
 execute in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/macro_set
-function uhc:pre_game/menu/load/settings/pvp/macro_text with storage uhc:settings menu
+execute if score @s uhc.menu.settings.pvp matches 11.. run function uhc:translation/menu/load/settings/main_pvp with storage uhc:settings menu
 
 # PvP Version
-execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/version/macro_text
+function uhc:translation/menu/load/settings/pvp_version
 
 # Équipements de combat
-execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/macro_text
+function uhc:translation/menu/load/settings/pvp_main_fight_stuff
 execute if score @s uhc.menu.settings.pvp matches 11..20 run function uhc:pre_game/menu/load/settings/pvp/fight_stuff/menu
 
 # No Clean Up
-execute if score @s uhc.menu.settings.pvp matches 1.. in uhc:lobby run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_set
-execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/no_clean/macro_text with storage uhc:settings menu
+function uhc:translation/menu/load/settings/pvp_no_clean with storage uhc:settings menu
 
 # Absorption
-execute if score @s uhc.menu.settings.pvp matches 1.. run function uhc:pre_game/menu/load/settings/pvp/absorption/macro_text
+function uhc:translation/menu/load/settings/pvp_absorption

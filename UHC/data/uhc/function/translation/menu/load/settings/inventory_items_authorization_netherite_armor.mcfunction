@@ -1,0 +1,20 @@
+
+#> uhc:translation/menu/load/settings/inventory_items_authorization_netherite_armor
+#
+# @within			uhc:pre_game/menu/load/settings/inventory/menu
+#
+#
+#
+#
+
+## FRA - Français / French
+$execute if score #netherite_armor uhc.data.setup matches 0 if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.14 with minecraft:netherite_ingot[minecraft:item_name=[{"text":"Limite de pièces d'armure en netherite > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+$execute if score #netherite_armor uhc.data.setup matches 0 if score @s uhc.player.lang matches 061801 if score @s uhc.menu.settings.inventory matches 34 run item replace entity @s[tag=uhc.host] inventory.22 with minecraft:netherite_ingot[minecraft:item_name=[{"text":"Limite de pièces d'armure en netherite > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+$execute if score #netherite_armor uhc.data.setup matches 1.. if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.14 with minecraft:netherite_chestplate[minecraft:item_name=[{"text":"Limite de pièces d'armure en netherite > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+$execute if score #netherite_armor uhc.data.setup matches 1.. if score @s uhc.player.lang matches 061801 if score @s uhc.menu.settings.inventory matches 34 run item replace entity @s[tag=uhc.host] inventory.22 with minecraft:netherite_chestplate[minecraft:item_name=[{"text":"Limite de pièces d'armure en netherite > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+
+## ENG - English
+$execute if score #netherite_armor uhc.data.setup matches 0 if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.14 with minecraft:netherite_ingot[minecraft:item_name=[{"text":"Netherite armor piece limit > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+$execute if score #netherite_armor uhc.data.setup matches 0 if score @s uhc.player.lang matches 051407 if score @s uhc.menu.settings.inventory matches 34 run item replace entity @s[tag=uhc.host] inventory.22 with minecraft:netherite_ingot[minecraft:item_name=[{"text":"Netherite armor piece limit > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+$execute if score #netherite_armor uhc.data.setup matches 1.. if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.14 with minecraft:netherite_chestplate[minecraft:item_name=[{"text":"Netherite armor piece limit > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]
+$execute if score #netherite_armor uhc.data.setup matches 1.. if score @s uhc.player.lang matches 051407 if score @s uhc.menu.settings.inventory matches 34 run item replace entity @s[tag=uhc.host] inventory.22 with minecraft:netherite_chestplate[minecraft:item_name=[{"text":"Netherite armor piece limit > ","color":"#FFFFFF","italic":false},$(netherite_armor_text)],minecraft:tooltip_display={"hidden_components":["minecraft:attribute_modifiers"]},minecraft:custom_data={Tags:"settings_inventory_items_netherite_armor"}]

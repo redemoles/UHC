@@ -10,7 +10,7 @@
 execute unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"menu_language"}] run return run function uhc:pre_game/menu/load/language/menu
 execute unless items entity @s[tag=uhc.host,scores={uhc.menu.main.player=1..}] inventory.4 *[minecraft:custom_data={Tags:"menu_main_host"}] run return run function uhc:pre_game/menu/load/main/host/menu
 execute unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.3 *[minecraft:custom_data={Tags:"gamemode_list"}] run return run function uhc:pre_game/menu/load/main/player/gamemode/tellraw
-execute unless score #mystery_scenarios uhc.data.setup matches 1 unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.4 *[minecraft:custom_data={Tags:"scenario_list"}] run return run function uhc:pre_game/menu/load/scenario/pages/1/main
+execute unless score #mystery_scenarios uhc.data.setup matches 1 unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.4 *[minecraft:custom_data={Tags:"scenario_list"}] run return run function uhc:pre_game/menu/load/scenario/pages_1
 execute if score #mystery_scenarios uhc.data.setup matches 1 unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.4 *[minecraft:custom_data={Tags:"scenario_list"}] run function uhc:translation/menu/selected/settings_cancel_scenario
 execute unless items entity @s[tag=!uhc.host,scores={uhc.menu.main.player=1..}] inventory.5 *[minecraft:custom_data={Tags:"settings"}] run return run function uhc:pre_game/menu/load/settings/menu
 execute unless items entity @s inventory.7 *[minecraft:custom_data={Tags:"menu_teleportation"}] run return run function uhc:pre_game/menu/load/tp/main

@@ -12,8 +12,8 @@ tag @s remove uhc.player
 team join 099 @s[tag=!uhc.host]
 team join 099.host @s[tag=uhc.host]
 
-tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Tu as rejoint les ","color":"#3F9FFF","bold":false}, {"text":"Spectateurs","color":"aqua"}]
-tellraw @s[scores={uhc.player.lang=051407}] [{"text":"You joined the ","color":"#3F9FFF","bold":false}, {"text":"Spectators","color":"aqua"}]
+
+function uhc:translation/menu/load/team/page/team_join/spectator
 
 scoreboard players reset @s uhc.id.team
 tag @s remove uhc.random_team.in_a_team

@@ -8,15 +8,12 @@
 #
 
 execute store result score #temp uhc.data.setup if entity @a[scores={uhc.id.team=28}]
-execute if score #temp uhc.data.setup >= #team_size uhc.data.setup if score @s uhc.player.lang matches 061801 run return run tellraw @s [{"text":"Équipe complète","color":"#FF3F3F"}]
-execute if score #temp uhc.data.setup >= #team_size uhc.data.setup if score @s uhc.player.lang matches 051407 run return run tellraw @s [{"text":"Team full","color":"#FF3F3F"}]
+execute if score #temp uhc.data.setup >= #team_size uhc.data.setup run return run function uhc:translation/menu/load/team/page/team_join/cancel_team_full
 
 tag @s remove uhc.spec
 tag @s add uhc.player
+scoreboard players set @s uhc.id.team 28
 execute if score #anonyme_team uhc.data.setup matches 0 run team join 028 @s
 execute if score #anonyme_team uhc.data.setup matches 1 run team join 091 @s
 
-tellraw @s[scores={uhc.player.lang=061801}] [{"text":"Tu as rejoint l'","color":"#3FE7FF","bold":false},{"text":"♦ Équipe Rose","color":"light_purple","bold":false}]
-tellraw @s[scores={uhc.player.lang=051407}] [{"text":"You joined the ","color":"#3FE7FF","bold":false},{"text":"♦ Pink Team","color":"light_purple","bold":false}]
-
-scoreboard players set @s uhc.id.team 28
+function uhc:translation/menu/load/team/page/team_join/17-32/28

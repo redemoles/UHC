@@ -18,5 +18,5 @@ execute if score @s uhc.menu.scenario.ores_limit matches 11.. unless items entit
 execute if score @s uhc.menu.scenario.ores_limit matches 11.. unless items entity @s inventory.23 *[minecraft:custom_data={Tags:"+1"}] run function uhc:pre_game/menu/selected/scenario/list/ores_limit/3_add_1
 execute if score @s uhc.menu.scenario.ores_limit matches 11.. unless items entity @s inventory.24 *[minecraft:custom_data={Tags:"+5"}] run function uhc:pre_game/menu/selected/scenario/list/ores_limit/4_add_5
 
-execute unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/pages/2/main
+execute unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/pages_2
 function uhc:pre_game/menu/load/scenario/ores_limit

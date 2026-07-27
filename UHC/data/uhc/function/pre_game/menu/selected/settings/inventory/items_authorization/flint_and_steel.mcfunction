@@ -1,0 +1,11 @@
+
+#> uhc:pre_game/menu/selected/settings/inventory/items_authorization/flint_and_steel
+#
+# @within			uhc:pre_game/menu/selected/
+#
+#
+# @description		Menu
+#
+
+scoreboard players add #flint_and_steel uhc.data.setup 1
+execute if score #flint_and_steel uhc.data.setup matches 2 run scoreboard players set #flint_and_steel uhc.data.setup 0

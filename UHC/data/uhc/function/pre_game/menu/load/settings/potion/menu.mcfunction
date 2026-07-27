@@ -7,18 +7,21 @@
 # @description		Menu
 #
 
-function uhc:pre_game/menu/load/settings/potion/effect_fire_resistance/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_harming/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_healing/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_poison/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_regeneration/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_slowness/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_speed/macro_text
+# Effet - Ligne 1
+function uhc:translation/menu/load/settings/potion_effect_fire_resistance
+function uhc:translation/menu/load/settings/potion_effect_harming
+function uhc:translation/menu/load/settings/potion_effect_healing
+function uhc:translation/menu/load/settings/potion_effect_poison
+function uhc:translation/menu/load/settings/potion_effect_regeneration
+function uhc:translation/menu/load/settings/potion_effect_slowness
+function uhc:translation/menu/load/settings/potion_effect_speed
 
-function uhc:pre_game/menu/load/settings/potion/effect_strength/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_weakness/macro_text
+# Effet - Ligne 2
+function uhc:translation/menu/load/settings/potion_effect_strength
+function uhc:translation/menu/load/settings/potion_effect_weakness
 
-function uhc:pre_game/menu/load/settings/potion/milk_bucket/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_level_2/macro_text
-function uhc:pre_game/menu/load/settings/potion/effect_extended/macro_text
-function uhc:pre_game/menu/load/settings/potion/compatibility/macro_text
+# Autre
+function uhc:translation/menu/load/settings/potion_milk_bucket
+function uhc:translation/menu/load/settings/potion_effect_level_2
+function uhc:translation/menu/load/settings/potion_effect_extended
+function uhc:translation/menu/load/settings/potion_compatibility

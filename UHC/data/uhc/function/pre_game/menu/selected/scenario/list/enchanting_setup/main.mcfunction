@@ -12,5 +12,5 @@ execute unless items entity @s inventory.1 *[minecraft:custom_data={Tags:"enchan
 execute unless items entity @s inventory.2 *[minecraft:custom_data={Tags:"enchanting_setup"}] run function uhc:pre_game/menu/selected/scenario/list/enchanting_setup/500
 execute unless items entity @s inventory.3 *[minecraft:custom_data={Tags:"enchanting_setup"}] run function uhc:pre_game/menu/selected/scenario/list/enchanting_setup/1000
 
-execute unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/pages/1/main
+execute unless items entity @s inventory.25 *[minecraft:custom_data={Tags:"close"}] run return run function uhc:pre_game/menu/load/scenario/pages_1
 function uhc:pre_game/menu/load/scenario/enchanting_setup

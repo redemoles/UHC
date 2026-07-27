@@ -1,7 +1,7 @@
 
 #> uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/item
 #
-# @within			uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/
+# @within			uhc:pre_game/menu/load/settings/inventory/start_and_rewards/item_ironman/root
 #
 #
 # @description		Menu
