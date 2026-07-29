@@ -16,4 +16,3 @@ scoreboard players set #lava_bucket uhc.data.setup 1
 scoreboard players set #flint_and_steel uhc.data.setup 1
 
 scoreboard players set #update uhc.data.update 26079
-execute as @a[tag=uhc.host] run function uhc:translation/datapack_update_version

@@ -36,3 +36,4 @@ execute if score #update uhc.data.update matches 26062 run function uhc:datapack
 execute if score #update uhc.data.update matches 26063..26064 run function uhc:datapack_update/2026/26_7/0
 execute if score #update uhc.data.update matches 26070..26075 run function uhc:datapack_update/2026/26_7/6
 execute if score #update uhc.data.update matches 26076..26078 run function uhc:datapack_update/2026/26_7/9
+execute if score #update uhc.data.update matches 26079 run function uhc:datapack_update/2026/26_8/0
