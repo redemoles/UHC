@@ -504,6 +504,11 @@ with zipfile.ZipFile(f"Bingo_UHC_grids_{datetime.datetime.today().strftime('%Y-%
 		background="minecraft:block/purple_concrete_powder"
 	)
 
+	# Add the bingo numbers file to the generated data folder
+	if os.path.exists("bingo_numbers.txt"):
+		with open("bingo_numbers.txt", "r", encoding="utf-8") as numbers_file:
+			zip_file.writestr("data/bingo_numbers.txt", numbers_file.read())
+
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
