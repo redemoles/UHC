@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:sulfur_spike"
+		},
+		"title": {
+			"text": "Sulfur Spike",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtain Sulfur Spike",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:sulfur_spike"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

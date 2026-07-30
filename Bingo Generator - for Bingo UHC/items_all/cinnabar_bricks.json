@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:cinnabar_bricks"
+		},
+		"title": {
+			"text": "Cinnabar Bricks",
+			"color": "#FFDF00"
+		},
+		"description": {
+			"text": "Obtain Cinnabar Bricks",
+			"color": "#FFFFFF"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:cinnabar_bricks"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	]
+}

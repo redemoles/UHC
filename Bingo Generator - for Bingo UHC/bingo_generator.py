@@ -512,10 +512,10 @@ with zipfile.ZipFile(f"Bingo_UHC_grids_{datetime.datetime.today().strftime('%Y-%
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"min_format": [101, 1],
-		"max_format": [101, 1],
+		"min_format": [107, 1],
+		"max_format": [107, 1],
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y_%m_%d")}"
 	}}
 }}""")
 	# Write the main load function file requested by the user
-	zip_file.writestr("data/bingo_generator/function/load.mcfunction", "scoreboard players set #bingo_generator_update uhc.data.update 26060")
+	zip_file.writestr("data/bingo_generator/function/load.mcfunction", "scoreboard players set #bingo_generator_update uhc.data.update 26080")

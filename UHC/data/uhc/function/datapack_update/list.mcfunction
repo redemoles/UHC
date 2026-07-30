@@ -16,3 +16,5 @@ execute if score #update uhc.data.update matches 25505..26530 run function uhc:d
 execute if score #game_progress uhc.game_progress matches 1.. run function uhc:datapack_update/in_game
 execute if score #game_progress uhc.game_progress matches 0 if score #reset uhc.data.update matches 1 run function uhc:datapack_update/reset/
 execute if score #game_progress uhc.game_progress matches 0 if score #reset uhc.data.update matches 2 run function uhc:datapack_update/reset/full
+
+execute if score #bingo_generator_update uhc.data.update < #bingo_generator_last_version uhc.data.update run function uhc:translation/datapack_update_bingo_generator

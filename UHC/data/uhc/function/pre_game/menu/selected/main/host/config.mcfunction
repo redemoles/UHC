@@ -33,8 +33,8 @@ tellraw @s[tag=!host.check_spawns] [{"text":"• ","color":"#3F9FFF","bold":true
 tellraw @s[tag=host.check_spawns] [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Spawns","color":"#3FE7FF","bold":false}]
 function uhc:translation/menu/selected/config_gamemode_and_scenarios with storage uhc:settings gamemode
 execute if score #bats uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Bats","color":"#FFFFFF","bold":false}]
-execute if score #beta_zombies uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Beta Zombies","color":"#FFFFFF","bold":false}]
 execute if score #best_pve uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Best PvE","color":"#FFFFFF","bold":false}]
+execute if score #beta_zombies uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Beta Zombies","color":"#FFFFFF","bold":false}]
 execute if score #biome_paranoia uhc.scenario matches 1.. run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Biome Paranoia","color":"#FFFFFF","bold":false}]
 execute if score #blood_cycle uhc.scenario matches 1 run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Blood Cycle","color":"#FFFFFF","bold":false}]
 execute if score #blood_diamond uhc.scenario matches 1.. run tellraw @s [{"text":"• ","color":"#3F9FFF","bold":true},{"text":"Blood Diamond","color":"#FFFFFF","bold":false}]
