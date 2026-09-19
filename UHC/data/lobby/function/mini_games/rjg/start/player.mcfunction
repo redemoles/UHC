@@ -7,7 +7,7 @@
 # @description		Téléportation du joueur
 #
 
-$tp @s ~$(x) ~ ~ 0.0 0.0
+$execute positioned ~$(x) ~ ~ run tp @s ~ ~ ~ 0.0 0.0
 gamemode adventure @s
 
 scoreboard players set @s lobby.rjg.x 0

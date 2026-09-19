@@ -16,8 +16,8 @@ execute if score #reward_kill_absorption uhc.data.setup matches 1 run effect giv
 execute if score #reward_kill_absorption uhc.data.setup matches 1 if score @s uhc.player.lives matches 1.. run attribute @s minecraft:max_absorption base set 4
 execute if score #reward_kill_absorption uhc.data.setup matches 1 if score @s uhc.player.lives matches 1.. run scoreboard players set @s uhc.timer.absorption 11
 execute if score #reward_kill_absorption uhc.data.setup matches 1 run effect clear @s minecraft:absorption
-experience add @s 2 levels
-execute if score #experienceless uhc.scenario matches 1 run experience add @s 4 levels
+execute if score #experienceless uhc.scenario matches 0 run experience add @s 2 levels
+execute if score #experienceless uhc.scenario matches 1 run experience add @s 6 levels
 
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @s uhc.player.kills 1
 execute unless score #game_progress uhc.game_progress matches 2.. run scoreboard players add @s uhc.player.kills.inv 1

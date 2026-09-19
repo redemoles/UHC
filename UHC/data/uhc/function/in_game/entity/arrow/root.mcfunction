@@ -8,4 +8,4 @@
 #
 
 execute as @s[tag=!uhc.checked] run function uhc:in_game/entity/arrow/basic
-function #plugin:in_game/inventory/ban_items
+function #plugin:in_game/entity/arrow

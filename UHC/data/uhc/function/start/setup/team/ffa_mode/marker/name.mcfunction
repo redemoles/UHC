@@ -8,4 +8,4 @@
 #
 
 $data merge entity @s {Tags:["$(tag)","UHC"],CustomName:[{"text":"$(name)"}]}
-$tp @s ~ ~$(tag) ~
+$execute positioned ~ ~$(tag) ~ run tp @s ~ ~ ~
