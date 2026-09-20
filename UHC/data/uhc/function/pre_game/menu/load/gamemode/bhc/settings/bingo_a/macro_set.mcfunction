@@ -7,6 +7,5 @@
 # @description		Menu
 #
 
-data modify block 0 -61 0 front_text.messages set value [{"score":{"name":"#stepa_start","objective":"bhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false},{"score":{"name":"#stepa_end","objective":"bhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false},"",""]
-data modify storage uhc:settings menu.stepa.start set from block 0 -61 0 front_text.messages[0]
-data modify storage uhc:settings menu.stepa.end set from block 0 -61 0 front_text.messages[1]
+execute store result storage uhc:settings menu.stepa.start int 1 run scoreboard players get #stepa_start bhc.data.setup
+execute store result storage uhc:settings menu.stepa.end int 1 run scoreboard players get #stepa_end bhc.data.setup

@@ -8,7 +8,7 @@
 #
 
 ## FRA - Français / French
-execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:grass_block[minecraft:item_name=[{"text":"Génération du monde","color":"#3F9F3F","italic":false}],minecraft:custom_data={Tags:"menu_world_generation"}]
+execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.1 with minecraft:filled_map[minecraft:item_name=[{"text":"Génération du monde","color":"#3F9F3F","italic":false}],minecraft:tooltip_display={"hidden_components":["map_id"]},minecraft:custom_data={Tags:"menu_world_generation"}]
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.2 with minecraft:ender_eye[minecraft:item_name=[{"text":"Vérifications du monde","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"menu_world_check"}]
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.3 with minecraft:beacon[minecraft:item_name=[{"text":"Lobby","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_lobby"}]
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.5 with minecraft:command_block[minecraft:item_name=[{"text":"Mode de jeu","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"menu_gamemodes"}]
@@ -20,7 +20,7 @@ execute if score @s uhc.player.lang matches 061801 run item replace entity @s in
 execute if score @s uhc.player.lang matches 061801 run item replace entity @s inventory.25 with minecraft:white_banner[minecraft:item_name=[{"text":"Menu joueur","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_player"}]
 
 ## ENG - English
-execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:grass_block[minecraft:item_name=[{"text":"World generation","color":"#3F9F3F","italic":false}],minecraft:custom_data={Tags:"menu_world_generation"}]
+execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.1 with minecraft:filled_map[minecraft:item_name=[{"text":"World generation","color":"#3F9F3F","italic":false}],minecraft:tooltip_display={"hidden_components":["map_id"]},minecraft:custom_data={Tags:"menu_world_generation"}]
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.2 with minecraft:ender_eye[minecraft:item_name=[{"text":"World check","color":"#FFE73F","italic":false}],minecraft:custom_data={Tags:"menu_world_check"}]
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.3 with minecraft:beacon[minecraft:item_name=[{"text":"Lobby","color":"#3FE7FF","italic":false}],minecraft:custom_data={Tags:"menu_lobby"}]
 execute if score @s uhc.player.lang matches 051407 run item replace entity @s inventory.5 with minecraft:command_block[minecraft:item_name=[{"text":"Game modes","color":"#FF3F3F","italic":false}],minecraft:custom_data={Tags:"menu_gamemodes"}]

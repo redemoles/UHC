@@ -7,8 +7,5 @@
 # @description		Menu
 #
 
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#depth_strider","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings menu.depth_strider set from block 0 -61 0 front_text.messages[0]
-
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#lunge","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings menu.lunge set from block 0 -61 0 front_text.messages[0]
+execute store result storage uhc:settings menu.depth_strider int 1 run scoreboard players get #depth_strider uhc.data.setup
+execute store result storage uhc:settings menu.lunge int 1 run scoreboard players get #lunge uhc.data.setup

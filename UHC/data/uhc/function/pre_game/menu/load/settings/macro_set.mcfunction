@@ -7,11 +7,6 @@
 # @description		Menu
 #
 
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#pve","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings menu.pve set from block 0 -61 0 front_text.messages[0]
-
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#pvp","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings menu.pvp set from block 0 -61 0 front_text.messages[0]
-
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#shrink_1_size_start","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true,"italic":false}]
-data modify storage uhc:settings menu.shrink.1_size_start set from block 0 -61 0 front_text.messages[0]
+execute store result storage uhc:settings menu.pve int 1 run scoreboard players get #pve uhc.data.setup
+execute store result storage uhc:settings menu.pvp int 1 run scoreboard players get #pvp uhc.data.setup
+execute store result storage uhc:settings menu.shrink.1_size_start int 1 run scoreboard players get #shrink_1_size_start uhc.data.setup

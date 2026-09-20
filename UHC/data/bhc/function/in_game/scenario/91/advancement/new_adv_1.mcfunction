@@ -62,7 +62,9 @@ execute if score @s bhc.stepa.case = #max bhc.stepa.case run scoreboard players 
 # Case - Équipe uniquement
 $execute as @p[tag=bhc.new_adv] run function uhc:translation/bhc/91_1_grid_chill_mode/square_team with storage $(namespace) $(line)_$(column)
 # Case - Pour tous
+function bhc:in_game/advancement/player_can_receive_message/add
 $function uhc:translation/bhc/91_1_grid_chill_mode/square_everyone with storage $(namespace) $(line)_$(column)
+function bhc:in_game/advancement/player_can_receive_message/remove
 # Ligne / Colonne
 $execute unless score #team_first_completion bhc.data matches 1 if score #team_first_line_$(line) bhc.data matches 1 run function uhc:translation/bhc/91_1_grid_chill_mode/line with storage $(namespace) $(line)_$(column)
 $execute unless score #team_first_completion bhc.data matches 1 if score #team_first_column_$(column) bhc.data matches 1 run function uhc:translation/bhc/91_1_grid_chill_mode/column with storage $(namespace) $(line)_$(column)

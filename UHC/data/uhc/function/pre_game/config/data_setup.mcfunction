@@ -85,6 +85,9 @@ scoreboard players set #100b uhc.scenario.enchanting_setup 0
 scoreboard players set #500b uhc.scenario.enchanting_setup 0
 scoreboard players set #1000b uhc.scenario.enchanting_setup 0
 
+# Silent Night 
+scoreboard players set #scoreboard_bypass uhc.scenario.silent_night 0
+
 ## Configuration de la partie
 scoreboard players set #ffa uhc.data.setup 0
 # Hauteur maximal de map

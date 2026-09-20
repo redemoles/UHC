@@ -37,6 +37,7 @@ scoreboard objectives remove uhc.scenario.go_to_hell.damage
 scoreboard objectives remove uhc.scenario.go_to_hell.tick
 scoreboard objectives remove uhc.scenario.ores_limit.diamond
 scoreboard objectives remove uhc.scenario.ores_limit.gold
+scoreboard objectives remove uhc.scenario.silent_night
 scoreboard objectives remove uhc.scenario.sky_high.damage
 scoreboard objectives remove uhc.scenario.sky_high.tick
 scoreboard objectives remove uhc.scenario.sound_paranoia.number
@@ -120,6 +121,7 @@ scoreboard objectives add uhc.scenario.go_to_hell.tick dummy
 scoreboard objectives add uhc.scenario.ores_limit.diamond dummy
 scoreboard objectives add uhc.scenario.ores_limit.gold dummy
 scoreboard objectives add uhc.scenario.ores_limit.setup dummy
+scoreboard objectives add uhc.scenario.silent_night dummy
 scoreboard objectives add uhc.scenario.sky_high.damage dummy
 scoreboard objectives add uhc.scenario.sky_high.settings dummy
 scoreboard objectives add uhc.scenario.sky_high.tick dummy
@@ -426,4 +428,4 @@ data modify storage uhc:temp death set value {}
 data modify storage uhc:temp ironman set value {}
 
 ## Mise à jour
-scoreboard players set #update uhc.data.update 26090
+scoreboard players set #update uhc.data.update 26091

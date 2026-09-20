@@ -13,10 +13,8 @@ scoreboard players operation #shield uhc.data.setup /= #100 uhc.data.numbers
 scoreboard players operation #shield uhc.data.setup *= #-1 uhc.data.numbers
 scoreboard players add #shield uhc.data.setup 336
 execute store result storage uhc:settings menu.shield_durability int 1 run scoreboard players get #shield uhc.data.setup
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#shield_percent","objective":"uhc.data.setup"},"color":"#FF3F3F","bold":true}]
-data modify storage uhc:settings menu.shield_percent set from block 0 -61 0 front_text.messages[0]
+execute store result storage uhc:settings menu.shield_percent int 1 run scoreboard players get #shield_percent uhc.data.setup
 scoreboard players remove #shield uhc.data.setup 336
 scoreboard players operation #shield uhc.data.setup *= #-1 uhc.data.numbers
 
-data modify block 0 -61 0 front_text.messages[0] set value [{"score":{"name":"#wolf_count","objective":"uhc.data.setup"},"color":"#3FE7FF","bold":true}]
-data modify storage uhc:settings menu.wolf_limit set from block 0 -61 0 front_text.messages[0]
+execute store result storage uhc:settings menu.wolf_limit int 1 run scoreboard players get #wolf_count uhc.data.setup

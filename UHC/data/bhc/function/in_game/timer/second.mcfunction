@@ -14,8 +14,8 @@ execute if score #bhc bhc.scenario matches 02 if score #stepb_start bhc.data.tem
 execute if score #stepb_start bhc.data.temp matches 5 if score #seconds uhc.data.temp matches 10 run function bhc:in_game/timer/countdown/reminder
 
 # Général
-execute unless score #team/2 bhc.data matches 8.. unless score #game_progress uhc.game_progress matches 2.. if score #stepb_end bhc.data.temp matches ..-1 run function bhc:in_game/timer/scoreboard/less_than_15_teams/
-execute if score #team/2 bhc.data matches 8.. unless score #game_progress uhc.game_progress matches 2.. run function bhc:in_game/timer/scoreboard/more_than_15_teams/in_game
+execute unless score #team/2 bhc.data matches 8.. unless score #game_progress uhc.game_progress matches 2.. if score #stepb_end bhc.data.temp matches ..-1 unless predicate uhc:scenario/silent_night/night_time unless score #seconds uhc.data.temp matches 01..14 unless score #seconds uhc.data.temp matches 16..29 unless score #seconds uhc.data.temp matches 31..44 unless score #seconds uhc.data.temp matches 46.. run function bhc:in_game/timer/scoreboard/less_than_15_teams/
+execute if score #team/2 bhc.data matches 8.. unless score #game_progress uhc.game_progress matches 2.. unless predicate uhc:scenario/silent_night/night_time unless score #seconds uhc.data.temp matches 01..14 unless score #seconds uhc.data.temp matches 16..29 unless score #seconds uhc.data.temp matches 31..44 unless score #seconds uhc.data.temp matches 46.. run function bhc:in_game/timer/scoreboard/more_than_15_teams/in_game
 execute if score #seconds uhc.game_progress matches 1.. run function bhc:in_game/timer/scoreboard/after_end_game
 
 execute if score #stepa_start bhc.data.temp matches 5 if score #sec_cooldown uhc.data.temp matches 0 run scoreboard players set #hotbar_cooldown uhc.data.temp 4
