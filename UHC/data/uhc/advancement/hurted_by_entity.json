@@ -4,7 +4,11 @@
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "player": {
-                    "nbt": "{Tags:[\"uhc.player\"]}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"uhc.player\"]}"
+                    }
                 },
                 "damage": {
                     "blocked": false
@@ -12,8 +16,7 @@
             }
         }
     },
-    "rewards":
-    {
+    "rewards": {
         "function": "uhc:in_game/advancement/hurted_by_entity/"
     }
 }

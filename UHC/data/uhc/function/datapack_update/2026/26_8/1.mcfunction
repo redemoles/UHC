@@ -10,4 +10,3 @@
 scoreboard players set #bingo_generator_last_version uhc.data.update 26080
 
 scoreboard players set #update uhc.data.update 26081
-execute as @a[tag=uhc.host] run function uhc:translation/datapack_update_version

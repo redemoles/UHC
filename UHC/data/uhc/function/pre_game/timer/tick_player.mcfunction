@@ -41,5 +41,6 @@ execute if entity @s[gamemode=!spectator] run function uhc:in_game/player/misc/h
 execute as @s[scores={uhc.spawn.check=0..}] in minecraft:overworld run function uhc:pre_game/world_check/spawns
 
 # Night Vision
+execute if score @s uhc.night_vision matches 1 run function uhc:in_game/player/effect/night_vision
 effect give @s[tag=uhc.night_vision,tag=!mgs.backroom] minecraft:night_vision infinite 0 true
 effect clear @s[tag=!uhc.night_vision,tag=!mgs.backroom] minecraft:night_vision

@@ -42,6 +42,7 @@ scoreboard players reset @s uhc.id.spawn_check
 scoreboard players reset @s uhc.info.me
 scoreboard players reset @s uhc.info.team
 scoreboard players reset @s uhc.info.team.temp
+scoreboard players enable @s uhc.night_vision
 
 # → L'ordre des commandes doit rester comme ça
 execute as @s[tag=uhc.host] run function uhc:pre_game/menu/reset/host

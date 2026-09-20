@@ -15,7 +15,7 @@ attribute @s minecraft:knockback_resistance modifier add uhc.knockback_resistanc
 execute if score #tier_2_damage uhc.scenario.blood_diamond.setup matches 1.. if score #random uhc.scenario.blood_diamond.temp <= #random_damage_gold_ingot uhc.scenario.blood_diamond.temp at @s run damage @s 1 minecraft:generic_kill by @n[type=minecraft:marker,tag=uhc.scenario.blood_diamond]
 execute if score #tier_2_gold_ingot uhc.scenario.blood_diamond.setup matches 1.. if score #random uhc.scenario.blood_diamond.temp > #random_damage_gold_ingot uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp run function uhc:in_game/player/misc/ore_mined/gold_ingot_main
 execute if score #tier_2_diamond uhc.scenario.blood_diamond.setup matches 1.. if score #random uhc.scenario.blood_diamond.temp > #random_gold_ingot_diamond uhc.scenario.blood_diamond.temp if score #random uhc.scenario.blood_diamond.temp <= #random_diamond_gift uhc.scenario.blood_diamond.temp run function uhc:in_game/player/misc/ore_mined/diamond_main
-execute if score #tier_2_gift uhc.scenario.blood_diamond.setup matches 1.. if score #random uhc.scenario.blood_diamond.temp > #random_diamond_gift uhc.scenario.blood_diamond.temp run give @p[tag=uhc.blood_diamond.receive] minecraft:diamond
+execute if score #tier_2_gift uhc.scenario.blood_diamond.setup matches 1.. if score #random uhc.scenario.blood_diamond.temp > #random_diamond_gift uhc.scenario.blood_diamond.temp run function uhc:in_game/player/misc/ore_mined/blood_diamond/diamond_gift
 attribute @s minecraft:knockback_resistance modifier remove uhc.knockback_resistance.temp
 
 ## Joueur

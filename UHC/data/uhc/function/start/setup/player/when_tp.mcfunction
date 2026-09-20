@@ -13,6 +13,7 @@ effect clear @s
 gamemode adventure @s[tag=uhc.player]
 gamemode spectator @s[tag=uhc.spec]
 execute as @s[tag=uhc.player] run function uhc:player_status/attributes_and_effects/uhc/start
+effect give @s[tag=uhc.night_vision] minecraft:night_vision infinite 0 true
 
 ## Starter
 execute as @s[tag=uhc.player] run function uhc:start/item_starter/data

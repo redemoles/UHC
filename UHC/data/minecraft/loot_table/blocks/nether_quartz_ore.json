@@ -9,83 +9,48 @@
           "children": [
             {
               "type": "minecraft:item",
-              "conditions": [
+              "name": "minecraft:nether_quartz_ore",
+              "condition": "minecraft:tool/can_silk_touch"
+            },
+            {
+              "type": "minecraft:alternatives",
+              "modifier": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
+                  "type": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
+                {
+                  "type": "minecraft:explosion_decay"
+                }
+              ],
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:quartz",
+                  "condition": {
+                    "type": "minecraft:int_value_check",
+                    "value": {
+                      "type": "minecraft:score",
+                      "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#double_ores"
+                      },
+                      "score": "uhc.scenario"
+                    },
+                    "test": 0
                   }
-                }
-              ],
-              "name": "minecraft:nether_quartz_ore"
-            },
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#double_ores"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 0
-                }
-              ],
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
                 },
                 {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:quartz"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:quartz",
-              "conditions": [
-                {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#double_ores"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 1
-                }
-              ],
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": 2,
-                  "add": false
-                },
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:item",
+                  "name": "minecraft:quartz",
+                  "modifier": [
+                    {
+                      "type": "minecraft:set_count",
+                      "count": 2,
+                      "add": false
+                    }
+                  ]
                 }
               ]
             }

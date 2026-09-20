@@ -17,6 +17,9 @@ scoreboard players operation @s bhc.stepb.score.inv *= #1m uhc.data.numbers
 scoreboard players add @e[type=minecraft:marker,tag=UHC,distance=0..] bhc.stepb.score.inv 1
 scoreboard players add @s bhc.stepb.case 1
 
+# Son
+execute as @a[predicate=uhc:id/team] at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.5 1 0.5
+
 # Classement
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/stepb/rank
 execute as @e[type=minecraft:marker,tag=UHC,distance=0..] run function bhc:in_game/scores_calculator/bingos/rank

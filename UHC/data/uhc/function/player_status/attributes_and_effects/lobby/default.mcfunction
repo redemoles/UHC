@@ -18,5 +18,6 @@ effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:fire_resistance infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:instant_health infinite 1 true
+effect give @s[tag=uhc.night_vision] minecraft:night_vision infinite 0 true
 
 function uhc:player_status/attributes_and_effects/default

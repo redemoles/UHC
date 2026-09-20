@@ -1,22 +1,20 @@
-[
-    {
-      "condition": "minecraft:location_check",
-      "predicate": {
+{
+    "type": "minecraft:location_check",
+    "predicate": {
         "biomes": [
-          "minecraft:beach",
-          "minecraft:snowy_beach",
-          "minecraft:river",
-          "minecraft:stony_shore",
-          "minecraft:cold_ocean",
-          "minecraft:frozen_ocean",
-          "minecraft:ocean",
-          "minecraft:lukewarm_ocean",
-          "minecraft:warm_ocean",
-          "minecraft:deep_cold_ocean",
-          "minecraft:deep_frozen_ocean",
-          "minecraft:deep_ocean",
-          "minecraft:deep_lukewarm_ocean"
+            "minecraft:beach",
+            "minecraft:snowy_beach",
+            "minecraft:river",
+            "minecraft:stony_shore",
+            "minecraft:cold_ocean",
+            "minecraft:frozen_ocean",
+            "minecraft:ocean",
+            "minecraft:lukewarm_ocean",
+            "minecraft:warm_ocean",
+            "minecraft:deep_cold_ocean",
+            "minecraft:deep_frozen_ocean",
+            "minecraft:deep_ocean",
+            "minecraft:deep_lukewarm_ocean"
         ]
-      }
     }
-  ]
+}

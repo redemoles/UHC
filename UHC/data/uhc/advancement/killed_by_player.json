@@ -4,13 +4,16 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "player": {
-                    "nbt": "{Tags:[\"uhc.player\"]}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"uhc.player\"]}"
+                    }
                 }
             }
         }
     },
-    "rewards": 
-    {
+    "rewards": {
         "function": "uhc:in_game/advancement/killed_by_player/"
     }
 }

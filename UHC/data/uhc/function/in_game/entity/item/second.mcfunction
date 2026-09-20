@@ -8,4 +8,4 @@
 #
 
 scoreboard players add @s uhc.timer.entities 1
-kill @s[scores={uhc.timer.entities=150..}]
+execute if score @s uhc.timer.entities matches 16.. run kill @s

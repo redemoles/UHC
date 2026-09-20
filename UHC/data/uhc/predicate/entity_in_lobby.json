@@ -1,18 +1,18 @@
 {
-  "condition": "minecraft:inverted",
+  "type": "minecraft:inverted",
   "term": {
-    "condition": "entity_properties",
+    "type": "entity_properties",
     "entity": "this",
     "predicate": {
-        "entity_type": [
-            "minecraft:arrow",
-            "minecraft:item",
-            "minecraft:item_frame",
-            "minecraft:marker",
-            "minecraft:painting",
-            "minecraft:player",
-            "minecraft:spectral_arrow"
-        ]
+      "entity_type": [
+        "minecraft:arrow",
+        "minecraft:item",
+        "minecraft:item_frame",
+        "minecraft:marker",
+        "minecraft:painting",
+        "minecraft:player",
+        "minecraft:spectral_arrow"
+      ]
     }
   }
 }

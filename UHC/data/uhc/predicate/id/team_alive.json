@@ -1,17 +1,8 @@
 {
-	"condition": "minecraft:entity_scores",
+	"type": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
 		"uhc.id.team": {
-			"min": {
-				"type": "minecraft:score",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "#team_alive"
-				},
-				"score": "uhc.id.team"
-			},
-			"max": {
 				"type": "minecraft:score",
 				"target": {
 					"type": "minecraft:fixed",
@@ -21,4 +12,3 @@
 			}
 		}
 	}
-}

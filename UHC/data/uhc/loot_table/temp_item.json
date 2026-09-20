@@ -8,14 +8,12 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:stone",
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"custom_data": "{\"uhc_temp_item\":1b}"
-							}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"custom_data": "{\"uhc_temp_item\":1b}"
 						}
-					]
+					}
 				}
 			]
 		}

@@ -1,27 +1,31 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "damage": {
-            "blocked": false,
-            "source_entity": {
-              "entity_type": "#minecraft:arrows"
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "blocked": false,
+                    "source_entity": {
+                        "entity_type": "#minecraft:arrows"
+                    }
+                },
+                "entity": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "minecraft:player",
+                        "distance": {
+                            "absolute": {
+                                "min": 100,
+                                "max": 149.999
+                            }
+                        }
+                    }
+                }
             }
-          },
-          "entity": {
-            "entity_type": "minecraft:player",
-            "distance": {
-              "absolute": {
-                "min": 100,
-                "max": 149.999
-              }
-            }
-          }
         }
-      }
     },
     "rewards": {
-      "function": "uhc:in_game/scenario/rewarding_longshots/100_150"
+        "function": "uhc:in_game/scenario/rewarding_longshots/100_150"
     }
-  }
+}

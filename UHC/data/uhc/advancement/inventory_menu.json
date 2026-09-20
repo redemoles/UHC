@@ -3,19 +3,16 @@
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:inverted",
-			"term":
-			{
-				"condition": "entity_scores",
-				"entity": "this",
-				"scores": {
-					"uhc.player.disconnect": 1
-				}
-          	}
-		  }
-        ]
+        "player": {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "uhc.player.disconnect": 1
+            }
+          }
+        }
       }
     }
   },

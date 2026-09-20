@@ -11,7 +11,7 @@ team join 099 @s[tag=!uhc.host]
 team join 099.host @s[tag=uhc.host]
 clear @s
 effect clear @s
-scoreboard players operation @s uhc.player.lang = #language uhc.player.lang
+execute unless score @s uhc.player.lang matches 1.. run scoreboard players operation @s uhc.player.lang = #language uhc.player.lang
 execute unless score @s uhc.player.lang matches 1.. run scoreboard players set @s uhc.player.lang 051407
 tag @s remove uhc.player.dead
 title @s reset

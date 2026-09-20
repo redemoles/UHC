@@ -55,7 +55,7 @@ template = """{
 
 
 # Download a list of blocks
-link = "https://raw.githubusercontent.com/PixiGeko/Minecraft-generated-data/master/26/releases-candidate/26.2/custom-generated/registries/item.txt"
+link = "https://raw.githubusercontent.com/PixiGeko/Minecraft-generated-data/master/26/releases/26.3/custom-generated/registries/item.txt"
 temporary_file = "all_blocks_with_drop.json"
 r = requests.get(link)
 blocks = r.content.decode("utf-8").split("\n")
@@ -120,7 +120,7 @@ unobtainable_blocks = [
 	"minecraft:splash_potion",
 	"minecraft:trident"
 ]
-block_should_not_contains = ["command_block", "test", "spawn", "infested", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "copper_horse", "n_horse", "d_horse", "red_nether", "music_disc", "golem", "nautilus_armor"]
+block_should_not_contains = ["command_block", "test", "spawn", "infested", "template", "chainmail", "netherite", "frog", "turtle", "head", "sherd", "torchflower", "pitcher", "copper_horse", "n_horse", "d_horse", "red_nether", "music_disc", "golem", "nautilus_armor", "_map"]
 unobtainable_blocks += [block for block in blocks if any(x in block for x in block_should_not_contains)]
 
 silk_touch_block = ["grass_block", "mushroom_stem", "mushroom_block", "beehive", "_ore", "nylium", "sculk"]

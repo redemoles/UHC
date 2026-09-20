@@ -1,21 +1,19 @@
-[
-  {
-    "condition": "minecraft:any_of",
-    "terms": [
-      {
-      "condition": "minecraft:location_check",
-        "predicate": {
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
         "biomes": [
-         "minecraft:pale_garden"
-          ]
-        }
-      },
-      {
-      "condition": "minecraft:location_check",
-        "predicate": {
-        "dimension": "uhc:lobby"
-        }
+          "minecraft:pale_garden"
+        ]
       }
-    ]
-  }
-]
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "dimension": "uhc:lobby"
+      }
+    }
+  ]
+}

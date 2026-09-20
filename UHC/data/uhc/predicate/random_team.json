@@ -1,26 +1,14 @@
-[
-	{
-	  "condition": "minecraft:entity_scores",
-	  "entity": "this",
-	  "scores": {
+{
+	"type": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
 		"uhc.id.random_team": {
-		  "min": {
 			"type": "minecraft:score",
 			"target": {
-			  "type": "minecraft:fixed",
-			  "name": "#team"
+				"type": "minecraft:fixed",
+				"name": "#team"
 			},
 			"score": "uhc.id.random_team"
-		  },
-		  "max": {
-			"type": "minecraft:score",
-			"target": {
-			  "type": "minecraft:fixed",
-			  "name": "#team"
-			},
-			"score": "uhc.id.random_team"
-		  }
 		}
-	  }
 	}
-  ]
+}

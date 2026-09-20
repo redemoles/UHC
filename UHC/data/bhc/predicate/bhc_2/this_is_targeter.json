@@ -1,24 +1,14 @@
 {
-	"condition": "minecraft:entity_scores",
+	"type": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
 		"bhc.targeter.id": {
-			"min": {
-				"type": "minecraft:score",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "#temp"
-				},
-				"score": "bhc.targeted.id"
+			"type": "minecraft:score",
+			"target": {
+				"type": "minecraft:fixed",
+				"name": "#temp"
 			},
-			"max": {
-				"type": "minecraft:score",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "#temp"
-				},
-				"score": "bhc.targeted.id"
-			}
+			"score": "bhc.targeted.id"
 		}
 	}
 }

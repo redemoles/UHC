@@ -1,21 +1,19 @@
-[
-  {
-    "condition": "minecraft:any_of",
-    "terms": [
-      {
-        "condition": "minecraft:entity_scores",
-        "entity": "this",
-        "scores": {
-          "uhc.player.mined.temp.diamond": 1
-        }
-      },
-      {
-        "condition": "minecraft:entity_scores",
-        "entity": "this",
-        "scores": {
-          "uhc.player.mined.temp.diamond_deepslate": 1
-        }
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uhc.player.mined.temp.diamond": 1
       }
-    ]
-  }
-]
+    },
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uhc.player.mined.temp.diamond_deepslate": 1
+      }
+    }
+  ]
+}

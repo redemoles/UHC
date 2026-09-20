@@ -1,17 +1,17 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
     {
-      "condition": "minecraft:time_check",
+      "type": "minecraft:time_check",
       "clock": "minecraft:overworld",
       "value": {
         "min": 0,
         "max": 11999
       },
-    "period": 24000
+      "period": 24000
     },
     {
-      "condition": "minecraft:value_check",
+      "type": "minecraft:int_value_check",
       "value": {
         "type": "minecraft:score",
         "target": {
@@ -20,7 +20,7 @@
         },
         "score": "uhc.scenario"
       },
-      "range": 1
+      "test": 1
     }
   ]
 }

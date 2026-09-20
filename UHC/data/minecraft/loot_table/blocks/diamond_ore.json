@@ -1,326 +1,204 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:alternatives",
+							"condition": {
+								"type": "minecraft:all_of",
+								"terms": [
+									{
+										"type": "minecraft:int_value_check",
+										"value": {
+											"type": "minecraft:score",
+											"target": {
+												"type": "minecraft:fixed",
+												"name": "#blood_diamond"
+											},
+											"score": "uhc.scenario"
+										},
+										"test": 0
+									},
+									"minecraft:tool/can_silk_touch"
+								]
+							},
+							"children": [
+								{
+							    "type": "minecraft:item",
+							    "name": "minecraft:diamond_ore",
+							    "condition": {
+										"type": "minecraft:int_value_check",
+										"value": {
+											"type": "minecraft:score",
+											"target": {
+												"type": "minecraft:fixed",
+												"name": "#trade_uhc"
+											},
+											"score": "uhc.scenario"
+										},
+										"test": 0
+							    }
+						    },
+						    {
+                  "type": "minecraft:alternatives",
+							    "children": [
+							    	{
+						        	"type": "minecraft:item",
+							        "name": "minecraft:emerald_ore"
+							      }
+						      ]
+						    }
+					    ]
+						},
+						{
+							"type": "minecraft:alternatives",
+              "condition":
+							{
+								"type": "minecraft:int_value_check",
+								"value": {
+									"type": "minecraft:score",
+									"target": {
+										"type": "minecraft:fixed",
+										"name": "#trade_uhc"
+									},
+									"score": "uhc.scenario"
+								},
+								"test": 0
+							},
+              "modifier": [
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#blood_diamond"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 0
+                  "type": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
                 },
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#trade_uhc"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 0
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "type": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:diamond_ore"
-            },
-            {
-              "type": "minecraft:item",
-              "conditions": [
+							"children": [
+								{
+									"type": "minecraft:item",
+									"name": "minecraft:diamond",
+									"condition": {
+										"type": "minecraft:int_value_check",
+										"value": {
+											"type": "minecraft:score",
+											"target": {
+												"type": "minecraft:fixed",
+												"name": "#double_ores"
+											},
+											"score": "uhc.scenario"
+										},
+										"test": 0
+									}
+								},
+								{
+									"type": "minecraft:item",
+									"name": "minecraft:diamond",
+									"condition": {
+										"type": "minecraft:int_value_check",
+										"value": {
+											"type": "minecraft:score",
+											"target": {
+												"type": "minecraft:fixed",
+												"name": "#double_ores"
+											},
+											"score": "uhc.scenario"
+										},
+										"test": 1
+									},
+									"modifier": [
+										{
+											"type": "minecraft:set_count",
+											"count": 2
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+              "modifier": [
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#blood_diamond"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 0
+                  "type": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
                 },
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#trade_uhc"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 1
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "type": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:emerald_ore"
-            },
-            {
-              "type": "minecraft:alternatives",
-              "children": [
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "enchantment": "minecraft:fortune",
-                      "formula": "minecraft:ore_drops",
-                      "function": "minecraft:apply_bonus"
-                    },
-                    {
-                      "function": "minecraft:explosion_decay"
-                    }
-                  ],
-                  "name": "minecraft:diamond",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#double_ores"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 0
-                    },
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#trade_uhc"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 0
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 2
-                    },
-                    {
-                      "enchantment": "minecraft:fortune",
-                      "formula": "minecraft:uniform_bonus_count",
-                      "function": "minecraft:apply_bonus",
-                      "parameters": {
-                        "bonusMultiplier": 2
-                      }
-                    },
-                    {
-                      "function": "minecraft:explosion_decay"
-                    }
-                  ],
-                  "name": "minecraft:diamond",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#double_ores"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 1
-                    },
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#trade_uhc"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 0
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "minecraft:alternatives",
-              "children": [
-                {
-                  "type": "minecraft:item",
-                  "name": "minecraft:emerald",
-                  "functions": [
-                    {
-                      "function": "minecraft:apply_bonus",
-                      "enchantment": "minecraft:fortune",
-                      "formula": "minecraft:ore_drops"
-                    },
-                    {
-                      "function": "minecraft:explosion_decay"
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#double_ores"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 0
-                    },
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#trade_uhc"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 1
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:item",
-                  "name": "minecraft:emerald",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 2
-                    },
-                    {
-                      "function": "minecraft:apply_bonus",
-                      "enchantment": "minecraft:fortune",
-                      "formula": "minecraft:uniform_bonus_count",
-                      "parameters": {
-                        "bonusMultiplier": 2
-                      }
-                    },
-                    {
-                      "function": "minecraft:explosion_decay"
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#double_ores"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 1
-                    },
-                    {
-                      "condition": "minecraft:value_check",
-                      "value": {
-                        "type": "minecraft:score",
-                        "target": {
-                          "type": "minecraft:fixed",
-                          "name": "#trade_uhc"
-                        },
-                        "score": "uhc.scenario"
-                      },
-                      "range": 1
-                    }
-                  ]
-                }
-              ],
-              "conditions": []
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:all_of",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "minecraft:value_check",
-                    "value": {
-                      "type": "minecraft:score",
-                      "target": {
-                        "type": "minecraft:fixed",
-                        "name": "#blood_diamond"
-                      },
-                      "score": "uhc.scenario"
-                    },
-                    "range": 1
-                  }
-                },
-                {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#diamond_limit"
-                    },
-                    "score": "uhc.scenario"
-                  },
-                  "range": 0
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "rolls": 1
-    }
-  ],
-  "random_sequence": "minecraft:blocks/diamond_ore"
+							"children": [
+								{
+									"type": "minecraft:item",
+									"name": "minecraft:emerald",
+									"condition": {
+										"type": "minecraft:int_value_check",
+										"value": {
+											"type": "minecraft:score",
+											"target": {
+												"type": "minecraft:fixed",
+												"name": "#double_ores"
+											},
+											"score": "uhc.scenario"
+										},
+										"test": 0
+									}
+								},
+								{
+									"type": "minecraft:item",
+									"name": "minecraft:emerald",
+									"modifier": [
+										{
+											"type": "minecraft:set_count",
+											"count": 2
+										}
+									]
+								}
+							]
+						}
+					],
+					"condition": {
+						"type": "minecraft:all_of",
+						"terms": [
+							{
+								"type": "minecraft:inverted",
+								"term": {
+									"type": "minecraft:int_value_check",
+									"value": {
+										"type": "minecraft:score",
+										"target": {
+											"type": "minecraft:fixed",
+											"name": "#blood_diamond"
+										},
+										"score": "uhc.scenario"
+									},
+									"test": 1
+								}
+							},
+							{
+								"type": "minecraft:int_value_check",
+								"value": {
+									"type": "minecraft:score",
+									"target": {
+										"type": "minecraft:fixed",
+										"name": "#diamond_limit"
+									},
+									"score": "uhc.scenario"
+								},
+								"test": 0
+							}
+						]
+					}
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "minecraft:blocks/diamond_ore"
 }

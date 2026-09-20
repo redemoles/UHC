@@ -40,22 +40,18 @@ def generate_bingo(zip_file, bingo_size, bingo_namespace, bingo_name, step_numbe
 		"requirement": {{
 			"trigger": "minecraft:tick",
 			"conditions": {{
-				"player": [
-					{{
-						"condition": "minecraft:value_check",
-						"value": {{
-							"type": "minecraft:score",
-							"target": {{
-								"type": "minecraft:fixed",
-								"name": "#{bingo_namespace}_enabled"
-							}},
-							"score": "{configuration_objective}"
+				"player": {{
+					"type": "minecraft:int_value_check",
+					"value": {{
+						"type": "minecraft:score",
+						"target": {{
+							"type": "minecraft:fixed",
+							"name": "#{bingo_namespace}_enabled"
 						}},
-						"range": {{
-							"min": 1
-						}}
-					}}
-				]
+						"score": "{configuration_objective}"
+					}},
+					"test": 1
+				}}
 			}}
 		}}
 	}},
@@ -171,22 +167,18 @@ def generate_bingo_inverted(zip_file, bingo_size, bingo_namespace, bingo_name, s
 		"requirement": {{
 			"trigger": "minecraft:tick",
 			"conditions": {{
-				"player": [
-					{{
-						"condition": "minecraft:value_check",
-						"value": {{
-							"type": "minecraft:score",
-							"target": {{
-								"type": "minecraft:fixed",
-								"name": "#{bingo_namespace}_enabled"
-							}},
-							"score": "{configuration_objective}"
+				"player": {{
+					"type": "minecraft:int_value_check",
+					"value": {{
+						"type": "minecraft:score",
+						"target": {{
+							"type": "minecraft:fixed",
+							"name": "#{bingo_namespace}_enabled"
 						}},
-						"range": {{
-							"min": 1
-						}}
-					}}
-				]
+						"score": "{configuration_objective}"
+					}},
+					"test": 1
+				}}
 			}}
 		}}
 	}},
@@ -512,10 +504,10 @@ with zipfile.ZipFile(f"Bingo_UHC_grids_{datetime.datetime.today().strftime('%Y-%
 	# Write the pack.mcmeta file
 	zip_file.writestr("pack.mcmeta", f"""{{
 	"pack": {{
-		"min_format": [107, 1],
-		"max_format": [107, 1],
+		"min_format": [121, 0],
+		"max_format": [121, 0],
 		"description": "Generated Bingo on {datetime.date.today().strftime("%Y_%m_%d")}"
 	}}
 }}""")
 	# Write the main load function file requested by the user
-	zip_file.writestr("data/bingo_generator/function/load.mcfunction", "scoreboard players set #bingo_generator_update uhc.data.update 26080")
+	zip_file.writestr("data/bingo_generator/function/load.mcfunction", "scoreboard players set #bingo_generator_update uhc.data.update 26090")
